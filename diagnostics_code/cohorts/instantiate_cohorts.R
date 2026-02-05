@@ -12,13 +12,15 @@ cdm$tavi <- cdm$aortic_valve_replacement |>
                           name = "tavi") |>
   requireConceptIntersect(conceptSet = list(additional_tavi_context = codes$additional_tavi_context),
                           window = c(0, 0),
-                          name = "tavi")
+                          name = "tavi") |>
+  renameCohort("tavi")
 
 cdm$savr <- cdm$aortic_valve_replacement |>
-  requireCohortIntersect("tavi",
+  requireCohortIntersect(targetCohortTable = "tavi",
                          window = c(0, 0),
-                         intersections = 0,
-                         name = "savr")
+                         intersections = c(0, 0),
+                         name = "savr") |>
+  renameCohort("savr")
 
 cdm$study_cohorts <- bind(cdm$tavi,
                           cdm$savr,
