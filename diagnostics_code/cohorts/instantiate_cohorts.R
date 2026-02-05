@@ -22,6 +22,6 @@ cdm$savr <- cdm$aortic_valve_replacement |>
                          name = "savr") |>
   renameCohort("savr")
 
-cdm$study_cohorts <- bind(cdm$tavi,
-                          cdm$savr,
-                          name = "study_cohorts")
+cdm <- bind(cdm$tavi,
+            cdm$savr,
+            name = "study_cohorts")
