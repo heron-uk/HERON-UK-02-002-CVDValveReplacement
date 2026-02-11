@@ -1,4 +1,4 @@
-This shiny app presents the results from [PhenotypeR](https://ohdsi.github.io/PhenotypeR)  
+This shiny app presents the results from [PhenotypeR](https://ohdsi.github.io/PhenotypeR) for the **HERON-UK-02-002-CVDValveReplacement** study.
 
 The PhenotypeR package helps us to assess the research-readiness of a set of cohorts we have defined. This assessment includes:  
 
