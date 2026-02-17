@@ -6,5 +6,8 @@ omopgenerics::logMessage(message = "Get cohort characteristics")
 
 results[["characterisation"]] <- CohortCharacteristics::summariseCharacteristics(cdm$study_cohorts,
                                                                                  ageGroup = age_groups, 
-                                                                                 otherVariables = "race") 
+                                                                                 otherVariables = c("race", "latest_townsend"))
 
+omopgenerics::logMessage(message = "Get cohort overlap") 
+
+results[["overlap"]] <- CohortCharacteristics::summariseCohortOverlap(cdm$study_cohorts)

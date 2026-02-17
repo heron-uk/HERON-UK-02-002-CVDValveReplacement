@@ -31,10 +31,13 @@ omopgenerics::logMessage(message = "Study cohorts instantiated")
 
 # Run analyses ----
 omopgenerics::logMessage(message = "Run study analyses")
-source(here("analyses", "cohort_characteristics.R"))
-source(here("analyses", "cohort_survival.R"))
-source(here("analyses", "drug_utilisation.R"))
-source(here("analyses", "incidence_prevalence.R"))
+
+source(here::here("analyses", "cohort_characteristics.R"))
+
+source(here::here("analyses", "incidence_prevalence.R"))
+
+source(here::here("analyses", "cohort_survival.R"))
+
 omopgenerics::logMessage("Analyses finished")
 
 # Finish ----
