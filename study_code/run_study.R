@@ -13,7 +13,7 @@ omopgenerics::createLogFile(logFile = tempfile(pattern = "log_{date}_{time}"))
 logMessage(message = "LOG CREATED")
 
 # Define analysis settings -----
-study_period <- c(as.Date(NA), as.Date(NA))
+study_period <- c(as.Date("2012-01-01"), as.Date(NA))
 sex <- TRUE
 age_groups <- list(c(20, 29), c(30, 39), c(40, 49), c(50, 59), c(60, 69), c(70, 79), c(80,89), c(90, 150))
 # Initialise list to store results as we go -----
