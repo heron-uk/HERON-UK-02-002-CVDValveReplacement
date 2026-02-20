@@ -18,8 +18,8 @@ cdm$tavi_direct <- conceptCohort(cdm = cdm,
 
 cdm <- bind(cdm$tavi_from_additional,
                  cdm$tavi_direct,
-                 name = "tavi") |>
-  unionCohorts() |>
+                 name = "tavi")
+cdm$tavi <- unionCohorts(cdm$tavi) |>
   renameCohort("tavi")
 
 
