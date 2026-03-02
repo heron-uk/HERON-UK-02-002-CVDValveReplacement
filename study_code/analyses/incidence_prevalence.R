@@ -1,3 +1,4 @@
+source(here::here("analyses", "functions.R"))
 omopgenerics::logMessage(message = "Get denominator cohort")
 
 cdm <- IncidencePrevalence::generateDenominatorCohortSet(
@@ -13,21 +14,8 @@ cdm <- IncidencePrevalence::generateDenominatorCohortSet(
 omopgenerics::logMessage(message = "Add ethnicity and socioeconomic status")
 
 cdm$denominator <- cdm$denominator |>
-  dplyr::left_join(cdm$person |> 
-                     dplyr::select("person_id", "race_concept_id") |>
-                     PatientProfiles::addConceptName(nameStyle = "race"), 
-                   by = c("subject_id" = "person_id")) |>
-  dplyr::select(-"race_concept_id") |>
-  dplyr::compute() |>
-  PatientProfiles::addConceptIntersectField(conceptSet = list(townsend = 715996L), 
-                                            field = "value_as_number", 
-                                            window = list(c(-Inf, 0)), 
-                                            order = "last", 
-                                            nameStyle = "latest_townsend", 
-                                            inObservation = FALSE,
-                                            name = "denominator") |>
-  dplyr::mutate(latest_townsend = as.character(.data$latest_townsend), 
-                latest_townsend = coalesce(.data$latest_townsend, "Missing")) |>
+  addEthnicity() |>
+  addSES() |>
   dplyr::compute(name = "denominator") 
   
 
@@ -37,11 +25,11 @@ results[["incidence"]] <- IncidencePrevalence::estimateIncidence(
   cdm = cdm,
   denominatorTable = "denominator",
   outcomeTable = "study_cohorts_inc",
-  outcomeCohortId = c("aortic_stenosis", "aortic_valve_disease"),
+  outcomeCohortId = c("aortic_stenosis", "aortic_valve_replacement"),
   interval = c("years", "overall"),
   outcomeWashout = Inf,
   repeatedEvents = FALSE, 
-  strata = list("race", "latest_townsend")
+  strata = list("ethnicity", "ethnicity_group", "ses")
 ) 
 
 set <- omopgenerics::settings(results[["incidence"]]) |>
@@ -78,7 +66,7 @@ res_standardised_incidence <- EpiStandard::directlyStandardiseRates(
     "denominator_end_date", "denominator_requirements_at_entry", 
     "denominator_sex", "denominator_start_date", 
     "denominator_target_cohort_name", "denominator_time_at_risk", 
-    "race", "latest_townsend"
+    "ethnicity", "ethnicity_group", "ses"
   ))
 
 results[["standardised_incidence"]] <- res_standardised_incidence |>

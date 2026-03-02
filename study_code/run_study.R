@@ -32,12 +32,17 @@ omopgenerics::logMessage(message = "Study cohorts instantiated")
 # Run analyses ----
 omopgenerics::logMessage(message = "Run study analyses")
 
-source(here::here("analyses", "cohort_characteristics.R"))
+omopgenerics::logMessage(message = "Get cohort attrition")
+
+results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$study_cohorts) 
 
 source(here::here("analyses", "incidence_prevalence.R"))
 
 source(here::here("analyses", "cohort_survival.R"))
 
+source(here::here("analyses", "data_preparation.R"))
+
+source(here::here("analyses", "multi_state_model.R"))
 omopgenerics::logMessage("Analyses finished")
 
 # Finish ----
