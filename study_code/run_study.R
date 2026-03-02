@@ -34,11 +34,13 @@ omopgenerics::logMessage(message = "Run study analyses")
 
 omopgenerics::logMessage(message = "Get cohort attrition")
 
+results[["code_use"]] <- CodelistGenerator::summariseCohortCodeUse(cdm, "study_cohorts_inc") 
+
+omopgenerics::logMessage(message = "Get cohort attrition")
+
 results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$study_cohorts) 
 
 source(here::here("analyses", "incidence_prevalence.R"))
-
-source(here::here("analyses", "cohort_survival.R"))
 
 source(here::here("analyses", "data_preparation.R"))
 
