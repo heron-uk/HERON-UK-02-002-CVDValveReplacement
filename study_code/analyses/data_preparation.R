@@ -110,9 +110,31 @@ for (transition in transitions_as){
 cdm <- omopgenerics::bind(cdm$healthy_to_as, cdm$as_to_avr, cdm$healthy_to_death, cdm$as_to_death, cdm$avr_to_death, name = "multi_state_as")
 
 ### characterisation ----
-results[["characterisation_multi_state_as"]] <- CohortCharacteristics::summariseCharacteristics(cdm$multi_state_as,
-                                                                                 strata =  list("status", "ses"),
+
+# starting population
+cdm$healthy_pop <- cdm$multi_state_as |> 
+  CohortConstructor::subsetCohorts(cohortId = "healthy_to_as", name = "healthy_pop") |> 
+  CohortConstructor::renameCohort(newCohortName = "healthy")
+
+results[["characterisation_multi_state_healthy"]] <- CohortCharacteristics::summariseCharacteristics(cdm$healthy_pop,
+                                                                                                   demographics = TRUE,
+                                                                                                   ageGroup = age_groups, 
+                                                                                                   otherVariables = c("ses",
+                                                                                                                      "ethnicity_group", "ethnicity"))
+
+
+# people making transitions 
+# summarise characteristics at time of transition (ie date of event)
+cdm$transitions <- cdm$multi_state_as |> 
+  CohortConstructor::copyCohorts(name = "transitions") |> 
+  filter(status == 1) |> 
+  mutate(cohort_start_date = cohort_end_date) |> 
+  rename("time_to_event" = "time")
+                                   
+                                   
+results[["characterisation_multi_state_trans"]] <- CohortCharacteristics::summariseCharacteristics(cdm$transitions,
                                                                                  demographics = TRUE,
                                                                                  ageGroup = age_groups, 
-                                                                                 otherVariables = c("t_start", "time", "ethnicity_group", "ethnicity"))
+                                                                                 otherVariables = c("time_to_event", "ses",
+                                                                                                    "ethnicity_group", "ethnicity"))
 
