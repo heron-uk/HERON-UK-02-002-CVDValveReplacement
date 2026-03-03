@@ -111,7 +111,8 @@ cdm <- omopgenerics::bind(cdm$healthy_to_as, cdm$as_to_avr, cdm$healthy_to_death
 
 ### characterisation ----
 results[["characterisation_multi_state_as"]] <- CohortCharacteristics::summariseCharacteristics(cdm$multi_state_as,
-                                                                                 strata =  list("status", "ethnicity_group", "ses"),
+                                                                                 strata =  list("status", "ses"),
+                                                                                 demographics = TRUE,
                                                                                  ageGroup = age_groups, 
-                                                                                 otherVariables = c("time", "ethnicity", "age"))
+                                                                                 otherVariables = c("t_start", "time", "ethnicity_group", "ethnicity"))
 
