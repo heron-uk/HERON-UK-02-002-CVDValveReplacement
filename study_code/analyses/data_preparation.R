@@ -28,8 +28,7 @@ cdm$healthy <- CohortConstructor::demographicsCohort(cdm = cdm, ageRange = list(
   dplyr::compute(name = "healthy") 
 ### AS ----
 cdm$multi_state_as <- cdm$healthy |>
-  PatientProfiles::addCohortIntersectDate(targetCohortTable = "hf",targetCohortId = "heart_failure", nameStyle = "avr_date", order = "first") |>
-  
+
   addAge(col_name = "age_avr", date_name = "avr_date") |>
   
   PatientProfiles::addCohortIntersectDate(targetCohortTable = "study_cohorts", targetCohortId = "aortic_stenosis", nameStyle = "as_date", order = "first") |>
