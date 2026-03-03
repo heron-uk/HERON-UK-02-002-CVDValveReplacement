@@ -11,10 +11,9 @@ cdm <- IncidencePrevalence::generateDenominatorCohortSet(
   sex = c("Both", "Male", "Female"),
   daysPriorObservation = 365) 
 
-omopgenerics::logMessage(message = "Add ethnicity and socioeconomic status")
+omopgenerics::logMessage(message = "Add socioeconomic status")
 
 cdm$denominator <- cdm$denominator |>
-  addEthnicity() |>
   addSES() |>
   dplyr::compute(name = "denominator") 
   
@@ -29,7 +28,7 @@ results[["incidence"]] <- IncidencePrevalence::estimateIncidence(
   interval = c("years", "overall"),
   outcomeWashout = Inf,
   repeatedEvents = FALSE, 
-  strata = list("ethnicity", "ethnicity_group", "ses")
+  strata = list("ses")
 ) 
 
 set <- omopgenerics::settings(results[["incidence"]]) |>
@@ -66,7 +65,7 @@ res_standardised_incidence <- EpiStandard::directlyStandardiseRates(
     "denominator_end_date", "denominator_requirements_at_entry", 
     "denominator_sex", "denominator_start_date", 
     "denominator_target_cohort_name", "denominator_time_at_risk", 
-    "ethnicity", "ethnicity_group", "ses"
+    "ses"
   ))
 
 results[["standardised_incidence"]] <- res_standardised_incidence |>
