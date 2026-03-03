@@ -32,7 +32,7 @@ omopgenerics::logMessage(message = "Study cohorts instantiated")
 # Run analyses ----
 omopgenerics::logMessage(message = "Run study analyses")
 
-omopgenerics::logMessage(message = "Get cohort attrition")
+omopgenerics::logMessage(message = "Get cohort code use")
 
 results[["code_use"]] <- CodelistGenerator::summariseCohortCodeUse(cdm, "study_cohorts_inc") 
 
