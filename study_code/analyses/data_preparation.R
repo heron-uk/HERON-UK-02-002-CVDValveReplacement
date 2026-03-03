@@ -1,8 +1,4 @@
 source(here::here("analyses", "functions.R"))
-cdm$hf <- CohortConstructor::conceptCohort(cdm, conceptSet = list(heart_failure = 
-                                                                    316139),  
-                                           subsetCohort = "study_cohorts", 
-                                           name = "hf")
 
 
 cdm$healthy <- CohortConstructor::demographicsCohort(cdm = cdm, ageRange = list(c(20, 150)), sex = "Both", name = "healthy") |>
