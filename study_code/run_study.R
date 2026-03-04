@@ -9,7 +9,7 @@ omopgenerics::validateCdmArgument(cdm,
 omopgenerics::assertNumeric(min_cell_count)
 
 # Create a log file ----
-omopgenerics::createLogFile(logFile = tempfile(pattern = "log_{date}_{time}"))
+omopgenerics::createLogFile(logFile = here::here("Results", "log_{date}_{time}"))
 logMessage(message = "LOG CREATED")
 
 # Define analysis settings -----
