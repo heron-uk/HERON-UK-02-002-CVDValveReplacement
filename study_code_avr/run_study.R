@@ -1,4 +1,3 @@
-
 # Check code_to_run inputs ----
 omopgenerics::validateCdmArgument(cdm,
                                   requiredTables = c("person",
@@ -6,7 +5,7 @@ omopgenerics::validateCdmArgument(cdm,
                                                      "condition_occurrence",
                                                      "drug_exposure",
                                                      "concept"))
-omopgenerics::assertNumeric(min_cell_count)
+omopgenerics::assertNumeric(minCellCount)
 
 # Create a log file ----
 omopgenerics::createLogFile(logFile = tempfile(pattern = "log_{date}_{time}"))
@@ -15,7 +14,8 @@ logMessage(message = "LOG CREATED")
 # Define analysis settings -----
 study_period <- c(as.Date("2012-01-01"), as.Date(NA))
 sex <- TRUE
-age_groups <- list(c(20, 29), c(30, 39), c(40, 49), c(50, 59), c(60, 69), c(70, 79), c(80,89), c(90, 150))
+age_groups <- list(c(0, 39), c(40, 64), c(65, 69), c(70, 74), c(75,79), c(80, 84), c(85, 150))
+
 # Initialise list to store results as we go -----
 results <- list()
 
@@ -31,18 +31,18 @@ omopgenerics::logMessage(message = "Study cohorts instantiated")
 
 # Run analyses ----
 omopgenerics::logMessage(message = "Run study analyses")
+results[["procedures_code_use"]] <- CodelistGenerator::summariseCohortCodeUse(cdm[["proc_obj_one"]])
 
 omopgenerics::logMessage(message = "Get cohort attrition")
+results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$proc) 
 
-results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$study_cohorts) 
+source(here::here("analyses", "1-ObjectiveOne.R"))
 
-source(here::here("analyses", "incidence_prevalence.R"))
+source(here::here("analyses", "2-ObjectiveTwo.R"))
 
-source(here::here("analyses", "cohort_survival.R"))
+source(here::here("analyses", "3-ObjectiveThree.R"))
 
-source(here::here("analyses", "data_preparation.R"))
-
-source(here::here("analyses", "multi_state_model.R"))
+source(here::here("analyses", "4-ObjectiveFour.R"))
 omopgenerics::logMessage("Analyses finished")
 
 # Finish ----
