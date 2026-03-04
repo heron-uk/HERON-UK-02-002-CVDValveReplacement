@@ -46,7 +46,7 @@ addAge <- function(cohort, date_name = "cohort_start_date", col_name = "age"){
 }
 
 addEthnicity <- function(cohort) {
-  if(grepl("dataloch", tolower(dbName))){
+  if(grepl("dataloch", tolower(cdmName(cdm)))){
     
     cohort |> dplyr::left_join(cdm$person |> 
                                  dplyr::select("person_id", "race_source_value"),
@@ -135,7 +135,7 @@ hr_summary <- function(model, transition, model_name) {
                                               estimates = c("hazard_ratio", "se_coef", "lower_hr", "upper_hr", "p_value"), 
                                               additional = "model_name",
                                               settings = c("result_type", "package_name")) |>
-    dplyr::mutate(cdm_name = dbName)
+    dplyr::mutate(cdm_name = cdmName(cdm))
 }
 
 
@@ -217,5 +217,5 @@ hr_summary_age_model <-function(model,
                                               estimates = c("hazard_ratio", "lower_hr", "upper_hr", "aic", "bic", "se_coef"), 
                                               additional = "model_name", "ref_age",
                                               settings = c("result_type", "package_name")) |>
-    dplyr::mutate(cdm_name = dbName)
+    dplyr::mutate(cdm_name = cdmName(cdm))
 }

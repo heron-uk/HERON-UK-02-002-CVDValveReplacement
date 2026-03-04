@@ -4,10 +4,10 @@ omopgenerics::logMessage(message = "Importing codelists")
 
 codelist <- omopgenerics::importCodelist(here::here("codelist"), "csv")
 
-# FOR TESTING !!!
-codelist <- codelist |> CodelistGenerator::addConcepts(cdm, 
-                                           concepts = c(316139L), 
-                                           codelistName = "aortic_valve_replacement")
+# For testing uncomment the below to get counts
+# codelist <- codelist |> CodelistGenerator::addConcepts(cdm, 
+#                                            concepts = c(316139L), 
+#                                            codelistName = "aortic_valve_replacement")
 
 omopgenerics::logMessage(message = "Instastiating cohorts")
 
