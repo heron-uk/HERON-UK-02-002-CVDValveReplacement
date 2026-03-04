@@ -1,6 +1,5 @@
 source(here::here("analyses", "functions.R"))
 
-
 omopgenerics::logMessage(message = "Estimate incidence")
 
 results[["incidence"]] <- IncidencePrevalence::estimateIncidence(

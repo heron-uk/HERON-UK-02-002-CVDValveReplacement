@@ -8,14 +8,35 @@ cdm$multi_state_as <- PatientProfiles::addCohortName(cdm$multi_state_as)
 
 model_specs <- list(
   age_sex = c("age", "sex"),
-  ses_age_sex = c("age", "sex", "ses")
+  sex = c("sex"),
+  ses_age_sex = c("age", "sex", "ses"),
+  ses =  c("ses")
 )
 
 res <- list()
 
 
 for (cohort_name in cohort_names) {
-  data <- cdm$multi_state_as |> dplyr::filter(.data$cohort_name == cohort_name) |> dplyr::collect() 
+  cli::cli_inform(glue::glue(" -- modelling {cohort_name}"))
+  data <- cdm$multi_state_as |>
+    dplyr::filter(.data$cohort_name == .env$cohort_name) |> 
+    dplyr::collect() |> 
+    select(!c("cohort_definition_id",
+              "from",
+              "to",
+              "trans"))
+  cli::cli_inform(glue::glue(" -- dataset rows: {nrow(data)}"))
+  
+  n_events <- data |> 
+    filter(status == 1) |> 
+    nrow()
+  
+  cli::cli_inform(glue::glue(" -- n events: {n_events}"))
+  
+  
+  if(n_events < 10) {
+    cli::cli_warn("skipping due to low event count")
+  } else {
   
   dd <- rms::datadist(data)
   options(datadist = "dd")
@@ -44,7 +65,9 @@ for (cohort_name in cohort_names) {
     y = TRUE,
     surv = TRUE
   )
-  crit <- c(linear = stats::AIC(fit[["linear"]]), rcs3 = stats::AIC(fit[["rcs3"]]), rcs4 = stats::AIC(fit[["rcs4"]]))
+  crit <- c(linear = stats::AIC(fit[["linear"]]), 
+            rcs3 = stats::AIC(fit[["rcs3"]]), 
+            rcs4 = stats::AIC(fit[["rcs4"]]))
   chosen_age <- names(which.min(crit)) 
   chosen_age_term <- switch(chosen_age,
                             linear = "age",
@@ -53,7 +76,9 @@ for (cohort_name in cohort_names) {
   
   
     
-  res[[paste(cohort_name,"age",chosen_age, sep = "_")]] <- hr_summary_age_model(fit[[chosen_age]], transition = cohort_name, model_name = paste0("age_",chosen_age))
+  res[[paste(cohort_name,"age",chosen_age, sep = "_")]] <- hr_summary_age_model(fit[[chosen_age]], 
+                                                                                transition = cohort_name, 
+                                                                                model_name = paste0("age_",chosen_age))
   
   
   for (nm in names(model_specs)) {
@@ -64,7 +89,7 @@ for (cohort_name in cohort_names) {
     
     
     form_base <- stats::as.formula(
-      paste0("Surv(t_start, t_stop, status) ~ ", rhs)
+      paste0("rms::Surv(t_start, t_stop, status) ~ ", rhs)
     )
     
   model <- rms::cph(
@@ -76,7 +101,7 @@ for (cohort_name in cohort_names) {
    )
    res[[paste(cohort_name,nm, sep = "_")]] <- hr_summary(model, transition = cohort_name, model_name = nm)
     }
-
+  }
 }
 
 results[["multi_state_model"]] <- omopgenerics::bind(res)

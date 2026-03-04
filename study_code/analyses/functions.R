@@ -130,12 +130,12 @@ hr_summary <- function(model, transition, model_name) {
       model_name = model_name,
     result_type = "hr_summary", 
     package_name = "HERON-UK-02-002-CVDValveReplacement"
-    ) |> 
+    ) |>
+    dplyr::mutate(cdm_name = cdmName(cdm)) |> 
     omopgenerics::transformToSummarisedResult(group = "transition", 
                                               estimates = c("hazard_ratio", "se_coef", "lower_hr", "upper_hr", "p_value"), 
                                               additional = "model_name",
-                                              settings = c("result_type", "package_name")) |>
-    dplyr::mutate(cdm_name = cdmName(cdm))
+                                              settings = c("result_type", "package_name"))
 }
 
 
@@ -179,8 +179,8 @@ clean_variables <- function(df, var_col = "variable_name") {
 hr_summary_age_model <-function(model, 
                        transition,
                        model_name, 
-                       reference_age = 65,    # reference age 
-                       comparison_age = seq(0,100, 1)){   # comparison ages
+                       reference_age = 70,    # reference age 
+                       comparison_age = seq(20,100, 1)){   # comparison ages
   res <- list()
   
   for(i in 1:length(comparison_age)){  
@@ -195,7 +195,6 @@ hr_summary_age_model <-function(model,
         dplyr::mutate(ref_age = reference_age,
                rel_age=comparison_age[i]) %>% 
         dplyr::select( "hazard_ratio", "se_coef" = "S.E.", "lower_hr", "upper_hr", "ref_age", "rel_age")
-      #browser()
       working_summary$aic<-stats::AIC({{model}})
       working_summary$bic<-stats::BIC({{model}})
       res[[i]] <- working_summary
@@ -211,11 +210,13 @@ hr_summary_age_model <-function(model,
       transition = transition, 
       model_name = model_name,
       result_type = "hr_summary", 
-      package_name = "HERON-UK-02-002-CVDValveReplacement"
-    ) |> 
+      package_name = "HERON-UK-02-002-CVDValveReplacement",
+      package_version = "1.0"
+    )|>
+    dplyr::mutate(cdm_name = cdmName(cdm)) |> 
     omopgenerics::transformToSummarisedResult(group = "transition", 
                                               estimates = c("hazard_ratio", "lower_hr", "upper_hr", "aic", "bic", "se_coef"), 
                                               additional = "model_name", "ref_age",
-                                              settings = c("result_type", "package_name")) |>
-    dplyr::mutate(cdm_name = cdmName(cdm))
+                                              settings = c("result_type", "package_name",
+                                                           "package_version")) 
 }
