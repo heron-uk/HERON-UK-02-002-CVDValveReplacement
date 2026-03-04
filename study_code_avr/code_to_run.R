@@ -13,9 +13,11 @@ library(PatientProfiles)
 library(CohortCharacteristics)
 library(DrugUtilisation)
 library(IncidencePrevalence)
-library(CohortSurvival)
 library(odbc)
 library(RPostgres)
+library(readr)
+library(clock)
+library(rlang)
 
 # database metadata and connection details
 # The name/ acronym for the database

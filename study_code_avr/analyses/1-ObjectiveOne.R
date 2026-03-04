@@ -5,7 +5,21 @@ cdm[["proc_obj_one"]] <- cdm[["proc_obj_one"]] |>
   addCohortIntersectFlag(targetCohortTable = "aortic_stenosis", 
                          window = c(-Inf, 0), 
                          nameStyle = "indication_{cohort_name}") |>
-  mutate(across(starts_with("indication"), ~as.character(as.integer(.))))
+  addCohortIntersectFlag(targetCohortTable = "aortic_insufficiency", 
+                         window = c(-Inf, 0), 
+                         nameStyle = "indication_{cohort_name}") |>
+  addCohortIntersectFlag(targetCohortTable = "aortic_endocarditis", 
+                         window = c(-Inf, 0), 
+                         nameStyle = "indication_{cohort_name}") |>
+  mutate(across(starts_with("indication"), ~as.integer(.)))
+
+omopgenerics::logMessage(message = "Add indications combinations flag")
+cols <- colnames(cdm[["proc_obj_one"]])[which(grepl("indication_", colnames(cdm[["proc_obj_one"]])))]
+
+cdm[["proc_obj_one"]] <- cdm[["proc_obj_one"]] |>
+  addCombinations(name = "proc_obj_one") |>
+  mutate(across(starts_with("indication_"), ~as.character(.))) |>
+  compute(temporary = FALSE, name = "proc_obj_one")
 
 omopgenerics::logMessage(message = "Add calendar year")
 cdm[["proc_obj_one"]] <- cdm[["proc_obj_one"]] |>
@@ -13,8 +27,8 @@ cdm[["proc_obj_one"]] <- cdm[["proc_obj_one"]] |>
   compute(temporary = FALSE, name = "proc_obj_one")
 
 omopgenerics::logMessage(message = "Summarise characteristics")
-cols <- colnames(cdm[["proc_obj_one"]])[which(grepl("indication_", colnames(cdm[["proc_obj_one"]])))]
 
+cols <- colnames(cdm[["proc_obj_one"]] )[which(grepl("indication_", colnames(cdm[["proc_obj_one"]])))]
 results[["objective_one"]] <- summariseCharacteristics(cdm[["proc_obj_one"]], 
                                                        demographics = FALSE, 
                                                        strata = "calendar_year",

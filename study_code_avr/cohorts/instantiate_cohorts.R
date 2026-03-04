@@ -1,7 +1,5 @@
-source(here::here("analyses", "functions.R"))
-
 omopgenerics::logMessage(message = "Importing codelists")
-codelist <- omopgenerics::importCodelist(here::here("codelist"), "csv")
+codelist <- omopgenerics::importCodelist(here::here("codelist", "indications"), "csv")
 
 # Indications ----
 omopgenerics::logMessage(message = "Instantiating indications")
@@ -13,8 +11,28 @@ cdm[["aortic_stenosis"]] <- CohortConstructor::conceptCohort(cdm = cdm,
   CohortConstructor::exitAtObservationEnd() |>
   CohortConstructor::requireInDateRange(dateRange = study_period)
 
+cdm[["aortic_insufficiency"]] <- CohortConstructor::conceptCohort(cdm = cdm, 
+                                                                  conceptSet = c(codelist["aortic_insufficiency"]), 
+                                                                  name = "aortic_insufficiency", 
+                                                                  exit = "event_start_date") |>
+  CohortConstructor::requireIsFirstEntry() |>
+  CohortConstructor::exitAtObservationEnd() |>
+  CohortConstructor::requireInDateRange(dateRange = study_period)
+
+cdm[["aortic_endocarditis"]] <- CohortConstructor::conceptCohort(cdm = cdm, 
+                                                                  conceptSet = c(codelist["aortic_endocarditis"]), 
+                                                                  name = "aortic_endocarditis", 
+                                                                  exit = "event_start_date") |>
+  CohortConstructor::requireIsFirstEntry() |>
+  CohortConstructor::exitAtObservationEnd() |>
+  CohortConstructor::requireInDateRange(dateRange = study_period)
+
+cdm <- bind(cdm[["aortic_stenosis"]], cdm[["aortic_insufficiency"]], cdm[["aortic_endocarditis"]], name = "indications")
+
 # Aortic valve replacement -----
 omopgenerics::logMessage(message = "Instantiating AVR")
+codelist <- importCodelist(path = here("codelist"), type = "csv")
+
 omopgenerics::logMessage(message = "- Objective 1")
 cdm$avr <- CohortConstructor::conceptCohort(cdm = cdm, 
                                             conceptSet = c(codelist["aortic_valve_replacement"]), 
@@ -48,7 +66,11 @@ cdm$savr <- cdm$avr |>
                          name = "savr") |>
   renameCohort("savr")
 
-cdm <- bind(cdm[["savr"]], cdm[["tavi"]], cdm[["avr"]], name = "proc_obj_one")
+if (dbName == "CPRD GOLD") {
+  cdm <- bind(cdm[["savr"]], cdm[["tavi"]], cdm[["avr"]], name = "proc_obj_one")
+} else {
+  cdm <- bind(cdm[["savr"]], cdm[["tavi"]], name = "proc_obj_one")
+}
 
 omopgenerics::logMessage(message = "- Other objectives")
 cdm[["proc"]] <- cdm[["proc_obj_one"]] |>
@@ -69,12 +91,15 @@ cdm[["proc"]] <- cdm[["proc"]] |>
 # Comorbidities
 omopgenerics::logMessage(message = "Instantiating comorbidities")
 codelist <- omopgenerics::importCodelist(here::here("codelist", "comorbidities"), "csv")
+
 cdm$comorbidities <- conceptCohort(cdm = cdm,
                                    subsetCohort = "proc",
                                    name = "comorbidities",
                                    conceptSet = codelist,
                                    exit = "event_start_date")
 
+cdm$comorbidities <- cdm$comorbidities |> 
+  exitAtObservationEnd(cohortId = c("type_2_diabetes", "hypertension", "concomitant_valve_disorders_excluding_endocarditis"))
 
 # Treatments
 omopgenerics::logMessage(message = "Instantiating treatments")
@@ -85,6 +110,5 @@ cdm[["treatments"]] <- cdm |>
     conceptSet = codelist,
     exit = "event_start_date",
     name = "treatments")
-
 
 omopgenerics::logMessage(message = "Finished instantiating cohorts")

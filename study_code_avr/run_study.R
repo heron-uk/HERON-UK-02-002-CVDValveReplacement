@@ -15,6 +15,7 @@ logMessage(message = "LOG CREATED")
 study_period <- c(as.Date("2012-01-01"), as.Date(NA))
 sex <- TRUE
 age_groups <- list(c(0, 39), c(40, 64), c(65, 69), c(70, 74), c(75,79), c(80, 84), c(85, 150))
+source(here("analyses", "functions.R"))
 
 # Initialise list to store results as we go -----
 results <- list()
@@ -31,18 +32,21 @@ omopgenerics::logMessage(message = "Study cohorts instantiated")
 
 # Run analyses ----
 omopgenerics::logMessage(message = "Run study analyses")
-results[["procedures_code_use"]] <- CodelistGenerator::summariseCohortCodeUse(cdm[["proc_obj_one"]])
+# results[["code_use_indications"]]   <- CodelistGenerator::summariseCohortCodeUse(cdm$indications)
+# results[["code_use_procedures"]]    <- CodelistGenerator::summariseCohortCodeUse(cdm$procedures)
+# results[["code_use_comorbidities"]] <- CodelistGenerator::summariseCohortCodeUse(cdm$comorbidities)
+# results[["code_use_treatments"]]    <- CodelistGenerator::summariseCohortCodeUse(cdm$treatments)
 
 omopgenerics::logMessage(message = "Get cohort attrition")
-results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$proc) 
+results[["attrition_proc_one"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$proc_obj_one) 
+results[["attrition_proc"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$proc) 
 
 source(here::here("analyses", "1-ObjectiveOne.R"))
 
 source(here::here("analyses", "2-ObjectiveTwo.R"))
 
-source(here::here("analyses", "3-ObjectiveThree.R"))
+source(here::here("analyses", "3-ObjectiveThreeAndFour.R"))
 
-source(here::here("analyses", "4-ObjectiveFour.R"))
 omopgenerics::logMessage("Analyses finished")
 
 # Finish ----
