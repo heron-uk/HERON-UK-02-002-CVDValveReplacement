@@ -5,3 +5,4 @@
 diagnostics_code/results/*.csv
 diagnostics_shiny/data/*.qs
 diagnostics_shiny/data/raw/*.csv
+study_code/Results/*.csv

@@ -1,5 +1,8 @@
 source(here::here("analyses", "functions.R"))
 
+omopgenerics::logMessage(message = "Prepare data for multi state model")
+
+omopgenerics::logMessage(message = "Instanstiate healthy cohort")
 
 cdm$healthy <- CohortConstructor::demographicsCohort(cdm = cdm, ageRange = list(c(20, 150)), sex = "Both", name = "healthy") |>
   CohortConstructor::trimToDateRange(dateRange = c(as.Date("2011-12-31"), as.Date(NA))) |>
@@ -27,6 +30,9 @@ cdm$healthy <- CohortConstructor::demographicsCohort(cdm = cdm, ageRange = list(
 
   dplyr::compute(name = "healthy") 
 ### AS ----
+
+omopgenerics::logMessage(message = "Instanstiate transitions cohorts")
+
 cdm$multi_state_as <- cdm$healthy |> 
   
   PatientProfiles::addCohortIntersectDate(targetCohortTable = "study_cohorts", targetCohortId = "aortic_valve_replacement", nameStyle = "avr_date", order = "first") |>
@@ -48,6 +54,8 @@ cdm$multi_state_as <- cdm$healthy |>
     t_avr = clock::date_count_between(.data$cohort_start_date, .data$avr_date, precision = "day"), 
 
     t_death = dplyr::if_else(.data$status_avr == 1 & .data$status_death == 1 & .data$t_death == .data$t_avr, .data$t_death + 0.5, .data$t_death),
+    t_avr = dplyr::if_else(.data$status_as == 1 & .data$status_avr == 1 & .data$t_avr == .data$t_as, .data$t_avr + 0.25, .data$t_avr),
+    
     
   ) |>
   dplyr::filter(t_as > 0 & t_death > 0 & t_avr > 0 ) |>
@@ -112,6 +120,8 @@ cdm <- omopgenerics::bind(cdm$healthy_to_as, cdm$as_to_avr, cdm$healthy_to_death
 ### characterisation ----
 
 # starting population
+omopgenerics::logMessage(message = "Characterise healthy cohort")
+
 cdm$healthy_pop <- cdm$multi_state_as |> 
   CohortConstructor::subsetCohorts(cohortId = "healthy_to_as", name = "healthy_pop") |> 
   CohortConstructor::renameCohort(newCohortName = "healthy")
@@ -125,6 +135,9 @@ results[["characterisation_multi_state_healthy"]] <- CohortCharacteristics::summ
 
 # people making transitions 
 # summarise characteristics at time of transition (ie date of event)
+
+omopgenerics::logMessage(message = "Characterise transition cohorts")
+
 cdm$transitions <- cdm$multi_state_as |> 
   CohortConstructor::copyCohorts(name = "transitions") |> 
   filter(status == 1) |> 

@@ -17,10 +17,6 @@ cdm$study_cohorts_inc <- CohortConstructor::conceptCohort(cdm = cdm,
                                            exit = "event_start_date"
                                            ) |>
   CohortConstructor::requireIsFirstEntry() |>
-  CohortConstructor::requireConceptIntersect(conceptSet = codelist["aortic_valve_replacement"], 
-                                             cohortId = "aortic_stenosis", 
-                                             intersections = 0L, 
-                                             window = c(-Inf, 0)) |>
   CohortConstructor::exitAtObservationEnd(cohortId = c("aortic_stenosis")) |>
   CohortConstructor::requireConceptIntersect(conceptSet = codelist["aortic_stenosis"], 
                                              cohortId = "aortic_valve_replacement", 
@@ -29,6 +25,10 @@ cdm$study_cohorts_inc <- CohortConstructor::conceptCohort(cdm = cdm,
   
 
 cdm$study_cohorts <- cdm$study_cohorts_inc |>
+  CohortConstructor::requireConceptIntersect(conceptSet = codelist["aortic_valve_replacement"], 
+                                             cohortId = "aortic_stenosis", 
+                                             intersections = 0L, 
+                                             window = c(-Inf, -1)) |>
   CohortConstructor::requireAge(ageRange = list(c(20, Inf)), name = "study_cohorts") |>
   CohortConstructor::requireInDateRange(dateRange = study_period) |>
   addEthnicity() |>
