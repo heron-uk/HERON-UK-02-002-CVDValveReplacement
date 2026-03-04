@@ -1,0 +1,7 @@
+﻿CONCEPT_NAME,CONCEPT_ID,Ingredient,Include,atc
+Beta blocking agents,21601665,FALSE,TRUE,FALSE
+Diuretics,21601461,FALSE,TRUE,FALSE
+ACE inhibitors plain,21601784,FALSE,TRUE,FALSE
+Angiotensin II receptor blockers plain,21601823,FALSE,TRUE,FALSE
+Aldosterone antagonists,21601533,FALSE,TRUE,FALSE
+Sodium-glucose co-transporter 2 (SGLT2) inhibitors,1123627,FALSE,TRUE,TRUE
