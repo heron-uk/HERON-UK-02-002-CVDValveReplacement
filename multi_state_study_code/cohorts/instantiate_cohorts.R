@@ -31,15 +31,17 @@ cdm$study_cohorts <- cdm$study_cohorts_inc |>
 cdm$study_cohorts <- cdm$study_cohorts |>
   # we allow AS and AVR to occur on the same day
   CohortConstructor::requireCohortIntersect(
-    conceptSet = codelist["aortic_stenosis"],
     cohortId = "aortic_valve_replacement",
+    targetCohortTable = "study_cohorts_inc",
+    targetCohortId = "aortic_stenosis",
     intersections = c(1, Inf),
     window = c(-Inf, -1),
     name = "study_cohorts"
   ) |>
-  CohortConstructor::requireConceptIntersect(
-    conceptSet = codelist["aortic_valve_replacement"],
+  CohortConstructor::requireCohortIntersect(
     cohortId = "aortic_stenosis",
+    targetCohortTable = "study_cohorts_inc",
+    targetCohortId = "aortic_valve_replacement",
     intersections = 0L,
     window = c(-Inf, -1),
     name = "study_cohorts"

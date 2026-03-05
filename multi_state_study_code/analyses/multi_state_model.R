@@ -1,4 +1,3 @@
-source(here::here("analyses", "functions.R"))
 
 omopgenerics::logMessage(message = "Fit multi state model")
 

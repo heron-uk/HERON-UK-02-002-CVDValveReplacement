@@ -1,4 +1,3 @@
-source(here::here("analyses", "functions.R"))
 
 omopgenerics::logMessage(message = "Prepare data for multi state model")
 
