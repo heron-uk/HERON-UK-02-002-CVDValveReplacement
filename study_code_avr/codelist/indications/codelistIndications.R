@@ -7,7 +7,7 @@ exportCodelist(list("aortic_endocarditis" = getCandidateCodes(cdm_vocab_2025_08,
                type = "csv")
 
 x <- list("aortic_insufficiency" = getCandidateCodes(cdm_vocab_2025_08,
-                                                     keywords = "aortic insufficiency") |>
+                                                     keywords = c("aortic insufficiency", "aortic_regurgitation")) |>
             filter(vocabulary_id %in% "SNOMED")) |>
   newCodelistWithDetails()
 exc <- getDescendants(cdm = cdm_vocab_2025_08, conceptId = 320115) |> pull("concept_id")
