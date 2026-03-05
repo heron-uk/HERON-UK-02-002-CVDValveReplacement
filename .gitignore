@@ -8,3 +8,4 @@ diagnostics_shiny/data/raw/*.csv
 study_code_avr/code_to_run_local.R
 study_code/results/*.csv
 .DS_Store
+.DS_Store
