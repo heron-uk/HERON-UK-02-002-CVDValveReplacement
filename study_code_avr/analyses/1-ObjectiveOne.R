@@ -30,7 +30,8 @@ omopgenerics::logMessage(message = "Summarise characteristics")
 
 cols <- colnames(cdm[["proc_obj_one"]] )[which(grepl("indication_", colnames(cdm[["proc_obj_one"]])))]
 results[["objective_one"]] <- summariseCharacteristics(cdm[["proc_obj_one"]], 
-                                                       demographics = FALSE, 
+                                                       demographics = FALSE,
+                                                       ageGroup = list(c(0,64), c(65, 150)),
                                                        strata = "calendar_year",
                                                        otherVariables = cols)
 omopgenerics::logMessage(message = "OBJECTIVE 1 FINISHED")

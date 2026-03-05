@@ -29,19 +29,68 @@ cdm[["aortic_endocarditis"]] <- CohortConstructor::conceptCohort(cdm = cdm,
 
 cdm <- bind(cdm[["aortic_stenosis"]], cdm[["aortic_insufficiency"]], cdm[["aortic_endocarditis"]], name = "indications")
 
+omopgenerics::logMessage(message = "Incidence cohorts") # ----
+cdm[["incidence_aortic_stenosis"]] <- CohortConstructor::conceptCohort(cdm = cdm, 
+                                                                       conceptSet = c(codelist["aortic_stenosis"]), 
+                                                                       name = "incidence_aortic_stenosis", 
+                                                                       exit = "event_start_date")
+
 # Aortic valve replacement -----
 omopgenerics::logMessage(message = "Instantiating AVR")
+
+omopgenerics::logMessage(message = "Incidence cohorts") # ----
 codelist <- importCodelist(path = here("codelist"), type = "csv")
 
-omopgenerics::logMessage(message = "- Objective 1")
+cdm$incidence_avr <- CohortConstructor::conceptCohort(cdm = cdm, 
+                                            conceptSet = c(codelist["aortic_valve_replacement"]), 
+                                            name = "incidence_avr", 
+                                            exit = "event_start_date") 
+
+cdm$incidence_tavi_from_additional <- cdm$incidence_avr |>
+  requireConceptIntersect(conceptSet = codelist["tavi_additional"],
+                          window = c(0, 0),
+                          name = "incidence_tavi_from_additional")
+
+cdm$incidence_tavi_direct <- conceptCohort(cdm = cdm,
+                                 name = "incidence_tavi_direct",
+                                 conceptSet = codelist["tavi"],
+                                 exit = "event_start_date") 
+
+cdm <- bind(cdm$incidence_tavi_from_additional,
+            cdm$incidence_tavi_direct,
+            name = "incidence_tavi")
+
+cdm$incidence_tavi <- unionCohorts(cdm$incidence_tavi) |>
+  renameCohort("incidence_tavi")
+
+cdm$incidence_savr <- cdm$incidence_avr |>
+  requireCohortIntersect(targetCohortTable = "incidence_tavi",
+                         window = c(0, 0),
+                         intersections = c(0, 0),
+                         name = "incidence_savr") |>
+  renameCohort("incidence_savr")
+
+if (dbName == "CPRD GOLD") {
+  cdm <- bind(cdm[["incidence_savr"]], cdm[["incidence_tavi"]], cdm[["incidence_avr"]], name = "incidence_procedures")
+} else {
+  cdm <- bind(cdm[["incidence_savr"]], cdm[["incidence_tavi"]], name = "incidence_procedures")
+}
+
+cdm$incidence_procedures <- cdm$incidence_procedures |>
+  requireCohortIntersect(targetCohortTable = "incidence_aortic_stenosis",
+                         window = c(-Inf, 0),
+                         intersections = c(1, Inf),
+                         name = "incidence_procedures") 
+
+omopgenerics::logMessage(message = "Objective 1") # ----
+# TAVI cohort
 cdm$avr <- CohortConstructor::conceptCohort(cdm = cdm, 
                                             conceptSet = c(codelist["aortic_valve_replacement"]), 
                                             name = "avr", 
                                             exit = "event_start_date") |>
-  CohortConstructor::requireIsLastEntry() |>
+  CohortConstructor::requireIsFirstEntry() |>
   CohortConstructor::requireInDateRange(dateRange = study_period)
 
-# TAVI cohort
 cdm$tavi_from_additional <- cdm$avr |>
   requireConceptIntersect(conceptSet = codelist["tavi_additional"],
                           window = c(0, 0),
@@ -50,7 +99,9 @@ cdm$tavi_from_additional <- cdm$avr |>
 cdm$tavi_direct <- conceptCohort(cdm = cdm,
                                  name = "tavi_direct",
                                  conceptSet = codelist["tavi"],
-                                 exit = "event_start_date")
+                                 exit = "event_start_date") |>
+  CohortConstructor::requireIsFirstEntry() |>
+  CohortConstructor::requireInDateRange(dateRange = study_period)
 
 cdm <- bind(cdm$tavi_from_additional,
             cdm$tavi_direct,
@@ -72,13 +123,14 @@ if (dbName == "CPRD GOLD") {
   cdm <- bind(cdm[["savr"]], cdm[["tavi"]], name = "proc_obj_one")
 }
 
-omopgenerics::logMessage(message = "- Other objectives")
+omopgenerics::logMessage(message = "Other objectives")
 cdm[["proc"]] <- cdm[["proc_obj_one"]] |>
   copyCohorts(name = "proc")
 
 cdm[["proc"]] <- cdm[["proc"]] |>
   requireCohortIntersect(targetCohortTable = "aortic_stenosis",
-                         window = c(-Inf, 0))
+                         window = c(-Inf, 0),
+                         intersections = c(1, Inf))
 
 cdm[["proc"]] <- cdm[["proc"]] |>
   addDemographics(age = TRUE,
