@@ -18,9 +18,9 @@ omopgenerics::logMessage("Surgical interventions survival analysis complete")
 # Analysis 4: Mortality survival ----
 omopgenerics::logMessage("Running mortality survival analysis")
 
-# Create death cohort restricted to study cohorts
+# Create death cohort
 omopgenerics::logMessage("Creating death cohort")
-cdm <- CohortConstructor::deathCohort(cdm, name = "death_cohort", subsetCohort = "study_cohorts")
+cdm <- CohortConstructor::deathCohort(cdm, name = "death_cohort")
 
 # Estimate mortality survival
 results[["survival_mortality"]] <- CohortSurvival::estimateSingleEventSurvival(
