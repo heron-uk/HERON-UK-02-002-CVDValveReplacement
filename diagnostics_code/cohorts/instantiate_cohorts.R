@@ -1,25 +1,27 @@
 
-codes <- importCodelist(here::here("cohorts", "codelists"), "csv")
-# procedures
+study_codes <- importCodelist(here::here("cohorts", "study_codelists"), "csv")
+comorbidity_codes <- importCodelist(here::here("cohorts", "study_codelists"), "csv")
+
+# procedures -----
 cdm$aortic_valve_replacement <- conceptCohort(cdm = cdm,
                                               name = "aortic_valve_replacement",
-                                              conceptSet = list(aortic_valve_replacement = codes$aortic_valve_replacement),
+                                              conceptSet = list(aortic_valve_replacement = study_codes$aortic_valve_replacement),
                                               exit = "event_start_date")
 
 # tavi is either based on additional codes for a avr, or from tavi specific codes
 cdm$aortic_valve_replacement_potential_tavi <- conceptCohort(cdm = cdm,
                                               name = "aortic_valve_replacement_potential_tavi",
                                               conceptSet = list(aortic_valve_replacement_potential_tavi =
-                                                                  codes$aortic_valve_replacement_potential_tavi),
+                                                                  study_codes$aortic_valve_replacement_potential_tavi),
                                               exit = "event_start_date")
 
 cdm$tavi_from_additional <- cdm$aortic_valve_replacement_potential_tavi |>
-    requireConceptIntersect(conceptSet = list(tavi_additional = codes$tavi_additional),
+    requireConceptIntersect(conceptSet = list(tavi_additional = study_codes$tavi_additional),
                           window = c(0, 0),
                           name = "tavi_from_additional")
 cdm$tavi_direct <- conceptCohort(cdm = cdm,
                                  name = "tavi_direct",
-                                 conceptSet = list(tavi = codes$tavi),
+                                 conceptSet = list(tavi = study_codes$tavi),
                                  exit = "event_start_date")
 
 cdm <- bind(cdm$tavi_from_additional,
@@ -42,13 +44,13 @@ cdm$pediatric_aortic_valve_replacement <- cdm$aortic_valve_replacement |>
   renameCohort(newCohortName = "pediatric_aortic_valve_replacement")
 
 
-# conditions
+# conditions -----
 cdm$avd <- conceptCohort(cdm = cdm,
                     name = "avd",
-                    conceptSet = list(aortic_stenosis = codes$aortic_stenosis,
-                                      aortic_valve_disease = codes$aortic_valve_disease,
-                                      aortic_insufficiency = codes$aortic_insufficiency,
-                                      aortic_endocarditis = codes$aortic_endocarditis),
+                    conceptSet = list(aortic_stenosis = study_codes$aortic_stenosis,
+                                      aortic_valve_disease = study_codes$aortic_valve_disease,
+                                      aortic_insufficiency = study_codes$aortic_insufficiency,
+                                      aortic_endocarditis = study_codes$aortic_endocarditis),
                     exit = "event_start_date") |>
   exitAtObservationEnd()
 
@@ -64,9 +66,19 @@ cdm$congenital_avd <- cdm$avd |>
   renameCohort(newCohortName = "congenital_aortic_endocarditis",
                cohortId = "aortic_endocarditis")
 
+# comorbidities -----
+cdm$comorbidities <- conceptCohort(cdm = cdm,
+                         name = "comorbidities",
+                         conceptSet = comorbidity_codes,
+                         exit = "event_start_date") |>
+  exitAtObservationEnd()
+
+# bind -----
 cdm <- bind(cdm$aortic_valve_replacement,
             cdm$tavi,
             cdm$savr,
             cdm$avd,
             cdm$congenital_avd,
+            cdm$comorbidities,
             name = "study_cohorts")
+
