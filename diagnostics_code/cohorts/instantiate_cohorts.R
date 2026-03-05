@@ -7,7 +7,13 @@ cdm$aortic_valve_replacement <- conceptCohort(cdm = cdm,
                                               exit = "event_start_date")
 
 # tavi is either based on additional codes for a avr, or from tavi specific codes
-cdm$tavi_from_additional <- cdm$aortic_valve_replacement |>
+cdm$aortic_valve_replacement_potential_tavi <- conceptCohort(cdm = cdm,
+                                              name = "aortic_valve_replacement_potential_tavi",
+                                              conceptSet = list(aortic_valve_replacement_potential_tavi =
+                                                                  codes$aortic_valve_replacement_potential_tavi),
+                                              exit = "event_start_date")
+
+cdm$tavi_from_additional <- cdm$aortic_valve_replacement_potential_tavi |>
     requireConceptIntersect(conceptSet = list(tavi_additional = codes$tavi_additional),
                           window = c(0, 0),
                           name = "tavi_from_additional")
@@ -29,6 +35,12 @@ cdm$savr <- cdm$aortic_valve_replacement |>
                          intersections = c(0, 0),
                          name = "savr") |>
   renameCohort("savr")
+
+cdm$pediatric_aortic_valve_replacement <- cdm$aortic_valve_replacement |>
+  requireAge(ageRange = c(0, 17),
+             name = "pediatric_aortic_valve_replacement") |>
+  renameCohort(newCohortName = "pediatric_aortic_valve_replacement")
+
 
 # conditions
 cdm$avd <- conceptCohort(cdm = cdm,

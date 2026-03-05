@@ -22,11 +22,22 @@ cdm_vocab_2025_08$concept |>
 aortic_valve_replacement <- list(
   aortic_valve_replacement = opcs4_to_standard(aortic_valve_replacement_opcs4)) |>
   omopgenerics::newCodelist()
+
+aortic_valve_replacement_potential_tavi <- aortic_valve_replacement |>
+  excludeConcepts(cdm_vocab_2025_08,
+                  concepts = c(4018560,
+                               4018561,
+                               4141013,
+                               44510982))
+names(aortic_valve_replacement_potential_tavi) <- "aortic_valve_replacement_potential_tavi"
+
 tavi_additional <- list(
   tavi_additional = opcs4_to_standard(tavi_additional_opcs4)) |>
   omopgenerics::newCodelist()
 
 omopgenerics::exportCodelist(aortic_valve_replacement,
+                             here::here("cohorts", "codelists"), "csv")
+omopgenerics::exportCodelist(aortic_valve_replacement_potential_tavi,
                              here::here("cohorts", "codelists"), "csv")
 omopgenerics::exportCodelist(tavi_additional,
                              here::here("cohorts", "codelists"), "csv")
