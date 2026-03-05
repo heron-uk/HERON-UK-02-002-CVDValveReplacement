@@ -31,7 +31,6 @@ source(here("cohorts", "instantiate_cohorts.R"))
 cdm$study_cohorts <- cdm$study_cohorts |>
   CohortConstructor::requireInDateRange(
     dateRange = study_period,
-    cohortDateRange = "cohort_start_date",
     name = "study_cohorts"
   )
 
