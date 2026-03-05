@@ -1,6 +1,6 @@
 
 study_codes <- importCodelist(here::here("cohorts", "study_codelists"), "csv")
-comorbidity_codes <- importCodelist(here::here("cohorts", "study_codelists"), "csv")
+comorbidity_codes <- importCodelist(here::here("cohorts", "comorbidity_codelists"), "csv")
 
 # procedures -----
 cdm$aortic_valve_replacement <- conceptCohort(cdm = cdm,
