@@ -7,3 +7,4 @@ diagnostics_shiny/data/*.qs
 diagnostics_shiny/data/raw/*.csv
 study_code_avr/code_to_run_local.R
 study_code/Results/*.csv
+.DS_Store
