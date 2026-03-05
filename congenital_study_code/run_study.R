@@ -41,8 +41,10 @@ results[["code_use"]] <- summariseCohortCodeUse(
 )
 
 # Cohort counts and attrition ----
-# results[["counts"]] <- summariseCohortCount("...")
-# results[["attrition"]] <- summariseCohortAttrition("...")
+results[["counts"]] <- summariseCohortCount(cdm$study_cohorts, 
+                                            minCellCount = min_cell_count)
+results[["attrition"]] <- summariseCohortAttrition(cdm$study_cohorts, 
+                                                    minCellCount = min_cell_count)
 
 # Run analyses ----
 logMessage("Run study analyses")
