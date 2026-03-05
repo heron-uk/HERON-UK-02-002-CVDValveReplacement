@@ -15,8 +15,7 @@ results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharact
       tableName = "condition_occurrence",
       window = c(-Inf, -1)
     )
-  ),
-  minCellCount = min_cell_count
+  )
 )
 
 omopgenerics::logMessage("Baseline characteristics analysis complete")
@@ -39,8 +38,7 @@ results[["large_scale_characteristics"]] <- CohortCharacteristics::summariseLarg
     "procedure_occurrence",
     "device_exposure"
   ),
-  episodeInWindow = "drug_exposure",
-  minCellCount = min_cell_count
+  episodeInWindow = "drug_exposure"
 )
 
 omopgenerics::logMessage("Large scale characteristics analysis complete")

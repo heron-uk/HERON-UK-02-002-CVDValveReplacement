@@ -37,22 +37,14 @@ cdm$study_cohorts <- cdm$study_cohorts |>
 omopgenerics::logMessage("Study cohorts instantiated")
 
 
-# Cohort code use ----
-results[["code_use"]] <- CohortCharacteristics::summariseCohortCodeUse(
-  list(
-    congenital_aortic_stenosis = codes$aortic_stenosis,
-    congenital_aortic_valve_disease = codes$aortic_valve_disease,
-    avr = codes$aortic_valve_replacement
-  ),
-  cdm = cdm,
-  cohortTable = "study_cohorts"
+# Cohort codelist ----
+results[["codelist"]] <- CohortCharacteristics::summariseCohortCodelist(
+  cohort = cdm$study_cohorts
 )
 
 # Cohort counts and attrition ----
-results[["counts"]] <- CohortCharacteristics::summariseCohortCount(cdm$study_cohorts, 
-                                            minCellCount = min_cell_count)
-results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$study_cohorts, 
-                                                    minCellCount = min_cell_count)
+results[["counts"]] <- CohortCharacteristics::summariseCohortCount(cdm$study_cohorts)
+results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$study_cohorts)
 
 # Run analyses ----
 omopgenerics::logMessage("Run study analyses")
