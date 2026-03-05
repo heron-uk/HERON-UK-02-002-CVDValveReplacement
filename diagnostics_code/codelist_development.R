@@ -51,15 +51,45 @@ avd <- getCandidateCodes(cdm_vocab_2025_08,
                          domains = c("condition"),
                          keywords = c("aortic valve disease",
                                       "aortic stenosis",
-                                      "valve regurgitation"),
+                                      "valve regurgitation", 
+                                      "aortic endocarditis",
+                                      "aortic insufficiency",
+                                      "aortic regurgitation"),
                          searchInSynonyms = TRUE,
                          includeDescendants = TRUE)
+avd <- avd |>
+  filter(vocabulary_id %in% "SNOMED")
+
+re <- read_xlsx(here::here("~/HERON-UK-02-002-CVDValveReplacement/diagnostics_code/aortic_valve_disease_codes_reviewed.xlsx"), sheet = 1) |>
+  filter(vocabulary_id %in% "SNOMED")
+
+avd |>
+  full_join(re) |>
+  full_join(
+    tibble(
+      "aortic_endocarditis" = c("T"),
+      "concept_id" = c(318689, 42539157, 43020882, 45766095)
+    )
+  ) |>
+  full_join(
+    tibble(
+      "aortic_insufficiency" = c("T"),
+      "concept_id" = c(315564, 320429,321041, 321107, 439834 , 3654798,  3654799,  3654800,  4108596,  4108659,  4111099,  4111409,  4119589,
+                       4189522,  4215619,  4244437,  4353740 , 4354063, 37163275, 43021945, 45766080, 45766124, 45766136 ,45766186,
+                       45766210, 45766211, 45771321, 45771326)
+    )
+  ) |> mutate(across(starts_with("aortic"), ~coalesce(., "F")))
+
+
 write_xlsx(list("codes_for_review" = avd |>
                   mutate(aortic_valve_disease = NA_character_,
-                         aortic_stenosis = NA_character_)),
+                         aortic_stenosis = NA_character_,
+                         aortic_endocarditis = NA_character_,
+                         aortic_insufficiency = NA_character_)),
            "aortic_valve_disease_codes_for_review.xlsx")
 
 # codes reviewed
+
 
 library(readxl)
 avd_reviewed <- read_xlsx(here::here("aortic_valve_disease_codes_reviewed.xlsx"), sheet = 1)
