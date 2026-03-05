@@ -46,7 +46,9 @@ cdm$pediatric_aortic_valve_replacement <- cdm$aortic_valve_replacement |>
 cdm$avd <- conceptCohort(cdm = cdm,
                     name = "avd",
                     conceptSet = list(aortic_stenosis = codes$aortic_stenosis,
-                                      aortic_valve_disease = codes$aortic_valve_disease),
+                                      aortic_valve_disease = codes$aortic_valve_disease,
+                                      aortic_insufficiency = codes$aortic_insufficiency,
+                                      aortic_endocarditis = codes$aortic_endocarditis),
                     exit = "event_start_date") |>
   exitAtObservationEnd()
 
@@ -57,7 +59,11 @@ cdm$congenital_avd <- cdm$congenital_avd |>
   renameCohort(newCohortName = "congenital_aortic_stenosis",
                cohortId = "aortic_stenosis") |>
   renameCohort(newCohortName = "congenital_aortic_valve_disease",
-               cohortId = "aortic_valve_disease")
+               cohortId = "aortic_valve_disease") |>
+  renameCohort(newCohortName = "congenital_aortic_insufficiency",
+               cohortId = "aortic_insufficiency") |>
+  renameCohort(newCohortName = "congenital_aortic_endocarditis",
+               cohortId = "aortic_aortic_endocarditis")
 
 cdm <- bind(cdm$aortic_valve_replacement,
             cdm$tavi,
