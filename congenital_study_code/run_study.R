@@ -28,7 +28,7 @@ omopgenerics::logMessage("Instantiating study cohorts")
 source(here("cohorts", "instantiate_cohorts.R"))
 
 # Apply study period restriction
-cdm$study_cohorts <- cdm$study_cohorts |>
+cdm <- cdm$study_cohorts |>
   CohortConstructor::requireInDateRange(
     dateRange = study_period,
     name = "study_cohorts"
