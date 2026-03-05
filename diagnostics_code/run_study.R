@@ -4,14 +4,13 @@ if(!dir.exists(resultsFolder)){
   dir.create(resultsFolder)
 }
 
-createLogFile(logFile = tempfile(pattern = "log_{date}_{time}"))
+omopgenerics::createLogFile(logFile = here::here("results", "log_{date}_{time}"))
 logMessage("LOG CREATED")
 
 # run ----
 source(here("cohorts","instantiate_cohorts.R"))
 diagnostics <- phenotypeDiagnostics(cdm$study_cohorts,
-                          populationDateRange = as.Date(c("2012-01-01",
-                                                          NA)))
+                          populationDateRange = as.Date(c("2012-01-01", NA)))
 exportSummarisedResult(diagnostics,
                        minCellCount = minCellCount,
                        fileName = "phenotyper_results_{cdm_name}_{date}.csv",

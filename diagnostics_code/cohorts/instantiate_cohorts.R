@@ -54,8 +54,7 @@ cdm$avd <- conceptCohort(cdm = cdm,
 
 cdm$congenital_avd <- cdm$avd |>
   requireAge(ageRange = c(0, 17),
-             name = "congenital_avd")
-cdm$congenital_avd <- cdm$congenital_avd |>
+             name = "congenital_avd") |>
   renameCohort(newCohortName = "congenital_aortic_stenosis",
                cohortId = "aortic_stenosis") |>
   renameCohort(newCohortName = "congenital_aortic_valve_disease",
@@ -63,7 +62,7 @@ cdm$congenital_avd <- cdm$congenital_avd |>
   renameCohort(newCohortName = "congenital_aortic_insufficiency",
                cohortId = "aortic_insufficiency") |>
   renameCohort(newCohortName = "congenital_aortic_endocarditis",
-               cohortId = "aortic_aortic_endocarditis")
+               cohortId = "aortic_endocarditis")
 
 cdm <- bind(cdm$aortic_valve_replacement,
             cdm$tavi,
