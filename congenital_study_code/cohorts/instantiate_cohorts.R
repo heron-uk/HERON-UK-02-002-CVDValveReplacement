@@ -1,25 +1,50 @@
 codes <- importCodelist(here::here("cohorts", "codelists"), "csv")
 
-# conditions: AS + AVD
-cdm$avd <- conceptCohort(
+cdm$congenital_aortic_stenosis <- conceptCohort(
   cdm = cdm,
-  name = "avd",
+  name = "congenital_aortic_stenosis",
   conceptSet = list(
-    aortic_stenosis = codes$aortic_stenosis,
-    aortic_valve_disease = codes$aortic_valve_disease
+    congenital_aortic_stenosis = codes$aortic_stenosis
+  ),
+  exit = "event_start_date"
+) |>
+  requireIsFirstEntry() |>
+  exitAtObservationEnd() |>
+  requireAge(ageRange = c(0, 17), name = "congenital_aortic_stenosis")
+
+cdm$congenital_aortic_valve_disease <- conceptCohort(
+  cdm = cdm,
+  name = "congenital_aortic_valve_disease",
+  conceptSet = list(
+    congenital_aortic_valve_disease = codes$aortic_valve_disease
+  ),
+  exit = "event_start_date"
+) |>
+  requireIsFirstEntry() |>
+  exitAtObservationEnd() |>
+  requireAge(ageRange = c(0, 17), name = "congenital_aortic_valve_disease")
+
+# Bind the final two cohorts matching the specification
+cdm$study_cohorts <- bind(
+  cdm$congenital_aortic_stenosis,
+  cdm$congenital_aortic_valve_disease,
+  name = "study_cohorts"
+)
+
+# Intervention cohorts for survival analysis 
+# AVR intervention (all ages, no restriction)
+cdm$intervention_cohorts <- conceptCohort(
+  cdm = cdm,
+  name = "intervention_cohorts",
+  conceptSet = list(
+    avr = codes$aortic_valve_replacement
   ),
   exit = "event_start_date"
 ) |>
   exitAtObservationEnd()
 
-#  congenital and pediatric subset
-cdm$congenital_avd <- cdm$avd |>
-  requireAge(ageRange = c(0, 17), name = "congenital_avd") |>
-  renameCohort(newCohortName = "congenital_aortic_stenosis", cohortId = "aortic_stenosis") |>
-  renameCohort(newCohortName = "congenital_aortic_valve_disease", cohortId = "aortic_valve_disease")
-
-cdm <- bind(
-  cdm$avd,
-  cdm$congenital_avd,
-  name = "study_cohorts"
+# Death cohort for survival analysis 
+cdm$death_cohort <- generateDeathCohortSet(
+  cdm = cdm,
+  name = "death_cohort"
 )

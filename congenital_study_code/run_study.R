@@ -28,6 +28,18 @@ logMessage("Instantiating study cohorts")
 source(here("cohorts", "instantiate_cohorts.R"))
 logMessage("Study cohorts instantiated")
 
+
+# Cohort code use ----
+results[["code_use"]] <- summariseCohortCodeUse(
+  list(
+    congenital_aortic_stenosis = codes$aortic_stenosis,
+    congenital_aortic_valve_disease = codes$aortic_valve_disease,
+    avr = codes$aortic_valve_replacement
+  ),
+  cdm = cdm,
+  cohortTable = "study_cohorts"
+)
+
 # Cohort counts and attrition ----
 # results[["counts"]] <- summariseCohortCount("...")
 # results[["attrition"]] <- summariseCohortAttrition("...")
@@ -35,7 +47,7 @@ logMessage("Study cohorts instantiated")
 # Run analyses ----
 logMessage("Run study analyses")
 source(here("analyses", "cohort_characteristics.R"))
-source(here("analyses", "incidence_prevalence.R"))
+source(here("analyses", "survival_analyses.R"))
 logMessage("Analyses finished")
 
 # Capture log file ----
