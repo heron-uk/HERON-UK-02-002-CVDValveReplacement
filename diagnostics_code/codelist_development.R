@@ -40,9 +40,14 @@ avd <- getCandidateCodes(cdm_vocab_2025_08,
                          domains = c("condition"),
                          keywords = c("aortic valve disease",
                                       "aortic stenosis",
-                                      "valve regurgitation"),
+                                      "valve regurgitation", 
+                                      "aortic endocarditis",
+                                      "aortic insufficiency"),
                          searchInSynonyms = TRUE,
                          includeDescendants = TRUE)
+avd <- avd |>
+  filter(vocabulary_id %in% "SNOMED")
+
 write_xlsx(list("codes_for_review" = avd |>
                   mutate(aortic_valve_disease = NA_character_,
                          aortic_stenosis = NA_character_)),
