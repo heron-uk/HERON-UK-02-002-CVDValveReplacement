@@ -25,7 +25,7 @@ cdm$congenital_aortic_valve_disease <- conceptCohort(
   requireAge(ageRange = c(0, 17), name = "congenital_aortic_valve_disease")
 
 # Bind the final two cohorts matching the specification
-cdm$study_cohorts <- bind(
+cdm <- bind(
   cdm$congenital_aortic_stenosis,
   cdm$congenital_aortic_valve_disease,
   name = "study_cohorts"
