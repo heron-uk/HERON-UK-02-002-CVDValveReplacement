@@ -38,8 +38,18 @@ cdm$avd <- conceptCohort(cdm = cdm,
                     exit = "event_start_date") |>
   exitAtObservationEnd()
 
+cdm$congenital_avd <- cdm$avd |>
+  requireAge(ageRange = c(0, 17),
+             name = "congenital_avd")
+cdm$congenital_avd <- cdm$congenital_avd |>
+  renameCohort(newCohortName = "congenital_aortic_stenosis",
+               cohortId = "aortic_stenosis") |>
+  renameCohort(newCohortName = "congenital_aortic_valve_disease",
+               cohortId = "aortic_valve_disease")
+
 cdm <- bind(cdm$aortic_valve_replacement,
             cdm$tavi,
             cdm$savr,
             cdm$avd,
+            cdm$congenital_avd,
             name = "study_cohorts")
