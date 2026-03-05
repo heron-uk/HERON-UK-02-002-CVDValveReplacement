@@ -1,33 +1,35 @@
 # Surgical interventions survival ----
-logMessage("Running surgical interventions survival analysis")
+omopgenerics::logMessage("Running surgical interventions survival analysis")
 
 # AVR intervention survival (up to 2 years)
-logMessage("Analyzing AVR intervention survival")
-results[["survival_avr_intervention"]] <- summariseSingleEventSurvival(
+omopgenerics::logMessage("Analyzing AVR intervention survival")
+results[["survival_avr_intervention"]] <- CohortSurvival::estimateSingleEventSurvival(
   cdm = cdm,
   targetCohortTable = "study_cohorts",
   targetCohortId = c(1, 2),  # congenital AS and AVD
   outcomeCohortTable = "intervention_cohorts",
   outcomeCohortId = 1,  # AVR intervention
   outcomeWashout = Inf,  # first event only
-  followUpDays = 730,  # 2 years
-  minCellCount = min_cell_count
+  followUpDays = 730  # 2 years
 )
 
-logMessage("Surgical interventions survival analysis complete")
+omopgenerics::logMessage("Surgical interventions survival analysis complete")
 
 # Analysis 4: Mortality survival ----
-logMessage("Running mortality survival analysis")
+omopgenerics::logMessage("Running mortality survival analysis")
 
-results[["survival_mortality"]] <- summariseSingleEventSurvival(
+# Create death cohort restricted to study cohorts
+omopgenerics::logMessage("Creating death cohort")
+cdm <- CohortConstructor::deathCohort(cdm, name = "death_cohort", subsetCohort = "study_cohorts")
+
+# Estimate mortality survival
+results[["survival_mortality"]] <- CohortSurvival::estimateSingleEventSurvival(
   cdm = cdm,
   targetCohortTable = "study_cohorts",
   targetCohortId = c(1, 2),  # congenital AS and AVD
   outcomeCohortTable = "death_cohort",
-  outcomeCohortId = 1,  # death
-  outcomeWashout = Inf,  # first death (should only be one anyway)
-  followUpDays = 730,  # 2 years
-  minCellCount = min_cell_count
+  outcomeWashout = Inf,  # first death only
+  followUpDays = 730  # 2 years
 )
 
-logMessage("Mortality survival analysis complete")
+omopgenerics::logMessage("Mortality survival analysis complete")

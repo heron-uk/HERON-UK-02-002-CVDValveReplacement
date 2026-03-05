@@ -1,6 +1,6 @@
-codes <- importCodelist(here::here("cohorts", "codelists"), "csv")
+codes <- CodelistGenerator::importCodelist(here::here("cohorts", "codelists"), "csv")
 
-cdm$congenital_aortic_stenosis <- conceptCohort(
+cdm$congenital_aortic_stenosis <- CohortConstructor::conceptCohort(
   cdm = cdm,
   name = "congenital_aortic_stenosis",
   conceptSet = list(
@@ -8,11 +8,11 @@ cdm$congenital_aortic_stenosis <- conceptCohort(
   ),
   exit = "event_start_date"
 ) |>
-  requireIsFirstEntry() |>
-  exitAtObservationEnd() |>
-  requireAge(ageRange = c(0, 17), name = "congenital_aortic_stenosis")
+  CohortConstructor::requireIsFirstEntry() |>
+  CohortConstructor::exitAtObservationEnd() |>
+  CohortConstructor::requireAge(ageRange = c(0, 17), name = "congenital_aortic_stenosis")
 
-cdm$congenital_aortic_valve_disease <- conceptCohort(
+cdm$congenital_aortic_valve_disease <- CohortConstructor::conceptCohort(
   cdm = cdm,
   name = "congenital_aortic_valve_disease",
   conceptSet = list(
@@ -20,12 +20,12 @@ cdm$congenital_aortic_valve_disease <- conceptCohort(
   ),
   exit = "event_start_date"
 ) |>
-  requireIsFirstEntry() |>
-  exitAtObservationEnd() |>
-  requireAge(ageRange = c(0, 17), name = "congenital_aortic_valve_disease")
+  CohortConstructor::requireIsFirstEntry() |>
+  CohortConstructor::exitAtObservationEnd() |>
+  CohortConstructor::requireAge(ageRange = c(0, 17), name = "congenital_aortic_valve_disease")
 
 # Bind the final two cohorts matching the specification
-cdm <- bind(
+cdm <- omopgenerics::bind(
   cdm$congenital_aortic_stenosis,
   cdm$congenital_aortic_valve_disease,
   name = "study_cohorts"
@@ -33,7 +33,7 @@ cdm <- bind(
 
 # Intervention cohorts for survival analysis 
 # AVR intervention (all ages, no restriction)
-cdm$intervention_cohorts <- conceptCohort(
+cdm$intervention_cohorts <- CohortConstructor::conceptCohort(
   cdm = cdm,
   name = "intervention_cohorts",
   conceptSet = list(
@@ -41,10 +41,4 @@ cdm$intervention_cohorts <- conceptCohort(
   ),
   exit = "event_start_date"
 ) |>
-  exitAtObservationEnd()
-
-# Death cohort for survival analysis 
-cdm$death_cohort <- generateDeathCohortSet(
-  cdm = cdm,
-  name = "death_cohort"
-)
+  CohortConstructor::exitAtObservationEnd()

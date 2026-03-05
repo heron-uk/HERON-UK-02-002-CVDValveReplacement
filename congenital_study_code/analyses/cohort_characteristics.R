@@ -1,7 +1,7 @@
 # Baseline characteristics of congenital AS/AVD ----
-logMessage("Running baseline characteristics analysis")
+omopgenerics::logMessage("Running baseline characteristics analysis")
 
-results[["baseline_characteristics"]] <- summariseCharacteristics(
+results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharacteristics(
   cdm$study_cohorts,
   cohortId = c(1, 2),  # congenital AS and AVD only (not AVR procedure)
   ageGroup = list(
@@ -19,12 +19,12 @@ results[["baseline_characteristics"]] <- summariseCharacteristics(
   minCellCount = min_cell_count
 )
 
-logMessage("Baseline characteristics analysis complete")
+omopgenerics::logMessage("Baseline characteristics analysis complete")
 
 # Large scale characteristics of congenital AS/AVD ----
-logMessage("Running large scale characteristics analysis")
+omopgenerics::logMessage("Running large scale characteristics analysis")
 
-results[["large_scale_characteristics"]] <- summariseLargeScaleCharacteristics(
+results[["large_scale_characteristics"]] <- CohortCharacteristics::summariseLargeScaleCharacteristics(
   cdm$study_cohorts,
   cohortId = c(1, 2),  # congenital AS and AVD only
   window = list(
@@ -43,4 +43,4 @@ results[["large_scale_characteristics"]] <- summariseLargeScaleCharacteristics(
   minCellCount = min_cell_count
 )
 
-logMessage("Large scale characteristics analysis complete")
+omopgenerics::logMessage("Large scale characteristics analysis complete")
