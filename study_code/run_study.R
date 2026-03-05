@@ -42,7 +42,7 @@ results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$st
 
 source(here::here("analyses", "incidence_prevalence.R"))
 
-source(here::here("analyses", "data_preparation.R"))
+source(here::here("analyses", "multi_state_data_preparation.R"))
 
 source(here::here("analyses", "multi_state_model.R"))
 omopgenerics::logMessage("Analyses finished")

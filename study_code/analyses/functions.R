@@ -121,10 +121,9 @@ hr_summary <- function(model, transition, model_name) {
         stringr::str_remove(variable, "\\.[0-9]+$"),
         variable
       )
-    ) |>
+    ) |> 
     clean_variables(var_col = "variable_name") |>
     dplyr::inner_join(p_res, by = c("variable_name" = "variable")) |>
-    
     dplyr::mutate(
       transition = transition, 
       model_name = model_name,
@@ -132,6 +131,7 @@ hr_summary <- function(model, transition, model_name) {
     package_name = "HERON-UK-02-002-CVDValveReplacement"
     ) |>
     dplyr::mutate(cdm_name = cdmName(cdm)) |> 
+    dplyr::select(!any_of(c("rel_age", "variable"))) |> 
     omopgenerics::transformToSummarisedResult(group = "transition", 
                                               estimates = c("hazard_ratio", "se_coef", "lower_hr", "upper_hr", "p_value"), 
                                               additional = "model_name",
@@ -192,7 +192,7 @@ hr_summary_age_model <-function(model,
               lower_hr=exp(`Lower 0.95`),
               upper_hr=exp(`Upper 0.95`), 
               ) %>% 
-        dplyr::mutate(ref_age = reference_age,
+        dplyr::mutate(ref_age = as.character(reference_age),
                rel_age=comparison_age[i]) %>% 
         dplyr::select( "hazard_ratio", "se_coef" = "S.E.", "lower_hr", "upper_hr", "ref_age", "rel_age")
       working_summary$aic<-stats::AIC({{model}})
@@ -214,6 +214,7 @@ hr_summary_age_model <-function(model,
       package_version = "1.0"
     )|>
     dplyr::mutate(cdm_name = cdmName(cdm)) |> 
+    dplyr::select(!any_of(c("rel_age", "variable"))) |> 
     omopgenerics::transformToSummarisedResult(group = "transition", 
                                               estimates = c("hazard_ratio", "lower_hr", "upper_hr", "aic", "bic", "se_coef"), 
                                               additional = "model_name", "ref_age",

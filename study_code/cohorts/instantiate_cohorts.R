@@ -10,23 +10,26 @@ codelist <- omopgenerics::importCodelist(here::here("codelist"), "csv")
 #                                            codelistName = "aortic_valve_replacement")
 
 omopgenerics::logMessage(message = "Instastiating cohorts")
-
+omopgenerics::logMessage(message = " -- AS and AVR concept cohorts")
 cdm$study_cohorts_inc <- CohortConstructor::conceptCohort(cdm = cdm, 
                                            conceptSet = c(codelist["aortic_stenosis"], 
                                                           codelist["aortic_valve_replacement"]), 
                                            name = "study_cohorts_inc", 
                                            exit = "event_start_date"
                                            )
-  
+
+omopgenerics::logMessage(message = " -- Study criteria") 
 cdm$study_cohorts <- cdm$study_cohorts_inc |>
-  CohortConstructor::requireIsFirstEntry(name = "study_cohorts") |>
+  CohortConstructor::requireIsFirstEntry(name = "study_cohorts") |> 
   CohortConstructor::exitAtObservationEnd(cohortId = c("aortic_stenosis"),
-                                          name = "study_cohorts") |>
-  CohortConstructor::requireConceptIntersect(conceptSet = codelist["aortic_stenosis"], 
-                                             cohortId = "aortic_valve_replacement", 
-                                             intersections = c(1, Inf), 
-                                             window = c(-Inf, 0), 
-                                             name = "study_cohorts") |>
+                                          name = "study_cohorts")
+cdm$study_cohorts <- cdm$study_cohorts |>
+  # we allow AS and AVR to occur on the same day
+  CohortConstructor::requireCohortIntersect(conceptSet = codelist["aortic_stenosis"], 
+                                            cohortId = "aortic_valve_replacement", 
+                                            intersections = c(1, Inf), 
+                                            window = c(-Inf, -1), 
+                                            name = "study_cohorts") |>
   CohortConstructor::requireConceptIntersect(conceptSet = codelist["aortic_valve_replacement"], 
                                              cohortId = "aortic_stenosis", 
                                              intersections = 0L, 
