@@ -1,5 +1,6 @@
 codes <- CodelistGenerator::importCodelist(here::here("cohorts", "codelists"), "csv")
 
+# Create study cohorts directly - congenital AS and AVD (ages 0-17)
 cdm$congenital_aortic_stenosis <- CohortConstructor::conceptCohort(
   cdm = cdm,
   name = "congenital_aortic_stenosis",
@@ -24,8 +25,8 @@ cdm$congenital_aortic_valve_disease <- CohortConstructor::conceptCohort(
   CohortConstructor::exitAtObservationEnd() |>
   CohortConstructor::requireAge(ageRange = c(0, 17), name = "congenital_aortic_valve_disease")
 
-# Bind the final two cohorts matching the specification
-cdm <- omopgenerics::bind(
+# Bind the two cohorts into study_cohorts
+cdm$study_cohorts <- omopgenerics::bind(
   cdm$congenital_aortic_stenosis,
   cdm$congenital_aortic_valve_disease,
   name = "study_cohorts"
