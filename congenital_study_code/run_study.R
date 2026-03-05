@@ -13,7 +13,7 @@ createLogFile(logFile = tempfile(pattern = "log_{date}_{time}"))
 logMessage("LOG CREATED")
 
 # Define analysis settings -----
-study_period <- c(as.Date(NA), as.Date(NA))
+study_period <- c(as.Date("2000-01-01"), as.Date("2024-12-31"))
 
 # Initialise list to store results as we go -----
 results <- list()
@@ -26,6 +26,15 @@ results[["obs_period"]] <- summariseObservationPeriod(cdm$observation_period)
 # Instantiate study cohorts ----
 logMessage("Instantiating study cohorts")
 source(here("cohorts", "instantiate_cohorts.R"))
+
+# Apply study period restriction
+cdm$study_cohorts <- cdm$study_cohorts |>
+  requireInDateRange(
+    dateRange = study_period,
+    cohortDateRange = "cohort_start_date",
+    name = "study_cohorts"
+  )
+
 logMessage("Study cohorts instantiated")
 
 
