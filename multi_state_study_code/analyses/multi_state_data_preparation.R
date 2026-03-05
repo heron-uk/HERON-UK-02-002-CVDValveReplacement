@@ -3,14 +3,24 @@ omopgenerics::logMessage(message = "Prepare data for multi state model")
 
 omopgenerics::logMessage(message = "Create healthy cohort (starting state)")
 
-cdm$healthy <- CohortConstructor::demographicsCohort(cdm = cdm, ageRange = list(c(20, 150)), sex = "Both", name = "healthy") |>
-  CohortConstructor::trimToDateRange(dateRange = c(as.Date("2011-12-31"), as.Date(NA))) |>
-  CohortConstructor::requirePriorObservation(minPriorObservation = 365L) |>
-  CohortConstructor::requireConceptIntersect(
-    conceptSet = list(as_or_avr = codelist |> unlist() |> unname()),
+gpop_id <- settings(cdm$denominator) |> 
+  filter(age_group == "20 to 150",
+         sex == "Both") |> 
+  pull(cohort_definition_id)
+
+cdm$healthy <- cdm$denominator |> 
+  CohortConstructor::subsetCohorts(cohortId = gpop_id,
+                                   name = "healthy")
+
+cdm$healthy <- cdm$healthy |>
+  # no AS or AVR on day of entry
+  CohortConstructor::requireCohortIntersect(
+    targetCohortTable = "study_cohorts_inc",
+    intersections = 0L,
     window = c(-Inf, 0),
-    intersections = c(0, 0)
+    name = "healthy"
   ) |>
+  # at least a follow up day (and so no death on day of entry either)
   CohortConstructor::requireFutureObservation(minFutureObservation = 1L) |>
   PatientProfiles::addSex() |>
   addEthnicity() |>
@@ -18,6 +28,7 @@ cdm$healthy <- CohortConstructor::demographicsCohort(cdm = cdm, ageRange = list(
   addSES() |>
   PatientProfiles::addDeathDate(deathDateName = "death_date") |>
   addAge(col_name = "age_death", date_name = "death_date") |>
+  dplyr::filter(is.na(death_date) | (death_date > cohort_start_date)) |> 
   dplyr::mutate(
     status_death = dplyr::if_else(!is.na(.data$death_date) & .data$death_date <= .data$cohort_end_date, 1L, 0L),
     death_date = dplyr::coalesce(.data$death_date, .data$cohort_end_date),
@@ -25,6 +36,7 @@ cdm$healthy <- CohortConstructor::demographicsCohort(cdm = cdm, ageRange = list(
     t_death = clock::date_count_between(.data$cohort_start_date, .data$death_date, precision = "day"),
   ) |>
   dplyr::compute(name = "healthy")
+
 ### AS ----
 
 omopgenerics::logMessage(message = "Create transitions cohorts")
