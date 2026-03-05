@@ -9,7 +9,7 @@ omopgenerics::validateCdmArgument(cdm,
 omopgenerics::assertNumeric(min_cell_count)
 
 # Create a log file ----
-omopgenerics::createLogFile(logFile = tempfile(pattern = "log_{date}_{time}"))
+omopgenerics::createLogFile(logFile = here::here("Results", "log_{date}_{time}"))
 logMessage(message = "LOG CREATED")
 
 # Define analysis settings -----
@@ -42,7 +42,7 @@ results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$st
 
 source(here::here("analyses", "incidence_prevalence.R"))
 
-source(here::here("analyses", "data_preparation.R"))
+source(here::here("analyses", "multi_state_data_preparation.R"))
 
 source(here::here("analyses", "multi_state_model.R"))
 omopgenerics::logMessage("Analyses finished")

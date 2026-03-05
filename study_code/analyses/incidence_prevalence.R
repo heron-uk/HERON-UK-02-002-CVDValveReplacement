@@ -1,22 +1,4 @@
 source(here::here("analyses", "functions.R"))
-omopgenerics::logMessage(message = "Get denominator cohort")
-
-cdm <- IncidencePrevalence::generateDenominatorCohortSet(
-  cdm = cdm, 
-  name = "denominator",
-  cohortDateRange = study_period,
-  ageGroup = c(list(
-    c(20, 150)), 
-    age_groups),
-  sex = c("Both", "Male", "Female"),
-  daysPriorObservation = 365) 
-
-omopgenerics::logMessage(message = "Add socioeconomic status")
-
-cdm$denominator <- cdm$denominator |>
-  addSES() |>
-  dplyr::compute(name = "denominator") 
-  
 
 omopgenerics::logMessage(message = "Estimate incidence")
 
