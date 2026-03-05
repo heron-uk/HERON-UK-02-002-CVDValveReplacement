@@ -79,9 +79,21 @@ aortic_stenosis <- list("aortic_stenosis" = avd_reviewed |>
   filter(aortic_stenosis == "T") |>
   pull(concept_id)) |>
   omopgenerics::newCodelist()
+aortic_endocarditis <- list("aortic_endocarditis" = avd_reviewed |>
+                          filter(aortic_endocarditis == "T") |>
+                          pull(concept_id)) |>
+  omopgenerics::newCodelist()
+aortic_insufficiency <- list("aortic_insufficiency" = avd_reviewed |>
+                          filter(aortic_insufficiency == "T") |>
+                          pull(concept_id)) |>
+  omopgenerics::newCodelist()
 
 omopgenerics::exportCodelist(aortic_valve_disease,
                              here::here("cohorts", "codelists"), "csv")
 omopgenerics::exportCodelist(aortic_stenosis,
+                             here::here("cohorts", "codelists"), "csv")
+omopgenerics::exportCodelist(aortic_endocarditis,
+                             here::here("cohorts", "codelists"), "csv")
+omopgenerics::exportCodelist(aortic_insufficiency,
                              here::here("cohorts", "codelists"), "csv")
 
