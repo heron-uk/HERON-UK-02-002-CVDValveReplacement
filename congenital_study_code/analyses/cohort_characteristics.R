@@ -1,5 +1,4 @@
-# Baseline characteristics of congenital AS/AVD 
-omopgenerics::logMessage("Running baseline characteristics analysis")
+omopgenerics::logMessage("Running baseline characteristics analysis of congenital AS/AVD ")
 
 results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharacteristics(
   cdm$study_cohorts,
@@ -20,9 +19,7 @@ results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharact
 
 omopgenerics::logMessage("Baseline characteristics analysis complete")
 
-# Large scale characteristics of congenital AS/AVD 
-omopgenerics::logMessage("Running large scale characteristics analysis")
-
+omopgenerics::logMessage("Running large scale characteristics analysis of congenital AS/AVD ")
 results[["large_scale_characteristics"]] <- CohortCharacteristics::summariseLargeScaleCharacteristics(
   cdm$study_cohorts,
   cohortId = c(1, 2),
