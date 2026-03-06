@@ -1,35 +1,31 @@
-# Surgical interventions survival ----
 omopgenerics::logMessage("Running surgical interventions survival analysis")
 
-# AVR intervention survival (up to 2 years)
 omopgenerics::logMessage("Analyzing AVR intervention survival")
 results[["survival_avr_intervention"]] <- CohortSurvival::estimateSingleEventSurvival(
   cdm = cdm,
   targetCohortTable = "study_cohorts",
-  targetCohortId = c(1, 2),  # congenital AS and AVD
+  targetCohortId = c(1, 2),
   outcomeCohortTable = "intervention_cohorts",
-  outcomeCohortId = 1,  # AVR intervention
-  outcomeWashout = Inf,  # first event only
-  followUpDays = 730  # 2 years
+  outcomeCohortId = 1, 
+  outcomeWashout = Inf,  
+  followUpDays = 730  
 )
 
 omopgenerics::logMessage("Surgical interventions survival analysis complete")
 
-# Mortality survival ----
 omopgenerics::logMessage("Running mortality survival analysis")
 
-# Create death cohort
 omopgenerics::logMessage("Creating death cohort")
-cdm <- CohortConstructor::deathCohort(cdm, name = "death_cohort")
+cdm$death_cohort <- CohortConstructor::deathCohort(cdm, name = "death_cohort")
 
 # Estimate mortality survival
 results[["survival_mortality"]] <- CohortSurvival::estimateSingleEventSurvival(
   cdm = cdm,
   targetCohortTable = "study_cohorts",
-  targetCohortId = c(1, 2),  # congenital AS and AVD
+  targetCohortId = c(1, 2),  
   outcomeCohortTable = "death_cohort",
-  outcomeWashout = Inf,  # first death only
-  followUpDays = 730  # 2 years
+  outcomeWashout = Inf, 
+  followUpDays = 730  
 )
 
 omopgenerics::logMessage("Mortality survival analysis complete")

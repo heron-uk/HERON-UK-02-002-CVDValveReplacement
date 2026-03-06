@@ -1,9 +1,9 @@
-# Baseline characteristics of congenital AS/AVD ----
+# Baseline characteristics of congenital AS/AVD 
 omopgenerics::logMessage("Running baseline characteristics analysis")
 
 results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharacteristics(
   cdm$study_cohorts,
-  cohortId = c(1, 2),  # congenital AS and AVD only 
+  cohortId = c(1, 2),
   ageGroup = list(
     c(0, 4),
     c(5, 9),
@@ -20,12 +20,12 @@ results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharact
 
 omopgenerics::logMessage("Baseline characteristics analysis complete")
 
-# Large scale characteristics of congenital AS/AVD ----
+# Large scale characteristics of congenital AS/AVD 
 omopgenerics::logMessage("Running large scale characteristics analysis")
 
 results[["large_scale_characteristics"]] <- CohortCharacteristics::summariseLargeScaleCharacteristics(
   cdm$study_cohorts,
-  cohortId = c(1, 2),  # congenital AS and AVD only
+  cohortId = c(1, 2),
   window = list(
     "any_time_prior" = c(-Inf, -1),
     "index_date" = c(0, 0),
