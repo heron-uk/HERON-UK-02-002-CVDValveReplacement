@@ -25,4 +25,4 @@ cdm$intervention_cohorts <- CohortConstructor::conceptCohort(
   ),
   exit = "event_start_date"  
 ) |>
-  CohortConstructor::requireIsFirstEntry()  # First ever in history
+  CohortConstructor::requireIsFirstEntry() 

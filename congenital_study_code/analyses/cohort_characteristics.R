@@ -3,7 +3,7 @@ omopgenerics::logMessage("Running baseline characteristics analysis")
 
 results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharacteristics(
   cdm$study_cohorts,
-  cohortId = c(1, 2),  # congenital AS and AVD only (not AVR procedure)
+  cohortId = c(1, 2),  # congenital AS and AVD only 
   ageGroup = list(
     c(0, 4),
     c(5, 9),

@@ -15,7 +15,7 @@ results[["survival_avr_intervention"]] <- CohortSurvival::estimateSingleEventSur
 
 omopgenerics::logMessage("Surgical interventions survival analysis complete")
 
-# Analysis 4: Mortality survival ----
+# Mortality survival ----
 omopgenerics::logMessage("Running mortality survival analysis")
 
 # Create death cohort
