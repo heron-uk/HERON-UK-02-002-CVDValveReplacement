@@ -65,6 +65,16 @@ cdm$study_cohorts <- cdm$study_cohorts |>
     name = "study_cohorts"
   )
 
+omopgenerics::logMessage(message = "Comorbidity cohorts")
+cdm$comorbidities <- CohortConstructor::conceptCohort(
+  cdm = cdm,
+  conceptSet = codelist[stringr::str_detect(names(codelist),
+                                "aortic_stenosis|aortic_valve_replacement",
+                                negate = TRUE)],
+  name = "comorbidities",
+  exit = "event_start_date"
+) |> 
+  CohortConstructor::exitAtObservationEnd()
 
 omopgenerics::logMessage(message = "Get denominator cohort")
 
