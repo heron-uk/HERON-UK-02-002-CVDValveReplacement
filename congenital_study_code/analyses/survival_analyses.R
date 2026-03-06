@@ -4,9 +4,9 @@ omopgenerics::logMessage("Analyzing AVR intervention survival")
 results[["survival_avr_intervention"]] <- CohortSurvival::estimateSingleEventSurvival(
   cdm = cdm,
   targetCohortTable = "study_cohorts",
-  targetCohortId = c(1, 2),
+  targetCohortId = c("congenital_aortic_stenosis", "congenital_aortic_valve_disease"),
   outcomeCohortTable = "intervention_cohorts",
-  outcomeCohortId = 1, 
+  outcomeCohortId = "avr", 
   outcomeWashout = Inf,  
   followUpDays = 730  
 )
@@ -22,7 +22,7 @@ cdm$death_cohort <- CohortConstructor::deathCohort(cdm, name = "death_cohort")
 results[["survival_mortality"]] <- CohortSurvival::estimateSingleEventSurvival(
   cdm = cdm,
   targetCohortTable = "study_cohorts",
-  targetCohortId = c(1, 2),  
+  targetCohortId = c("congenital_aortic_stenosis", "congenital_aortic_valve_disease"),  
   outcomeCohortTable = "death_cohort",
   outcomeWashout = Inf, 
   followUpDays = 730  
