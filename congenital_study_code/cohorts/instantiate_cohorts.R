@@ -26,7 +26,7 @@ cdm$congenital_aortic_valve_disease <- CohortConstructor::conceptCohort(
   CohortConstructor::requireAge(ageRange = c(0, 17), name = "congenital_aortic_valve_disease")
 
 # Bind the two cohorts into study_cohorts
-cdm$study_cohorts <- omopgenerics::bind(
+cdm <- omopgenerics::bind(
   cdm$congenital_aortic_stenosis,
   cdm$congenital_aortic_valve_disease,
   name = "study_cohorts"
