@@ -1,0 +1,35 @@
+omopgenerics::logMessage("Running baseline characteristics analysis of congenital AS/AVD ")
+
+results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharacteristics(
+  cdm$study_cohorts,
+  cohortId = c("congenital_aortic_stenosis", "congenital_aortic_valve_disease"),
+  ageGroup = list(
+    c(0, 4),
+    c(5, 9),
+    c(10, 14),
+    c(15, 17)
+  )
+)
+
+omopgenerics::logMessage("Baseline characteristics analysis complete")
+
+omopgenerics::logMessage("Running large scale characteristics analysis of congenital AS/AVD ")
+results[["large_scale_characteristics"]] <- CohortCharacteristics::summariseLargeScaleCharacteristics(
+  cdm$study_cohorts,
+  cohortId = c("congenital_aortic_stenosis", "congenital_aortic_valve_disease"),
+  window = list(
+    "any_time_prior" = c(-Inf, -1),
+    "index_date" = c(0, 0),
+    "one_year_after" = c(1, 365),
+    "any_time_after" = c(1, Inf)
+  ),
+  eventInWindow = c(
+    "condition_occurrence",
+    "observation", 
+    "procedure_occurrence",
+    "device_exposure"
+  ),
+  episodeInWindow = "drug_exposure"
+)
+
+omopgenerics::logMessage("Large scale characteristics analysis complete")
