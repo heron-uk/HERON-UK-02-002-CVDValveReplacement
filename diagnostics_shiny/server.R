@@ -2370,37 +2370,34 @@ server <- function(input, output, session) {
 
   # log file -----
   output$summarise_log_file_gt <- gt::render_gt({
-    dataFiltered$summarise_log_file |>
+
+    seconds_to_hms <- function(t) {
+      hours <- t %/% 3600
+      mins  <- (t %% 3600) %/% 60
+      secs  <- t %% 60
+      sprintf("%02d:%02d:%02d", hours, mins, secs)
+    }
+
+    log <- dataFiltered$summarise_log_file |>
       omopgenerics::tidy() |>
       dplyr::mutate(log_id = as.integer(log_id)) |>
       dplyr::arrange("cdm_name", "log_id")  |>
       dplyr::select(cdm_name, variable_name,
                     elapsed_time) |>
-      dplyr::mutate(elapsed_time =
-                      dplyr::if_else(!is.na(elapsed_time),
-                                     sprintf("%d hours, %d minutes, %d seconds",
-                                             lubridate::hour(elapsed_time),
-                                             lubridate::minute(elapsed_time),
-                                             lubridate::second(elapsed_time)),
-                                     NA_character_)) |>
-      dplyr::mutate(elapsed_time = stringr::str_replace(
-        elapsed_time, "0 hours, 0 minutes, ", "")) |>
-      dplyr::mutate(elapsed_time = stringr::str_replace(
-        elapsed_time, "0 hours, ", "")) |>
-      dplyr::mutate(elapsed_time = stringr::str_replace(
-        elapsed_time, "1 hours", "1 hour")) |>
-      dplyr::mutate(elapsed_time = stringr::str_replace(
-        elapsed_time, "1 minutes", "1 minute")) |>
-      dplyr::mutate(elapsed_time = stringr::str_replace(
-        elapsed_time, "1 seconds", "1 second")) |>
+      dplyr::mutate(elapsed_time = seconds_to_hms(elapsed_time)) |>
+      filter(str_detect(tolower(variable_name), "log", negate = TRUE)) |>
+      filter(str_detect(tolower(variable_name), "exporting", negate = TRUE)) |>
+      dplyr::distinct()
+
+    log |>
       dplyr::rename("task" = "variable_name",
                     estimate_value = "elapsed_time") |>
       dplyr::mutate(estimate_type = "character",
                     estimate_name = "Time taken") |>
-      visOmopResults::visTable(
-        header = c("cdm_name", "estimate_name"),
-        rename = c("Database name" = "cdm_name"),
-        hide = "estimate_type") |>
+      visOmopResults::visTable(groupColumn = "cdm_name",
+        rename = c("Database name" = "cdm_name",
+                   "Time taken" = "estimate_value"),
+        hide = c("estimate_type", "estimate_name")) |>
       gt::tab_options(container.width = "100%")
   })
 

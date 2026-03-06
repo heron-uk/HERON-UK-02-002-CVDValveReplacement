@@ -989,7 +989,7 @@ ui <- fluidPage(
               bslib::card(
                 full_screen = TRUE,
                 bslib::card_header(
-                  shiny::downloadButton(outputId = "summarise_large_scale_characteristics_tidy_download", label = ""),,
+                  shiny::downloadButton(outputId = "summarise_large_scale_characteristics_tidy_download", label = ""),
                   class = "text-end"
                 ),
                 htmltools::tags$p(style = "font-size: 0.75em;", msgCohortSample),

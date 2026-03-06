@@ -163,6 +163,7 @@ if("cohortDiagnostics" %in% diagnostics){
 
   if("matched_sample" %in% (omopgenerics::settings(result) |> colnames())){
     matched_sample <- as.numeric(omopgenerics::settings(dataFiltered$summarise_large_scale_characteristics) |> dplyr::pull("matched_sample") |> unique())
+    matched_sample <- matched_sample[!is.na(matched_sample)]
     if(all(matched_sample != 0)){
       matched_sample <- formatC(matched_sample, format = "f", digits = 0, big.mark = ",")
       msgMatchedSample <- glue::glue("Matched cohorts were created based on a subsample of ", paste(matched_sample, collapse = " and ")," participants from the {typeCohort} cohorts.")
@@ -186,7 +187,10 @@ if("populationDiagnostics" %in% diagnostics){
 
   if("populationDateStart" %in% (omopgenerics::settings(dataFiltered$incidence) |> colnames())){
     min_incidence_start <- as.Date(omopgenerics::settings(dataFiltered$incidence) |> tidyr::drop_na() |> dplyr::pull("populationDateStart") |> unique())
-    msgPopulationDiag <- paste0("Incidence is calculated using data from ", format(as.Date(min_incidence_start), "%B %d, %Y")," onwards. ")
+    msgPopulationDiag <- paste0("Incidence is calculated using data from ",
+                                format(as.Date(min_incidence_start),
+                                       "%B %d, %Y"),
+                                " onwards. ")
   }else{
     min_incidence_start <- as.Date(NA)
   }
@@ -205,6 +209,9 @@ if("populationDiagnostics" %in% diagnostics){
   if("populationSample" %in% (omopgenerics::settings(dataFiltered$incidence) |> colnames())){
     populationSample <- as.numeric(omopgenerics::settings(dataFiltered$incidence) |> dplyr::pull("populationSample") |> unique())
     populationSample <- formatC(populationSample, format = "f", digits = 0, big.mark = ",")
+    if(length(populationSample) > 1){
+      populationSample <- paste0(populationSample, collapse = "/ ")
+    }
     msgPopulationDiag  <- paste0(msgPopulationDiag, "Population diagnostics was performed within a subsample of ", populationSample, " individuals.")
   }
 }
