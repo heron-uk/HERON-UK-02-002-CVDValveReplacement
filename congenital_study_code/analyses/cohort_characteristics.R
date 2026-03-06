@@ -8,12 +8,6 @@ results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharact
     c(5, 9),
     c(10, 14),
     c(15, 17)
-  ),
-  tableIntersectCount = list(
-    "Comorbidities" = list(
-      tableName = "condition_occurrence",
-      window = c(-Inf, -1)
-    )
   )
 )
 
