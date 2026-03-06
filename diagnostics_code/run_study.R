@@ -10,6 +10,7 @@ logMessage("LOG CREATED")
 # run ----
 source(here("cohorts","instantiate_cohorts.R"))
 diagnostics <- phenotypeDiagnostics(cdm$study_cohorts,
+                                    clinicalTableSample = 0,
                           populationDateRange = as.Date(c("2012-01-01", NA)))
 exportSummarisedResult(diagnostics,
                        minCellCount = minCellCount,
