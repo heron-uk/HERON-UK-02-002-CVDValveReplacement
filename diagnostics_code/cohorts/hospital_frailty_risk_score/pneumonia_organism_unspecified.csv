@@ -1,0 +1,209 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+252351,Pneumonia caused by Pseudomonas,Condition,SNOMED,Disorder,S,41381004,2002-01-31,2099-12-31,NA
+252548,Anthrax pneumonia,Condition,SNOMED,Disorder,S,195902009,2002-01-31,2099-12-31,NA
+252552,Ornithosis with pneumonia,Condition,SNOMED,Disorder,S,81164001,2002-01-31,2099-12-31,NA
+252655,Group B streptococcal pneumonia,Condition,SNOMED,Disorder,S,195886008,2002-01-31,2099-12-31,NA
+252949,Cytomegaloviral pneumonia,Condition,SNOMED,Disorder,S,7678002,2002-01-31,2099-12-31,NA
+253235,Pneumonia in pertussis,Condition,SNOMED,Disorder,S,59475000,2002-01-31,2099-12-31,NA
+253790,Pneumonia caused by Klebsiella pneumoniae,Condition,SNOMED,Disorder,S,64479007,2002-01-31,2099-12-31,NA
+254066,Pneumonia caused by Chlamydiaceae,Condition,SNOMED,Disorder,S,233609002,2002-01-31,2099-12-31,NA
+254266,Tuberculous pneumonia,Condition,SNOMED,Disorder,S,80003002,2002-01-31,2099-12-31,NA
+254677,Adenoviral pneumonia,Condition,SNOMED,Disorder,S,41207000,2002-01-31,2099-12-31,NA
+255084,Congenital pneumonia,Condition,SNOMED,Disorder,S,78895009,2002-01-31,2099-12-31,NA
+255848,Pneumonia,Condition,SNOMED,Disorder,S,233604007,2002-01-31,2099-12-31,NA
+256036,Hemorrhagic varicella pneumonia,Condition,SNOMED,Disorder,S,31920006,2002-01-31,2099-12-31,NA
+256722,Bronchopneumonia,Condition,SNOMED,Disorder,S,396285007,2003-07-31,2099-12-31,NA
+256723,Pneumonia and influenza,Condition,SNOMED,Disorder,S,195878008,2002-01-31,2099-12-31,NA
+257315,Bacterial pneumonia,Condition,SNOMED,Disorder,S,53084003,2002-01-31,2099-12-31,NA
+257908,Pneumonia caused by anaerobic bacteria,Condition,SNOMED,Disorder,S,409664000,2004-07-31,2099-12-31,NA
+258061,Pulmonary tularemia,Condition,SNOMED,Disorder,S,45556008,2002-01-31,2099-12-31,NA
+258180,Pneumonia caused by Gram negative bacteria,Condition,SNOMED,Disorder,S,430395005,2008-07-31,2099-12-31,NA
+258333,Salmonella pneumonia,Condition,SNOMED,Disorder,S,2523007,2002-01-31,2099-12-31,NA
+258354,Pulmonary African histoplasmosis,Condition,SNOMED,Disorder,S,187052004,2002-01-31,2099-12-31,NA
+258785,Pneumococcal pneumonia,Condition,SNOMED,Disorder,S,233607000,2002-01-31,2099-12-31,NA
+259048,Pneumonia in systemic mycosis,Condition,SNOMED,Disorder,S,84753008,2002-01-31,2099-12-31,NA
+259852,Staphylococcal pneumonia,Condition,SNOMED,Disorder,S,22754005,2002-01-31,2099-12-31,NA
+259992,Ventilator associated pneumonia,Condition,SNOMED,Disorder,S,429271009,2008-01-31,2099-12-31,NA
+260028,Post measles pneumonia,Condition,SNOMED,Disorder,S,191727003,2002-01-31,2099-12-31,NA
+260041,Candidiasis of lung,Condition,SNOMED,Disorder,S,3487004,2002-01-31,2099-12-31,NA
+260430,Pneumonia caused by Escherichia coli,Condition,SNOMED,Disorder,S,51530003,2002-01-31,2099-12-31,NA
+260754,Haemophilus influenzae pneumonia,Condition,SNOMED,Disorder,S,70036007,2002-01-31,2099-12-31,NA
+261053,Pneumonia in aspergillosis,Condition,SNOMED,Disorder,S,111900000,2002-01-31,2099-12-31,NA
+261324,Pneumonia caused by Streptococcus,Condition,SNOMED,Disorder,S,34020007,2002-01-31,2099-12-31,NA
+261326,Viral pneumonia,Condition,SNOMED,Disorder,S,75570004,2002-01-31,2099-12-31,NA
+436145,Pneumonia caused by respiratory syncytial virus,Condition,SNOMED,Disorder,S,195881003,2002-01-31,2099-12-31,NA
+439857,Parainfluenza virus pneumonia,Condition,SNOMED,Disorder,S,64917006,2002-01-31,2099-12-31,NA
+440431,Pneumonia caused by Mycoplasma pneumoniae,Condition,SNOMED,Disorder,S,46970008,2002-01-31,2099-12-31,NA
+442637,Secondary pneumonic plague,Condition,SNOMED,Disorder,S,67525007,2002-01-31,2099-12-31,NA
+605209,Pneumonia caused by Acinetobacter,Condition,SNOMED,Disorder,S,1010634002,2021-01-31,2099-12-31,NA
+607087,Pneumonia caused by vancomycin resistant Enterococcus,Condition,SNOMED,Disorder,S,1149093006,2021-07-31,2099-12-31,NA
+1340380,Exacerbation of interstitial pneumonia,Condition,OMOP Extension,Disorder,S,OMOP5166035,2022-05-06,2099-12-31,NA
+1340436,Exacerbation of pneumonia,Condition,OMOP Extension,Disorder,S,OMOP5166091,2022-05-06,2099-12-31,NA
+1340437,Exacerbation of pneumonia caused by SARS-CoV-2,Condition,OMOP Extension,Disorder,S,OMOP5166092,2022-05-06,2099-12-31,NA
+3170862,Methicillin resistant Staphylococcus aureus pneumonia,Condition,Nebraska Lexicon,Clinical Finding,S,31150001000004106,2016-01-28,2099-12-31,NA
+3180888,Cystic fibrosis related bronchopneumonia,Condition,Nebraska Lexicon,Clinical Finding,S,21840001000004103,2016-01-28,2099-12-31,NA
+3189306,Enterobacter cloacae pneumonia,Condition,Nebraska Lexicon,Clinical Finding,S,30210001000004107,2016-01-28,2099-12-31,NA
+3661408,Pneumonia caused by SARS-CoV-2,Condition,SNOMED,Disorder,S,882784691000119100,2020-07-31,2099-12-31,NA
+4025165,Abscess of lung with pneumonia,Condition,SNOMED,Disorder,S,196112005,2002-01-31,2099-12-31,NA
+4046011,Focal pneumonia,Condition,SNOMED,Disorder,S,123590007,2002-01-31,2099-12-31,NA
+4048052,Necrotizing bronchopneumonia,Condition,SNOMED,Disorder,S,123589003,2002-01-31,2099-12-31,NA
+4048147,Congenital group A hemolytic streptococcal pneumonia,Condition,SNOMED,Disorder,S,206284006,2002-01-31,2099-12-31,NA
+4048148,Congenital Escherichia coli pneumonia,Condition,SNOMED,Disorder,S,206286008,2002-01-31,2099-12-31,NA
+4048149,Congenital pseudomonal pneumonia,Condition,SNOMED,Disorder,S,206287004,2002-01-31,2099-12-31,NA
+4048517,Acute bronchopneumonia,Condition,SNOMED,Disorder,S,123587001,2002-01-31,2099-12-31,NA
+4048518,Confluent bronchopneumonia with abscess formation,Condition,SNOMED,Disorder,S,123588006,2002-01-31,2099-12-31,NA
+4048519,Confluent pneumonia,Condition,SNOMED,Disorder,S,123591006,2002-01-31,2099-12-31,NA
+4049965,Fungal pneumonia,Condition,SNOMED,Disorder,S,233613009,2002-01-31,2099-12-31,NA
+4050869,Atypical pneumonia,Condition,SNOMED,Disorder,S,233606009,2002-01-31,2099-12-31,NA
+4050872,Pneumonia due to parasitic infestation,Condition,SNOMED,Disorder,S,233620002,2002-01-31,2099-12-31,NA
+4050874,Rickettsial pneumonia,Condition,SNOMED,Disorder,S,233621003,2002-01-31,2099-12-31,NA
+4051333,Neonatal chlamydial pneumonia,Condition,SNOMED,Disorder,S,233610007,2002-01-31,2099-12-31,NA
+4051335,Hemorrhagic pneumonia,Condition,SNOMED,Disorder,S,233617005,2002-01-31,2099-12-31,NA
+4051336,Mycobacterial pneumonia,Condition,SNOMED,Disorder,S,233618000,2002-01-31,2099-12-31,NA
+4051337,Neonatal pneumonia,Condition,SNOMED,Disorder,S,233619008,2002-01-31,2099-12-31,NA
+4051338,Herpes simplex pneumonia,Condition,SNOMED,Disorder,S,233624006,2002-01-31,2099-12-31,NA
+4051339,Giant cell pneumonia,Condition,SNOMED,Disorder,S,233625007,2002-01-31,2099-12-31,NA
+4052546,Meningococcal pneumonia,Condition,SNOMED,Disorder,S,233608005,2002-01-31,2099-12-31,NA
+4070540,Congenital chlamydial pneumonia,Condition,SNOMED,Disorder,S,206289001,2002-01-31,2099-12-31,NA
+4071610,Congenital staphylococcal pneumonia,Condition,SNOMED,Disorder,S,206283000,2002-01-31,2099-12-31,NA
+4071611,Congenital group B hemolytic streptococcal pneumonia,Condition,SNOMED,Disorder,S,206285007,2002-01-31,2099-12-31,NA
+4080435,Leishmanial pneumonia,Condition,SNOMED,Disorder,S,240635003,2002-01-31,2099-12-31,NA
+4080883,Neonatal aspiration pneumonia,Condition,SNOMED,Disorder,S,276695003,2002-01-31,2099-12-31,NA
+4089507,Toxoplasma pneumonia,Condition,SNOMED,Disorder,S,187196002,2002-01-31,2099-12-31,NA
+4102253,Right middle zone pneumonia,Condition,SNOMED,Disorder,S,301003007,2002-01-31,2099-12-31,NA
+4110039,Pneumonia due to measles,Condition,SNOMED,Disorder,S,195900001,2002-01-31,2099-12-31,NA
+4110506,Pneumonia caused by pleuropneumonia-like organism,Condition,SNOMED,Disorder,S,195896004,2002-01-31,2099-12-31,NA
+4110507,Pneumonia with coccidioidomycosis,Condition,SNOMED,Disorder,S,195904005,2002-01-31,2099-12-31,NA
+4110509,Nocardial pneumonia,Condition,SNOMED,Disorder,S,195909000,2002-01-31,2099-12-31,NA
+4110510,Chickenpox pneumonia,Condition,SNOMED,Disorder,S,195911009,2002-01-31,2099-12-31,NA
+4111119,Hemorrhagic bronchopneumonia,Condition,SNOMED,Disorder,S,181007,2002-01-31,2099-12-31,NA
+4112655,Proteus pneumonia,Condition,SNOMED,Disorder,S,195888009,2002-01-31,2099-12-31,NA
+4112820,Legionella pneumonia,Condition,SNOMED,Disorder,S,195889001,2002-01-31,2099-12-31,NA
+4112822,Actinomycotic pneumonia,Condition,SNOMED,Disorder,S,195908008,2002-01-31,2099-12-31,NA
+4114030,Left upper zone pneumonia,Condition,SNOMED,Disorder,S,301002002,2002-01-31,2099-12-31,NA
+4114031,Right upper zone pneumonia,Condition,SNOMED,Disorder,S,301004001,2002-01-31,2099-12-31,NA
+4116487,Basal pneumonia,Condition,SNOMED,Disorder,S,300999006,2002-01-31,2099-12-31,NA
+4116488,Left lower zone pneumonia,Condition,SNOMED,Disorder,S,301000005,2002-01-31,2099-12-31,NA
+4117114,Right lower zone pneumonia,Condition,SNOMED,Disorder,S,301001009,2002-01-31,2099-12-31,NA
+4133224,Lobar pneumonia,Condition,SNOMED,Disorder,S,278516003,2002-01-31,2099-12-31,NA
+4135197,Hypostatic bronchopneumonia,Condition,SNOMED,Disorder,S,31561003,2002-01-31,2099-12-31,NA
+4137435,Pneumonia in Q fever,Condition,SNOMED,Disorder,S,32286006,2002-01-31,2099-12-31,NA
+4138769,Bilateral basal pneumonia,Condition,SNOMED,Disorder,S,425996009,2007-07-31,2099-12-31,NA
+4141619,Pneumococcal lobar pneumonia,Condition,SNOMED,Disorder,S,266350000,2002-01-31,2099-12-31,NA
+4143092,Hospital acquired pneumonia,Condition,SNOMED,Disorder,S,425464007,2007-07-31,2099-12-31,NA
+4145369,Lingular pneumonia,Condition,SNOMED,Disorder,S,426696003,2007-07-31,2099-12-31,NA
+4153356,Postobstructive pneumonia,Condition,SNOMED,Disorder,S,371072008,2002-07-31,2099-12-31,NA
+4166072,Pneumonia in typhoid fever,Condition,SNOMED,Disorder,S,45312009,2002-01-31,2099-12-31,NA
+4174281,Non-tuberculous mycobacterial pneumonia,Condition,SNOMED,Disorder,S,277869007,2002-01-31,2099-12-31,NA
+4174308,Congenital viral pneumonia,Condition,SNOMED,Disorder,S,276692000,2002-01-31,2099-12-31,NA
+4174309,Congenital bacterial pneumonia,Condition,SNOMED,Disorder,S,276693005,2002-01-31,2099-12-31,NA
+4186568,Influenzal bronchopneumonia,Condition,SNOMED,Disorder,S,41269000,2002-01-31,2099-12-31,NA
+4188480,Congenital rubella pneumonia,Condition,SNOMED,Disorder,S,47082005,2002-01-31,2099-12-31,NA
+4190647,Pneumocystosis pneumonia,Condition,SNOMED,Disorder,S,415125002,2005-01-31,2099-12-31,NA
+4193964,Pneumonia caused by Proteus mirabilis,Condition,SNOMED,Disorder,S,39172002,2002-01-31,2099-12-31,NA
+4195452,Aspiration pneumonia following procedure,Condition,SNOMED,Disorder,S,44549008,2002-01-31,2099-12-31,NA
+4200891,Postoperative pneumonia,Condition,SNOMED,Disorder,S,314978007,2002-01-31,2099-12-31,NA
+4203846,Aspiration pneumonia following surgical procedure,Condition,SNOMED,Disorder,S,438764004,2009-01-31,2099-12-31,NA
+4204819,Secondary bacterial pneumonia,Condition,SNOMED,Disorder,S,308906005,2002-01-31,2099-12-31,NA
+4205578,Peribronchial pneumonia,Condition,SNOMED,Disorder,S,55679008,2002-01-31,2099-12-31,NA
+4212120,Unresolved pneumonia,Condition,SNOMED,Disorder,S,57702005,2002-01-31,2099-12-31,NA
+4221503,Pneumococcal pneumonia with AIDS (acquired immunodeficiency syndrome),Condition,SNOMED,Disorder,S,420787001,2006-07-31,2099-12-31,NA
+4221767,Chronic progressive coccidioidal pneumonia,Condition,SNOMED,Disorder,S,417688002,2005-07-31,2099-12-31,NA
+4222062,Candidiasis of lung with AIDS (acquired immunodeficiency syndrome),Condition,SNOMED,Disorder,S,421047005,2006-07-31,2099-12-31,NA
+4223032,Bacterial pneumonia with AIDS (acquired immunodeficiency syndrome),Condition,SNOMED,Disorder,S,420544002,2006-07-31,2099-12-31,NA
+4225318,Viral pneumonia with AIDS (acquired immunodeficiency syndrome),Condition,SNOMED,Disorder,S,421508002,2006-07-31,2099-12-31,NA
+4228277,Pneumonia with AIDS (acquired immunodeficiency syndrome),Condition,SNOMED,Disorder,S,421671002,2006-07-31,2099-12-31,NA
+4236311,Bilateral pneumonia,Condition,SNOMED,Disorder,S,407671000,2004-01-31,2099-12-31,NA
+4240452,Adenoviral bronchopneumonia,Condition,SNOMED,Disorder,S,58890000,2002-01-31,2099-12-31,NA
+4245006,Bilateral bronchopneumonia,Condition,SNOMED,Disorder,S,396286008,2003-07-31,2099-12-31,NA
+4245499,Pleurobronchopneumonia,Condition,SNOMED,Disorder,S,60485005,2002-01-31,2099-12-31,NA
+4248154,Aspiration pneumonia due to near drowning,Condition,SNOMED,Disorder,S,72854003,2002-01-31,2099-12-31,NA
+4248807,Healthcare associated bacterial pneumonia,Condition,SNOMED,Disorder,S,408680002,2004-07-31,2099-12-31,NA
+4256236,Pneumonia caused by aerobic bacteria,Condition,SNOMED,Disorder,S,409665004,2004-07-31,2099-12-31,NA
+4256894,Healthcare associated Legionnaires' disease,Condition,SNOMED,Disorder,S,408681003,2004-07-31,2099-12-31,NA
+4267135,Achromobacter pneumonia,Condition,SNOMED,Disorder,S,61884008,2002-01-31,2099-12-31,NA
+4273378,Interstitial pneumonia,Condition,SNOMED,Disorder,S,64667001,2002-01-31,2099-12-31,NA
+4274802,Parainfluenza virus bronchopneumonia,Condition,SNOMED,Disorder,S,64880000,2002-01-31,2099-12-31,NA
+4274981,Foreign body pneumonia,Condition,SNOMED,Disorder,S,65141002,2002-01-31,2099-12-31,NA
+4276663,Terminal bronchopneumonia,Condition,SNOMED,Disorder,S,64703005,2002-01-31,2099-12-31,NA
+4280213,Unresolved lobar pneumonia,Condition,SNOMED,Disorder,S,66429007,2002-01-31,2099-12-31,NA
+4293463,Community acquired pneumonia,Condition,SNOMED,Disorder,S,385093006,2003-01-31,2099-12-31,NA
+4294404,Pittsburgh pneumonia,Condition,SNOMED,Disorder,S,76090006,2002-01-31,2099-12-31,NA
+4299862,Pneumonia caused by Histoplasma capsulatum,Condition,SNOMED,Disorder,S,38699009,2002-01-31,2099-12-31,NA
+4309106,Aspiration pneumonia,Condition,SNOMED,Disorder,S,422588002,2007-01-31,2099-12-31,NA
+4310964,Hypostatic pneumonia,Condition,SNOMED,Disorder,S,85469005,2002-01-31,2099-12-31,NA
+4322625,Gangrenous pneumonia,Condition,SNOMED,Disorder,S,7063008,2002-01-31,2099-12-31,NA
+4327820,Aspiration pneumonia caused by regurgitated food,Condition,SNOMED,Disorder,S,75426006,2002-01-31,2099-12-31,NA
+4334649,Recurrent aspiration pneumonia,Condition,SNOMED,Disorder,S,430969000,2008-07-31,2099-12-31,NA
+35622404,Necrotizing pneumonia caused by Panton-Valentine leukocidin producing Staphylococcus aureus,Condition,SNOMED,Disorder,S,763888005,2018-07-31,2099-12-31,NA
+36676238,Pneumonia caused by Influenza A virus,Condition,SNOMED,Disorder,S,772839003,2019-01-31,2099-12-31,NA
+36712850,Herpes zoster pneumonia,Condition,SNOMED,Disorder,S,12571000132104,2017-01-31,2099-12-31,NA
+37016927,Pneumonia caused by Human coronavirus,Condition,SNOMED,Disorder,S,713084008,2016-01-31,2099-12-31,NA
+37017277,Recurrent bacterial pneumonia,Condition,SNOMED,Disorder,S,713525001,2016-01-31,2099-12-31,NA
+37017278,Recurrent bacterial pneumonia co-occurrent with human immunodeficiency virus infection,Condition,SNOMED,Disorder,S,713526000,2016-01-31,2099-12-31,NA
+37019058,Bacterial pneumonia co-occurrent with human immunodeficiency virus infection,Condition,SNOMED,Disorder,S,713544008,2016-01-31,2099-12-31,NA
+37116366,Pneumonia caused by Gram positive bacteria,Condition,SNOMED,Disorder,S,733051000,2017-07-31,2099-12-31,NA
+37119233,Pneumonia caused by Chlamydia pneumoniae,Condition,SNOMED,Disorder,S,724498004,2017-07-31,2099-12-31,NA
+37161095,Enterobacter pneumonia,Condition,SNOMED,Disorder,S,1176988004,2021-10-31,2099-12-31,NA
+37162295,Viral pneumonia due to Epstein-Barr virus infectious mononucleosis,Condition,SNOMED,Disorder,S,1187256004,2021-11-30,2099-12-31,NA
+37163210,Pneumonia caused by Pseudomonas aeruginosa,Condition,SNOMED,Disorder,S,1208602000,2022-03-31,2099-12-31,NA
+37394479,Influenza with pneumonia due to seasonal influenza virus,Condition,SNOMED,Disorder,S,1033111000000104,2016-04-01,2099-12-31,NA
+40479642,Pneumonia caused by Severe acute respiratory syndrome coronavirus,Condition,SNOMED,Disorder,S,441590008,2009-07-31,2099-12-31,NA
+40480033,Pneumonia caused by Staphylococcus aureus,Condition,SNOMED,Disorder,S,441658007,2009-07-31,2099-12-31,NA
+40481335,Pneumonia caused by Streptococcus pyogenes,Condition,SNOMED,Disorder,S,441942006,2009-07-31,2099-12-31,NA
+40481839,Pneumonia caused by Histoplasma,Condition,SNOMED,Disorder,S,442094008,2009-07-31,2099-12-31,NA
+40482061,Pneumonia caused by Human metapneumovirus,Condition,SNOMED,Disorder,S,445096001,2010-07-31,2099-12-31,NA
+42572644,Pulmonary abscess due to Rhodococcus,Condition,SNOMED Veterinary,Clinical Finding,S,336161000009108,2014-01-31,2099-12-31,NA
+42572881,Contagious bovine pleuropneumonia,Condition,SNOMED Veterinary,Clinical Finding,S,344871000009103,2014-01-31,2099-12-31,NA
+42573178,Pneumonia due to Mannheimia haemolytica,Condition,SNOMED Veterinary,Clinical Finding,S,355231000009102,2014-01-31,2099-12-31,NA
+42573179,Enzootic pneumonia of sheep,Condition,SNOMED Veterinary,Clinical Finding,S,355251000009106,2014-01-31,2099-12-31,NA
+42573181,Bovine respiratory disease complex,Condition,SNOMED Veterinary,Clinical Finding,S,355281000009103,2014-01-31,2099-12-31,NA
+42573218,Mycoplasmal pneumonia,Condition,SNOMED Veterinary,Clinical Finding,S,359921000009105,2017-10-06,2099-12-31,NA
+42573349,Exudative pneumonia,Condition,SNOMED Veterinary,Clinical Finding,S,40991000009102,2008-08-29,2099-12-31,NA
+42593423,Bronchoalveolar pneumonia,Condition,SNOMED Veterinary,Clinical Finding,S,281191000009105,2009-10-27,2099-12-31,NA
+42598655,Atypical interstitial pneumonia of cattle,Condition,SNOMED Veterinary,Clinical Finding,S,336791000009101,2014-01-31,2099-12-31,NA
+42598908,Chronic viral encephalomyelitis of sheep,Condition,SNOMED Veterinary,Clinical Finding,S,342641000009103,2014-01-31,2099-12-31,NA
+42598979,Enzootic pneumonia of calves,Condition,SNOMED Veterinary,Clinical Finding,S,344131000009109,2014-01-31,2099-12-31,NA
+42598991,Brooder pneumonia,Condition,SNOMED Veterinary,Clinical Finding,S,344291000009103,2014-01-31,2099-12-31,NA
+42599060,Enzootic mycoplasmal pneumonia of swine,Condition,SNOMED Veterinary,Clinical Finding,S,345621000009104,2014-01-31,2099-12-31,NA
+42599199,Contagious caprine pleuropneumonia,Condition,SNOMED Veterinary,Clinical Finding,S,348481000009109,2014-01-31,2099-12-31,NA
+42599561,Tuberculous pneumonia of animals,Condition,SNOMED Veterinary,Clinical Finding,S,357061000009106,2015-01-27,2099-12-31,NA
+42600053,Bronchointerstitial pneumonia,Condition,SNOMED Veterinary,Clinical Finding,S,40621000009106,2008-08-29,2099-12-31,NA
+42600167,Pleuropneumonia,Condition,SNOMED Veterinary,Clinical Finding,S,42721000009102,2008-08-29,2099-12-31,NA
+43020558,Cavitary pneumonia,Condition,SNOMED,Disorder,S,471272001,2013-01-31,2099-12-31,NA
+44782989,Recurrent pneumonia,Condition,SNOMED,Disorder,S,699014000,2014-01-31,2099-12-31,NA
+45757206,Pneumonia caused by Ascaris,Condition,SNOMED,Disorder,S,1082721000119101,2014-07-31,2099-12-31,NA
+45757250,Gonococcal pneumonia,Condition,SNOMED,Disorder,S,1087061000119106,2015-01-31,2099-12-31,NA
+45757644,Chronic coccidioidomycotic pneumonia,Condition,SNOMED,Disorder,S,28791000119105,2014-07-31,2099-12-31,NA
+45768960,Pneumonia caused by Schistosoma japonicum,Condition,SNOMED,Disorder,S,707507003,2015-01-31,2099-12-31,NA
+45768961,Pneumonia caused by Schistosoma haematobium,Condition,SNOMED,Disorder,S,707508008,2015-01-31,2099-12-31,NA
+45770900,Rubella pneumonia,Condition,SNOMED,Disorder,S,1092361000119109,2015-01-31,2099-12-31,NA
+45770911,Acute pneumonia caused by coccidioidomycosis,Condition,SNOMED,Disorder,S,184431000119108,2014-07-31,2099-12-31,NA
+45771022,Pneumonia caused by Schistosoma mansoni,Condition,SNOMED,Disorder,S,707503004,2015-01-31,2099-12-31,NA
+46269693,Chronic pneumonia,Condition,SNOMED,Disorder,S,102361000119104,2015-07-31,2099-12-31,NA
+46269707,Bronchopneumonia caused by Achromobacter,Condition,SNOMED,Disorder,S,10624991000119103,2015-07-31,2099-12-31,NA
+46269708,Bronchopneumonia caused by anaerobic bacteria,Condition,SNOMED,Disorder,S,10625031000119102,2015-07-31,2099-12-31,NA
+46269709,Bronchopneumonia caused by bacteria,Condition,SNOMED,Disorder,S,10625071000119104,2015-07-31,2099-12-31,NA
+46269710,Bronchopneumonia caused by Escherichia coli,Condition,SNOMED,Disorder,S,10625111000119106,2015-07-31,2099-12-31,NA
+46269711,Bronchopneumonia caused by Group A Streptococcus,Condition,SNOMED,Disorder,S,10625151000119107,2015-07-31,2099-12-31,NA
+46269712,Bronchopneumonia caused by Group B Streptococcus,Condition,SNOMED,Disorder,S,10625191000119102,2015-07-31,2099-12-31,NA
+46269713,Bronchopneumonia caused by Haemophilus influenzae,Condition,SNOMED,Disorder,S,10625231000119106,2015-07-31,2099-12-31,NA
+46269714,Bronchopneumonia caused by Human metapneumovirus,Condition,SNOMED,Disorder,S,10625271000119109,2015-07-31,2099-12-31,NA
+46269715,Bronchopneumonia caused by Klebsiella pneumoniae,Condition,SNOMED,Disorder,S,10625311000119109,2015-07-31,2099-12-31,NA
+46269716,Bronchopneumonia caused by methicillin resistant Staphylococcus aureus,Condition,SNOMED,Disorder,S,10625351000119105,2015-07-31,2099-12-31,NA
+46269717,Bronchopneumonia caused by methicillin susceptible Staphylococcus aureus,Condition,SNOMED,Disorder,S,10625391000119100,2015-07-31,2099-12-31,NA
+46269718,Bronchopneumonia caused by Mycoplasma pneumoniae,Condition,SNOMED,Disorder,S,10625431000119105,2015-07-31,2099-12-31,NA
+46269719,Bronchopneumonia caused by Proteus mirabilis,Condition,SNOMED,Disorder,S,10625471000119108,2015-07-31,2099-12-31,NA
+46269720,Bronchopneumonia caused by Pseudomonas,Condition,SNOMED,Disorder,S,10625511000119104,2015-07-31,2099-12-31,NA
+46269721,Bronchopneumonia caused by respiratory syncytial virus,Condition,SNOMED,Disorder,S,10625551000119103,2015-07-31,2099-12-31,NA
+46269722,Bronchopneumonia caused by Staphylococcus,Condition,SNOMED,Disorder,S,10625591000119108,2015-07-31,2099-12-31,NA
+46269723,Bronchopneumonia caused by Staphylococcus aureus,Condition,SNOMED,Disorder,S,10625631000119108,2015-07-31,2099-12-31,NA
+46269724,Bronchopneumonia caused by Streptococcus,Condition,SNOMED,Disorder,S,10625671000119106,2015-07-31,2099-12-31,NA
+46269725,Bronchopneumonia caused by Streptococcus pneumoniae,Condition,SNOMED,Disorder,S,10625711000119105,2015-07-31,2099-12-31,NA
+46269726,Bronchopneumonia due to virus,Condition,SNOMED,Disorder,S,10625751000119106,2015-07-31,2099-12-31,NA
+46269954,Pneumonia caused by Bordetella parapertussis,Condition,SNOMED,Disorder,S,1092951000119106,2015-07-31,2099-12-31,NA
+46270027,Pneumonia caused by methicillin resistant Staphylococcus aureus,Condition,SNOMED,Disorder,S,124691000119101,2015-07-31,2099-12-31,NA
+46270121,Pneumonia caused by Influenza A virus subtype H1N1,Condition,SNOMED,Disorder,S,142931000119100,2015-07-31,2099-12-31,NA
+46270318,Pneumonia caused by Influenza virus,Condition,SNOMED,Disorder,S,16311000119108,2015-07-31,2099-12-31,NA
+46270510,Acute aspiration pneumonia,Condition,SNOMED,Disorder,S,35031000119100,2015-07-31,2099-12-31,NA
+46274035,Pneumonia caused by methicillin susceptible Staphylococcus aureus,Condition,SNOMED,Disorder,S,128711000119106,2015-07-31,2099-12-31,NA

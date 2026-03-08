@@ -1,0 +1,160 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+72991,Traumatic arthropathy of multiple sites,Condition,SNOMED,Disorder,S,201940003,2002-01-31,2099-12-31,NA
+73289,Pathological dislocation of multiple joints,Condition,SNOMED,Disorder,S,202175000,2002-01-31,2099-12-31,NA
+73838,Pyogenic arthritis of multiple sites,Condition,SNOMED,Disorder,S,34934005,2002-01-31,2099-12-31,NA
+73851,Effusion of joint of multiple sites,Condition,SNOMED,Disorder,S,36662003,2002-01-31,2099-12-31,NA
+74125,Inflammatory polyarthropathy,Condition,SNOMED,Disorder,S,417373000,2005-07-31,2099-12-31,NA
+74724,Transient arthropathy of multiple sites,Condition,SNOMED,Disorder,S,201996005,2002-01-31,2099-12-31,NA
+75617,Generalized osteoarthritis,Condition,SNOMED,Disorder,S,201819000,2002-01-31,2099-12-31,NA
+75897,Polyarthropathy,Condition,SNOMED,Disorder,S,36186002,2002-01-31,2099-12-31,NA
+75898,Loose joint body in multiple joints,Condition,SNOMED,Disorder,S,202155009,2002-01-31,2099-12-31,NA
+76194,Osteoarthrosis involving multiple sites but not designated as generalized,Condition,SNOMED,Disorder,S,33262002,2002-01-31,2099-12-31,NA
+80188,Ankylosis of joint of multiple sites,Condition,SNOMED,Disorder,S,90242006,2002-01-31,2099-12-31,NA
+80804,Allergic arthritis of multiple sites,Condition,SNOMED,Disorder,S,201972000,2002-01-31,2099-12-31,NA
+80806,Climacteric arthritis of multiple sites,Condition,SNOMED,Disorder,S,201985002,2002-01-31,2099-12-31,NA
+81945,Palindromic rheumatism of multiple sites,Condition,SNOMED,Disorder,S,202465007,2002-01-31,2099-12-31,NA
+439666,Contracture of multiple joints,Condition,SNOMED,Disorder,S,202264009,2002-01-31,2099-12-31,NA
+603005,Polyarticular acute primary gout,Condition,SNOMED,Disorder,S,1153331004,2021-07-31,2099-12-31,NA
+603006,Polyarticular chronic gout caused by lead,Condition,SNOMED,Disorder,S,1153332006,2021-07-31,2099-12-31,NA
+603008,Polyarticular acute gout caused by lead,Condition,SNOMED,Disorder,S,1153334007,2021-07-31,2099-12-31,NA
+607387,Polyarticular chronic primary gouty arthritis,Condition,SNOMED,Disorder,S,1153351000,2021-07-31,2099-12-31,NA
+608041,Rheumatoid factor positive and anti-citrullinated protein antibody positive juvenile polyarthritis,Condition,SNOMED,Disorder,S,1156774008,2021-07-31,2099-12-31,NA
+608042,Rheumatoid factor positive and anti-citrullinated protein antibody negative juvenile polyarthritis,Condition,SNOMED,Disorder,S,1156777001,2021-07-31,2099-12-31,NA
+608043,Rheumatoid factor negative and anti-citrullinated protein antibody negative juvenile polyarthritis,Condition,SNOMED,Disorder,S,1156778006,2021-07-31,2099-12-31,NA
+608044,Rheumatoid factor negative and anti-citrullinated protein antibody positive juvenile polyarthritis,Condition,SNOMED,Disorder,S,1156779003,2021-07-31,2099-12-31,NA
+618647,Polyarticular viral arthritis,Condition,SNOMED,Disorder,S,71581000119108,2021-07-31,2099-12-31,NA
+619732,Distal arthrogryposis type 3,Condition,SNOMED,Disorder,S,897570002,2021-01-31,2099-12-31,NA
+761945,Pyogenic bacterial polyarthritis,Condition,SNOMED,Disorder,S,22841000119105,2012-09-01,2099-12-31,NA
+762720,Arthritis due to alkaptonuria,Condition,SNOMED,Disorder,S,431011000124103,2012-09-01,2099-12-31,NA
+764931,Villous arthropathy of multiple joints,Condition,SNOMED,Disorder,S,86901000119106,2016-03-01,2099-12-31,NA
+765773,Polyarthritis associated with hemochromatosis,Condition,SNOMED,Disorder,S,430741000124108,2012-09-01,2099-12-31,NA
+1245372,Congenital pontocerebellar hypoplasia type 12,Condition,SNOMED,Disorder,S,1300190004,2024-02-01,2099-12-31,NA
+1448446,"Flexion contracture of proximal interphalangeal joints of index, middle, ring and little finger",Condition,SNOMED,Disorder,S,1003723004,2024-12-01,2099-12-31,NA
+1449313,Alkuraya Kucinskas syndrome,Condition,SNOMED,Disorder,S,1351836007,2024-12-01,2099-12-31,NA
+3168431,Chronic polyarthritis,Condition,Nebraska Lexicon,Clinical Finding,S,9780001000004103,2016-01-28,2099-12-31,NA
+4007586,Congenital contractural arachnodactyly,Condition,SNOMED,Disorder,S,205821003,2002-01-31,2099-12-31,NA
+4009040,Arthrogryposis,Condition,SNOMED,Disorder,S,111246005,2002-01-31,2099-12-31,NA
+4009504,Migratory polyarthritis,Condition,SNOMED,Disorder,S,111211002,2002-01-31,2099-12-31,NA
+4025957,Degenerative polyarthritis,Condition,SNOMED,Disorder,S,225655006,2002-01-31,2099-12-31,NA
+4033630,Arthritis of temporomandibular joint as part of polyarthritis,Condition,SNOMED,Disorder,S,109663009,2002-01-31,2099-12-31,NA
+4034672,Acute infective polyarthritis,Condition,SNOMED,Disorder,S,23950002,2002-01-31,2099-12-31,NA
+4035612,Early onset polyarticular juvenile chronic arthritis,Condition,SNOMED,Disorder,S,239799007,2002-01-31,2099-12-31,NA
+4066952,Staphylococcal arthritis and polyarthritis,Condition,SNOMED,Disorder,S,201466005,2002-01-31,2099-12-31,NA
+4066957,Sexually acquired reactive arthritis of multiple sites,Condition,SNOMED,Disorder,S,201481004,2002-01-31,2099-12-31,NA
+4066958,Reactive arthritis of joint of multiple sites due to and following dysentery,Condition,SNOMED,Disorder,S,201504007,2002-01-31,2099-12-31,NA
+4067196,Pneumococcal arthritis and polyarthritis,Condition,SNOMED,Disorder,S,201467001,2002-01-31,2099-12-31,NA
+4083558,Late onset polyarticular juvenile chronic arthritis,Condition,SNOMED,Disorder,S,239800006,2002-01-31,2099-12-31,NA
+4085264,Distal arthrogryposis syndrome,Condition,SNOMED,Disorder,S,24269006,2002-01-31,2099-12-31,NA
+4109057,Boomerang dysplasia,Condition,SNOMED,Disorder,S,254054000,2002-01-31,2099-12-31,NA
+4109180,Multiple dislocations with dysplasia,Condition,SNOMED,Disorder,S,254098000,2002-01-31,2099-12-31,NA
+4111311,Atelosteogenesis type 2,Condition,SNOMED,Disorder,S,254055004,2002-01-31,2099-12-31,NA
+4113605,Pseudodiastrophic dysplasia,Condition,SNOMED,Disorder,S,254058002,2002-01-31,2099-12-31,NA
+4113729,Desbuquois syndrome,Condition,SNOMED,Disorder,S,254099008,2002-01-31,2099-12-31,NA
+4116009,Gouty arthritis of multiple sites,Condition,SNOMED,Disorder,S,201670006,2002-01-31,2099-12-31,NA
+4117686,Rheumatoid arthritis of multiple joints,Condition,SNOMED,Disorder,S,287006005,2002-01-31,2099-12-31,NA
+4132809,Juvenile seropositive polyarthritis,Condition,SNOMED,Disorder,S,410796000,2004-07-31,2099-12-31,NA
+4132810,Juvenile seronegative polyarthritis,Condition,SNOMED,Disorder,S,410797009,2004-07-31,2099-12-31,NA
+4147779,Osteoarthritis of multiple joints,Condition,SNOMED,Disorder,S,268054009,2002-01-31,2099-12-31,NA
+4151218,Inherited arthrogryposis,Condition,SNOMED,Disorder,S,28204005,2002-01-31,2099-12-31,NA
+4153650,Congenital arthrogryposis caused by teratogen,Condition,SNOMED,Disorder,S,370473000,2002-07-31,2099-12-31,NA
+4172431,Chronic infective polyarthritis,Condition,SNOMED,Disorder,S,49761000,2002-01-31,2099-12-31,NA
+4173925,Post-infective polyarthritis,Condition,SNOMED,Disorder,S,422565003,2007-01-31,2099-12-31,NA
+4179092,Acute polyarthritis,Condition,SNOMED,Disorder,S,42898009,2002-01-31,2099-12-31,NA
+4184046,Atelosteogenesis,Condition,SNOMED,Disorder,S,43814000,2002-01-31,2099-12-31,NA
+4195770,Idiopathic polyarthritis,Condition,SNOMED,Disorder,S,44221002,2002-01-31,2099-12-31,NA
+4198076,Polyarthropathy associated with another disorder,Condition,SNOMED,Disorder,S,51891008,2002-01-31,2099-12-31,NA
+4203639,Freeman-Sheldon syndrome,Condition,SNOMED,Disorder,S,52616002,2002-01-31,2099-12-31,NA
+4218311,Undifferentiated inflammatory polyarthritis,Condition,SNOMED,Disorder,S,416956002,2005-07-31,2099-12-31,NA
+4224167,Lipoid dermatoarthritis,Condition,SNOMED,Disorder,S,84241008,2002-01-31,2099-12-31,NA
+4227121,Hecht syndrome,Condition,SNOMED,Disorder,S,8757006,2002-01-31,2099-12-31,NA
+4238810,Diastrophic dysplasia,Condition,SNOMED,Disorder,S,58561002,2002-01-31,2099-12-31,NA
+4243832,Subacute infective polyarthritis,Condition,SNOMED,Disorder,S,60140004,2002-01-31,2099-12-31,NA
+4245641,Chlamydial polyarthritis,Condition,SNOMED,Disorder,S,59484000,2002-01-31,2099-12-31,NA
+4254769,Polyarthritis caused by Erysipelothrix rhusiopathiae,Condition,SNOMED,Disorder,S,410020008,2004-07-31,2099-12-31,NA
+4265212,Familial arthrogryposis-cholestatic hepatorenal syndrome,Condition,SNOMED,Disorder,S,62216007,2002-01-31,2099-12-31,NA
+4265764,Polyarthritis associated with another disorder,Condition,SNOMED,Disorder,S,6211002,2002-01-31,2099-12-31,NA
+4266078,Infective polyarthritis,Condition,SNOMED,Disorder,S,61126009,2002-01-31,2099-12-31,NA
+4266181,Fibroblastic rheumatism,Condition,SNOMED,Disorder,S,399964004,2003-07-31,2099-12-31,NA
+4269041,Pena-Shokeir syndrome type I,Condition,SNOMED,Disorder,S,401138005,2003-07-31,2099-12-31,NA
+4272804,Larsen syndrome,Condition,SNOMED,Disorder,S,63387002,2002-01-31,2099-12-31,NA
+4322887,Arthropathy of multiple joints associated with a neurological disorder,Condition,SNOMED,Disorder,S,428106000,2008-01-31,2099-12-31,NA
+4344281,Congenital muscular dystrophy with arthrogryposis multiplex congenita,Condition,SNOMED,Disorder,S,240061000,2002-01-31,2099-12-31,NA
+35622034,Lethal congenital contracture syndrome type 5,Condition,SNOMED,Disorder,S,763346009,2018-07-31,2099-12-31,NA
+35622121,X-linked lethal multiple pterygium syndrome,Condition,SNOMED,Disorder,S,763462004,2018-07-31,2099-12-31,NA
+35622345,Larsen-like syndrome B3GAT3 type,Condition,SNOMED,Disorder,S,763778003,2018-07-31,2099-12-31,NA
+35622689,Autosomal recessive myogenic arthrogryposis multiplex congenita,Condition,SNOMED,Disorder,S,764812008,2018-07-31,2099-12-31,NA
+35622774,"Larsen-like osseous dysplasia, short stature syndrome",Condition,SNOMED,Disorder,S,764956007,2018-07-31,2099-12-31,NA
+35624206,Spondyloepimetaphyseal dysplasia with multiple dislocations,Condition,SNOMED,Disorder,S,766820007,2018-07-31,2099-12-31,NA
+35624271,Hypomyelination neuropathy arthrogryposis syndrome,Condition,SNOMED,Disorder,S,766931003,2018-07-31,2099-12-31,NA
+35624445,Ganglion of multiple joints,Condition,SNOMED,Disorder,S,767188008,2018-07-31,2099-12-31,NA
+36674262,"Camptodactyly, arthropathy, coxa-vara, pericarditis syndrome",Condition,SNOMED,Disorder,S,771187008,2019-01-31,2099-12-31,NA
+36674280,Autosomal dominant multiple pterygium syndrome,Condition,SNOMED,Disorder,S,771269000,2019-01-31,2099-12-31,NA
+36674915,"Autosomal recessive intellectual disability, motor dysfunction, multiple joint contracture syndrome",Condition,SNOMED,Disorder,S,770901001,2019-01-31,2099-12-31,NA
+36676429,Congenital lethal myopathy Compton North type,Condition,SNOMED,Disorder,S,773306002,2019-01-31,2099-12-31,NA
+36676496,Distal arthrogryposis type 5D,Condition,SNOMED,Disorder,S,773396009,2019-01-31,2099-12-31,NA
+36713652,Aase Smith type 1 syndrome,Condition,SNOMED,Disorder,S,718576001,2017-01-31,2099-12-31,NA
+36714255,Malignant hyperthermia with arthrogryposis and torticollis syndrome,Condition,SNOMED,Disorder,S,719398004,2017-01-31,2099-12-31,NA
+36714264,Lethal Larsen-like syndrome,Condition,SNOMED,Disorder,S,719409004,2017-01-31,2099-12-31,NA
+36714550,X-linked distal arthrogryposis multiplex congenita,Condition,SNOMED,Disorder,S,719836007,2017-01-31,2099-12-31,NA
+36714557,Van den Ende-Gupta syndrome,Condition,SNOMED,Disorder,S,719845008,2017-01-31,2099-12-31,NA
+36715047,Arthrogryposis with renal dysfunction and cholestasis syndrome,Condition,SNOMED,Disorder,S,720513002,2017-01-31,2099-12-31,NA
+36715048,Illum syndrome,Condition,SNOMED,Disorder,S,720514008,2017-01-31,2099-12-31,NA
+36715049,Distal arthrogryposis type 6,Condition,SNOMED,Disorder,S,720515009,2017-01-31,2099-12-31,NA
+36715216,Contracture with ectodermal dysplasia and orofacial cleft syndrome,Condition,SNOMED,Disorder,S,720746006,2017-01-31,2099-12-31,NA
+36715309,Ehlers-Danlos syndrome musculocontractural type,Condition,SNOMED,Disorder,S,720860004,2017-01-31,2099-12-31,NA
+36716447,"Intellectual disability, developmental delay, contracture syndrome",Condition,SNOMED,Disorder,S,722456001,2017-01-31,2099-12-31,NA
+36717390,Adducted thumbs and arthrogryposis syndrome Christian type,Condition,SNOMED,Disorder,S,720463009,2017-01-31,2099-12-31,NA
+37108714,Seropositive rheumatoid arthritis of multiple joints,Condition,SNOMED,Disorder,S,11055151000119108,2017-07-31,2099-12-31,NA
+37110185,"Hereditary inclusion body myopathy, joint contracture, ophthalmoplegia syndrome",Condition,SNOMED,Disorder,S,724349009,2017-07-31,2099-12-31,NA
+37110773,Atelosteogenesis type 1,Condition,SNOMED,Disorder,S,725141006,2017-07-31,2099-12-31,NA
+37110891,CHST3-related skeletal dysplasia,Condition,SNOMED,Disorder,S,725417001,2017-07-31,2099-12-31,NA
+37116363,Camptobrachydactyly,Condition,SNOMED,Disorder,S,733045005,2017-07-31,2099-12-31,NA
+37116742,"Autism spectrum disorder, epilepsy, arthrogryposis syndrome",Condition,SNOMED,Disorder,S,733623005,2017-07-31,2099-12-31,NA
+37117239,Atelosteogenesis type 3,Condition,SNOMED,Disorder,S,725142004,2017-07-31,2099-12-31,NA
+37118032,Arthrogryposis hyperkeratosis syndrome lethal form,Condition,SNOMED,Disorder,S,726620005,2017-07-31,2099-12-31,NA
+37118593,German syndrome,Condition,SNOMED,Disorder,S,733037000,2017-07-31,2099-12-31,NA
+37160369,Polyarticular psoriatic arthritis,Condition,SNOMED,Disorder,S,1162295001,2021-09-30,2099-12-31,NA
+37160974,Prenatal-onset spinal muscular atrophy with congenital bone fractures,Condition,SNOMED,Disorder,S,1172689007,2021-09-30,2099-12-31,NA
+37161422,NEK9-related lethal skeletal dysplasia,Condition,SNOMED,Disorder,S,1179299005,2021-10-31,2099-12-31,NA
+37162067,"Immune dysregulation, inflammatory bowel disease, arthritis, recurrent infection, lymphopenia syndrome",Condition,SNOMED,Disorder,S,1186654001,2021-11-30,2099-12-31,NA
+37162796,Steel syndrome,Condition,SNOMED,Disorder,S,1197589000,2022-02-28,2099-12-31,NA
+37163194,Distal arthrogryposis type 10,Condition,SNOMED,Disorder,S,1208482007,2022-03-31,2099-12-31,NA
+37163586,"Severe myopia, generalized joint laxity, short stature syndrome",Condition,SNOMED,Disorder,S,1217372003,2022-04-30,2099-12-31,NA
+37164084,Spondyloepiphyseal dysplasia Stanescu type,Condition,SNOMED,Disorder,S,1228860003,2022-05-31,2099-12-31,NA
+37164423,"Microphthalmia, microtia, fetal akinesia syndrome",Condition,SNOMED,Disorder,S,1230344000,2022-06-30,2099-12-31,NA
+37165249,MYBPC1-related autosomal recessive non-lethal arthrogryposis multiplex congenita syndrome,Condition,SNOMED,Disorder,S,1251451005,2022-09-30,2099-12-31,NA
+37165567,Myopathic Ehlers-Danlos syndrome,Condition,SNOMED,Disorder,S,1255116001,2022-10-31,2099-12-31,NA
+37165653,"Congenital contracture of limbs and face, hypotonia, developmental delay syndrome",Condition,SNOMED,Disorder,S,1255322002,2022-10-31,2099-12-31,NA
+37166118,Antenatal multi-minicore disease with arthrogryposis multiplex congenita,Condition,SNOMED,Disorder,S,1259119003,2022-12-31,2099-12-31,NA
+37167360,Congenital amyoplasia,Condition,SNOMED,Disorder,S,1264194006,2023-02-28,2099-12-31,NA
+37168829,"Spondyloepimetaphyseal dysplasia with joint laxity, EXOC6B type",Condition,SNOMED,Disorder,S,1286834000,2023-07-31,2099-12-31,NA
+37204289,Chondrodysplasia with joint dislocations gPAPP type,Condition,SNOMED,Disorder,S,782882009,2019-07-31,2099-12-31,NA
+37204477,"Pelvic dysplasia, arthrogryposis of lower limbs syndrome",Condition,SNOMED,Disorder,S,783140003,2019-07-31,2099-12-31,NA
+37206371,Arthrogryposis and ectodermal dysplasia syndrome,Condition,SNOMED,Disorder,S,786039009,2019-07-31,2099-12-31,NA
+37207809,Seronegative rheumatoid arthritis of multiple joints,Condition,SNOMED,Disorder,S,319081000119109,2019-07-31,2099-12-31,NA
+37395691,Sheldon-Hall syndrome,Condition,SNOMED,Disorder,S,715216008,2016-07-31,2099-12-31,NA
+37395692,Arthrogryposis with oculomotor limitation and electroretinal anomaly,Condition,SNOMED,Disorder,S,715217004,2016-07-31,2099-12-31,NA
+37395759,Digitotalar dysmorphism,Condition,SNOMED,Disorder,S,715314008,2016-07-31,2099-12-31,NA
+37395760,Neurogenic arthrogryposis multiplex congenita,Condition,SNOMED,Disorder,S,715316005,2016-07-31,2099-12-31,NA
+37395840,Lethal congenital contracture syndrome type 1,Condition,SNOMED,Disorder,S,715418007,2016-07-31,2099-12-31,NA
+37395841,Lethal congenital contracture syndrome type 2,Condition,SNOMED,Disorder,S,715419004,2016-07-31,2099-12-31,NA
+37395842,Lethal congenital contracture syndrome type 3,Condition,SNOMED,Disorder,S,715420005,2016-07-31,2099-12-31,NA
+37395941,Lethal arthrogryposis with anterior horn cell disease,Condition,SNOMED,Disorder,S,715565004,2016-07-31,2099-12-31,NA
+37395946,Distal arthrogryposis type 4,Condition,SNOMED,Disorder,S,715575001,2016-07-31,2099-12-31,NA
+37396375,Morse Rawnsley Sargent syndrome,Condition,SNOMED,Disorder,S,716169009,2016-07-31,2099-12-31,NA
+40400971,Arthrogryposis multiplex congenita,Condition,SNOMED,Disorder,S,205402004,2023-02-28,2099-12-31,NA
+40483306,Remitting seronegative symmetrical synovitis with pitting edema,Condition,SNOMED,Disorder,S,445345005,2010-07-31,2099-12-31,NA
+42534954,Infective polyarthritis caused by bacteria,Condition,SNOMED,Disorder,S,116431000119103,2018-01-31,2099-12-31,NA
+42535150,Acute polyarticular juvenile idiopathic arthritis,Condition,SNOMED,Disorder,S,16024431000119108,2018-01-31,2099-12-31,NA
+42535177,Polyarticular juvenile idiopathic arthritis,Condition,SNOMED,Disorder,S,16044751000119106,2018-01-31,2099-12-31,NA
+42539033,Oligoosteoarthritis,Condition,SNOMED,Disorder,S,735598004,2018-01-31,2099-12-31,NA
+42572623,Polyarthritis in Greyhounds,Condition,SNOMED Veterinary,Clinical Finding,S,335681000009104,2014-01-31,2099-12-31,NA
+42573193,Congenital arthrogryposis due to Akabane virus,Condition,SNOMED Veterinary,Clinical Finding,S,355541000009106,2014-01-31,2099-12-31,NA
+42596417,Immune mediated erosive polyarthritis,Condition,SNOMED Veterinary,Clinical Finding,S,311781000009102,2009-12-11,2099-12-31,NA
+42596418,Immune mediated non-erosive polyarthritis,Condition,SNOMED Veterinary,Clinical Finding,S,311791000009100,2009-12-11,2099-12-31,NA
+42599159,Progressive feline polyarthritis,Condition,SNOMED Veterinary,Clinical Finding,S,347431000009109,2014-01-31,2099-12-31,NA
+42599629,Immune mediated polyarthritis,Condition,SNOMED Veterinary,Clinical Finding,S,35771000009105,2008-08-29,2099-12-31,NA
+42709952,Marden Walker syndrome,Condition,SNOMED,Disorder,S,449824004,2012-01-31,2099-12-31,NA
+44811664,Nonspecific polyarthritis,Condition,SNOMED,Disorder,S,905501000000107,2014-04-01,2099-12-31,NA
+45765457,Spondyloepiphyseal dysplasia with congenital joint dislocations,Condition,SNOMED,Disorder,S,702400006,2014-07-31,2099-12-31,NA
+45765496,Kuskokwim syndrome,Condition,SNOMED,Disorder,S,702447002,2014-07-31,2099-12-31,NA

@@ -1,0 +1,113 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+136030,Sweating fever,Condition,SNOMED,Clinical Finding,S,186694006,2002-01-31,2099-12-31,NA
+435028,Puerperal pyrexia of unknown origin,Condition,SNOMED,Disorder,S,200277008,2002-01-31,2099-12-31,NA
+437663,Fever,Condition,SNOMED,Clinical Finding,S,386661006,2003-01-31,2099-12-31,NA
+438963,Tick-borne relapsing fever,Condition,SNOMED,Disorder,S,10301003,2002-01-31,2099-12-31,NA
+440285,Malignant hyperthermia,Condition,SNOMED,Disorder,S,405501007,2004-01-31,2099-12-31,NA
+443908,Relapsing fever caused by Borrelia recurrentis,Condition,SNOMED,Disorder,S,14683004,2002-01-31,2099-12-31,NA
+763017,Febrile transfusion reaction without hemolysis,Condition,SNOMED,Disorder,S,435001000124103,2013-09-01,2099-12-31,NA
+1075940,Systemic onset juvenile idiopathic arthritis of ankle,Condition,SNOMED,Disorder,S,1332542008,2024-06-01,2099-12-31,NA
+1075944,Systemic onset juvenile idiopathic arthritis of foot,Condition,SNOMED,Disorder,S,1332547002,2024-06-01,2099-12-31,NA
+1075945,Systemic onset juvenile idiopathic arthritis of hand,Condition,SNOMED,Disorder,S,1332548007,2024-06-01,2099-12-31,NA
+1075946,Systemic onset juvenile idiopathic arthritis of joint of shoulder region,Condition,SNOMED,Disorder,S,1332550004,2024-06-01,2099-12-31,NA
+1075947,Systemic onset juvenile idiopathic arthritis of hip,Condition,SNOMED,Disorder,S,1332551000,2024-06-01,2099-12-31,NA
+1076670,Systemic onset juvenile idiopathic arthritis of bilateral hands,Condition,SNOMED,Disorder,S,16040431000119100,2024-06-01,2099-12-31,NA
+1076671,Systemic onset juvenile idiopathic arthritis of left ankle,Condition,SNOMED,Disorder,S,16040471000119102,2024-06-01,2099-12-31,NA
+1076672,Systemic onset juvenile idiopathic arthritis of left hand,Condition,SNOMED,Disorder,S,16040591000119102,2024-06-01,2099-12-31,NA
+1076673,Systemic onset juvenile idiopathic arthritis of joint of left shoulder region,Condition,SNOMED,Disorder,S,16040631000119102,2024-06-01,2099-12-31,NA
+1076674,Systemic onset juvenile idiopathic arthritis of left foot,Condition,SNOMED,Disorder,S,16040671000119104,2024-06-01,2099-12-31,NA
+1076675,Systemic onset juvenile idiopathic arthritis of right hand,Condition,SNOMED,Disorder,S,16040791000119109,2024-06-01,2099-12-31,NA
+1076676,Systemic onset juvenile idiopathic arthritis of bilateral hips,Condition,SNOMED,Disorder,S,16040871000119100,2024-06-01,2099-12-31,NA
+1076677,Systemic onset juvenile idiopathic arthritis of right hip,Condition,SNOMED,Disorder,S,16040951000119101,2024-06-01,2099-12-31,NA
+1076678,Systemic onset juvenile idiopathic arthritis of right foot,Condition,SNOMED,Disorder,S,16041031000119100,2024-06-01,2099-12-31,NA
+1076679,Systemic onset juvenile idiopathic arthritis of joint of bilateral shoulder regions,Condition,SNOMED,Disorder,S,16041191000119100,2024-06-01,2099-12-31,NA
+1076680,Systemic onset juvenile idiopathic arthritis of right ankle,Condition,SNOMED,Disorder,S,16041231000119109,2024-06-01,2099-12-31,NA
+1076681,Systemic onset juvenile idiopathic arthritis of bilateral ankles,Condition,SNOMED,Disorder,S,16041311000119107,2024-06-01,2099-12-31,NA
+1076682,Systemic onset juvenile idiopathic arthritis of bilateral feet,Condition,SNOMED,Disorder,S,16041391000119103,2024-06-01,2099-12-31,NA
+1076683,Systemic onset juvenile idiopathic arthritis of joint of right shoulder region,Condition,SNOMED,Disorder,S,16041431000119108,2024-06-01,2099-12-31,NA
+1076684,Systemic onset juvenile idiopathic arthritis of left hip,Condition,SNOMED,Disorder,S,16041471000119106,2024-06-01,2099-12-31,NA
+1244797,Systemic onset juvenile idiopathic arthritis of knee,Condition,SNOMED,Disorder,S,1290875003,2024-02-01,2099-12-31,NA
+1245822,Systemic onset juvenile idiopathic arthritis of right knee,Condition,SNOMED,Disorder,S,16041071000119102,2024-02-01,2099-12-31,NA
+1245823,Systemic onset juvenile idiopathic arthritis of bilateral knees,Condition,SNOMED,Disorder,S,16041111000119109,2024-02-01,2099-12-31,NA
+1245824,Systemic onset juvenile idiopathic arthritis of left knee,Condition,SNOMED,Disorder,S,16041351000119108,2024-02-01,2099-12-31,NA
+3191245,Neutropenic fever,Condition,Nebraska Lexicon,Clinical Finding,S,11390001000004109,2016-01-28,2099-12-31,NA
+3197956,Postoperative fever,Condition,Nebraska Lexicon,Clinical Finding,S,17670001000004108,2016-01-28,2099-12-31,NA
+3661885,Fever caused by SARS-CoV-2,Condition,SNOMED,Disorder,S,119751000146104,2020-07-31,2099-12-31,NA
+4008094,Factitious fever,Condition,SNOMED,Clinical Finding,S,111950007,2002-01-31,2099-12-31,NA
+4009878,Spiking fever,Condition,SNOMED,Clinical Finding,S,102496004,2002-01-31,2099-12-31,NA
+4020879,Malignant hyperthermia caused by anesthetic,Condition,SNOMED,Disorder,S,213026003,2002-01-31,2099-12-31,NA
+4034154,Puerperal pyrexia,Condition,SNOMED,Disorder,S,237348005,2002-01-31,2099-12-31,NA
+4048098,Cough with fever,Condition,SNOMED,Clinical Finding,S,135883003,2002-01-31,2099-12-31,NA
+4086663,Plateau phase of fever,Condition,SNOMED,Clinical Finding,S,248433000,2002-01-31,2099-12-31,NA
+4086664,Falling phase of fever,Condition,SNOMED,Clinical Finding,S,248434006,2002-01-31,2099-12-31,NA
+4086665,Biphasic fever,Condition,SNOMED,Clinical Finding,S,248444008,2002-01-31,2099-12-31,NA
+4086666,"Fever, diurnal variation",Condition,SNOMED,Clinical Finding,S,248445009,2002-01-31,2099-12-31,NA
+4086667,Central fever,Condition,SNOMED,Clinical Finding,S,248449003,2002-01-31,2099-12-31,NA
+4086668,Postoperative fever,Condition,SNOMED,Clinical Finding,S,248450003,2002-01-31,2099-12-31,NA
+4087016,Prolonged fever,Condition,SNOMED,Clinical Finding,S,248435007,2002-01-31,2099-12-31,NA
+4087017,Tertian fever,Condition,SNOMED,Clinical Finding,S,248440004,2002-01-31,2099-12-31,NA
+4087627,Double quotidien fever,Condition,SNOMED,Clinical Finding,S,248439001,2002-01-31,2099-12-31,NA
+4087628,Malignant tertian fever,Condition,SNOMED,Clinical Finding,S,248441000,2002-01-31,2099-12-31,NA
+4087629,Quartan fever,Condition,SNOMED,Clinical Finding,S,248442007,2002-01-31,2099-12-31,NA
+4093995,Rising phase of fever,Condition,SNOMED,Clinical Finding,S,248432005,2002-01-31,2099-12-31,NA
+4093996,Slightly remittent fever,Condition,SNOMED,Clinical Finding,S,248436008,2002-01-31,2099-12-31,NA
+4093997,Malarial fever,Condition,SNOMED,Clinical Finding,S,248437004,2002-01-31,2099-12-31,NA
+4093998,Quotidien fever,Condition,SNOMED,Clinical Finding,S,248438009,2002-01-31,2099-12-31,NA
+4093999,Intermittent hepatic fever,Condition,SNOMED,Clinical Finding,S,248443002,2002-01-31,2099-12-31,NA
+4094000,Reversed diurnal fever,Condition,SNOMED,Clinical Finding,S,248446005,2002-01-31,2099-12-31,NA
+4094001,Fever defervescence,Condition,SNOMED,Clinical Finding,S,248447001,2002-01-31,2099-12-31,NA
+4116447,Systemic onset juvenile chronic arthritis,Condition,SNOMED,Disorder,S,201796004,2002-01-31,2099-12-31,NA
+4127282,Low grade pyrexia,Condition,SNOMED,Clinical Finding,S,304213008,2002-01-31,2099-12-31,NA
+4141062,Fever greater than 100.4 Fahrenheit,Measurement,SNOMED,Clinical Finding,S,426000000,2007-07-31,2099-12-31,NA
+4143214,Maternal pyrexia in labor,Condition,SNOMED,Disorder,S,267340006,2002-01-31,2099-12-31,NA
+4152339,Rapid fall of fever,Condition,SNOMED,Clinical Finding,S,271754008,2002-01-31,2099-12-31,NA
+4152340,Gradual fall of fever,Condition,SNOMED,Clinical Finding,S,271755009,2002-01-31,2099-12-31,NA
+4154923,Acute rise of fever,Condition,SNOMED,Clinical Finding,S,271749004,2002-01-31,2099-12-31,NA
+4158329,Gradual rise of fever,Condition,SNOMED,Clinical Finding,S,271750004,2002-01-31,2099-12-31,NA
+4158330,Continuous fever,Condition,SNOMED,Clinical Finding,S,271751000,2002-01-31,2099-12-31,NA
+4158331,Staircase fever,Condition,SNOMED,Clinical Finding,S,271752007,2002-01-31,2099-12-31,NA
+4158332,Irregular fever,Condition,SNOMED,Clinical Finding,S,271753002,2002-01-31,2099-12-31,NA
+4164645,Fever with chills,Condition,SNOMED,Clinical Finding,S,274640006,2002-01-31,2099-12-31,NA
+4170737,Swinging fever,Condition,SNOMED,Clinical Finding,S,42136008,2002-01-31,2099-12-31,NA
+4170869,Dehydration fever in newborn,Condition,SNOMED,Disorder,S,49513005,2002-01-31,2099-12-31,NA
+4199309,Pel Ebstein fever,Condition,SNOMED,Clinical Finding,S,52715007,2002-01-31,2099-12-31,NA
+4226022,Drug-induced hyperpyrexia,Condition,SNOMED,Clinical Finding,S,405543000,2004-01-31,2099-12-31,NA
+4243806,Transitory fever of newborn,Condition,SNOMED,Clinical Finding,S,60025004,2002-01-31,2099-12-31,NA
+4249735,Febrile transfusion reaction,Condition,SNOMED,Disorder,S,73301000,2002-01-31,2099-12-31,NA
+4260205,Hyperpyrexia,Condition,SNOMED,Clinical Finding,S,409702008,2004-07-31,2099-12-31,NA
+4268842,Pattern of fever - finding,Condition,SNOMED,Clinical Finding,S,365977007,2002-01-31,2099-12-31,NA
+4268846,Phase of fever - finding,Condition,SNOMED,Clinical Finding,S,365989009,2002-01-31,2099-12-31,NA
+4274502,Remittent fever,Condition,SNOMED,Clinical Finding,S,63993003,2002-01-31,2099-12-31,NA
+4299794,Intermittent fever,Condition,SNOMED,Clinical Finding,S,77957000,2002-01-31,2099-12-31,NA
+4310674,Brazilian purpuric fever,Condition,SNOMED,Disorder,S,8554002,2002-01-31,2099-12-31,NA
+4318118,Mycoplasmal postpartum fever,Condition,SNOMED,Disorder,S,95888005,2002-01-31,2099-12-31,NA
+4318555,Fever of newborn,Condition,SNOMED,Clinical Finding,S,95627000,2002-01-31,2099-12-31,NA
+4320537,Aseptic fever,Condition,SNOMED,Clinical Finding,S,9619006,2002-01-31,2099-12-31,NA
+4328373,Pyrexia of unknown origin,Condition,SNOMED,Clinical Finding,S,7520000,2002-01-31,2099-12-31,NA
+4344166,Adult onset Still's disease,Condition,SNOMED,Disorder,S,239920006,2002-01-31,2099-12-31,NA
+4346179,Bancroftian filarial fever,Condition,SNOMED,Disorder,S,240822009,2002-01-31,2099-12-31,NA
+4347651,Malayan filarial fever,Condition,SNOMED,Disorder,S,240827003,2002-01-31,2099-12-31,NA
+36712667,Viral fever,Condition,SNOMED,Clinical Finding,S,10151000132103,2017-01-31,2099-12-31,NA
+36714255,Malignant hyperthermia with arthrogryposis and torticollis syndrome,Condition,SNOMED,Disorder,S,719398004,2017-01-31,2099-12-31,NA
+36716728,Fever due to infection,Condition,SNOMED,Clinical Finding,S,722892007,2017-01-31,2099-12-31,NA
+37017455,Pyrexia of unknown origin co-occurrent with human immunodeficiency virus infection,Condition,SNOMED,Disorder,S,713731001,2016-01-31,2099-12-31,NA
+37155424,TAFRO syndrome,Condition,SNOMED,Disorder,S,1187615007,2022-01-31,2099-12-31,NA
+37165040,Exercise-induced malignant hyperthermia,Condition,SNOMED,Disorder,S,1237338002,2022-09-30,2099-12-31,NA
+37168270,Relapsing fever caused by Borrelia miyamotoi,Condition,SNOMED,Disorder,S,1279671006,2023-04-30,2099-12-31,NA
+37168271,Relapsing fever caused by Borrelia latyschewii,Condition,SNOMED,Disorder,S,1279672004,2023-04-30,2099-12-31,NA
+37168275,Relapsing fever caused by Borrelia hermsii,Condition,SNOMED,Disorder,S,1279678000,2023-04-30,2099-12-31,NA
+37168277,Relapsing fever caused by Borrelia venezuelensis,Condition,SNOMED,Disorder,S,1279680006,2023-04-30,2099-12-31,NA
+37168279,Relapsing fever caused by Borrelia mazzottii,Condition,SNOMED,Disorder,S,1279682003,2023-04-30,2099-12-31,NA
+37168282,Relapsing fever caused by Borrelia hispanica,Condition,SNOMED,Disorder,S,1279687009,2023-04-30,2099-12-31,NA
+37168284,Relapsing fever caused by Borrelia duttonii,Condition,SNOMED,Disorder,S,1279689007,2023-04-30,2099-12-31,NA
+37168286,Relapsing fever caused by Borrelia parkeri,Condition,SNOMED,Disorder,S,1279691004,2023-04-30,2099-12-31,NA
+37168289,Relapsing fever caused by Borrelia persica,Condition,SNOMED,Disorder,S,1279695008,2023-04-30,2099-12-31,NA
+37168291,Relapsing fever caused by Borrelia caucasica,Condition,SNOMED,Disorder,S,1279698005,2023-04-30,2099-12-31,NA
+40493465,Paraneoplastic fever,Condition,SNOMED,Disorder,S,449129007,2011-07-31,2099-12-31,NA
+43530637,Postprocedural fever,Condition,SNOMED,Clinical Finding,S,130091000119103,2013-07-31,2099-12-31,NA
+43530646,Post vaccination fever,Condition,SNOMED,Disorder,S,123471000119103,2013-07-31,2099-12-31,NA
+44782483,Post tetanus vaccination fever,Condition,SNOMED,Disorder,S,698580004,2014-01-31,2099-12-31,NA
+44784427,"Post diphtheria, tetanus and pertussis vaccination fever",Condition,SNOMED,Disorder,S,698578005,2014-01-31,2099-12-31,NA
+44784428,Post diphtheria vaccination fever,Condition,SNOMED,Disorder,S,698579002,2014-01-31,2099-12-31,NA
+44784429,Post pertussis vaccination fever,Condition,SNOMED,Disorder,S,698581000,2014-01-31,2099-12-31,NA
+45767113,Chronic fever,Condition,SNOMED,Clinical Finding,S,704425001,2015-01-31,2099-12-31,NA

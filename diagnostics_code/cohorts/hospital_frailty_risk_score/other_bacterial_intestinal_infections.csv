@@ -1,0 +1,100 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+193402,Bacterial enteritis of intestine,Condition,SNOMED,Disorder,S,75375008,2002-01-31,2099-12-31,NA
+195461,Staphylococcal enterocolitis,Condition,SNOMED,Disorder,S,32527003,2002-01-31,2099-12-31,NA
+201780,Shigellosis,Condition,SNOMED,Disorder,S,36188001,2002-01-31,2099-12-31,NA
+600578,Proctocolitis due to secondary syphilis,Condition,SNOMED,Disorder,S,1052300001,2021-01-31,2099-12-31,NA
+1076103,Mycoplasma genitalium proctitis,Condition,SNOMED,Disorder,S,1335829006,2024-06-01,2099-12-31,NA
+1076289,Proctitis caused by Chlamydia trachomatis,Condition,SNOMED,Disorder,S,1339029002,2024-06-01,2099-12-31,NA
+1076290,Neisseria gonorrhoeae proctitis,Condition,SNOMED,Disorder,S,1339030007,2024-07-01,2099-12-31,NA
+4101109,Clostridial gastroenteritis,Condition,SNOMED,Disorder,S,27858009,2002-01-31,2099-12-31,NA
+4148098,Ileocecal actinomycosis,Condition,SNOMED,Disorder,S,266090008,2002-01-31,2099-12-31,NA
+4166768,Bacillary dysentery,Condition,SNOMED,Disorder,S,274081004,2002-01-31,2099-12-31,NA
+4193870,Bacterial dysentery,Condition,SNOMED,Disorder,S,312109000,2002-01-31,2099-12-31,NA
+4200644,Tuberculosis of colon,Condition,SNOMED,Disorder,S,301836007,2002-01-31,2099-12-31,NA
+4216631,Enteritis necroticans,Condition,SNOMED,Disorder,S,39747007,2002-01-31,2099-12-31,NA
+4244525,Tuberculosis of large intestine,Condition,SNOMED,Disorder,S,38420005,2002-01-31,2099-12-31,NA
+4244573,Tuberculosis of intestine,Condition,SNOMED,Disorder,S,60136008,2002-01-31,2099-12-31,NA
+4251787,Tuberculosis of rectum,Condition,SNOMED,Disorder,S,7444001,2002-01-31,2099-12-31,NA
+4263219,Helicobacter-associated proctitis,Condition,SNOMED,Disorder,S,46672003,2002-01-31,2099-12-31,NA
+4301601,Helicobacter-associated colitis,Condition,SNOMED,Disorder,S,78128001,2002-01-31,2099-12-31,NA
+4307981,Clostridium difficile colitis,Condition,SNOMED,Disorder,S,423590009,2007-01-31,2099-12-31,NA
+4320492,Acute hemorrhagic colitis caused by Escherichia coli,Condition,SNOMED,Disorder,S,69810009,2002-01-31,2099-12-31,NA
+4341241,Tuberculous duodenitis,Condition,SNOMED,Disorder,S,235694001,2002-01-31,2099-12-31,NA
+36715899,Colitis caused by Salmonella,Condition,SNOMED,Disorder,S,721682003,2017-01-31,2099-12-31,NA
+36717493,Colitis caused by bacterium,Condition,SNOMED,Disorder,S,721681005,2017-01-31,2099-12-31,NA
+37110311,Duodenitis caused by Helicobacter pylori,Condition,SNOMED,Disorder,S,724525007,2017-07-31,2099-12-31,NA
+37116439,Duodenitis caused by Tropheryma whipplei,Condition,SNOMED,Disorder,S,733148009,2017-07-31,2099-12-31,NA
+37152653,Non-tuberculous mycobacterial enteritis of intestine,Condition,SNOMED,Disorder,S,1193740008,2022-01-31,2099-12-31,NA
+37155414,Typhoid colitis,Condition,SNOMED,Disorder,S,1179407003,2021-11-30,2099-12-31,NA
+37159348,Mycobacterial colitis,Condition,SNOMED,Disorder,S,1163487005,2021-09-30,2099-12-31,NA
+37160675,Bacterial duodenitis,Condition,SNOMED,Disorder,S,1163080001,2021-09-30,2099-12-31,NA
+37160702,Methicillin-resistant Staphylococcus aureus colitis,Condition,SNOMED,Disorder,S,1163107004,2021-09-30,2099-12-31,NA
+37160703,Pseudomonas aeruginosa colitis,Condition,SNOMED,Disorder,S,1163108009,2021-09-30,2099-12-31,NA
+37160705,Klebsiella oxytoca colitis,Condition,SNOMED,Disorder,S,1163110006,2021-09-30,2099-12-31,NA
+37160706,Escherichia coli colitis,Condition,SNOMED,Disorder,S,1163111005,2021-09-30,2099-12-31,NA
+37160707,Enteropathogenic Escherichia coli colitis,Condition,SNOMED,Disorder,S,1163112003,2021-09-30,2099-12-31,NA
+37160708,Colitis caused by enterotoxigenic Escherichia coli,Condition,SNOMED,Disorder,S,1163113008,2021-09-30,2099-12-31,NA
+37160709,Enterohemorrhagic Escherichia coli colitis,Condition,SNOMED,Disorder,S,1163114002,2021-09-30,2099-12-31,NA
+37160710,Enteroinvasive Escherichia coli colitis,Condition,SNOMED,Disorder,S,1163115001,2021-09-30,2099-12-31,NA
+37160712,Chlamydial colitis,Condition,SNOMED,Disorder,S,1163117009,2021-09-30,2099-12-31,NA
+37160715,Shigella sonnei colitis,Condition,SNOMED,Disorder,S,1163120001,2021-09-30,2099-12-31,NA
+37160716,Yersinia enterocolitica colitis,Condition,SNOMED,Disorder,S,1163121002,2021-09-30,2099-12-31,NA
+37160717,Shigella flexneri colitis,Condition,SNOMED,Disorder,S,1163122009,2021-09-30,2099-12-31,NA
+37160718,Shigella boydii colitis,Condition,SNOMED,Disorder,S,1163123004,2021-09-30,2099-12-31,NA
+37160719,Shigella dysenteriae colitis,Condition,SNOMED,Disorder,S,1163124005,2021-09-30,2099-12-31,NA
+37160720,Salmonella paratyphi C colitis,Condition,SNOMED,Disorder,S,1163125006,2021-09-30,2099-12-31,NA
+37160721,Shigella colitis,Condition,SNOMED,Disorder,S,1163126007,2021-09-30,2099-12-31,NA
+37160722,Salmonella paratyphi A colitis,Condition,SNOMED,Disorder,S,1163127003,2021-09-30,2099-12-31,NA
+37160723,Salmonella paratyphi B colitis,Condition,SNOMED,Disorder,S,1163128008,2021-09-30,2099-12-31,NA
+37160734,Colitis caused by Brachyspira pilosicoli,Condition,SNOMED,Disorder,S,1163142000,2021-09-30,2099-12-31,NA
+37160735,Campylobacter colitis,Condition,SNOMED,Disorder,S,1163143005,2021-09-30,2099-12-31,NA
+37160737,Actinomycotic colitis,Condition,SNOMED,Disorder,S,1163145003,2021-09-30,2099-12-31,NA
+37160841,Mycobacterial duodenitis,Condition,SNOMED,Disorder,S,1163531000,2021-09-30,2099-12-31,NA
+37161124,Non-tuberculous mycobacterial colitis,Condition,SNOMED,Disorder,S,1177023001,2021-10-31,2099-12-31,NA
+37161138,Tuberculous enterocolitis,Condition,SNOMED,Disorder,S,1177041009,2021-10-31,2099-12-31,NA
+37161167,Non-tuberculous mycobacterial duodenitis,Condition,SNOMED,Disorder,S,1177072008,2021-10-31,2099-12-31,NA
+37162476,Enterohemorrhagic Escherichia coli enteritis of small intestine,Condition,SNOMED,Disorder,S,1193658009,2022-01-31,2099-12-31,NA
+37162478,Enterohemorrhagic Escherichia coli enteritis of intestine,Condition,SNOMED,Disorder,S,1193660006,2022-01-31,2099-12-31,NA
+37162484,Enteroinvasive Escherichia coli enteritis of small intestine,Condition,SNOMED,Disorder,S,1193681006,2022-01-31,2099-12-31,NA
+37162485,Enteroinvasive Escherichia coli enteritis of intestine,Condition,SNOMED,Disorder,S,1193682004,2022-01-31,2099-12-31,NA
+37162487,Enteropathogenic Escherichia coli enteritis of small intestine,Condition,SNOMED,Disorder,S,1193684003,2022-01-31,2099-12-31,NA
+37162488,Enteropathogenic Escherichia coli enteritis of intestine,Condition,SNOMED,Disorder,S,1193685002,2022-01-31,2099-12-31,NA
+37162489,Enterotoxigenic Escherichia coli enteritis of small intestine,Condition,SNOMED,Disorder,S,1193687005,2022-01-31,2099-12-31,NA
+37162490,Enterotoxigenic Escherichia coli enteritis of intestine,Condition,SNOMED,Disorder,S,1193688000,2022-01-31,2099-12-31,NA
+37162492,Actinomycotic enteritis of small intestine,Condition,SNOMED,Disorder,S,1193729000,2022-01-31,2099-12-31,NA
+37162493,Actinomycotic enteritis of intestine,Condition,SNOMED,Disorder,S,1193731009,2022-01-31,2099-12-31,NA
+37162494,Enterobacterial enteritis of small intestine,Condition,SNOMED,Disorder,S,1193732002,2022-01-31,2099-12-31,NA
+37162495,Enterobacterial enteritis of intestine,Condition,SNOMED,Disorder,S,1193733007,2022-01-31,2099-12-31,NA
+37162496,Methicillin-resistant Staphylococcus aureus enteritis of small intestine,Condition,SNOMED,Disorder,S,1193735000,2022-01-31,2099-12-31,NA
+37162497,Methicillin-resistant Staphylococcus aureus enteritis of intestine,Condition,SNOMED,Disorder,S,1193736004,2022-01-31,2099-12-31,NA
+37162498,Mycobacterial enteritis of small intestine,Condition,SNOMED,Disorder,S,1193737008,2022-01-31,2099-12-31,NA
+37162499,Mycobacterial enteritis of intestine,Condition,SNOMED,Disorder,S,1193738003,2022-01-31,2099-12-31,NA
+37162501,Non-tuberculous mycobacterial enteritis of small intestine,Condition,SNOMED,Disorder,S,1193739006,2022-01-31,2099-12-31,NA
+37162502,Shigella boydii enteritis of small intestine,Condition,SNOMED,Disorder,S,1193741007,2022-01-31,2099-12-31,NA
+37162503,Shigella boydii enteritis of intestine,Condition,SNOMED,Disorder,S,1193742000,2022-01-31,2099-12-31,NA
+37162504,Shigella dysenteriae enteritis of small intestine,Condition,SNOMED,Disorder,S,1193743005,2022-01-31,2099-12-31,NA
+37162505,Shigella dysenteriae enteritis of intestine,Condition,SNOMED,Disorder,S,1193744004,2022-01-31,2099-12-31,NA
+37162506,Shigella flexneri enteritis of small intestine,Condition,SNOMED,Disorder,S,1193745003,2022-01-31,2099-12-31,NA
+37162507,Shigella flexneri enteritis of intestine,Condition,SNOMED,Disorder,S,1193746002,2022-01-31,2099-12-31,NA
+37162508,Shigella sonnei enteritis of small intestine,Condition,SNOMED,Disorder,S,1193747006,2022-01-31,2099-12-31,NA
+37162509,Shigella sonnei enteritis of intestine,Condition,SNOMED,Disorder,S,1193748001,2022-01-31,2099-12-31,NA
+37162510,Vibrio cholerae enteritis of small intestine,Condition,SNOMED,Disorder,S,1193749009,2022-01-31,2099-12-31,NA
+37162511,Vibrio cholerae enteritis of intestine,Condition,SNOMED,Disorder,S,1193750009,2022-01-31,2099-12-31,NA
+37162747,Colitis caused by Chlamydia trachomatis,Condition,SNOMED,Disorder,S,1197369000,2022-02-28,2099-12-31,NA
+37164581,Enteritis of small intestine caused by Escherichia coli,Condition,SNOMED,Disorder,S,1231377006,2022-06-30,2099-12-31,NA
+37164582,Inflammation of intestine caused by Escherichia coli,Condition,SNOMED,Disorder,S,1231378001,2022-06-30,2099-12-31,NA
+37164583,Enteritis of small intestine caused by Shigella,Condition,SNOMED,Disorder,S,1231379009,2022-06-30,2099-12-31,NA
+37164584,Inflammation of intestine caused by Shigella,Condition,SNOMED,Disorder,S,1231380007,2022-06-30,2099-12-31,NA
+37169724,Recurrent colitis caused by Clostridium difficile,Condition,SNOMED,Disorder,S,16838111000119103,2023-06-30,2099-12-31,NA
+40492366,Tuberculous ileitis,Condition,SNOMED,Disorder,S,447371008,2011-01-31,2099-12-31,NA
+40532149,Tuberculosis of small intestine,Condition,SNOMED,Disorder,S,35117008,2022-01-31,2099-12-31,NA
+42572684,Avian ulcerative enteritis,Condition,SNOMED Veterinary,Clinical Finding,S,337851000009104,2014-01-31,2099-12-31,NA
+42572896,Lamb dysentery,Condition,SNOMED Veterinary,Clinical Finding,S,345491000009103,2014-01-31,2099-12-31,NA
+42572970,Avian necrotic enteritis,Condition,SNOMED Veterinary,Clinical Finding,S,348201000009101,2014-01-31,2099-12-31,NA
+42573209,Paratuberculosis,Condition,SNOMED Veterinary,Clinical Finding,S,357731000009101,2016-02-24,2099-12-31,NA
+42574016,Clostridial colitis,Condition,SNOMED Veterinary,Clinical Finding,S,318151000009104,2010-09-22,2099-12-31,NA
+42597110,Bacterial enteritis due to Lawsonia intracellularis infection,Condition,SNOMED Veterinary,Clinical Finding,S,319071000009101,2010-12-09,2099-12-31,NA
+42598601,Proliferative enteritis of hamsters,Condition,SNOMED Veterinary,Clinical Finding,S,335471000009103,2014-01-31,2099-12-31,NA
+42599097,Enterotoxic haemorrhagic enteritis of calves AND/OR lambs,Condition,SNOMED Veterinary,Clinical Finding,S,346291000009106,2014-01-31,2099-12-31,NA
+42599123,Staphylococcal enteritis of chinchillas,Condition,SNOMED Veterinary,Clinical Finding,S,346761000009108,2014-01-31,2099-12-31,NA
+46273592,Enteritis caused by Yersinia enterocolitica,Condition,SNOMED,Disorder,S,711167005,2015-07-31,2099-12-31,NA

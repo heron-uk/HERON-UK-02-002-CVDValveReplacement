@@ -1,0 +1,59 @@
+concept_id,found_from,concept_name,domain_id,vocabulary_id,standard_concept
+313007,From descendants,Congenital insufficiency of mitral valve,Condition,SNOMED,S
+314368,From descendants,Mitral stenosis with insufficiency,Condition,SNOMED,S
+318776,From initial search,Rheumatic mitral regurgitation,Condition,SNOMED,S
+320115,From descendants,Mitral insufficiency and aortic stenosis,Condition,SNOMED,S
+443962,From initial search,Mitral valve regurgitation,Condition,SNOMED,S
+604345,From descendants,Acquired regurgitation of left ventricular component of common atrioventricular valve following repair of biventricular connection,Condition,SNOMED,S
+605551,From initial search,Mitral regurgitation due to congenital abnormality of mitral subvalvular apparatus,Condition,SNOMED,S
+605552,From initial search,Mitral regurgitation due to acquired abnormality of mitral subvalvular apparatus,Condition,SNOMED,S
+605778,From initial search,Regurgitation of left atrioventricular (not morphologically mitral) valve,Condition,SNOMED,S
+605897,From descendants,Regurgitation of right atrioventricular (not morphologically tricuspid) valve,Condition,SNOMED,S
+606159,From initial search,Mitral valve regurgitation due to acute myocardial infarction,Condition,SNOMED,S
+618992,From descendants,Acquired regurgitation of right ventricular component of common atrioventricular valve following repair of biventricular connection,Condition,SNOMED,S
+618994,From descendants,Acquired regurgitation of common atrioventricular valve following repair of biventricular connection,Condition,SNOMED,S
+619135,From descendants,Acquired common atrioventricular valve regurgitation following procedure,Condition,SNOMED,S
+3654726,From initial search,Mild mitral valve regurgitation,Condition,SNOMED,S
+3654727,From initial search,Moderate mitral valve regurgitation,Condition,SNOMED,S
+3654728,From initial search,Severe mitral valve regurgitation,Condition,SNOMED,S
+4102992,From descendants,Regurgitation of common atrioventricular valve,Condition,SNOMED,S
+4108166,From initial search,Paraprosthetic mitral regurgitation,Condition,SNOMED,S
+4108659,From descendants,Mitral and aortic incompetence,Condition,SNOMED,S
+4108815,From initial search,Non-rheumatic mitral regurgitation,Condition,SNOMED,S
+4124690,From initial search,Functional mitral regurgitation,Condition,SNOMED,S
+4133509,From initial search,Transient mitral regurgitation of newborn,Condition,SNOMED,S
+4155964,From initial search,Acute mitral regurgitation from chordal rupture,Condition,SNOMED,S
+4161458,From initial search,Acute mitral regurgitation from chordal dysfunction,Condition,SNOMED,S
+4161459,From initial search,Acute mitral regurgitation from papillary muscle dysfunction,Condition,SNOMED,S
+4161975,From initial search,Acute mitral regurgitation from papillary muscle rupture,Condition,SNOMED,S
+4188554,From initial search,Acute mitral regurgitation,Condition,SNOMED,S
+4244437,From initial search,Rheumatic mitral AND aortic valve regurgitation,Condition,SNOMED,S
+4301373,From initial search,Rheumatic mitral stenosis with regurgitation,Condition,SNOMED,S
+4304541,From descendants,Rheumatic mitral valve insufficiency and aortic valve stenosis,Condition,SNOMED,S
+4353822,From initial search,Prosthetic mitral valve regurgitation,Condition,SNOMED,S
+36674972,From descendants,Macrothrombocytopenia with mitral valve insufficiency,Condition,SNOMED,S
+36715123,From descendants,Cardiospondylocarpofacial syndrome,Condition,SNOMED,S
+40487183,From descendants,Atrioventricular septal defect with atrioventricular valve regurgitation through left septal commissure,Condition,SNOMED,S
+40487184,From descendants,Atrioventricular septal defect with atrioventricular valve regurgitation through left superior bridging leaflet lateral mural commissure,Condition,SNOMED,S
+40487186,From descendants,Atrioventricular septal defect with atrioventricular valve regurgitation through left inferior bridging leaflet lateral mural commissure,Condition,SNOMED,S
+40487600,From descendants,Atrioventricular septal defect with atrioventricular valve regurgitation through right septal commissure,Condition,SNOMED,S
+40487652,From descendants,Atrioventricular septal defect with atrioventricular valve regurgitation through right anterosuperior inferior mural commissure,Condition,SNOMED,S
+40487653,From descendants,Atrioventricular septal defect with atrioventricular valve regurgitation through right anterosuperior superior bridging leaflet commissure,Condition,SNOMED,S
+40487654,From descendants,Atrioventricular septal defect with atrioventricular valve regurgitation through right inferior bridging leaflet inferior mural commissure,Condition,SNOMED,S
+40488397,From descendants,Atrioventricular septal defect with atrioventricular valve regurgitation,Condition,SNOMED,S
+42599749,From descendants,Physiologic mitral insufficiency,Condition,SNOMED Veterinary,S
+42599795,From initial search,Mitral valve regurgitation during diastole,Condition,SNOMED Veterinary,S
+43020960,From descendants,Regurgitation of fetal right atrioventricular (not morphologically tricuspid) valve,Condition,SNOMED,S
+43020962,From initial search,Regurgitation of fetal left atrioventricular (not morphologically mitral) valve,Condition,SNOMED,S
+43020964,From descendants,Regurgitation of fetal common atrioventricular valve,Condition,SNOMED,S
+43021806,From initial search,Regurgitation of atrioventricular (not morphologically mitral or tricuspid) valve,Condition,SNOMED,S
+43021944,From initial search,Regurgitation of fetal mitral valve,Condition,SNOMED,S
+45766079,From initial search,Prosthetic mitral valve stenosis and regurgitation,Condition,SNOMED,S
+45766084,From initial search,Acute prosthetic mitral valve regurgitation,Condition,SNOMED,S
+45766126,From initial search,Postprocedural mitral valve regurgitation,Condition,SNOMED,S
+45766207,From initial search,Non-rheumatic mitral valve stenosis with regurgitation,Condition,SNOMED,S
+45766213,From initial search,Mitral valve regurgitation due to infiltrative disease,Condition,SNOMED,S
+45766214,From initial search,Mitral valve regurgitation due to acute myocardial infarction without papillary muscle and chordal rupture,Condition,SNOMED,S
+45771323,From initial search,Mitral valve regurgitation due to cardiomyopathy,Condition,SNOMED,S
+45771327,From initial search,Mitral valve regurgitation due to acute myocardial infarction with papillary muscle and chordal rupture,Condition,SNOMED,S
+45773080,From initial search,Postprocedural mitral valve regurgitation due to papillary muscle and chordal rupture,Condition,SNOMED,S

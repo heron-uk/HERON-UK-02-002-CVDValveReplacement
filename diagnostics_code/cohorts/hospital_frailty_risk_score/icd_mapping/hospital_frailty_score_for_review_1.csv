@@ -1,0 +1,142 @@
+icd_concept_id,concept_code,concept_id,icd_description,points,concept_name,domain_id,vocabulary_id
+45533052,F00,378419,Dementia in Alzheimer's disease,7.1,Alzheimer's disease,Condition,SNOMED
+45571827,G81,374022,Hemiplegia,4.4,Hemiplegia,Condition,SNOMED
+45538101,G30,378419,Alzheimer's disease,4,Alzheimer's disease,Condition,SNOMED
+45543192,I69,434056,Sequelae of cerebrovascular disease,3.7,Late effects of cerebrovascular disease,Condition,SNOMED
+45755636,R29,441840,"Other symptoms and signs involving the
+nervous and musculoskeletal systems (R29·6
+Tendency to fall)",3.6,Clinical finding,Condition,SNOMED
+45567841,N39,75865,"Other disorders of urinary system (includes
+urinary tract infection and urinary
+incontinence)",3.2,Disorder of urinary system,Condition,SNOMED
+45581397,F05,373995,"Delirium, not induced by alcohol and other
+psychoactive substances",3.2,Delirium,Condition,SNOMED
+45756257,W19,436583,Unspecified fall,3.2,Fall,Observation,SNOMED
+45553757,S00,4086195,Superficial injury of head,3.2,Superficial injury of head,Condition,SNOMED
+45553726,R31,437038,Unspecified haematuria,3,Blood in urine,Condition,SNOMED
+45755312,B96,432545,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9,Bacterial infectious disease,Condition,SNOMED
+45544146,R41,4293175,Other symptoms and signs involving cognitive functions and awareness,2.7,"Mental state, behavior and/or psychosocial function finding",Observation,SNOMED
+45606801,R26,437643,Abnormalities of gait and mobility,2.6,Abnormal gait,Observation,SNOMED
+45581786,I67,381591,Other cerebrovascular diseases,2.6,Cerebrovascular disease,Condition,SNOMED
+45592425,R56,377091,"Convulsions, not elsewhere classified",2.6,Seizure,Condition,SNOMED
+45755637,R40,376961,"Somnolence, stupor and coma",2.5,Disturbance of consciousness,Observation,SNOMED
+45756008,T83,43021248,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4,Disorder associated with urogenital device,Condition,SNOMED
+45544245,S06,437409,Intracranial injury,2.4,Intracranial injury,Condition,SNOMED
+45597678,S42,4050747,Fracture of shoulder and upper arm,2.3,Fracture of upper limb,Condition,SNOMED
+45755369,E87,436670,"Other disorders of fluid, electrolyte and acid-
+base balance",2.3,Metabolic disease,Condition,SNOMED
+45538734,M25,73553,"Other joint disorders, not elsewhere classified",2.3,Arthropathy,Condition,SNOMED
+45581386,E86,37311320,Volume depletion,2.3,Extracellular fluid volume depletion,Condition,SNOMED
+45568140,R54,4090207,Senility,2.2,Senile asthenia,Observation,SNOMED
+45590736,Z50,4180248,"Care involving use of rehabilitation
+procedures",2.1,Rehabilitation therapy,Procedure,SNOMED
+45566772,F03,4182210,Unspecified dementia,2.1,Dementia,Condition,SNOMED
+45756256,W18,4140830,Other fall on same level,2.1,Fall on same level,Observation,SNOMED
+45756340,Z75,4031369,"Problems related to medical facilities and
+other health care",2,Health management finding,Observation,SNOMED
+45557147,F01,443605,Vascular dementia,2,Vascular dementia,Condition,SNOMED
+45603531,S80,4106355,Superficial injury of lower leg,2,Superficial injury of lower leg,Condition,SNOMED
+45591621,L03,435613,Cellulitis,2,Cellulitis,Condition,SNOMED
+45755414,H54,4023310,Blindness and low vision,1.9,Blindness AND/OR vision impairment level,Condition,SNOMED
+45566745,E53,437246,Deficiency of other B group vitamins,1.9,Vitamin B deficiency,Condition,SNOMED
+45547330,Z60,4028922,Problems related to social environment,1.8,Social context finding,Observation,SNOMED
+45538098,G20,381270,Parkinson's disease,1.8,Parkinson's disease,Condition,SNOMED
+45568141,R55,4206148,Syncope and collapse,1.8,Syncope and collapse,Condition,SNOMED
+45755806,S22,4279139,"Fracture of rib(s), sternum and thoracic spine",1.8,Fracture of bones of trunk,Condition,SNOMED
+45543326,K59,196151,Other functional intestinal disorders,1.8,Functional disorder of intestine,Condition,SNOMED
+45606484,N17,197320,Acute renal failure,1.8,Acute kidney injury,Condition,SNOMED
+45601235,L89,37159532,Decubitus ulcer,1.7,Pressure injury,Condition,SNOMED
+45595490,Z22,4280828,Carrier of infectious disease,1.7,Carrier of infectious organism,Observation,SNOMED
+45755311,B95,4248801,"Streptococcus and staphylococcus as the
+cause of diseases classified to other chapters",1.7,Disease caused by Gram-positive coccus,Condition,SNOMED
+45591659,L97,197304,"Ulcer of lower limb, not elsewhere classified",1.6,Ulcer of lower extremity,Condition,SNOMED
+45755638,R44,4024707,"Other symptoms and signs involving general
+sensations and perceptions",1.6,Perception AND/OR perception disturbance,Condition,SNOMED
+45552919,K26,4198381,Duodenal ulcer,1.6,Ulcer of duodenum,Condition,SNOMED
+45586653,I95,317002,Hypotension,1.6,Low blood pressure,Condition,SNOMED
+45601718,N19,192359,Unspecified renal failure,1.6,Renal failure syndrome,Condition,SNOMED
+45532831,A41,132797,Other septicaemia,1.6,Sepsis,Condition,SNOMED
+45756483,Z87,1340204,"Personal history of other diseases and
+conditions",1.5,History of event,Observation,OMOP Extension
+45586686,J96,4256228,"Respiratory failure, not elsewhere classified",1.5,Respiratory failure,Condition,SNOMED
+45756412,X59,4156363,Exposure to unspecified factor,1.5,Event,Observation,SNOMED
+45601352,M19,80180,Other arthrosis,1.5,Osteoarthritis,Condition,SNOMED
+45595935,G40,380378,Epilepsy,1.5,Epilepsy,Condition,SNOMED
+45587093,M81,80502,Osteoporosis without pathological fracture,1.4,Osteoporosis,Condition,SNOMED
+45569417,S72,442560,Fracture of femur,1.4,Fracture of femur,Condition,SNOMED
+45592752,S32,4013613,Fracture of lumbar spine and pelvis,1.4,Fracture of lumbar spine and/or pelvis,Condition,SNOMED
+45571665,E16,193983,"Other disorders of pancreatic internal
+secretion",1.4,Disorder of pancreatic internal secretion,Condition,SNOMED
+45755749,R94,40484102,Abnormal results of function studies,1.4,Abnormal finding on evaluation procedure,Condition,SNOMED
+45582391,N18,46271022,Chronic renal failure,1.4,Chronic kidney disease,Condition,SNOMED
+45587507,R33,192450,Retention of urine,1.3,Retention of urine,Condition,SNOMED
+45558480,R69,4192174,"Unknown and unspecified causes of
+morbidity",1.3,Illness,Condition,SNOMED
+45587239,N28,40483287,"Other disorders of kidney and ureter, not
+elsewhere classified",1.3,Disorder of kidney and/or ureter,Condition,SNOMED
+45606803,R32,197672,Unspecified urinary incontinence,1.2,Urinary incontinence,Condition,SNOMED
+45538102,G31,4179873,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2,Degenerative disorder,Condition,SNOMED
+45538102,G31,376337,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2,Disorder of nervous system,Condition,SNOMED
+45595474,Y95,440005,Nosocomial condition,1.2,Complication of medical care,Condition,SNOMED
+45592553,S09,375415,Other and unspecified injuries of head,1.2,Injury of head,Condition,SNOMED
+45755639,R45,4025215,"Symptoms and signs involving emotional
+state",1.2,Emotional state finding,Observation,SNOMED
+45562092,G45,373503,"Transient cerebral ischaemic attacks and
+related syndromes",1.2,Transient cerebral ischemia,Condition,SNOMED
+45585853,Z74,4022076,Problems related to care-provider dependency,1.1,Patient dependence on care provider,Observation,SNOMED
+45562836,M79,4244662,"Other soft tissue disorders, not elsewhere
+classified",1.1,Disorder of musculoskeletal system,Condition,SNOMED
+45575895,W06,436882,Fall involving bed,1.1,Fall from bed,Observation,SNOMED
+45582756,S01,4243161,Open wound of head,1.1,Open wound of head,Condition,SNOMED
+45532809,A04,193402,Other bacterial intestinal infections,1.1,Bacterial enteritis of intestine,Condition,SNOMED
+45605189,A09,201618,"Diarrhoea and gastroenteritis of presumed
+infectious origin",1.1,Disorder of intestine,Condition,SNOMED
+45548107,J18,255848,"Pneumonia, organism unspecified",1.1,Pneumonia,Condition,SNOMED
+45755429,J69,4187218,Pneumonitis due to solids and liquids,1,Pneumonitis caused by inhaled substance,Condition,SNOMED
+45755640,R47,435642,"Speech disturbances, not elsewhere classified",1,Disturbance in speech,Condition,SNOMED
+45591049,E55,436070,Vitamin D deficiency,1,Vitamin D deficiency,Condition,SNOMED
+45581091,Z93,1340204,Artificial opening status,1,History of event,Observation,OMOP Extension
+45534421,R02,439928,"Gangrene, not elsewhere classified",1,Gangrenous disorder,Condition,SNOMED
+45755630,R63,4022569,"Symptoms and signs concerning food and
+fluid intake",0.9,Eating / feeding / drinking finding,Observation,SNOMED
+45581753,H91,377889,Other hearing loss,0.9,Hearing loss,Condition,SNOMED
+45756250,W10,441749,Fall on and from stairs and steps,0.9,Fall on or from stairs or steps,Observation,SNOMED
+45756243,W01,437175,"Fall on same level from slipping, tripping and
+stumbling",0.9,"Fall on same level from slipping, tripping or stumbling",Observation,SNOMED
+45533007,E05,4142479,Thyrotoxicosis [hyperthyroidism],0.9,Hyperthyroidism,Condition,SNOMED
+45562714,M41,72418,Scoliosis,0.9,Scoliosis deformity of spine,Condition,SNOMED
+45573013,R13,31317,Dysphagia,0.8,Dysphagia,Condition,SNOMED
+45756557,Z99,437758,"Dependence on enabling machines and
+devices",0.8,Dependence on enabling machine or device,Observation,SNOMED
+45756102,U80,4249827,"Agent resistant to penicillin and related
+antibiotics",0.8,Infection caused by antimicrobial resistant bacteria,Condition,SNOMED
+45577360,M80,40480160,Osteoporosis with pathological fracture,0.8,Osteoporotic fracture,Condition,SNOMED
+45567332,K92,4201745,Other diseases of digestive system,0.8,Disorder of digestive system,Condition,SNOMED
+45543186,I63,443454,Cerebral Infarction,0.8,Cerebral infarction,Condition,SNOMED
+45587237,N20,4148260,Calculus of kidney and ureter,0.7,Calculus of kidney and ureter,Condition,SNOMED
+45581401,F10,37164793,"Mental and behavioural disorders due to use
+of alcohol",0.7,Organic mental disorder caused by ethanol,Condition,SNOMED
+45605063,Y84,442019,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7,Complication of procedure,Condition,SNOMED
+45577775,R00,4262562,Abnormalities of heart beat,0.7,Abnormal heart beat,Condition,SNOMED
+45586665,J22,4307774,Unspecified acute lower respiratory infection,0.7,Acute lower respiratory tract infection,Condition,SNOMED
+45581066,Z73,43020485,"Problems related to life-management
+difficulty",0.6,Problem related to life management difficulty,Observation,SNOMED
+45587527,R79,436230,Other abnormal findings of blood chemistry,0.6,Blood chemistry outside reference range,Measurement,SNOMED
+45542488,Z91,1340204,"Personal history of risk-factors, not elsewhere
+classified",0.5,History of event,Observation,OMOP Extension
+45607470,S51,4053599,Open wound of forearm,0.5,Open wound of forearm,Condition,SNOMED
+45595904,F32,3656234,Depressive episode,0.5,Depressive episode,Observation,SNOMED
+45562734,M48,4157453,Spinal stenosis (secondary code only),0.5,Disorder of joint of spine,Condition,SNOMED
+45537988,E83,438721,Disorders of mineral metabolism,0.4,Disorder of mineral metabolism,Condition,SNOMED
+45596490,M15,75897,Polyarthrosis,0.4,Polyarthropathy,Condition,SNOMED
+45537924,D64,439777,Other anaemias,0.4,Anemia,Condition,SNOMED
+45596365,L08,443600,"Other local infections of skin and
+subcutaneous tissue",0.4,Localized infection of skin AND/OR subcutaneous tissue,Condition,SNOMED
+45539317,R11,27674,Nausea and vomiting,0.3,Nausea and vomiting,Condition,SNOMED
+45586724,K52,4297887,Other noninfective gastroenteritis and colitis,0.3,Disorder of digestive organ,Condition,SNOMED
+45568138,R50,437663,Fever of unknown origin,0.1,Fever,Condition,SNOMED

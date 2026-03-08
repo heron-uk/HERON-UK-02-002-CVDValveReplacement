@@ -1,0 +1,274 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+132780,Superficial injury of face with infection,Condition,SNOMED,Disorder,S,44422006,2002-01-31,2099-12-31,NA
+134210,Abrasion and/or friction burn of face with infection,Condition,SNOMED,Disorder,S,111703006,2002-01-31,2099-12-31,NA
+134232,Epidermal burn of scalp,Condition,SNOMED,Disorder,S,7765006,2002-01-31,2099-12-31,NA
+136566,Epidermal burn of lip,Condition,SNOMED,Disorder,S,78202006,2002-01-31,2099-12-31,NA
+137436,Epidermal burn of nose,Condition,SNOMED,Disorder,S,58340008,2002-01-31,2099-12-31,NA
+138296,Epidermal burn of chin,Condition,SNOMED,Disorder,S,10137002,2002-01-31,2099-12-31,NA
+138906,Superficial injury of face without infection,Condition,SNOMED,Disorder,S,28417005,2002-01-31,2099-12-31,NA
+141173,Abrasion and/or friction burn of face without infection,Condition,SNOMED,Disorder,S,66176005,2002-01-31,2099-12-31,NA
+141753,Epidermal burn of ear,Condition,SNOMED,Disorder,S,9269007,2002-01-31,2099-12-31,NA
+373638,Superficial injury of cornea,Condition,SNOMED,Disorder,S,62635000,2002-01-31,2099-12-31,NA
+373648,Superficial injury of eyelid AND/OR periocular area,Condition,SNOMED,Disorder,S,63943002,2002-01-31,2099-12-31,NA
+376267,Superficial injury of conjunctiva,Condition,SNOMED,Disorder,S,7581004,2002-01-31,2099-12-31,NA
+376564,Superficial injury of eye,Condition,SNOMED,Disorder,S,78598000,2002-01-31,2099-12-31,NA
+442554,Nonvenomous insect bite of face without infection,Condition,SNOMED,Disorder,S,71696000,2002-01-31,2099-12-31,NA
+442623,Abrasion and/or friction burn of scalp without infection,Condition,SNOMED,Disorder,S,62603000,2002-01-31,2099-12-31,NA
+443176,"Insect bite, nonvenomous, of scalp",Condition,SNOMED,Disorder,S,211010006,2002-01-31,2099-12-31,NA
+443178,"Insect bite, nonvenomous, of face",Condition,SNOMED,Disorder,S,211008009,2002-01-31,2099-12-31,NA
+443766,Abrasion and/or friction burn of scalp with infection,Condition,SNOMED,Disorder,S,26652002,2002-01-31,2099-12-31,NA
+443772,Superficial injury of scalp with infection,Condition,SNOMED,Disorder,S,26492007,2002-01-31,2099-12-31,NA
+444103,Nonvenomous insect bite of face with infection,Condition,SNOMED,Disorder,S,10662001,2002-01-31,2099-12-31,NA
+444368,Nonvenomous insect bite of scalp with infection,Condition,SNOMED,Disorder,S,70294003,2002-01-31,2099-12-31,NA
+600768,Traumatic blister of gingiva,Condition,SNOMED,Disorder,S,8891000119108,2021-07-31,2099-12-31,NA
+602323,Superficial injury of tongue,Condition,SNOMED,Disorder,S,11847571000119103,2021-07-31,2099-12-31,NA
+603209,Foreign body in skin of right ear,Condition,SNOMED,Disorder,S,11843231000119107,2021-07-31,2099-12-31,NA
+603210,Foreign body in skin of left ear,Condition,SNOMED,Disorder,S,11843311000119105,2021-07-31,2099-12-31,NA
+603211,Traumatic blister of tongue,Condition,SNOMED,Disorder,S,11855251000119102,2021-07-31,2099-12-31,NA
+605495,Right superficial conjunctival injury,Condition,SNOMED,Disorder,S,10900111000119107,2021-07-31,2099-12-31,NA
+605496,Left superficial conjunctival injury,Condition,SNOMED,Disorder,S,10900151000119108,2021-07-31,2099-12-31,NA
+609302,Abrasion of mouth region,Condition,SNOMED,Disorder,S,347218661000119103,2021-07-31,2099-12-31,NA
+618716,Superficial foreign body in lip,Condition,SNOMED,Disorder,S,874837003,2021-01-31,2099-12-31,NA
+618717,Foreign body in gingival mucous membrane,Condition,SNOMED,Disorder,S,874838008,2021-01-31,2099-12-31,NA
+618719,Foreign body in skin of ear,Condition,SNOMED,Disorder,S,874840003,2021-01-31,2099-12-31,NA
+618721,Foreign body in skin of face,Condition,SNOMED,Disorder,S,874842006,2021-01-31,2099-12-31,NA
+618740,Nonvenomous insect bite of gum,Condition,SNOMED,Disorder,S,874914008,2021-01-31,2099-12-31,NA
+618741,Superficial injury of gum,Condition,SNOMED,Disorder,S,874915009,2021-01-31,2099-12-31,NA
+618742,Nonvenomous insect bite of nose,Condition,SNOMED,Disorder,S,874916005,2021-01-31,2099-12-31,NA
+618786,Foreign body in skin of scalp with infection,Condition,SNOMED,Disorder,S,876803008,2021-01-31,2099-12-31,NA
+618790,Foreign body in gingival mucous membrane with infection,Condition,SNOMED,Disorder,S,876807009,2021-01-31,2099-12-31,NA
+619354,Superficial injury of skin of eyelid,Condition,SNOMED,Disorder,S,895224009,2021-01-31,2099-12-31,NA
+619669,Foreign body in skin of cheek with infection,Condition,SNOMED,Disorder,S,897299008,2021-01-31,2099-12-31,NA
+619670,Foreign body in skin of ear with infection,Condition,SNOMED,Disorder,S,897300000,2021-01-31,2099-12-31,NA
+619671,Foreign body in skin of face with infection,Condition,SNOMED,Disorder,S,897301001,2021-01-31,2099-12-31,NA
+619673,Foreign body in skin of nose with infection,Condition,SNOMED,Disorder,S,897303003,2021-01-31,2099-12-31,NA
+619675,Superficial foreign body of lip with infection,Condition,SNOMED,Disorder,S,897304009,2021-01-31,2099-12-31,NA
+760526,Superficial injury of right eye,Condition,SNOMED,Disorder,S,10942671000119100,2016-09-01,2099-12-31,NA
+760527,Superficial injury of left eye,Condition,SNOMED,Disorder,S,10942711000119101,2016-09-01,2099-12-31,NA
+954102,Bone around jaw,Condition,SNOMED Veterinary,Clinical Finding,S,361041000009109,2019-09-10,2099-12-31,NA
+1075004,Infected abrasion of skin of nose,Condition,SNOMED,Disorder,S,11843111000119107,2024-03-01,2099-12-31,NA
+1075012,Nonvenomous insect bite of forehead,Condition,SNOMED,Disorder,S,11849821000119107,2024-05-01,2099-12-31,NA
+1075013,Traumatic blister of right ear,Condition,SNOMED,Disorder,S,11854731000119101,2024-05-01,2099-12-31,NA
+1075014,Traumatic blister of left ear,Condition,SNOMED,Disorder,S,11854771000119103,2024-05-01,2099-12-31,NA
+1244388,Abrasion of skin of scalp,Condition,SNOMED,Disorder,S,1287525007,2023-09-01,2099-12-31,NA
+1244389,Abrasion of skin of scalp due to birth trauma,Condition,SNOMED,Disorder,S,1287526008,2023-09-01,2099-12-31,NA
+1244390,Infected abrasion of skin of scalp,Condition,SNOMED,Disorder,S,1287527004,2023-09-01,2099-12-31,NA
+1244394,Abrasion of skin of head,Condition,SNOMED,Disorder,S,1287534002,2023-09-01,2099-12-31,NA
+1244395,Abrasion of skin of cheek,Condition,SNOMED,Disorder,S,1287535001,2023-09-01,2099-12-31,NA
+1244396,Abrasion of skin of face,Condition,SNOMED,Disorder,S,1287536000,2023-09-01,2099-12-31,NA
+1244397,Infected abrasion of skin of eyelid,Condition,SNOMED,Disorder,S,1287537009,2023-09-01,2099-12-31,NA
+1246541,Abrasion of left conjunctiva,Condition,SNOMED,Disorder,S,41981000087106,2024-01-01,2099-12-31,NA
+1246542,Abrasion of right conjunctiva,Condition,SNOMED,Disorder,S,41991000087108,2024-01-01,2099-12-31,NA
+1448749,Infected abrasion of skin of forehead,Condition,SNOMED,Disorder,S,11849741000119107,2025-01-01,2099-12-31,NA
+1448752,Superficial injury of chin,Condition,SNOMED,Disorder,S,11852861000119106,2024-12-01,2099-12-31,NA
+1448755,Traumatic blister of skin of chin,Condition,SNOMED,Disorder,S,11855331000119101,2025-01-01,2099-12-31,NA
+1450553,Abrasion of left eye region,Condition,SNOMED,Disorder,S,47401000087104,2025-01-01,2099-12-31,NA
+1450554,Abrasion of right eye region,Condition,SNOMED,Disorder,S,47411000087102,2025-01-01,2099-12-31,NA
+3176556,Excoriation of right cheek,Condition,Nebraska Lexicon,Clinical Finding,S,21850001000004100,2016-01-28,2099-12-31,NA
+3657669,Abrasion of skin of right eyelid,Condition,SNOMED,Disorder,S,11848461000119109,2020-07-31,2099-12-31,NA
+3657965,Infected abrasion of oral mucosa,Condition,SNOMED,Disorder,S,11847781000119106,2020-07-31,2099-12-31,NA
+3662171,Abrasion of skin of right ear,Condition,SNOMED,Disorder,S,11843711000119106,2020-07-31,2099-12-31,NA
+3662172,Abrasion of skin of left ear,Condition,SNOMED,Disorder,S,11843751000119107,2020-07-31,2099-12-31,NA
+3662173,Infected abrasion of skin of right ear,Condition,SNOMED,Disorder,S,11843951000119105,2020-07-31,2099-12-31,NA
+3662174,Infected abrasion of skin of left ear,Condition,SNOMED,Disorder,S,11843991000119100,2020-07-31,2099-12-31,NA
+3662175,Abrasion of skin of lip,Condition,SNOMED,Disorder,S,11847251000119105,2020-07-31,2099-12-31,NA
+3662176,Infected abrasion of skin of right eyelid,Condition,SNOMED,Disorder,S,11848501000119109,2020-07-31,2099-12-31,NA
+3662177,Abrasion of skin of left eyelid,Condition,SNOMED,Disorder,S,11848541000119106,2020-07-31,2099-12-31,NA
+3662178,Infected abrasion of skin of left eyelid,Condition,SNOMED,Disorder,S,11848581000119101,2020-07-31,2099-12-31,NA
+4001157,Bednar's aphthae,Condition,SNOMED,Disorder,S,109778006,2002-01-31,2099-12-31,NA
+4001831,Abrasion of maxillary vestibule,Condition,SNOMED,Disorder,S,110153003,2002-01-31,2099-12-31,NA
+4001832,Abrasion of oropharynx,Condition,SNOMED,Disorder,S,110162001,2002-01-31,2099-12-31,NA
+4001833,Abrasion of skin of forehead,Condition,SNOMED,Disorder,S,110164000,2002-01-31,2099-12-31,NA
+4001834,Abrasion of skin of preauricular region of face,Condition,SNOMED,Disorder,S,110169005,2002-01-31,2099-12-31,NA
+4001839,Epidermal burn of cheek,Condition,SNOMED,Disorder,S,110187008,2002-01-31,2099-12-31,NA
+4001846,Burn erythema of tonsillar area,Condition,SNOMED,Disorder,S,110231005,2002-01-31,2099-12-31,NA
+4002661,Superficial injury of mouth,Condition,SNOMED,Disorder,S,110151001,2002-01-31,2099-12-31,NA
+4002662,Abrasion of mandibular vestibule,Condition,SNOMED,Disorder,S,110154009,2002-01-31,2099-12-31,NA
+4002663,Abrasion of mandibular attached gingiva,Condition,SNOMED,Disorder,S,110156006,2002-01-31,2099-12-31,NA
+4002664,Abrasion of floor of mouth,Condition,SNOMED,Disorder,S,110157002,2002-01-31,2099-12-31,NA
+4002665,Abrasion of tonsil,Condition,SNOMED,Disorder,S,110161008,2002-01-31,2099-12-31,NA
+4002666,Abrasion of tongue,Condition,SNOMED,Disorder,S,110163006,2002-01-31,2099-12-31,NA
+4002667,Abrasion of skin of periorbital region of face,Condition,SNOMED,Disorder,S,110165004,2002-01-31,2099-12-31,NA
+4002668,Abrasion of skin of chin,Condition,SNOMED,Disorder,S,110168002,2002-01-31,2099-12-31,NA
+4002671,Epidermal burn of perioral region,Condition,SNOMED,Disorder,S,110179007,2002-01-31,2099-12-31,NA
+4002680,Burn erythema of floor of mouth,Condition,SNOMED,Disorder,S,110215002,2002-01-31,2099-12-31,NA
+4002682,Burn erythema of hard palate,Condition,SNOMED,Disorder,S,110219008,2002-01-31,2099-12-31,NA
+4002684,Burn erythema of tongue,Condition,SNOMED,Disorder,S,110234002,2002-01-31,2099-12-31,NA
+4003347,Abrasion of buccal mucosa,Condition,SNOMED,Disorder,S,110152008,2002-01-31,2099-12-31,NA
+4003348,Abrasion of maxillary attached gingiva,Condition,SNOMED,Disorder,S,110155005,2002-01-31,2099-12-31,NA
+4003349,Superficial injury of palate,Condition,SNOMED,Disorder,S,110158007,2002-01-31,2099-12-31,NA
+4003350,Abrasion of soft palate,Condition,SNOMED,Disorder,S,110160009,2002-01-31,2099-12-31,NA
+4003352,Abrasion of skin of circumoral region of face,Condition,SNOMED,Disorder,S,110167007,2002-01-31,2099-12-31,NA
+4003355,Epidermal burn of periorbital region,Condition,SNOMED,Disorder,S,110171005,2002-01-31,2099-12-31,NA
+4003357,Epidermal burn of forehead,Condition,SNOMED,Disorder,S,110183007,2002-01-31,2099-12-31,NA
+4003363,Burn erythema of buccal mucosa,Condition,SNOMED,Disorder,S,110191003,2002-01-31,2099-12-31,NA
+4003498,Burn erythema of labial mucosa,Condition,SNOMED,Disorder,S,110195007,2002-01-31,2099-12-31,NA
+4003499,Burn erythema of maxillary vestibule,Condition,SNOMED,Disorder,S,110199001,2002-01-31,2099-12-31,NA
+4003502,Burn erythema of maxillary attached gingiva,Condition,SNOMED,Disorder,S,110207000,2002-01-31,2099-12-31,NA
+4004980,Burn erythema of oropharynx,Condition,SNOMED,Disorder,S,110227004,2002-01-31,2099-12-31,NA
+4005624,Abrasion of hard palate,Condition,SNOMED,Disorder,S,110159004,2002-01-31,2099-12-31,NA
+4005625,Abrasion of skin of zygomatic region of face,Condition,SNOMED,Disorder,S,110166003,2002-01-31,2099-12-31,NA
+4005627,Epidermal burn of preauricular region of face,Condition,SNOMED,Disorder,S,110175001,2002-01-31,2099-12-31,NA
+4005634,Burn erythema of mandibular vestibule,Condition,SNOMED,Disorder,S,110203001,2002-01-31,2099-12-31,NA
+4005637,Burn erythema of mandibular attached gingiva,Condition,SNOMED,Disorder,S,110211006,2002-01-31,2099-12-31,NA
+4005638,Burn erythema of soft palate,Condition,SNOMED,Disorder,S,110223000,2002-01-31,2099-12-31,NA
+4028969,Superficial injury of eye AND/OR adnexa,Condition,SNOMED,Disorder,S,13616008,2002-01-31,2099-12-31,NA
+4030566,Nonvenomous insect bite of lip without infection,Condition,SNOMED,Disorder,S,14220008,2002-01-31,2099-12-31,NA
+4030964,Abrasion and/or friction burn of lip with infection,Condition,SNOMED,Disorder,S,10920005,2002-01-31,2099-12-31,NA
+4033975,Abrasion of neck of tooth,Condition,SNOMED,Disorder,S,109585008,2002-01-31,2099-12-31,NA
+4050695,Infected abrasion of skin of face,Condition,SNOMED,Disorder,S,210992005,2002-01-31,2099-12-31,NA
+4050699,Multiple superficial injuries of head,Condition,SNOMED,Disorder,S,211024005,2002-01-31,2099-12-31,NA
+4052229,Infected abrasion of scalp,Condition,SNOMED,Disorder,S,210994006,2002-01-31,2099-12-31,NA
+4052230,"Insect bite, nonvenomous, of head, infected",Condition,SNOMED,Disorder,S,211012003,2002-01-31,2099-12-31,NA
+4055699,Abrasion of face,Condition,SNOMED,Disorder,S,210987008,2002-01-31,2099-12-31,NA
+4055700,Abrasion of scalp,Condition,SNOMED,Disorder,S,210989006,2002-01-31,2099-12-31,NA
+4056585,"Superficial injury to head, excluding eye",Condition,SNOMED,Disorder,S,210985000,2002-01-31,2099-12-31,NA
+4056587,"Abrasion and/or friction burn of head, infected",Condition,SNOMED,Disorder,S,210991003,2002-01-31,2099-12-31,NA
+4059704,Corrosion of first degree of head and neck,Condition,SNOMED,Disorder,S,211750001,2002-01-31,2099-12-31,NA
+4063270,Superficial laceration of cornea,Condition,SNOMED,Disorder,S,21549001,2002-01-31,2099-12-31,NA
+4065912,Nonvenomous insect bite of ear with infection,Condition,SNOMED,Disorder,S,17198008,2002-01-31,2099-12-31,NA
+4071592,Abrasion of scalp due to birth trauma,Condition,SNOMED,Disorder,S,206203003,2002-01-31,2099-12-31,NA
+4081676,Insect bite of eyelid,Condition,SNOMED,Disorder,S,278487002,2002-01-31,2099-12-31,NA
+4086195,Superficial injury of head,Condition,SNOMED,Disorder,S,283025007,2002-01-31,2099-12-31,NA
+4086206,Scratch of eye region,Condition,SNOMED,Disorder,S,283069000,2002-01-31,2099-12-31,NA
+4086218,Traumatic blister of cheek,Condition,SNOMED,Disorder,S,283120000,2002-01-31,2099-12-31,NA
+4086219,Traumatic blister of mouth,Condition,SNOMED,Disorder,S,283121001,2002-01-31,2099-12-31,NA
+4087572,Superficial injury of ear with infection,Condition,SNOMED,Disorder,S,24457001,2002-01-31,2099-12-31,NA
+4094336,Epidermal burn of head,Condition,SNOMED,Disorder,S,287139006,2002-01-31,2099-12-31,NA
+4094461,Epidermal burn of eyelid,Condition,SNOMED,Disorder,S,287132002,2002-01-31,2099-12-31,NA
+4094466,Insect bite to cornea - nonvenomous,Condition,SNOMED,Disorder,S,287126007,2002-01-31,2099-12-31,NA
+4095254,Superficial laceration of head,Condition,SNOMED,Disorder,S,262544007,2002-01-31,2099-12-31,NA
+4095274,Abrasion of palate,Condition,SNOMED,Disorder,S,262631007,2002-01-31,2099-12-31,NA
+4095872,Abrasion of intraoral surface of lip,Condition,SNOMED,Disorder,S,262632000,2002-01-31,2099-12-31,NA
+4095873,Abrasion of oral alveolar mucosa,Condition,SNOMED,Disorder,S,262633005,2002-01-31,2099-12-31,NA
+4102550,Superficial injury of ear without infection,Condition,SNOMED,Disorder,S,25471001,2002-01-31,2099-12-31,NA
+4106357,Abrasion of head,Condition,SNOMED,Disorder,S,283049005,2002-01-31,2099-12-31,NA
+4106358,Abrasion of skin of ear,Condition,SNOMED,Disorder,S,283051009,2002-01-31,2099-12-31,NA
+4106359,Abrasion of cheek,Condition,SNOMED,Disorder,S,283053007,2002-01-31,2099-12-31,NA
+4106499,Traumatic blister of head,Condition,SNOMED,Disorder,S,283115000,2002-01-31,2099-12-31,NA
+4106500,Traumatic blister of eye region,Condition,SNOMED,Disorder,S,283117008,2002-01-31,2099-12-31,NA
+4106507,Superficial bruising of head and neck,Condition,SNOMED,Disorder,S,283135004,2002-01-31,2099-12-31,NA
+4106678,Superficial injury of ear region,Condition,SNOMED,Disorder,S,283026008,2002-01-31,2099-12-31,NA
+4106679,Superficial injury of cheek,Condition,SNOMED,Disorder,S,283028009,2002-01-31,2099-12-31,NA
+4106681,Abrasion of skin of nose,Condition,SNOMED,Disorder,S,283052002,2002-01-31,2099-12-31,NA
+4106825,Superficial traumatic blister of head and neck,Condition,SNOMED,Disorder,S,283114001,2002-01-31,2099-12-31,NA
+4106826,Traumatic blister of forehead,Condition,SNOMED,Disorder,S,283116004,2002-01-31,2099-12-31,NA
+4107357,Superficial corrosion of forehead,Condition,SNOMED,Disorder,S,284198007,2002-01-31,2099-12-31,NA
+4107358,Superficial corrosion of nose,Condition,SNOMED,Disorder,S,284201002,2002-01-31,2099-12-31,NA
+4107359,Superficial corrosion of cheek,Condition,SNOMED,Disorder,S,284202009,2002-01-31,2099-12-31,NA
+4108470,Superficial corrosion of lip,Condition,SNOMED,Disorder,S,284204005,2002-01-31,2099-12-31,NA
+4108636,Superficial injury of head and neck,Condition,SNOMED,Disorder,S,283024006,2002-01-31,2099-12-31,NA
+4108637,Superficial injury of nose,Condition,SNOMED,Disorder,S,283027004,2002-01-31,2099-12-31,NA
+4108644,Abrasion of eye region,Condition,SNOMED,Disorder,S,283050005,2002-01-31,2099-12-31,NA
+4108650,Scratch of mouth,Condition,SNOMED,Disorder,S,283073002,2002-01-31,2099-12-31,NA
+4108759,Traumatic blister of ear region,Condition,SNOMED,Disorder,S,283118003,2002-01-31,2099-12-31,NA
+4108760,Traumatic blister of nose,Condition,SNOMED,Disorder,S,283119006,2002-01-31,2099-12-31,NA
+4111361,Superficial corrosion of scalp,Condition,SNOMED,Disorder,S,284197002,2002-01-31,2099-12-31,NA
+4111362,Superficial corrosion of ear,Condition,SNOMED,Disorder,S,284200001,2002-01-31,2099-12-31,NA
+4111363,Superficial corrosion of chin,Condition,SNOMED,Disorder,S,284206007,2002-01-31,2099-12-31,NA
+4112921,Superficial laceration of face,Condition,SNOMED,Disorder,S,284476005,2002-01-31,2099-12-31,NA
+4113391,Excoriation of pinna,Condition,SNOMED,Disorder,S,300100001,2002-01-31,2099-12-31,NA
+4116331,Traumatic blister of eyelid,Condition,SNOMED,Disorder,S,302966002,2002-01-31,2099-12-31,NA
+4135566,Superficial injury of nose without infection,Condition,SNOMED,Disorder,S,31957000,2002-01-31,2099-12-31,NA
+4147020,Insect bite of eyelids and periocular area,Condition,SNOMED,Disorder,S,269211001,2002-01-31,2099-12-31,NA
+4147347,Nonvenomous insect bite of cheek without infection,Condition,SNOMED,Disorder,S,3032005,2002-01-31,2099-12-31,NA
+4148448,Abrasion and/or friction burn of nose without infection,Condition,SNOMED,Disorder,S,30742008,2002-01-31,2099-12-31,NA
+4149600,Superficial injury of lip with infection,Condition,SNOMED,Disorder,S,3097002,2002-01-31,2099-12-31,NA
+4149689,Traumatic blister of eyelids and periocular area,Condition,SNOMED,Disorder,S,269210000,2002-01-31,2099-12-31,NA
+4150464,Traumatic blister of face,Condition,SNOMED,Disorder,S,271107000,2002-01-31,2099-12-31,NA
+4150466,Traumatic blister of scalp,Condition,SNOMED,Disorder,S,271109002,2002-01-31,2099-12-31,NA
+4150468,"Traumatic blister of face, infected",Condition,SNOMED,Disorder,S,271112004,2002-01-31,2099-12-31,NA
+4151507,Insect bite of head and neck,Condition,SNOMED,Disorder,S,283321007,2002-01-31,2099-12-31,NA
+4151508,Insect bite of eye region,Condition,SNOMED,Disorder,S,283324004,2002-01-31,2099-12-31,NA
+4151509,Insect bite of ear region,Condition,SNOMED,Disorder,S,283325003,2002-01-31,2099-12-31,NA
+4151510,Insect bite of cheek,Condition,SNOMED,Disorder,S,283327006,2002-01-31,2099-12-31,NA
+4152130,Abrasion and/or friction burn of gum without infection,Condition,SNOMED,Disorder,S,2825006,2002-01-31,2099-12-31,NA
+4152814,Insect bite of head,Condition,SNOMED,Disorder,S,283322000,2002-01-31,2099-12-31,NA
+4152815,Insect bite of mouth,Condition,SNOMED,Disorder,S,283328001,2002-01-31,2099-12-31,NA
+4152952,Insect bite of nose,Condition,SNOMED,Disorder,S,283326002,2002-01-31,2099-12-31,NA
+4152955,Infected insect bite of head and neck,Condition,SNOMED,Disorder,S,283346007,2002-01-31,2099-12-31,NA
+4153371,Infected corneal abrasion,Condition,SNOMED,Disorder,S,371124005,2002-07-31,2099-12-31,NA
+4153747,Abrasion and/or friction burn of eyelids and/or periocular area,Condition,SNOMED,Disorder,S,269209005,2002-01-31,2099-12-31,NA
+4154355,"Traumatic blister of head, infected",Condition,SNOMED,Disorder,S,271111006,2002-01-31,2099-12-31,NA
+4155022,Insect bite of forehead,Condition,SNOMED,Disorder,S,283323005,2002-01-31,2099-12-31,NA
+4156670,"Traumatic blister of scalp, infected",Condition,SNOMED,Disorder,S,271114003,2002-01-31,2099-12-31,NA
+4159658,Contact lens related corneal abrasion,Condition,SNOMED,Disorder,S,371066008,2002-07-31,2099-12-31,NA
+4159754,Infected conjunctival abrasion,Condition,SNOMED,Disorder,S,371123004,2002-07-31,2099-12-31,NA
+4164344,Superficial injury of face,Condition,SNOMED,Disorder,S,274180001,2002-01-31,2099-12-31,NA
+4167105,Superficial injury of scalp,Condition,SNOMED,Disorder,S,274181002,2002-01-31,2099-12-31,NA
+4171118,Neonatal abrasion of skin of scalp,Condition,SNOMED,Disorder,S,276623000,2002-01-31,2099-12-31,NA
+4177622,Foreign body in skin of head and neck,Condition,SNOMED,Disorder,S,298061003,2002-01-31,2099-12-31,NA
+4177623,Foreign body in skin of cheek,Condition,SNOMED,Disorder,S,298063000,2002-01-31,2099-12-31,NA
+4177624,Foreign body in skin of lip,Condition,SNOMED,Disorder,S,298065007,2002-01-31,2099-12-31,NA
+4177625,Foreign body in skin of nose,Condition,SNOMED,Disorder,S,298067004,2002-01-31,2099-12-31,NA
+4181874,Foreign body in skin of forehead,Condition,SNOMED,Disorder,S,298064006,2002-01-31,2099-12-31,NA
+4181875,Foreign body in skin of mouth,Condition,SNOMED,Disorder,S,298066008,2002-01-31,2099-12-31,NA
+4181877,Foreign body in skin of scalp,Condition,SNOMED,Disorder,S,298070000,2002-01-31,2099-12-31,NA
+4183151,Nonvenomous insect bite of gum with infection,Condition,SNOMED,Disorder,S,53188002,2002-01-31,2099-12-31,NA
+4185007,Foreign body in skin of head,Condition,SNOMED,Disorder,S,298062005,2002-01-31,2099-12-31,NA
+4185008,Foreign body in skin of eye region,Condition,SNOMED,Disorder,S,298069001,2002-01-31,2099-12-31,NA
+4185273,Superficial injury of nose with infection,Condition,SNOMED,Disorder,S,44006003,2002-01-31,2099-12-31,NA
+4195716,Nonvenomous insect bite of nose with infection,Condition,SNOMED,Disorder,S,67974004,2002-01-31,2099-12-31,NA
+4221820,Superficial injury of lip without infection,Condition,SNOMED,Disorder,S,40194002,2002-01-31,2099-12-31,NA
+4224480,Superficial injury of cheek with infection,Condition,SNOMED,Disorder,S,84866000,2002-01-31,2099-12-31,NA
+4246106,Nonvenomous insect bite of lip with infection,Condition,SNOMED,Disorder,S,60807005,2002-01-31,2099-12-31,NA
+4246509,Abrasion and/or friction burn of gum with infection,Condition,SNOMED,Disorder,S,60203004,2002-01-31,2099-12-31,NA
+4247926,Abrasion and/or friction burn of nose with infection,Condition,SNOMED,Disorder,S,72512006,2002-01-31,2099-12-31,NA
+4259280,Nonvenomous insect bite of ear without infection,Condition,SNOMED,Disorder,S,44921007,2002-01-31,2099-12-31,NA
+4263428,Abrasion and/or friction burn of ear with infection,Condition,SNOMED,Disorder,S,61383005,2002-01-31,2099-12-31,NA
+4270221,Abrasion and/or friction burn of lip without infection,Condition,SNOMED,Disorder,S,63811003,2002-01-31,2099-12-31,NA
+4279752,Abrasion and/or friction burn of cheek with infection,Condition,SNOMED,Disorder,S,66578000,2002-01-31,2099-12-31,NA
+4284847,Abrasion and/or friction burn of ear without infection,Condition,SNOMED,Disorder,S,6733004,2002-01-31,2099-12-31,NA
+4294687,Abrasion and/or friction burn of cheek without infection,Condition,SNOMED,Disorder,S,75767000,2002-01-31,2099-12-31,NA
+4295714,Superficial injury of gum with infection,Condition,SNOMED,Disorder,S,76362004,2002-01-31,2099-12-31,NA
+4298193,Superficial injury of cheek without infection,Condition,SNOMED,Disorder,S,77260003,2002-01-31,2099-12-31,NA
+4308445,Nonvenomous insect bite of cheek with infection,Condition,SNOMED,Disorder,S,83587009,2002-01-31,2099-12-31,NA
+4312493,Corneal abrasion,Condition,SNOMED,Disorder,S,85848002,2002-01-31,2099-12-31,NA
+4326965,Foreign body in skin of eyelid,Condition,SNOMED,Disorder,S,431039004,2008-07-31,2099-12-31,NA
+4338754,Abrasion of skin of eyelid,Condition,SNOMED,Disorder,S,231815005,2002-01-31,2099-12-31,NA
+36674206,Epidermal burn of skin of upper and lower lip,Condition,SNOMED,Disorder,S,770779009,2019-01-31,2099-12-31,NA
+36716562,Superficial bite of scalp,Condition,SNOMED,Disorder,S,722608004,2017-01-31,2099-12-31,NA
+37108682,Abrasion of left cornea,Condition,SNOMED,Disorder,S,10900231000119107,2017-07-31,2099-12-31,NA
+37161922,Foreign body in skin of right ear with infection,Condition,SNOMED,Disorder,S,11843271000119105,2023-06-30,2099-12-31,NA
+37161923,Foreign body in skin of left ear with infection,Condition,SNOMED,Disorder,S,11843351000119106,2023-06-30,2099-12-31,NA
+37161925,Superficial injury of right ear,Condition,SNOMED,Disorder,S,11843631000119109,2023-02-28,2099-12-31,NA
+37161926,Superficial injury of left ear,Condition,SNOMED,Disorder,S,11843671000119107,2023-02-28,2099-12-31,NA
+37161955,Foreign body in mucous membrane of tongue,Condition,SNOMED,Disorder,S,11847611000119107,2021-09-30,2099-12-31,NA
+37161956,Nonvenomous insect bite of cheek,Condition,SNOMED,Disorder,S,11847821000119101,2021-09-30,2099-12-31,NA
+37161957,Infected abrasion of cheek,Condition,SNOMED,Disorder,S,11848021000119106,2022-09-30,2099-12-31,NA
+37161958,Foreign body in skin of right eyelid,Condition,SNOMED,Disorder,S,11848141000119101,2021-09-30,2099-12-31,NA
+37161959,Foreign body in skin of left eyelid,Condition,SNOMED,Disorder,S,11848221000119103,2021-09-30,2099-12-31,NA
+37161976,Superficial injury of skin of forehead,Condition,SNOMED,Disorder,S,11853061000119108,2021-09-30,2099-12-31,NA
+37168251,Abrasion of ocular adnexa,Condition,SNOMED,Disorder,S,1279648009,2023-04-30,2099-12-31,NA
+37170537,Abrasion of skin of periorbital region of right eye,Condition,SNOMED,Disorder,S,38931000087101,2023-04-30,2099-12-31,NA
+37171572,Abrasion of skin of periorbital region of left eye,Condition,SNOMED,Disorder,S,38921000087103,2023-04-30,2099-12-31,NA
+37171615,Abrasion of skin of left upper eyelid,Condition,SNOMED,Disorder,S,39791000087107,2023-04-30,2099-12-31,NA
+37171618,Abrasion of skin of right upper eyelid,Condition,SNOMED,Disorder,S,39811000087108,2023-04-30,2099-12-31,NA
+37171949,Abrasion of ocular adnexa of left eye,Condition,SNOMED,Disorder,S,43281000087100,2023-04-30,2099-12-31,NA
+37172086,Abrasion of ocular adnexa of right eye,Condition,SNOMED,Disorder,S,44221000087104,2023-04-30,2099-12-31,NA
+37309992,Wound of head due to nonvenomous insect bite,Condition,SNOMED,Disorder,S,11849861000119102,2020-01-31,2099-12-31,NA
+37309997,Wound of left eyelid due to nonvenomous insect bite,Condition,SNOMED,Disorder,S,11848421000119104,2020-01-31,2099-12-31,NA
+37309998,Wound of right eyelid due to nonvenomous insect bite,Condition,SNOMED,Disorder,S,11848341000119103,2020-01-31,2099-12-31,NA
+37309999,Infected wound of right eyelid due to nonvenomous insect bite,Condition,SNOMED,Disorder,S,11848301000119100,2020-01-31,2099-12-31,NA
+37310002,Wound of left ear due to nonvenomous insect bite,Condition,SNOMED,Disorder,S,11843591000119109,2020-01-31,2099-12-31,NA
+37310003,Wound of right ear due to nonvenomous insect bite,Condition,SNOMED,Disorder,S,11843551000119104,2020-01-31,2099-12-31,NA
+37310004,Infected wound of left eyelid due to nonvenomous insect bite,Condition,SNOMED,Disorder,S,11848381000119108,2020-01-31,2099-12-31,NA
+37311635,Infected wound of bilateral eyelids due to nonvenomous insect bite,Condition,SNOMED,Disorder,S,789230003,2020-01-31,2099-12-31,NA
+37311636,Infected wound of eyelid due to nonvenomous insect bite,Condition,SNOMED,Disorder,S,789229008,2020-01-31,2099-12-31,NA
+40491352,Friction burn of scalp,Condition,SNOMED,Disorder,S,447150006,2011-01-31,2099-12-31,NA
+40491360,Epidermal burn of face,Condition,SNOMED,Disorder,S,447157009,2011-01-31,2099-12-31,NA
+40492269,Friction burn of face,Condition,SNOMED,Disorder,S,445739004,2011-01-31,2099-12-31,NA
+42534927,Abrasion of right cornea,Condition,SNOMED,Disorder,S,10900191000119103,2018-01-31,2099-12-31,NA
+42599810,Chewing lesion,Condition,SNOMED Veterinary,Clinical Finding,S,359551000009107,2017-04-03,2099-12-31,NA
+42599811,Chewing lesion of buccal mucosa,Condition,SNOMED Veterinary,Clinical Finding,S,359561000009105,2017-04-03,2099-12-31,NA
+42599812,Chewing lesion of labial mucosa,Condition,SNOMED Veterinary,Clinical Finding,S,359571000009101,2017-04-03,2099-12-31,NA
+42599813,Chewing lesion of tongue,Condition,SNOMED Veterinary,Clinical Finding,S,359581000009104,2017-04-03,2099-12-31,NA
+43021524,Burn of eye region with epidermal burn of face,Condition,SNOMED,Disorder,S,473244004,2013-01-31,2099-12-31,NA
+43021533,Epidermal burn of multiple sites of face without involvement of eye proper,Condition,SNOMED,Disorder,S,473253006,2013-01-31,2099-12-31,NA
+43021537,Epidermal burn of multiple sites of head without involvement of eye proper,Condition,SNOMED,Disorder,S,473257007,2013-01-31,2099-12-31,NA
+43531686,Conjunctival abrasion,Condition,SNOMED,Disorder,S,609362004,2013-07-31,2099-12-31,NA
+44784382,Abrasion of tooth extending into dentine,Condition,SNOMED,Disorder,S,698518004,2014-01-31,2099-12-31,NA
+44784386,Abrasion of tooth extending into pulp,Condition,SNOMED,Disorder,S,698522009,2014-01-31,2099-12-31,NA
+44784387,Abrasion of tooth limited to enamel,Condition,SNOMED,Disorder,S,698523004,2014-01-31,2099-12-31,NA
+44784388,Generalized abrasion of tooth,Condition,SNOMED,Disorder,S,698524005,2014-01-31,2099-12-31,NA
+44784389,Localized abrasion of tooth,Condition,SNOMED,Disorder,S,698525006,2014-01-31,2099-12-31,NA
