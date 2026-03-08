@@ -1,0 +1,76 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+253482,Cortical blindness,Condition,SNOMED,Disorder,S,68574006,2002-01-31,2099-12-31,NA
+372627,Transient visual loss,Condition,SNOMED,Disorder,S,36994005,2002-01-31,2099-12-31,NA
+372634,Functional visual loss,Condition,SNOMED,Disorder,S,313165001,2002-01-31,2099-12-31,NA
+372906,Blindness - both eyes,Condition,SNOMED,Disorder,S,193699007,2002-01-31,2099-12-31,NA
+374037,Night blindness,Condition,SNOMED,Disorder,S,65194006,2002-01-31,2099-12-31,NA
+374353,Congenital stationary night blindness,Condition,SNOMED,Disorder,S,232061009,2002-01-31,2099-12-31,NA
+374930,Impairment level: profound impairment of both eyes,Condition,SNOMED,Disorder,S,36676002,2002-01-31,2099-12-31,NA
+375548,Abnormal dark adaptation curve,Condition,SNOMED,Disorder,S,50455002,2002-01-31,2099-12-31,NA
+376402,"Low vision, one eye",Condition,SNOMED,Disorder,S,193745007,2002-01-31,2099-12-31,NA
+376689,Impairment level: severe impairment of both eyes,Condition,SNOMED,Disorder,S,86643000,2002-01-31,2099-12-31,NA
+376978,Acquired night blindness,Condition,SNOMED,Disorder,S,53808001,2002-01-31,2099-12-31,NA
+377277,Impairment level: total impairment of both eyes,Condition,SNOMED,Disorder,S,88768004,2002-01-31,2099-12-31,NA
+377289,Impairment level: moderate impairment of both eyes,Condition,SNOMED,Disorder,S,75133003,2002-01-31,2099-12-31,NA
+377290,Legal blindness USA,Condition,SNOMED,Disorder,S,193731001,2002-01-31,2099-12-31,NA
+378394,Vitamin A deficiency with night blindness,Condition,SNOMED,Disorder,S,15509004,2002-01-31,2099-12-31,NA
+379821,Impairment level: near-total impairment of both eyes,Condition,SNOMED,Disorder,S,38465001,2002-01-31,2099-12-31,NA
+762803,Central visual impairment,Condition,SNOMED,Disorder,S,432141000124105,2012-09-01,2099-12-31,NA
+1450065,"Progressive microcephaly, seizures, cortical blindness, developmental delay with combined immunodeficiency due to DIAPH1 mutation",Condition,SNOMED,Disorder,S,1354858008,2025-01-01,2099-12-31,NA
+3171382,Transient homonymous hemianopsia,Condition,Nebraska Lexicon,Clinical Finding,S,9580001000004104,2016-01-28,2099-12-31,NA
+3654232,Complete blindness of right eye,Condition,SNOMED,Disorder,S,829979008,2020-07-31,2099-12-31,NA
+3654233,Complete blindness of left eye,Condition,SNOMED,Disorder,S,829980006,2020-07-31,2099-12-31,NA
+3654398,Complete pinhole blindness of left eye,Condition,SNOMED,Disorder,S,830270002,2020-07-31,2099-12-31,NA
+3654399,Complete pinhole blindness of right eye,Condition,SNOMED,Disorder,S,830271003,2020-07-31,2099-12-31,NA
+3656856,Transient visual loss of right eye,Condition,SNOMED,Disorder,S,331791000119103,2020-07-31,2099-12-31,NA
+3656940,Transient visual loss of left eye,Condition,SNOMED,Disorder,S,337411000119105,2020-07-31,2099-12-31,NA
+3657026,Bilateral transient visual loss,Condition,SNOMED,Disorder,S,343201000119104,2020-07-31,2099-12-31,NA
+4023310,Blindness AND/OR vision impairment level,Condition,SNOMED,Disorder,S,105597003,2002-01-31,2099-12-31,NA
+4025939,Painful blind eye,Condition,SNOMED,Disorder,S,225569001,2002-01-31,2099-12-31,NA
+4068118,Congenital corneal opacity with visual deficit,Condition,SNOMED,Disorder,S,204148008,2002-01-31,2099-12-31,NA
+4103741,"Low vision, both eyes",Condition,SNOMED,Disorder,S,193722001,2002-01-31,2099-12-31,NA
+4109112,Oguchi's disease,Condition,SNOMED,Disorder,S,193687000,2002-01-31,2099-12-31,NA
+4126443,Traumatic blindness,Condition,SNOMED,Disorder,S,23653003,2002-01-31,2099-12-31,NA
+4154702,Visual loss after cataract extraction,Condition,SNOMED,Disorder,S,371060002,2002-07-31,2099-12-31,NA
+4164639,Blind left eye,Condition,SNOMED,Disorder,S,274571007,2002-01-31,2099-12-31,NA
+4164640,Blind right eye,Condition,SNOMED,Disorder,S,274572000,2002-01-31,2099-12-31,NA
+4185321,Cortical visual impairment,Condition,SNOMED,Disorder,S,413924001,2005-01-31,2099-12-31,NA
+4192436,Central blindness,Condition,SNOMED,Disorder,S,39139002,2002-01-31,2099-12-31,NA
+4224430,Unexplained visual loss,Condition,SNOMED,Disorder,S,421293001,2006-07-31,2099-12-31,NA
+4226790,Blindness with AIDS (acquired immunodeficiency syndrome),Condition,SNOMED,Disorder,S,421706001,2006-07-31,2099-12-31,NA
+4228757,Low vision with AIDS (acquired immunodeficiency syndrome),Condition,SNOMED,Disorder,S,422189002,2006-07-31,2099-12-31,NA
+4230656,Dissociative blindness,Condition,SNOMED,Disorder,S,88902008,2002-01-31,2099-12-31,NA
+4262983,Impairment level of vision,Condition,SNOMED,Disorder,S,361122008,2002-01-31,2099-12-31,NA
+4280821,Legal blindness,Condition,SNOMED,Disorder,S,65956007,2002-01-31,2099-12-31,NA
+4285598,Impairment level of both eyes,Condition,SNOMED,Disorder,S,68777001,2002-01-31,2099-12-31,NA
+4290687,Amaurosis,Condition,SNOMED,Disorder,S,70449006,2002-01-31,2099-12-31,NA
+4308281,Transient blindness,Condition,SNOMED,Disorder,S,83785004,2002-01-31,2099-12-31,NA
+4318414,Congenital blindness,Condition,SNOMED,Disorder,S,95486002,2002-01-31,2099-12-31,NA
+4338523,Amaurosis fugax,Condition,SNOMED,Disorder,S,88032003,2002-01-31,2099-12-31,NA
+4339038,Partial sight - both eyes,Condition,SNOMED,Disorder,S,232150003,2002-01-31,2099-12-31,NA
+35621873,Chondroectodermal dysplasia with night blindness syndrome,Condition,SNOMED,Disorder,S,763134002,2018-07-31,2099-12-31,NA
+35622936,Total visual and total hearing impairment,Condition,SNOMED,Disorder,S,765178008,2018-07-31,2099-12-31,NA
+36676621,"Early-onset epileptic encephalopathy, cortical blindness, intellectual disability, facial dysmorphism syndrome",Condition,SNOMED,Disorder,S,773548008,2019-01-31,2099-12-31,NA
+36712812,Amaurosis fugax of left eye,Condition,SNOMED,Disorder,S,12237911000119109,2017-01-31,2099-12-31,NA
+36712813,Amaurosis fugax of right eye,Condition,SNOMED,Disorder,S,12237951000119105,2017-01-31,2099-12-31,NA
+36713548,"Blindness, scoliosis, arachnodactyly syndrome",Condition,SNOMED,Disorder,S,717920004,2017-01-31,2099-12-31,NA
+36714682,Microphthalmia with brain atrophy syndrome,Condition,SNOMED,Disorder,S,720010009,2017-01-31,2099-12-31,NA
+37118457,"Cortical blindness, intellectual disability, polydactyly syndrome",Condition,SNOMED,Disorder,S,732251003,2017-07-31,2099-12-31,NA
+37161029,"Progressive microcephaly, seizures, cortical blindness, developmental delay syndrome",Condition,SNOMED,Disorder,S,1172900005,2021-09-30,2099-12-31,NA
+37163121,"Autosomal recessive spinocerebellar ataxia, blindness, deafness syndrome",Condition,SNOMED,Disorder,S,1204415006,2022-03-31,2099-12-31,NA
+37164721,Transient vision loss caused by light,Condition,SNOMED,Disorder,S,1231696003,2022-08-31,2099-12-31,NA
+37164986,"Night blindness, skeletal anomalies, dysmorphism syndrome",Condition,SNOMED,Disorder,S,1237228009,2022-08-31,2099-12-31,NA
+37209376,Bilateral cortical blindness of brain,Condition,SNOMED,Disorder,S,15913031000119100,2019-07-31,2099-12-31,NA
+40386117,Bilateral acquired blindness of eyes,Condition,SNOMED,Disorder,S,193709009,2018-07-31,2099-12-31,NA
+42593546,Sudden blindness,Condition,SNOMED Veterinary,Clinical Finding,S,282611000009101,2009-11-05,2099-12-31,NA
+44790784,Loss of vision,Condition,SNOMED,Disorder,S,240311000000103,2006-10-02,2099-12-31,NA
+45757699,"Low vision left eye, normal vision right eye",Condition,SNOMED,Disorder,S,334311000119108,2014-07-31,2099-12-31,NA
+45757708,"Low vision right eye, normal vision left eye",Condition,SNOMED,Disorder,S,339911000119106,2014-07-31,2099-12-31,NA
+45757715,Cortical blindness of left side of brain,Condition,SNOMED,Disorder,S,342751000119101,2014-07-31,2099-12-31,NA
+45757719,"Blind right eye, normal vision left eye",Condition,SNOMED,Disorder,S,343021000119100,2014-07-31,2099-12-31,NA
+45757720,"Blind right eye, low vision left eye",Condition,SNOMED,Disorder,S,343031000119102,2014-07-31,2099-12-31,NA
+45757721,"Blind left eye, normal vision right eye",Condition,SNOMED,Disorder,S,343041000119106,2014-07-31,2099-12-31,NA
+45757722,"Blind left eye, low vision right eye",Condition,SNOMED,Disorder,S,343051000119108,2014-07-31,2099-12-31,NA
+45763582,Blindness due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,60951000119105,2015-01-31,2099-12-31,NA
+45763585,Blindness due to type 1 diabetes mellitus,Condition,SNOMED,Disorder,S,60991000119100,2015-01-31,2099-12-31,NA
+45772121,Cortical blindness of right side of brain,Condition,SNOMED,Disorder,S,342741000119103,2014-07-31,2099-12-31,NA

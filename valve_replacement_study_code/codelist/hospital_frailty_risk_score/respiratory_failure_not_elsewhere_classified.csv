@@ -1,0 +1,45 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+312940,Acute-on-chronic respiratory failure,Condition,SNOMED,Disorder,S,67905004,2002-01-31,2099-12-31,NA
+314971,Chronic respiratory failure,Condition,SNOMED,Disorder,S,39871006,2002-01-31,2099-12-31,NA
+317109,Respiratory arrest,Condition,SNOMED,Disorder,S,87317003,2002-01-31,2099-12-31,NA
+318856,Neonatal respiratory arrest,Condition,SNOMED,Disorder,S,95634003,2002-01-31,2099-12-31,NA
+319049,Acute respiratory failure,Condition,SNOMED,Disorder,S,65710008,2002-01-31,2099-12-31,NA
+602595,Chronic respiratory failure due to obstructive sleep apnea,Condition,SNOMED,Disorder,S,971918681000119107,2021-01-31,2099-12-31,NA
+765304,Respiratory failure following trauma,Condition,SNOMED,Disorder,S,16055271000119107,2016-03-01,2099-12-31,NA
+765888,Acute-on-chronic respiratory failure following trauma,Condition,SNOMED,Disorder,S,10762071000119109,2016-03-01,2099-12-31,NA
+1340458,Exacerbation of respiratory failure,Condition,OMOP Extension,Disorder,S,OMOP5166113,2022-05-06,2099-12-31,NA
+3180780,Postoperative respiratory failure,Condition,Nebraska Lexicon,Clinical Finding,S,16160001000004102,2016-01-28,2099-12-31,NA
+3190336,Respiratory arrest associated with feeding,Condition,Nebraska Lexicon,Clinical Finding,S,15560001000004109,2016-01-28,2099-12-31,NA
+3655486,Interruption of respiration due to food lodged in esophagus,Condition,SNOMED,Disorder,S,865908007,2020-07-31,2099-12-31,NA
+3655976,Acute hypoxemic respiratory failure due to COVID-19,Condition,SNOMED,Disorder,S,870590002,2020-07-31,2099-12-31,NA
+4044242,Sleep-related respiratory failure,Condition,SNOMED,Disorder,S,230499002,2002-01-31,2099-12-31,NA
+4077195,Respiratory arrest preceding cardiac arrest,Condition,SNOMED,Disorder,S,276259003,2002-01-31,2099-12-31,NA
+4093993,Cardiorespiratory failure during AND/OR resulting from a procedure,Condition,SNOMED,Disorder,S,24841007,2002-01-31,2099-12-31,NA
+4110550,Neonatal cardiorespiratory arrest,Condition,SNOMED,Disorder,S,181869007,2002-01-31,2099-12-31,NA
+4140438,Chronic hypercapnic respiratory failure,Condition,SNOMED,Disorder,S,426896000,2007-07-31,2099-12-31,NA
+4148486,Postprocedural respiratory failure,Condition,SNOMED,Disorder,S,309775007,2002-01-31,2099-12-31,NA
+4177862,Chronic hypoxemic respiratory failure,Condition,SNOMED,Disorder,S,428173007,2008-01-31,2099-12-31,NA
+4256228,Respiratory failure,Condition,SNOMED,Disorder,S,409622000,2004-07-31,2099-12-31,NA
+4256374,Cardiorespiratory arrest,Condition,SNOMED,Disorder,S,410430005,2004-07-31,2099-12-31,NA
+4259490,Cardiorespiratory failure,Condition,SNOMED,Disorder,S,410431009,2004-07-31,2099-12-31,NA
+4266019,Acute respiratory failure requiring reintubation,Condition,SNOMED,Disorder,S,397767007,2003-07-31,2099-12-31,NA
+4309155,Cardiorespiratory failure as a complication of care,Condition,SNOMED,Disorder,S,213215000,2002-01-31,2099-12-31,NA
+4313254,Interruption of respiration caused by foreign body in esophagus,Condition,SNOMED,Disorder,S,217810002,2002-01-31,2099-12-31,NA
+4317960,Neonatal respiratory failure,Condition,SNOMED,Disorder,S,95619009,2002-01-31,2099-12-31,NA
+35615340,Acute on chronic hypoxemic and hypercapnic respiratory failure,Condition,SNOMED,Disorder,S,20091000175107,2018-07-31,2099-12-31,NA
+36674871,Spinal muscular atrophy with respiratory distress type 2,Condition,SNOMED,Disorder,S,770727008,2019-01-31,2099-12-31,NA
+36716978,Acute on chronic hypercapnic respiratory failure,Condition,SNOMED,Disorder,S,7361000175106,2017-01-31,2099-12-31,NA
+37016114,Acute on chronic hypoxemic respiratory failure,Condition,SNOMED,Disorder,S,10672271000119100,2016-01-31,2099-12-31,NA
+37017187,Intraoperative cardiorespiratory arrest,Condition,SNOMED,Disorder,S,713419002,2016-01-31,2099-12-31,NA
+37161509,Respiratory failure in early neonatal period,Condition,SNOMED,Disorder,S,1179626002,2022-03-31,2099-12-31,NA
+37171424,Chronic respiratory failure due to neuromuscular disease,Condition,SNOMED,Disorder,S,350586651000119105,2022-10-31,2099-12-31,NA
+37395564,Hypoxemic respiratory failure,Condition,SNOMED,Disorder,S,10676831000119101,2016-07-31,2099-12-31,NA
+37399087,Post extubation acute respiratory failure requiring reintubation,Condition,SNOMED,Disorder,S,718089001,2016-07-31,2099-12-31,NA
+42539533,Acute hypoxemic and hypercapnic respiratory failure,Condition,SNOMED,Disorder,S,735386008,2018-01-31,2099-12-31,NA
+44783658,Cardiorespiratory arrest with successful resuscitation,Condition,SNOMED,Disorder,S,699748007,2014-01-31,2099-12-31,NA
+44784368,Postoperative cardiopulmonary failure,Condition,SNOMED,Disorder,S,698504006,2014-01-31,2099-12-31,NA
+45765437,Hereditary myopathy with early respiratory failure,Condition,SNOMED,Disorder,S,702373006,2014-07-31,2099-12-31,NA
+46269690,Acute hypercapnic respiratory failure due to obstructive sleep apnea,Condition,SNOMED,Disorder,S,101301000119106,2015-07-31,2099-12-31,NA
+46271074,Hypercapnic respiratory failure,Condition,SNOMED,Disorder,S,709109004,2015-07-31,2099-12-31,NA
+46271075,Acute hypoxemic respiratory failure,Condition,SNOMED,Disorder,S,709111008,2015-07-31,2099-12-31,NA
+46273719,Acute hypercapnic respiratory failure,Condition,SNOMED,Disorder,S,709110009,2015-07-31,2099-12-31,NA

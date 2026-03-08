@@ -1,0 +1,55 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+197493,Hepatitis D superinfection of hepatitis B carrier,Condition,SNOMED,Disorder,S,235865005,2002-01-31,2099-12-31,NA
+603228,Carrier of Staphylococcus epidermidis,Observation,SNOMED,Clinical Finding,S,123831000119104,2021-01-31,2099-12-31,NA
+1076273,Group B streptococcus carrier in childbirth,Condition,SNOMED,Disorder,S,1339000004,2024-07-01,2099-12-31,NA
+1076330,Asymptomatic carrier of infectious organism on skin,Condition,SNOMED,Clinical Finding,S,1340039001,2024-07-01,2099-12-31,NA
+1243842,Carrier of sexually transmitted disease,Observation,SNOMED,Clinical Finding,S,15927341000119106,2023-10-01,2099-12-31,NA
+1243997,Asymptomatic carrier of infectious organism,Observation,SNOMED,Clinical Finding,S,38691000087107,2023-10-01,2099-12-31,NA
+1448347,Carrier of carbapenem resistant Acinetobacter baumannii,Observation,SNOMED,Clinical Finding,S,626416581000119101,2024-09-01,2099-12-31,NA
+1448435,Carrier of carbapenem sensitive Enterobacteriaceae,Observation,SNOMED,Clinical Finding,S,952177351000119104,2024-09-01,2099-12-31,NA
+3171022,Clostridium difficile carrier,Condition,Nebraska Lexicon,Clinical Finding,S,22140001000004105,2016-01-28,2099-12-31,NA
+3173384,ESBL escherichia coli carrier,Condition,Nebraska Lexicon,Clinical Finding,S,22130001000004109,2016-01-28,2099-12-31,NA
+3175324,Carrier linezolid resistant gram positive cocci,Condition,Nebraska Lexicon,Clinical Finding,S,30930001000004101,2016-01-28,2099-12-31,NA
+3176753,Carrier vancomycin resistant Staphylococcus aureus,Condition,Nebraska Lexicon,Clinical Finding,S,26140001000004106,2016-01-28,2099-12-31,NA
+3177316,Carrier of carbapenamase producing organism,Condition,Nebraska Lexicon,Clinical Finding,S,24010001000004102,2016-01-28,2099-12-31,NA
+3179033,Carrier vancomycin intermediate staphylococcus aureus,Condition,Nebraska Lexicon,Clinical Finding,S,26130001000004105,2016-01-28,2099-12-31,NA
+3180358,Carrier of carbapenem resistant bacteria,Condition,Nebraska Lexicon,Clinical Finding,S,26100001000004102,2016-01-28,2099-12-31,NA
+3181612,Carrier resistant pseudomonas aeruginosa,Condition,Nebraska Lexicon,Clinical Finding,S,24970001000004102,2016-01-28,2099-12-31,NA
+3185979,Carrier daptomycin methicillin resistant staphylococcus,Condition,Nebraska Lexicon,Clinical Finding,S,30970001000004104,2016-01-28,2099-12-31,NA
+3187493,Carrier of Burkholderia cepacia,Condition,Nebraska Lexicon,Clinical Finding,S,28680001000004106,2016-01-28,2099-12-31,NA
+3187715,Carrier linezolid vancomycin resistant enterococcus,Condition,Nebraska Lexicon,Clinical Finding,S,30960001000004105,2016-01-28,2099-12-31,NA
+3189626,Carrier multidrug resistant Acinetobacter baumannii,Condition,Nebraska Lexicon,Clinical Finding,S,25510001000004109,2016-01-28,2099-12-31,NA
+3192489,Carrier methicillin resistant Staph aureus,Condition,Nebraska Lexicon,Clinical Finding,S,10210001000004109,2016-01-28,2099-12-31,NA
+3655685,Carrier of Clostridioides difficile,Observation,SNOMED,Clinical Finding,S,866179005,2020-07-31,2099-12-31,NA
+4015717,Carrier of amebic protozoa,Observation,SNOMED,Clinical Finding,S,170494004,2002-01-31,2099-12-31,NA
+4015718,Diphtheria carrier,Observation,SNOMED,Clinical Finding,S,170495003,2002-01-31,2099-12-31,NA
+4015841,Cholera carrier,Observation,SNOMED,Clinical Finding,S,170483003,2002-01-31,2099-12-31,NA
+4015842,Viral hepatitis carrier,Observation,SNOMED,Clinical Finding,S,170489004,2002-01-31,2099-12-31,NA
+4015843,Gonorrhea carrier,Observation,SNOMED,Clinical Finding,S,170490008,2002-01-31,2099-12-31,NA
+4016356,Typhoid carrier,Observation,SNOMED,Clinical Finding,S,170484009,2002-01-31,2099-12-31,NA
+4016357,Meningococcus carrier,Observation,SNOMED,Clinical Finding,S,170486006,2002-01-31,2099-12-31,NA
+4016358,Staphylococcus carrier,Observation,SNOMED,Clinical Finding,S,170487002,2002-01-31,2099-12-31,NA
+4016359,Streptococcus carrier,Observation,SNOMED,Clinical Finding,S,170488007,2002-01-31,2099-12-31,NA
+4016360,Legionella carrier,Observation,SNOMED,Clinical Finding,S,170493005,2002-01-31,2099-12-31,NA
+4016890,Salmonella carrier,Observation,SNOMED,Clinical Finding,S,170485005,2002-01-31,2099-12-31,NA
+4160574,Carrier of vancomycin resistant enterococcus,Observation,SNOMED,Clinical Finding,S,431109006,2008-07-31,2099-12-31,NA
+4160859,Carrier of methicillin resistant Staphylococcus aureus,Observation,SNOMED,Clinical Finding,S,432415000,2008-07-31,2099-12-31,NA
+4280828,Carrier of infectious organism,Observation,SNOMED,Clinical Finding,S,66598005,2002-01-31,2099-12-31,NA
+4340379,Hepatitis B carrier,Observation,SNOMED,Clinical Finding,S,235871004,2002-01-31,2099-12-31,NA
+4340380,Hepatitis C carrier,Observation,SNOMED,Clinical Finding,S,235872006,2002-01-31,2099-12-31,NA
+35621751,Carrier of extended spectrum beta-lactamase producing bacteria,Observation,SNOMED,Clinical Finding,S,762988003,2018-07-31,2099-12-31,NA
+35624373,Asymptomatic enteric carriage of Entamoeba,Observation,SNOMED,Clinical Finding,S,767080003,2018-07-31,2099-12-31,NA
+37016152,Group B streptococcus carrier complicating pregnancy,Condition,SNOMED,Disorder,S,120001000119107,2016-01-31,2099-12-31,NA
+37115786,Carrier of methicillin susceptible Staphylococcus aureus,Observation,SNOMED,Clinical Finding,S,732291000,2017-07-31,2099-12-31,NA
+37159778,Candida auris carrier,Observation,SNOMED,Clinical Finding,S,736959331000119108,2023-06-30,2099-12-31,NA
+37159795,Carrier of multiple drug resistant Acinetobacter,Observation,SNOMED,Clinical Finding,S,97971000146108,2022-11-30,2099-12-31,NA
+37175236,Carrier of multiple drug resistant Stenotrophomonas maltophilia,Observation,SNOMED,Clinical Finding,S,97981000146105,2022-11-30,2099-12-31,NA
+37175237,Carrier of multiple drug resistant Streptococcus pneumoniae,Observation,SNOMED,Clinical Finding,S,97991000146107,2022-11-30,2099-12-31,NA
+37175238,Carrier of multiple drug resistant Pseudomonas aeruginosa,Observation,SNOMED,Clinical Finding,S,98001000146104,2022-11-30,2099-12-31,NA
+37205040,Carrier of extended spectrum beta-lactamase producing Enterobacteriaceae,Observation,SNOMED,Clinical Finding,S,784264002,2019-07-31,2099-12-31,NA
+37396170,Carbapenemase producing Enterobacteriaceae carrier,Observation,SNOMED,Clinical Finding,S,715881003,2016-07-31,2099-12-31,NA
+42535080,Carrier of Human T-lymphotropic virus 1,Observation,SNOMED,Clinical Finding,S,15927301000119109,2018-01-31,2099-12-31,NA
+42537782,Entamoeba carrier,Observation,SNOMED,Clinical Finding,S,737347005,2018-01-31,2099-12-31,NA
+42600311,Carrier of Mycobacterium avium,Condition,SNOMED Veterinary,Clinical Finding,S,44581000009101,2008-08-29,2099-12-31,NA
+43530695,Group B Streptococcus carrier,Observation,SNOMED,Clinical Finding,S,1631000119103,2012-09-01,2099-12-31,NA
+44783356,Human immunodeficiency virus carrier,Observation,SNOMED,Clinical Finding,S,699433000,2014-01-31,2099-12-31,NA

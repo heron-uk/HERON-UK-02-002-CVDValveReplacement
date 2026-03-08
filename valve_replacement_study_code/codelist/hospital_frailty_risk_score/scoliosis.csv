@@ -1,0 +1,86 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+72418,Scoliosis deformity of spine,Condition,SNOMED,Disorder,S,298382003,2002-01-31,2099-12-31,NA
+73297,Resolving infantile idiopathic scoliosis,Condition,SNOMED,Disorder,S,28801006,2002-01-31,2099-12-31,NA
+76207,Scoliosis due to radiation,Condition,SNOMED,Disorder,S,47518006,2002-01-31,2099-12-31,NA
+138545,Progressive infantile idiopathic scoliosis,Condition,SNOMED,Disorder,S,20980008,2002-01-31,2099-12-31,NA
+253009,Thoracogenic scoliosis,Condition,SNOMED,Disorder,S,72992003,2002-01-31,2099-12-31,NA
+443531,Kyphoscoliosis deformity of spine,Condition,SNOMED,Disorder,S,405773007,2004-01-31,2099-12-31,NA
+600829,Degenerative kyphoscoliosis,Condition,SNOMED,Disorder,S,79771000119101,2021-01-31,2099-12-31,NA
+600982,Adolescent idiopathic scoliosis of cervical spine,Condition,SNOMED,Disorder,S,301991000119105,2021-07-31,2099-12-31,NA
+603019,Scoliosis deformity of spine due to epiphysiopathy,Condition,SNOMED,Disorder,S,1153416009,2021-07-31,2099-12-31,NA
+762348,Neuromuscular scoliosis of lumbar spine co-occurrent and due to cerebral palsy,Condition,SNOMED,Disorder,S,329741000119109,2017-09-01,2099-12-31,NA
+762349,Neuromuscular scoliosis due to and following poliomyelitis,Condition,SNOMED,Disorder,S,329841000119103,2017-09-01,2099-12-31,NA
+762354,Neuromuscular scoliosis of thoracolumbar spine co-occurrent and due to cerebral palsy,Condition,SNOMED,Disorder,S,330521000119103,2017-09-01,2099-12-31,NA
+762718,Levoscoliosis,Condition,SNOMED,Disorder,S,430991000124102,2012-09-01,2099-12-31,NA
+762719,Dextroscoliosis,Condition,SNOMED,Disorder,S,431001000124101,2012-09-01,2099-12-31,NA
+764206,Early-onset scoliosis deformity of spine,Condition,SNOMED,Disorder,S,452011000124106,2017-03-01,2099-12-31,NA
+1077007,Thoracolumbar neuromuscular scoliosis due to and following poliomyelitis,Condition,SNOMED,Disorder,S,329891000119106,2024-08-01,2099-12-31,NA
+1246251,Cervicothoracic neuromuscular scoliosis due to and following poliomyelitis,Condition,SNOMED,Disorder,S,329871000119105,2024-02-01,2099-12-31,NA
+3174503,Paralytic scoliosis,Condition,Nebraska Lexicon,Clinical Finding,S,19380001000004101,2016-01-28,2099-12-31,NA
+4006101,Congenital scoliosis due to bony malformation,Condition,SNOMED,Disorder,S,205045003,2002-01-31,2099-12-31,NA
+4006163,Acquired scoliosis,Condition,SNOMED,Disorder,S,111266001,2002-01-31,2099-12-31,NA
+4006164,Lordosis and scoliosis deformity of spine,Condition,SNOMED,Disorder,S,111268000,2002-01-31,2099-12-31,NA
+4049645,Congenital postural scoliosis,Condition,SNOMED,Disorder,S,20944008,2002-01-31,2099-12-31,NA
+4067872,Adolescent idiopathic scoliosis,Condition,SNOMED,Disorder,S,203646004,2002-01-31,2099-12-31,NA
+4067876,Scoliosis in connective tissue anomalies,Condition,SNOMED,Disorder,S,203664006,2002-01-31,2099-12-31,NA
+4069644,Scoliosis in skeletal dysplasia,Condition,SNOMED,Disorder,S,203661003,2002-01-31,2099-12-31,NA
+4069645,Scoliosis in neurofibromatosis,Condition,SNOMED,Disorder,S,203663000,2002-01-31,2099-12-31,NA
+4069935,Idiopathic scoliosis,Condition,SNOMED,Disorder,S,203639008,2002-01-31,2099-12-31,NA
+4069936,Idiopathic kyphoscoliosis,Condition,SNOMED,Disorder,S,203640005,2002-01-31,2099-12-31,NA
+4069937,Postural scoliosis,Condition,SNOMED,Disorder,S,203645000,2002-01-31,2099-12-31,NA
+4069938,Post-surgical scoliosis,Condition,SNOMED,Disorder,S,203647008,2002-01-31,2099-12-31,NA
+4069943,Neuromuscular scoliosis,Condition,SNOMED,Disorder,S,203662005,2002-01-31,2099-12-31,NA
+4083345,Neuromuscular kyphoscoliosis,Condition,SNOMED,Disorder,S,281375006,2002-01-31,2099-12-31,NA
+4084906,Thoracogenic kyphoscoliosis,Condition,SNOMED,Disorder,S,281376007,2002-01-31,2099-12-31,NA
+4106173,"Ehlers-Danlos syndrome, hydroxylysine-deficient",Condition,SNOMED,Disorder,S,25606004,2002-01-31,2099-12-31,NA
+4179319,Scoliosis of cervical spine,Condition,SNOMED,Disorder,S,298392006,2002-01-31,2099-12-31,NA
+4179320,Kyphoscoliosis of cervical spine,Condition,SNOMED,Disorder,S,298394007,2002-01-31,2099-12-31,NA
+4183248,Kyphoscoliosis of thoracic spine,Condition,SNOMED,Disorder,S,298495009,2002-01-31,2099-12-31,NA
+4184403,Scoliosis of thoracic spine,Condition,SNOMED,Disorder,S,298494008,2002-01-31,2099-12-31,NA
+4184423,Scoliosis of lumbar spine,Condition,SNOMED,Disorder,S,298591003,2002-01-31,2099-12-31,NA
+4233609,Congenital kyphoscoliosis,Condition,SNOMED,Disorder,S,405772002,2004-01-31,2099-12-31,NA
+4236887,Acquired kyphoscoliosis,Condition,SNOMED,Disorder,S,405771009,2004-01-31,2099-12-31,NA
+4249308,Scoliotic angulation of ribs,Condition,SNOMED,Disorder,S,73671007,2002-01-31,2099-12-31,NA
+36676727,Acrodysplasia scoliosis,Condition,SNOMED,Disorder,S,773773006,2019-01-31,2099-12-31,NA
+36684478,Adolescent idiopathic scoliosis of lumbar spine,Condition,SNOMED,Disorder,S,302011000119105,2019-01-31,2099-12-31,NA
+36684479,Adolescent idiopathic scoliosis of thoracic spine,Condition,SNOMED,Disorder,S,302031000119100,2019-01-31,2099-12-31,NA
+36684480,Adolescent idiopathic scoliosis of thoracolumbar spine,Condition,SNOMED,Disorder,S,302041000119109,2019-01-31,2099-12-31,NA
+36714074,Radioulnar synostosis with microcephaly and scoliosis syndrome,Condition,SNOMED,Disorder,S,719162001,2017-01-31,2099-12-31,NA
+36714238,Microcephalus with brachydactyly and kyphoscoliosis syndrome,Condition,SNOMED,Disorder,S,719378009,2017-01-31,2099-12-31,NA
+36716429,"Duane anomaly, myopathy, scoliosis syndrome",Condition,SNOMED,Disorder,S,722432000,2017-01-31,2099-12-31,NA
+36717138,Ehlers-Danlos syndrome kyphoscoliotic and deafness type,Condition,SNOMED,Disorder,S,720859009,2017-01-31,2099-12-31,NA
+37017436,Idiopathic scoliosis of thoracic and lumbar spine,Condition,SNOMED,Disorder,S,713711000,2016-01-31,2099-12-31,NA
+37017440,Double thoracic curvature idiopathic scoliosis,Condition,SNOMED,Disorder,S,713716005,2016-01-31,2099-12-31,NA
+37018729,Triple curvature idiopathic scoliosis,Condition,SNOMED,Disorder,S,713709009,2016-01-31,2099-12-31,NA
+37156904,"Seizures, scoliosis, macrocephaly syndrome",Condition,SNOMED,Disorder,S,1187250005,2021-11-30,2099-12-31,NA
+37160378,Osteoporotic scoliosis,Condition,SNOMED,Disorder,S,1162305009,2021-09-30,2099-12-31,NA
+37160381,Scoliosis due to and following infection,Condition,SNOMED,Disorder,S,1162308006,2021-09-30,2099-12-31,NA
+37160382,Scoliosis due to and following traumatic injury,Condition,SNOMED,Disorder,S,1162310008,2021-09-30,2099-12-31,NA
+37160935,"Kyphoscoliosis, lateral tongue atrophy, hereditary spastic paraplegia syndrome",Condition,SNOMED,Disorder,S,1172590009,2021-09-30,2099-12-31,NA
+37162317,Congenital lordosis and scoliosis deformity of spine,Condition,SNOMED,Disorder,S,1187359009,2022-01-31,2099-12-31,NA
+37165255,B3GALT6-related spondylodysplastic Ehlers-Danlos syndrome,Condition,SNOMED,Disorder,S,1251499005,2022-09-30,2099-12-31,NA
+37166032,Adult degenerative scoliosis deformity of spine,Condition,SNOMED,Disorder,S,1258987002,2022-11-30,2099-12-31,NA
+37168829,"Spondyloepimetaphyseal dysplasia with joint laxity, EXOC6B type",Condition,SNOMED,Disorder,S,1286834000,2023-07-31,2099-12-31,NA
+37170998,Infantile idiopathic scoliosis of cervicothoracic spine,Condition,SNOMED,Disorder,S,310431000119109,2022-04-30,2099-12-31,NA
+37170999,Infantile idiopathic scoliosis of lumbar spine,Condition,SNOMED,Disorder,S,310441000119100,2022-04-30,2099-12-31,NA
+37171000,Infantile idiopathic scoliosis of thoracic spine,Condition,SNOMED,Disorder,S,310471000119107,2022-04-30,2099-12-31,NA
+37171001,Infantile idiopathic scoliosis of thoracolumbar spine,Condition,SNOMED,Disorder,S,310481000119105,2022-04-30,2099-12-31,NA
+37171016,Juvenile idiopathic scoliosis of thoracic spine,Condition,SNOMED,Disorder,S,311721000119108,2022-04-30,2099-12-31,NA
+37171017,Juvenile idiopathic scoliosis of thoracolumbar spine,Condition,SNOMED,Disorder,S,311731000119106,2022-04-30,2099-12-31,NA
+37171057,Neuromuscular scoliosis of cervicothoracic spine,Condition,SNOMED,Disorder,S,314351000119104,2022-03-31,2099-12-31,NA
+37171058,Neuromuscular scoliosis of lumbar spine,Condition,SNOMED,Disorder,S,314361000119102,2022-03-31,2099-12-31,NA
+37171059,Neuromuscular scoliosis of thoracic spine,Condition,SNOMED,Disorder,S,314391000119109,2022-03-31,2099-12-31,NA
+37171060,Neuromuscular scoliosis of thoracolumbar spine,Condition,SNOMED,Disorder,S,314401000119106,2022-03-31,2099-12-31,NA
+37171182,Thoracogenic scoliosis of thoracic spine,Condition,SNOMED,Disorder,S,322471000119102,2022-03-31,2099-12-31,NA
+37171183,Thoracogenic scoliosis of thoracolumbar spine,Condition,SNOMED,Disorder,S,322481000119104,2022-03-31,2099-12-31,NA
+37207740,Adolescent idiopathic cervicothoracic scoliosis,Condition,SNOMED,Disorder,S,302001000119107,2019-03-01,2099-12-31,NA
+37207741,Adolescent idiopathic lumbosacral scoliosis,Condition,SNOMED,Disorder,S,302021000119103,2019-03-01,2099-12-31,NA
+37207796,Neuromuscular scoliosis of cervical spine,Condition,SNOMED,Disorder,S,314341000119101,2019-03-01,2099-12-31,NA
+37207797,Neuromuscular scoliosis of lumbosacral spine,Condition,SNOMED,Disorder,S,314371000119108,2019-03-01,2099-12-31,NA
+37395946,Distal arthrogryposis type 4,Condition,SNOMED,Disorder,S,715575001,2016-07-31,2099-12-31,NA
+37397547,Ehlers-Danlos syndrome kyphoscoliotic type,Condition,SNOMED,Disorder,S,718211004,2016-07-31,2099-12-31,NA
+42535525,Neuromuscular scoliosis due to cerebral palsy,Condition,SNOMED,Disorder,S,330471000119101,2018-01-31,2099-12-31,NA
+45757669,Infantile idiopathic scoliosis of cervical spine,Condition,SNOMED,Disorder,S,310421000119106,2014-07-31,2099-12-31,NA
+45765444,Horizontal gaze palsy with progressive scoliosis,Condition,SNOMED,Disorder,S,702381007,2014-07-31,2099-12-31,NA
+46273238,Idiopathic scoliosis of thoracic spine,Condition,SNOMED,Disorder,S,712580000,2015-07-31,2099-12-31,NA
+46273239,Idiopathic scoliosis of lumbar spine,Condition,SNOMED,Disorder,S,712581001,2015-07-31,2099-12-31,NA

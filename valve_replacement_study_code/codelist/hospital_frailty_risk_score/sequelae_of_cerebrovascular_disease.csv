@@ -1,0 +1,140 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+197303,Monoplegia of dominant lower limb as a late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,425642008,2007-07-31,2099-12-31,NA
+372654,Paralytic syndrome as late effect of stroke,Condition,SNOMED,Disorder,S,425882004,2007-07-31,2099-12-31,NA
+434056,Late effects of cerebrovascular disease,Condition,SNOMED,Disorder,S,195239002,2002-01-31,2099-12-31,NA
+440426,Vertigo as late effect of stroke,Condition,SNOMED,Disorder,S,426788002,2007-07-31,2099-12-31,NA
+443465,Dysphagia as a late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,426033005,2007-07-31,2099-12-31,NA
+443525,Monoplegia of dominant upper limb as a late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,427065003,2007-07-31,2099-12-31,NA
+443599,Paralytic syndrome of nondominant side as late effect of stroke,Condition,SNOMED,Disorder,S,430947007,2008-07-31,2099-12-31,NA
+443609,Paralytic syndrome of dominant side as late effect of stroke,Condition,SNOMED,Disorder,S,430959006,2008-07-31,2099-12-31,NA
+609092,Memory deficit due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,16703711000119100,2021-01-31,2099-12-31,NA
+759831,Bilateral paralytic syndrome as late effect of stroke,Condition,SNOMED,Disorder,S,106241000119108,2016-09-01,2099-12-31,NA
+762089,Monoplegia of left dominant lower limb due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,290891000119100,2017-09-01,2099-12-31,NA
+762090,Monoplegia of left nondominant lower limb due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,290901000119101,2017-09-01,2099-12-31,NA
+762091,Monoplegia of right nondominant lower limb due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,290921000119105,2017-09-01,2099-12-31,NA
+762093,Monoplegia of left dominant upper limb due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,291081000119100,2017-09-01,2099-12-31,NA
+764813,Monoplegia of nondominant lower limb due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672371000119103,2017-09-01,2099-12-31,NA
+764814,Monoplegia of dominant upper limb due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672421000119109,2017-09-01,2099-12-31,NA
+764815,Hemiplegia of nondominant side due to and following hemorrhagic cerebrovascular accident,Condition,SNOMED,Disorder,S,672451000119101,2017-09-01,2099-12-31,NA
+764817,Fluency disorder due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672481000119108,2017-09-01,2099-12-31,NA
+764820,Monoplegia of lower limb due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,674131000119105,2017-09-01,2099-12-31,NA
+764847,Apraxia due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690181000119108,2017-09-01,2099-12-31,NA
+764849,Monoplegia of lower limb due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690231000119102,2017-09-01,2099-12-31,NA
+764850,Monoplegia of nondominant upper limb due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690241000119106,2017-09-01,2099-12-31,NA
+764851,Monoplegia of dominant upper limb due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690251000119108,2017-09-01,2099-12-31,NA
+764852,Monoplegia of upper limb due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690261000119105,2017-09-01,2099-12-31,NA
+764853,Hemiplegia of dominant side due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690281000119101,2017-09-01,2099-12-31,NA
+765461,Monoplegia of right dominant lower limb due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,290911000119103,2017-09-01,2099-12-31,NA
+765462,Monoplegia of right dominant upper limb due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,291101000119107,2017-09-01,2099-12-31,NA
+765518,Monoplegia of dominant lower limb due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672381000119100,2017-09-01,2099-12-31,NA
+1076727,Urinary incontinence due to and following ischemic stroke,Condition,SNOMED,Disorder,S,16470151000119106,2024-07-01,2099-12-31,NA
+1450434,Mood disorder due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,276481000112102,2024-09-01,2099-12-31,NA
+3168875,Late effects of stroke: apraxia,Condition,Nebraska Lexicon,Clinical Finding,S,5570001000004104,2016-01-28,2099-12-31,NA
+3169760,Dysphasia complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5430001000004105,2016-01-28,2099-12-31,NA
+3175600,CVA with associated dominant monoplegia of leg,Condition,Nebraska Lexicon,Clinical Finding,S,5510001000004106,2016-01-28,2099-12-31,NA
+3177916,Late effects of stroke: dysphagia,Condition,Nebraska Lexicon,Clinical Finding,S,5580001000004108,2016-01-28,2099-12-31,NA
+3179559,Cognitive deficit complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5400001000004102,2016-01-28,2099-12-31,NA
+3180014,Monoplegia of arm complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5470001000004107,2016-01-28,2099-12-31,NA
+3180159,Late effects complicating CVA,Condition,Nebraska Lexicon,Clinical Finding,S,5590001000004107,2016-01-28,2099-12-31,NA
+3181146,Monoplegia of leg complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5500001000004109,2016-01-28,2099-12-31,NA
+3181357,Aphasia complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5420001000004108,2016-01-28,2099-12-31,NA
+3182970,Monoplegia of nondominant arm complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5490001000004104,2016-01-28,2099-12-31,NA
+3183281,Language deficit complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5410001000004100,2016-01-28,2099-12-31,NA
+3184686,Hemiplegia complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5440001000004106,2016-01-28,2099-12-31,NA
+3184852,Monoplegia of dominant arm complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5480001000004103,2016-01-28,2099-12-31,NA
+3190458,Monoplegia of nondominant leg complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5520001000004103,2016-01-28,2099-12-31,NA
+4079008,Chronic central post-stroke pain,Condition,SNOMED,Disorder,S,277286006,2002-01-31,2099-12-31,NA
+4146293,Paralytic syndrome as late effect of thalamic stroke,Condition,SNOMED,Disorder,S,427432001,2007-07-31,2099-12-31,NA
+4198778,Neurogenic urinary bladder due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,433183000,2008-07-31,2099-12-31,NA
+36684470,Visual field defect due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,142031000119104,2019-01-31,2099-12-31,NA
+36685002,Dysarthria due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672501000119104,2019-01-31,2099-12-31,NA
+36685003,Aphasia due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672541000119102,2019-01-31,2099-12-31,NA
+36685004,Ataxia due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,674111000119100,2019-01-31,2099-12-31,NA
+36685011,Dysarthria due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690311000119104,2019-01-31,2099-12-31,NA
+36685012,Aphasia due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690321000119106,2019-01-31,2099-12-31,NA
+36716860,Late effects of cerebral ischemic stroke,Condition,SNOMED,Disorder,S,723083001,2017-01-31,2099-12-31,NA
+37164462,Malignant middle cerebral artery syndrome,Condition,SNOMED,Disorder,S,1231168008,2022-06-30,2099-12-31,NA
+37169604,Fatigue due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,16469881000119105,2023-06-30,2099-12-31,NA
+37169605,Fatigue due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,16469931000119100,2023-06-30,2099-12-31,NA
+37169606,Fatigue due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,16469991000119101,2023-06-30,2099-12-31,NA
+37169607,Urinary incontinence due to and following cerebrovascular accident with intracranial hemorrhage,Condition,SNOMED,Disorder,S,16470041000119105,2023-06-30,2099-12-31,NA
+37169608,Urinary incontinence due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,16470101000119107,2023-06-30,2099-12-31,NA
+37169609,Urinary incontinence due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,16470211000119100,2023-06-30,2099-12-31,NA
+37169686,Psychomotor retardation due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,16702441000119104,2023-06-30,2099-12-31,NA
+37169687,Psychomotor retardation due to and following cerebrovascular accident with intracranial hemorrhage,Condition,SNOMED,Disorder,S,16702561000119104,2023-06-30,2099-12-31,NA
+37169688,Psychomotor retardation due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,16702671000119109,2023-06-30,2099-12-31,NA
+37170181,Fatigue due to and following cerebrovascular accident with intracranial hemorrhage,Condition,SNOMED,Disorder,S,16469821000119106,2023-06-30,2099-12-31,NA
+37174009,Weakness of facial muscle due to and following hemorrhagic cerebrovascular accident,Condition,SNOMED,Disorder,S,674371000119105,2023-06-30,2099-12-31,NA
+37174199,Fluency disorder due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690301000119102,2023-06-30,2099-12-31,NA
+37309661,Memory deficit due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,16703761000119102,2020-01-31,2099-12-31,NA
+37309662,Memory deficit due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,16703661000119105,2020-01-31,2099-12-31,NA
+37309663,Memory deficit due to and following cerebrovascular disease,Condition,SNOMED,Disorder,S,16703551000119107,2020-01-31,2099-12-31,NA
+40479575,Dysphasia as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,441529001,2009-07-31,2099-12-31,NA
+40480002,Aphasia as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,441630004,2009-07-31,2099-12-31,NA
+40480449,Sensory disorder as a late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,441735003,2009-07-31,2099-12-31,NA
+40480475,Abnormal vision as a late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,441759008,2009-07-31,2099-12-31,NA
+40480938,Monoplegia of lower limb as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,441887006,2009-07-31,2099-12-31,NA
+40480946,Monoplegia of nondominant lower limb as a late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,441894009,2009-07-31,2099-12-31,NA
+40481354,Speech and language deficit as late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,441960006,2009-07-31,2099-12-31,NA
+40481389,Hemiparesis as late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,441991000,2009-07-31,2099-12-31,NA
+40481762,Hemiplegia as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,442024001,2009-07-31,2099-12-31,NA
+40481842,Monoplegia of upper limb as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,442097001,2009-07-31,2099-12-31,NA
+40482266,Monoplegia of nondominant upper limb as a late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,442181008,2009-07-31,2099-12-31,NA
+40482301,Residual cognitive deficit as late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,442212003,2009-07-31,2099-12-31,NA
+40484101,Aphasia as late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,442617003,2009-07-31,2099-12-31,NA
+40484513,Hemiplegia of nondominant side as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,442668000,2009-07-31,2099-12-31,NA
+40484522,Hemiplegia of dominant side as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,442676003,2009-07-31,2099-12-31,NA
+40484910,Hemiplegia as late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,442733008,2009-07-31,2099-12-31,NA
+42534983,Weakness of left facial muscle as sequela of cerebrovascular accident,Condition,SNOMED,Disorder,S,12242711000119109,2018-01-31,2099-12-31,NA
+42534989,Paraplegia as sequela of cerebrovascular accident,Condition,SNOMED,Disorder,S,12367511000119101,2018-01-31,2099-12-31,NA
+42535100,Weakness of left facial muscle as sequela of cerebrovascular disease,Condition,SNOMED,Disorder,S,15982311000119104,2018-01-31,2099-12-31,NA
+42535232,Dysphasia due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,16260551000119106,2018-01-31,2099-12-31,NA
+42535344,Apraxia as sequela of cerebrovascular accident,Condition,SNOMED,Disorder,S,186831000119104,2018-01-31,2099-12-31,NA
+42535411,Ataxia as sequela of cerebrovascular accident,Condition,SNOMED,Disorder,S,290581000119101,2018-01-31,2099-12-31,NA
+42535412,Dysarthria due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,290631000119103,2018-01-31,2099-12-31,NA
+42535415,Fluency disorder as sequela of cerebrovascular accident,Condition,SNOMED,Disorder,S,290791000119105,2018-01-31,2099-12-31,NA
+42535416,Monoplegia of lower limb as sequela of cerebrovascular accident,Condition,SNOMED,Disorder,S,290931000119108,2018-01-31,2099-12-31,NA
+42535417,Monoplegia of left nondominant upper limb as sequela of cerebrovascular accident,Condition,SNOMED,Disorder,S,291091000119102,2018-01-31,2099-12-31,NA
+42535419,Monoplegia of arm as late effect of stroke,Condition,SNOMED,Disorder,S,291121000119103,2018-01-31,2099-12-31,NA
+42535676,Hemiplegia of nondominant side as sequela of ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672441000119103,2018-01-31,2099-12-31,NA
+42535677,Hemiplegia of dominant side as sequela of ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672461000119104,2018-01-31,2099-12-31,NA
+42535679,Dysphasia due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672521000119108,2018-01-31,2099-12-31,NA
+42535681,Cognitive deficit due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672561000119103,2018-01-31,2099-12-31,NA
+42535684,Vertigo as sequela of ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,674091000119108,2018-01-31,2099-12-31,NA
+42535685,Ataxia as sequela of hemorrhagic cerebrovascular accident,Condition,SNOMED,Disorder,S,674121000119107,2018-01-31,2099-12-31,NA
+42535686,Monoplegia of arm as late effect of ischemic stroke,Condition,SNOMED,Disorder,S,674161000119102,2018-01-31,2099-12-31,NA
+42535687,Apraxia as sequela of ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,674361000119104,2018-01-31,2099-12-31,NA
+42535688,Weakness of facial muscle as sequela of ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,674381000119108,2018-01-31,2099-12-31,NA
+42535689,Speech and language deficit as sequela of hemorrhagic cerebrovascular accident,Condition,SNOMED,Disorder,S,674391000119106,2018-01-31,2099-12-31,NA
+42535690,Speech and language deficit as sequela of ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,674401000119108,2018-01-31,2099-12-31,NA
+42535702,Weakness of facial muscle as sequela of embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690171000119105,2018-01-31,2099-12-31,NA
+42535703,Ataxia as sequela of embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690201000119109,2018-01-31,2099-12-31,NA
+42535704,Hemiplegia of nondominant side as sequela of embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690271000119104,2018-01-31,2099-12-31,NA
+42535705,Speech and language deficit as sequela of embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690331000119109,2018-01-31,2099-12-31,NA
+42535706,Cognitive deficit due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690341000119100,2018-01-31,2099-12-31,NA
+42535707,Dysphasia due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690351000119103,2018-01-31,2099-12-31,NA
+42539180,Monoplegia of right nondominant arm as late effect of stroke,Condition,SNOMED,Disorder,S,291111000119105,2018-01-31,2099-12-31,NA
+42539254,Weakness of right facial muscle as sequela of cerebrovascular disease,Condition,SNOMED,Disorder,S,15982271000119104,2018-01-31,2099-12-31,NA
+42539256,Cognitive deficit due to and following cerebrovascular disease,Condition,SNOMED,Disorder,S,290621000119101,2018-01-31,2099-12-31,NA
+42539260,Weakness of right facial muscle as sequela of cerebrovascular accident,Condition,SNOMED,Disorder,S,12242751000119105,2018-01-31,2099-12-31,NA
+43530611,Paralytic syndrome of both lower limbs as sequela of stroke,Condition,SNOMED,Disorder,S,102831000119104,2013-07-31,2099-12-31,NA
+43530612,Paralytic syndrome of all four limbs as sequela of stroke,Condition,SNOMED,Disorder,S,103761000119107,2013-07-31,2099-12-31,NA
+43530623,Sequela of cerebrovascular accident,Condition,SNOMED,Disorder,S,1131000119105,2012-09-01,2099-12-31,NA
+43530665,Seizure disorder as sequela of stroke,Condition,SNOMED,Disorder,S,137991000119103,2013-07-31,2099-12-31,NA
+43530679,Apraxia as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,145741000119101,2013-07-31,2099-12-31,NA
+43530687,Dysarthria as late effects of cerebrovascular disease,Condition,SNOMED,Disorder,S,133981000119106,2013-07-31,2099-12-31,NA
+43530688,Fluency disorder as sequela of cerebrovascular disease,Condition,SNOMED,Disorder,S,133991000119109,2013-07-31,2099-12-31,NA
+43530702,Monoplegia of leg dominant side as sequela of cerebrovascular disease,Condition,SNOMED,Disorder,S,18751000119106,2013-07-31,2099-12-31,NA
+43530703,Monoplegia of arm dominant side as sequela of cerebrovascular disease,Condition,SNOMED,Disorder,S,18761000119108,2013-07-31,2099-12-31,NA
+43530736,Sequela of cardioembolic stroke,Condition,SNOMED,Disorder,S,33301000119105,2013-07-31,2099-12-31,NA
+43530742,Paralytic syndrome on one side of the body as late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,361000119103,2013-07-31,2099-12-31,NA
+43530744,Weakness of face muscles as sequela of stroke,Condition,SNOMED,Disorder,S,40161000119102,2013-07-31,2099-12-31,NA
+43531583,Visual disturbance as sequela of cerebrovascular disease,Condition,SNOMED,Disorder,S,87551000119101,2013-07-31,2099-12-31,NA
+43531592,Sequela of thrombotic stroke,Condition,SNOMED,Disorder,S,91601000119109,2013-07-31,2099-12-31,NA
+43531595,Weakness of extremities as sequela of stroke,Condition,SNOMED,Disorder,S,92341000119107,2013-07-31,2099-12-31,NA
+43531610,Spasticity as sequela of stroke,Condition,SNOMED,Disorder,S,108691000119102,2013-07-31,2099-12-31,NA
+43531617,Alteration of sensation as late effect of stroke,Condition,SNOMED,Disorder,S,134771000119108,2013-07-31,2099-12-31,NA
+43531621,Vertigo as sequela of cerebrovascular disease,Condition,SNOMED,Disorder,S,26021000119107,2013-07-31,2099-12-31,NA
+43531622,Ataxia as sequela of cerebrovascular disease,Condition,SNOMED,Disorder,S,29941000119105,2013-07-31,2099-12-31,NA
+44782427,Hemiparesis as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,140281000119108,2014-01-31,2099-12-31,NA
+44782753,Weakness as a late effect of stroke,Condition,SNOMED,Disorder,S,148871000119109,2014-01-31,2099-12-31,NA

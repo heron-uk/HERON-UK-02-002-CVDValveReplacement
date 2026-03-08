@@ -1,0 +1,29 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+313232,Hemodialysis-associated hypotension,Condition,SNOMED,Disorder,S,408667000,2004-07-31,2099-12-31,NA
+314432,Maternal hypotension syndrome,Condition,SNOMED,Disorder,S,88887003,2002-01-31,2099-12-31,NA
+316447,Chronic hypotension,Condition,SNOMED,Disorder,S,77545000,2002-01-31,2099-12-31,NA
+317002,Low blood pressure,Condition,SNOMED,Disorder,S,45007003,2002-01-31,2099-12-31,NA
+319041,Orthostatic hypotension,Condition,SNOMED,Disorder,S,28651003,2002-01-31,2099-12-31,NA
+443447,Iatrogenic hypotension,Condition,SNOMED,Disorder,S,408668005,2004-07-31,2099-12-31,NA
+1340390,Exacerbation of low blood pressure,Condition,OMOP Extension,Disorder,S,OMOP5166045,2022-05-06,2099-12-31,NA
+1340415,Exacerbation of orthostatic hypotension,Condition,OMOP Extension,Disorder,S,OMOP5166070,2022-05-06,2099-12-31,NA
+1340521,Progression of pure autonomic failure,Condition,OMOP Extension,Disorder,S,OMOP5166176,2022-05-06,2099-12-31,NA
+3176434,Exercise induced hypotension,Condition,Nebraska Lexicon,Clinical Finding,S,2400001000004104,2016-01-28,2099-12-31,NA
+4045723,Sympathotonic orthostatic hypotension,Condition,SNOMED,Disorder,S,230664009,2002-01-31,2099-12-31,NA
+4112334,Idiopathic hypotension,Condition,SNOMED,Disorder,S,195506001,2002-01-31,2099-12-31,NA
+4117864,Idiopathic chronic hypotension,Condition,SNOMED,Disorder,S,286963007,2002-01-31,2099-12-31,NA
+4120275,Drug-induced hypotension,Condition,SNOMED,Disorder,S,234171009,2002-01-31,2099-12-31,NA
+4172867,Neonatal hypotension,Condition,SNOMED,Disorder,S,276519002,2002-01-31,2099-12-31,NA
+4219273,Parkinsonian syndrome with idiopathic orthostatic hypotension,Condition,SNOMED,Disorder,S,72585000,2002-01-31,2099-12-31,NA
+4265037,Hyperadrenergic postural hypotension,Condition,SNOMED,Disorder,S,61933008,2002-01-31,2099-12-31,NA
+4285144,Hypotensive episode,Condition,SNOMED,Disorder,S,67763001,2002-01-31,2099-12-31,NA
+4290512,Hypoadrenergic postural hypotension,Condition,SNOMED,Disorder,S,70247006,2002-01-31,2099-12-31,NA
+4309357,Pure autonomic failure,Condition,SNOMED,Disorder,S,84438001,2002-01-31,2099-12-31,NA
+4323895,Exertional hypotension,Condition,SNOMED,Disorder,S,429561008,2008-01-31,2099-12-31,NA
+4327471,Chronic orthostatic hypotension,Condition,SNOMED,Disorder,S,75181005,2002-01-31,2099-12-31,NA
+35615135,Hypotension following procedure,Condition,SNOMED,Disorder,S,16055431000119108,2018-07-31,2099-12-31,NA
+36713737,Orthostatic hypotension co-occurrent and due to Parkinson's disease,Condition,SNOMED,Disorder,S,718685006,2017-01-31,2099-12-31,NA
+36716981,Refractory hypotension,Condition,SNOMED,Disorder,S,7431000175109,2017-01-31,2099-12-31,NA
+36716992,Transient hypotension,Condition,SNOMED,Disorder,S,94501000119106,2017-01-31,2099-12-31,NA
+37108683,Hypotension during surgery,Condition,SNOMED,Disorder,S,10901000087102,2017-07-31,2099-12-31,NA
+42539580,Postural hypotension following exercise,Condition,SNOMED,Disorder,S,735908000,2018-01-31,2099-12-31,NA
