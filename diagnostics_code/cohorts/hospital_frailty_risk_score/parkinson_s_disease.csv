@@ -1,0 +1,13 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+381270,Parkinson's disease,Condition,SNOMED,Disorder,S,49049000,2002-01-31,2099-12-31,NA
+608078,Autosomal recessive familial Parkinson disease,Condition,SNOMED,Disorder,S,1156822001,2021-07-31,2099-12-31,NA
+1340428,Exacerbation of Parkinson's disease,Condition,OMOP Extension,Disorder,S,OMOP5166083,2022-05-06,2099-12-31,NA
+4047751,Juvenile Parkinson's disease,Condition,SNOMED,Disorder,S,230291001,2002-01-31,2099-12-31,NA
+36713737,Orthostatic hypotension co-occurrent and due to Parkinson's disease,Condition,SNOMED,Disorder,S,718685006,2017-01-31,2099-12-31,NA
+36714473,Psychosis co-occurrent and due to Parkinson's disease,Condition,SNOMED,Disorder,S,719717006,2017-01-31,2099-12-31,NA
+37110499,Sporadic Parkinson disease,Condition,SNOMED,Disorder,S,724761004,2017-07-31,2099-12-31,NA
+37110776,Atypical juvenile parkinsonism,Condition,SNOMED,Disorder,S,725146001,2017-07-31,2099-12-31,NA
+37164406,Off-periods in Parkinson disease not responding to oral treatment,Condition,SNOMED,Disorder,S,1230308005,2022-06-30,2099-12-31,NA
+37395785,Young onset Parkinson disease,Condition,SNOMED,Disorder,S,715345007,2016-07-31,2099-12-31,NA
+37396747,Autosomal dominant late onset Parkinson disease,Condition,SNOMED,Disorder,S,716662004,2016-07-31,2099-12-31,NA
+37399497,Early onset parkinsonism and intellectual disability syndrome,Condition,SNOMED,Disorder,S,716107009,2016-07-31,2099-12-31,NA

@@ -1,0 +1,4 @@
+concept_id,found_from,concept_name,domain_id,vocabulary_id,standard_concept
+4108730,From initial search,Unicuspid aortic valve,Condition,SNOMED,S
+40486071,From initial search,Unicommissural unicuspid aortic valve,Condition,SNOMED,S
+40487992,From initial search,Acommissural unicuspid aortic valve,Condition,SNOMED,S

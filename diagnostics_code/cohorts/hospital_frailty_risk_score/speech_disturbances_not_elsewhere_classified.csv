@@ -1,0 +1,109 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+435642,Disturbance in speech,Condition,SNOMED,Clinical Finding,S,29164008,2002-01-31,2099-12-31,NA
+441594,Dysphasia,Condition,SNOMED,Clinical Finding,S,20301004,2002-01-31,2099-12-31,NA
+762097,Dysarthria due to and following spontaneous intracranial subarachnoid hemorrhage,Condition,SNOMED,Disorder,S,291651000119101,2017-09-01,2099-12-31,NA
+762098,Dysarthria due to and following spontaneous intracerebral hemorrhage,Condition,SNOMED,Disorder,S,291741000119108,2017-09-01,2099-12-31,NA
+765134,Dysphasia due to and following spontaneous subarachnoid hemorrhage,Condition,SNOMED,Disorder,S,291641000119103,2017-09-01,2099-12-31,NA
+765135,Dysphasia due to and following spontaneous intracerebral hemorrhage,Condition,SNOMED,Disorder,S,291731000119104,2017-09-01,2099-12-31,NA
+3169760,Dysphasia complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5430001000004105,2016-01-28,2099-12-31,NA
+4009721,Staccato speech,Condition,SNOMED,Clinical Finding,S,102936006,2002-01-31,2099-12-31,NA
+4011624,Embololalia,Condition,SNOMED,Clinical Finding,S,102934009,2002-01-31,2099-12-31,NA
+4011625,Mimmation,Condition,SNOMED,Clinical Finding,S,102937002,2002-01-31,2099-12-31,NA
+4012110,Mirror speech,Condition,SNOMED,Clinical Finding,S,102933003,2002-01-31,2099-12-31,NA
+4025836,Verbigeration,Condition,SNOMED,Clinical Finding,S,19538009,2002-01-31,2099-12-31,NA
+4027310,Impairment of voice production,Condition,SNOMED,Clinical Finding,S,228144006,2002-01-31,2099-12-31,NA
+4027311,Impairment of speech form,Condition,SNOMED,Clinical Finding,S,228145007,2002-01-31,2099-12-31,NA
+4036950,Has difficulty with speech,Condition,SNOMED,Clinical Finding,S,162294008,2002-01-31,2099-12-31,NA
+4039732,Frontal dynamic dysphasia,Condition,SNOMED,Disorder,S,229656001,2002-01-31,2099-12-31,NA
+4039734,Expressive dysphasia,Condition,SNOMED,Clinical Finding,S,229665008,2002-01-31,2099-12-31,NA
+4039737,Dysarthria of velopharynx,Condition,SNOMED,Clinical Finding,S,229691009,2002-01-31,2099-12-31,NA
+4040417,Efferent motor dysphasia,Condition,SNOMED,Clinical Finding,S,229666009,2002-01-31,2099-12-31,NA
+4040425,Extrapyramidal dysarthria,Condition,SNOMED,Clinical Finding,S,229688009,2002-01-31,2099-12-31,NA
+4041817,Immature sound system,Condition,SNOMED,Clinical Finding,S,229722000,2002-01-31,2099-12-31,NA
+4041826,Developmental dysphasia,Condition,SNOMED,Clinical Finding,S,229747003,2002-01-31,2099-12-31,NA
+4042719,Broca's dysphasia,Condition,SNOMED,Clinical Finding,S,229654003,2002-01-31,2099-12-31,NA
+4042720,Transcortical sensory dysphasia,Condition,SNOMED,Disorder,S,229658000,2002-01-31,2099-12-31,NA
+4042721,Mixed dysphasia,Condition,SNOMED,Disorder,S,229662006,2002-01-31,2099-12-31,NA
+4043885,Congenital expressive dysphasia,Condition,SNOMED,Disorder,S,230787005,2002-01-31,2099-12-31,NA
+4043886,Congenital receptive dysphasia,Condition,SNOMED,Disorder,S,230788000,2002-01-31,2099-12-31,NA
+4044417,Spastic dysarthria,Condition,SNOMED,Clinical Finding,S,229684006,2002-01-31,2099-12-31,NA
+4044418,Flaccid dysarthria,Condition,SNOMED,Clinical Finding,S,229685007,2002-01-31,2099-12-31,NA
+4044419,Dysarthriapneumophonia,Condition,SNOMED,Clinical Finding,S,229690005,2002-01-31,2099-12-31,NA
+4045741,Dysarthria-clumsy hand syndrome,Condition,SNOMED,Disorder,S,230703006,2002-01-31,2099-12-31,NA
+4045845,Congenital dysarthria,Condition,SNOMED,Disorder,S,230785002,2002-01-31,2099-12-31,NA
+4046085,Non-Alzheimer's progressive dysphasia,Condition,SNOMED,Disorder,S,230279005,2002-01-31,2099-12-31,NA
+4046810,Transcortical motor dysphasia,Condition,SNOMED,Disorder,S,229655002,2002-01-31,2099-12-31,NA
+4046811,Mixed transcortical dysphasia,Condition,SNOMED,Disorder,S,229659008,2002-01-31,2099-12-31,NA
+4046909,Congenital dysphasia,Condition,SNOMED,Disorder,S,230786001,2002-01-31,2099-12-31,NA
+4047105,Receptive dysphasia,Condition,SNOMED,Disorder,S,229664007,2002-01-31,2099-12-31,NA
+4047112,Mixed dysarthria,Condition,SNOMED,Clinical Finding,S,229686008,2002-01-31,2099-12-31,NA
+4047113,Cerebellar dysarthria,Condition,SNOMED,Clinical Finding,S,229687004,2002-01-31,2099-12-31,NA
+4111812,Does not use pulmonic airstream for speech,Condition,SNOMED,Clinical Finding,S,286221003,2002-01-31,2099-12-31,NA
+4111814,Unable to use glottalic airstream for speech,Condition,SNOMED,Clinical Finding,S,286225007,2002-01-31,2099-12-31,NA
+4111816,Difficulty using glottalic airstream for speech,Condition,SNOMED,Clinical Finding,S,286228009,2002-01-31,2099-12-31,NA
+4111828,Does not make speech sounds,Condition,SNOMED,Clinical Finding,S,286257008,2002-01-31,2099-12-31,NA
+4111840,Difficulty using sounds in isolation,Condition,SNOMED,Clinical Finding,S,286304005,2002-01-31,2099-12-31,NA
+4111955,Difficulty using blended sounds,Condition,SNOMED,Clinical Finding,S,286324009,2002-01-31,2099-12-31,NA
+4114553,Unable to use pulmonic airstream for speech,Condition,SNOMED,Clinical Finding,S,286219008,2002-01-31,2099-12-31,NA
+4114554,Difficulty using pulmonic airstream for speech,Condition,SNOMED,Clinical Finding,S,286222005,2002-01-31,2099-12-31,NA
+4114557,Difficulty using velaric airstream for speech,Condition,SNOMED,Clinical Finding,S,286234002,2002-01-31,2099-12-31,NA
+4114562,Difficulty making speech sounds,Condition,SNOMED,Clinical Finding,S,286258003,2002-01-31,2099-12-31,NA
+4114573,Does not imitate speech sounds,Condition,SNOMED,Clinical Finding,S,286291007,2002-01-31,2099-12-31,NA
+4114574,Difficulty imitating speech sounds,Condition,SNOMED,Clinical Finding,S,286292000,2002-01-31,2099-12-31,NA
+4114580,Unable to use sounds in isolation,Condition,SNOMED,Clinical Finding,S,286303004,2002-01-31,2099-12-31,NA
+4114583,Unable to use single consonant,Condition,SNOMED,Clinical Finding,S,286311009,2002-01-31,2099-12-31,NA
+4114584,Difficulty using consonant vowel combination,Condition,SNOMED,Clinical Finding,S,286316004,2002-01-31,2099-12-31,NA
+4114708,Difficulty using consonant vowel consonant combination,Condition,SNOMED,Clinical Finding,S,286320000,2002-01-31,2099-12-31,NA
+4115647,Unable to make movements for speech,Condition,SNOMED,Clinical Finding,S,286207000,2002-01-31,2099-12-31,NA
+4115648,Difficulty making movements for speech,Condition,SNOMED,Clinical Finding,S,286210007,2002-01-31,2099-12-31,NA
+4115650,Does not use respiratory support for speech,Condition,SNOMED,Clinical Finding,S,286215002,2002-01-31,2099-12-31,NA
+4115651,Difficulty using respiratory support for speech,Condition,SNOMED,Clinical Finding,S,286216001,2002-01-31,2099-12-31,NA
+4115653,Unable to use velaric airstream for speech,Condition,SNOMED,Clinical Finding,S,286231005,2002-01-31,2099-12-31,NA
+4115661,Does not use clicks in speech,Condition,SNOMED,Clinical Finding,S,286284009,2002-01-31,2099-12-31,NA
+4115666,Difficulty using single vowels,Condition,SNOMED,Clinical Finding,S,286308008,2002-01-31,2099-12-31,NA
+4115667,Unable to use consonant vowel consonant combination,Condition,SNOMED,Clinical Finding,S,286319006,2002-01-31,2099-12-31,NA
+4115787,Unable to use blended sounds,Condition,SNOMED,Clinical Finding,S,286323003,2002-01-31,2099-12-31,NA
+4118534,Does not make movements for speech,Condition,SNOMED,Clinical Finding,S,286209002,2002-01-31,2099-12-31,NA
+4118536,Unable to use respiratory support for speech,Condition,SNOMED,Clinical Finding,S,286213009,2002-01-31,2099-12-31,NA
+4118540,Does not use glottalic airstream for speech,Condition,SNOMED,Clinical Finding,S,286227004,2002-01-31,2099-12-31,NA
+4118542,Does not use velaric airstream for speech,Condition,SNOMED,Clinical Finding,S,286233008,2002-01-31,2099-12-31,NA
+4118546,Unable to make speech sounds,Condition,SNOMED,Clinical Finding,S,286255000,2002-01-31,2099-12-31,NA
+4118691,Unable to use clicks in speech,Condition,SNOMED,Clinical Finding,S,286282008,2002-01-31,2099-12-31,NA
+4118692,Difficulty using clicks in speech,Condition,SNOMED,Clinical Finding,S,286285005,2002-01-31,2099-12-31,NA
+4118693,Unable to imitate speech sounds,Condition,SNOMED,Clinical Finding,S,286288007,2002-01-31,2099-12-31,NA
+4118695,Unable to use single vowels,Condition,SNOMED,Clinical Finding,S,286307003,2002-01-31,2099-12-31,NA
+4118696,Difficulty using single consonant,Condition,SNOMED,Clinical Finding,S,286312002,2002-01-31,2099-12-31,NA
+4118698,Unable to use consonant vowel combination,Condition,SNOMED,Clinical Finding,S,286315000,2002-01-31,2099-12-31,NA
+4164743,Basic learning problem in speaking,Condition,SNOMED,Clinical Finding,S,45418009,2002-01-31,2099-12-31,NA
+4176921,Lingual dysarthria,Condition,SNOMED,Clinical Finding,S,427926004,2008-01-31,2099-12-31,NA
+4184473,Motor alexia,Condition,SNOMED,Clinical Finding,S,43661002,2002-01-31,2099-12-31,NA
+4196636,Dysarthria,Condition,SNOMED,Clinical Finding,S,8011004,2002-01-31,2099-12-31,NA
+4207219,Pressure of speech,Condition,SNOMED,Clinical Finding,S,53890003,2002-01-31,2099-12-31,NA
+4211434,Semantic dysphasia,Condition,SNOMED,Disorder,S,331652006,2002-01-31,2099-12-31,NA
+4221125,Disturbance in speech rhythm,Condition,SNOMED,Clinical Finding,S,82883008,2002-01-31,2099-12-31,NA
+4230910,Palinphrasia,Condition,SNOMED,Clinical Finding,S,4070001,2002-01-31,2099-12-31,NA
+4233646,Dissociative neurological symptom disorder with dysphonia,Condition,SNOMED,Disorder,S,90483007,2002-01-31,2099-12-31,NA
+4263333,Complete aphasia,Condition,SNOMED,Clinical Finding,S,46855008,2002-01-31,2099-12-31,NA
+4269934,Dyslalia,Condition,SNOMED,Clinical Finding,S,63416000,2002-01-31,2099-12-31,NA
+4282992,Bradylalia,Condition,SNOMED,Clinical Finding,S,37001003,2002-01-31,2099-12-31,NA
+4289461,Dissociative neurological symptom disorder with aphonia,Condition,SNOMED,Disorder,S,69403006,2002-01-31,2099-12-31,NA
+4300095,Adductor spastic dysphonia of conversion reaction,Condition,SNOMED,Disorder,S,77375009,2002-01-31,2099-12-31,NA
+36685002,Dysarthria due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672501000119104,2019-01-31,2099-12-31,NA
+36685011,Dysarthria due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690311000119104,2019-01-31,2099-12-31,NA
+36714194,Acquired dysarthria,Condition,SNOMED,Clinical Finding,S,719316004,2017-01-31,2099-12-31,NA
+36715517,Familial developmental dysphasia,Condition,SNOMED,Disorder,S,721220004,2017-01-31,2099-12-31,NA
+37162800,"Intellectual disability, expressive aphasia, facial dysmorphism syndrome",Condition,SNOMED,Disorder,S,1197593006,2022-02-28,2099-12-31,NA
+37165878,Hyperkinetic dysarthria,Condition,SNOMED,Clinical Finding,S,1255963003,2022-11-30,2099-12-31,NA
+37205069,"Autosomal recessive spastic ataxia, optic atrophy, dysarthria syndrome",Condition,SNOMED,Disorder,S,784347002,2019-07-31,2099-12-31,NA
+37397207,Sensory ataxic neuropathy with dysarthria and ophthalmoparesis syndrome,Condition,SNOMED,Disorder,S,717266001,2016-07-31,2099-12-31,NA
+40479575,Dysphasia as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,441529001,2009-07-31,2099-12-31,NA
+42535232,Dysphasia due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,16260551000119106,2018-01-31,2099-12-31,NA
+42535412,Dysarthria due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,290631000119103,2018-01-31,2099-12-31,NA
+42535678,Dysarthria due to and following hemorrhagic cerebrovascular accident,Condition,SNOMED,Disorder,S,672511000119101,2018-01-31,2099-12-31,NA
+42535679,Dysphasia due to and following ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672521000119108,2018-01-31,2099-12-31,NA
+42535680,Dysphasia due to and following hemorrhagic cerebrovascular accident,Condition,SNOMED,Disorder,S,672531000119106,2018-01-31,2099-12-31,NA
+42535707,Dysphasia due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690351000119103,2018-01-31,2099-12-31,NA
+42539615,Dissociative neurological symptom disorder co-occurrent with symptom of speech production,Condition,SNOMED,Disorder,S,736316005,2018-01-31,2099-12-31,NA
+43530687,Dysarthria as late effects of cerebrovascular disease,Condition,SNOMED,Disorder,S,133981000119106,2013-07-31,2099-12-31,NA
+45765419,Specific speech impairment,Condition,SNOMED,Clinical Finding,S,702353001,2014-07-31,2099-12-31,NA
+46271403,Acquired dysphasia,Condition,SNOMED,Disorder,S,709518008,2015-07-31,2099-12-31,NA

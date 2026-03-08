@@ -1,0 +1,60 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+197320,Acute kidney injury,Condition,SNOMED,Disorder,S,14669001,2002-01-31,2099-12-31,NA
+197329,Acute renal failure due to acute cortical necrosis,Condition,SNOMED,Disorder,S,429224003,2008-01-31,2099-12-31,NA
+432961,Acute renal papillary necrosis with renal failure,Condition,SNOMED,Disorder,S,298015003,2002-01-31,2099-12-31,NA
+1244911,Post-renal acute kidney injury,Condition,SNOMED,Disorder,S,1293198008,2023-11-01,2099-12-31,NA
+1244913,Intra-renal acute kidney injury,Condition,SNOMED,Disorder,S,1293200002,2023-11-01,2099-12-31,NA
+3661748,Acute kidney injury due to COVID-19,Condition,SNOMED,Disorder,S,870589006,2020-07-31,2099-12-31,NA
+4066405,Failed attempted termination of pregnancy with acute renal failure,Condition,SNOMED,Disorder,S,17380002,2002-01-31,2099-12-31,NA
+4126305,Acute renal impairment,Condition,SNOMED,Disorder,S,236424009,2002-01-31,2099-12-31,NA
+4126424,Nephrotoxic acute renal failure,Condition,SNOMED,Disorder,S,236428007,2002-01-31,2099-12-31,NA
+4126426,Traumatic anuria - crush syndrome,Condition,SNOMED,Disorder,S,236431008,2002-01-31,2099-12-31,NA
+4126427,Pulmonary renal syndrome,Condition,SNOMED,Disorder,S,236432001,2002-01-31,2099-12-31,NA
+4128029,Crush syndrome,Condition,SNOMED,Disorder,S,23697004,2002-01-31,2099-12-31,NA
+4128067,Acute-on-chronic renal failure,Condition,SNOMED,Disorder,S,236433006,2002-01-31,2099-12-31,NA
+4139414,Transient acute renal failure,Condition,SNOMED,Disorder,S,307309005,2002-01-31,2099-12-31,NA
+4151112,Acute renal failure due to crush syndrome,Condition,SNOMED,Disorder,S,269257004,2002-01-31,2099-12-31,NA
+4160274,Acute renal failure with oliguria,Condition,SNOMED,Disorder,S,430535006,2008-07-31,2099-12-31,NA
+4200639,Post-renal renal failure,Condition,SNOMED,Disorder,S,301814009,2002-01-31,2099-12-31,NA
+4228827,Acute milk alkali syndrome,Condition,SNOMED,Disorder,S,88380005,2002-01-31,2099-12-31,NA
+4232873,Acute postoperative renal failure,Condition,SNOMED,Disorder,S,438783006,2009-01-31,2099-12-31,NA
+4264681,Acute renal failure due to procedure,Condition,SNOMED,Disorder,S,36225005,2002-01-31,2099-12-31,NA
+4306513,Acute renal failure caused by angiotensin-converting-enzyme inhibitor,Condition,SNOMED,Disorder,S,422593004,2007-01-31,2099-12-31,NA
+4311129,Acute renal failure due to ischemia,Condition,SNOMED,Disorder,S,423533009,2007-01-31,2099-12-31,NA
+36716182,Acute kidney injury due to circulatory failure,Condition,SNOMED,Disorder,S,722095005,2017-01-31,2099-12-31,NA
+36716183,Acute kidney injury due to hypovolemia,Condition,SNOMED,Disorder,S,722096006,2017-01-31,2099-12-31,NA
+36716312,Acute kidney injury due to sepsis,Condition,SNOMED,Disorder,S,722278006,2017-01-31,2099-12-31,NA
+37016366,Acute kidney injury caused by contrast agent,Condition,SNOMED,Disorder,S,368951000119105,2016-01-31,2099-12-31,NA
+37116430,Acute kidney failure stage 1,Condition,SNOMED,Disorder,S,733137002,2017-07-31,2099-12-31,NA
+37116431,Acute kidney failure stage 2,Condition,SNOMED,Disorder,S,733138007,2017-07-31,2099-12-31,NA
+37116432,Acute kidney failure stage 3,Condition,SNOMED,Disorder,S,733139004,2017-07-31,2099-12-31,NA
+37116834,Postpartum acute renal failure,Condition,SNOMED,Disorder,S,733839001,2017-07-31,2099-12-31,NA
+37161211,Acute kidney injury following administration of contrast media,Condition,SNOMED,Disorder,S,1177174007,2021-10-31,2099-12-31,NA
+37164057,Postprocedural acute renal failure,Condition,SNOMED,Disorder,S,12245621000119102,2022-12-31,2099-12-31,NA
+37167182,Acute renal failure following ectopic pregnancy,Condition,SNOMED,Disorder,S,1263955004,2023-02-28,2099-12-31,NA
+37167183,Acute renal failure following molar pregnancy,Condition,SNOMED,Disorder,S,1263956003,2023-02-28,2099-12-31,NA
+37168714,Hepatorenal syndrome with acute kidney injury,Condition,SNOMED,Disorder,S,1285574007,2023-07-31,2099-12-31,NA
+37395514,Acute kidney injury due to acute tubular necrosis due to hypovolaemia,Condition,SNOMED,Disorder,S,1048451000000103,2016-04-01,2099-12-31,NA
+37395516,Acute kidney injury due to acute tubular necrosis due to circulatory failure,Condition,SNOMED,Disorder,S,1048481000000109,2016-04-01,2099-12-31,NA
+37395517,Acute kidney injury due to acute tubular necrosis due to sepsis,Condition,SNOMED,Disorder,S,1048491000000106,2016-04-01,2099-12-31,NA
+37395518,Acute kidney injury due to acute tubular necrosis with histological evidence,Condition,SNOMED,Disorder,S,1048501000000100,2016-04-01,2099-12-31,NA
+37395519,Acute kidney injury due to acute tubular necrosis due to hypovolaemia with histological evidence,Condition,SNOMED,Disorder,S,1048511000000103,2016-04-01,2099-12-31,NA
+37395520,Acute kidney injury due to acute tubular necrosis due to sepsis with histological evidence,Condition,SNOMED,Disorder,S,1048521000000109,2016-04-01,2099-12-31,NA
+37395521,Acute kidney injury due to acute tubular necrosis due to circulatory failure with histological evidence,Condition,SNOMED,Disorder,S,1048541000000102,2016-04-01,2099-12-31,NA
+43530914,Induced termination of pregnancy complicated by acute renal failure,Condition,SNOMED,Disorder,S,609455009,2013-07-31,2099-12-31,NA
+43530928,Induced termination of pregnancy complicated by acute renal failure with oliguria,Condition,SNOMED,Disorder,S,609472002,2013-07-31,2099-12-31,NA
+44808128,Acute renal failure due to traumatic rhabdomyolysis,Condition,SNOMED,Disorder,S,847851000000101,2012-10-01,2099-12-31,NA
+44808338,Acute renal failure induced by aminoglycoside,Condition,SNOMED,Disorder,S,840371000000100,2012-10-01,2099-12-31,NA
+44808340,Acute renal failure induced by cyclosporin A,Condition,SNOMED,Disorder,S,840451000000102,2012-10-01,2099-12-31,NA
+44808744,Acute renal failure due to non-traumatic rhabdomyolysis,Condition,SNOMED,Disorder,S,841961000000100,2012-10-01,2099-12-31,NA
+44808821,Acute renal failure induced by animal toxin,Condition,SNOMED,Disorder,S,842511000000101,2012-10-01,2099-12-31,NA
+44808822,Acute renal failure induced by plant toxin,Condition,SNOMED,Disorder,S,842531000000109,2012-10-01,2099-12-31,NA
+44808823,Acute renal failure induced by heavy metal,Condition,SNOMED,Disorder,S,842551000000102,2012-10-01,2099-12-31,NA
+44809170,Acute renal failure induced by poison,Condition,SNOMED,Disorder,S,844631000000104,2012-10-01,2099-12-31,NA
+44809173,Acute renal failure induced by radiographic contrast media,Condition,SNOMED,Disorder,S,844701000000103,2012-10-01,2099-12-31,NA
+44809286,Acute renal failure induced by solvent,Condition,SNOMED,Disorder,S,844741000000100,2012-10-01,2099-12-31,NA
+44813789,Acute renal failure induced by cisplatin,Condition,SNOMED,Disorder,S,840431000000109,2012-10-01,2099-12-31,NA
+44813790,Acute renal failure induced by non-steroidal anti-inflammatory drug,Condition,SNOMED,Disorder,S,840471000000106,2012-10-01,2099-12-31,NA
+45757398,Acute renal failure on dialysis,Condition,SNOMED,Disorder,S,129721000119106,2015-01-31,2099-12-31,NA
+45757466,Acute renal failure due to tubular necrosis,Condition,SNOMED,Disorder,S,145681000119101,2015-01-31,2099-12-31,NA
+45770903,Prerenal renal failure,Condition,SNOMED,Disorder,S,129561000119108,2015-01-31,2099-12-31,NA

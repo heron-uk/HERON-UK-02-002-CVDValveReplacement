@@ -1,0 +1,32 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+432580,Ariboflavinosis,Condition,SNOMED,Disorder,S,20307000,2002-01-31,2099-12-31,NA
+434310,Pellagra,Condition,SNOMED,Disorder,S,418186002,2006-01-31,2099-12-31,NA
+434620,Beriberi,Condition,SNOMED,Disorder,S,36656008,2002-01-31,2099-12-31,NA
+435787,Vitamin B6 deficiency,Condition,SNOMED,Disorder,S,386080007,2003-01-31,2099-12-31,NA
+437246,Vitamin B deficiency,Condition,SNOMED,Disorder,S,47903000,2002-01-31,2099-12-31,NA
+441266,Thiamine deficiency,Condition,SNOMED,Disorder,S,399357009,2003-07-31,2099-12-31,NA
+605043,Neonatal vitamin B12 deficiency due to maternal vitamin B12 deficiency,Condition,SNOMED,Disorder,S,1010297003,2021-01-31,2099-12-31,NA
+4029275,Infantile beriberi,Condition,SNOMED,Disorder,S,238126005,2002-01-31,2099-12-31,NA
+4031348,Shoshin beriberi,Condition,SNOMED,Disorder,S,14260009,2002-01-31,2099-12-31,NA
+4031956,Pantothenic acid deficiency,Condition,SNOMED,Disorder,S,238128006,2002-01-31,2099-12-31,NA
+4050977,Wernicke's disease,Condition,SNOMED,Disorder,S,21007002,2002-01-31,2099-12-31,NA
+4066023,Non-alcoholic Korsakoff's psychosis,Condition,SNOMED,Disorder,S,17262008,2002-01-31,2099-12-31,NA
+4096198,Vitamin B-complex deficiency,Condition,SNOMED,Disorder,S,190631007,2002-01-31,2099-12-31,NA
+4100822,Cobalamin deficiency,Condition,SNOMED,Disorder,S,190634004,2002-01-31,2099-12-31,NA
+4103124,Korsakov's alcoholic psychosis with peripheral neuritis,Condition,SNOMED,Disorder,S,191471000,2002-01-31,2099-12-31,NA
+4105017,Polyneuropathy in pellagra,Condition,SNOMED,Disorder,S,193193007,2002-01-31,2099-12-31,NA
+4106554,Pellagra neuropathy,Condition,SNOMED,Disorder,S,29834003,2002-01-31,2099-12-31,NA
+4106575,Alcoholic pellagra,Condition,SNOMED,Disorder,S,29756008,2002-01-31,2099-12-31,NA
+4150014,Thiamine and niacin deficiency,Condition,SNOMED,Disorder,S,267412000,2002-01-31,2099-12-31,NA
+4260950,Gopalan's syndrome,Condition,SNOMED,Disorder,S,45085008,2002-01-31,2099-12-31,NA
+4266207,Cardiac beriberi,Condition,SNOMED,Disorder,S,61179004,2002-01-31,2099-12-31,NA
+4274651,Vitamin B12 deficiency (non anemic),Condition,SNOMED,Disorder,S,64117007,2002-01-31,2099-12-31,NA
+4282630,Wet beriberi,Condition,SNOMED,Disorder,S,67360000,2002-01-31,2099-12-31,NA
+4288013,Korsakoff's psychosis,Condition,SNOMED,Disorder,S,69482004,2002-01-31,2099-12-31,NA
+4300958,Vitamin B6 deficiency (non anemic),Condition,SNOMED,Disorder,S,386081006,2003-01-31,2099-12-31,NA
+4301164,Pellagra caused by drug,Condition,SNOMED,Disorder,S,403626007,2003-07-31,2099-12-31,NA
+4303664,Niacin deficiency,Condition,SNOMED,Disorder,S,418279001,2006-01-31,2099-12-31,NA
+4324421,Dry beriberi,Condition,SNOMED,Disorder,S,71021002,2002-01-31,2099-12-31,NA
+36676622,Maternal riboflavin deficiency,Condition,SNOMED,Disorder,S,773549000,2019-01-31,2099-12-31,NA
+36715580,Acquired thiamine deficiency anemia,Condition,SNOMED,Disorder,S,721295000,2017-01-31,2099-12-31,NA
+42598642,Rat acrodynia,Condition,SNOMED Veterinary,Clinical Finding,S,336431000009107,2014-01-31,2099-12-31,NA
