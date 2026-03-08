@@ -1,4 +1,4 @@
-hfrs <- readr::read_csv(here::here("cohorts", "hospital_frailty_risk_score", "hospital_frailty_score_for_review.csv"))
+hfrs <- readr::read_csv(here::here("cohorts", "hospital_frailty_risk_score", "icd_mapping", "hospital_frailty_score_for_review.csv"))
 
 cdm_vocab_2025_08 <- insertTable(cdm_vocab_2025_08,
                                  name = "hfrs",
@@ -19,9 +19,9 @@ cdm_vocab_2025_08[["hfrs"]] |>
   ) |>
   collect() |>
   distinct() |>
-  write_csv(here("cohorts", "hospital_frailty_risk_score", "hospital_frailty_score_for_review_1.csv"))
+  write_csv(here("cohorts", "hospital_frailty_risk_score", "icd_mapping", "hospital_frailty_score_for_review_1.csv"))
 
-cl <- readr::read_csv(here("cohorts", "hospital_frailty_risk_score", "hospital_frailty_score_for_review_1.csv"))
+cl <- readr::read_csv(here("cohorts", "hospital_frailty_risk_score", "icd_mapping", "hospital_frailty_score_for_review_1.csv"))
 codes <- list()
 for (i in seq_along(cl[["concept_id"]]) ){
   name <- omopgenerics::toSnakeCase(cl[["icd_description"]][i])
