@@ -5,7 +5,9 @@ cdm <- IncidencePrevalence::generateDenominatorCohortSet(
   cdm = cdm, 
   name = "denominator",
   cohortDateRange = study_period,
-  ageGroup = c(list(c(0, 150)), age_groups),
+  daysPriorObservation = 365,
+  ageGroup = c(list(c(0, 150)), age_groups_extended),
+  requirementInteractions = FALSE,
   sex = c("Both", "Male", "Female")) 
 
 omopgenerics::logMessage(message = "Estimate incidence")
@@ -13,10 +15,10 @@ omopgenerics::logMessage(message = "Estimate incidence")
 results[["incidence"]] <- IncidencePrevalence::estimateIncidence(
   cdm = cdm,
   denominatorTable = "denominator",
-  outcomeTable = "proc",
+  outcomeTable = "procedures_no_restrictions",
   interval = c("years"),
-  outcomeWashout = Inf,
-  repeatedEvents = FALSE
+  repeatedEvents = FALSE,
+  completeDatabaseIntervals = TRUE
 ) 
 
 omopgenerics::logMessage(message = "OBJECTIVE 2 FINISHED")

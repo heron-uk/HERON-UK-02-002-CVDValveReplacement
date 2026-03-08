@@ -1,0 +1,332 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+74719,Ulcer of foot,Condition,SNOMED,Disorder,S,95345008,2002-01-31,2099-12-31,NA
+193787,Varicose veins of lower extremity with ulcer AND inflammation,Condition,SNOMED,Disorder,S,69352009,2002-01-31,2099-12-31,NA
+197304,Ulcer of lower extremity,Condition,SNOMED,Disorder,S,95344007,2002-01-31,2099-12-31,NA
+443358,Ulcer of heel,Condition,SNOMED,Disorder,S,301022003,2002-01-31,2099-12-31,NA
+443593,Ulcer of thigh,Condition,SNOMED,Disorder,S,428194005,2008-01-31,2099-12-31,NA
+506759,Nonvascular ulcer of leg,Condition,SNOMED,Disorder,S,1054451000000109,2016-10-01,2099-12-31,NA
+602349,Ulcer of foot due to drug induced diabetes mellitus,Condition,SNOMED,Disorder,S,368181000119101,2021-01-31,2099-12-31,NA
+759861,Ulcer of left thigh,Condition,SNOMED,Disorder,S,10647831000119100,2015-09-01,2099-12-31,NA
+759862,Ulcer of right thigh,Condition,SNOMED,Disorder,S,10647871000119102,2015-09-01,2099-12-31,NA
+759865,Ulcer of left ankle,Condition,SNOMED,Disorder,S,10662631000119105,2015-09-01,2099-12-31,NA
+759866,Ulcer of right ankle,Condition,SNOMED,Disorder,S,10662671000119108,2015-09-01,2099-12-31,NA
+759867,Ulcer of left lower leg,Condition,SNOMED,Disorder,S,10666391000119103,2015-09-01,2099-12-31,NA
+759868,Ulcer of right lower leg,Condition,SNOMED,Disorder,S,10666431000119108,2015-09-01,2099-12-31,NA
+760946,Pressure injury of left foot stage IV,Condition,SNOMED,Disorder,S,12366701000119107,2016-03-01,2099-12-31,NA
+761063,Neuropathic ankle ulcer due to diabetes mellitus type 2,Condition,SNOMED,Disorder,S,140421000119108,2016-03-01,2099-12-31,NA
+761721,Inflammation of left thigh co-occurrent and due to varicose ulcer,Condition,SNOMED,Disorder,S,15942781000119102,2016-03-01,2099-12-31,NA
+761722,Inflammation of right foot co-occurrent and due to varicose ulcer,Condition,SNOMED,Disorder,S,15943021000119105,2016-03-01,2099-12-31,NA
+761723,Inflammation of right calf co-occurrent and due to varicose ulcer,Condition,SNOMED,Disorder,S,15943541000119105,2017-03-01,2099-12-31,NA
+761724,Inflammation of skin of right lower leg co-occurrent and due to varicose ulcer,Condition,SNOMED,Disorder,S,15943581000119100,2016-03-01,2099-12-31,NA
+761725,Inflammation of right lower leg co-occurrent and due to varicose ulcer,Condition,SNOMED,Disorder,S,15944141000119102,2016-03-01,2099-12-31,NA
+761726,Inflammation of right thigh co-occurrent and due to varicose ulcer,Condition,SNOMED,Disorder,S,15944181000119107,2016-03-01,2099-12-31,NA
+761727,Inflammation of left ankle co-occurrent and due to varicose ulcer,Condition,SNOMED,Disorder,S,15944701000119100,2016-03-01,2099-12-31,NA
+761728,Inflammation of right ankle co-occurrent and due to varicose ulcer,Condition,SNOMED,Disorder,S,15944821000119103,2016-03-01,2099-12-31,NA
+761729,Inflammation of lower leg due to varicose ulcer,Condition,SNOMED,Disorder,S,15944861000119108,2016-03-01,2099-12-31,NA
+761730,Inflammation of left calf co-occurrent and due to varicose ulcer,Condition,SNOMED,Disorder,S,15945221000119103,2016-03-01,2099-12-31,NA
+761731,Ulcer of right lower leg due to postphlebitic syndrome,Condition,SNOMED,Disorder,S,15946021000119104,2016-03-01,2099-12-31,NA
+761732,Ulcer of left ankle due to postphlebitic syndrome,Condition,SNOMED,Disorder,S,15947821000119105,2016-03-01,2099-12-31,NA
+761733,Right calf ulcer due to post thrombotic syndrome,Condition,SNOMED,Disorder,S,15948301000119106,2016-09-01,2099-12-31,NA
+761734,Ulcer of right ankle due to postphlebitic syndrome,Condition,SNOMED,Disorder,S,15949061000119103,2016-03-01,2099-12-31,NA
+762037,Stasis dermatitis of left lower extremity due to peripheral venous hypertension,Condition,SNOMED,Disorder,S,286131000119107,2015-09-01,2099-12-31,NA
+762039,Stasis dermatitis and venous ulcer of left lower extremity due to chronic peripheral venous hypertension,Condition,SNOMED,Disorder,S,286161000119104,2015-09-01,2099-12-31,NA
+762040,Stasis dermatitis and venous ulcer of right lower extremity due to chronic peripheral venous hypertension,Condition,SNOMED,Disorder,S,286171000119105,2015-09-01,2099-12-31,NA
+764097,Ulcer of left lower leg due to postphlebitic syndrome,Condition,SNOMED,Disorder,S,450751000124109,2016-03-01,2099-12-31,NA
+764937,Skin ulcer of right thigh,Condition,SNOMED,Disorder,S,8780001000004100,2015-09-01,2099-12-31,NA
+765375,Ischemic ankle ulcer due to diabetes mellitus type 2,Condition,SNOMED,Disorder,S,140411000119101,2016-03-01,2099-12-31,NA
+1075802,Venous ulcer of foot,Condition,SNOMED,Disorder,S,1332165009,2024-05-01,2099-12-31,NA
+1075803,Venous ulcer of heel,Condition,SNOMED,Disorder,S,1332166005,2024-05-01,2099-12-31,NA
+1075804,Venous ulcer of midfoot,Condition,SNOMED,Disorder,S,1332167001,2024-05-01,2099-12-31,NA
+1075805,Venous ulcer of thigh,Condition,SNOMED,Disorder,S,1332168006,2024-05-01,2099-12-31,NA
+1075806,Venous ulcer of ankle,Condition,SNOMED,Disorder,S,1332169003,2024-05-01,2099-12-31,NA
+1075807,Venous ulcer of calf,Condition,SNOMED,Disorder,S,1332170002,2024-05-01,2099-12-31,NA
+1075808,Venous ulcer of toe,Condition,SNOMED,Disorder,S,1332171003,2024-05-01,2099-12-31,NA
+1075915,Traumatic ulcer of skin of lower limb,Condition,SNOMED,Disorder,S,1332477005,2024-05-01,2099-12-31,NA
+1076441,Neuropathic ulcer of foot,Condition,SNOMED,Disorder,S,1343588005,2024-08-01,2099-12-31,NA
+1076442,Neuropathic ulcer of lower leg,Condition,SNOMED,Disorder,S,1343589002,2024-08-01,2099-12-31,NA
+1076443,Neuropathic ulcer of calf,Condition,SNOMED,Disorder,S,1343590006,2024-08-01,2099-12-31,NA
+1076444,Neuropathic ulcer of thigh,Condition,SNOMED,Disorder,S,1343591005,2024-08-01,2099-12-31,NA
+1076759,Venous ulcer of left midfoot,Condition,SNOMED,Disorder,S,168649391000119103,2024-05-01,2099-12-31,NA
+1076774,Venous ulcer of toe of right foot,Condition,SNOMED,Disorder,S,199746291000119109,2024-05-01,2099-12-31,NA
+1076865,Venous ulcer of right lower leg,Condition,SNOMED,Disorder,S,236653921000119103,2024-05-01,2099-12-31,NA
+1076867,Venous ulcer of right heel,Condition,SNOMED,Disorder,S,274524231000119104,2024-05-01,2099-12-31,NA
+1076869,Venous ulcer of left calf,Condition,SNOMED,Disorder,S,286174791000119107,2024-05-01,2099-12-31,NA
+1077074,Venous ulcer of left foot,Condition,SNOMED,Disorder,S,338117701000119103,2024-05-01,2099-12-31,NA
+1077130,Venous ulcer of left lower leg,Condition,SNOMED,Disorder,S,353043291000119101,2024-05-01,2099-12-31,NA
+1077273,Venous ulcer of left heel,Condition,SNOMED,Disorder,S,444128991000119108,2024-05-01,2099-12-31,NA
+1077334,Venous ulcer of right foot,Condition,SNOMED,Disorder,S,472729851000119109,2024-05-01,2099-12-31,NA
+1077367,Venous ulcer of right calf,Condition,SNOMED,Disorder,S,565951401000119107,2024-05-01,2099-12-31,NA
+1077407,Venous ulcer of right ankle,Condition,SNOMED,Disorder,S,669274571000119102,2024-05-01,2099-12-31,NA
+1077443,Venous ulcer of right thigh,Condition,SNOMED,Disorder,S,779100741000119102,2024-05-01,2099-12-31,NA
+1077463,Venous ulcer of right midfoot,Condition,SNOMED,Disorder,S,820048411000119105,2024-05-01,2099-12-31,NA
+1077486,Venous ulcer of left thigh,Condition,SNOMED,Disorder,S,846429301000119107,2024-05-01,2099-12-31,NA
+1077509,Venous ulcer of left ankle,Condition,SNOMED,Disorder,S,971608291000119105,2024-05-01,2099-12-31,NA
+1077510,Venous ulcer of toe of left foot,Condition,SNOMED,Disorder,S,972900701000119109,2024-05-01,2099-12-31,NA
+3167999,Ulcer of right second toe,Condition,Nebraska Lexicon,Clinical Finding,S,25940001000004106,2016-01-28,2099-12-31,NA
+3172039,Ulcer of groin incision,Condition,Nebraska Lexicon,Clinical Finding,S,29550001000004108,2016-01-28,2099-12-31,NA
+3176994,Chronic ulcer of right great toe,Condition,Nebraska Lexicon,Clinical Finding,S,25920001000004108,2016-01-28,2099-12-31,NA
+3177169,Chronic venous hypertension with ulceration,Condition,Nebraska Lexicon,Clinical Finding,S,14720001000004108,2016-01-28,2099-12-31,NA
+3177797,Ulcer of skin of midfoot,Condition,Nebraska Lexicon,Clinical Finding,S,8750001000004106,2016-01-28,2099-12-31,NA
+3178526,Ulcers of bilateral great toes,Condition,Nebraska Lexicon,Clinical Finding,S,23760001000004102,2016-01-28,2099-12-31,NA
+3178971,Diabetic ulcer of left great toe,Condition,Nebraska Lexicon,Clinical Finding,S,27900001000004101,2016-01-28,2099-12-31,NA
+3182325,Calciphylaxis with nonhealing ulcer of leg,Condition,Nebraska Lexicon,Clinical Finding,S,18440001000004102,2016-01-28,2099-12-31,NA
+3183485,Diabetic ulcer right great toe,Condition,Nebraska Lexicon,Clinical Finding,S,22570001000004104,2016-01-28,2099-12-31,NA
+3183586,Postphlebitic inflammatory leg ulcer,Condition,Nebraska Lexicon,Clinical Finding,S,10250001000004100,2016-01-28,2099-12-31,NA
+3187825,Right leg ulcer,Condition,Nebraska Lexicon,Clinical Finding,S,17250001000004108,2016-01-28,2099-12-31,NA
+3654308,Ulcer of left foot,Condition,SNOMED,Disorder,S,830071006,2020-07-31,2099-12-31,NA
+3654309,Ulcer of right foot,Condition,SNOMED,Disorder,S,830072004,2020-07-31,2099-12-31,NA
+3655382,Ulcer of right foot due to diabetes mellitus,Condition,SNOMED,Disorder,S,860977000,2020-07-31,2099-12-31,NA
+3655383,Ulcer of left foot due to diabetes mellitus,Condition,SNOMED,Disorder,S,860978005,2020-07-31,2099-12-31,NA
+3655384,Chronic ulcer of right foot due to diabetes mellitus,Condition,SNOMED,Disorder,S,860979002,2020-07-31,2099-12-31,NA
+3655385,Chronic ulcer of left foot due to diabetes mellitus,Condition,SNOMED,Disorder,S,860980004,2020-07-31,2099-12-31,NA
+4032889,Mixed arteriovenous leg ulcer,Condition,SNOMED,Disorder,S,238792006,2002-01-31,2099-12-31,NA
+4033352,Ischemic foot ulcer,Condition,SNOMED,Disorder,S,238794007,2002-01-31,2099-12-31,NA
+4033354,Neuroischemic foot ulcer,Condition,SNOMED,Disorder,S,238796009,2002-01-31,2099-12-31,NA
+4063569,Ischemic ulcer of foot due to diabetes mellitus,Condition,SNOMED,Disorder,S,201250006,2002-01-31,2099-12-31,NA
+4065354,Neuropathic ulcer of foot due to diabetes mellitus,Condition,SNOMED,Disorder,S,201251005,2002-01-31,2099-12-31,NA
+4066936,Mixed diabetic ulcer - foot,Condition,SNOMED,Disorder,S,201252003,2002-01-31,2099-12-31,NA
+4103165,Ulcer of toe,Condition,SNOMED,Disorder,S,301021005,2002-01-31,2099-12-31,NA
+4103166,Ulcer of malleolus,Condition,SNOMED,Disorder,S,301025001,2002-01-31,2099-12-31,NA
+4110347,Infected varicose ulcer,Condition,SNOMED,Disorder,S,195450002,2002-01-31,2099-12-31,NA
+4116485,Skin ulcer of calf,Condition,SNOMED,Disorder,S,300984006,2002-01-31,2099-12-31,NA
+4116495,Ulcer of knee,Condition,SNOMED,Disorder,S,301024002,2002-01-31,2099-12-31,NA
+4117109,Skin ulcer of dorsum of foot,Condition,SNOMED,Disorder,S,300982005,2002-01-31,2099-12-31,NA
+4127117,Varicose ulcer of lower extremity,Condition,SNOMED,Disorder,S,304026004,2002-01-31,2099-12-31,NA
+4132314,Chronic ulcer of lower extremity,Condition,SNOMED,Disorder,S,26649005,2002-01-31,2099-12-31,NA
+4148076,Chronic neurogenic ulcer of lower limb,Condition,SNOMED,Disorder,S,35222003,2002-01-31,2099-12-31,NA
+4159742,Diabetic foot ulcer,Condition,SNOMED,Disorder,S,371087003,2002-07-31,2099-12-31,NA
+4171556,Ankle ulcer,Condition,SNOMED,Disorder,S,419193008,2006-01-31,2099-12-31,NA
+4175831,Tropical phagedenic ulcer of leg,Condition,SNOMED,Disorder,S,427830002,2008-01-31,2099-12-31,NA
+4179675,Chronic ulcer of ankle,Condition,SNOMED,Disorder,S,427921009,2008-01-31,2099-12-31,NA
+4181965,Chronic ulcer of foot,Condition,SNOMED,Disorder,S,429445008,2008-01-31,2099-12-31,NA
+4182571,Ischemic ulcer of toe,Condition,SNOMED,Disorder,S,429768000,2008-01-31,2099-12-31,NA
+4196722,Varicose veins of leg in short saphenous vein distribution with ulcer,Condition,SNOMED,Disorder,S,313350005,2002-01-31,2099-12-31,NA
+4197580,Varicose veins of leg in long saphenous vein distribution with ulcer,Condition,SNOMED,Disorder,S,313348002,2002-01-31,2099-12-31,NA
+4199564,Ulceration of popliteal lymph node,Condition,SNOMED,Disorder,S,302093001,2002-01-31,2099-12-31,NA
+4200203,Ulceration of inguinal lymph node,Condition,SNOMED,Disorder,S,302091004,2002-01-31,2099-12-31,NA
+4204020,Ulcer of big toe,Condition,SNOMED,Disorder,S,308740002,2002-01-31,2099-12-31,NA
+4204042,Ulcer of shin,Condition,SNOMED,Disorder,S,308908006,2002-01-31,2099-12-31,NA
+4204817,Ulcer of lateral malleolus,Condition,SNOMED,Disorder,S,308901000,2002-01-31,2099-12-31,NA
+4205677,Ulcer of medial malleolus,Condition,SNOMED,Disorder,S,308902007,2002-01-31,2099-12-31,NA
+4267220,Chronic trophic ulcer of lower limb,Condition,SNOMED,Disorder,S,36347008,2002-01-31,2099-12-31,NA
+4291465,Arteritic leg ulcer,Condition,SNOMED,Disorder,S,402862000,2003-07-31,2099-12-31,NA
+4318374,Extensive lipodermatosclerosis,Condition,SNOMED,Disorder,S,95337003,2002-01-31,2099-12-31,NA
+4324315,Chronic ulcer of thigh,Condition,SNOMED,Disorder,S,429354005,2008-01-31,2099-12-31,NA
+4328818,Chronic ulcer of toe,Condition,SNOMED,Disorder,S,430935001,2008-07-31,2099-12-31,NA
+36712682,Pressure injury of buttock stage II,Condition,SNOMED,Disorder,S,10637071000119109,2017-01-31,2099-12-31,NA
+36712683,Pressure injury of buttock stage III,Condition,SNOMED,Disorder,S,10637111000119102,2017-01-31,2099-12-31,NA
+36712684,Pressure injury of buttock stage IV,Condition,SNOMED,Disorder,S,10637151000119101,2017-01-31,2099-12-31,NA
+36712686,Ulcer of left foot due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,10660471000119109,2017-01-31,2099-12-31,NA
+36712687,Ulcer of right foot due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,10661671000119102,2017-01-31,2099-12-31,NA
+37016107,Osteonecrosis of bone of lower leg due to chronic ulcer of lower leg,Condition,SNOMED,Disorder,S,10641431000119109,2016-01-31,2099-12-31,NA
+37016108,Necrosis of lower leg muscle co-occurrent and due to chronic ulcer of lower leg,Condition,SNOMED,Disorder,S,10641511000119103,2016-01-31,2099-12-31,NA
+37018496,Ulcerating cutaneous leishmaniasis of lower extremity,Condition,SNOMED,Disorder,S,715067004,2016-01-31,2099-12-31,NA
+37108576,Venous stasis ulcer with edema of left lower leg,Condition,SNOMED,Disorder,S,10650831000119101,2017-07-31,2099-12-31,NA
+37108577,Venous stasis ulcer with edema of right lower leg,Condition,SNOMED,Disorder,S,10652791000119106,2017-07-31,2099-12-31,NA
+37155399,Chronic ulcer of right lower leg,Condition,SNOMED,Disorder,S,10641751000119105,2022-07-31,2099-12-31,NA
+37155703,Pressure injury of hip stage IV,Condition,SNOMED,Disorder,S,29701000175106,2021-11-30,2099-12-31,NA
+37155710,Pressure injury of left heel stage IV,Condition,SNOMED,Disorder,S,29941000175106,2022-02-28,2099-12-31,NA
+37159859,Chronic ulcer of left toe,Condition,SNOMED,Disorder,S,10634711000119107,2022-07-31,2099-12-31,NA
+37159860,Chronic ulcer of right toe,Condition,SNOMED,Disorder,S,10634911000119105,2022-07-31,2099-12-31,NA
+37159861,Chronic ulcer of left foot,Condition,SNOMED,Disorder,S,10635631000119106,2022-07-31,2099-12-31,NA
+37159862,Chronic ulcer of left heel,Condition,SNOMED,Disorder,S,10635831000119105,2022-08-31,2099-12-31,NA
+37159863,Chronic ulcer of left midfoot,Condition,SNOMED,Disorder,S,10636031000119108,2022-07-31,2099-12-31,NA
+37159864,Chronic ulcer of right foot,Condition,SNOMED,Disorder,S,10636431000119100,2022-07-31,2099-12-31,NA
+37159865,Chronic ulcer of right heel,Condition,SNOMED,Disorder,S,10636631000119102,2022-08-31,2099-12-31,NA
+37159866,Chronic ulcer of right midfoot,Condition,SNOMED,Disorder,S,10636831000119103,2022-07-31,2099-12-31,NA
+37159871,Chronic ulcer of left ankle,Condition,SNOMED,Disorder,S,10637911000119100,2022-08-31,2099-12-31,NA
+37159872,Chronic ulcer of right ankle,Condition,SNOMED,Disorder,S,10638111000119103,2022-08-31,2099-12-31,NA
+37159873,Chronic ulcer of left thigh,Condition,SNOMED,Disorder,S,10638311000119100,2022-07-31,2099-12-31,NA
+37159875,Chronic ulcer of right thigh,Condition,SNOMED,Disorder,S,10638511000119105,2022-07-31,2099-12-31,NA
+37159876,Neuropathic ulcer of right calf,Condition,SNOMED,Disorder,S,10639271000119105,2022-07-31,2099-12-31,NA
+37159877,Neuropathic ulcer of right thigh,Condition,SNOMED,Disorder,S,10640311000119102,2022-08-31,2099-12-31,NA
+37159878,Neuropathic ulcer of left thigh,Condition,SNOMED,Disorder,S,10640351000119101,2022-08-31,2099-12-31,NA
+37159879,Neuropathic ulcer of right lower leg,Condition,SNOMED,Disorder,S,10640631000119103,2022-08-31,2099-12-31,NA
+37159880,Chronic ulcer of left calf,Condition,SNOMED,Disorder,S,10640951000119102,2022-08-31,2099-12-31,NA
+37159881,Chronic ulcer of left lower leg,Condition,SNOMED,Disorder,S,10641151000119106,2022-07-31,2099-12-31,NA
+37159882,Chronic ulcer of right calf,Condition,SNOMED,Disorder,S,10641551000119102,2022-08-31,2099-12-31,NA
+37159884,Varicose ulcer of left ankle,Condition,SNOMED,Disorder,S,10643231000119109,2022-09-30,2099-12-31,NA
+37159885,Varicose ulcer of left calf,Condition,SNOMED,Disorder,S,10643431000119108,2022-10-31,2099-12-31,NA
+37159886,Varicose ulcer of left foot,Condition,SNOMED,Disorder,S,10643631000119106,2022-09-30,2099-12-31,NA
+37159887,Varicose ulcer of left heel,Condition,SNOMED,Disorder,S,10643831000119105,2022-09-30,2099-12-31,NA
+37159888,Varicose ulcer of left lower leg,Condition,SNOMED,Disorder,S,10644031000119103,2022-08-31,2099-12-31,NA
+37159889,Varicose ulcer of left thigh,Condition,SNOMED,Disorder,S,10644431000119106,2022-10-31,2099-12-31,NA
+37159890,Varicose ulcer of right ankle,Condition,SNOMED,Disorder,S,10645031000119104,2022-09-30,2099-12-31,NA
+37159892,Varicose ulcer of right calf,Condition,SNOMED,Disorder,S,10645231000119108,2022-10-31,2099-12-31,NA
+37159893,Varicose ulcer of right foot,Condition,SNOMED,Disorder,S,10645431000119107,2022-09-30,2099-12-31,NA
+37159894,Varicose ulcer of right heel,Condition,SNOMED,Disorder,S,10645631000119105,2022-09-30,2099-12-31,NA
+37159895,Varicose ulcer of right lower leg,Condition,SNOMED,Disorder,S,10645831000119109,2022-08-31,2099-12-31,NA
+37159896,Varicose ulcer of right thigh,Condition,SNOMED,Disorder,S,10646231000119103,2022-10-31,2099-12-31,NA
+37159897,Left calf ulcer,Condition,SNOMED,Disorder,S,10649111000119106,2022-10-31,2099-12-31,NA
+37159898,Right calf ulcer,Condition,SNOMED,Disorder,S,10649151000119107,2022-10-31,2099-12-31,NA
+37159899,Ischemic ulcer of toe of left foot due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10653951000119109,2022-08-31,2099-12-31,NA
+37159900,Ischemic ulcer of toe of right foot due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10654151000119105,2022-08-31,2099-12-31,NA
+37159901,Ischemic ulcer of left foot due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10654871000119108,2022-08-31,2099-12-31,NA
+37159902,Ischemic ulcer of left heel due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10655071000119103,2022-08-31,2099-12-31,NA
+37159903,Ischemic ulcer of left midfoot due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10655271000119108,2022-08-31,2099-12-31,NA
+37159904,Ischemic ulcer of right foot due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10655671000119105,2022-08-31,2099-12-31,NA
+37159905,Ischemic ulcer of right heel due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10655831000119106,2022-08-31,2099-12-31,NA
+37159906,Ischemic ulcer of right midfoot due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10656031000119109,2022-08-31,2099-12-31,NA
+37159907,Ulcer of toe of left foot,Condition,SNOMED,Disorder,S,10656311000119102,2022-09-30,2099-12-31,NA
+37159908,Ulcer of toe of right foot,Condition,SNOMED,Disorder,S,10656351000119101,2022-09-30,2099-12-31,NA
+37159909,Neuropathic ulcer of left foot,Condition,SNOMED,Disorder,S,10656671000119100,2022-08-31,2099-12-31,NA
+37159910,Neuropathic ulcer of right midfoot,Condition,SNOMED,Disorder,S,10656711000119101,2022-08-31,2099-12-31,NA
+37159911,Neuropathic ulcer of right foot,Condition,SNOMED,Disorder,S,10656951000119102,2022-08-31,2099-12-31,NA
+37159912,Neuropathic ulcer of left heel,Condition,SNOMED,Disorder,S,10657711000119104,2022-07-31,2099-12-31,NA
+37159913,Neuropathic ulcer of right toe,Condition,SNOMED,Disorder,S,10657831000119102,2022-08-31,2099-12-31,NA
+37159914,Neuropathic ulcer of left toe,Condition,SNOMED,Disorder,S,10657911000119101,2022-08-31,2099-12-31,NA
+37159915,Neuropathic ulcer of right heel,Condition,SNOMED,Disorder,S,10658111000119104,2022-07-31,2099-12-31,NA
+37159916,Neuropathic ulcer of left midfoot,Condition,SNOMED,Disorder,S,10658711000119100,2022-08-31,2099-12-31,NA
+37159917,Ulcer of right heel,Condition,SNOMED,Disorder,S,10659391000119102,2022-08-31,2099-12-31,NA
+37159918,Ulcer of left heel,Condition,SNOMED,Disorder,S,10659431000119107,2022-08-31,2099-12-31,NA
+37159919,Ulcer of left midfoot,Condition,SNOMED,Disorder,S,10662471000119105,2022-09-30,2099-12-31,NA
+37159920,Ulcer of right midfoot,Condition,SNOMED,Disorder,S,10662591000119105,2022-09-30,2099-12-31,NA
+37159921,Ischemic ulcer of left lower leg due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10663991000119105,2022-08-31,2099-12-31,NA
+37159923,Ischemic ulcer of left calf due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10664071000119107,2022-08-31,2099-12-31,NA
+37159924,Ischemic ulcer of right calf due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10664231000119100,2022-08-31,2099-12-31,NA
+37159925,Ischemic ulcer of right lower leg due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10664351000119101,2022-08-31,2099-12-31,NA
+37159926,Ischemic ulcer of right ankle due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10664951000119102,2022-08-31,2099-12-31,NA
+37159927,Ischemic ulcer of right thigh due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10665551000119107,2022-08-31,2099-12-31,NA
+37159928,Ischemic ulcer of left thigh due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10665791000119109,2022-08-31,2099-12-31,NA
+37159929,Ischemic ulcer of left ankle due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10665871000119100,2022-08-31,2099-12-31,NA
+37159930,Pressure injury of right lower leg stage IV,Condition,SNOMED,Disorder,S,10666711000119108,2022-08-31,2099-12-31,NA
+37159931,Pressure injury of left lower leg stage IV,Condition,SNOMED,Disorder,S,10666791000119104,2022-08-31,2099-12-31,NA
+37159933,Pressure injury of left lower leg stage II,Condition,SNOMED,Disorder,S,10667431000119105,2022-08-31,2099-12-31,NA
+37159934,Pressure injury of right lower leg stage II,Condition,SNOMED,Disorder,S,10667471000119108,2022-08-31,2099-12-31,NA
+37159943,Pressure injury of left lower leg stage III,Condition,SNOMED,Disorder,S,10669831000119100,2022-08-31,2099-12-31,NA
+37159944,Pressure injury of right lower leg stage III,Condition,SNOMED,Disorder,S,10670031000119108,2022-08-31,2099-12-31,NA
+37159955,Ulcer of buttock,Condition,SNOMED,Disorder,S,10672191000119107,2022-07-31,2099-12-31,NA
+37159959,Neuropathic ulcer of left ankle,Condition,SNOMED,Disorder,S,10677031000119109,2022-07-31,2099-12-31,NA
+37159960,Neuropathic ulcer of right ankle,Condition,SNOMED,Disorder,S,10677231000119100,2022-07-31,2099-12-31,NA
+37164884,Martorell ulcer of lower leg,Condition,SNOMED,Disorder,S,1236831007,2022-08-31,2099-12-31,NA
+37164915,Varicose ulcer of lower leg,Condition,SNOMED,Disorder,S,1236986009,2022-09-30,2099-12-31,NA
+37164951,Venous ulcer of lower limb,Condition,SNOMED,Disorder,S,1237116009,2022-09-30,2099-12-31,NA
+37164952,Venous ulcer of lower leg,Condition,SNOMED,Disorder,S,1237117000,2022-09-30,2099-12-31,NA
+37164953,Recurrent venous ulcer of lower leg,Condition,SNOMED,Disorder,S,1237118005,2022-09-30,2099-12-31,NA
+37164954,Recurrent venous ulcer of lower limb,Condition,SNOMED,Disorder,S,1237119002,2022-09-30,2099-12-31,NA
+37164962,Varicose vein of lower leg co-occurrent with varicose ulcer and eczema,Condition,SNOMED,Disorder,S,1237134008,2022-09-30,2099-12-31,NA
+37164963,Varicose vein of lower limb co-occurrent with varicose ulcer and eczema,Condition,SNOMED,Disorder,S,1237135009,2022-09-30,2099-12-31,NA
+37164965,Martorell ulcer of lower limb,Condition,SNOMED,Disorder,S,1237173008,2022-08-31,2099-12-31,NA
+37165336,Varicose ulcer of heel,Condition,SNOMED,Disorder,S,1252741006,2022-09-30,2099-12-31,NA
+37165337,Varicose ulcer of foot,Condition,SNOMED,Disorder,S,1252742004,2022-09-30,2099-12-31,NA
+37165338,Varicose ulcer of ankle,Condition,SNOMED,Disorder,S,1252743009,2022-09-30,2099-12-31,NA
+37169369,Right foot ulcer due to post thrombotic syndrome,Condition,SNOMED,Disorder,S,15947701000119108,2022-10-31,2099-12-31,NA
+37169370,Left calf ulcer due to post thrombotic syndrome,Condition,SNOMED,Disorder,S,15948101000119108,2022-10-31,2099-12-31,NA
+37169371,Left foot ulcer due to post thrombotic syndrome,Condition,SNOMED,Disorder,S,15948621000119105,2022-10-31,2099-12-31,NA
+37169959,Diabetic foot ulcer in remission,Condition,SNOMED,Disorder,S,1771691000000102,2023-08-02,2099-12-31,NA
+37169960,Diabetic ulcer of right foot in remission,Condition,SNOMED,Disorder,S,1771701000000102,2023-08-02,2099-12-31,NA
+37169961,Diabetic ulcer of left foot in remission,Condition,SNOMED,Disorder,S,1771711000000100,2023-08-02,2099-12-31,NA
+37170158,Neuropathic ulcer of left calf,Condition,SNOMED,Disorder,S,10638911000119101,2022-07-31,2099-12-31,NA
+37170159,Neuropathic ulcer of left lower leg,Condition,SNOMED,Disorder,S,10638991000119105,2022-08-31,2099-12-31,NA
+37170707,Pressure injury of right buttock stage II,Condition,SNOMED,Disorder,S,29231000175105,2022-02-28,2099-12-31,NA
+37170709,Pressure injury of right buttock stage III,Condition,SNOMED,Disorder,S,29241000175104,2022-02-28,2099-12-31,NA
+37170711,Pressure injury of right buttock stage IV,Condition,SNOMED,Disorder,S,29251000175102,2022-02-28,2099-12-31,NA
+37170718,Pressure injury of left buttock stage II,Condition,SNOMED,Disorder,S,29291000175109,2022-02-28,2099-12-31,NA
+37170720,Pressure injury of left buttock stage III,Condition,SNOMED,Disorder,S,29301000175105,2022-02-28,2099-12-31,NA
+37170723,Pressure injury of left buttock stage IV,Condition,SNOMED,Disorder,S,29311000175108,2022-02-28,2099-12-31,NA
+37170750,Pressure injury of hip stage II,Condition,SNOMED,Disorder,S,29681000175108,2021-11-30,2099-12-31,NA
+37170752,Pressure injury of hip stage III,Condition,SNOMED,Disorder,S,29691000175106,2021-11-30,2099-12-31,NA
+37170760,Pressure injury of right hip stage II,Condition,SNOMED,Disorder,S,29741000175108,2021-11-30,2099-12-31,NA
+37170762,Pressure injury of right hip stage III,Condition,SNOMED,Disorder,S,29751000175105,2021-11-30,2099-12-31,NA
+37170764,Pressure injury of right hip stage IV,Condition,SNOMED,Disorder,S,29761000175107,2021-11-30,2099-12-31,NA
+37170772,Pressure injury of left hip stage II,Condition,SNOMED,Disorder,S,29801000175102,2021-11-30,2099-12-31,NA
+37170775,Pressure injury of left hip stage III,Condition,SNOMED,Disorder,S,29811000175104,2021-11-30,2099-12-31,NA
+37170777,Pressure injury of left hip stage IV,Condition,SNOMED,Disorder,S,29821000175108,2021-11-30,2099-12-31,NA
+37170784,Pressure injury of right heel stage II,Condition,SNOMED,Disorder,S,29861000175101,2022-02-28,2099-12-31,NA
+37170786,Pressure injury of right heel stage III,Condition,SNOMED,Disorder,S,29871000175109,2022-02-28,2099-12-31,NA
+37170788,Pressure injury of right heel stage IV,Condition,SNOMED,Disorder,S,29881000175107,2022-02-28,2099-12-31,NA
+37170795,Pressure injury of left heel stage II,Condition,SNOMED,Disorder,S,29921000175103,2022-02-28,2099-12-31,NA
+37170797,Pressure injury of left heel stage III,Condition,SNOMED,Disorder,S,29931000175100,2022-02-28,2099-12-31,NA
+37170804,Pressure injury of dorsum of right foot stage II,Condition,SNOMED,Disorder,S,29981000175104,2021-11-30,2099-12-31,NA
+37170806,Pressure injury of dorsum of right foot stage III,Condition,SNOMED,Disorder,S,29991000175101,2021-11-30,2099-12-31,NA
+37170808,Pressure injury of dorsum of right foot stage IV,Condition,SNOMED,Disorder,S,30001000175102,2021-11-30,2099-12-31,NA
+37170816,Pressure injury of dorsum of left foot stage II,Condition,SNOMED,Disorder,S,30041000175100,2021-11-30,2099-12-31,NA
+37170819,Pressure injury of dorsum of left foot stage III,Condition,SNOMED,Disorder,S,30051000175103,2021-11-30,2099-12-31,NA
+37170823,Pressure injury of dorsum of left foot stage IV,Condition,SNOMED,Disorder,S,30061000175101,2021-11-30,2099-12-31,NA
+37170834,Pressure injury of right ankle stage II,Condition,SNOMED,Disorder,S,30101000175103,2021-11-30,2099-12-31,NA
+37170837,Pressure injury of right ankle stage III,Condition,SNOMED,Disorder,S,30111000175100,2021-11-30,2099-12-31,NA
+37170839,Pressure injury of right ankle stage IV,Condition,SNOMED,Disorder,S,30121000175109,2021-11-30,2099-12-31,NA
+37170847,Pressure injury of left ankle stage II,Condition,SNOMED,Disorder,S,30161000175102,2021-11-30,2099-12-31,NA
+37170850,Pressure injury of left ankle stage III,Condition,SNOMED,Disorder,S,30171000175105,2021-11-30,2099-12-31,NA
+37170852,Pressure injury of left ankle stage IV,Condition,SNOMED,Disorder,S,30181000175108,2021-11-30,2099-12-31,NA
+37171499,Pressure injury of ankle stage II,Condition,SNOMED,Disorder,S,35791000175103,2021-11-30,2099-12-31,NA
+37171500,Pressure injury of ankle stage III,Condition,SNOMED,Disorder,S,35801000175102,2021-11-30,2099-12-31,NA
+37171502,Pressure injury of ankle stage IV,Condition,SNOMED,Disorder,S,35811000175104,2021-11-30,2099-12-31,NA
+37171507,Pressure injury of heel stage II,Condition,SNOMED,Disorder,S,35841000175100,2021-11-30,2099-12-31,NA
+37171508,Pressure injury of heel stage III,Condition,SNOMED,Disorder,S,35851000175103,2021-11-30,2099-12-31,NA
+37171509,Pressure injury of heel stage IV,Condition,SNOMED,Disorder,S,35861000175101,2021-11-30,2099-12-31,NA
+37172878,Pressure injury of left foot stage II,Condition,SNOMED,Disorder,S,551841000124101,2022-03-01,2099-12-31,NA
+37172879,Pressure injury of left foot stage III,Condition,SNOMED,Disorder,S,551851000124104,2022-03-01,2099-12-31,NA
+37172881,Pressure injury of right foot stage II,Condition,SNOMED,Disorder,S,551871000124109,2022-03-01,2099-12-31,NA
+37172882,Pressure injury of right foot stage III,Condition,SNOMED,Disorder,S,551881000124107,2022-03-01,2099-12-31,NA
+37172883,Pressure injury of right foot stage IV,Condition,SNOMED,Disorder,S,551891000124105,2022-03-01,2099-12-31,NA
+37172886,Pressure injury of toe of left foot stage II,Condition,SNOMED,Disorder,S,551911000124107,2022-03-01,2099-12-31,NA
+37172887,Pressure injury of toe of left foot stage III,Condition,SNOMED,Disorder,S,551921000124104,2022-03-01,2099-12-31,NA
+37172888,Pressure injury of toe of left foot stage IV,Condition,SNOMED,Disorder,S,551931000124101,2022-03-01,2099-12-31,NA
+37172890,Pressure injury of toe of right foot stage II,Condition,SNOMED,Disorder,S,551951000124108,2022-03-01,2099-12-31,NA
+37172891,Pressure injury of toe of right foot stage III,Condition,SNOMED,Disorder,S,551961000124105,2022-03-01,2099-12-31,NA
+37172892,Pressure injury of toe of right foot stage IV,Condition,SNOMED,Disorder,S,551971000124103,2022-03-01,2099-12-31,NA
+37311949,Healed venous leg ulcer,Condition,SNOMED,Disorder,S,788949000,2020-01-31,2099-12-31,NA
+37312200,Ulcer of midfoot due to type 1 diabetes mellitus,Condition,SNOMED,Disorder,S,789572003,2020-01-31,2099-12-31,NA
+37312201,Ulcer of heel due to type 1 diabetes mellitus,Condition,SNOMED,Disorder,S,789571005,2020-01-31,2099-12-31,NA
+37312202,Neuropathic ulcer of midfoot due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,789570006,2020-01-31,2099-12-31,NA
+37312203,Neuropathic ulcer of heel due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,789569005,2020-01-31,2099-12-31,NA
+37312204,Ulcer of midfoot due to diabetes mellitus,Condition,SNOMED,Disorder,S,789568002,2020-01-31,2099-12-31,NA
+37312205,Ulcer of heel due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,789567007,2020-01-31,2099-12-31,NA
+37312207,Ulcer of heel due to diabetes mellitus,Condition,SNOMED,Disorder,S,789562001,2020-01-31,2099-12-31,NA
+37312519,Ulcer of calf due to atherosclerosis of artery of lower limb,Condition,SNOMED,Disorder,S,792855003,2020-01-31,2099-12-31,NA
+37312520,Ischemic foot ulcer due to atherosclerosis of artery of lower limb,Condition,SNOMED,Disorder,S,792854004,2020-01-31,2099-12-31,NA
+37312522,Ischemic midfoot ulcer due to atherosclerosis of artery of lower limb,Condition,SNOMED,Disorder,S,792852000,2020-01-31,2099-12-31,NA
+37312524,Ulcer of ankle due to atherosclerosis of artery of lower limb,Condition,SNOMED,Disorder,S,792850008,2020-01-31,2099-12-31,NA
+37312528,Ulcer of heel due to atherosclerosis of artery of lower limb,Condition,SNOMED,Disorder,S,792846001,2020-01-31,2099-12-31,NA
+42689609,Simple venous leg ulcer,Condition,SNOMED,Disorder,S,1066121000000109,2017-04-01,2099-12-31,NA
+42689610,Complex venous leg ulcer,Condition,SNOMED,Disorder,S,1066131000000106,2017-04-01,2099-12-31,NA
+43530690,Foot ulcer due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,1521000119100,2013-07-31,2099-12-31,NA
+44782716,Venous ulcer of lower extremity due to chronic peripheral venous hypertension,Condition,SNOMED,Disorder,S,153831000119100,2014-01-31,2099-12-31,NA
+44782779,Ulcer of lower extremity due to postphlebitic syndrome,Condition,SNOMED,Disorder,S,25581000119105,2014-01-31,2099-12-31,NA
+44784380,Superficial skin ulcer of lower limb,Condition,SNOMED,Disorder,S,698516000,2014-01-31,2099-12-31,NA
+44804358,Superficial ulcer of lower limb,Condition,SNOMED,Disorder,S,711791000000100,2010-10-01,2099-12-31,NA
+44806601,EPUAP (European pressure ulcer advisory panel) category II ulcer left foot,Condition,SNOMED,Disorder,S,802101000000104,2011-10-03,2099-12-31,NA
+44806603,EPUAP (European pressure ulcer advisory panel) category II ulcer right foot,Condition,SNOMED,Disorder,S,802141000000101,2011-10-03,2099-12-31,NA
+44806606,EPUAP (European pressure ulcer advisory panel) category III ulcer left foot,Condition,SNOMED,Disorder,S,802181000000109,2011-10-03,2099-12-31,NA
+44806607,EPUAP (European pressure ulcer advisory panel) category III ulcer right foot,Condition,SNOMED,Disorder,S,802191000000106,2011-10-03,2099-12-31,NA
+44806608,EPUAP (European pressure ulcer advisory panel) category IV ulcer left foot,Condition,SNOMED,Disorder,S,802201000000108,2011-10-03,2099-12-31,NA
+44806609,EPUAP (European pressure ulcer advisory panel) category IV ulcer right foot,Condition,SNOMED,Disorder,S,802211000000105,2011-10-03,2099-12-31,NA
+44808042,Non-healing leg ulcer,Condition,SNOMED,Disorder,S,828001000000105,2012-04-01,2099-12-31,NA
+44808049,Recurrent leg ulcer,Condition,SNOMED,Disorder,S,828101000000106,2012-04-01,2099-12-31,NA
+44814008,Arterial lower limb ulcer,Condition,SNOMED,Disorder,S,872381000000101,2013-04-01,2099-12-31,NA
+45757277,Ulcer of lower limb due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,110171000119107,2015-01-31,2099-12-31,NA
+45757449,Ulcer of toe due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,140391000119101,2015-01-31,2099-12-31,NA
+45757450,Neuropathic ulcer of foot due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,140531000119105,2015-01-31,2099-12-31,NA
+45757507,Ulcer of foot due to type 1 diabetes mellitus,Condition,SNOMED,Disorder,S,164881000119109,2015-01-31,2099-12-31,NA
+45769888,Ankle ulcer due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,87441000119104,2015-01-31,2099-12-31,NA
+45769890,Ulcer of forefoot due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,87461000119100,2015-01-31,2099-12-31,NA
+45769891,Ankle ulcer due to type 1 diabetes mellitus,Condition,SNOMED,Disorder,S,87471000119106,2015-01-31,2099-12-31,NA
+45769892,Ulcer of forefoot due to type 1 diabetes mellitus,Condition,SNOMED,Disorder,S,87491000119107,2015-01-31,2099-12-31,NA
+45770832,Stasis ulcer due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,97621000119107,2015-01-31,2099-12-31,NA
+45770883,Neuropathic ulcer of toe due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,140381000119104,2015-01-31,2099-12-31,NA
+45770902,Ulcer of lower limb due to type 1 diabetes mellitus,Condition,SNOMED,Disorder,S,110141000119100,2015-01-31,2099-12-31,NA
+45771072,Ischemic ulcer of foot due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,140521000119107,2015-01-31,2099-12-31,NA
+46269749,Chronic ulcer of midfoot,Condition,SNOMED,Disorder,S,10636231000119104,2015-07-31,2099-12-31,NA
+46269750,Chronic ulcer of skin of ankle,Condition,SNOMED,Disorder,S,10637751000119102,2015-07-31,2099-12-31,NA
+46269751,Osteonecrosis of ankle bone due to chronic ulcer of ankle,Condition,SNOMED,Disorder,S,10637791000119107,2015-07-31,2099-12-31,NA
+46269752,Chronic non-pressure ulcer of ankle extending to fat level,Condition,SNOMED,Disorder,S,10637831000119101,2015-07-31,2099-12-31,NA
+46269753,Necrosis of ankle muscle co-occurrent and due to chronic ulcer of ankle,Condition,SNOMED,Disorder,S,10637871000119103,2015-07-31,2099-12-31,NA
+46269754,Chronic ulcer of skin of calf,Condition,SNOMED,Disorder,S,10640791000119105,2015-07-31,2099-12-31,NA
+46269755,Chronic non-pressure ulcer of calf extending to fat level,Condition,SNOMED,Disorder,S,10640871000119101,2015-07-31,2099-12-31,NA
+46269756,Necrosis of calf muscle co-occurrent and due to chronic ulcer of calf,Condition,SNOMED,Disorder,S,10640911000119103,2015-07-31,2099-12-31,NA
+46269757,Chronic ulcer of skin of lower leg,Condition,SNOMED,Disorder,S,10641391000119104,2015-07-31,2099-12-31,NA
+46269758,Necrosis of muscle of buttock co-occurrent and due to chronic ulcer of buttock,Condition,SNOMED,Disorder,S,10642151000119103,2015-07-31,2099-12-31,NA
+46269760,Necrosis of bone of buttock co-occurrent and due to chronic ulcer of buttock,Condition,SNOMED,Disorder,S,10642231000119104,2015-07-31,2099-12-31,NA
+46269764,Skin ulcer of toe due to diabetes mellitus type 1,Condition,SNOMED,Disorder,S,10656231000119100,2015-07-31,2099-12-31,NA
+46269765,Ulcer of midfoot,Condition,SNOMED,Disorder,S,10662511000119101,2015-07-31,2099-12-31,NA
+46269766,Ischemic ulcer of lower leg due to atherosclerotic disease,Condition,SNOMED,Disorder,S,10666031000119100,2015-07-31,2099-12-31,NA
+46270088,Neuropathic ulcer of ankle,Condition,SNOMED,Disorder,S,137631000119107,2015-07-31,2099-12-31,NA
+46270153,Stasis dermatitis and venous ulcer of lower extremity due to chronic peripheral venous hypertension,Condition,SNOMED,Disorder,S,153871000119102,2015-07-31,2099-12-31,NA
+46270564,Chronic ulcer of calf,Condition,SNOMED,Disorder,S,6051000119109,2015-07-31,2099-12-31,NA
+46271902,Chronic ulcer of buttock,Condition,SNOMED,Disorder,S,710169001,2015-07-31,2099-12-31,NA
+46272749,Ulcer of skin of lower extremity,Condition,SNOMED,Disorder,S,711168000,2015-07-31,2099-12-31,NA
+46273396,Venous stasis ulcer co-occurrent with edema of lower leg,Condition,SNOMED,Disorder,S,83011000119100,2015-07-31,2099-12-31,NA
+46273461,Osteonecrosis of fibula due to chronic ulcer of calf,Condition,SNOMED,Disorder,S,10640831000119104,2015-07-31,2099-12-31,NA
+46274048,Chronic ulcer of heel,Condition,SNOMED,Disorder,S,10635431000119108,2015-07-31,2099-12-31,NA
+46274058,Skin ulcer of toe due to diabetes mellitus type 2,Condition,SNOMED,Disorder,S,10656271000119102,2015-07-31,2099-12-31,NA

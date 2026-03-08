@@ -1,0 +1,42 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+378419,Alzheimer's disease,Condition,SNOMED,Disorder,S,26929004,2002-01-31,2099-12-31,NA
+603149,Autosomal dominant Alzheimer disease due to mutation of presenilin 1,Condition,SNOMED,Disorder,S,1156800008,2021-07-31,2099-12-31,NA
+608051,Autosomal dominant Alzheimer disease due to mutation of amyloid precursor protein,Condition,SNOMED,Disorder,S,1156789004,2021-07-31,2099-12-31,NA
+608060,Autosomal dominant Alzheimer disease due to mutation of presenilin 2,Condition,SNOMED,Disorder,S,1156798001,2021-07-31,2099-12-31,NA
+762578,"Primary degenerative dementia of the Alzheimer type, senile onset, with behavioral disturbance",Condition,SNOMED,Disorder,S,429161000124103,2012-09-01,2099-12-31,NA
+1340510,Progression of Alzheimer's disease,Condition,OMOP Extension,Disorder,S,OMOP5166165,2022-05-06,2099-12-31,NA
+3170377,Alzheimers continuum,Condition,Nebraska Lexicon,Clinical Finding,S,245761000004103,2019-08-15,2099-12-31,NA
+3176418,Intermediate level Alzheimers neuropathology changes,Condition,Nebraska Lexicon,Clinical Finding,S,481291000004108,2019-08-15,2099-12-31,NA
+3177168,Low level Alzheimers neuropathology changes,Condition,Nebraska Lexicon,Clinical Finding,S,471041000004103,2019-08-15,2099-12-31,NA
+3179057,Early Alzheimers disease,Condition,Nebraska Lexicon,Clinical Finding,S,13160001000004109,2016-01-28,2099-12-31,NA
+3184947,High level Alzheimers neuropathology changes,Condition,Nebraska Lexicon,Clinical Finding,S,481311000004107,2019-08-15,2099-12-31,NA
+4019705,"Primary degenerative dementia of the Alzheimer type, presenile onset, with depression",Condition,SNOMED,Disorder,S,10532003,2002-01-31,2099-12-31,NA
+4043241,Familial Alzheimer's disease of early onset,Condition,SNOMED,Disorder,S,230265002,2002-01-31,2099-12-31,NA
+4043242,Non-familial Alzheimer's disease of early onset,Condition,SNOMED,Disorder,S,230266001,2002-01-31,2099-12-31,NA
+4043243,Familial Alzheimer's disease of late onset,Condition,SNOMED,Disorder,S,230267005,2002-01-31,2099-12-31,NA
+4043244,Non-familial Alzheimer's disease of late onset,Condition,SNOMED,Disorder,S,230268000,2002-01-31,2099-12-31,NA
+4043377,Focal Alzheimer's disease,Condition,SNOMED,Disorder,S,230269008,2002-01-31,2099-12-31,NA
+4043379,Progressive aphasia in Alzheimer's disease,Condition,SNOMED,Disorder,S,230280008,2002-01-31,2099-12-31,NA
+4097384,"Primary degenerative dementia of the Alzheimer type, senile onset, with depression",Condition,SNOMED,Disorder,S,26852004,2002-01-31,2099-12-31,NA
+4167839,"Primary degenerative dementia of the Alzheimer type, senile onset, with delirium",Condition,SNOMED,Disorder,S,4817008,2002-01-31,2099-12-31,NA
+4182539,"Primary degenerative dementia of the Alzheimer type, presenile onset, with delusions",Condition,SNOMED,Disorder,S,54502004,2002-01-31,2099-12-31,NA
+4204688,"Primary degenerative dementia of the Alzheimer type, senile onset, with delusions",Condition,SNOMED,Disorder,S,55009008,2002-01-31,2099-12-31,NA
+4218017,"Primary degenerative dementia of the Alzheimer type, presenile onset",Condition,SNOMED,Disorder,S,416780008,2005-07-31,2099-12-31,NA
+4220313,"Primary degenerative dementia of the Alzheimer type, senile onset",Condition,SNOMED,Disorder,S,416975007,2005-07-31,2099-12-31,NA
+4277444,"Primary degenerative dementia of the Alzheimer type, presenile onset, uncomplicated",Condition,SNOMED,Disorder,S,6475002,2002-01-31,2099-12-31,NA
+4277746,"Primary degenerative dementia of the Alzheimer type, presenile onset, with delirium",Condition,SNOMED,Disorder,S,65096006,2002-01-31,2099-12-31,NA
+4278830,"Primary degenerative dementia of the Alzheimer type, senile onset, uncomplicated",Condition,SNOMED,Disorder,S,66108005,2002-01-31,2099-12-31,NA
+36716558,Non-amnestic Alzheimer disease,Condition,SNOMED,Disorder,S,722600006,2017-01-31,2099-12-31,NA
+37117145,Behavioral disturbance co-occurrent and due to late onset Alzheimer dementia,Condition,SNOMED,Disorder,S,16219201000119101,2017-07-31,2099-12-31,NA
+37166126,Alzheimer disease with psychosis,Condition,SNOMED,Disorder,S,1259128002,2022-11-30,2099-12-31,NA
+37167043,Logopenic non-amnestic Alzheimer disease,Condition,SNOMED,Disorder,S,1263555006,2023-02-28,2099-12-31,NA
+37167060,Frontal variant non-amnestic Alzheimer disease,Condition,SNOMED,Disorder,S,1263585001,2023-02-28,2099-12-31,NA
+37395572,Alzheimer's disease co-occurrent with delirium,Condition,SNOMED,Disorder,S,142011000119109,2016-07-31,2099-12-31,NA
+43021816,Mixed dementia,Condition,SNOMED,Disorder,S,79341000119107,2013-01-31,2099-12-31,NA
+43530664,Dementia of the Alzheimer type with behavioral disturbance,Condition,SNOMED,Disorder,S,1581000119101,2013-07-31,2099-12-31,NA
+44782432,Early onset Alzheimer's disease with behavioral disturbance,Condition,SNOMED,Disorder,S,105421000119105,2014-01-31,2099-12-31,NA
+44782726,Delusions in Alzheimer's disease,Condition,SNOMED,Disorder,S,141991000119109,2014-01-31,2099-12-31,NA
+44782727,Depressed mood in Alzheimer's disease,Condition,SNOMED,Disorder,S,142001000119106,2014-01-31,2099-12-31,NA
+44782940,"Primary degenerative dementia of the Alzheimer type, senile onset in remission",Condition,SNOMED,Disorder,S,698954005,2014-01-31,2099-12-31,NA
+44782941,"Primary degenerative dementia of the Alzheimer type, presenile onset in remission",Condition,SNOMED,Disorder,S,698955006,2014-01-31,2099-12-31,NA
+44784643,Altered behavior in Alzheimer's disease,Condition,SNOMED,Disorder,S,97751000119108,2014-01-31,2099-12-31,NA

@@ -1,0 +1,237 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+74182,Open fracture of ischium,Condition,SNOMED,Disorder,S,76911006,2002-01-31,2099-12-31,NA
+75932,Open fracture of pelvis,Condition,SNOMED,Disorder,S,15474008,2002-01-31,2099-12-31,NA
+75943,Open fracture of pubis,Condition,SNOMED,Disorder,S,71220005,2002-01-31,2099-12-31,NA
+76240,Closed fracture pubis,Condition,SNOMED,Disorder,S,208164008,2002-01-31,2099-12-31,NA
+77115,Multiple open fractures of pelvis with disruption of pelvic circle,Condition,SNOMED,Disorder,S,86731008,2002-01-31,2099-12-31,NA
+77129,Closed fracture of pelvis,Condition,SNOMED,Disorder,S,91037003,2002-01-31,2099-12-31,NA
+77362,Stress fracture of pelvis,Condition,SNOMED,Disorder,S,430907000,2008-07-31,2099-12-31,NA
+77405,Open fracture of acetabulum,Condition,SNOMED,Disorder,S,77598002,2002-01-31,2099-12-31,NA
+77702,Multiple closed fractures of pelvis with disruption of pelvic circle,Condition,SNOMED,Disorder,S,59962009,2002-01-31,2099-12-31,NA
+78276,Open fracture of ilium,Condition,SNOMED,Disorder,S,60214001,2002-01-31,2099-12-31,NA
+80861,Closed fracture of ischium,Condition,SNOMED,Disorder,S,36417005,2002-01-31,2099-12-31,NA
+81141,Closed fracture of ilium,Condition,SNOMED,Disorder,S,17616007,2002-01-31,2099-12-31,NA
+81696,Closed fracture of acetabulum,Condition,SNOMED,Disorder,S,33118001,2002-01-31,2099-12-31,NA
+194180,Open fracture of lumbar vertebra with spinal cord injury,Condition,SNOMED,Disorder,S,48956000,2002-01-31,2099-12-31,NA
+195948,Closed fracture of lumbar vertebra with spinal cord injury,Condition,SNOMED,Disorder,S,49747005,2002-01-31,2099-12-31,NA
+606228,Pathological fracture of pelvis and femur,Condition,SNOMED,Disorder,S,1144497004,2021-07-31,2099-12-31,NA
+606229,Fracture malunion of pelvis and femur,Condition,SNOMED,Disorder,S,1144498009,2021-07-31,2099-12-31,NA
+760593,Open avulsion fracture of anterior inferior spine of left ilium,Condition,SNOMED,Disorder,S,11306161000119107,2015-03-01,2099-12-31,NA
+760594,Closed avulsion fracture of anterior inferior spine of right ilium,Condition,SNOMED,Disorder,S,11306281000119105,2015-03-01,2099-12-31,NA
+760595,Closed avulsion fracture of anterior inferior spine of left ilium,Condition,SNOMED,Disorder,S,11306321000119100,2015-03-01,2099-12-31,NA
+760596,Closed avulsion fracture of anterior superior spine of right ilium,Condition,SNOMED,Disorder,S,11306361000119105,2015-03-01,2099-12-31,NA
+760597,Closed fracture of right ilium,Condition,SNOMED,Disorder,S,11306441000119104,2015-03-01,2099-12-31,NA
+760598,Open fracture of right pubis,Condition,SNOMED,Disorder,S,11306601000119104,2015-03-01,2099-12-31,NA
+760599,Open fracture of left pubis,Condition,SNOMED,Disorder,S,11306641000119102,2015-03-01,2099-12-31,NA
+760600,Stress fracture of right pubic ramus,Condition,SNOMED,Disorder,S,11306681000119107,2015-03-01,2099-12-31,NA
+760601,Stress fracture of left pubic ramus,Condition,SNOMED,Disorder,S,11306721000119101,2015-03-01,2099-12-31,NA
+760602,Closed fracture of right pubis,Condition,SNOMED,Disorder,S,11306761000119106,2015-03-01,2099-12-31,NA
+760603,Closed fracture of left pubis,Condition,SNOMED,Disorder,S,11306801000119103,2015-03-01,2099-12-31,NA
+760604,Closed fracture of right ischium,Condition,SNOMED,Disorder,S,11306921000119104,2015-03-01,2099-12-31,NA
+760605,Closed fracture of posterior column of right acetabulum,Condition,SNOMED,Disorder,S,11307001000119109,2015-03-01,2099-12-31,NA
+760606,Closed fracture of anterior column of right acetabulum,Condition,SNOMED,Disorder,S,11307081000119101,2015-03-01,2099-12-31,NA
+760608,Closed fracture of posterior column of left acetabulum,Condition,SNOMED,Disorder,S,11307121000119104,2015-03-01,2099-12-31,NA
+760609,Closed transverse and posterior wall fracture of right acetabulum,Condition,SNOMED,Disorder,S,11307161000119109,2015-03-01,2099-12-31,NA
+760610,Closed fracture of left acetabulum,Condition,SNOMED,Disorder,S,11307281000119107,2015-03-01,2099-12-31,NA
+760611,Closed transverse fracture of right acetabulum,Condition,SNOMED,Disorder,S,11307321000119102,2015-03-01,2099-12-31,NA
+760612,Closed transverse fracture of left acetabulum,Condition,SNOMED,Disorder,S,11307361000119107,2015-03-01,2099-12-31,NA
+760613,Closed fracture of anterior column and posterior column of right acetabulum,Condition,SNOMED,Disorder,S,11307401000119103,2015-03-01,2099-12-31,NA
+760614,Closed fracture of anterior column and posterior column of left acetabulum,Condition,SNOMED,Disorder,S,11307441000119101,2015-03-01,2099-12-31,NA
+760615,Closed fracture of anterior wall of right acetabulum,Condition,SNOMED,Disorder,S,11307641000119104,2015-03-01,2099-12-31,NA
+760616,Closed fracture of posterior wall of right acetabulum,Condition,SNOMED,Disorder,S,11307721000119103,2015-03-01,2099-12-31,NA
+760617,Closed fracture of posterior wall of left acetabulum,Condition,SNOMED,Disorder,S,11307761000119108,2015-03-01,2099-12-31,NA
+760618,Closed fracture of medial wall of right acetabulum,Condition,SNOMED,Disorder,S,11307801000119100,2015-03-01,2099-12-31,NA
+760619,Closed fracture of medial wall of left acetabulum,Condition,SNOMED,Disorder,S,11307841000119103,2015-03-01,2099-12-31,NA
+760620,Open fracture of right acetabulum,Condition,SNOMED,Disorder,S,11308201000119103,2015-03-01,2099-12-31,NA
+763802,Open avulsion fracture of anterior inferior spine of ilium,Condition,SNOMED,Disorder,S,446561000124102,2015-03-01,2099-12-31,NA
+765032,Closed avulsion fracture of anterior superior spine of left ilium,Condition,SNOMED,Disorder,S,11306401000119101,2015-03-01,2099-12-31,NA
+765184,Closed fracture of left ilium,Condition,SNOMED,Disorder,S,11306481000119109,2015-03-01,2099-12-31,NA
+765185,Closed fracture of left ischium,Condition,SNOMED,Disorder,S,11306961000119109,2015-03-01,2099-12-31,NA
+765186,Closed fracture of right acetabulum,Condition,SNOMED,Disorder,S,11307201000119104,2015-03-01,2099-12-31,NA
+765187,Closed fracture of anterior wall of left acetabulum,Condition,SNOMED,Disorder,S,11307681000119109,2015-03-01,2099-12-31,NA
+1244266,Central cord syndrome of lumbar spinal cord due to open spinal fracture,Condition,SNOMED,Disorder,S,1279876004,2023-12-01,2099-12-31,NA
+1244267,Central cord syndrome of lumbar spinal cord due to closed spinal fracture,Condition,SNOMED,Disorder,S,1279877008,2023-12-01,2099-12-31,NA
+1244837,Fracture of ramus of pubis,Condition,SNOMED,Disorder,S,1292974007,2023-11-01,2099-12-31,NA
+1244839,Closed fracture of pubic ramus,Condition,SNOMED,Disorder,S,1292980004,2023-11-01,2099-12-31,NA
+1244840,Open fracture of pubic ramus,Condition,SNOMED,Disorder,S,1292981000,2023-11-01,2099-12-31,NA
+1450559,Fracture of left acetabulum,Condition,SNOMED,Disorder,S,47561000087101,2025-01-01,2099-12-31,NA
+1450560,Fracture of right acetabulum,Condition,SNOMED,Disorder,S,47571000087105,2025-01-01,2099-12-31,NA
+3656845,Multiple closed fractures of pelvis without disruption of pelvic circle,Condition,SNOMED,Disorder,S,328821000119104,2020-07-31,2099-12-31,NA
+4008220,"Closed fracture lumbar vertebra, wedge",Condition,SNOMED,Disorder,S,207959006,2002-01-31,2099-12-31,NA
+4008221,"Closed fracture lumbar vertebra, spinous process",Condition,SNOMED,Disorder,S,207961002,2002-01-31,2099-12-31,NA
+4008222,Open fracture lumbar vertebra,Condition,SNOMED,Disorder,S,207965006,2002-01-31,2099-12-31,NA
+4008352,"Open fracture lumbar vertebra, burst",Condition,SNOMED,Disorder,S,207966007,2002-01-31,2099-12-31,NA
+4008353,"Open fracture lumbar vertebra, spinous process",Condition,SNOMED,Disorder,S,207969000,2002-01-31,2099-12-31,NA
+4008356,Multiple fractures of lumbar spine and/or pelvis,Condition,SNOMED,Disorder,S,207993005,2002-01-31,2099-12-31,NA
+4008519,"Closed fracture acetabulum, anterior column",Condition,SNOMED,Disorder,S,208148000,2002-01-31,2099-12-31,NA
+4008520,"Closed fracture acetabulum, posterior column",Condition,SNOMED,Disorder,S,208149008,2002-01-31,2099-12-31,NA
+4008523,"Open fracture acetabulum, posterior column",Condition,SNOMED,Disorder,S,208158001,2002-01-31,2099-12-31,NA
+4008524,Closed stable fracture of multiple pubic rami,Condition,SNOMED,Disorder,S,208166005,2002-01-31,2099-12-31,NA
+4009911,"Closed fracture lumbar vertebra, transverse process",Condition,SNOMED,Disorder,S,207962009,2002-01-31,2099-12-31,NA
+4009912,"Open fracture lumbar vertebra, wedge",Condition,SNOMED,Disorder,S,207967003,2002-01-31,2099-12-31,NA
+4009913,"Open fracture lumbar vertebra, transverse process",Condition,SNOMED,Disorder,S,207970004,2002-01-31,2099-12-31,NA
+4009914,"Open fracture lumbar vertebra, tricolumnar",Condition,SNOMED,Disorder,S,207972007,2002-01-31,2099-12-31,NA
+4009915,Closed compression fracture sacrum,Condition,SNOMED,Disorder,S,207975009,2002-01-31,2099-12-31,NA
+4009916,Closed vertical fracture of sacrum,Condition,SNOMED,Disorder,S,207976005,2002-01-31,2099-12-31,NA
+4009917,Open compression fracture sacrum,Condition,SNOMED,Disorder,S,207978006,2002-01-31,2099-12-31,NA
+4010072,Open spinal fracture with posterior lumbar cord lesion,Condition,SNOMED,Disorder,S,208066007,2002-01-31,2099-12-31,NA
+4010074,Closed fracture of sacrum with complete cauda equina lesion,Condition,SNOMED,Disorder,S,208071000,2002-01-31,2099-12-31,NA
+4010224,"Open fracture acetabulum, floor",Condition,SNOMED,Disorder,S,208159009,2002-01-31,2099-12-31,NA
+4010228,"Closed fracture pelvis, anterior inferior iliac spine",Condition,SNOMED,Disorder,S,208183001,2002-01-31,2099-12-31,NA
+4010231,"Open fracture pelvis, ischial tuberosity",Condition,SNOMED,Disorder,S,208192003,2002-01-31,2099-12-31,NA
+4010232,"Open fracture pelvis, iliac wing",Condition,SNOMED,Disorder,S,208195001,2002-01-31,2099-12-31,NA
+4013158,"Closed fracture lumbar vertebra, spondylolysis",Condition,SNOMED,Disorder,S,207960001,2002-01-31,2099-12-31,NA
+4013159,"Closed fracture lumbar vertebra, posterior arch",Condition,SNOMED,Disorder,S,207963004,2002-01-31,2099-12-31,NA
+4013160,Closed fracture sacrum,Condition,SNOMED,Disorder,S,207974008,2002-01-31,2099-12-31,NA
+4013161,Open fracture sacrum,Condition,SNOMED,Disorder,S,207977001,2002-01-31,2099-12-31,NA
+4013305,Closed spinal fracture with complete lumbar cord lesion,Condition,SNOMED,Disorder,S,208056004,2002-01-31,2099-12-31,NA
+4013306,Closed spinal fracture with anterior lumbar cord lesion,Condition,SNOMED,Disorder,S,208057008,2002-01-31,2099-12-31,NA
+4013312,Open fracture of sacrum with complete cauda equina lesion,Condition,SNOMED,Disorder,S,208078006,2002-01-31,2099-12-31,NA
+4013323,"Open fracture acetabulum, anterior column",Condition,SNOMED,Disorder,S,208157006,2002-01-31,2099-12-31,NA
+4013325,Closed unstable fracture of multiple pubic rami,Condition,SNOMED,Disorder,S,208168006,2002-01-31,2099-12-31,NA
+4013328,"Closed fracture pelvis, iliac wing",Condition,SNOMED,Disorder,S,208184007,2002-01-31,2099-12-31,NA
+4013329,"Open fracture pelvis, anterior superior iliac spine",Condition,SNOMED,Disorder,S,208193008,2002-01-31,2099-12-31,NA
+4013330,"Open fracture pelvis, anterior inferior iliac spine",Condition,SNOMED,Disorder,S,208194002,2002-01-31,2099-12-31,NA
+4013604,Closed fracture lumbar vertebra,Condition,SNOMED,Disorder,S,207957008,2002-01-31,2099-12-31,NA
+4013605,"Closed fracture lumbar vertebra, burst",Condition,SNOMED,Disorder,S,207958003,2002-01-31,2099-12-31,NA
+4013606,"Closed fracture lumbar vertebra, tricolumnar",Condition,SNOMED,Disorder,S,207964005,2002-01-31,2099-12-31,NA
+4013607,"Open fracture lumbar vertebra, spondylolysis",Condition,SNOMED,Disorder,S,207968008,2002-01-31,2099-12-31,NA
+4013608,"Open fracture lumbar vertebra, posterior arch",Condition,SNOMED,Disorder,S,207971000,2002-01-31,2099-12-31,NA
+4013610,Open vertical fracture of sacrum,Condition,SNOMED,Disorder,S,207979003,2002-01-31,2099-12-31,NA
+4013613,Fracture of lumbar spine and/or pelvis,Condition,SNOMED,Disorder,S,207986006,2002-01-31,2099-12-31,NA
+4013759,Closed spinal fracture with posterior lumbar cord lesion,Condition,SNOMED,Disorder,S,208059006,2002-01-31,2099-12-31,NA
+4013761,Open spinal fracture with complete lumbar cord lesion,Condition,SNOMED,Disorder,S,208063004,2002-01-31,2099-12-31,NA
+4013897,"Closed fracture acetabulum, floor",Condition,SNOMED,Disorder,S,208150008,2002-01-31,2099-12-31,NA
+4013898,"Closed fracture acetabulum, double column transverse",Condition,SNOMED,Disorder,S,208151007,2002-01-31,2099-12-31,NA
+4013900,"Open fracture acetabulum, double column transverse",Condition,SNOMED,Disorder,S,208160004,2002-01-31,2099-12-31,NA
+4013903,Open stable fracture of multiple pubic rami,Condition,SNOMED,Disorder,S,208173000,2002-01-31,2099-12-31,NA
+4013904,Open unstable fracture of multiple pubic rami,Condition,SNOMED,Disorder,S,208174006,2002-01-31,2099-12-31,NA
+4013906,"Closed fracture pelvis, ischial tuberosity",Condition,SNOMED,Disorder,S,208181004,2002-01-31,2099-12-31,NA
+4013907,"Closed fracture pelvis, anterior superior iliac spine",Condition,SNOMED,Disorder,S,208182006,2002-01-31,2099-12-31,NA
+4013908,Closed vertical fracture of ilium,Condition,SNOMED,Disorder,S,208185008,2002-01-31,2099-12-31,NA
+4013910,Open vertical fracture of ilium,Condition,SNOMED,Disorder,S,208197009,2002-01-31,2099-12-31,NA
+4014204,Open fracture dislocation of pelvis,Condition,SNOMED,Disorder,S,209395004,2002-01-31,2099-12-31,NA
+4015210,Closed fracture subluxation of pelvis,Condition,SNOMED,Disorder,S,209400003,2002-01-31,2099-12-31,NA
+4018943,Closed fracture dislocation of pelvis,Condition,SNOMED,Disorder,S,209390009,2002-01-31,2099-12-31,NA
+4018948,Open fracture subluxation of pelvis,Condition,SNOMED,Disorder,S,209405008,2002-01-31,2099-12-31,NA
+4053654,Fracture of coccyx,Condition,SNOMED,Disorder,S,125871005,2002-01-31,2099-12-31,NA
+4069524,Osteoporotic fracture of lumbar vertebra,Condition,SNOMED,Disorder,S,203450003,2002-01-31,2099-12-31,NA
+4083822,Crush fracture of lumbar vertebra,Condition,SNOMED,Disorder,S,281933002,2002-01-31,2099-12-31,NA
+4083823,Fracture of pedicle of lumbar vertebra,Condition,SNOMED,Disorder,S,281935009,2002-01-31,2099-12-31,NA
+4083824,Fracture of lamina of lumbar vertebra,Condition,SNOMED,Disorder,S,281937001,2002-01-31,2099-12-31,NA
+4085898,Wedge fracture of lumbar vertebra,Condition,SNOMED,Disorder,S,281932007,2002-01-31,2099-12-31,NA
+4086020,Burst fracture of lumbar vertebra,Condition,SNOMED,Disorder,S,281934008,2002-01-31,2099-12-31,NA
+4086021,Two column fracture of lumbar vertebra,Condition,SNOMED,Disorder,S,281940001,2002-01-31,2099-12-31,NA
+4106182,Teardrop fracture of lumbar vertebra,Condition,SNOMED,Disorder,S,281931000,2002-01-31,2099-12-31,NA
+4106183,Fracture of transverse process of lumbar vertebra,Condition,SNOMED,Disorder,S,281936005,2002-01-31,2099-12-31,NA
+4106184,Fracture of spinous process of lumbar vertebra,Condition,SNOMED,Disorder,S,281938006,2002-01-31,2099-12-31,NA
+4106186,Three column fracture of lumbar vertebra,Condition,SNOMED,Disorder,S,281941002,2002-01-31,2099-12-31,NA
+4107370,Duverney's fracture,Condition,SNOMED,Disorder,S,30060003,2002-01-31,2099-12-31,NA
+4117116,Fracture of superior pubic ramus,Condition,SNOMED,Disorder,S,301032005,2002-01-31,2099-12-31,NA
+4117117,Fracture of inferior pubic ramus,Condition,SNOMED,Disorder,S,301033000,2002-01-31,2099-12-31,NA
+4129394,Fracture of lumbar spine,Condition,SNOMED,Disorder,S,125608002,2002-01-31,2099-12-31,NA
+4129420,Fracture of sacrum,Condition,SNOMED,Disorder,S,125872003,2002-01-31,2099-12-31,NA
+4134327,Fracture of ischial tuberosity,Condition,SNOMED,Disorder,S,263221003,2002-01-31,2099-12-31,NA
+4135095,Fracture dislocation of symphysis pubis,Condition,SNOMED,Disorder,S,263067005,2002-01-31,2099-12-31,NA
+4136567,Fracture dislocation of lumbar spine,Condition,SNOMED,Disorder,S,263072001,2002-01-31,2099-12-31,NA
+4136574,Fracture subluxation of symphysis pubis,Condition,SNOMED,Disorder,S,263096006,2002-01-31,2099-12-31,NA
+4136721,Fracture of ischium,Condition,SNOMED,Disorder,S,263220002,2002-01-31,2099-12-31,NA
+4136722,Multiple pelvic fractures,Condition,SNOMED,Disorder,S,263222005,2002-01-31,2099-12-31,NA
+4138303,Vertical fracture of ilium,Condition,SNOMED,Disorder,S,263216001,2002-01-31,2099-12-31,NA
+4138304,Fracture of iliac crest,Condition,SNOMED,Disorder,S,263217005,2002-01-31,2099-12-31,NA
+4138411,Fracture of multiple pubic rami,Condition,SNOMED,Disorder,S,263219008,2002-01-31,2099-12-31,NA
+4139363,Closed avulsion fracture of anterior inferior iliac spine of pelvis,Condition,SNOMED,Disorder,S,426679004,2007-07-31,2099-12-31,NA
+4140300,Compression fracture of lumbar spine,Condition,SNOMED,Disorder,S,426646004,2007-07-31,2099-12-31,NA
+4144316,Pathological fracture of pelvis,Condition,SNOMED,Disorder,S,426115002,2007-07-31,2099-12-31,NA
+4145841,Closed fracture of acetabulum with dislocation of hip,Condition,SNOMED,Disorder,S,426962008,2007-07-31,2099-12-31,NA
+4151707,Pathological fracture of lumbar vertebra,Condition,SNOMED,Disorder,S,270508006,2002-01-31,2099-12-31,NA
+4158479,Fracture of iliac wing,Condition,SNOMED,Disorder,S,271963003,2002-01-31,2099-12-31,NA
+4167098,Fracture of lumbar spine with cord lesion,Condition,SNOMED,Disorder,S,274158004,2002-01-31,2099-12-31,NA
+4177048,Multiple unstable closed lateral compression fractures of pelvis,Condition,SNOMED,Disorder,S,428000009,2008-01-31,2099-12-31,NA
+4181796,Multiple closed anterior-posterior compression fractures of pelvis,Condition,SNOMED,Disorder,S,429186005,2008-01-31,2099-12-31,NA
+4187825,Open fracture of innominate bone,Condition,SNOMED,Disorder,S,46272008,2002-01-31,2099-12-31,NA
+4192646,Closed fracture of innominate bone,Condition,SNOMED,Disorder,S,39408006,2002-01-31,2099-12-31,NA
+4201092,Central fracture dislocation acetabulum,Condition,SNOMED,Disorder,S,301757009,2002-01-31,2099-12-31,NA
+4206885,Closed fracture involving thorax with lower back and pelvis and limbs,Condition,SNOMED,Disorder,S,311862008,2002-01-31,2099-12-31,NA
+4209671,Open fracture involving thorax with lower back and pelvis and limbs,Condition,SNOMED,Disorder,S,311864009,2002-01-31,2099-12-31,NA
+4210556,Osteoporotic collapse of lumbar vertebra,Condition,SNOMED,Disorder,S,311890007,2002-01-31,2099-12-31,NA
+4263360,Fracture of pubis,Condition,SNOMED,Disorder,S,36127009,2002-01-31,2099-12-31,NA
+4276036,Fracture of acetabulum,Condition,SNOMED,Disorder,S,64455005,2002-01-31,2099-12-31,NA
+4296627,Fracture of ilium,Condition,SNOMED,Disorder,S,7687006,2002-01-31,2099-12-31,NA
+4300192,Fracture of pelvis,Condition,SNOMED,Disorder,S,77493009,2002-01-31,2099-12-31,NA
+4308849,Fractures involving thorax with lower back and pelvis with limb(s),Condition,SNOMED,Disorder,S,213361003,2002-01-31,2099-12-31,NA
+4309930,Fractures involving thorax with lower back and pelvis,Condition,SNOMED,Disorder,S,213350006,2002-01-31,2099-12-31,NA
+4323067,Closed avulsion fracture of anterior superior iliac spine of pelvis,Condition,SNOMED,Disorder,S,428723000,2008-01-31,2099-12-31,NA
+4323892,Multiple stable closed lateral compression fractures of pelvis,Condition,SNOMED,Disorder,S,429552008,2008-01-31,2099-12-31,NA
+4326518,Multiple unstable closed vertical shear fractures of pelvis,Condition,SNOMED,Disorder,S,428512002,2008-01-31,2099-12-31,NA
+4327113,Closed fracture of triradiate cartilage and epiphysis of acetabulum,Condition,SNOMED,Disorder,S,429766001,2008-01-31,2099-12-31,NA
+35624169,Closed fracture of coccyx,Condition,SNOMED,Disorder,S,766775007,2018-07-31,2099-12-31,NA
+35624484,Open fracture of coccyx,Condition,SNOMED,Disorder,S,767262002,2018-07-31,2099-12-31,NA
+36715746,Fracture of second lumbar vertebra,Condition,SNOMED,Disorder,S,721495002,2017-01-31,2099-12-31,NA
+36715747,Fracture of third lumbar vertebra,Condition,SNOMED,Disorder,S,721496001,2017-01-31,2099-12-31,NA
+36715748,Fracture of fourth lumbar vertebra,Condition,SNOMED,Disorder,S,721497005,2017-01-31,2099-12-31,NA
+36715749,Fracture of fifth lumbar vertebra,Condition,SNOMED,Disorder,S,721498000,2017-01-31,2099-12-31,NA
+36716596,Fracture of pelvic ring with incomplete disruption of posterior arch,Condition,SNOMED,Disorder,S,722651000,2017-01-31,2099-12-31,NA
+36716597,Fracture of pelvic ring with complete disruption of posterior arch,Condition,SNOMED,Disorder,S,722652007,2017-01-31,2099-12-31,NA
+36717169,Fracture of first lumbar vertebra,Condition,SNOMED,Disorder,S,721494003,2017-01-31,2099-12-31,NA
+37207823,Acquired spondylolysis of thoracolumbar spine,Condition,SNOMED,Disorder,S,321301000119105,2019-03-01,2099-12-31,NA
+37209164,Closed fracture of triradiate cartilage and epiphysis of right acetabulum,Condition,SNOMED,Disorder,S,11307481000119106,2019-03-01,2099-12-31,NA
+37209165,Closed fracture of triradiate cartilage and epiphysis of left acetabulum,Condition,SNOMED,Disorder,S,11307521000119106,2019-03-01,2099-12-31,NA
+37209166,Open fracture of anterior column of right acetabulum,Condition,SNOMED,Disorder,S,11308001000119108,2019-03-01,2099-12-31,NA
+37209167,Open fracture of anterior column of left acetabulum,Condition,SNOMED,Disorder,S,11308041000119105,2019-03-01,2099-12-31,NA
+37209168,Open fracture of left acetabulum,Condition,SNOMED,Disorder,S,11308281000119106,2019-03-01,2099-12-31,NA
+37209642,Closed fracture of anterior column of left acetabulum,Condition,SNOMED,Disorder,S,16769891000119103,2019-07-31,2099-12-31,NA
+37310088,Closed fracture of roof of left acetabulum,Condition,SNOMED,Disorder,S,11307601000119101,2020-01-31,2099-12-31,NA
+37310089,Closed fracture of roof of right acetabulum,Condition,SNOMED,Disorder,S,11307561000119101,2020-01-31,2099-12-31,NA
+37310090,Closed transverse and posterior wall fracture of left acetabulum,Condition,SNOMED,Disorder,S,11307241000119102,2020-01-31,2099-12-31,NA
+37310091,Open fracture of left ilium,Condition,SNOMED,Disorder,S,11306561000119104,2020-01-31,2099-12-31,NA
+37310092,Open fracture of right ilium,Condition,SNOMED,Disorder,S,11306521000119109,2020-01-31,2099-12-31,NA
+37310093,Open avulsion fracture of anterior inferior spine of right ilium,Condition,SNOMED,Disorder,S,11306121000119102,2020-01-31,2099-12-31,NA
+40479211,Stress fracture of pubis,Condition,SNOMED,Disorder,S,441499007,2009-07-31,2099-12-31,NA
+40480932,Stress fracture of sacrum,Condition,SNOMED,Disorder,S,441881007,2009-07-31,2099-12-31,NA
+40491527,Open fracture of lumbar spine with incomplete lesion of lumbar spinal cord,Condition,SNOMED,Disorder,S,448788000,2011-07-31,2099-12-31,NA
+42539257,Bilateral sacral insufficiency fracture,Condition,SNOMED,Disorder,S,31580001000004106,2018-01-31,2099-12-31,NA
+45757297,Multiple closed anterior-posterior compression fractures of pelvis with unstable pelvic ring,Condition,SNOMED,Disorder,S,11306881000119106,2015-01-31,2099-12-31,NA
+45757298,Pathologic fracture of pelvis at site of neoplasm,Condition,SNOMED,Disorder,S,11307961000119106,2015-01-31,2099-12-31,NA
+45757299,Multiple open lateral compression fractures of pelvis with unstable pelvic ring,Condition,SNOMED,Disorder,S,11308841000119102,2015-01-31,2099-12-31,NA
+45757300,Multiple open vertical shear fractures of pelvis with unstable pelvic ring,Condition,SNOMED,Disorder,S,11308881000119107,2015-01-31,2099-12-31,NA
+45757301,Multiple open anterior-posterior compression fractures of pelvis with stable pelvic ring,Condition,SNOMED,Disorder,S,11308921000119100,2015-01-31,2099-12-31,NA
+45757302,Multiple open lateral compression fractures of pelvis with stable pelvic ring,Condition,SNOMED,Disorder,S,11308961000119105,2015-01-31,2099-12-31,NA
+45757307,Closed fracture of second lumbar vertebra,Condition,SNOMED,Disorder,S,11310881000119106,2015-01-31,2099-12-31,NA
+45757308,Closed fracture of third lumbar vertebra,Condition,SNOMED,Disorder,S,11310921000119104,2015-01-31,2099-12-31,NA
+45757309,Closed fracture of fourth lumbar vertebra,Condition,SNOMED,Disorder,S,11310961000119109,2015-01-31,2099-12-31,NA
+45757310,Closed fracture of fifth lumbar vertebra,Condition,SNOMED,Disorder,S,11311001000119101,2015-01-31,2099-12-31,NA
+45757316,Secondary osteoporotic fracture of lumbar vertebra,Condition,SNOMED,Disorder,S,11311441000119109,2015-01-31,2099-12-31,NA
+45757317,Pathologic fracture of lumbar vertebra at site of neoplasm,Condition,SNOMED,Disorder,S,11311481000119104,2015-01-31,2099-12-31,NA
+45757322,Pathological fracture of sacral vertebra,Condition,SNOMED,Disorder,S,11311761000119102,2015-01-31,2099-12-31,NA
+45757324,Secondary osteoporotic fracture of sacral vertebra,Condition,SNOMED,Disorder,S,11311841000119107,2015-01-31,2099-12-31,NA
+45757325,Open fracture of first lumbar vertebra,Condition,SNOMED,Disorder,S,11311881000119102,2015-01-31,2099-12-31,NA
+45757326,Open fracture of second lumbar vertebra,Condition,SNOMED,Disorder,S,11311921000119109,2015-01-31,2099-12-31,NA
+45757327,Open fracture of fourth lumbar vertebra,Condition,SNOMED,Disorder,S,11312001000119108,2015-01-31,2099-12-31,NA
+45757328,Open fracture of fifth lumbar vertebra,Condition,SNOMED,Disorder,S,11312041000119105,2015-01-31,2099-12-31,NA
+45757330,Stress fracture of lumbar vertebra,Condition,SNOMED,Disorder,S,11312201000119103,2015-01-31,2099-12-31,NA
+45767095,Open transverse fracture of acetabulum,Condition,SNOMED,Disorder,S,704398006,2015-01-31,2099-12-31,NA
+45767135,Closed transverse fracture of acetabulum,Condition,SNOMED,Disorder,S,704451004,2015-01-31,2099-12-31,NA
+45767161,Open fracture of anterior wall of acetabulum,Condition,SNOMED,Disorder,S,704483005,2015-01-31,2099-12-31,NA
+45767635,Closed fracture of anterior wall of acetabulum,Condition,SNOMED,Disorder,S,705104001,2015-01-31,2099-12-31,NA
+45767649,Open fracture of medial wall of acetabulum,Condition,SNOMED,Disorder,S,705120006,2015-01-31,2099-12-31,NA
+45767650,Closed fracture of medial wall of acetabulum,Condition,SNOMED,Disorder,S,705121005,2015-01-31,2099-12-31,NA
+45767651,Open fracture of anterior column and posterior column of acetabulum,Condition,SNOMED,Disorder,S,705122003,2015-01-31,2099-12-31,NA
+45767652,Closed fracture of anterior column and posterior column of acetabulum,Condition,SNOMED,Disorder,S,705123008,2015-01-31,2099-12-31,NA
+45767654,Closed fracture of posterior wall of acetabulum,Condition,SNOMED,Disorder,S,705125001,2015-01-31,2099-12-31,NA
+45767661,Open fracture of roof of acetabulum,Condition,SNOMED,Disorder,S,705134006,2015-01-31,2099-12-31,NA
+45767662,Closed fracture of roof of acetabulum,Condition,SNOMED,Disorder,S,705135007,2015-01-31,2099-12-31,NA
+45767663,Open transverse and posterior wall fracture of acetabulum,Condition,SNOMED,Disorder,S,705136008,2015-01-31,2099-12-31,NA
+45767664,Closed transverse and posterior wall fracture of acetabulum,Condition,SNOMED,Disorder,S,705137004,2015-01-31,2099-12-31,NA
+45770875,Pathologic fracture of sacral vertebra at site of neoplasm,Condition,SNOMED,Disorder,S,11311721000119107,2015-01-31,2099-12-31,NA
+45770876,Open fracture of third lumbar vertebra,Condition,SNOMED,Disorder,S,11311961000119104,2015-01-31,2099-12-31,NA
+45771437,Open fracture of posterior wall of acetabulum,Condition,SNOMED,Disorder,S,704484004,2015-01-31,2099-12-31,NA
+45772063,Multiple closed anterior-posterior compression fractures of pelvis with stable pelvic ring,Condition,SNOMED,Disorder,S,11306841000119101,2015-01-31,2099-12-31,NA
+45772064,Multiple open anterior-posterior compression fractures of pelvis with unstable pelvic ring,Condition,SNOMED,Disorder,S,11308801000119104,2015-01-31,2099-12-31,NA
+45772065,Closed fracture of first lumbar vertebra,Condition,SNOMED,Disorder,S,11310841000119101,2015-01-31,2099-12-31,NA
+45772067,Osteoporotic fracture of sacral vertebra,Condition,SNOMED,Disorder,S,11311641000119106,2015-01-31,2099-12-31,NA
+45772690,Stress fracture of pubic rami,Condition,SNOMED,Disorder,S,704060003,2015-01-31,2099-12-31,NA
+46270104,Fracture of pubic tubercle,Condition,SNOMED,Disorder,S,13960001000004106,2015-07-31,2099-12-31,NA
+46270349,Compression fracture of L2,Condition,SNOMED,Disorder,S,28490001000004108,2015-07-31,2099-12-31,NA
+46273403,Closed Malgaigne fracture,Condition,SNOMED,Disorder,S,8530001000004108,2015-07-31,2099-12-31,NA
+46273404,Open Malgaigne fracture,Condition,SNOMED,Disorder,S,8540001000004109,2015-07-31,2099-12-31,NA

@@ -1,0 +1,239 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+432594,Osteomalacia,Condition,SNOMED,Disorder,S,4598005,2002-01-31,2099-12-31,NA
+434614,Disorder of iron metabolism,Condition,SNOMED,Disorder,S,30913008,2002-01-31,2099-12-31,NA
+435510,Hypocalcemia,Condition,SNOMED,Disorder,S,5291005,2002-01-31,2099-12-31,NA
+435511,Hypercalcemia,Condition,SNOMED,Disorder,S,66931009,2002-01-31,2099-12-31,NA
+435788,Disorder of phosphorus metabolism,Condition,SNOMED,Disorder,S,87049008,2002-01-31,2099-12-31,NA
+436672,Disorder of copper metabolism,Condition,SNOMED,Disorder,S,79886009,2002-01-31,2099-12-31,NA
+437828,Disorder of calcium metabolism,Condition,SNOMED,Disorder,S,71638002,2002-01-31,2099-12-31,NA
+438719,Active rickets,Condition,SNOMED,Disorder,S,190640006,2002-01-31,2099-12-31,NA
+438721,Disorder of mineral metabolism,Condition,SNOMED,Disorder,S,45744005,2002-01-31,2099-12-31,NA
+438725,Disorder of magnesium metabolism,Condition,SNOMED,Disorder,S,60853003,2002-01-31,2099-12-31,NA
+438782,Idiopathic pulmonary hemosiderosis,Condition,SNOMED,Disorder,S,40527005,2002-01-31,2099-12-31,NA
+443208,Hungry bone syndrome,Condition,SNOMED,Disorder,S,237883001,2002-01-31,2099-12-31,NA
+606059,Neonatal iron overload,Condition,SNOMED,Disorder,S,1142071000,2021-07-31,2099-12-31,NA
+606976,Hypophosphatemia due to chronic kidney disease,Condition,SNOMED,Disorder,S,1148926002,2021-07-31,2099-12-31,NA
+606978,Hypocalcemia due to chronic kidney disease,Condition,SNOMED,Disorder,S,1148928001,2021-07-31,2099-12-31,NA
+606984,Hypercalcemia due to chronic kidney disease,Condition,SNOMED,Disorder,S,1148934008,2021-07-31,2099-12-31,NA
+606986,Hyperphosphatemia due to chronic kidney disease,Condition,SNOMED,Disorder,S,1148936005,2021-07-31,2099-12-31,NA
+607390,Adult osteomalacia due to liver disease,Condition,SNOMED,Disorder,S,1153361007,2021-07-31,2099-12-31,NA
+607391,Adult osteomalacia due to endocrine disease,Condition,SNOMED,Disorder,S,1153362000,2021-07-31,2099-12-31,NA
+761955,Iatrogenic hypocalcemia,Condition,SNOMED,Disorder,S,23490001000004109,2015-09-01,2099-12-31,NA
+1075392,SLC40A1-related hemochromatosis,Condition,SNOMED,Disorder,S,1303910000,2024-03-01,2099-12-31,NA
+1075393,Ferroportin disease,Condition,SNOMED,Disorder,S,1303911001,2024-03-01,2099-12-31,NA
+1075448,Familial primary hypomagnesemia with hypercalciuria and nephrocalcinosis,Condition,SNOMED,Disorder,S,1304111007,2024-03-01,2099-12-31,NA
+1245328,Digenic hemochromatosis,Condition,SNOMED,Disorder,S,1299153008,2024-02-01,2099-12-31,NA
+1340361,Exacerbation of hypercalcemia,Condition,OMOP Extension,Disorder,S,OMOP5166016,2022-05-06,2099-12-31,NA
+3655267,Hyperphosphatemic familial tumoral calcinosis,Condition,SNOMED,Disorder,S,860796007,2020-07-31,2099-12-31,NA
+4006252,Focal hemosiderosis,Condition,SNOMED,Disorder,S,10180006,2002-01-31,2099-12-31,NA
+4009174,Pseudohyperparathyroidism,Condition,SNOMED,Disorder,S,111408001,2002-01-31,2099-12-31,NA
+4028956,Secondary hypercalcemia,Condition,SNOMED,Disorder,S,237880003,2002-01-31,2099-12-31,NA
+4028958,Drug-induced hypocalcemia,Condition,SNOMED,Disorder,S,237884007,2002-01-31,2099-12-31,NA
+4028959,Hypophosphatemic rickets with nephrotic-glycosuric dwarfism,Condition,SNOMED,Disorder,S,237888005,2002-01-31,2099-12-31,NA
+4029093,Acquired hypophosphatemia,Condition,SNOMED,Disorder,S,237902005,2002-01-31,2099-12-31,NA
+4029094,Renal failure-associated hyperphosphatemia,Condition,SNOMED,Disorder,S,237904006,2002-01-31,2099-12-31,NA
+4029095,Iatrogenic hyperphosphatemia,Condition,SNOMED,Disorder,S,237905007,2002-01-31,2099-12-31,NA
+4029602,"Disorder of phosphate, calcium and vitamin D metabolism",Condition,SNOMED,Disorder,S,237879001,2002-01-31,2099-12-31,NA
+4029603,Familial hypocalciuric hypercalcemia,Condition,SNOMED,Disorder,S,237885008,2002-01-31,2099-12-31,NA
+4029604,Vitamin D-dependent rickets type II with alopecia,Condition,SNOMED,Disorder,S,237894002,2002-01-31,2099-12-31,NA
+4030184,Pseudohypoparathyroidism and pseudopseudohypoparathyroidism,Condition,SNOMED,Disorder,S,237658004,2002-01-31,2099-12-31,NA
+4030185,Pseudopseudohypoparathyroidism,Condition,SNOMED,Disorder,S,237659007,2002-01-31,2099-12-31,NA
+4030363,Autosomal dominant hypophosphatemic rickets,Condition,SNOMED,Disorder,S,237889002,2002-01-31,2099-12-31,NA
+4033463,Enamel-renal syndrome,Condition,SNOMED,Disorder,S,109477002,2002-01-31,2099-12-31,NA
+4035146,Familial idiopathic hypercalciuria,Condition,SNOMED,Disorder,S,237886009,2002-01-31,2099-12-31,NA
+4035147,Autosomal dominant hypophosphatemic bone disease,Condition,SNOMED,Disorder,S,237890006,2002-01-31,2099-12-31,NA
+4035149,Autosomal recessive hypophosphatemic bone disease,Condition,SNOMED,Disorder,S,237891005,2002-01-31,2099-12-31,NA
+4035150,Vitamin D-dependent rickets type II without alopecia,Condition,SNOMED,Disorder,S,237895001,2002-01-31,2099-12-31,NA
+4035262,Nutritional hypophosphatemia,Condition,SNOMED,Disorder,S,237903000,2002-01-31,2099-12-31,NA
+4037501,Parathyroid hypocalcemic tetany,Condition,SNOMED,Disorder,S,16195001,2002-01-31,2099-12-31,NA
+4042399,Disorder of selenium metabolism,Condition,SNOMED,Disorder,S,16754006,2002-01-31,2099-12-31,NA
+4047528,Hypercupruria,Condition,SNOMED,Disorder,S,123808002,2002-01-31,2099-12-31,NA
+4047636,Zinc excess,Condition,SNOMED,Disorder,S,123812008,2002-01-31,2099-12-31,NA
+4047637,Disorder of strontium metabolism,Condition,SNOMED,Disorder,S,123813003,2002-01-31,2099-12-31,NA
+4048217,Strontium deficiency,Condition,SNOMED,Disorder,S,123814009,2002-01-31,2099-12-31,NA
+4048687,Disorder of sulfur metabolism,Condition,SNOMED,Disorder,S,123809005,2002-01-31,2099-12-31,NA
+4048688,Strontium excess,Condition,SNOMED,Disorder,S,123815005,2002-01-31,2099-12-31,NA
+4048689,Strontiuresis,Condition,SNOMED,Disorder,S,123816006,2002-01-31,2099-12-31,NA
+4048869,Disorder of trace mineral metabolism,Condition,SNOMED,Disorder,S,15616006,2002-01-31,2099-12-31,NA
+4049369,Adult hypophosphatasia,Condition,SNOMED,Disorder,S,20756002,2002-01-31,2099-12-31,NA
+4049384,Familial hypoceruloplasminemia,Condition,SNOMED,Disorder,S,23272008,2002-01-31,2099-12-31,NA
+4051059,Sulfatemia,Condition,SNOMED,Disorder,S,123810000,2002-01-31,2099-12-31,NA
+4051060,Sulfatiduria,Condition,SNOMED,Disorder,S,123811001,2002-01-31,2099-12-31,NA
+4054811,Disorder with defective osteoid mineralization,Condition,SNOMED,Disorder,S,126533001,2002-01-31,2099-12-31,NA
+4063132,Dietary deficiency of selenium AND vitamin E,Condition,SNOMED,Disorder,S,21535005,2002-01-31,2099-12-31,NA
+4065502,Hyperphosphatemia,Condition,SNOMED,Disorder,S,20165001,2002-01-31,2099-12-31,NA
+4079971,Infantile hypercalcemia,Condition,SNOMED,Disorder,S,276645004,2002-01-31,2099-12-31,NA
+4080767,Hypercalcemia due to immobilization,Condition,SNOMED,Disorder,S,24052000,2002-01-31,2099-12-31,NA
+4080887,Neonatal rickets,Condition,SNOMED,Disorder,S,276702002,2002-01-31,2099-12-31,NA
+4082315,Severe idiopathic hypercalcemia of infancy,Condition,SNOMED,Disorder,S,277481003,2002-01-31,2099-12-31,NA
+4096349,"Hemosiderosis, acquired",Condition,SNOMED,Disorder,S,190847006,2002-01-31,2099-12-31,NA
+4096352,Hypophosphatasia,Condition,SNOMED,Disorder,S,190859005,2002-01-31,2099-12-31,NA
+4096908,Hypercalcemia caused by a drug,Condition,SNOMED,Disorder,S,2638001,2002-01-31,2099-12-31,NA
+4098463,Senile osteomalacia,Condition,SNOMED,Disorder,S,190644002,2002-01-31,2099-12-31,NA
+4098464,Adult osteomalacia due to malnutrition,Condition,SNOMED,Disorder,S,190646000,2002-01-31,2099-12-31,NA
+4098598,Westphal-Strumpell syndrome,Condition,SNOMED,Disorder,S,190823004,2002-01-31,2099-12-31,NA
+4098605,Idiopathic hypercalcemia,Condition,SNOMED,Disorder,S,190866006,2002-01-31,2099-12-31,NA
+4100823,Puerperal osteomalacia,Condition,SNOMED,Disorder,S,190643008,2002-01-31,2099-12-31,NA
+4100824,Adult osteomalacia due to malabsorption,Condition,SNOMED,Disorder,S,190645001,2002-01-31,2099-12-31,NA
+4100845,Hypocalcemic tetany,Condition,SNOMED,Disorder,S,190869004,2002-01-31,2099-12-31,NA
+4101427,"Hemosiderosis, primary",Condition,SNOMED,Disorder,S,190846002,2002-01-31,2099-12-31,NA
+4101429,Hypophosphatasia rickets,Condition,SNOMED,Disorder,S,190860000,2002-01-31,2099-12-31,NA
+4111326,Osteopetrosis with renal tubular acidosis,Condition,SNOMED,Disorder,S,254122007,2002-01-31,2099-12-31,NA
+4117673,"Iron, copper, magnesium metabolism disorder",Condition,SNOMED,Disorder,S,286923006,2002-01-31,2099-12-31,NA
+4117674,Phosphorus and calcium disorders,Condition,SNOMED,Disorder,S,286924000,2002-01-31,2099-12-31,NA
+4126429,Microscopic nephrocalcinosis,Condition,SNOMED,Disorder,S,236444003,2002-01-31,2099-12-31,NA
+4126430,Cortical nephrocalcinosis,Condition,SNOMED,Disorder,S,236446001,2002-01-31,2099-12-31,NA
+4126447,Aluminum-related osteomalacia,Condition,SNOMED,Disorder,S,236548002,2002-01-31,2099-12-31,NA
+4128204,Macroscopic nephrocalcinosis,Condition,SNOMED,Disorder,S,236445002,2002-01-31,2099-12-31,NA
+4128205,Medullary nephrocalcinosis,Condition,SNOMED,Disorder,S,236447005,2002-01-31,2099-12-31,NA
+4141891,Hyperphosphatasemia with intellectual disability,Condition,SNOMED,Disorder,S,33982008,2002-01-31,2099-12-31,NA
+4145738,Idiopathic hypercalcemia of infancy,Condition,SNOMED,Disorder,S,34225008,2002-01-31,2099-12-31,NA
+4147046,Childhood hypophosphatasia,Condition,SNOMED,Disorder,S,30174008,2002-01-31,2099-12-31,NA
+4148051,Disorder of cobalt metabolism,Condition,SNOMED,Disorder,S,35019008,2002-01-31,2099-12-31,NA
+4148231,Hereditary hemochromatosis,Condition,SNOMED,Disorder,S,35400008,2002-01-31,2099-12-31,NA
+4149824,Biochemical rickets,Condition,SNOMED,Disorder,S,278932006,2002-01-31,2099-12-31,NA
+4150930,Neonatal hypocalcemia,Condition,SNOMED,Disorder,S,268846006,2002-01-31,2099-12-31,NA
+4162444,Oxalosis,Condition,SNOMED,Disorder,S,373607009,2002-07-31,2099-12-31,NA
+4163735,Hemochromatosis,Condition,SNOMED,Disorder,S,399187006,2003-07-31,2099-12-31,NA
+4163982,Subacute milk alkali syndrome,Condition,SNOMED,Disorder,S,45646000,2002-01-31,2099-12-31,NA
+4165845,Anticonvulsant drug-induced osteomalacia,Condition,SNOMED,Disorder,S,47774001,2002-01-31,2099-12-31,NA
+4166232,Humoral hypercalcemia of malignancy,Condition,SNOMED,Disorder,S,47709007,2002-01-31,2099-12-31,NA
+4170117,Celiac rickets,Condition,SNOMED,Disorder,S,275404008,2002-01-31,2099-12-31,NA
+4171210,Pseudohypoparathyroidism type II,Condition,SNOMED,Disorder,S,42183005,2002-01-31,2099-12-31,NA
+4171352,Disorder of chromium metabolism,Condition,SNOMED,Disorder,S,49379003,2002-01-31,2099-12-31,NA
+4171974,Nephrocalcinosis,Condition,SNOMED,Disorder,S,48638002,2002-01-31,2099-12-31,NA
+4173329,Idiopathic hyperphosphatasemia,Condition,SNOMED,Disorder,S,276634002,2002-01-31,2099-12-31,NA
+4174298,Idiopathic infantile hypercalcemia - mild form,Condition,SNOMED,Disorder,S,276646003,2002-01-31,2099-12-31,NA
+4177973,Hypophosphatemia,Condition,SNOMED,Disorder,S,4996001,2002-01-31,2099-12-31,NA
+4178116,Familial hypomagnesemia-hypercalciuria,Condition,SNOMED,Disorder,S,50029007,2002-01-31,2099-12-31,NA
+4179930,Juvenile hemochromatosis,Condition,SNOMED,Disorder,S,50855007,2002-01-31,2099-12-31,NA
+4183446,Milk alkali syndrome,Condition,SNOMED,Disorder,S,43258006,2002-01-31,2099-12-31,NA
+4188338,Osteomalacia of pelvis,Condition,SNOMED,Disorder,S,46885003,2002-01-31,2099-12-31,NA
+4188903,Tumor-induced osteomalacia,Condition,SNOMED,Disorder,S,392559009,2003-01-31,2099-12-31,NA
+4189359,Neonatal hemochromatosis,Condition,SNOMED,Disorder,S,6160004,2002-01-31,2099-12-31,NA
+4189941,Rickets,Condition,SNOMED,Disorder,S,41345002,2002-01-31,2099-12-31,NA
+4192251,Cobalt deficiency disease,Condition,SNOMED,Disorder,S,74991009,2002-01-31,2099-12-31,NA
+4202831,Hypercalcemia due to granulomatous disease,Condition,SNOMED,Disorder,S,52760008,2002-01-31,2099-12-31,NA
+4204978,Secondary hemochromatosis,Condition,SNOMED,Disorder,S,53836006,2002-01-31,2099-12-31,NA
+4208415,Infantile hypophosphatasia,Condition,SNOMED,Disorder,S,55236002,2002-01-31,2099-12-31,NA
+4208561,Calcipenic type rickets,Condition,SNOMED,Disorder,S,56233004,2002-01-31,2099-12-31,NA
+4209017,Pseudohypophosphatasia,Condition,SNOMED,Disorder,S,56811006,2002-01-31,2099-12-31,NA
+4210312,Pseudohypoparathyroidism type I B,Condition,SNOMED,Disorder,S,56090007,2002-01-31,2099-12-31,NA
+4212254,Acid phosphatase deficiency,Condition,SNOMED,Disorder,S,57863006,2002-01-31,2099-12-31,NA
+4215809,Hypercalciuria,Condition,SNOMED,Disorder,S,71938000,2002-01-31,2099-12-31,NA
+4218738,Lactation tetany,Condition,SNOMED,Disorder,S,81677009,2002-01-31,2099-12-31,NA
+4219584,Secondary hemosiderosis,Condition,SNOMED,Disorder,S,39784009,2002-01-31,2099-12-31,NA
+4220813,Idiopathic hemochromatosis,Condition,SNOMED,Disorder,S,399053004,2003-07-31,2099-12-31,NA
+4220821,Bronze diabetes,Condition,SNOMED,Disorder,S,399144008,2003-07-31,2099-12-31,NA
+4220933,Primary hemochromatosis,Condition,SNOMED,Disorder,S,399170009,2003-07-31,2099-12-31,NA
+4225143,Latent hemochromatosis,Condition,SNOMED,Disorder,S,343570008,2002-01-31,2099-12-31,NA
+4226262,Hypocalcemia of late pregnancy and/or lactation,Condition,SNOMED,Disorder,S,405733001,2004-01-31,2099-12-31,NA
+4226612,Precirrhotic hemochromatosis,Condition,SNOMED,Disorder,S,344587002,2002-01-31,2099-12-31,NA
+4227897,Hypercalcemia associated with chronic dialysis,Condition,SNOMED,Disorder,S,88351001,2002-01-31,2099-12-31,NA
+4228827,Acute milk alkali syndrome,Condition,SNOMED,Disorder,S,88380005,2002-01-31,2099-12-31,NA
+4229262,Wilson's disease,Condition,SNOMED,Disorder,S,88518009,2002-01-31,2099-12-31,NA
+4234996,Autosomal recessive hypophosphatemic vitamin D refractory rickets,Condition,SNOMED,Disorder,S,90505000,2002-01-31,2099-12-31,NA
+4237454,Nutritional disorder due to calcium-phosphorus imbalance,Condition,SNOMED,Disorder,S,58136006,2002-01-31,2099-12-31,NA
+4239568,Hypophosphaturia,Condition,SNOMED,Disorder,S,91632005,2002-01-31,2099-12-31,NA
+4239626,Pseudohypoparathyroidism type I A,Condition,SNOMED,Disorder,S,58833000,2002-01-31,2099-12-31,NA
+4239692,Transfusion hemosiderosis,Condition,SNOMED,Disorder,S,69281008,2002-01-31,2099-12-31,NA
+4239780,Pseudohypoparathyroidism,Condition,SNOMED,Disorder,S,58976002,2002-01-31,2099-12-31,NA
+4239804,Chronic milk alkali syndrome,Condition,SNOMED,Disorder,S,57557005,2002-01-31,2099-12-31,NA
+4241225,"Cutis laxa, x-linked",Condition,SNOMED,Disorder,S,59399004,2002-01-31,2099-12-31,NA
+4241728,Menkes kinky-hair syndrome,Condition,SNOMED,Disorder,S,59178007,2002-01-31,2099-12-31,NA
+4241978,Tryptophan malabsorption syndrome,Condition,SNOMED,Disorder,S,59531002,2002-01-31,2099-12-31,NA
+4246084,Iron overload,Condition,SNOMED,Disorder,S,60737008,2002-01-31,2099-12-31,NA
+4246582,Phosphate-loading hypocalcemia,Condition,SNOMED,Disorder,S,60334003,2002-01-31,2099-12-31,NA
+4248149,"Vitamin D-dependent rickets, type 2",Condition,SNOMED,Disorder,S,72831007,2002-01-31,2099-12-31,NA
+4248717,Shunt hemosiderosis,Condition,SNOMED,Disorder,S,72825009,2002-01-31,2099-12-31,NA
+4250482,Chronic zinc deficiency,Condition,SNOMED,Disorder,S,73281004,2002-01-31,2099-12-31,NA
+4250919,Nutritional muscular degeneration,Condition,SNOMED,Disorder,S,74116004,2002-01-31,2099-12-31,NA
+4263312,Disorder of zinc metabolism,Condition,SNOMED,Disorder,S,46727001,2002-01-31,2099-12-31,NA
+4263630,Hypercalcemia caused by lithium,Condition,SNOMED,Disorder,S,361129004,2002-01-31,2099-12-31,NA
+4264027,Keshan disease,Condition,SNOMED,Disorder,S,46939000,2002-01-31,2099-12-31,NA
+4264174,Tumoral calcinosis,Condition,SNOMED,Disorder,S,61778004,2002-01-31,2099-12-31,NA
+4267556,Hypocalcemia of puerperium,Condition,SNOMED,Disorder,S,400170001,2003-07-31,2099-12-31,NA
+4268006,Indian childhood cirrhosis,Condition,SNOMED,Disorder,S,6183001,2002-01-31,2099-12-31,NA
+4268615,Cow's milk hypocalcemia of newborn,Condition,SNOMED,Disorder,S,63275006,2002-01-31,2099-12-31,NA
+4270083,Disorder of manganese metabolism,Condition,SNOMED,Disorder,S,63656007,2002-01-31,2099-12-31,NA
+4280351,African nutritional hemochromatosis,Condition,SNOMED,Disorder,S,66576001,2002-01-31,2099-12-31,NA
+4282303,Phosphopenic type rickets,Condition,SNOMED,Disorder,S,66266003,2002-01-31,2099-12-31,NA
+4282453,"Vitamin D-dependent rickets, type 1",Condition,SNOMED,Disorder,S,67049004,2002-01-31,2099-12-31,NA
+4284533,Vitamin D-dependent rickets,Condition,SNOMED,Disorder,S,68295002,2002-01-31,2099-12-31,NA
+4289759,Late effects of rickets (one year OR more),Condition,SNOMED,Disorder,S,70079009,2002-01-31,2099-12-31,NA
+4292404,Hereditary acrodermatitis enteropathica,Condition,SNOMED,Disorder,S,37702000,2002-01-31,2099-12-31,NA
+4299093,Erythropoietic hemochromatosis,Condition,SNOMED,Disorder,S,7772007,2002-01-31,2099-12-31,NA
+4305482,Familial x-linked hypophosphatemic vitamin D refractory rickets,Condition,SNOMED,Disorder,S,82236004,2002-01-31,2099-12-31,NA
+4305596,Hemosiderosis,Condition,SNOMED,Disorder,S,39011001,2002-01-31,2099-12-31,NA
+4308602,Hepatic hemosiderosis,Condition,SNOMED,Disorder,S,83761007,2002-01-31,2099-12-31,NA
+4308893,Renal hemosiderosis,Condition,SNOMED,Disorder,S,83563007,2002-01-31,2099-12-31,NA
+4311553,Renal phosphaturia,Condition,SNOMED,Disorder,S,85487008,2002-01-31,2099-12-31,NA
+4313441,Hypocalciuria,Condition,SNOMED,Disorder,S,86353007,2002-01-31,2099-12-31,NA
+4319896,Hyperphosphatasemia with bone disease,Condition,SNOMED,Disorder,S,9723006,2002-01-31,2099-12-31,NA
+4323853,Hypercalcemia due to sarcoidosis,Condition,SNOMED,Disorder,S,7085002,2002-01-31,2099-12-31,NA
+4329462,Hypercalcemia due to hyperthyroidism,Condition,SNOMED,Disorder,S,2243000,2002-01-31,2099-12-31,NA
+4330853,Hyperphosphaturia,Condition,SNOMED,Disorder,S,22450000,2002-01-31,2099-12-31,NA
+4344379,Osteomalacia secondary to drug,Condition,SNOMED,Disorder,S,240165007,2002-01-31,2099-12-31,NA
+4344380,Osteomalacia secondary to pregnancy,Condition,SNOMED,Disorder,S,240167004,2002-01-31,2099-12-31,NA
+4345686,Late neonatal hypocalcemia,Condition,SNOMED,Disorder,S,240307008,2002-01-31,2099-12-31,NA
+35608648,Familial benign copper deficiency,Condition,SNOMED,Disorder,S,763531001,2018-07-31,2099-12-31,NA
+35625533,Hypermanganesemia with dystonia,Condition,SNOMED,Disorder,S,768553002,2018-07-31,2099-12-31,NA
+35625534,Hypermanganesemia with dystonia 2,Condition,SNOMED,Disorder,S,768554008,2018-07-31,2099-12-31,NA
+36675063,Hyperzincemia and hypercalprotectinemia,Condition,SNOMED,Disorder,S,771339005,2019-01-31,2099-12-31,NA
+36675119,Autosomal recessive infantile hypercalcemia,Condition,SNOMED,Disorder,S,771445001,2019-01-31,2099-12-31,NA
+36676856,Ferro-cerebro-cutaneous syndrome,Condition,SNOMED,Disorder,S,774151000,2019-01-31,2099-12-31,NA
+36713453,Familial hypomagnesemia hypercalciuria nephrocalcinosis with severe ocular involvement,Condition,SNOMED,Disorder,S,717787005,2017-01-31,2099-12-31,NA
+36713457,Bartter syndrome type 4a,Condition,SNOMED,Disorder,S,717791000,2017-01-31,2099-12-31,NA
+36713458,Pseudohypoparathyroidism type 1C,Condition,SNOMED,Disorder,S,717792007,2017-01-31,2099-12-31,NA
+36713559,Osteomalacia due to vitamin D deficiency,Condition,SNOMED,Disorder,S,717934004,2017-01-31,2099-12-31,NA
+36714657,Hemochromatosis type 3,Condition,SNOMED,Disorder,S,719974003,2017-01-31,2099-12-31,NA
+36716108,"Lipodystrophy, intellectual disability, deafness syndrome",Condition,SNOMED,Disorder,S,721973006,2017-01-31,2099-12-31,NA
+36716771,Hypocalcemic rickets,Condition,SNOMED,Disorder,S,722947004,2017-01-31,2099-12-31,NA
+36717770,Hemochromatosis type 4,Condition,SNOMED,Disorder,S,719975002,2017-01-31,2099-12-31,NA
+37016193,Hemochromatosis following repeated red blood cell transfusion,Condition,SNOMED,Disorder,S,143101000119101,2016-01-31,2099-12-31,NA
+37110338,Myopathy co-occurrent and due to hypercalcemia,Condition,SNOMED,Disorder,S,724559006,2017-07-31,2099-12-31,NA
+37110503,Chorea co-occurrent and due to Wilson disease,Condition,SNOMED,Disorder,S,724766009,2017-07-31,2099-12-31,NA
+37110712,Familial primary hypomagnesemia with hypercalciuria and nephrocalcinosis without severe ocular involvement,Condition,SNOMED,Disorder,S,725033008,2017-07-31,2099-12-31,NA
+37110873,Autosomal dominant primary hypomagnesemia with hypocalciuria,Condition,SNOMED,Disorder,S,725393000,2017-07-31,2099-12-31,NA
+37111357,Hereditary hypophosphatemic rickets with hypercalciuria,Condition,SNOMED,Disorder,S,726081005,2017-07-31,2099-12-31,NA
+37115772,Coenzyme A synthase protein associated neurodegeneration,Condition,SNOMED,Disorder,S,732264002,2017-07-31,2099-12-31,NA
+37116295,Beta-propeller protein-associated neurodegeneration,Condition,SNOMED,Disorder,S,732959007,2017-07-31,2099-12-31,NA
+37160607,Familial normophosphatemic tumoral calcinosis,Condition,SNOMED,Disorder,S,1162852008,2021-09-30,2099-12-31,NA
+37162144,Type 2B juvenile hereditary hemochromatosis,Condition,SNOMED,Disorder,S,1186844002,2021-11-30,2099-12-31,NA
+37162147,Hemochromatosis type 1,Condition,SNOMED,Disorder,S,1186847009,2021-11-30,2099-12-31,NA
+37162149,Type 2A juvenile hereditary hemochromatosis,Condition,SNOMED,Disorder,S,1186849007,2021-11-30,2099-12-31,NA
+37162232,"Psychomotor regression, oculomotor apraxia, movement disorder, nephropathy syndrome",Condition,SNOMED,Disorder,S,1187043002,2021-11-30,2099-12-31,NA
+37162406,Autosomal recessive axonal Charcot-Marie-Tooth disease due to copper metabolism defect,Condition,SNOMED,Disorder,S,1187619001,2022-01-31,2099-12-31,NA
+37164407,FTH1-related iron overload,Condition,SNOMED,Disorder,S,1230310007,2022-06-30,2099-12-31,NA
+37164967,Symptomatic form of hemochromatosis type 1,Condition,SNOMED,Disorder,S,1237181009,2022-08-31,2099-12-31,NA
+37165012,Hypercalcemia caused by thiazide and/or retinol,Condition,SNOMED,Disorder,S,1237272007,2022-08-31,2099-12-31,NA
+37167984,"Atypical Fanconi syndrome, neonatal hyperinsulinism syndrome",Condition,SNOMED,Disorder,S,1269271003,2023-04-30,2099-12-31,NA
+37204736,Dominant hypophosphatemia with nephrolithiasis and/or osteoporosis,Condition,SNOMED,Disorder,S,783620009,2019-07-31,2099-12-31,NA
+37396781,Secondary pulmonary hemosiderosis,Condition,SNOMED,Disorder,S,716712004,2016-07-31,2099-12-31,NA
+42536548,Renal hypocalciuria,Condition,SNOMED,Disorder,S,735475005,2018-01-31,2099-12-31,NA
+42572594,Inverted serum calcium to serum phosphorus ratio,Condition,SNOMED Veterinary,Clinical Finding,S,33461000009106,2008-08-29,2099-12-31,NA
+42572601,Toxic liver dystrophy of swine,Condition,SNOMED Veterinary,Clinical Finding,S,334911000009102,2014-01-31,2099-12-31,NA
+42572611,Transport tetany of ruminants,Condition,SNOMED Veterinary,Clinical Finding,S,335111000009101,2014-01-31,2099-12-31,NA
+42573153,Railroad sickness,Condition,SNOMED Veterinary,Clinical Finding,S,354651000009107,2014-01-31,2099-12-31,NA
+42575779,Primary copper-associated hepatitis,Condition,SNOMED Veterinary,Clinical Finding,S,280581000009105,2009-10-22,2099-12-31,NA
+42597039,Cardiomyopathy secondary to deficiency of selenium and/or vitamin E,Condition,SNOMED Veterinary,Clinical Finding,S,318351000009102,2010-11-15,2099-12-31,NA
+42598817,Nutritional myelopathy of pigs,Condition,SNOMED Veterinary,Clinical Finding,S,340261000009100,2014-01-31,2099-12-31,NA
+42599184,Swayback of sheep,Condition,SNOMED Veterinary,Clinical Finding,S,348041000009109,2014-01-31,2099-12-31,NA
+42599624,Mulberry heart disease,Condition,SNOMED Veterinary,Clinical Finding,S,357661000009101,2016-02-24,2099-12-31,NA
+42600086,Splenic hemosiderin increased,Condition,SNOMED Veterinary,Clinical Finding,S,41241000009106,2008-08-29,2099-12-31,NA
+44783203,Hypercalcemia due to hypervitaminosis D,Condition,SNOMED,Disorder,S,699260009,2014-01-31,2099-12-31,NA
+44783240,Neuroferritinopathy,Condition,SNOMED,Disorder,S,699299001,2014-01-31,2099-12-31,NA
+44784563,Hypercalcemia due to tuberculosis,Condition,SNOMED,Disorder,S,698729002,2014-01-31,2099-12-31,NA
+45757436,Hypocalciuric hypercalcemia,Condition,SNOMED,Disorder,S,13901000119100,2015-01-31,2099-12-31,NA
+45763661,Bartter syndrome antenatal type 1,Condition,SNOMED,Disorder,S,700107006,2014-07-31,2099-12-31,NA
+45763663,Bartter syndrome antenatal type 2,Condition,SNOMED,Disorder,S,700109009,2014-07-31,2099-12-31,NA
+45763665,Bartter syndrome type 3,Condition,SNOMED,Disorder,S,700111000,2014-07-31,2099-12-31,NA
+45763666,Bartter syndrome type 4,Condition,SNOMED,Disorder,S,700112007,2014-07-31,2099-12-31,NA
+45765440,"Hypermanganesemia with dystonia, polycythemia, and cirrhosis",Condition,SNOMED,Disorder,S,702377007,2014-07-31,2099-12-31,NA
+45769152,Bartter syndrome,Condition,SNOMED,Disorder,S,707742001,2015-01-31,2099-12-31,NA
+45769163,Gitelman syndrome,Condition,SNOMED,Disorder,S,707756004,2015-01-31,2099-12-31,NA
+45771020,Milk-induced pulmonary disease in infant,Condition,SNOMED,Disorder,S,707441009,2015-01-31,2099-12-31,NA
+45772702,Acquired hypocalciuric hypercalcemia,Condition,SNOMED,Disorder,S,704166007,2015-01-31,2099-12-31,NA
+46270714,Odontohypophosphatasia,Condition,SNOMED,Disorder,S,708672004,2015-07-31,2099-12-31,NA
+46272735,Hypomagnesemia with secondary hypocalcemia,Condition,SNOMED,Disorder,S,711151004,2015-07-31,2099-12-31,NA
+46272736,Autosomal dominant hypocalcemia,Condition,SNOMED,Disorder,S,711152006,2015-07-31,2099-12-31,NA

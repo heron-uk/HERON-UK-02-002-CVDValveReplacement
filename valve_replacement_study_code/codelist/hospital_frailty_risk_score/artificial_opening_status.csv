@@ -1,0 +1,24 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+1340204,History of event,Observation,OMOP Extension,Context-dependent,S,OMOP5165859,2022-05-06,2099-12-31,NA
+1340205,History of event longer than 1 month ago,Observation,OMOP Extension,Context-dependent,S,OMOP5165860,2022-05-06,2099-12-31,NA
+1340206,History of event longer than 1 week ago,Observation,OMOP Extension,Context-dependent,S,OMOP5165861,2022-05-06,2099-12-31,NA
+1340207,History of event longer than 1 year ago,Observation,OMOP Extension,Context-dependent,S,OMOP5165862,2022-05-06,2099-12-31,NA
+1340208,History of event longer than 10 years ago,Observation,OMOP Extension,Context-dependent,S,OMOP5165863,2022-05-06,2099-12-31,NA
+1340209,History of event longer than 2 months ago,Observation,OMOP Extension,Context-dependent,S,OMOP5165864,2022-05-06,2099-12-31,NA
+1340210,History of event longer than 2 weeks ago,Observation,OMOP Extension,Context-dependent,S,OMOP5165865,2022-05-06,2099-12-31,NA
+1340211,History of event longer than 3 months ago,Observation,OMOP Extension,Context-dependent,S,OMOP5165866,2022-05-06,2099-12-31,NA
+1340212,History of event longer than 3 weeks ago,Observation,OMOP Extension,Context-dependent,S,OMOP5165867,2022-05-06,2099-12-31,NA
+1340213,History of event longer than 3 years ago,Observation,OMOP Extension,Context-dependent,S,OMOP5165868,2022-05-06,2099-12-31,NA
+1340214,History of event longer than 5 years ago,Observation,OMOP Extension,Context-dependent,S,OMOP5165869,2022-05-06,2099-12-31,NA
+1340215,History of event longer than 6 months ago,Observation,OMOP Extension,Context-dependent,S,OMOP5165870,2022-05-06,2099-12-31,NA
+1340216,History of event within 1 month,Observation,OMOP Extension,Context-dependent,S,OMOP5165871,2022-05-06,2099-12-31,NA
+1340217,History of event within 1 week,Observation,OMOP Extension,Context-dependent,S,OMOP5165872,2022-05-06,2099-12-31,NA
+1340218,History of event within 1 year,Observation,OMOP Extension,Context-dependent,S,OMOP5165873,2022-05-06,2099-12-31,NA
+1340219,History of event within 10 years,Observation,OMOP Extension,Context-dependent,S,OMOP5165874,2022-05-06,2099-12-31,NA
+1340220,History of event within 2 months,Observation,OMOP Extension,Context-dependent,S,OMOP5165875,2022-05-06,2099-12-31,NA
+1340221,History of event within 2 weeks,Observation,OMOP Extension,Context-dependent,S,OMOP5165876,2022-05-06,2099-12-31,NA
+1340222,History of event within 3 months,Observation,OMOP Extension,Context-dependent,S,OMOP5165877,2022-05-06,2099-12-31,NA
+1340223,History of event within 3 weeks,Observation,OMOP Extension,Context-dependent,S,OMOP5165878,2022-05-06,2099-12-31,NA
+1340224,History of event within 3 years,Observation,OMOP Extension,Context-dependent,S,OMOP5165879,2022-05-06,2099-12-31,NA
+1340225,History of event within 5 years,Observation,OMOP Extension,Context-dependent,S,OMOP5165880,2022-05-06,2099-12-31,NA
+1340226,History of event within 6 months,Observation,OMOP Extension,Context-dependent,S,OMOP5165881,2022-05-06,2099-12-31,NA
