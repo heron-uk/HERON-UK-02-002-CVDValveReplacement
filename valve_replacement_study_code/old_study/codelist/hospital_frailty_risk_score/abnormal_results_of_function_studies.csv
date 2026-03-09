@@ -1,0 +1,761 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+137989,Abnormal results of cardiovascular function studies,Condition,SNOMED,Clinical Finding,S,274525000,2002-01-31,2099-12-31,NA
+320536,Electrocardiogram abnormal,Condition,SNOMED,Clinical Finding,S,102594003,2002-01-31,2099-12-31,NA
+373875,Abnormal nerve conduction,Condition,SNOMED,Clinical Finding,S,24480009,2002-01-31,2099-12-31,NA
+376525,Audiogram abnormal,Condition,SNOMED,Clinical Finding,S,275729001,2002-01-31,2099-12-31,NA
+432447,Atypical glandular cells on cervical Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,441219009,2009-01-31,2099-12-31,NA
+432451,Abnormal results function studies of central nervous system,Condition,SNOMED,Clinical Finding,S,274520005,2002-01-31,2099-12-31,NA
+433033,Abnormal cervical Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,439888000,2009-01-31,2099-12-31,NA
+433880,Amniotic fluid examination abnormal,Condition,SNOMED,Clinical Finding,S,410037001,2004-07-31,2099-12-31,NA
+434165,Abnormal cervical smear,Condition,SNOMED,Clinical Finding,S,309081009,2002-01-31,2099-12-31,NA
+434169,Abnormal findings on diagnostic imaging of breast,Condition,SNOMED,Clinical Finding,S,274530001,2002-01-31,2099-12-31,NA
+434170,Atypical squamous cells of undetermined significance on cervical Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,441087007,2009-01-31,2099-12-31,NA
+434486,Abnormal results function studies peripheral nervous system special senses,Condition,SNOMED,Clinical Finding,S,274519004,2002-01-31,2099-12-31,NA
+434492,Abnormal histology findings,Condition,SNOMED,Clinical Finding,S,309198006,2002-01-31,2099-12-31,NA
+435081,Abnormal findings diagnostic imaging heart+coronary circulat,Condition,SNOMED,Clinical Finding,S,274531002,2002-01-31,2099-12-31,NA
+435086,Echoencephalogram abnormal,Condition,SNOMED,Clinical Finding,S,274538008,2002-01-31,2099-12-31,NA
+435651,Atypical squamous cells on cervical Papanicolaou smear cannot exclude high grade squamous intraepithelial lesion,Condition,SNOMED,Clinical Finding,S,441088002,2009-01-31,2099-12-31,NA
+435658,Atypical squamous cells on vaginal Papanicolaou smear cannot exclude high grade squamous intraepithelial lesion,Condition,SNOMED,Clinical Finding,S,441115009,2009-01-31,2099-12-31,NA
+436231,Abnormal findings diagnostic imaging of liver+biliary tract,Condition,SNOMED,Clinical Finding,S,274527008,2002-01-31,2099-12-31,NA
+436245,Atypical glandular cells on vaginal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,441072002,2009-01-31,2099-12-31,NA
+436816,Vaginal vault smear abnormal,Condition,SNOMED,Clinical Finding,S,168472007,2002-01-31,2099-12-31,NA
+437677,Abnormal findings on diagnostic imaging of lung,Condition,SNOMED,Clinical Finding,S,274533004,2002-01-31,2099-12-31,NA
+437688,Abnormal finding on antenatal screening of mother,Condition,SNOMED,Clinical Finding,S,199732004,2002-01-31,2099-12-31,NA
+438559,Abnormal vaginal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,439856008,2009-01-31,2099-12-31,NA
+439154,Abnormal findings on diagnostic imaging of skull and head,Condition,SNOMED,Clinical Finding,S,274535006,2002-01-31,2099-12-31,NA
+439651,Cell chromosome examination abnormal,Condition,SNOMED,Clinical Finding,S,168448002,2002-01-31,2099-12-31,NA
+440529,Abnormal findings on diagnostic imaging of urinary organs,Condition,SNOMED,Clinical Finding,S,274536007,2002-01-31,2099-12-31,NA
+441415,Electromyogram abnormal,Condition,SNOMED,Clinical Finding,S,274523007,2002-01-31,2099-12-31,NA
+441691,Atypical squamous cells of undetermined significance on vaginal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,441099000,2009-01-31,2099-12-31,NA
+441969,Radiology result abnormal,Condition,SNOMED,Clinical Finding,S,168501001,2002-01-31,2099-12-31,NA
+443411,Abnormal cytology findings,Condition,SNOMED,Clinical Finding,S,309196005,2002-01-31,2099-12-31,NA
+443698,Abnormal anal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,439855007,2009-01-31,2099-12-31,NA
+443709,Atypical squamous cells of undetermined significance on anal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,441086003,2009-01-31,2099-12-31,NA
+443715,Atypical squamous cells on anal Papanicolaou smear cannot exclude high grade squamous intraepithelial lesion,Condition,SNOMED,Clinical Finding,S,441114008,2009-01-31,2099-12-31,NA
+600595,Reduction of alpha activity in right cerebral hemisphere,Condition,SNOMED,Clinical Finding,S,1119389001,2021-01-31,2099-12-31,NA
+601866,Abnormal wellness exam,Condition,SNOMED,Clinical Finding,S,471931000124105,2021-09-01,2099-12-31,NA
+604427,Acute ST segment elevation myocardial infarction due to occlusion of circumflex branch of left coronary artery,Condition,SNOMED,Disorder,S,896691006,2021-01-31,2099-12-31,NA
+604429,Acute ST segment elevation myocardial infarction of apex of heart,Condition,SNOMED,Disorder,S,896696001,2021-01-31,2099-12-31,NA
+604430,Acute ST segment elevation myocardial infarction of right ventricle,Condition,SNOMED,Disorder,S,896697005,2021-01-31,2099-12-31,NA
+605129,Left motor nerve conduction block,Condition,SNOMED,Clinical Finding,S,1010456008,2021-01-31,2099-12-31,NA
+605130,Right motor nerve conduction block,Condition,SNOMED,Clinical Finding,S,1010457004,2021-01-31,2099-12-31,NA
+605131,Right sensory nerve conduction block,Condition,SNOMED,Clinical Finding,S,1010458009,2021-01-31,2099-12-31,NA
+605132,Left sensory nerve conduction block,Condition,SNOMED,Clinical Finding,S,1010459001,2021-01-31,2099-12-31,NA
+605582,Reduction of alpha activity in left cerebral hemisphere,Condition,SNOMED,Clinical Finding,S,1119388009,2021-01-31,2099-12-31,NA
+607658,Nuclear abnormality in cervical smear,Condition,SNOMED,Clinical Finding,S,1155766001,2021-07-31,2099-12-31,NA
+738824,Electrocardiogram (EKG): S1Q3T3 pattern,Measurement,OMOP Extension,Precoordinated pair,S,OMOP5117510,2021-07-27,2099-12-31,NA
+738841,Electrocardiogram (EKG): Right ventricular strain,Measurement,OMOP Extension,Precoordinated pair,S,OMOP5117507,2021-07-27,2099-12-31,NA
+738846,Electrocardiogram (EKG): Inferior T wave inversion,Measurement,OMOP Extension,Precoordinated pair,S,OMOP5117508,2021-07-27,2099-12-31,NA
+738871,Electrocardiogram (EKG): Lateral T wave inversion,Measurement,OMOP Extension,Precoordinated pair,S,OMOP5117509,2021-07-27,2099-12-31,NA
+761736,Acute ST segment elevation myocardial infarction of anteroapical wall,Condition,SNOMED,Disorder,S,15962541000119106,2017-09-01,2099-12-31,NA
+764082,Gynecological examination abnormal,Condition,SNOMED,Clinical Finding,S,450561000124103,2016-03-01,2099-12-31,NA
+1075059,Plain X-ray of soft tissue abnormal,Condition,SNOMED,Clinical Finding,S,1290424008,2024-04-01,2099-12-31,NA
+1075062,Plain X-ray of toe abnormal,Condition,SNOMED,Clinical Finding,S,1290454003,2024-04-01,2099-12-31,NA
+1075068,Plain X-ray of finger abnormal,Condition,SNOMED,Clinical Finding,S,1290475006,2024-04-01,2099-12-31,NA
+1075072,Plain X-ray of thumb abnormal,Condition,SNOMED,Clinical Finding,S,1290484006,2024-04-01,2099-12-31,NA
+1075081,Plain X-ray of fibula abnormal,Condition,SNOMED,Clinical Finding,S,1290521002,2024-04-01,2099-12-31,NA
+1075086,Plain X-ray of tibia abnormal,Condition,SNOMED,Clinical Finding,S,1290528008,2024-04-01,2099-12-31,NA
+1075090,Plain X-ray of bone of lower leg abnormal,Condition,SNOMED,Clinical Finding,S,1290532002,2024-04-01,2099-12-31,NA
+1075091,Plain X-ray of lower leg abnormal,Condition,SNOMED,Clinical Finding,S,1290533007,2024-04-01,2099-12-31,NA
+1075110,Plain X-ray of humerus and bone of shoulder girdle abnormal,Condition,SNOMED,Clinical Finding,S,1290590007,2024-04-01,2099-12-31,NA
+1075111,Plain X-ray of radius and ulna abnormal,Condition,SNOMED,Clinical Finding,S,1290591006,2024-04-01,2099-12-31,NA
+1075112,Plain X-ray of forearm abnormal,Condition,SNOMED,Clinical Finding,S,1290592004,2024-04-01,2099-12-31,NA
+1075119,Plain X-ray of lower limb abnormal,Condition,SNOMED,Clinical Finding,S,1290613000,2024-04-01,2099-12-31,NA
+1075129,Plain X-ray of lumbar and sacral spine abnormal,Condition,SNOMED,Clinical Finding,S,1290663005,2024-04-01,2099-12-31,NA
+1075136,Plain X-ray of sacral spine abnormal,Condition,SNOMED,Clinical Finding,S,1290681008,2024-04-01,2099-12-31,NA
+1075148,Plain X-ray of oral soft tissue abnormal,Condition,SNOMED,Clinical Finding,S,1290824001,2024-04-01,2099-12-31,NA
+1075149,Opacity on plain X-ray,Condition,SNOMED,Clinical Finding,S,1290856008,2024-04-01,2099-12-31,NA
+1075150,Opacity of tooth on plain X-ray,Condition,SNOMED,Clinical Finding,S,1290857004,2024-04-01,2099-12-31,NA
+1075151,Radiolucency of tooth on plain X-ray,Condition,SNOMED,Clinical Finding,S,1290861005,2024-04-01,2099-12-31,NA
+1075158,Plain X-ray of chest abnormal,Condition,SNOMED,Clinical Finding,S,1290960005,2024-04-01,2099-12-31,NA
+1075165,Lytic lesion of bone on plain X-ray,Condition,SNOMED,Clinical Finding,S,1293040003,2024-04-01,2099-12-31,NA
+1075172,Plain X-ray of nasal sinus abnormal,Condition,SNOMED,Clinical Finding,S,1293062003,2024-04-01,2099-12-31,NA
+1075183,Plain X-ray of thoracic cage abnormal,Condition,SNOMED,Clinical Finding,S,1295212001,2024-04-01,2099-12-31,NA
+1075186,Plain X-ray of pancreas abnormal,Condition,SNOMED,Clinical Finding,S,1295395003,2024-04-01,2099-12-31,NA
+1075189,Postmortem plain X-ray abnormal,Condition,SNOMED,Clinical Finding,S,1295404006,2024-04-01,2099-12-31,NA
+1075196,Plain X-ray skeletal survey abnormal,Condition,SNOMED,Clinical Finding,S,1295435000,2024-04-01,2099-12-31,NA
+1075199,Plain X-ray of biliary tract with contrast abnormal,Condition,SNOMED,Clinical Finding,S,1295501000,2024-04-01,2099-12-31,NA
+1075646,Plain X-ray of soft tissue of face abnormal,Condition,SNOMED,Clinical Finding,S,1306637009,2024-04-01,2099-12-31,NA
+1076228,Fluoroscopic lymphangiography with contrast abnormal,Condition,SNOMED,Clinical Finding,S,1336191007,2024-07-01,2099-12-31,NA
+1076296,CT of nervous system with contrast abnormal,Condition,SNOMED,Clinical Finding,S,1339044001,2024-07-01,2099-12-31,NA
+1076424,Ultrasonography of placenta abnormal,Condition,SNOMED,Clinical Finding,S,1343407001,2024-08-01,2099-12-31,NA
+1076426,Fluoroscopic hysterosalpingography with contrast abnormal,Condition,SNOMED,Clinical Finding,S,1343410008,2024-08-01,2099-12-31,NA
+1076434,Plain X-ray of gallbladder with contrast abnormal,Condition,SNOMED,Clinical Finding,S,1343551007,2024-08-01,2099-12-31,NA
+1076435,Fluoroscopy of gallbladder with contrast abnormal,Condition,SNOMED,Clinical Finding,S,1343552000,2024-08-01,2099-12-31,NA
+1076436,CT of gallbladder with contrast abnormal,Condition,SNOMED,Clinical Finding,S,1343553005,2024-08-01,2099-12-31,NA
+1076861,Low grade squamous intraepithelial lesion on vaginal Papanicolaou smear with human papillomavirus deoxyribonucleic acid detected,Condition,SNOMED,Clinical Finding,S,235651000112104,2024-03-01,2099-12-31,NA
+1076862,Atypical squamous cells of undetermined significance on vaginal Papanicolaou smear with human papillomavirus deoxyribonucleic acid detected,Condition,SNOMED,Clinical Finding,S,235671000112105,2024-03-01,2099-12-31,NA
+1077617,Plain X-ray pelvimetry abnormal,Condition,SNOMED,Clinical Finding,S,1290937002,2024-04-01,2099-12-31,NA
+1449048,Plain X-ray of genitourinary system abnormal,Condition,SNOMED,Clinical Finding,S,1345252004,2024-10-01,2099-12-31,NA
+1449051,Fluoroscopy of genitourinary system abnormal,Condition,SNOMED,Clinical Finding,S,1345255002,2024-10-01,2099-12-31,NA
+1449053,CT of genitourinary system abnormal,Condition,SNOMED,Clinical Finding,S,1345257005,2024-10-01,2099-12-31,NA
+1449131,Fluoroscopy of gastrointestinal tract abnormal,Condition,SNOMED,Clinical Finding,S,1348350009,2024-11-01,2099-12-31,NA
+1449134,CT of gastrointestinal tract abnormal,Condition,SNOMED,Clinical Finding,S,1348353006,2024-11-01,2099-12-31,NA
+1449310,Fluoroscopic cholangiography with contrast abnormal,Condition,SNOMED,Clinical Finding,S,1351821009,2024-12-01,2099-12-31,NA
+3190514,Abormal brain MRI with leptomeningeal enhancement,Condition,Nebraska Lexicon,Clinical Finding,S,31930001000004105,2016-01-28,2099-12-31,NA
+3191898,Pap smear with atypical squamous cells uncertain significance,Condition,Nebraska Lexicon,Clinical Finding,S,7070001000004101,2016-01-28,2099-12-31,NA
+3192733,Cytotoxic antibodies,Condition,Nebraska Lexicon,Clinical Finding,S,24530001000004105,2016-01-28,2099-12-31,NA
+3192778,Pap smear with atypical cells but high grade squamous intraepithelial lesion cannot be excluded,Condition,Nebraska Lexicon,Clinical Finding,S,13750001000004106,2016-01-28,2099-12-31,NA
+3194990,Abnormal bone radiograph,Condition,Nebraska Lexicon,Clinical Finding,S,7270001000004107,2016-01-28,2099-12-31,NA
+3195259,ASCUS with positive high risk HPV,Condition,Nebraska Lexicon,Clinical Finding,S,18560001000004103,2016-01-28,2099-12-31,NA
+3195359,Abnormal pap smear,Condition,Nebraska Lexicon,Clinical Finding,S,3740001000004109,2016-01-28,2099-12-31,NA
+3195796,Abnormal dobutamine stress echocardiogram,Condition,Nebraska Lexicon,Clinical Finding,S,7410001000004104,2016-01-28,2099-12-31,NA
+3661449,High-grade urothelial carcinoma found on urine cytology,Condition,SNOMED,Clinical Finding,S,836304000,2020-07-31,2099-12-31,NA
+3661451,Low-grade urothelial neoplasia found on urine cytology,Condition,SNOMED,Clinical Finding,S,836344007,2020-07-31,2099-12-31,NA
+3661502,Acute ST segment elevation myocardial infarction due to proximal left anterior descending coronary artery occlusion,Condition,SNOMED,Disorder,S,840309000,2020-07-31,2099-12-31,NA
+3661503,Acute ST segment elevation myocardial infarction due to mid left anterior descending coronary artery occlusion,Condition,SNOMED,Disorder,S,840312002,2020-07-31,2099-12-31,NA
+3661504,Acute ST segment elevation myocardial infarction due to distal left anterior descending coronary artery occlusion,Condition,SNOMED,Disorder,S,840316004,2020-07-31,2099-12-31,NA
+3661520,Acute ST segment elevation myocardial infarction due to occlusion of anterior descending branch of left coronary artery,Condition,SNOMED,Disorder,S,840609007,2020-07-31,2099-12-31,NA
+3661524,Acute ST segment elevation myocardial infarction due to occlusion of septal branch of anterior descending branch of left coronary artery,Condition,SNOMED,Disorder,S,840680009,2020-07-31,2099-12-31,NA
+3661547,Acute ST segment elevation myocardial infarction due to occlusion of diagonal branch of anterior descending branch of left coronary artery,Condition,SNOMED,Disorder,S,846668006,2020-07-31,2099-12-31,NA
+3661641,Acute ST segment elevation myocardial infarction due to occlusion of proximal portion of right coronary artery,Condition,SNOMED,Disorder,S,868214006,2020-07-31,2099-12-31,NA
+3661642,Acute ST segment elevation myocardial infarction due to occlusion of distal portion of right coronary artery,Condition,SNOMED,Disorder,S,868217004,2020-07-31,2099-12-31,NA
+3661643,Acute ST segment elevation myocardial infarction due to occlusion of mid portion of right coronary artery,Condition,SNOMED,Disorder,S,868220007,2020-07-31,2099-12-31,NA
+3661644,Acute ST segment elevation myocardial infarction due to occlusion of marginal branch of right coronary artery,Condition,SNOMED,Disorder,S,868224003,2020-07-31,2099-12-31,NA
+3661645,Acute ST segment elevation myocardial infarction due to occlusion of posterior descending branch of right coronary artery,Condition,SNOMED,Disorder,S,868225002,2020-07-31,2099-12-31,NA
+3661646,Acute ST segment elevation myocardial infarction due to occlusion of posterior lateral branch of right coronary artery,Condition,SNOMED,Disorder,S,868226001,2020-07-31,2099-12-31,NA
+4004492,Abnormal bone marrow iron,Measurement,SNOMED,Clinical Finding,S,110371003,2002-01-31,2099-12-31,NA
+4008859,Prolonged QT interval,Condition,SNOMED,Clinical Finding,S,111975006,2002-01-31,2099-12-31,NA
+4009585,Abnormal urine,Condition,SNOMED,Clinical Finding,S,102866000,2002-01-31,2099-12-31,NA
+4013824,Biopsy result abnormal,Condition,SNOMED,Clinical Finding,S,165325009,2002-01-31,2099-12-31,NA
+4013852,RBC enzymes abnormal,Condition,SNOMED,Clinical Finding,S,165500001,2002-01-31,2099-12-31,NA
+4014009,Abnormal presence of endometrial cells in specimen from a menopausal woman,Condition,SNOMED,Clinical Finding,S,103610009,2002-01-31,2099-12-31,NA
+4014132,Antibody studies abnormal,Condition,SNOMED,Clinical Finding,S,166166006,2002-01-31,2099-12-31,NA
+4020195,EKG hypertrophy,Condition,SNOMED,Clinical Finding,S,1155004,2002-01-31,2099-12-31,NA
+4029490,Abnormal presence of protein,Condition,SNOMED,Clinical Finding,S,13930000,2002-01-31,2099-12-31,NA
+4030021,Septal infarction by electrocardiogram,Condition,SNOMED,Clinical Finding,S,1077002,2002-01-31,2099-12-31,NA
+4030754,Computed tomography result abnormal,Condition,SNOMED,Clinical Finding,S,129679001,2002-01-31,2099-12-31,NA
+4031225,Abnormal radionuclide scan,Condition,SNOMED,Clinical Finding,S,129680003,2002-01-31,2099-12-31,NA
+4035185,Increased vascular markings of lung,Condition,SNOMED,Clinical Finding,S,15232001,2002-01-31,2099-12-31,NA
+4035972,Abnormal presence of galactose,Condition,SNOMED,Clinical Finding,S,15268006,2002-01-31,2099-12-31,NA
+4042228,Gastric function test abnormal,Condition,SNOMED,Clinical Finding,S,167193000,2002-01-31,2099-12-31,NA
+4042234,Abnormal urinalysis,Condition,SNOMED,Clinical Finding,S,167222005,2002-01-31,2099-12-31,NA
+4042235,MSU = abnormal,Measurement,SNOMED,Clinical Finding,S,167225007,2002-01-31,2099-12-31,NA
+4042250,Urine microscopy = abnormality,Condition,SNOMED,Clinical Finding,S,167333006,2002-01-31,2099-12-31,NA
+4043430,Synovial fluid examination - abnormal,Condition,SNOMED,Clinical Finding,S,167863008,2002-01-31,2099-12-31,NA
+4043442,Bone marrow examination abnormal,Condition,SNOMED,Clinical Finding,S,167911000,2002-01-31,2099-12-31,NA
+4043446,Marrow: primitive blast cells+,Condition,SNOMED,Clinical Finding,S,167929005,2002-01-31,2099-12-31,NA
+4043447,Bone marrow: myeloma cells,Condition,SNOMED,Clinical Finding,S,167934009,2002-01-31,2099-12-31,NA
+4043448,Bone marrow: tumor cells,Condition,SNOMED,Clinical Finding,S,167935005,2002-01-31,2099-12-31,NA
+4043450,Marrow megakaryocytes abnormal,Condition,SNOMED,Clinical Finding,S,167939004,2002-01-31,2099-12-31,NA
+4043453,Pleural fluid examination abnormal,Condition,SNOMED,Clinical Finding,S,167948009,2002-01-31,2099-12-31,NA
+4043597,Semen exam: abnormal,Condition,SNOMED,Clinical Finding,S,167767004,2002-01-31,2099-12-31,NA
+4043616,Vomit examination abnormal,Condition,SNOMED,Clinical Finding,S,167824001,2002-01-31,2099-12-31,NA
+4043764,Bone marrow: no foreign cells,Condition,SNOMED,Clinical Finding,S,167932008,2002-01-31,2099-12-31,NA
+4043765,Bone marrow: lymphocytes,Condition,SNOMED,Clinical Finding,S,167933003,2002-01-31,2099-12-31,NA
+4043779,Ascitic fluid examination abnormal,Condition,SNOMED,Clinical Finding,S,168011000,2002-01-31,2099-12-31,NA
+4043937,Specimen examination: abnormal,Condition,SNOMED,Clinical Finding,S,168125001,2002-01-31,2099-12-31,NA
+4048670,Viruria,Condition,SNOMED,Clinical Finding,S,123729002,2002-01-31,2099-12-31,NA
+4051833,"Abnormal radiologic density, localized",Condition,SNOMED,Clinical Finding,S,125131003,2002-01-31,2099-12-31,NA
+4051834,"Abnormal radiologic density, unequal",Condition,SNOMED,Clinical Finding,S,125135007,2002-01-31,2099-12-31,NA
+4052428,"Abnormal radiologic density, irregular",Condition,SNOMED,Clinical Finding,S,125129007,2002-01-31,2099-12-31,NA
+4052429,"Abnormal radiologic density, large area",Condition,SNOMED,Clinical Finding,S,125130002,2002-01-31,2099-12-31,NA
+4052430,"Abnormal radiologic density, rounded",Condition,SNOMED,Clinical Finding,S,125133000,2002-01-31,2099-12-31,NA
+4052435,"Endometrial cells, cytologically benign, in a postmenopausal woman",Condition,SNOMED,Clinical Finding,S,125155008,2002-01-31,2099-12-31,NA
+4052910,"Abnormal radiologic density, small area",Condition,SNOMED,Clinical Finding,S,125134006,2002-01-31,2099-12-31,NA
+4052911,"Abnormal radiologic density, uniform",Condition,SNOMED,Clinical Finding,S,125136008,2002-01-31,2099-12-31,NA
+4053459,Abnormal electron microscopy findings,Condition,SNOMED,Clinical Finding,S,125386007,2002-01-31,2099-12-31,NA
+4054113,"Abnormal radiologic density, diffuse",Condition,SNOMED,Clinical Finding,S,125128004,2002-01-31,2099-12-31,NA
+4054114,"Abnormal radiologic density, nodular",Condition,SNOMED,Clinical Finding,S,125132005,2002-01-31,2099-12-31,NA
+4055806,Digestive function test abnormal,Condition,SNOMED,Clinical Finding,S,167199001,2002-01-31,2099-12-31,NA
+4056097,Ascitic fluid cloudy,Condition,SNOMED,Clinical Finding,S,168015009,2002-01-31,2099-12-31,NA
+4056098,Ascitic fluid purulent,Condition,SNOMED,Clinical Finding,S,168017001,2002-01-31,2099-12-31,NA
+4056101,Ascitic fluid: pus cells,Condition,SNOMED,Clinical Finding,S,168022001,2002-01-31,2099-12-31,NA
+4056119,Amniotic fetal cell abnormal,Condition,SNOMED,Clinical Finding,S,168117003,2002-01-31,2099-12-31,NA
+4056397,Cervical smear - atrophic changes,Condition,SNOMED,Clinical Finding,S,168408005,2002-01-31,2099-12-31,NA
+4056398,Cervical smear - inflammatory change,Condition,SNOMED,Clinical Finding,S,168414003,2002-01-31,2099-12-31,NA
+4056400,Cervical smear - trichomonas,Condition,SNOMED,Clinical Finding,S,168417005,2002-01-31,2099-12-31,NA
+4056401,Cervical smear - gardnerella,Condition,SNOMED,Clinical Finding,S,168423000,2002-01-31,2099-12-31,NA
+4056545,Cannot exclude glandular neoplasia on cervical smear,Condition,SNOMED,Clinical Finding,S,168407000,2002-01-31,2099-12-31,NA
+4056548,Cervical smear - candida,Condition,SNOMED,Clinical Finding,S,168418000,2002-01-31,2099-12-31,NA
+4056550,Cervical smear - herpes,Condition,SNOMED,Clinical Finding,S,168421003,2002-01-31,2099-12-31,NA
+4056551,Cervical smear - koilocytosis,Condition,SNOMED,Clinical Finding,S,168424006,2002-01-31,2099-12-31,NA
+4056688,Plain X-ray of coccyx abnormal,Condition,SNOMED,Clinical Finding,S,168587004,2002-01-31,2099-12-31,NA
+4056694,Plain X-ray of shoulder joint abnormal,Condition,SNOMED,Clinical Finding,S,168616006,2002-01-31,2099-12-31,NA
+4056699,Plain X-ray of hand abnormal,Condition,SNOMED,Clinical Finding,S,168640003,2002-01-31,2099-12-31,NA
+4056700,Plain X-ray of scaphoid abnormal,Condition,SNOMED,Clinical Finding,S,168646009,2002-01-31,2099-12-31,NA
+4056705,Plain X-ray of hip joint abnormal,Condition,SNOMED,Clinical Finding,S,168662003,2002-01-31,2099-12-31,NA
+4056710,Plain X-ray of femur abnormal,Condition,SNOMED,Clinical Finding,S,168685002,2002-01-31,2099-12-31,NA
+4056711,Plain X-ray of foot abnormal,Condition,SNOMED,Clinical Finding,S,168688000,2002-01-31,2099-12-31,NA
+4056831,Plain X-ray of soft tissue of neck abnormal,Condition,SNOMED,Clinical Finding,S,168721002,2002-01-31,2099-12-31,NA
+4056992,Bone marrow myeloid hypoplasia,Condition,SNOMED,Clinical Finding,S,167928002,2002-01-31,2099-12-31,NA
+4057130,Ascitic fluid blood-stained,Condition,SNOMED,Clinical Finding,S,168016005,2002-01-31,2099-12-31,NA
+4057132,Ascitic fluid: malignant cells,Condition,SNOMED,Clinical Finding,S,168021008,2002-01-31,2099-12-31,NA
+4057133,Ascitic fluid: blood cells,Condition,SNOMED,Clinical Finding,S,168023006,2002-01-31,2099-12-31,NA
+4057163,Trisomy 21 in amniotic fetal cell,Condition,SNOMED,Clinical Finding,S,168118008,2002-01-31,2099-12-31,NA
+4057456,"Spermatozoa morphology, no normal forms",Condition,SNOMED,Clinical Finding,S,167796003,2002-01-31,2099-12-31,NA
+4057595,Bone marrow: myeloid cells OK,Condition,SNOMED,Clinical Finding,S,167926003,2002-01-31,2099-12-31,NA
+4057608,Sputum examination: abnormal,Condition,SNOMED,Clinical Finding,S,167986000,2002-01-31,2099-12-31,NA
+4057610,Sputum: eosinophilia,Condition,SNOMED,Clinical Finding,S,167997000,2002-01-31,2099-12-31,NA
+4057756,Plain X-ray of jaw abnormal,Condition,SNOMED,Clinical Finding,S,168546000,2002-01-31,2099-12-31,NA
+4057758,Plain X-ray of temporomandibular joint abnormal,Condition,SNOMED,Clinical Finding,S,168548004,2002-01-31,2099-12-31,NA
+4057760,Plain X-ray of teeth abnormal,Condition,SNOMED,Clinical Finding,S,168551006,2002-01-31,2099-12-31,NA
+4057763,Plain X-ray of nose abnormal,Condition,SNOMED,Clinical Finding,S,168563001,2002-01-31,2099-12-31,NA
+4057766,Plain X-ray of cervical spine abnormal,Condition,SNOMED,Clinical Finding,S,168576007,2002-01-31,2099-12-31,NA
+4057767,Plain X-ray of lumbar spine abnormal,Condition,SNOMED,Clinical Finding,S,168580002,2002-01-31,2099-12-31,NA
+4057885,Plain X-ray of wrist abnormal,Condition,SNOMED,Clinical Finding,S,168631002,2002-01-31,2099-12-31,NA
+4057894,Plain X-ray of ankle joint abnormal,Condition,SNOMED,Clinical Finding,S,168680007,2002-01-31,2099-12-31,NA
+4057918,Erect plain X-ray of abdomen abnormal,Condition,SNOMED,Clinical Finding,S,168757007,2002-01-31,2099-12-31,NA
+4058030,Barium swallow abnormal,Condition,SNOMED,Clinical Finding,S,168824004,2002-01-31,2099-12-31,NA
+4058039,Intravenous pyelogram abnormal,Condition,SNOMED,Clinical Finding,S,168852008,2002-01-31,2099-12-31,NA
+4058042,Cystography abnormal,Condition,SNOMED,Clinical Finding,S,168857002,2002-01-31,2099-12-31,NA
+4058302,Abdominal aortogram abnormal,Condition,SNOMED,Clinical Finding,S,168943003,2002-01-31,2099-12-31,NA
+4058326,Tomography abnormal,Condition,SNOMED,Clinical Finding,S,169030006,2002-01-31,2099-12-31,NA
+4058745,Cervical smear - severe inflammation,Condition,SNOMED,Clinical Finding,S,168416001,2002-01-31,2099-12-31,NA
+4058746,Cervical smear - actinomyces,Condition,SNOMED,Clinical Finding,S,168422005,2002-01-31,2099-12-31,NA
+4058753,Tissue cytology abnormal,Condition,SNOMED,Clinical Finding,S,168443006,2002-01-31,2099-12-31,NA
+4058779,Plain X-ray result abnormal,Condition,SNOMED,Clinical Finding,S,168542003,2002-01-31,2099-12-31,NA
+4058892,Plain X-ray of spine abnormal,Condition,SNOMED,Clinical Finding,S,168572009,2002-01-31,2099-12-31,NA
+4058896,Plain X-ray of sacrum abnormal,Condition,SNOMED,Clinical Finding,S,168585007,2002-01-31,2099-12-31,NA
+4058904,Plain X-ray of radius abnormal,Condition,SNOMED,Clinical Finding,S,168627008,2002-01-31,2099-12-31,NA
+4058906,Plain X-ray of humerus abnormal,Condition,SNOMED,Clinical Finding,S,168636007,2002-01-31,2099-12-31,NA
+4058909,Plain X-ray of carpus abnormal,Condition,SNOMED,Clinical Finding,S,168643001,2002-01-31,2099-12-31,NA
+4058913,Plain X-ray of knee abnormal,Condition,SNOMED,Clinical Finding,S,168668004,2002-01-31,2099-12-31,NA
+4058915,Plain X-ray of patella abnormal,Condition,SNOMED,Clinical Finding,S,168671007,2002-01-31,2099-12-31,NA
+4058922,Plain X-ray of calcaneum abnormal,Condition,SNOMED,Clinical Finding,S,168696005,2002-01-31,2099-12-31,NA
+4058926,Plain X-ray of abdomen abnormal,Condition,SNOMED,Clinical Finding,S,168704006,2002-01-31,2099-12-31,NA
+4059049,Mammography abnormal,Condition,SNOMED,Clinical Finding,S,168750009,2002-01-31,2099-12-31,NA
+4059054,Plain X-ray of soft tissue of limb abnormal,Condition,SNOMED,Clinical Finding,S,168777000,2002-01-31,2099-12-31,NA
+4059061,Bronchography abnormal,Condition,SNOMED,Clinical Finding,S,168808000,2002-01-31,2099-12-31,NA
+4059068,Barium meal abnormal,Condition,SNOMED,Clinical Finding,S,168829009,2002-01-31,2099-12-31,NA
+4059358,Severe dyskaryosis on cervical smear cannot exclude invasive carcinoma,Condition,SNOMED,Clinical Finding,S,168406009,2002-01-31,2099-12-31,NA
+4059367,Forensic examination abnormal,Condition,SNOMED,Clinical Finding,S,168453007,2002-01-31,2099-12-31,NA
+4059395,Plain X-ray of skull abnormal,Condition,SNOMED,Clinical Finding,S,168556001,2002-01-31,2099-12-31,NA
+4059513,Plain X-ray of thoracic spine abnormal,Condition,SNOMED,Clinical Finding,S,168578008,2002-01-31,2099-12-31,NA
+4059517,Plain X-ray of clavicle abnormal,Condition,SNOMED,Clinical Finding,S,168596004,2002-01-31,2099-12-31,NA
+4059521,Plain X-ray of pelvis abnormal,Condition,SNOMED,Clinical Finding,S,168604000,2002-01-31,2099-12-31,NA
+4059523,Plain X-ray of scapula abnormal,Condition,SNOMED,Clinical Finding,S,168618007,2002-01-31,2099-12-31,NA
+4059525,Plain X-ray of elbow abnormal,Condition,SNOMED,Clinical Finding,S,168622002,2002-01-31,2099-12-31,NA
+4059528,Plain X-ray of ulna abnormal,Condition,SNOMED,Clinical Finding,S,168629006,2002-01-31,2099-12-31,NA
+4059547,Plain X-ray of soft tissue of chest abnormal,Condition,SNOMED,Clinical Finding,S,168738003,2002-01-31,2099-12-31,NA
+4059669,MRI scan abnormal,Condition,SNOMED,Clinical Finding,S,169083003,2002-01-31,2099-12-31,NA
+4059681,Isotope static scan kidneys abnormal,Condition,SNOMED,Clinical Finding,S,169145002,2002-01-31,2099-12-31,NA
+4059699,Echocardiogram abnormal,Condition,SNOMED,Clinical Finding,S,169241000,2002-01-31,2099-12-31,NA
+4060034,Abnormal biochemical finding on antenatal screening of mother,Condition,SNOMED,Clinical Finding,S,199734003,2002-01-31,2099-12-31,NA
+4060259,Antenatal amniocentesis - abnormal,Condition,SNOMED,Clinical Finding,S,169653006,2002-01-31,2099-12-31,NA
+4060383,Coronary arteriography abnormal,Condition,SNOMED,Clinical Finding,S,168939002,2002-01-31,2099-12-31,NA
+4060388,Femoral arteriogram abnormal,Condition,SNOMED,Clinical Finding,S,168953002,2002-01-31,2099-12-31,NA
+4060492,Tomography - chest abnormal,Condition,SNOMED,Clinical Finding,S,169039007,2002-01-31,2099-12-31,NA
+4060494,Cineradiography abnormal,Condition,SNOMED,Clinical Finding,S,169043006,2002-01-31,2099-12-31,NA
+4060623,US obstetric scan abnormal,Condition,SNOMED,Clinical Finding,S,169222003,2002-01-31,2099-12-31,NA
+4060630,Ultrasound scan abnormal,Condition,SNOMED,Clinical Finding,S,169255008,2002-01-31,2099-12-31,NA
+4060632,Thermography abnormal,Condition,SNOMED,Clinical Finding,S,169261006,2002-01-31,2099-12-31,NA
+4060762,Myelography abnormal,Condition,SNOMED,Clinical Finding,S,168797005,2002-01-31,2099-12-31,NA
+4060767,Barium follow through abnormal,Condition,SNOMED,Clinical Finding,S,168834008,2002-01-31,2099-12-31,NA
+4060771,Barium enema abnormal,Condition,SNOMED,Clinical Finding,S,168840001,2002-01-31,2099-12-31,NA
+4060875,Knee arthrography abnormal,Condition,SNOMED,Clinical Finding,S,168911003,2002-01-31,2099-12-31,NA
+4060877,Arthrography abnormal,Condition,SNOMED,Clinical Finding,S,168916008,2002-01-31,2099-12-31,NA
+4060880,Carotid artery angiogram abnormal,Condition,SNOMED,Clinical Finding,S,168929008,2002-01-31,2099-12-31,NA
+4060883,Angiocardiography abnormal,Condition,SNOMED,Clinical Finding,S,168935008,2002-01-31,2099-12-31,NA
+4060886,Renal arteriogram abnormal,Condition,SNOMED,Clinical Finding,S,168948007,2002-01-31,2099-12-31,NA
+4060887,Lower limb arteriogram abnormal,Condition,SNOMED,Clinical Finding,S,168957001,2002-01-31,2099-12-31,NA
+4060888,Upper limb arteriogram abnormal,Condition,SNOMED,Clinical Finding,S,168961007,2002-01-31,2099-12-31,NA
+4060890,Venogram abnormal,Condition,SNOMED,Clinical Finding,S,168966002,2002-01-31,2099-12-31,NA
+4061029,Isotope scan spleen abnormal,Condition,SNOMED,Clinical Finding,S,169149008,2002-01-31,2099-12-31,NA
+4062648,Breast neoplasm screening abnormal,Condition,SNOMED,Clinical Finding,S,171176006,2002-01-31,2099-12-31,NA
+4063845,Audiogram right abnormality,Condition,SNOMED,Clinical Finding,S,164752008,2002-01-31,2099-12-31,NA
+4064081,Audiogram bilateral abnormality,Condition,SNOMED,Clinical Finding,S,164750000,2002-01-31,2099-12-31,NA
+4064082,Audiogram left abnormality,Condition,SNOMED,Clinical Finding,S,164751001,2002-01-31,2099-12-31,NA
+4064322,Fundoscopy abnormal,Condition,SNOMED,Clinical Finding,S,164735009,2002-01-31,2099-12-31,NA
+4064329,Special cardiovascular system test abnormal,Condition,SNOMED,Clinical Finding,S,164779007,2002-01-31,2099-12-31,NA
+4064345,Ambulatory ECG abnormal,Condition,SNOMED,Clinical Finding,S,164852001,2002-01-31,2099-12-31,NA
+4064346,EKG myocardial ischemia,Condition,SNOMED,Clinical Finding,S,164861001,2002-01-31,2099-12-31,NA
+4064348,EKG: old myocardial infarction,Condition,SNOMED,Clinical Finding,S,164867002,2002-01-31,2099-12-31,NA
+4064349,EKG:posterior/inferior infarct,Condition,SNOMED,Clinical Finding,S,164869004,2002-01-31,2099-12-31,NA
+4064350,Lateral infarction on electrocardiogram,Condition,SNOMED,Clinical Finding,S,164871004,2002-01-31,2099-12-31,NA
+4064386,Urine screening abnormal,Condition,SNOMED,Clinical Finding,S,171251002,2002-01-31,2099-12-31,NA
+4064452,ECG: atrial fibrillation,Condition,SNOMED,Clinical Finding,S,164889003,2002-01-31,2099-12-31,NA
+4064453,EKG: ventricular arrhythmia,Condition,SNOMED,Clinical Finding,S,164893009,2002-01-31,2099-12-31,NA
+4064455,EKG: ventricular fibrillation,Condition,SNOMED,Clinical Finding,S,164896001,2002-01-31,2099-12-31,NA
+4064457,EKG: heart block,Condition,SNOMED,Clinical Finding,S,164898000,2002-01-31,2099-12-31,NA
+4064459,Mobitz type I second degree atrioventricular block on electrocardiogram,Condition,SNOMED,Clinical Finding,S,164905008,2002-01-31,2099-12-31,NA
+4064460,EKG: right bundle branch block,Condition,SNOMED,Clinical Finding,S,164907000,2002-01-31,2099-12-31,NA
+4064461,ECG: ST interval abnormal,Condition,SNOMED,Clinical Finding,S,164930006,2002-01-31,2099-12-31,NA
+4064467,EKG: P-R interval abnormal,Condition,SNOMED,Clinical Finding,S,164946003,2002-01-31,2099-12-31,NA
+4064487,Exercise tolerance test abnormal,Condition,SNOMED,Clinical Finding,S,165084003,2002-01-31,2099-12-31,NA
+4064609,EKG: myocardial infarction,Condition,SNOMED,Clinical Finding,S,164865005,2002-01-31,2099-12-31,NA
+4064610,Anteroseptal infarction on electrocardiogram,Condition,SNOMED,Clinical Finding,S,164868007,2002-01-31,2099-12-31,NA
+4064611,EKG: subendocardial infarct,Condition,SNOMED,Clinical Finding,S,164870003,2002-01-31,2099-12-31,NA
+4064614,EKG: left bundle branch block,Condition,SNOMED,Clinical Finding,S,164909002,2002-01-31,2099-12-31,NA
+4064618,Tall R wave,Condition,SNOMED,Clinical Finding,S,164922005,2002-01-31,2099-12-31,NA
+4064619,EKG: S wave abnormal,Condition,SNOMED,Clinical Finding,S,164925007,2002-01-31,2099-12-31,NA
+4064722,Abnormal cytological finding on antenatal screening of mother,Condition,SNOMED,Clinical Finding,S,199735002,2002-01-31,2099-12-31,NA
+4064723,Abnormal radiological finding on antenatal screening of mother,Condition,SNOMED,Clinical Finding,S,199737005,2002-01-31,2099-12-31,NA
+4064724,Abnormal chromosomal and genetic finding on antenatal screening of mother,Condition,SNOMED,Clinical Finding,S,199738000,2002-01-31,2099-12-31,NA
+4064756,Tympanogram abnormal,Condition,SNOMED,Clinical Finding,S,164759004,2002-01-31,2099-12-31,NA
+4064871,EKG: ventricular tachycardia,Condition,SNOMED,Clinical Finding,S,164895002,2002-01-31,2099-12-31,NA
+4064872,EKG: complete sinoatrial block,Condition,SNOMED,Clinical Finding,S,164901004,2002-01-31,2099-12-31,NA
+4064874,EKG: complete atrioventricular block,Condition,SNOMED,Clinical Finding,S,164906009,2002-01-31,2099-12-31,NA
+4064876,EKG: P wave abnormal,Condition,SNOMED,Clinical Finding,S,164912004,2002-01-31,2099-12-31,NA
+4064879,EKG: R wave abnormal,Condition,SNOMED,Clinical Finding,S,164921003,2002-01-31,2099-12-31,NA
+4064880,Deep S wave,Condition,SNOMED,Clinical Finding,S,164926008,2002-01-31,2099-12-31,NA
+4064885,Prolonged PR interval,Condition,SNOMED,Clinical Finding,S,164947007,2002-01-31,2099-12-31,NA
+4064919,Guthrie test abnormal,Measurement,SNOMED,Clinical Finding,S,171187003,2002-01-31,2099-12-31,NA
+4064989,Lung function testing abnormal,Condition,SNOMED,Clinical Finding,S,165019004,2002-01-31,2099-12-31,NA
+4065006,Surgical biopsy result abnormal,Condition,SNOMED,Clinical Finding,S,165132006,2002-01-31,2099-12-31,NA
+4065251,Neurological diagnostic procedure - abnormal,Condition,SNOMED,Clinical Finding,S,164718005,2002-01-31,2099-12-31,NA
+4065254,Visual testing abnormal,Condition,SNOMED,Clinical Finding,S,164728001,2002-01-31,2099-12-31,NA
+4065255,Tonometry abnormal,Condition,SNOMED,Clinical Finding,S,164731000,2002-01-31,2099-12-31,NA
+4065269,Postcoital test abnormal,Condition,SNOMED,Clinical Finding,S,164815001,2002-01-31,2099-12-31,NA
+4065282,EKG:left ventricle hypertrophy,Condition,SNOMED,Clinical Finding,S,164873001,2002-01-31,2099-12-31,NA
+4065283,EKG: right ventricle hypertrophy,Condition,SNOMED,Clinical Finding,S,164877000,2002-01-31,2099-12-31,NA
+4065287,EKG: supraventricular arrhythmia,Condition,SNOMED,Clinical Finding,S,164887001,2002-01-31,2099-12-31,NA
+4065288,EKG: atrial flutter,Condition,SNOMED,Clinical Finding,S,164890007,2002-01-31,2099-12-31,NA
+4065386,EKG: Q wave abnormal,Condition,SNOMED,Clinical Finding,S,164917005,2002-01-31,2099-12-31,NA
+4065387,Pathological Q wave,Condition,SNOMED,Clinical Finding,S,164918000,2002-01-31,2099-12-31,NA
+4065390,EKG: T wave abnormal,Condition,SNOMED,Clinical Finding,S,164934002,2002-01-31,2099-12-31,NA
+4065391,EKG: U wave abnormal,Condition,SNOMED,Clinical Finding,S,164937009,2002-01-31,2099-12-31,NA
+4065394,EKG: QRS complex abnormal,Condition,SNOMED,Clinical Finding,S,164951009,2002-01-31,2099-12-31,NA
+4065508,Nonsurgical biopsy result abnormal,Condition,SNOMED,Clinical Finding,S,165124003,2002-01-31,2099-12-31,NA
+4065517,Endoscopy abnormal,Condition,SNOMED,Clinical Finding,S,165143003,2002-01-31,2099-12-31,NA
+4065518,Gastroscopy abnormal,Condition,SNOMED,Clinical Finding,S,165144009,2002-01-31,2099-12-31,NA
+4065519,Bronchoscopy abnormal,Condition,SNOMED,Clinical Finding,S,165145005,2002-01-31,2099-12-31,NA
+4065770,Cerebrospinal fluid examination abnormal,Condition,SNOMED,Clinical Finding,S,167704008,2002-01-31,2099-12-31,NA
+4067326,Low ventricular voltage by EKG,Condition,SNOMED,Clinical Finding,S,20329001,2002-01-31,2099-12-31,NA
+4076920,Urodynamic studies abnormal,Condition,SNOMED,Clinical Finding,S,275731005,2002-01-31,2099-12-31,NA
+4077517,Nuclear abnormality on smear,Condition,SNOMED,Clinical Finding,S,275803005,2002-01-31,2099-12-31,NA
+4077659,Viral changes on cervical smear,Condition,SNOMED,Clinical Finding,S,275805003,2002-01-31,2099-12-31,NA
+4081206,Focal motor nerve conduction slowing,Condition,SNOMED,Clinical Finding,S,277029007,2002-01-31,2099-12-31,NA
+4081376,Focal sensory nerve conduction slowing,Condition,SNOMED,Clinical Finding,S,278235004,2002-01-31,2099-12-31,NA
+4081706,Sensory nerve conduction block,Condition,SNOMED,Clinical Finding,S,278237007,2002-01-31,2099-12-31,NA
+4083050,Focal mixed nerve conduction slowing,Condition,SNOMED,Clinical Finding,S,278238002,2002-01-31,2099-12-31,NA
+4083051,Diffuse mixed nerve conduction abnormality,Condition,SNOMED,Clinical Finding,S,278239005,2002-01-31,2099-12-31,NA
+4083052,Mixed nerve conduction block,Condition,SNOMED,Clinical Finding,S,278240007,2002-01-31,2099-12-31,NA
+4086171,Decreased markings,Condition,SNOMED,Clinical Finding,S,24652004,2002-01-31,2099-12-31,NA
+4088333,Type A Wolff-Parkinson-White pattern,Condition,SNOMED,Clinical Finding,S,251116002,2002-01-31,2099-12-31,NA
+4088334,Lown-Ganong-Levine pattern,Condition,SNOMED,Clinical Finding,S,251118001,2002-01-31,2099-12-31,NA
+4088494,Type B Wolff-Parkinson-White pattern,Condition,SNOMED,Clinical Finding,S,251117006,2002-01-31,2099-12-31,NA
+4088511,Prolonged P wave,Condition,SNOMED,Clinical Finding,S,251205003,2002-01-31,2099-12-31,NA
+4088513,Prolonged T wave,Condition,SNOMED,Clinical Finding,S,251211000,2002-01-31,2099-12-31,NA
+4088516,Flattened P wave,Condition,SNOMED,Clinical Finding,S,251222001,2002-01-31,2099-12-31,NA
+4088517,Tall P wave,Condition,SNOMED,Clinical Finding,S,251223006,2002-01-31,2099-12-31,NA
+4088518,Q wave height decreased,Condition,SNOMED,Clinical Finding,S,251226003,2002-01-31,2099-12-31,NA
+4088520,S wave height increased,Condition,SNOMED,Clinical Finding,S,251231001,2002-01-31,2099-12-31,NA
+4088522,Flattened U wave,Condition,SNOMED,Clinical Finding,S,251241003,2002-01-31,2099-12-31,NA
+4088523,PR elevation,Condition,SNOMED,Clinical Finding,S,251244006,2002-01-31,2099-12-31,NA
+4088525,Sloping PR interval,Condition,SNOMED,Clinical Finding,S,251255006,2002-01-31,2099-12-31,NA
+4088526,TU elevation,Condition,SNOMED,Clinical Finding,S,251260005,2002-01-31,2099-12-31,NA
+4088686,Low frequency background activity,Condition,SNOMED,Clinical Finding,S,251459003,2002-01-31,2099-12-31,NA
+4088687,Low frequency delta activity,Condition,SNOMED,Clinical Finding,S,251462000,2002-01-31,2099-12-31,NA
+4088688,Periodic complexes,Condition,SNOMED,Clinical Finding,S,251463005,2002-01-31,2099-12-31,NA
+4088689,Burst suppression,Condition,SNOMED,Clinical Finding,S,251469009,2002-01-31,2099-12-31,NA
+4088690,Loss of reactivity,Condition,SNOMED,Clinical Finding,S,251470005,2002-01-31,2099-12-31,NA
+4088691,Generalized episodic EEG abnormality,Condition,SNOMED,Clinical Finding,S,251473007,2002-01-31,2099-12-31,NA
+4088692,Generalized epileptiform discharges,Condition,SNOMED,Clinical Finding,S,251474001,2002-01-31,2099-12-31,NA
+4088693,Generalized atypical spike wave,Condition,SNOMED,Clinical Finding,S,251477008,2002-01-31,2099-12-31,NA
+4088822,Generalized intermittent theta activity,Condition,SNOMED,Clinical Finding,S,251480009,2002-01-31,2099-12-31,NA
+4088823,Prolonged overbreathing response,Condition,SNOMED,Clinical Finding,S,251483006,2002-01-31,2099-12-31,NA
+4088824,Focal spikes,Condition,SNOMED,Clinical Finding,S,251489005,2002-01-31,2099-12-31,NA
+4088825,Periodic lateralized epileptiform discharges,Condition,SNOMED,Clinical Finding,S,251492009,2002-01-31,2099-12-31,NA
+4088826,Frontal intermittent rhythmic delta activity,Condition,SNOMED,Clinical Finding,S,251499000,2002-01-31,2099-12-31,NA
+4088827,Focal episodic spike wave with secondary generalization,Condition,SNOMED,Clinical Finding,S,251505004,2002-01-31,2099-12-31,NA
+4088848,Repetitive discharge on single stimulus,Condition,SNOMED,Clinical Finding,S,251567009,2002-01-31,2099-12-31,NA
+4088990,Prolonged TU interval,Condition,SNOMED,Clinical Finding,S,251214008,2002-01-31,2099-12-31,NA
+4088991,Shortened TU interval,Condition,SNOMED,Clinical Finding,S,251215009,2002-01-31,2099-12-31,NA
+4088993,Prolonged U wave,Condition,SNOMED,Clinical Finding,S,251217001,2002-01-31,2099-12-31,NA
+4088997,Sloping ST segment,Condition,SNOMED,Clinical Finding,S,251256007,2002-01-31,2099-12-31,NA
+4089164,Low frequency theta activity,Condition,SNOMED,Clinical Finding,S,251461007,2002-01-31,2099-12-31,NA
+4089165,Triphasic waves,Condition,SNOMED,Clinical Finding,S,251466002,2002-01-31,2099-12-31,NA
+4089166,Alpha coma type recording,Condition,SNOMED,Clinical Finding,S,251467006,2002-01-31,2099-12-31,NA
+4089167,Beta coma type recording,Condition,SNOMED,Clinical Finding,S,251468001,2002-01-31,2099-12-31,NA
+4089168,Low amplitude EEG tracing,Condition,SNOMED,Clinical Finding,S,251471009,2002-01-31,2099-12-31,NA
+4089169,Isoelectric recording,Condition,SNOMED,Clinical Finding,S,251472002,2002-01-31,2099-12-31,NA
+4089170,Generalized three per second spike wave,Condition,SNOMED,Clinical Finding,S,251475000,2002-01-31,2099-12-31,NA
+4089171,Generalized intermittent delta activity,Condition,SNOMED,Clinical Finding,S,251481008,2002-01-31,2099-12-31,NA
+4089292,Excessive overbreathing response,Condition,SNOMED,Clinical Finding,S,251482001,2002-01-31,2099-12-31,NA
+4089294,Focal rolandic spikes,Condition,SNOMED,Clinical Finding,S,251491002,2002-01-31,2099-12-31,NA
+4089296,Focal episodic EEG abnormality,Condition,SNOMED,Clinical Finding,S,251495006,2002-01-31,2099-12-31,NA
+4089297,Focal episodic theta activity,Condition,SNOMED,Clinical Finding,S,251496007,2002-01-31,2099-12-31,NA
+4089298,Occipital intermittent rhythmic delta activity,Condition,SNOMED,Clinical Finding,S,251500009,2002-01-31,2099-12-31,NA
+4089299,Focal episodic spike wave,Condition,SNOMED,Clinical Finding,S,251503006,2002-01-31,2099-12-31,NA
+4089470,Shortened ST segment,Condition,SNOMED,Clinical Finding,S,251209009,2002-01-31,2099-12-31,NA
+4089471,Shortened T wave,Condition,SNOMED,Clinical Finding,S,251212007,2002-01-31,2099-12-31,NA
+4089473,Shortened U wave,Condition,SNOMED,Clinical Finding,S,251218006,2002-01-31,2099-12-31,NA
+4089474,R wave height decreased,Condition,SNOMED,Clinical Finding,S,251229005,2002-01-31,2099-12-31,NA
+4089475,QRS complex height increased,Condition,SNOMED,Clinical Finding,S,251234009,2002-01-31,2099-12-31,NA
+4089476,QRS complex height decreased,Condition,SNOMED,Clinical Finding,S,251235005,2002-01-31,2099-12-31,NA
+4089477,Tall T wave,Condition,SNOMED,Clinical Finding,S,251237002,2002-01-31,2099-12-31,NA
+4089478,Tall tented T wave,Condition,SNOMED,Clinical Finding,S,251238007,2002-01-31,2099-12-31,NA
+4089479,Tall U wave,Condition,SNOMED,Clinical Finding,S,251242005,2002-01-31,2099-12-31,NA
+4089481,PR depression,Condition,SNOMED,Clinical Finding,S,251245007,2002-01-31,2099-12-31,NA
+4089485,Bifid T wave,Condition,SNOMED,Clinical Finding,S,251258008,2002-01-31,2099-12-31,NA
+4089486,TU depression,Condition,SNOMED,Clinical Finding,S,251261009,2002-01-31,2099-12-31,NA
+4089641,Generalized continuous EEG abnormality,Condition,SNOMED,Clinical Finding,S,251458006,2002-01-31,2099-12-31,NA
+4089642,Low frequency alpha activity,Condition,SNOMED,Clinical Finding,S,251460008,2002-01-31,2099-12-31,NA
+4089643,Continuous periodic complexes,Condition,SNOMED,Clinical Finding,S,251464004,2002-01-31,2099-12-31,NA
+4089709,Intermittent periodic complexes,Condition,SNOMED,Clinical Finding,S,251465003,2002-01-31,2099-12-31,NA
+4089710,Generalized slow spike wave (less than three per second),Condition,SNOMED,Clinical Finding,S,251476004,2002-01-31,2099-12-31,NA
+4089711,Generalized multifocal spikes,Condition,SNOMED,Clinical Finding,S,251478003,2002-01-31,2099-12-31,NA
+4089712,Bilateral periodic epileptiform discharges,Condition,SNOMED,Clinical Finding,S,251479006,2002-01-31,2099-12-31,NA
+4089714,Focal continuous EEG abnormality,Condition,SNOMED,Clinical Finding,S,251485004,2002-01-31,2099-12-31,NA
+4089715,Focal continuous theta activity,Condition,SNOMED,Clinical Finding,S,251486003,2002-01-31,2099-12-31,NA
+4089716,Focal sharp waves,Condition,SNOMED,Clinical Finding,S,251488002,2002-01-31,2099-12-31,NA
+4089717,Focal reduction of EEG activity,Condition,SNOMED,Clinical Finding,S,251493004,2002-01-31,2099-12-31,NA
+4089719,Focal episodic spikes,Condition,SNOMED,Clinical Finding,S,251502001,2002-01-31,2099-12-31,NA
+4089720,Focal recruiting discharge,Condition,SNOMED,Clinical Finding,S,251506003,2002-01-31,2099-12-31,NA
+4092016,P wave right axis deviation,Condition,SNOMED,Clinical Finding,S,251194000,2002-01-31,2099-12-31,NA
+4092019,Shortened P wave,Condition,SNOMED,Clinical Finding,S,251206002,2002-01-31,2099-12-31,NA
+4092024,Q wave height increased,Condition,SNOMED,Clinical Finding,S,251225004,2002-01-31,2099-12-31,NA
+4092025,R wave height increased,Condition,SNOMED,Clinical Finding,S,251228002,2002-01-31,2099-12-31,NA
+4092027,S wave height decreased,Condition,SNOMED,Clinical Finding,S,251232008,2002-01-31,2099-12-31,NA
+4092030,Inverted U wave,Condition,SNOMED,Clinical Finding,S,251240002,2002-01-31,2099-12-31,NA
+4092033,Reverse tick ST segment,Condition,SNOMED,Clinical Finding,S,251257003,2002-01-31,2099-12-31,NA
+4092034,High T-voltage,Condition,SNOMED,Clinical Finding,S,251259000,2002-01-31,2099-12-31,NA
+4092035,Flat U wave,Condition,SNOMED,Clinical Finding,S,251262002,2002-01-31,2099-12-31,NA
+4092036,Bifid U wave,Condition,SNOMED,Clinical Finding,S,251264001,2002-01-31,2099-12-31,NA
+4092196,Focal continuous delta activity,Condition,SNOMED,Clinical Finding,S,251487007,2002-01-31,2099-12-31,NA
+4092197,Focal episodic delta activity,Condition,SNOMED,Clinical Finding,S,251497003,2002-01-31,2099-12-31,NA
+4092198,Focal episodic sharp waves,Condition,SNOMED,Clinical Finding,S,251501008,2002-01-31,2099-12-31,NA
+4092323,Motor nerve conduction block,Condition,SNOMED,Clinical Finding,S,251566000,2002-01-31,2099-12-31,NA
+4095039,Dyskaryosis on cervical smear,Condition,SNOMED,Clinical Finding,S,250538001,2002-01-31,2099-12-31,NA
+4095285,ST segment depression,Condition,SNOMED,Clinical Finding,S,26141007,2002-01-31,2099-12-31,NA
+4100215,Left ventricular ST changes,Condition,SNOMED,Clinical Finding,S,27649004,2002-01-31,2099-12-31,NA
+4102533,Left ventricular hypertrophy by electrocardiogram,Condition,SNOMED,Clinical Finding,S,25488008,2002-01-31,2099-12-31,NA
+4104995,EKG axis perpendicular to frontal plane,Condition,SNOMED,Clinical Finding,S,29489007,2002-01-31,2099-12-31,NA
+4111551,Wandering atrial pacemaker,Condition,SNOMED,Clinical Finding,S,195101003,2002-01-31,2099-12-31,NA
+4115723,Feces in urine,Condition,SNOMED,Clinical Finding,S,300477005,2002-01-31,2099-12-31,NA
+4134401,Sensory nerve conduction block - partial,Condition,SNOMED,Clinical Finding,S,397948002,2003-07-31,2099-12-31,NA
+4134411,Sensory nerve conduction block - inadequate cephalad spread,Condition,SNOMED,Clinical Finding,S,397975009,2003-07-31,2099-12-31,NA
+4136368,Abnormal presence of glucose,Condition,SNOMED,Clinical Finding,S,31649001,2002-01-31,2099-12-31,NA
+4136452,Radionuclide heart study abnormal,Condition,SNOMED,Clinical Finding,S,412747004,2004-07-31,2099-12-31,NA
+4137208,EKG: inferior ischemia,Condition,SNOMED,Clinical Finding,S,425419005,2007-07-31,2099-12-31,NA
+4137879,EKG: lateral ischemia,Condition,SNOMED,Clinical Finding,S,425623009,2007-07-31,2099-12-31,NA
+4138921,EKG: Mobitz type II atrioventricular block,Condition,SNOMED,Clinical Finding,S,426183003,2007-07-31,2099-12-31,NA
+4139185,EKG: anterior ischemia,Condition,SNOMED,Clinical Finding,S,426434006,2007-07-31,2099-12-31,NA
+4141527,EKG: torsades de pointes,Condition,SNOMED,Clinical Finding,S,426882006,2007-07-31,2099-12-31,NA
+4141663,EKG: junctional escape rhythm,Condition,SNOMED,Clinical Finding,S,426995002,2007-07-31,2099-12-31,NA
+4142875,Solitary nodule of lung,Condition,SNOMED,Clinical Finding,S,427359005,2007-07-31,2099-12-31,NA
+4145510,EKG: supraventricular tachycardia,Condition,SNOMED,Clinical Finding,S,426761007,2007-07-31,2099-12-31,NA
+4146418,EKG: asystole,Condition,SNOMED,Clinical Finding,S,427485008,2007-07-31,2099-12-31,NA
+4146988,Empty delta sign,Condition,SNOMED,Clinical Finding,S,35508004,2002-01-31,2099-12-31,NA
+4147886,Cervical smear - mild inflammation,Condition,SNOMED,Clinical Finding,S,310841002,2002-01-31,2099-12-31,NA
+4148734,Cervical smear - viral inflammation unspecified,Condition,SNOMED,Clinical Finding,S,269963000,2002-01-31,2099-12-31,NA
+4149463,Down's screening blood test abnormal,Condition,SNOMED,Clinical Finding,S,310580002,2002-01-31,2099-12-31,NA
+4149625,Cervical smear - moderate inflammation,Condition,SNOMED,Clinical Finding,S,310842009,2002-01-31,2099-12-31,NA
+4150384,Urine cytology abnormal,Condition,SNOMED,Clinical Finding,S,310439007,2002-01-31,2099-12-31,NA
+4151556,Cervical smear - severe dyskaryosis,Condition,SNOMED,Clinical Finding,S,269960002,2002-01-31,2099-12-31,NA
+4152694,Cervical smear - moderate dyskaryosis,Condition,SNOMED,Clinical Finding,S,269961003,2002-01-31,2099-12-31,NA
+4152695,Cervical smear - wart virus,Condition,SNOMED,Clinical Finding,S,269964006,2002-01-31,2099-12-31,NA
+4153511,EKG: left ventricular strain,Condition,SNOMED,Clinical Finding,S,370365005,2002-07-31,2099-12-31,NA
+4154909,Abnormal radiologic density,Condition,SNOMED,Clinical Finding,S,28328005,2002-01-31,2099-12-31,NA
+4155377,Cervical smear - mild dyskaryosis,Condition,SNOMED,Clinical Finding,S,269959007,2002-01-31,2099-12-31,NA
+4160169,Motor nerve conduction block - patchy,Condition,SNOMED,Clinical Finding,S,398263009,2003-07-31,2099-12-31,NA
+4160172,Sensory nerve conduction block - full,Condition,SNOMED,Clinical Finding,S,398277007,2003-07-31,2099-12-31,NA
+4160173,Sensory nerve conduction block - none,Condition,SNOMED,Clinical Finding,S,398278002,2003-07-31,2099-12-31,NA
+4162242,Sensory nerve conduction block - patchy,Condition,SNOMED,Clinical Finding,S,398160004,2003-07-31,2099-12-31,NA
+4162367,Motor nerve conduction block - none,Condition,SNOMED,Clinical Finding,S,398208003,2003-07-31,2099-12-31,NA
+4165995,Shadow of lung,Condition,SNOMED,Clinical Finding,S,274714007,2002-01-31,2099-12-31,NA
+4166139,Abnormal immunological finding in specimen from female genital organ,Condition,SNOMED,Clinical Finding,S,274845003,2002-01-31,2099-12-31,NA
+4166218,Right axis deviation,Condition,SNOMED,Clinical Finding,S,47665007,2002-01-31,2099-12-31,NA
+4167061,Magnetic resonance imaging of abdomen abnormal,Condition,SNOMED,Clinical Finding,S,416200006,2005-07-31,2099-12-31,NA
+4168089,Electroretinogram abnormal,Condition,SNOMED,Clinical Finding,S,274524001,2002-01-31,2099-12-31,NA
+4168242,Abnormal histological finding in specimen from male genital organ,Condition,SNOMED,Clinical Finding,S,274835000,2002-01-31,2099-12-31,NA
+4168553,Electroencephalogram abnormal,Condition,SNOMED,Clinical Finding,S,274521009,2002-01-31,2099-12-31,NA
+4168555,Head scan abnormal,Condition,SNOMED,Clinical Finding,S,274539000,2002-01-31,2099-12-31,NA
+4168689,Abnormal findings on microbiological examination of urine,Condition,SNOMED,Clinical Finding,S,274677003,2002-01-31,2099-12-31,NA
+4168690,Abnormal microbiological finding in cerebrospinal fluid,Condition,SNOMED,Clinical Finding,S,274679000,2002-01-31,2099-12-31,NA
+4168692,Abnormal cytological finding in specimen from male genital organ,Condition,SNOMED,Clinical Finding,S,274685007,2002-01-31,2099-12-31,NA
+4168693,Abnormal cytological findings in CSF,Condition,SNOMED,Clinical Finding,S,274686008,2002-01-31,2099-12-31,NA
+4168699,Spermatozoa abnormal,Condition,SNOMED,Clinical Finding,S,274735009,2002-01-31,2099-12-31,NA
+4168840,Abnormal immunological findings in CSF,Condition,SNOMED,Clinical Finding,S,274843005,2002-01-31,2099-12-31,NA
+4168841,Abnormal immunological finding in specimen from male genital organ,Condition,SNOMED,Clinical Finding,S,274846002,2002-01-31,2099-12-31,NA
+4171521,Shortened PR interval,Condition,SNOMED,Clinical Finding,S,49578007,2002-01-31,2099-12-31,NA
+4171776,Abnormal findings on diagnostic imaging of limbs,Condition,SNOMED,Clinical Finding,S,274532009,2002-01-31,2099-12-31,NA
+4171910,Abnormal microbiological finding in specimen from female genital organ,Condition,SNOMED,Clinical Finding,S,274681003,2002-01-31,2099-12-31,NA
+4171911,Abnormal microbiological finding in specimen from male genital organ,Condition,SNOMED,Clinical Finding,S,274682005,2002-01-31,2099-12-31,NA
+4171912,Abnormal cytological finding in specimen from female genital organ,Condition,SNOMED,Clinical Finding,S,274688009,2002-01-31,2099-12-31,NA
+4171913,Abnormal findings in specimens from digestive organs and abdominal cavity,Condition,SNOMED,Clinical Finding,S,274704003,2002-01-31,2099-12-31,NA
+4172063,Abnormal histological finding in specimen from female genital organ,Condition,SNOMED,Clinical Finding,S,274833007,2002-01-31,2099-12-31,NA
+4172064,Abnormal histological findings in CSF,Condition,SNOMED,Clinical Finding,S,274834001,2002-01-31,2099-12-31,NA
+4175045,Diffuse motor nerve conduction abnormality,Condition,SNOMED,Clinical Finding,S,277028004,2002-01-31,2099-12-31,NA
+4175699,Diffuse sensory nerve conduction abnormality,Condition,SNOMED,Clinical Finding,S,278236003,2002-01-31,2099-12-31,NA
+4177675,Gouty urine,Condition,SNOMED,Clinical Finding,S,49621008,2002-01-31,2099-12-31,NA
+4179078,Increased lung tracer uptake,Condition,SNOMED,Clinical Finding,S,428920008,2008-01-31,2099-12-31,NA
+4179523,Subdiaphragmatic tracer uptake,Condition,SNOMED,Clinical Finding,S,429382003,2008-01-31,2099-12-31,NA
+4179948,Milky urine,Condition,SNOMED,Clinical Finding,S,50935005,2002-01-31,2099-12-31,NA
+4180609,Anterior myocardial infarction on electrocardiogram,Condition,SNOMED,Clinical Finding,S,429731003,2008-01-31,2099-12-31,NA
+4183439,Filling defect,Condition,SNOMED,Clinical Finding,S,43468004,2002-01-31,2099-12-31,NA
+4183707,Abnormal composition of urine,Condition,SNOMED,Clinical Finding,S,437009,2002-01-31,2099-12-31,NA
+4184348,Anterolateral infarction by electrocardiogram,Condition,SNOMED,Clinical Finding,S,43630006,2002-01-31,2099-12-31,NA
+4184762,EKG ST segment changes,Condition,SNOMED,Clinical Finding,S,55930002,2002-01-31,2099-12-31,NA
+4191260,Shadow,Condition,SNOMED,Clinical Finding,S,39321000,2002-01-31,2099-12-31,NA
+4192178,Dual energy X-ray absorptiometry of bone of forearm result osteopenia,Condition,SNOMED,Clinical Finding,S,391061007,2003-01-31,2099-12-31,NA
+4192181,Dual energy X-ray absorptiometry of bone of lumbar vertebra result osteoporosis,Condition,SNOMED,Clinical Finding,S,391075000,2003-01-31,2099-12-31,NA
+4193146,Dual energy X-ray absorptiometry of bone of forearm result osteoporosis,Condition,SNOMED,Clinical Finding,S,391060008,2003-01-31,2099-12-31,NA
+4193148,Dual energy X-ray absorptiometry of calcaneum result osteoporosis,Condition,SNOMED,Clinical Finding,S,391065003,2003-01-31,2099-12-31,NA
+4194151,Doppler studies abnormal,Condition,SNOMED,Clinical Finding,S,312370006,2002-01-31,2099-12-31,NA
+4195787,Diminished RV forces by EKG,Condition,SNOMED,Clinical Finding,S,44325009,2002-01-31,2099-12-31,NA
+4200643,CSU = abnormal,Measurement,SNOMED,Clinical Finding,S,301834005,2002-01-31,2099-12-31,NA
+4204014,Coin lesion of lung,Condition,SNOMED,Clinical Finding,S,308689002,2002-01-31,2099-12-31,NA
+4206397,Dysplasia on cervical smear,Condition,SNOMED,Clinical Finding,S,439074000,2009-01-31,2099-12-31,NA
+4208032,Atypical endocervical cells on vaginal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,441098008,2009-01-31,2099-12-31,NA
+4208962,Colonoscopy abnormal,Condition,SNOMED,Clinical Finding,S,313172000,2002-01-31,2099-12-31,NA
+4209489,Atypical endocervical cells on cervical Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,441094005,2009-01-31,2099-12-31,NA
+4215406,Left axis deviation,Condition,SNOMED,Clinical Finding,S,39732003,2002-01-31,2099-12-31,NA
+4216604,MRI of thorax abnormal,Condition,SNOMED,Clinical Finding,S,416465001,2005-07-31,2099-12-31,NA
+4216760,Bone marrow granulocytic hypoplasia,Condition,SNOMED,Clinical Finding,S,416627004,2005-07-31,2099-12-31,NA
+4218149,Magnetic resonance imaging of thoracic spine abnormal,Condition,SNOMED,Clinical Finding,S,416841005,2005-07-31,2099-12-31,NA
+4218204,Left axis deviation greater than -90 degrees by EKG,Condition,SNOMED,Clinical Finding,S,398002,2002-01-31,2099-12-31,NA
+4218638,MRI of lumbar spine abnormal,Condition,SNOMED,Clinical Finding,S,417726009,2005-07-31,2099-12-31,NA
+4219140,Bone marrow granulocytic aplasia,Condition,SNOMED,Clinical Finding,S,417250005,2005-07-31,2099-12-31,NA
+4221183,Magnetic resonance imaging of cervical spine abnormal,Condition,SNOMED,Clinical Finding,S,417525006,2005-07-31,2099-12-31,NA
+4221638,Temporal slowing,Condition,SNOMED,Clinical Finding,S,417621006,2005-07-31,2099-12-31,NA
+4225910,Dextrocardia/situs inversus finding,Condition,SNOMED,Clinical Finding,S,85090007,2002-01-31,2099-12-31,NA
+4227997,Dyspeptic urine,Condition,SNOMED,Clinical Finding,S,40434009,2002-01-31,2099-12-31,NA
+4228474,Bone marrow myeloid dysplasia,Condition,SNOMED,Clinical Finding,S,405717004,2004-01-31,2099-12-31,NA
+4231771,Hereditary antithrombin III deficiency,Condition,SNOMED,Disorder,S,439699000,2009-01-31,2099-12-31,NA
+4233442,Dual energy X-ray absorptiometry of neck of femur result osteopenia,Condition,SNOMED,Clinical Finding,S,440099005,2009-01-31,2099-12-31,NA
+4236309,Magnetic resonance imaging of brain abnormal,Condition,SNOMED,Clinical Finding,S,407669000,2004-01-31,2099-12-31,NA
+4236310,Computed tomography of brain abnormal,Condition,SNOMED,Clinical Finding,S,407670004,2004-01-31,2099-12-31,NA
+4236827,Abnormal electronystagmogram,Condition,SNOMED,Clinical Finding,S,441328008,2009-01-31,2099-12-31,NA
+4238879,Shortened ST interval,Condition,SNOMED,Clinical Finding,S,69318006,2002-01-31,2099-12-31,NA
+4243318,Diminished LV forces by EKG,Condition,SNOMED,Clinical Finding,S,38531000,2002-01-31,2099-12-31,NA
+4245977,Inverted T wave,Condition,SNOMED,Clinical Finding,S,59931005,2002-01-31,2099-12-31,NA
+4247796,Inferior myocardial infarction on electrocardiogram,Condition,SNOMED,Clinical Finding,S,7326005,2002-01-31,2099-12-31,NA
+4248531,Echocardiogram shows left ventricular systolic dysfunction,Condition,SNOMED,Clinical Finding,S,407596008,2004-01-31,2099-12-31,NA
+4248669,Carotid artery Doppler abnormal,Condition,SNOMED,Clinical Finding,S,408571007,2004-01-31,2099-12-31,NA
+4253065,Posterior myocardial infarction on electrocardiogram,Condition,SNOMED,Clinical Finding,S,73999000,2002-01-31,2099-12-31,NA
+4253187,Echocardiogram shows left ventricular diastolic dysfunction,Condition,SNOMED,Clinical Finding,S,407597004,2004-01-31,2099-12-31,NA
+4256761,Imaging result abnormal,Condition,SNOMED,Clinical Finding,S,408574004,2004-01-31,2099-12-31,NA
+4256916,Ultrasound scan of fetal head abnormal,Condition,SNOMED,Clinical Finding,S,408771005,2004-07-31,2099-12-31,NA
+4257900,Dual energy X-ray absorptiometry of neck of femur result osteoporosis,Condition,SNOMED,Clinical Finding,S,440100002,2009-01-31,2099-12-31,NA
+4261488,Right ventricular ST changes,Condition,SNOMED,Clinical Finding,S,44998009,2002-01-31,2099-12-31,NA
+4264220,Antithrombin III deficiency,Condition,SNOMED,Disorder,S,36351005,2002-01-31,2099-12-31,NA
+4266012,Sensory nerve conduction block - excessive,Condition,SNOMED,Clinical Finding,S,397738006,2003-07-31,2099-12-31,NA
+4266486,Motor nerve conduction block - excessive,Condition,SNOMED,Clinical Finding,S,397921003,2003-07-31,2099-12-31,NA
+4266487,Sensory nerve conduction block - inadequate caudad spread,Condition,SNOMED,Clinical Finding,S,397922005,2003-07-31,2099-12-31,NA
+4267786,Bone marrow myeloid cells - finding,Condition,SNOMED,Clinical Finding,S,365834007,2002-01-31,2099-12-31,NA
+4267875,Counterclockwise vectorcardiographic loop,Condition,SNOMED,Clinical Finding,S,61721007,2002-01-31,2099-12-31,NA
+4272343,Digitalis toxicity by EKG,Condition,SNOMED,Clinical Finding,S,6412007,2002-01-31,2099-12-31,NA
+4275340,Bone marrow: foreign cells - finding,Condition,SNOMED,Clinical Finding,S,365836009,2002-01-31,2099-12-31,NA
+4281078,Flattened T wave,Condition,SNOMED,Clinical Finding,S,66812002,2002-01-31,2099-12-31,NA
+4282911,Chylous urine,Condition,SNOMED,Clinical Finding,S,66627000,2002-01-31,2099-12-31,NA
+4287785,Motor nerve conduction block - partial,Condition,SNOMED,Clinical Finding,S,397743004,2003-07-31,2099-12-31,NA
+4287925,Motor nerve conduction block - full,Condition,SNOMED,Clinical Finding,S,397911006,2003-07-31,2099-12-31,NA
+4290871,Abnormal presence of hemoglobin,Condition,SNOMED,Clinical Finding,S,3720003,2002-01-31,2099-12-31,NA
+4291166,Diabetic urine,Condition,SNOMED,Clinical Finding,S,37398008,2002-01-31,2099-12-31,NA
+4295129,ST segment elevation,Condition,SNOMED,Clinical Finding,S,76388001,2002-01-31,2099-12-31,NA
+4296653,Acute ST segment elevation myocardial infarction,Condition,SNOMED,Disorder,S,401303003,2003-07-31,2099-12-31,NA
+4298419,Cloudy urine,Condition,SNOMED,Clinical Finding,S,7766007,2002-01-31,2099-12-31,NA
+4300189,Febrile urine,Condition,SNOMED,Clinical Finding,S,77483002,2002-01-31,2099-12-31,NA
+4300288,Right atrial hypertrophy by electrocardiogram,Condition,SNOMED,Clinical Finding,S,77566008,2002-01-31,2099-12-31,NA
+4305516,Atrial hypertrophy by EKG,Condition,SNOMED,Clinical Finding,S,82281000,2002-01-31,2099-12-31,NA
+4306615,Ventricular hypertrophy by EKG,Condition,SNOMED,Clinical Finding,S,83370008,2002-01-31,2099-12-31,NA
+4307174,Dual energy X-ray absorptiometry of calcaneum result osteopenia,Condition,SNOMED,Clinical Finding,S,391066002,2003-01-31,2099-12-31,NA
+4307175,Dual energy X-ray absorptiometry of bone of hip joint region result osteoporosis,Condition,SNOMED,Clinical Finding,S,391070005,2003-01-31,2099-12-31,NA
+4307176,Dual energy X-ray absorptiometry of bone of hip joint region result osteopenia,Condition,SNOMED,Clinical Finding,S,391071009,2003-01-31,2099-12-31,NA
+4308868,Increased markings,Condition,SNOMED,Clinical Finding,S,83464003,2002-01-31,2099-12-31,NA
+4311428,Electrical alternation of heart,Condition,SNOMED,Clinical Finding,S,423863005,2007-01-31,2099-12-31,NA
+4312541,Abnormal presence of myoglobin,Condition,SNOMED,Clinical Finding,S,9437001,2002-01-31,2099-12-31,NA
+4321877,Wide QRS complex,Condition,SNOMED,Clinical Finding,S,991002,2002-01-31,2099-12-31,NA
+4322004,Myeloid hyperplasia of bone marrow,Condition,SNOMED,Disorder,S,70918005,2002-01-31,2099-12-31,NA
+4325125,Abnormal presence of albumin,Condition,SNOMED,Clinical Finding,S,71628007,2002-01-31,2099-12-31,NA
+4326653,Secondary ST-T abnormality on electrocardiogram,Condition,SNOMED,Clinical Finding,S,428549008,2008-01-31,2099-12-31,NA
+4327859,Nonspecific ST-T abnormality on electrocardiogram,Condition,SNOMED,Clinical Finding,S,428750005,2008-01-31,2099-12-31,NA
+4329269,Abnormal extracardiac tracer uptake,Condition,SNOMED,Clinical Finding,S,429576000,2008-01-31,2099-12-31,NA
+4337811,Left atrial hypertrophy by EKG,Condition,SNOMED,Clinical Finding,S,87469009,2002-01-31,2099-12-31,NA
+35610318,Hypocitraturia,Condition,SNOMED,Clinical Finding,S,1091781000000100,2018-04-01,2099-12-31,NA
+35611570,Acute ST segment elevation myocardial infarction of inferolateral wall,Condition,SNOMED,Disorder,S,12238111000119106,2018-07-31,2099-12-31,NA
+35611571,Acute ST segment elevation myocardial infarction of inferoposterior wall,Condition,SNOMED,Disorder,S,12238151000119107,2018-07-31,2099-12-31,NA
+36684966,Imaging of lung consistent with tuberculosis,Condition,SNOMED,Clinical Finding,S,459581000124103,2018-09-01,2099-12-31,NA
+36712970,Presence of unidentified hemoglobin variant,Measurement,SNOMED,Clinical Finding,S,15758261000119106,2017-01-31,2099-12-31,NA
+36713017,Imaging of central nervous system abnormal,Condition,SNOMED,Clinical Finding,S,16079691000119105,2017-01-31,2099-12-31,NA
+36713359,Presence of hemoglobin alpha-chain variant,Measurement,SNOMED,Clinical Finding,S,681401000119103,2017-01-31,2099-12-31,NA
+36713360,Presence of hemoglobin delta chain variant,Measurement,SNOMED,Clinical Finding,S,681421000119107,2017-01-31,2099-12-31,NA
+36713631,Cystoscopy abnormal,Condition,SNOMED,Clinical Finding,S,718547004,2017-01-31,2099-12-31,NA
+36713973,Kidney biopsy result abnormal,Condition,SNOMED,Clinical Finding,S,719025001,2017-01-31,2099-12-31,NA
+36714214,Kidney biopsy result borderline abnormal,Condition,SNOMED,Clinical Finding,S,719341006,2017-01-31,2099-12-31,NA
+37016099,Neonatal screening abnormal,Condition,SNOMED,Clinical Finding,S,101071000119104,2016-01-31,2099-12-31,NA
+37016146,MRI of head abnormal,Condition,SNOMED,Clinical Finding,S,116131000119107,2016-01-31,2099-12-31,NA
+37016202,Magnetic resonance imaging of breast abnormal,Condition,SNOMED,Clinical Finding,S,15633801000119105,2016-01-31,2099-12-31,NA
+37016203,MRI of pelvis abnormal,Condition,SNOMED,Clinical Finding,S,15633841000119107,2016-01-31,2099-12-31,NA
+37016204,Ultrasonography of liver abnormal,Condition,SNOMED,Clinical Finding,S,15633881000119102,2016-01-31,2099-12-31,NA
+37016205,Ultrasonography of abdomen abnormal,Condition,SNOMED,Clinical Finding,S,15633921000119109,2016-01-31,2099-12-31,NA
+37016206,Ultrasonography of breast abnormal,Condition,SNOMED,Clinical Finding,S,15633961000119104,2016-01-31,2099-12-31,NA
+37016207,Ultrasonography of urinary bladder abnormal,Condition,SNOMED,Clinical Finding,S,15634041000119101,2016-01-31,2099-12-31,NA
+37016208,CT of biliary tract abnormal,Condition,SNOMED,Clinical Finding,S,15634081000119106,2016-01-31,2099-12-31,NA
+37016209,CT of abdominal wall abnormal,Condition,SNOMED,Clinical Finding,S,15634131000119106,2016-01-31,2099-12-31,NA
+37016210,CT of abdomen abnormal,Condition,SNOMED,Clinical Finding,S,15634181000119107,2016-01-31,2099-12-31,NA
+37016219,Ultrasonography of kidney abnormal,Condition,SNOMED,Clinical Finding,S,15883561000119108,2016-01-31,2099-12-31,NA
+37016258,Fetal ultrasound scan abnormal,Condition,SNOMED,Clinical Finding,S,28241000119109,2016-01-31,2099-12-31,NA
+37016762,Abnormal finding on screening procedure,Condition,SNOMED,Clinical Finding,S,712875004,2016-01-31,2099-12-31,NA
+37017188,EKG ventricular tachycardia polymorphic,Condition,SNOMED,Clinical Finding,S,713420008,2016-01-31,2099-12-31,NA
+37017189,EKG ventricular tachycardia monomorphic,Condition,SNOMED,Clinical Finding,S,713421007,2016-01-31,2099-12-31,NA
+37017190,EKG: atrial tachycardia,Condition,SNOMED,Clinical Finding,S,713422000,2016-01-31,2099-12-31,NA
+37017191,EKG: multifocal atrial tachycardia,Condition,SNOMED,Clinical Finding,S,713423005,2016-01-31,2099-12-31,NA
+37017193,EKG: Incomplete right bundle branch block,Condition,SNOMED,Clinical Finding,S,713426002,2016-01-31,2099-12-31,NA
+37017194,EKG: complete right bundle branch block,Condition,SNOMED,Clinical Finding,S,713427006,2016-01-31,2099-12-31,NA
+37018682,CT of pelvis abnormal,Condition,SNOMED,Clinical Finding,S,15634221000119104,2016-01-31,2099-12-31,NA
+37018888,Ultrasonography of brain abnormal,Condition,SNOMED,Clinical Finding,S,15634001000119103,2016-01-31,2099-12-31,NA
+37019050,EKG: focal atrial tachycardia,Condition,SNOMED,Clinical Finding,S,713424004,2016-01-31,2099-12-31,NA
+37118682,ECG complete left bundle branch block,Condition,SNOMED,Clinical Finding,S,733534002,2017-07-31,2099-12-31,NA
+37161547,ARIA - amyloid-related imaging abnormality,Condition,SNOMED,Clinical Finding,S,1179778008,2022-01-31,2099-12-31,NA
+37161554,ARIA-E - amyloid-related image abnormality of edema or effusion,Condition,SNOMED,Clinical Finding,S,1179802002,2022-01-31,2099-12-31,NA
+37161555,ARIA-H - amyloid-related image abnormality of microhemorrhage or hemosiderosis,Condition,SNOMED,Clinical Finding,S,1179803007,2022-01-31,2099-12-31,NA
+37162631,Acquired antithrombin III deficiency,Condition,SNOMED,Disorder,S,1196942001,2022-02-28,2099-12-31,NA
+37163035,Brugada electrocardiograph pattern,Condition,SNOMED,Clinical Finding,S,1204168008,2022-03-31,2099-12-31,NA
+37163269,Provoked Brugada electrocardiograph pattern,Condition,SNOMED,Clinical Finding,S,1208851000,2022-04-30,2099-12-31,NA
+37163291,Spontaneous Brugada electrocardiograph pattern,Condition,SNOMED,Clinical Finding,S,1208874001,2022-03-31,2099-12-31,NA
+37163565,Ground glass opacity,Condition,SNOMED,Clinical Finding,S,1217294009,2022-04-30,2099-12-31,NA
+37163819,Regular wide QRS complex tachycardia,Condition,SNOMED,Disorder,S,1220643007,2022-05-31,2099-12-31,NA
+37167221,Adenovirus infection in immunocompromised person,Condition,SNOMED,Disorder,S,1264007008,2023-02-28,2099-12-31,NA
+37167455,Increased reticulin in bone marrow,Condition,SNOMED,Clinical Finding,S,1264469002,2023-02-28,2099-12-31,NA
+37167807,Digital breast tomosynthesis abnormal,Condition,SNOMED,Clinical Finding,S,1268971002,2023-03-31,2099-12-31,NA
+37169262,Acute ST segment elevation myocardial infarction of atrium,Condition,SNOMED,Disorder,S,15713001000119100,2023-06-30,2099-12-31,NA
+37172157,Acute ST segment elevation myocardial infarction due to distal left circumflex coronary artery occlusion,Condition,SNOMED,Disorder,S,44811000087108,2023-04-30,2099-12-31,NA
+37172159,Acute ST segment elevation myocardial infarction due to mid left circumflex coronary artery occlusion,Condition,SNOMED,Disorder,S,44821000087100,2023-04-30,2099-12-31,NA
+37172160,Acute ST segment elevation myocardial infarction due to obtuse marginal branch of left circumflex coronary artery occlusion,Condition,SNOMED,Disorder,S,44831000087103,2023-04-30,2099-12-31,NA
+37172162,Acute ST segment elevation myocardial infarction due to posterolateral branch of left circumflex coronary artery occlusion,Condition,SNOMED,Disorder,S,44841000087109,2023-04-30,2099-12-31,NA
+37172163,Acute ST segment elevation myocardial infarction due to proximal left circumflex coronary artery occlusion,Condition,SNOMED,Disorder,S,44851000087107,2023-04-30,2099-12-31,NA
+37175119,Plain X-ray of bone structure of rib abnormal,Condition,SNOMED,Clinical Finding,S,1251532001,2022-09-30,2099-12-31,NA
+37175133,School entrant vision screening test failed,Condition,SNOMED,Clinical Finding,S,1577231000000109,2023-06-07,2099-12-31,NA
+37175168,Ultrasonography of lung abnormal,Condition,SNOMED,Clinical Finding,S,1208949003,2022-03-31,2099-12-31,NA
+37203807,Eosinophilia of peritoneal fluid,Condition,SNOMED,Clinical Finding,S,782865007,2019-07-31,2099-12-31,NA
+37209606,Ultrasonography of right kidney abnormal,Condition,SNOMED,Clinical Finding,S,16675351000119101,2019-07-31,2099-12-31,NA
+37209607,Ultrasonography of left kidney abnormal,Condition,SNOMED,Clinical Finding,S,16675391000119106,2019-07-31,2099-12-31,NA
+37209608,Bilateral ultrasonography of kidneys abnormal,Condition,SNOMED,Clinical Finding,S,16675431000119101,2019-07-31,2099-12-31,NA
+37309608,CT of chest abnormal,Condition,SNOMED,Clinical Finding,S,16900311000119102,2020-01-31,2099-12-31,NA
+37309609,Ultrasonography of biliary tract abnormal,Condition,SNOMED,Clinical Finding,S,16898991000119100,2020-01-31,2099-12-31,NA
+37311140,Ventricular inversion electrocardiogram pattern,Condition,SNOMED,Clinical Finding,S,827077001,2020-01-31,2099-12-31,NA
+37397362,Bilateral lung opacities on plain chest X-ray,Condition,SNOMED,Clinical Finding,S,717978008,2016-07-31,2099-12-31,NA
+40480043,Abnormal cervical Papanicolaou smear with human papillomavirus deoxyribonucleic acid detected,Condition,SNOMED,Clinical Finding,S,441667007,2009-07-31,2099-12-31,NA
+40480065,Imaging of genitourinary system abnormal,Condition,SNOMED,Clinical Finding,S,441687008,2009-07-31,2099-12-31,NA
+40480418,Ballistocardiogram abnormal,Condition,SNOMED,Clinical Finding,S,441707002,2009-07-31,2099-12-31,NA
+40480490,Abnormal presence of alpha-fetoprotein,Condition,SNOMED,Clinical Finding,S,441772009,2009-07-31,2099-12-31,NA
+40480959,Imaging of thyroid gland abnormal,Condition,SNOMED,Clinical Finding,S,441905004,2009-07-31,2099-12-31,NA
+40481304,Imaging of head abnormal,Condition,SNOMED,Clinical Finding,S,441914009,2009-07-31,2099-12-31,NA
+40481319,Imaging of musculoskeletal system abnormal,Condition,SNOMED,Clinical Finding,S,441928003,2009-07-31,2099-12-31,NA
+40481369,Red blood cell morphology abnormal,Condition,SNOMED,Clinical Finding,S,441973005,2009-07-31,2099-12-31,NA
+40481385,Imaging of abdomen abnormal,Condition,SNOMED,Clinical Finding,S,441988000,2009-07-31,2099-12-31,NA
+40482086,Left anterior fascicular block on electrocardiogram,Condition,SNOMED,Clinical Finding,S,445118002,2010-07-31,2099-12-31,NA
+40482203,Karyotype evaluation abnormal,Condition,SNOMED,Clinical Finding,S,442124003,2009-07-31,2099-12-31,NA
+40482228,Imaging of thorax abnormal,Condition,SNOMED,Clinical Finding,S,442147002,2009-07-31,2099-12-31,NA
+40482267,Imaging of gastrointestinal tract abnormal,Condition,SNOMED,Clinical Finding,S,442182001,2009-07-31,2099-12-31,NA
+40482505,Left posterior fascicular block on electrocardiogram,Condition,SNOMED,Clinical Finding,S,445211001,2010-07-31,2099-12-31,NA
+40482695,Plain X-ray of head abnormal,Condition,SNOMED,Clinical Finding,S,442276009,2009-07-31,2099-12-31,NA
+40482887,Right bundle branch block and left anterior fascicular block on electrocardiogram,Condition,SNOMED,Clinical Finding,S,445263008,2010-07-31,2099-12-31,NA
+40482938,Trifascicular block on electrocardiogram,Condition,SNOMED,Clinical Finding,S,445309007,2010-07-31,2099-12-31,NA
+40483359,Right bundle branch block and left posterior fascicular block on electrocardiogram,Condition,SNOMED,Clinical Finding,S,445393004,2010-07-31,2099-12-31,NA
+40483364,CT of head abnormal,Condition,SNOMED,Clinical Finding,S,445398008,2010-07-31,2099-12-31,NA
+40483798,Bifascicular block on electrocardiogram,Condition,SNOMED,Clinical Finding,S,445481009,2010-07-31,2099-12-31,NA
+40484102,Abnormal finding on evaluation procedure,Condition,SNOMED,Clinical Finding,S,442618008,2009-07-31,2099-12-31,NA
+40484489,Imaging of lung abnormal,Condition,SNOMED,Clinical Finding,S,442646005,2009-07-31,2099-12-31,NA
+40484493,Imaging of spleen abnormal,Condition,SNOMED,Clinical Finding,S,442650003,2009-07-31,2099-12-31,NA
+40484531,Imaging of liver abnormal,Condition,SNOMED,Clinical Finding,S,442684004,2009-07-31,2099-12-31,NA
+40484552,Plain X-ray of musculoskeletal system abnormal,Condition,SNOMED,Clinical Finding,S,442702006,2009-07-31,2099-12-31,NA
+40484892,Imaging of biliary tract abnormal,Condition,SNOMED,Clinical Finding,S,442717005,2009-07-31,2099-12-31,NA
+40484908,Imaging of brain abnormal,Condition,SNOMED,Clinical Finding,S,442731005,2009-07-31,2099-12-31,NA
+40484947,Phonocardiogram abnormal,Condition,SNOMED,Clinical Finding,S,442767003,2009-07-31,2099-12-31,NA
+40484948,Peritoneal fluid abnormal,Condition,SNOMED,Clinical Finding,S,442768008,2009-07-31,2099-12-31,NA
+40484949,Evaluation of oculomotor system abnormal,Condition,SNOMED,Clinical Finding,S,442769000,2009-07-31,2099-12-31,NA
+40484951,Electrooculogram abnormal,Condition,SNOMED,Clinical Finding,S,442770004,2009-07-31,2099-12-31,NA
+40484952,Retinal function study abnormal,Condition,SNOMED,Clinical Finding,S,442771000,2009-07-31,2099-12-31,NA
+40484955,Vectorcardiogram abnormal,Condition,SNOMED,Clinical Finding,S,442774008,2009-07-31,2099-12-31,NA
+42536403,Abnormal cardiotochogram tracing,Condition,SNOMED,Clinical Finding,S,735205007,2018-01-31,2099-12-31,NA
+42537689,Abnormal reaction to tuberculin test,Measurement,SNOMED,Clinical Finding,S,737222005,2018-01-31,2099-12-31,NA
+42538969,First trimester Down screening blood test abnormal,Condition,SNOMED,Clinical Finding,S,94821000119104,2018-01-31,2099-12-31,NA
+42539190,Increased neural tube defects detected multiple marker screening,Condition,SNOMED,Clinical Finding,S,130061000119105,2018-01-31,2099-12-31,NA
+42593350,Calcium level in urine elevated,Condition,SNOMED Veterinary,Clinical Finding,S,280361000009108,2009-10-20,2099-12-31,NA
+42593373,Nasal passage opaque,Condition,SNOMED Veterinary,Clinical Finding,S,280661000009100,2009-10-23,2099-12-31,NA
+42593432,Abnormal pulmonary interstitial pattern,Condition,SNOMED Veterinary,Clinical Finding,S,281281000009100,2009-10-27,2099-12-31,NA
+42593437,Exaggerated radiographic definition of pleural fissures,Condition,SNOMED Veterinary,Clinical Finding,S,281381000009106,2009-10-27,2099-12-31,NA
+42593438,Abnormal alveolar pattern,Condition,SNOMED Veterinary,Clinical Finding,S,281421000009100,2009-10-27,2099-12-31,NA
+42593439,Abnormal bronchiolar pattern,Condition,SNOMED Veterinary,Clinical Finding,S,281431000009103,2009-10-27,2099-12-31,NA
+42593440,Abnormal pulmonary radiographic density,Condition,SNOMED Veterinary,Clinical Finding,S,281451000009107,2009-10-27,2099-12-31,NA
+42593442,Abnormal pulmonary radiographic doughnut rings,Condition,SNOMED Veterinary,Clinical Finding,S,281461000009105,2009-10-27,2099-12-31,NA
+42593466,Vaginal cytology abnormal,Condition,SNOMED Veterinary,Clinical Finding,S,281761000009101,2009-10-28,2099-12-31,NA
+42593470,Abnormal mixed pattern,Condition,SNOMED Veterinary,Clinical Finding,S,281811000009105,2009-10-29,2099-12-31,NA
+42593472,Circumscribed pulmonary nodules,Condition,SNOMED Veterinary,Clinical Finding,S,281831000009100,2009-10-29,2099-12-31,NA
+42593479,Scalloped lung borders,Condition,SNOMED Veterinary,Clinical Finding,S,281921000009109,2009-10-29,2099-12-31,NA
+42593480,Sinus opaque,Condition,SNOMED Veterinary,Clinical Finding,S,281931000009106,2009-10-29,2099-12-31,NA
+42593554,Amino acid increased in urine,Condition,SNOMED Veterinary,Clinical Finding,S,282691000009107,2009-11-05,2099-12-31,NA
+42593557,Urine creatinine increased,Condition,SNOMED Veterinary,Clinical Finding,S,282711000009109,2009-11-05,2099-12-31,NA
+42593558,UPC increased,Condition,SNOMED Veterinary,Clinical Finding,S,282731000009104,2009-11-05,2099-12-31,NA
+42593559,Potassium increased in urine,Condition,SNOMED Veterinary,Clinical Finding,S,282741000009105,2009-11-05,2099-12-31,NA
+42593560,Sodium increased in urine,Condition,SNOMED Veterinary,Clinical Finding,S,282751000009108,2009-11-05,2099-12-31,NA
+42593561,Uric acid increased in urine,Condition,SNOMED Veterinary,Clinical Finding,S,282761000009106,2009-11-05,2099-12-31,NA
+42594132,Cardiac electrical axis shifted,Condition,SNOMED Veterinary,Clinical Finding,S,288411000009102,2009-11-18,2099-12-31,NA
+42594389,Notched P wave,Condition,SNOMED Veterinary,Clinical Finding,S,290981000009104,2009-11-19,2099-12-31,NA
+42594391,Notched R wave descent,Condition,SNOMED Veterinary,Clinical Finding,S,291001000009103,2009-11-19,2099-12-31,NA
+42594397,Prolonged R wave,Condition,SNOMED Veterinary,Clinical Finding,S,291051000009102,2009-11-19,2099-12-31,NA
+42596103,Cells increased in peritoneal fluid,Condition,SNOMED Veterinary,Clinical Finding,S,308151000009102,2009-12-01,2099-12-31,NA
+42596313,Abnormal intraarticular radiologic opacity,Condition,SNOMED Veterinary,Clinical Finding,S,310641000009108,2009-12-09,2099-12-31,NA
+42596496,Elevated bone marrow histiocyte numbers,Condition,SNOMED Veterinary,Clinical Finding,S,312561000009106,2009-12-24,2099-12-31,NA
+42596497,Elevated bone marrow lymphoblast numbers,Condition,SNOMED Veterinary,Clinical Finding,S,312571000009102,2009-12-24,2099-12-31,NA
+42596498,Elevated bone marrow lymphocyte numbers,Condition,SNOMED Veterinary,Clinical Finding,S,312581000009100,2009-12-24,2099-12-31,NA
+42596499,Finding of bone marrow: neoplastic cell infiltrate,Condition,SNOMED Veterinary,Clinical Finding,S,312591000009103,2009-12-24,2099-12-31,NA
+42596500,Finding of bone marrow: plasma cell infiltration,Condition,SNOMED Veterinary,Clinical Finding,S,312601000009106,2009-12-24,2099-12-31,NA
+42596504,Cortisol creatinine ratio in urine above normal,Condition,SNOMED Veterinary,Clinical Finding,S,312631000009103,2009-12-24,2099-12-31,NA
+42596593,Cerebrospinal fluid macrophage contain hemosiderin,Condition,SNOMED Veterinary,Clinical Finding,S,313491000009108,2009-12-29,2099-12-31,NA
+42596594,Mononuclear pleocytosis in cerebrospinal fluid,Condition,SNOMED Veterinary,Clinical Finding,S,313501000009100,2009-12-29,2099-12-31,NA
+42599784,Systolic anterior motion of mitral valve,Condition,SNOMED Veterinary,Clinical Finding,S,359231000009100,2017-03-28,2099-12-31,NA
+42599785,Spontaneous echo contrast,Condition,SNOMED Veterinary,Clinical Finding,S,359241000009106,2017-03-28,2099-12-31,NA
+42600155,Space in paraffin embedded tissue from dissolved cholesterol crystal,Condition,SNOMED Veterinary,Clinical Finding,S,42601000009104,2008-08-29,2099-12-31,NA
+42600387,Cytology impression - infertile egg,Condition,SNOMED Veterinary,Clinical Finding,S,45611000009105,2008-08-29,2099-12-31,NA
+42600401,Myeloid:erythroid ratio increased,Condition,SNOMED Veterinary,Clinical Finding,S,45781000009106,2008-08-29,2099-12-31,NA
+43020460,Acute ST segment elevation myocardial infarction involving left anterior descending coronary artery,Condition,SNOMED,Disorder,S,285981000119103,2013-01-31,2099-12-31,NA
+44783075,Ear examination abnormal,Condition,SNOMED,Clinical Finding,S,699116001,2014-01-31,2099-12-31,NA
+44784330,Aortic aneurysm screening abnormal,Condition,SNOMED,Clinical Finding,S,698462006,2014-01-31,2099-12-31,NA
+44789214,Renal ultrasound abnormal,Condition,SNOMED,Clinical Finding,S,202541000000104,2006-04-01,2099-12-31,NA
+44790031,Smear abnormal - patient told,Condition,SNOMED,Clinical Finding,S,22471000000109,2004-01-31,2099-12-31,NA
+44804675,Sigmoidoscopy abnormal,Condition,SNOMED,Clinical Finding,S,759111000000100,2011-04-01,2099-12-31,NA
+44807709,Abdominal aortic aneurysm screen ultrasound scan abnormal,Condition,SNOMED,Clinical Finding,S,809101000000106,2012-04-01,2099-12-31,NA
+44809660,Proctoscopy abnormal,Condition,SNOMED,Clinical Finding,S,837531000000107,2012-10-01,2099-12-31,NA
+44810423,Cervical smear - high grade dyskaryosis (moderate),Condition,SNOMED,Clinical Finding,S,887481000000104,2013-10-01,2099-12-31,NA
+44810424,Cervical smear - high grade dyskaryosis (severe),Condition,SNOMED,Clinical Finding,S,887501000000108,2013-10-01,2099-12-31,NA
+44810425,Cervical smear - high grade dyskaryosis with features of invasive squamous carcinoma,Condition,SNOMED,Clinical Finding,S,887521000000104,2013-10-01,2099-12-31,NA
+44810429,Cervical smear - features of endocervical type glandular neoplasia,Condition,SNOMED,Clinical Finding,S,887601000000107,2013-10-01,2099-12-31,NA
+44810430,Cervical smear - features of non-cervical type glandular neoplasia,Condition,SNOMED,Clinical Finding,S,887621000000103,2013-10-01,2099-12-31,NA
+44810846,Cervical smear - low grade dyskaryosis,Condition,SNOMED,Clinical Finding,S,880941000000101,2013-10-01,2099-12-31,NA
+44811946,Cardiovascular system examination abnormal,Condition,SNOMED,Clinical Finding,S,908831000000109,2014-04-01,2099-12-31,NA
+44811947,Respiratory system examination abnormal,Condition,SNOMED,Clinical Finding,S,908851000000102,2014-04-01,2099-12-31,NA
+45757382,Low grade squamous intraepithelial lesion on anal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,126301000119106,2014-07-31,2099-12-31,NA
+45757383,Atypical glandular cells on anal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,126311000119109,2014-07-31,2099-12-31,NA
+45757384,High grade squamous intraepithelial lesion on vaginal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,126341000119108,2014-07-31,2099-12-31,NA
+45757385,Cytological evidence of malignancy on anal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,126361000119107,2014-07-31,2099-12-31,NA
+45757386,Cytological evidence of malignancy on vaginal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,126371000119101,2014-07-31,2099-12-31,NA
+45763589,High grade squamous intraepithelial lesion on cervical Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,62061000119107,2014-07-31,2099-12-31,NA
+45766075,Acute anterior ST segment elevation myocardial infarction,Condition,SNOMED,Disorder,S,703164000,2014-07-31,2099-12-31,NA
+45766076,Acute ST segment elevation myocardial infarction of anterior wall involving right ventricle,Condition,SNOMED,Disorder,S,703165004,2014-07-31,2099-12-31,NA
+45766113,Subsequent ST segment elevation myocardial infarction of anterior wall,Condition,SNOMED,Disorder,S,703210007,2014-07-31,2099-12-31,NA
+45766114,Subsequent ST segment elevation myocardial infarction,Condition,SNOMED,Disorder,S,703211006,2014-07-31,2099-12-31,NA
+45766116,Acute ST segment elevation myocardial infarction of inferior wall,Condition,SNOMED,Disorder,S,703213009,2014-07-31,2099-12-31,NA
+45766151,Acute ST segment elevation myocardial infarction of inferior wall involving right ventricle,Condition,SNOMED,Disorder,S,703253007,2014-07-31,2099-12-31,NA
+45767546,Inverted biphasic anterior T wave,Condition,SNOMED,Clinical Finding,S,704996001,2015-01-31,2099-12-31,NA
+45767547,Inferior ST segment depression,Condition,SNOMED,Clinical Finding,S,704997005,2015-01-31,2099-12-31,NA
+45767548,Diffuse ST segment depression,Condition,SNOMED,Clinical Finding,S,704998000,2015-01-31,2099-12-31,NA
+45767549,Anterior T wave inversion,Condition,SNOMED,Clinical Finding,S,704999008,2015-01-31,2099-12-31,NA
+45767554,Lateral ST segment elevation,Condition,SNOMED,Clinical Finding,S,705006002,2015-01-31,2099-12-31,NA
+45767555,Inferior ST segment elevation,Condition,SNOMED,Clinical Finding,S,705007006,2015-01-31,2099-12-31,NA
+45767556,Anterior ST segment elevation,Condition,SNOMED,Clinical Finding,S,705008001,2015-01-31,2099-12-31,NA
+45767557,Posterior ST segment depression,Condition,SNOMED,Clinical Finding,S,705009009,2015-01-31,2099-12-31,NA
+45767558,Posterior ST segment elevation,Condition,SNOMED,Clinical Finding,S,705010004,2015-01-31,2099-12-31,NA
+45767559,Anterior ST segment depression,Condition,SNOMED,Clinical Finding,S,705011000,2015-01-31,2099-12-31,NA
+45767560,Inferior and lateral ST segment elevation,Condition,SNOMED,Clinical Finding,S,705013002,2015-01-31,2099-12-31,NA
+45767627,Inferior and right sided ST segment elevation,Condition,SNOMED,Clinical Finding,S,705095008,2015-01-31,2099-12-31,NA
+45767628,Deep symmetric anterior T wave inversion,Condition,SNOMED,Clinical Finding,S,705096009,2015-01-31,2099-12-31,NA
+45768799,Plain X-ray of chest for tuberculosis screening abnormal,Condition,SNOMED,Clinical Finding,S,707307002,2015-01-31,2099-12-31,NA
+45768848,Single hyalinizing granuloma of lung,Condition,SNOMED,Disorder,S,707369002,2015-01-31,2099-12-31,NA
+45770748,Endocrine function test abnormal,Condition,SNOMED,Clinical Finding,S,935641000000104,2014-10-01,2099-12-31,NA
+45770837,Cytological evidence of malignancy on cervical Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,98791000119102,2014-07-31,2099-12-31,NA
+45771100,Colposcopy abnormal,Condition,SNOMED,Clinical Finding,S,700450008,2014-07-31,2099-12-31,NA
+45772096,High grade squamous intraepithelial lesion on anal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,126291000119105,2014-07-31,2099-12-31,NA
+45772099,Low grade squamous intraepithelial lesion on vaginal Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,126351000119105,2014-07-31,2099-12-31,NA
+45772125,Hypotestosteronism,Condition,SNOMED,Clinical Finding,S,3761000119104,2015-01-31,2099-12-31,NA
+45772727,Abnormal acid-base balance,Condition,SNOMED,Clinical Finding,S,704429007,2015-01-31,2099-12-31,NA
+45772774,Anterior and lateral ST segment elevation,Condition,SNOMED,Clinical Finding,S,705012007,2015-01-31,2099-12-31,NA
+45773170,Subsequent ST segment elevation myocardial infarction of inferior wall,Condition,SNOMED,Disorder,S,703209002,2014-07-31,2099-12-31,NA
+45773176,Low grade squamous intraepithelial lesion on cervical Papanicolaou smear,Condition,SNOMED,Clinical Finding,S,62051000119105,2014-07-31,2099-12-31,NA
+46270118,Abnormal nasal potential difference,Condition,SNOMED,Clinical Finding,S,14270001000004104,2015-07-31,2099-12-31,NA
+46270158,Acute ST segment elevation myocardial infarction of posterolateral wall,Condition,SNOMED,Disorder,S,15712841000119100,2015-07-31,2099-12-31,NA
+46270159,Acute ST segment elevation myocardial infarction of anterolateral wall,Condition,SNOMED,Disorder,S,15712881000119105,2015-07-31,2099-12-31,NA
+46270160,Acute ST segment elevation myocardial infarction of anteroseptal wall,Condition,SNOMED,Disorder,S,15712961000119108,2015-07-31,2099-12-31,NA
+46270161,Acute ST segment elevation myocardial infarction of posterior wall,Condition,SNOMED,Disorder,S,15713041000119103,2015-07-31,2099-12-31,NA
+46270162,Acute ST segment elevation myocardial infarction due to left coronary artery occlusion,Condition,SNOMED,Disorder,S,15713081000119108,2015-07-31,2099-12-31,NA
+46270163,Acute ST segment elevation myocardial infarction due to right coronary artery occlusion,Condition,SNOMED,Disorder,S,15713121000119105,2015-07-31,2099-12-31,NA
+46270164,Acute ST segment elevation myocardial infarction of septum,Condition,SNOMED,Disorder,S,15713161000119100,2015-07-31,2099-12-31,NA
+46273495,Acute ST segment elevation myocardial infarction of posterobasal wall,Condition,SNOMED,Disorder,S,15713201000119105,2015-07-31,2099-12-31,NA
+46274044,Acute ST segment elevation myocardial infarction of lateral wall,Condition,SNOMED,Disorder,S,15712921000119103,2015-07-31,2099-12-31,NA
+46284820,Old cerebral infarction on imaging,Condition,SNOMED,Clinical Finding,S,955491000000106,2015-04-01,2099-12-31,NA
+46285585,Antithrombin III deficiency type I,Condition,SNOMED,Disorder,S,973271000000108,2015-10-01,2099-12-31,NA
+46285586,Antithrombin III deficiency type II,Condition,SNOMED,Disorder,S,973291000000107,2015-10-01,2099-12-31,NA

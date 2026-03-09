@@ -1,0 +1,53 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+440940,Methicillin resistant Staphylococcus aureus infection,Condition,SNOMED,Disorder,S,266096002,2002-01-31,2099-12-31,NA
+607087,Pneumonia caused by vancomycin resistant Enterococcus,Condition,SNOMED,Disorder,S,1149093006,2021-07-31,2099-12-31,NA
+761972,Infection due to multidrug resistant Acinetobacter baumannii,Condition,SNOMED,Disorder,S,25290001000004103,2015-09-01,2099-12-31,NA
+3168830,Infection with carbapenem resistant Acinetobacter baumannii,Condition,Nebraska Lexicon,Clinical Finding,S,26210001000004102,2016-01-28,2099-12-31,NA
+3169965,Vancomycin resistant enterococcus urine,Condition,Nebraska Lexicon,Clinical Finding,S,13110001000004105,2016-01-28,2099-12-31,NA
+3170862,Methicillin resistant Staphylococcus aureus pneumonia,Condition,Nebraska Lexicon,Clinical Finding,S,31150001000004106,2016-01-28,2099-12-31,NA
+3171163,Infection with linezolid resistant vancomycin resistant Enterococcus,Condition,Nebraska Lexicon,Clinical Finding,S,26270001000004109,2016-01-28,2099-12-31,NA
+3171993,Infection with multidrug resistant Ralstonia picketti,Condition,Nebraska Lexicon,Clinical Finding,S,26410001000004101,2016-01-28,2099-12-31,NA
+3172535,Methicillin resistant Staphylococcus aureus cellulitis of left foot,Condition,Nebraska Lexicon,Clinical Finding,S,22250001000004105,2016-01-28,2099-12-31,NA
+3172719,Infection with multidrug resistant Enterobacter cloacae,Condition,Nebraska Lexicon,Clinical Finding,S,26340001000004103,2016-01-28,2099-12-31,NA
+3175361,Infection with multidrug resistant Streptococcus pneumoniae,Condition,Nebraska Lexicon,Clinical Finding,S,26360001000004108,2016-01-28,2099-12-31,NA
+3178539,Infection due to multidrug resistant Pseudomonas aeruginosa,Condition,Nebraska Lexicon,Clinical Finding,S,26150001000004109,2016-01-28,2099-12-31,NA
+3183822,Infection with carbapenem resistant Klebsiella pneumoniae,Condition,Nebraska Lexicon,Clinical Finding,S,26230001000004107,2016-01-28,2099-12-31,NA
+3184036,Infection due to carbapenem resistant bacteria,Condition,Nebraska Lexicon,Clinical Finding,S,26110001000004100,2016-01-28,2099-12-31,NA
+3188620,Infection with multidrug resistant Stenotrophomonas maltophilia,Condition,Nebraska Lexicon,Clinical Finding,S,26390001000004105,2016-01-28,2099-12-31,NA
+3189518,Infection with carbapenem resistant Enterobacteriaceae,Condition,Nebraska Lexicon,Clinical Finding,S,26250001000004106,2016-01-28,2099-12-31,NA
+3189614,Infection with multidrug resistant Burkholderia cepacia,Condition,Nebraska Lexicon,Clinical Finding,S,26320001000004101,2016-01-28,2099-12-31,NA
+3190125,MRSA infection of postoperative lower abdominal wound,Condition,Nebraska Lexicon,Clinical Finding,S,27910001000004104,2016-01-28,2099-12-31,NA
+3191604,Sputum culture positive for extended beta lactam resistant E coli,Condition,Nebraska Lexicon,Clinical Finding,S,18930001000004101,2016-01-28,2099-12-31,NA
+3195293,vANCOMYCIN RESISTANT ENTEROCOCCUS IN STOOL,Condition,Nebraska Lexicon,Clinical Finding,S,12580001000004109,2016-01-28,2099-12-31,NA
+4141201,Beta lactam resistant bacterial infection,Condition,SNOMED,Disorder,S,426084006,2007-07-31,2099-12-31,NA
+4145549,MRSA infection of postoperative wound,Condition,SNOMED,Disorder,S,308155002,2002-01-31,2099-12-31,NA
+4211924,Dapsone resistant leprosy,Condition,SNOMED,Disorder,S,416597004,2005-07-31,2099-12-31,NA
+4223946,Infection caused by glycopeptide resistant Staphylococcus aureus,Condition,SNOMED,Disorder,S,404678001,2004-01-31,2099-12-31,NA
+4228938,Infection caused by vancomycin resistant Enterococcus,Condition,SNOMED,Disorder,S,406575008,2004-01-31,2099-12-31,NA
+4229404,Infection caused by vancomycin resistant Staphylococcus aureus,Condition,SNOMED,Disorder,S,404681006,2004-01-31,2099-12-31,NA
+4231988,"Infection caused by vancomycin resistant Staphylococcus aureus, coagulase positive",Condition,SNOMED,Disorder,S,406615007,2004-01-31,2099-12-31,NA
+4249134,Infection caused by vancomycin intermediate/resistant Staphylococcus aureus,Condition,SNOMED,Disorder,S,406577000,2004-01-31,2099-12-31,NA
+4249258,Infection caused by glycopeptide intermediate/resistant Staphylococcus aureus,Condition,SNOMED,Disorder,S,406607009,2004-01-31,2099-12-31,NA
+4249827,Infection caused by antimicrobial resistant bacteria,Condition,SNOMED,Disorder,S,409796004,2004-07-31,2099-12-31,NA
+4307867,Community-acquired methicillin-resistant Staphylococcus aureus infection,Condition,SNOMED,Disorder,S,423561003,2007-01-31,2099-12-31,NA
+4328822,Infection caused by quinolone and fluoroquinolone resistant bacteria,Condition,SNOMED,Disorder,S,430946003,2008-07-31,2099-12-31,NA
+36715954,Meningitis caused by methicillin resistant Staphylococcus aureus,Condition,SNOMED,Disorder,S,721749008,2017-01-31,2099-12-31,NA
+37016308,Infection caused by multi drug resistant bacteria,Condition,SNOMED,Disorder,S,32811000119109,2016-01-31,2099-12-31,NA
+37016724,Infection due to carbapenem resistant Enterobacteriaceae,Condition,SNOMED,Disorder,S,712830002,2016-01-31,2099-12-31,NA
+37160702,Methicillin-resistant Staphylococcus aureus colitis,Condition,SNOMED,Disorder,S,1163107004,2021-09-30,2099-12-31,NA
+37161103,Methicillin resistant Staphylococcus aureus skin infection,Condition,SNOMED,Disorder,S,1176997000,2021-10-31,2099-12-31,NA
+37162496,Methicillin-resistant Staphylococcus aureus enteritis of small intestine,Condition,SNOMED,Disorder,S,1193735000,2022-01-31,2099-12-31,NA
+37162497,Methicillin-resistant Staphylococcus aureus enteritis of intestine,Condition,SNOMED,Disorder,S,1193736004,2022-01-31,2099-12-31,NA
+37394468,Extended spectrum beta-lactamase resistant bacterial infection,Condition,SNOMED,Disorder,S,1032841000000102,2016-04-01,2099-12-31,NA
+40485011,Infection by methicillin resistant Staphylococcus intermedius,Condition,SNOMED,Disorder,S,444101006,2010-01-31,2099-12-31,NA
+40485012,Infection by methicillin resistant Staphylococcus pseudintermedius,Condition,SNOMED,Disorder,S,444102004,2010-01-31,2099-12-31,NA
+40486500,Infection caused by multidrug resistant Acinetobacter,Condition,SNOMED,Disorder,S,446156008,2011-01-31,2099-12-31,NA
+40492698,Infection caused by carbapenem resistant Acinetobacter,Condition,SNOMED,Disorder,S,445780006,2011-01-31,2099-12-31,NA
+42599708,Infection caused by methicillin resistant Staphylococcus schleiferi,Condition,SNOMED Veterinary,Clinical Finding,S,358501000009100,2017-03-01,2099-12-31,NA
+44806672,Infection resistant to methicillin,Condition,SNOMED,Disorder,S,822301000000105,2012-04-01,2099-12-31,NA
+44806675,Infection resistant to vancomycin,Condition,SNOMED,Disorder,S,822331000000104,2012-04-01,2099-12-31,NA
+45768770,Infection caused by carbapenem resistant bacteria,Condition,SNOMED,Disorder,S,707274007,2015-01-31,2099-12-31,NA
+46269716,Bronchopneumonia caused by methicillin resistant Staphylococcus aureus,Condition,SNOMED,Disorder,S,10625351000119105,2015-07-31,2099-12-31,NA
+46270027,Pneumonia caused by methicillin resistant Staphylococcus aureus,Condition,SNOMED,Disorder,S,124691000119101,2015-07-31,2099-12-31,NA
+46270059,Toxic shock syndrome caused by methicillin resistant Staphylococcus aureus infection,Condition,SNOMED,Disorder,S,127421000119109,2015-07-31,2099-12-31,NA
+46284910,Mupirocin resistant Staphylococcus aureus infection,Condition,SNOMED,Disorder,S,957641000000109,2015-04-01,2099-12-31,NA

@@ -1,0 +1,58 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+193326,Urge incontinence of urine,Condition,SNOMED,Clinical Finding,S,87557004,2002-01-31,2099-12-31,NA
+193871,Genuine stress incontinence,Condition,SNOMED,Clinical Finding,S,22220005,2002-01-31,2099-12-31,NA
+193874,Nocturnal enuresis,Condition,SNOMED,Clinical Finding,S,8009008,2002-01-31,2099-12-31,NA
+195007,Female stress incontinence,Condition,SNOMED,Clinical Finding,S,60241006,2002-01-31,2099-12-31,NA
+195079,Functional urinary incontinence,Condition,SNOMED,Clinical Finding,S,129847007,2002-01-31,2099-12-31,NA
+197378,Overflow incontinence of urine,Condition,SNOMED,Clinical Finding,S,397878005,2003-07-31,2099-12-31,NA
+197672,Urinary incontinence,Condition,SNOMED,Clinical Finding,S,165232002,2002-01-31,2099-12-31,NA
+443524,Mixed urinary incontinence,Condition,SNOMED,Clinical Finding,S,413343005,2004-07-31,2099-12-31,NA
+606405,Extraurethral urinary incontinence,Condition,SNOMED,Clinical Finding,S,1144946004,2021-07-31,2099-12-31,NA
+606939,Primary stress incontinence,Condition,SNOMED,Clinical Finding,S,1148879008,2021-07-31,2099-12-31,NA
+606955,Postoperative stress incontinence,Condition,SNOMED,Disorder,S,1148902004,2021-07-31,2099-12-31,NA
+1076727,Urinary incontinence due to and following ischemic stroke,Condition,SNOMED,Disorder,S,16470151000119106,2024-07-01,2099-12-31,NA
+1340413,Exacerbation of nocturnal enuresis,Condition,OMOP Extension,Clinical Finding,S,OMOP5166068,2022-05-06,2099-12-31,NA
+1340492,Exacerbation of urinary incontinence,Condition,OMOP Extension,Clinical Finding,S,OMOP5166147,2022-05-06,2099-12-31,NA
+3192812,Organic enuresis,Condition,Nebraska Lexicon,Clinical Finding,S,27290001000004102,2016-01-28,2099-12-31,NA
+3197265,Urinary incontinence without sensory awareness,Condition,Nebraska Lexicon,Clinical Finding,S,13770001000004109,2016-01-28,2099-12-31,NA
+4009183,Nocturnal AND diurnal enuresis,Condition,SNOMED,Clinical Finding,S,111478000,2002-01-31,2099-12-31,NA
+4032440,Giggle incontinence of urine,Condition,SNOMED,Clinical Finding,S,236660009,2002-01-31,2099-12-31,NA
+4032442,Orgasmic incontinence of urine,Condition,SNOMED,Clinical Finding,S,236663006,2002-01-31,2099-12-31,NA
+4032444,Psychogenic urinary incontinence,Condition,SNOMED,Disorder,S,236667007,2002-01-31,2099-12-31,NA
+4032530,Total urinary incontinence,Condition,SNOMED,Clinical Finding,S,129853007,2002-01-31,2099-12-31,NA
+4085233,Daytime enuresis,Condition,SNOMED,Clinical Finding,S,281862002,2002-01-31,2099-12-31,NA
+4126278,Postural urinary incontinence,Condition,SNOMED,Clinical Finding,S,236665004,2002-01-31,2099-12-31,NA
+4127703,Post-micturition incontinence,Condition,SNOMED,Clinical Finding,S,236664000,2002-01-31,2099-12-31,NA
+4128391,Cough - urge incontinence of urine,Condition,SNOMED,Clinical Finding,S,236659004,2002-01-31,2099-12-31,NA
+4153667,Urinary incontinence due to urethral sphincter incompetence,Condition,SNOMED,Clinical Finding,S,370555000,2002-07-31,2099-12-31,NA
+4172646,Urinary incontinence of non-organic origin,Condition,SNOMED,Clinical Finding,S,42112009,2002-01-31,2099-12-31,NA
+4236912,Reflex incontinence of urine,Condition,SNOMED,Clinical Finding,S,90987003,2002-01-31,2099-12-31,NA
+4302457,Double incontinence,Condition,SNOMED,Clinical Finding,S,78459008,2002-01-31,2099-12-31,NA
+4314023,Incontinence due to detrusor instability,Condition,SNOMED,Clinical Finding,S,424833008,2007-01-31,2099-12-31,NA
+4336703,Diurnal only enuresis,Condition,SNOMED,Clinical Finding,S,8702009,2002-01-31,2099-12-31,NA
+35625901,Childhood double incontinence,Condition,SNOMED,Clinical Finding,S,768991009,2018-07-31,2099-12-31,NA
+37119132,Urinary incontinence co-occurrent and due to prolapse of female genital organ,Condition,SNOMED,Disorder,S,724479001,2017-07-31,2099-12-31,NA
+37161938,Postoperative urinary incontinence,Condition,SNOMED,Disorder,S,1184603003,2021-11-30,2099-12-31,NA
+37167744,Recurrent stress incontinence,Condition,SNOMED,Clinical Finding,S,1268910009,2023-03-31,2099-12-31,NA
+37169607,Urinary incontinence due to and following cerebrovascular accident with intracranial hemorrhage,Condition,SNOMED,Disorder,S,16470041000119105,2023-06-30,2099-12-31,NA
+37169608,Urinary incontinence due to and following cerebrovascular accident,Condition,SNOMED,Disorder,S,16470101000119107,2023-06-30,2099-12-31,NA
+37169609,Urinary incontinence due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,16470211000119100,2023-06-30,2099-12-31,NA
+37208161,Daily urinary incontinence,Condition,SNOMED,Clinical Finding,S,461191000124104,2019-03-01,2099-12-31,NA
+40480232,Male urinary stress incontinence,Condition,SNOMED,Clinical Finding,S,444620007,2010-07-31,2099-12-31,NA
+40481801,Stress incontinence after prostatectomy,Condition,SNOMED,Disorder,S,442060006,2009-07-31,2099-12-31,NA
+42536555,Stress incontinence co-occurrent and due to pelvic organ prolapse,Condition,SNOMED,Clinical Finding,S,735483004,2018-01-31,2099-12-31,NA
+42538537,Overflow incontinence of urine due to prolapse of female genital organ,Condition,SNOMED,Disorder,S,762263003,2018-01-31,2099-12-31,NA
+42538538,Urge incontinence due to prolapse of female genital organ,Condition,SNOMED,Disorder,S,762264009,2018-01-31,2099-12-31,NA
+42538539,Mixed incontinence due to prolapse of female genital organ,Condition,SNOMED,Disorder,S,762265005,2018-01-31,2099-12-31,NA
+42593551,Estrogen-responsive urinary incontinence,Condition,SNOMED Veterinary,Clinical Finding,S,282661000009104,2009-11-05,2099-12-31,NA
+42593552,Sex hormone-responsive urinary incontinence,Condition,SNOMED Veterinary,Clinical Finding,S,282671000009108,2009-11-05,2099-12-31,NA
+42593553,Testosterone-responsive urinary incontinence,Condition,SNOMED Veterinary,Clinical Finding,S,282681000009105,2009-11-05,2099-12-31,NA
+42597021,Bladder incontinence,Condition,SNOMED Veterinary,Clinical Finding,S,317991000009107,2010-04-29,2099-12-31,NA
+42872846,Intermittent urinary incontinence,Condition,SNOMED,Clinical Finding,S,450841000,2012-07-31,2099-12-31,NA
+42872847,Non-organic primary nocturnal enuresis,Condition,SNOMED,Clinical Finding,S,450842007,2012-07-31,2099-12-31,NA
+42872848,Non-organic secondary nocturnal enuresis,Condition,SNOMED,Clinical Finding,S,450843002,2012-07-31,2099-12-31,NA
+42872849,Non-organic nocturnal enuresis,Condition,SNOMED,Clinical Finding,S,450844008,2012-07-31,2099-12-31,NA
+42872850,Primary nocturnal enuresis,Condition,SNOMED,Clinical Finding,S,450845009,2012-07-31,2099-12-31,NA
+42872851,Secondary nocturnal enuresis,Condition,SNOMED,Clinical Finding,S,450846005,2012-07-31,2099-12-31,NA
+44808460,Sneezing incontinence of urine,Condition,SNOMED,Clinical Finding,S,840841000000103,2012-10-01,2099-12-31,NA
+45770268,Functional urinary and faecal incontinence,Condition,SNOMED,Clinical Finding,S,925701000000107,2014-10-01,2099-12-31,NA

@@ -1,0 +1,1245 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+72465,Closed fracture of one or more phalanges of hand,Condition,SNOMED,Disorder,S,208430000,2002-01-31,2099-12-31,NA
+73036,Closed fracture of olecranon process of ulna,Condition,SNOMED,Disorder,S,64902007,2002-01-31,2099-12-31,NA
+73042,Open fracture finger middle phalanx,Condition,SNOMED,Disorder,S,208483008,2002-01-31,2099-12-31,NA
+73341,Closed fracture of head of radius,Condition,SNOMED,Disorder,S,68854005,2002-01-31,2099-12-31,NA
+73609,Open fracture of clavicle,Condition,SNOMED,Disorder,S,111637008,2002-01-31,2099-12-31,NA
+73616,Open fracture of lunate bone of wrist,Condition,SNOMED,Disorder,S,53256003,2002-01-31,2099-12-31,NA
+74192,Open fracture of coronoid process of ulna,Condition,SNOMED,Disorder,S,86357008,2002-01-31,2099-12-31,NA
+74763,Open fracture of olecranon process of ulna,Condition,SNOMED,Disorder,S,63948006,2002-01-31,2099-12-31,NA
+74768,Closed fracture of triquetral bone of wrist,Condition,SNOMED,Disorder,S,30632004,2002-01-31,2099-12-31,NA
+74772,Open fracture of carpal bone,Condition,SNOMED,Disorder,S,29014003,2002-01-31,2099-12-31,NA
+75091,Closed fracture of carpal bone,Condition,SNOMED,Disorder,S,9468002,2002-01-31,2099-12-31,NA
+75092,Open fracture of multiple sites of phalanges of hand,Condition,SNOMED,Disorder,S,32988004,2002-01-31,2099-12-31,NA
+75373,Open fracture of head of radius,Condition,SNOMED,Disorder,S,69427008,2002-01-31,2099-12-31,NA
+75375,Closed fracture of lunate bone of wrist,Condition,SNOMED,Disorder,S,37633006,2002-01-31,2099-12-31,NA
+75379,"Open fracture distal humerus, lateral epicondyle",Condition,SNOMED,Disorder,S,208283005,2002-01-31,2099-12-31,NA
+75385,"Closed fracture distal humerus, lateral epicondyle",Condition,SNOMED,Disorder,S,208271008,2002-01-31,2099-12-31,NA
+76838,Open fracture of triquetral bone of wrist,Condition,SNOMED,Disorder,S,7913001,2002-01-31,2099-12-31,NA
+77112,Open fracture of scapula,Condition,SNOMED,Disorder,S,47864008,2002-01-31,2099-12-31,NA
+77124,Open fracture of scaphoid bone of wrist,Condition,SNOMED,Disorder,S,68076002,2002-01-31,2099-12-31,NA
+77691,Open fracture of capitate bone of wrist,Condition,SNOMED,Disorder,S,44504005,2002-01-31,2099-12-31,NA
+78274,Closed fracture of pisiform bone of wrist,Condition,SNOMED,Disorder,S,43767005,2002-01-31,2099-12-31,NA
+79165,Closed Monteggia's fracture,Condition,SNOMED,Disorder,S,29045004,2002-01-31,2099-12-31,NA
+79167,Open fracture of distal phalanx of finger,Condition,SNOMED,Disorder,S,41511005,2002-01-31,2099-12-31,NA
+79172,Closed fracture of coronoid process of ulna,Condition,SNOMED,Disorder,S,68819003,2002-01-31,2099-12-31,NA
+79938,Closed fracture of scapula,Condition,SNOMED,Disorder,S,29749002,2002-01-31,2099-12-31,NA
+80223,Closed fracture finger middle phalanx,Condition,SNOMED,Disorder,S,208450001,2002-01-31,2099-12-31,NA
+80552,Closed fracture of scaphoid bone of wrist,Condition,SNOMED,Disorder,S,42818005,2002-01-31,2099-12-31,NA
+80854,Closed fracture of capitate bone of wrist,Condition,SNOMED,Disorder,S,90114000,2002-01-31,2099-12-31,NA
+81148,Open Monteggia's fracture,Condition,SNOMED,Disorder,S,34578006,2002-01-31,2099-12-31,NA
+81426,Closed fracture of clavicle,Condition,SNOMED,Disorder,S,33173003,2002-01-31,2099-12-31,NA
+81685,Fracture of clavicle due to birth trauma,Condition,SNOMED,Disorder,S,206209004,2002-01-31,2099-12-31,NA
+133610,"Open fracture scapula, coracoid",Condition,SNOMED,Disorder,S,208232005,2002-01-31,2099-12-31,NA
+133890,Open fracture of sternal end of clavicle,Condition,SNOMED,Disorder,S,111638003,2002-01-31,2099-12-31,NA
+135939,Closed fracture of sternal end of clavicle,Condition,SNOMED,Disorder,S,48561006,2002-01-31,2099-12-31,NA
+137111,"Closed fracture scapula, coracoid",Condition,SNOMED,Disorder,S,208225001,2002-01-31,2099-12-31,NA
+137997,Open fracture of acromial process of scapula,Condition,SNOMED,Disorder,S,38404000,2002-01-31,2099-12-31,NA
+138582,Closed fracture of acromial process of scapula,Condition,SNOMED,Disorder,S,111639006,2002-01-31,2099-12-31,NA
+198885,Closed multiple fractures of upper AND lower limbs,Condition,SNOMED,Disorder,S,51155003,2002-01-31,2099-12-31,NA
+432461,Closed fracture of shaft of clavicle,Condition,SNOMED,Disorder,S,87376003,2002-01-31,2099-12-31,NA
+432463,Closed fracture of acromial end of clavicle,Condition,SNOMED,Disorder,S,1658003,2002-01-31,2099-12-31,NA
+432472,"Open fracture of proximal humerus, anatomical neck",Condition,SNOMED,Disorder,S,208251004,2002-01-31,2099-12-31,NA
+432744,Open fracture of neck of radius,Condition,SNOMED,Disorder,S,111641007,2002-01-31,2099-12-31,NA
+432746,Open fracture of shaft of radius and ulna,Condition,SNOMED,Disorder,S,39993000,2002-01-31,2099-12-31,NA
+432747,Open fracture of lower end of radius AND ulna,Condition,SNOMED,Disorder,S,88116004,2002-01-31,2099-12-31,NA
+433046,Open fracture of surgical neck of humerus,Condition,SNOMED,Disorder,S,54567007,2002-01-31,2099-12-31,NA
+433047,Open fracture of proximal end of ulna,Condition,SNOMED,Disorder,S,78490005,2002-01-31,2099-12-31,NA
+433332,Open fracture of shaft of clavicle,Condition,SNOMED,Disorder,S,71039006,2002-01-31,2099-12-31,NA
+433333,Open fracture of shaft of ulna,Condition,SNOMED,Disorder,S,42760000,2002-01-31,2099-12-31,NA
+433340,Open fracture of medial condyle of humerus,Condition,SNOMED,Disorder,S,4750004,2002-01-31,2099-12-31,NA
+433611,Open fracture of multiple sites of metacarpus,Condition,SNOMED,Disorder,S,4349002,2002-01-31,2099-12-31,NA
+433885,Closed supracondylar fracture of humerus,Condition,SNOMED,Disorder,S,58580000,2002-01-31,2099-12-31,NA
+433886,Closed fracture of trapezium bone of wrist,Condition,SNOMED,Disorder,S,57114005,2002-01-31,2099-12-31,NA
+434183,Closed fracture of medial condyle of humerus,Condition,SNOMED,Disorder,S,21419000,2002-01-31,2099-12-31,NA
+434184,Multiple open fractures of hand bones,Condition,SNOMED,Disorder,S,208500006,2002-01-31,2099-12-31,NA
+434494,Closed fracture of upper end of humerus,Condition,SNOMED,Disorder,S,42636007,2002-01-31,2099-12-31,NA
+434497,Open fracture of shaft of humerus,Condition,SNOMED,Disorder,S,23741005,2002-01-31,2099-12-31,NA
+434762,Open fracture of acromial end of clavicle,Condition,SNOMED,Disorder,S,72435006,2002-01-31,2099-12-31,NA
+434766,Open supracondylar fracture of humerus,Condition,SNOMED,Disorder,S,62356006,2002-01-31,2099-12-31,NA
+434767,Open Colles' fracture,Condition,SNOMED,Disorder,S,80411001,2002-01-31,2099-12-31,NA
+434771,Open fracture of upper end of forearm,Condition,SNOMED,Disorder,S,33141009,2002-01-31,2099-12-31,NA
+434773,Closed fracture of multiple bones of hand,Condition,SNOMED,Disorder,S,208499002,2002-01-31,2099-12-31,NA
+435097,Open fracture of condyle of humerus,Condition,SNOMED,Disorder,S,6954003,2002-01-31,2099-12-31,NA
+435374,Closed fracture of distal end of ulna,Condition,SNOMED,Disorder,S,50397009,2002-01-31,2099-12-31,NA
+435380,Closed fracture of radius AND ulna,Condition,SNOMED,Disorder,S,53627009,2002-01-31,2099-12-31,NA
+435381,Closed fracture of base of thumb,Condition,SNOMED,Disorder,S,32311009,2002-01-31,2099-12-31,NA
+435659,Open fracture of humerus,Condition,SNOMED,Disorder,S,89294002,2002-01-31,2099-12-31,NA
+435940,Closed fracture of shaft of humerus,Condition,SNOMED,Disorder,S,90235006,2002-01-31,2099-12-31,NA
+435944,Open fracture of shaft of radius,Condition,SNOMED,Disorder,S,66246007,2002-01-31,2099-12-31,NA
+435945,Open fracture of base of thumb,Condition,SNOMED,Disorder,S,111642000,2002-01-31,2099-12-31,NA
+435950,Closed Colles' fracture,Condition,SNOMED,Disorder,S,269083002,2002-01-31,2099-12-31,NA
+436206,Pathological fracture - upper arm,Condition,SNOMED,Disorder,S,287065007,2002-01-31,2099-12-31,NA
+436250,Open fracture of upper end of humerus,Condition,SNOMED,Disorder,S,86844009,2002-01-31,2099-12-31,NA
+436251,Closed fracture of proximal end of ulna,Condition,SNOMED,Disorder,S,33041006,2002-01-31,2099-12-31,NA
+436541,Closed fracture of ulna,Condition,SNOMED,Disorder,S,71555008,2002-01-31,2099-12-31,NA
+436544,Open fracture of distal end of ulna,Condition,SNOMED,Disorder,S,649002,2002-01-31,2099-12-31,NA
+436551,Closed fracture of trapezoidal bone of wrist,Condition,SNOMED,Disorder,S,357009,2002-01-31,2099-12-31,NA
+436826,Closed fracture of shaft of radius,Condition,SNOMED,Disorder,S,3228009,2002-01-31,2099-12-31,NA
+436833,Open fracture of metacarpal bone,Condition,SNOMED,Disorder,S,1370007,2002-01-31,2099-12-31,NA
+436837,Closed fracture of neck of radius,Condition,SNOMED,Disorder,S,72497001,2002-01-31,2099-12-31,NA
+436839,Closed fracture of metacarpal bone,Condition,SNOMED,Disorder,S,208394006,2002-01-31,2099-12-31,NA
+437116,Closed fracture of distal end of radius,Condition,SNOMED,Disorder,S,17222009,2002-01-31,2099-12-31,NA
+437121,Open fracture of lower end of humerus,Condition,SNOMED,Disorder,S,269081000,2002-01-31,2099-12-31,NA
+437122,Open fracture of lower end of forearm,Condition,SNOMED,Disorder,S,78980006,2002-01-31,2099-12-31,NA
+437123,Closed fracture of hamate bone of wrist,Condition,SNOMED,Disorder,S,37174005,2002-01-31,2099-12-31,NA
+437393,Open fracture of upper end of radius AND ulna,Condition,SNOMED,Disorder,S,65775005,2002-01-31,2099-12-31,NA
+437394,Closed fracture of lower end of forearm,Condition,SNOMED,Disorder,S,35442005,2002-01-31,2099-12-31,NA
+437400,Closed fracture of shaft of ulna,Condition,SNOMED,Disorder,S,53792000,2002-01-31,2099-12-31,NA
+437690,"Open fracture proximal humerus, greater tuberosity",Condition,SNOMED,Disorder,S,208253001,2002-01-31,2099-12-31,NA
+437994,Open fracture of base of metacarpal bone other than first metacarpal,Condition,SNOMED,Disorder,S,13047001,2002-01-31,2099-12-31,NA
+438004,Open fracture of hamate bone of wrist,Condition,SNOMED,Disorder,S,34656006,2002-01-31,2099-12-31,NA
+438576,Open fracture of ulna,Condition,SNOMED,Disorder,S,37449000,2002-01-31,2099-12-31,NA
+438882,Closed fracture of neck of metacarpal bone,Condition,SNOMED,Disorder,S,7551007,2002-01-31,2099-12-31,NA
+439166,Closed fracture of radius,Condition,SNOMED,Disorder,S,111640008,2002-01-31,2099-12-31,NA
+439940,Closed fracture of upper end of forearm,Condition,SNOMED,Disorder,S,2295008,2002-01-31,2099-12-31,NA
+439941,Closed fracture of condyle of humerus,Condition,SNOMED,Disorder,S,80767005,2002-01-31,2099-12-31,NA
+439946,Open fracture of radius AND ulna,Condition,SNOMED,Disorder,S,81966000,2002-01-31,2099-12-31,NA
+440228,Closed fracture of lower end of humerus,Condition,SNOMED,Disorder,S,269080004,2002-01-31,2099-12-31,NA
+440230,"Closed fracture of proximal humerus, anatomical neck",Condition,SNOMED,Disorder,S,208241000,2002-01-31,2099-12-31,NA
+440231,Closed fracture of multiple sites of metacarpal bone,Condition,SNOMED,Disorder,S,52694000,2002-01-31,2099-12-31,NA
+440511,Pathological fracture - forearm,Condition,SNOMED,Disorder,S,287066008,2002-01-31,2099-12-31,NA
+440538,Closed fracture of lower end of radius AND ulna,Condition,SNOMED,Disorder,S,33192001,2002-01-31,2099-12-31,NA
+440544,Closed fracture of upper end of radius AND ulna,Condition,SNOMED,Disorder,S,19259001,2002-01-31,2099-12-31,NA
+440546,Open fracture of distal end of radius,Condition,SNOMED,Disorder,S,25529004,2002-01-31,2099-12-31,NA
+440547,Closed fracture of shaft of metacarpal bone,Condition,SNOMED,Disorder,S,46422008,2002-01-31,2099-12-31,NA
+440851,Open fracture of forearm,Condition,SNOMED,Disorder,S,91296001,2002-01-31,2099-12-31,NA
+440853,Closed fracture of surgical neck of humerus,Condition,SNOMED,Disorder,S,73244003,2002-01-31,2099-12-31,NA
+440855,Closed fracture of base of metacarpal bone other than first metacarpal,Condition,SNOMED,Disorder,S,54641008,2002-01-31,2099-12-31,NA
+440864,Open fracture of shaft of metacarpal bone,Condition,SNOMED,Disorder,S,72224003,2002-01-31,2099-12-31,NA
+441422,Closed fracture of humerus,Condition,SNOMED,Disorder,S,43295006,2002-01-31,2099-12-31,NA
+441423,Open fracture of proximal end of radius,Condition,SNOMED,Disorder,S,23813004,2002-01-31,2099-12-31,NA
+441427,Open fracture of neck of metacarpal bone,Condition,SNOMED,Disorder,S,3331008,2002-01-31,2099-12-31,NA
+441697,Open fracture of radius,Condition,SNOMED,Disorder,S,42945005,2002-01-31,2099-12-31,NA
+441699,"Closed fracture proximal humerus, greater tuberosity",Condition,SNOMED,Disorder,S,208242007,2002-01-31,2099-12-31,NA
+441704,Open multiple fractures of upper AND lower limbs,Condition,SNOMED,Disorder,S,17367000,2002-01-31,2099-12-31,NA
+441973,Closed fracture of proximal end of radius,Condition,SNOMED,Disorder,S,71139009,2002-01-31,2099-12-31,NA
+441974,Closed fracture of forearm,Condition,SNOMED,Disorder,S,91419009,2002-01-31,2099-12-31,NA
+442332,Open fracture of trapezoidal bone of wrist,Condition,SNOMED,Disorder,S,42591009,2002-01-31,2099-12-31,NA
+442598,Fracture of radius AND ulna,Condition,SNOMED,Disorder,S,75857000,2002-01-31,2099-12-31,NA
+442619,Fracture of humerus,Condition,SNOMED,Disorder,S,66308002,2002-01-31,2099-12-31,NA
+442765,Open fracture of trapezium of wrist,Condition,SNOMED,Disorder,S,67130000,2002-01-31,2099-12-31,NA
+443114,Open fracture finger proximal phalanx,Condition,SNOMED,Disorder,S,208477005,2002-01-31,2099-12-31,NA
+443115,Closed fracture finger proximal phalanx,Condition,SNOMED,Disorder,S,208444006,2002-01-31,2099-12-31,NA
+443428,Torus fracture of radius,Condition,SNOMED,Disorder,S,390986009,2003-01-31,2099-12-31,NA
+443552,Closed torus fracture of radius,Condition,SNOMED,Disorder,S,429655000,2008-01-31,2099-12-31,NA
+444422,Open fracture of pisiform bone of wrist,Condition,SNOMED,Disorder,S,89161006,2002-01-31,2099-12-31,NA
+759877,Closed fracture of right clavicle,Condition,SNOMED,Disorder,S,10741801000119106,2015-03-01,2099-12-31,NA
+759945,Open fracture of proximal phalanx of little finger of right hand,Condition,SNOMED,Disorder,S,10816421000119101,2015-03-01,2099-12-31,NA
+759948,Open fracture of second metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10817661000119106,2015-03-01,2099-12-31,NA
+759949,Open fracture of surgical neck of left humerus,Condition,SNOMED,Disorder,S,10817701000119104,2015-03-01,2099-12-31,NA
+759950,Open fracture of proximal right humerus,Condition,SNOMED,Disorder,S,10817741000119102,2015-03-01,2099-12-31,NA
+759953,Open fracture of distal phalanx of right middle finger,Condition,SNOMED,Disorder,S,10818141000119102,2015-03-01,2099-12-31,NA
+759954,Open fracture of distal phalanx of left index finger,Condition,SNOMED,Disorder,S,10818181000119107,2015-03-01,2099-12-31,NA
+759955,Open fracture of distal phalanx of left middle finger,Condition,SNOMED,Disorder,S,10818261000119109,2015-03-01,2099-12-31,NA
+759956,Open fracture of distal phalanx of left ring finger,Condition,SNOMED,Disorder,S,10818301000119101,2015-03-01,2099-12-31,NA
+759957,Open fracture of proximal phalanx of middle finger of right hand,Condition,SNOMED,Disorder,S,10818341000119104,2015-03-01,2099-12-31,NA
+759958,Open fracture of phalanx of middle finger of right hand,Condition,SNOMED,Disorder,S,10818381000119109,2015-03-01,2099-12-31,NA
+759959,Open fracture of olecranon of right ulna,Condition,SNOMED,Disorder,S,10818421000119100,2015-03-01,2099-12-31,NA
+759960,Open fracture of proximal end of right radius,Condition,SNOMED,Disorder,S,10818461000119105,2015-03-01,2099-12-31,NA
+759961,Open fracture of right radius,Condition,SNOMED,Disorder,S,10818501000119105,2015-03-01,2099-12-31,NA
+759966,Open fracture of distal end of left ulna,Condition,SNOMED,Disorder,S,10819461000119101,2015-03-01,2099-12-31,NA
+759967,Open fracture of shaft of left ulna,Condition,SNOMED,Disorder,S,10819541000119104,2015-03-01,2099-12-31,NA
+759968,Open fracture of left ulna,Condition,SNOMED,Disorder,S,10819621000119109,2015-03-01,2099-12-31,NA
+759970,Open fracture of distal left humerus,Condition,SNOMED,Disorder,S,10819781000119103,2015-03-01,2099-12-31,NA
+759976,Open fracture of distal end of left radius,Condition,SNOMED,Disorder,S,10820301000119109,2015-03-01,2099-12-31,NA
+759977,Open fracture of base of fifth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10820811000119100,2015-03-01,2099-12-31,NA
+759979,Open fracture of distal end of right ulna,Condition,SNOMED,Disorder,S,10820931000119101,2015-03-01,2099-12-31,NA
+759983,Open fracture of neck of fifth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10821251000119105,2015-03-01,2099-12-31,NA
+759984,Open fracture of fifth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10821331000119106,2015-03-01,2099-12-31,NA
+759985,Open fracture of fifth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10821371000119109,2015-03-01,2099-12-31,NA
+759986,Open fracture of distal right humerus,Condition,SNOMED,Disorder,S,10821411000119105,2015-03-01,2099-12-31,NA
+759996,Open fracture of right elbow,Condition,SNOMED,Disorder,S,10822531000119108,2015-03-01,2099-12-31,NA
+759997,Open fracture of distal end of right radius,Condition,SNOMED,Disorder,S,10822571000119106,2015-03-01,2099-12-31,NA
+759998,Open fracture of first metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10822731000119104,2015-03-01,2099-12-31,NA
+759999,Open fracture of shaft of metacarpus of right thumb,Condition,SNOMED,Disorder,S,10822771000119101,2015-03-01,2099-12-31,NA
+760006,Open fracture of middle phalanx of index finger of left hand,Condition,SNOMED,Disorder,S,10823291000119101,2015-03-01,2099-12-31,NA
+760007,Open fracture of middle phalanx of left ring finger,Condition,SNOMED,Disorder,S,10823411000119106,2015-03-01,2099-12-31,NA
+760008,Open mallet fracture of distal phalanx of little finger of left hand,Condition,SNOMED,Disorder,S,10823491000119102,2015-03-01,2099-12-31,NA
+760009,Open fracture of proximal phalanx of index finger of left hand,Condition,SNOMED,Disorder,S,10823691000119104,2015-03-01,2099-12-31,NA
+760010,Open fracture of proximal phalanx of little finger of left hand,Condition,SNOMED,Disorder,S,10823731000119106,2015-03-01,2099-12-31,NA
+760011,Open fracture of phalanx of finger of right hand,Condition,SNOMED,Disorder,S,10823851000119105,2015-03-01,2099-12-31,NA
+760012,Open fracture of phalanx of index finger of left hand,Condition,SNOMED,Disorder,S,10823891000119100,2015-03-01,2099-12-31,NA
+760013,Open fracture of phalanx of left little finger,Condition,SNOMED,Disorder,S,10823931000119108,2015-03-01,2099-12-31,NA
+760014,Open fracture of phalanx of middle finger of left hand,Condition,SNOMED,Disorder,S,10823971000119106,2015-03-01,2099-12-31,NA
+760015,Open fracture of proximal phalanx of left thumb,Condition,SNOMED,Disorder,S,10824051000119100,2015-03-01,2099-12-31,NA
+760016,Open fracture of distal phalanx of left thumb,Condition,SNOMED,Disorder,S,10824091000119105,2015-03-01,2099-12-31,NA
+760017,Open fracture of phalanx of thumb of left hand,Condition,SNOMED,Disorder,S,10824131000119107,2015-03-01,2099-12-31,NA
+760018,Open fracture of fourth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10825081000119106,2015-03-01,2099-12-31,NA
+760020,Open fracture of right hand,Condition,SNOMED,Disorder,S,10827521000119108,2015-03-01,2099-12-31,NA
+760021,Open fracture of right forearm,Condition,SNOMED,Disorder,S,10827641000119101,2015-03-01,2099-12-31,NA
+760022,Open fracture of neck of metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10828281000119108,2015-03-01,2099-12-31,NA
+760023,Open fracture of anatomical neck of proximal right humerus,Condition,SNOMED,Disorder,S,10828481000119107,2015-03-01,2099-12-31,NA
+760024,Open fracture of greater tubercule of right humerus,Condition,SNOMED,Disorder,S,10828601000119102,2015-03-01,2099-12-31,NA
+760025,Open supracondylar fracture of right humerus,Condition,SNOMED,Disorder,S,10828961000119107,2015-03-01,2099-12-31,NA
+760026,Open fracture of lateral condyle of right humerus,Condition,SNOMED,Disorder,S,10829161000119100,2015-03-01,2099-12-31,NA
+760027,Open fracture of head of right radius,Condition,SNOMED,Disorder,S,10829201000119105,2015-03-01,2099-12-31,NA
+760029,Open fracture of right humerus,Condition,SNOMED,Disorder,S,10829321000119107,2015-03-01,2099-12-31,NA
+760033,Open fracture of middle phalanx of right ring finger,Condition,SNOMED,Disorder,S,10830201000119104,2015-03-01,2099-12-31,NA
+760035,Open fracture of distal phalanx of right ring finger,Condition,SNOMED,Disorder,S,10830441000119101,2015-03-01,2099-12-31,NA
+760036,Open fracture of phalanx of ring finger of right hand,Condition,SNOMED,Disorder,S,10830781000119104,2015-03-01,2099-12-31,NA
+760041,Open fracture of navicular bone of right wrist,Condition,SNOMED,Disorder,S,10831381000119109,2015-03-01,2099-12-31,NA
+760049,Open fracture of coronoid process of right ulna,Condition,SNOMED,Disorder,S,10832461000119103,2015-03-01,2099-12-31,NA
+760050,Open fracture of shaft of right ulna,Condition,SNOMED,Disorder,S,10832501000119103,2015-03-01,2099-12-31,NA
+760051,Open fracture of shaft of fourth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10832741000119105,2015-03-01,2099-12-31,NA
+760053,Open fracture of fourth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10832941000119108,2015-03-01,2099-12-31,NA
+760055,Open fracture of greater tubercule of left humerus,Condition,SNOMED,Disorder,S,10833061000119103,2015-03-01,2099-12-31,NA
+760056,Open fracture of shaft of left humerus,Condition,SNOMED,Disorder,S,10833141000119103,2015-03-01,2099-12-31,NA
+760057,Open fracture of lateral condyle of left humerus,Condition,SNOMED,Disorder,S,10833341000119100,2015-03-01,2099-12-31,NA
+760058,Open fracture of left humerus,Condition,SNOMED,Disorder,S,10833421000119101,2015-03-01,2099-12-31,NA
+760071,Open fracture of distal phalanx of right index finger,Condition,SNOMED,Disorder,S,10834501000119108,2015-03-01,2099-12-31,NA
+760072,Open fracture of phalanx of finger of left hand,Condition,SNOMED,Disorder,S,10834581000119100,2015-03-01,2099-12-31,NA
+760073,Open fracture of phalanx of index finger of right hand,Condition,SNOMED,Disorder,S,10834621000119100,2015-03-01,2099-12-31,NA
+760074,Open fracture of proximal phalanx of right thumb,Condition,SNOMED,Disorder,S,10834681000119101,2015-03-01,2099-12-31,NA
+760075,Open fracture of distal phalanx of right thumb,Condition,SNOMED,Disorder,S,10834741000119101,2015-03-01,2099-12-31,NA
+760076,Open fracture of left hand,Condition,SNOMED,Disorder,S,10834781000119106,2015-03-01,2099-12-31,NA
+760077,Open fracture of left forearm,Condition,SNOMED,Disorder,S,10834901000119100,2015-03-01,2099-12-31,NA
+760078,Open fracture of right wrist,Condition,SNOMED,Disorder,S,10835101000119101,2015-03-01,2099-12-31,NA
+760079,Open fracture of phalanx of thumb of right hand,Condition,SNOMED,Disorder,S,10835221000119101,2015-03-01,2099-12-31,NA
+760090,Open fracture of proximal end of left ulna,Condition,SNOMED,Disorder,S,10836941000119109,2015-03-01,2099-12-31,NA
+760094,Open fracture of second metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10837221000119107,2015-03-01,2099-12-31,NA
+760095,Open fracture of proximal left humerus,Condition,SNOMED,Disorder,S,10837301000119105,2015-03-01,2099-12-31,NA
+760096,Open fracture of shaft of right clavicle,Condition,SNOMED,Disorder,S,10837381000119102,2015-03-01,2099-12-31,NA
+760105,Open fracture of shaft of left radius,Condition,SNOMED,Disorder,S,10838181000119103,2015-03-01,2099-12-31,NA
+760106,Open fracture of neck of left radius,Condition,SNOMED,Disorder,S,10838221000119106,2015-03-01,2099-12-31,NA
+760107,Open fracture of proximal end of left radius,Condition,SNOMED,Disorder,S,10838261000119101,2015-03-01,2099-12-31,NA
+760108,Open fracture of left radius,Condition,SNOMED,Disorder,S,10838301000119109,2015-03-01,2099-12-31,NA
+760110,Open fracture of left wrist,Condition,SNOMED,Disorder,S,10838381000119101,2015-03-01,2099-12-31,NA
+760171,Open fracture of base of first metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10897911000119102,2015-03-01,2099-12-31,NA
+760172,Open fracture of base of first metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10897951000119101,2015-03-01,2099-12-31,NA
+760212,Closed fracture of epiphyseal plate of distal left ulna,Condition,SNOMED,Disorder,S,10923361000119109,2015-03-01,2099-12-31,NA
+760218,Closed fracture of base of first metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10923641000119101,2015-03-01,2099-12-31,NA
+760219,Closed fracture of base of first metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10923681000119106,2015-03-01,2099-12-31,NA
+760220,Closed fracture of base of second metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10923761000119105,2015-03-01,2099-12-31,NA
+760221,Closed fracture of base of third metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10923801000119102,2015-03-01,2099-12-31,NA
+760222,Closed fracture of base of third metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10923841000119100,2015-03-01,2099-12-31,NA
+760223,Closed fracture of base of fourth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10923881000119105,2015-03-01,2099-12-31,NA
+760224,Closed fracture of base of fourth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10923921000119103,2015-03-01,2099-12-31,NA
+760225,Closed fracture of base of fifth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10923961000119108,2015-03-01,2099-12-31,NA
+760226,Closed fracture of epiphyseal plate of proximal right humerus,Condition,SNOMED,Disorder,S,10924041000119106,2015-03-01,2099-12-31,NA
+760227,Closed fracture of epiphyseal plate of phalanx of right thumb,Condition,SNOMED,Disorder,S,10924121000119104,2015-09-01,2099-12-31,NA
+760228,Closed fracture of epiphyseal plate of phalanx of left thumb,Condition,SNOMED,Disorder,S,10924161000119109,2015-09-01,2099-12-31,NA
+760229,Closed fracture of epiphyseal plate of phalanx of finger of right hand,Condition,SNOMED,Disorder,S,10924201000119104,2015-09-01,2099-12-31,NA
+760230,Closed fracture of epiphyseal plate of phalanx of finger of left hand,Condition,SNOMED,Disorder,S,10924241000119102,2015-09-01,2099-12-31,NA
+760261,Closed fracture of coronoid process of right ulna,Condition,SNOMED,Disorder,S,10925681000119105,2015-03-01,2099-12-31,NA
+760262,Closed fracture of coronoid process of left ulna,Condition,SNOMED,Disorder,S,10925721000119104,2015-03-01,2099-12-31,NA
+760263,Closed fracture of distal end of right ulna,Condition,SNOMED,Disorder,S,10925761000119109,2015-03-01,2099-12-31,NA
+760264,Closed fracture of distal end of left ulna,Condition,SNOMED,Disorder,S,10925801000119101,2015-03-01,2099-12-31,NA
+760265,Closed fracture of shaft of right ulna,Condition,SNOMED,Disorder,S,10925841000119104,2015-03-01,2099-12-31,NA
+760266,Closed fracture of shaft of left ulna,Condition,SNOMED,Disorder,S,10925881000119109,2015-03-01,2099-12-31,NA
+760267,Closed fracture of olecranon process of right ulna,Condition,SNOMED,Disorder,S,10925921000119102,2015-03-01,2099-12-31,NA
+760268,Closed fracture of olecranon process of left ulna,Condition,SNOMED,Disorder,S,10925961000119107,2015-03-01,2099-12-31,NA
+760269,Closed fracture of proximal end of right ulna,Condition,SNOMED,Disorder,S,10926001000119104,2015-03-01,2099-12-31,NA
+760270,Closed fracture of proximal end of left ulna,Condition,SNOMED,Disorder,S,10926041000119102,2015-03-01,2099-12-31,NA
+760271,Closed fracture of right ulna,Condition,SNOMED,Disorder,S,10926081000119107,2015-03-01,2099-12-31,NA
+760286,Closed fracture of shaft of first metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10926721000119105,2015-03-01,2099-12-31,NA
+760287,Closed fracture of shaft of metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10926801000119108,2015-03-01,2099-12-31,NA
+760288,Closed fracture of shaft of metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10926841000119105,2015-03-01,2099-12-31,NA
+760289,Closed fracture of shaft of second metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10926881000119100,2015-03-01,2099-12-31,NA
+760290,Closed fracture of shaft of second metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10926921000119107,2015-03-01,2099-12-31,NA
+760291,Closed fracture of shaft of third metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10927001000119102,2015-03-01,2099-12-31,NA
+760292,Closed fracture of shaft of fourth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927041000119100,2015-03-01,2099-12-31,NA
+760293,Closed fracture of shaft of fourth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10927081000119105,2015-03-01,2099-12-31,NA
+760294,Closed fracture of shaft of fifth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927121000119107,2015-03-01,2099-12-31,NA
+760295,Closed fracture of shaft of fifth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10927161000119102,2015-03-01,2099-12-31,NA
+760296,Closed fracture of neck of first metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10927241000119109,2015-03-01,2099-12-31,NA
+760297,Closed fracture of second metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927281000119104,2015-03-01,2099-12-31,NA
+760298,Closed fracture of fourth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927441000119105,2015-03-01,2099-12-31,NA
+760299,Closed fracture of fourth metacarpal of left hand,Condition,SNOMED,Disorder,S,10927481000119100,2015-03-01,2099-12-31,NA
+760300,Closed fracture of fifth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927521000119100,2015-03-01,2099-12-31,NA
+760301,Closed fracture of neck of second metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927601000119105,2015-03-01,2099-12-31,NA
+760302,Closed fracture of neck of second metacarpal of left hand,Condition,SNOMED,Disorder,S,10927641000119107,2015-03-01,2099-12-31,NA
+760303,Closed fracture of neck of third metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927681000119102,2015-03-01,2099-12-31,NA
+760304,Closed fracture of neck of third metacarpal of left hand,Condition,SNOMED,Disorder,S,10927721000119108,2015-03-01,2099-12-31,NA
+760305,Closed fracture of neck of fourth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927761000119103,2015-03-01,2099-12-31,NA
+760306,Closed fracture of neck of fifth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10927881000119103,2015-03-01,2099-12-31,NA
+760307,Closed fracture of first metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927921000119105,2015-03-01,2099-12-31,NA
+760308,Closed fracture of first metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10927961000119100,2015-03-01,2099-12-31,NA
+760309,Closed fracture of neck of metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10928001000119103,2015-03-01,2099-12-31,NA
+760310,Closed fracture of neck of metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10928041000119101,2015-03-01,2099-12-31,NA
+760311,Closed fracture of anatomical neck of proximal right humerus,Condition,SNOMED,Disorder,S,10928081000119106,2015-03-01,2099-12-31,NA
+760312,Closed fracture of anatomical neck of proximal left humerus,Condition,SNOMED,Disorder,S,10928121000119108,2015-03-01,2099-12-31,NA
+760313,Closed fracture of surgical neck of right humerus,Condition,SNOMED,Disorder,S,10928161000119103,2015-03-01,2099-12-31,NA
+760314,Closed fracture of surgical neck of left humerus,Condition,SNOMED,Disorder,S,10928201000119108,2015-03-01,2099-12-31,NA
+760315,Closed fracture of greater tuberosity of proximal right humerus,Condition,SNOMED,Disorder,S,10928241000119105,2015-03-01,2099-12-31,NA
+760316,Closed fracture of greater tuberosity of proximal left humerus,Condition,SNOMED,Disorder,S,10928281000119100,2015-03-01,2099-12-31,NA
+760317,Closed fracture of proximal right humerus,Condition,SNOMED,Disorder,S,10928321000119105,2015-03-01,2099-12-31,NA
+760318,Closed fracture of proximal left humerus,Condition,SNOMED,Disorder,S,10928361000119100,2015-03-01,2099-12-31,NA
+760319,Closed fracture of lesser tuberosity of right humerus,Condition,SNOMED,Disorder,S,10928401000119109,2015-03-01,2099-12-31,NA
+760320,Closed fracture of lesser tuberosity of left humerus,Condition,SNOMED,Disorder,S,10928441000119106,2015-03-01,2099-12-31,NA
+760321,Closed fracture of shaft of right humerus,Condition,SNOMED,Disorder,S,10928481000119101,2015-03-01,2099-12-31,NA
+760322,Closed fracture of shaft of left humerus,Condition,SNOMED,Disorder,S,10928521000119101,2015-03-01,2099-12-31,NA
+760323,Closed fracture of medial condyle of right humerus,Condition,SNOMED,Disorder,S,10928561000119106,2015-03-01,2099-12-31,NA
+760324,Closed fracture of medial condyle of left humerus,Condition,SNOMED,Disorder,S,10928601000119106,2015-03-01,2099-12-31,NA
+760325,Closed fracture of lateral condyle of distal right humerus,Condition,SNOMED,Disorder,S,10928641000119108,2015-03-01,2099-12-31,NA
+760326,Closed fracture of lateral condyle of distal left humerus,Condition,SNOMED,Disorder,S,10928681000119103,2015-03-01,2099-12-31,NA
+760327,Closed fracture of lateral epicondyle of distal end of right humerus,Condition,SNOMED,Disorder,S,10928721000119109,2015-03-01,2099-12-31,NA
+760328,Closed fracture of lateral epicondyle of distal end of left humerus,Condition,SNOMED,Disorder,S,10928761000119104,2015-03-01,2099-12-31,NA
+760329,Closed fracture of medial epicondyle of left humerus,Condition,SNOMED,Disorder,S,10928841000119109,2015-03-01,2099-12-31,NA
+760330,Closed supracondylar fracture of right humerus,Condition,SNOMED,Disorder,S,10928881000119104,2015-03-01,2099-12-31,NA
+760331,Closed supracondylar fracture of left humerus,Condition,SNOMED,Disorder,S,10928921000119106,2015-03-01,2099-12-31,NA
+760332,Closed fracture of distal end of right humerus,Condition,SNOMED,Disorder,S,10928961000119101,2015-03-01,2099-12-31,NA
+760333,Closed fracture of distal end of left humerus,Condition,SNOMED,Disorder,S,10929001000119108,2015-03-01,2099-12-31,NA
+760334,Closed fracture of epiphyseal plate of distal end of right humerus,Condition,SNOMED,Disorder,S,10929041000119105,2015-03-01,2099-12-31,NA
+760335,Closed fracture of epiphyseal plate of distal left humerus,Condition,SNOMED,Disorder,S,10929081000119100,2015-03-01,2099-12-31,NA
+760336,Closed transcondylar fracture of distal right humerus,Condition,SNOMED,Disorder,S,10929121000119103,2015-03-01,2099-12-31,NA
+760337,Closed fracture of left humerus,Condition,SNOMED,Disorder,S,10929241000119101,2015-03-01,2099-12-31,NA
+760338,Closed fracture of shaft of right clavicle,Condition,SNOMED,Disorder,S,10929281000119106,2015-03-01,2099-12-31,NA
+760339,Closed fracture of shaft of left clavicle,Condition,SNOMED,Disorder,S,10929321000119101,2015-03-01,2099-12-31,NA
+760340,Closed fracture of acromial end of right clavicle,Condition,SNOMED,Disorder,S,10929361000119106,2015-03-01,2099-12-31,NA
+760341,Closed fracture of acromial end of left clavicle,Condition,SNOMED,Disorder,S,10929401000119102,2015-03-01,2099-12-31,NA
+760342,Closed fracture of sternal end of right clavicle,Condition,SNOMED,Disorder,S,10929441000119100,2015-03-01,2099-12-31,NA
+760343,Closed fracture of sternal end of left clavicle,Condition,SNOMED,Disorder,S,10929481000119105,2015-03-01,2099-12-31,NA
+760344,Closed fracture of left clavicle,Condition,SNOMED,Disorder,S,10929521000119105,2015-03-01,2099-12-31,NA
+760440,Closed fracture of head of left radius,Condition,SNOMED,Disorder,S,10933921000119101,2015-03-01,2099-12-31,NA
+760441,Closed fracture of glenoid cavity of right scapula,Condition,SNOMED,Disorder,S,10933961000119106,2015-03-01,2099-12-31,NA
+760442,Closed fracture of coracoid process of right scapula,Condition,SNOMED,Disorder,S,10934041000119109,2015-03-01,2099-12-31,NA
+760443,Closed fracture of coracoid process of left scapula,Condition,SNOMED,Disorder,S,10934081000119104,2015-03-01,2099-12-31,NA
+760444,Closed fracture of acromial process of right scapula,Condition,SNOMED,Disorder,S,10934121000119102,2015-03-01,2099-12-31,NA
+760445,Closed fracture of acromial process of left scapula,Condition,SNOMED,Disorder,S,10934161000119107,2015-03-01,2099-12-31,NA
+760446,Closed fracture of pisiform bone of left wrist,Condition,SNOMED,Disorder,S,10934241000119100,2015-03-01,2099-12-31,NA
+760447,Closed fracture of capitate bone of right wrist,Condition,SNOMED,Disorder,S,10934281000119105,2015-03-01,2099-12-31,NA
+760448,Closed fracture of navicular bone of right wrist,Condition,SNOMED,Disorder,S,10934361000119105,2015-03-01,2099-12-31,NA
+760449,Closed fracture of navicular bone of left wrist,Condition,SNOMED,Disorder,S,10934401000119101,2015-03-01,2099-12-31,NA
+760450,Closed fracture of navicular bone of right wrist with dislocation of perilunate joint,Condition,SNOMED,Disorder,S,10934441000119104,2015-03-01,2099-12-31,NA
+760451,Closed fracture of navicular bone of left wrist with dislocation of perilunate joint,Condition,SNOMED,Disorder,S,10934481000119109,2015-03-01,2099-12-31,NA
+760452,Closed mallet fracture of distal phalanx of index finger of right hand,Condition,SNOMED,Disorder,S,10934521000119109,2015-03-01,2099-12-31,NA
+760453,Closed mallet fracture of distal phalanx of index finger of left hand,Condition,SNOMED,Disorder,S,10934561000119104,2015-03-01,2099-12-31,NA
+760454,Closed mallet fracture of distal phalanx of right finger,Condition,SNOMED,Disorder,S,10934601000119104,2015-03-01,2099-12-31,NA
+760455,Closed mallet fracture of distal phalanx of left finger,Condition,SNOMED,Disorder,S,10934641000119102,2015-03-01,2099-12-31,NA
+760456,Closed mallet fracture of distal phalanx of ring finger of left hand,Condition,SNOMED,Disorder,S,10934721000119101,2015-03-01,2099-12-31,NA
+760457,Closed mallet fracture of distal phalanx of little finger of right hand,Condition,SNOMED,Disorder,S,10934761000119106,2015-03-01,2099-12-31,NA
+760458,Closed mallet fracture of distal phalanx of little finger of left hand,Condition,SNOMED,Disorder,S,10934801000119103,2015-03-01,2099-12-31,NA
+760459,Closed fracture of distal phalanx of index finger of right hand,Condition,SNOMED,Disorder,S,10934841000119101,2015-03-01,2099-12-31,NA
+760460,Closed fracture of distal phalanx of index finger of left hand,Condition,SNOMED,Disorder,S,10934881000119106,2015-03-01,2099-12-31,NA
+760461,Closed fracture of distal phalanx of middle finger of right hand,Condition,SNOMED,Disorder,S,10934921000119104,2015-03-01,2099-12-31,NA
+760462,Closed fracture of distal phalanx of middle finger of left hand,Condition,SNOMED,Disorder,S,10934961000119109,2015-03-01,2099-12-31,NA
+760463,Closed fracture of distal phalanx of finger of right hand,Condition,SNOMED,Disorder,S,10935001000119108,2015-03-01,2099-12-31,NA
+760464,Closed fracture of distal phalanx of ring finger of left hand,Condition,SNOMED,Disorder,S,10935041000119105,2015-03-01,2099-12-31,NA
+760465,Closed fracture of distal phalanx of little finger of right hand,Condition,SNOMED,Disorder,S,10935081000119100,2015-03-01,2099-12-31,NA
+760466,Closed fracture of distal phalanx of little finger of left hand,Condition,SNOMED,Disorder,S,10935121000119103,2015-03-01,2099-12-31,NA
+760467,Closed fracture of middle phalanx of index finger of right hand,Condition,SNOMED,Disorder,S,10935161000119108,2015-03-01,2099-12-31,NA
+760468,Closed fracture of middle phalanx of index finger of left hand,Condition,SNOMED,Disorder,S,10935201000119103,2015-03-01,2099-12-31,NA
+760469,Closed fracture of middle phalanx of middle finger of right hand,Condition,SNOMED,Disorder,S,10935241000119101,2015-03-01,2099-12-31,NA
+760470,Closed fracture of middle phalanx of middle finger of left hand,Condition,SNOMED,Disorder,S,10935281000119106,2015-03-01,2099-12-31,NA
+760471,Closed fracture of middle phalanx of ring finger of right hand,Condition,SNOMED,Disorder,S,10935321000119101,2015-03-01,2099-12-31,NA
+760472,Closed fracture of middle phalanx of ring finger of left hand,Condition,SNOMED,Disorder,S,10935361000119106,2015-03-01,2099-12-31,NA
+760473,Closed fracture of middle phalanx of little finger of right hand,Condition,SNOMED,Disorder,S,10935401000119102,2015-03-01,2099-12-31,NA
+760474,Closed fracture of middle phalanx of little finger of left hand,Condition,SNOMED,Disorder,S,10935441000119100,2015-03-01,2099-12-31,NA
+760475,Closed fracture of proximal phalanx of index finger of right hand,Condition,SNOMED,Disorder,S,10935481000119105,2015-03-01,2099-12-31,NA
+760476,Closed fracture of proximal phalanx of index finger of left hand,Condition,SNOMED,Disorder,S,10935521000119105,2015-03-01,2099-12-31,NA
+760477,Closed fracture of proximal phalanx of middle finger of right hand,Condition,SNOMED,Disorder,S,10935561000119100,2015-03-01,2099-12-31,NA
+760478,Closed fracture of proximal phalanx of middle finger of left hand,Condition,SNOMED,Disorder,S,10935601000119100,2015-03-01,2099-12-31,NA
+760479,Closed fracture of proximal phalanx of ring finger of right hand,Condition,SNOMED,Disorder,S,10935641000119103,2015-03-01,2099-12-31,NA
+760480,Closed fracture of proximal phalanx of ring finger of left hand,Condition,SNOMED,Disorder,S,10935681000119108,2015-03-01,2099-12-31,NA
+760481,Closed fracture of proximal phalanx of little finger of right hand,Condition,SNOMED,Disorder,S,10935721000119102,2015-03-01,2099-12-31,NA
+760482,Closed fracture of phalanx of right index finger,Condition,SNOMED,Disorder,S,10935801000119104,2015-03-01,2099-12-31,NA
+760483,Closed fracture of phalanx of right middle finger,Condition,SNOMED,Disorder,S,10935881000119107,2015-03-01,2099-12-31,NA
+760484,Closed fracture of phalanx of left middle finger,Condition,SNOMED,Disorder,S,10935921000119100,2015-03-01,2099-12-31,NA
+760485,Closed fracture of phalanx of right ring finger,Condition,SNOMED,Disorder,S,10935961000119105,2015-03-01,2099-12-31,NA
+760486,Closed fracture of phalanx of left ring finger,Condition,SNOMED,Disorder,S,10936001000119102,2015-03-01,2099-12-31,NA
+760487,Closed fracture of phalanx of right little finger,Condition,SNOMED,Disorder,S,10936041000119100,2015-03-01,2099-12-31,NA
+760488,Closed fracture of phalanx of finger of right hand,Condition,SNOMED,Disorder,S,10936121000119107,2015-03-01,2099-12-31,NA
+760489,Closed fracture of phalanx of finger of left hand,Condition,SNOMED,Disorder,S,10936161000119102,2015-03-01,2099-12-31,NA
+760490,Closed fracture of neck of right scapula,Condition,SNOMED,Disorder,S,10936281000119104,2015-03-01,2099-12-31,NA
+760491,Closed fracture of body of right scapula,Condition,SNOMED,Disorder,S,10936361000119104,2015-03-01,2099-12-31,NA
+760492,Closed fracture of body of left scapula,Condition,SNOMED,Disorder,S,10936401000119108,2015-03-01,2099-12-31,NA
+760493,Closed fracture of right scapula,Condition,SNOMED,Disorder,S,10936441000119105,2015-03-01,2099-12-31,NA
+760494,Closed fracture of left scapula,Condition,SNOMED,Disorder,S,10936481000119100,2015-03-01,2099-12-31,NA
+760495,Closed fracture of epiphyseal plate of distal end of right radius,Condition,SNOMED,Disorder,S,10936521000119100,2015-09-01,2099-12-31,NA
+760496,Closed fracture of distal end of right radius,Condition,SNOMED,Disorder,S,10936601000119105,2015-03-01,2099-12-31,NA
+760497,Closed fracture of distal end of left radius,Condition,SNOMED,Disorder,S,10936641000119107,2015-03-01,2099-12-31,NA
+760498,Closed fracture of shaft of right radius,Condition,SNOMED,Disorder,S,10936681000119102,2015-03-01,2099-12-31,NA
+760499,Closed fracture of shaft of left radius,Condition,SNOMED,Disorder,S,10936721000119108,2015-03-01,2099-12-31,NA
+760500,Closed fracture of neck of right radius,Condition,SNOMED,Disorder,S,10936761000119103,2015-03-01,2099-12-31,NA
+760501,Closed fracture of neck of left radius,Condition,SNOMED,Disorder,S,10936801000119106,2015-03-01,2099-12-31,NA
+760502,Closed fracture of proximal epiphyseal plate of right radius,Condition,SNOMED,Disorder,S,10936841000119108,2015-09-01,2099-12-31,NA
+760503,Closed fracture of proximal epiphyseal plate of left radius,Condition,SNOMED,Disorder,S,10936881000119103,2015-09-01,2099-12-31,NA
+760504,Closed fracture of proximal end of right radius,Condition,SNOMED,Disorder,S,10936921000119105,2015-03-01,2099-12-31,NA
+760505,Closed fracture of right radius,Condition,SNOMED,Disorder,S,10937001000119100,2015-03-01,2099-12-31,NA
+760506,Closed fracture of left radius,Condition,SNOMED,Disorder,S,10937041000119103,2015-03-01,2099-12-31,NA
+760507,Closed fracture of right forearm,Condition,SNOMED,Disorder,S,10937081000119108,2015-03-01,2099-12-31,NA
+760508,Closed fracture of left forearm,Condition,SNOMED,Disorder,S,10937121000119105,2015-03-01,2099-12-31,NA
+760509,Closed fracture of hamate bone of right wrist,Condition,SNOMED,Disorder,S,10937161000119100,2015-03-01,2099-12-31,NA
+760510,Closed fracture of lunate bone of right wrist,Condition,SNOMED,Disorder,S,10937241000119107,2015-03-01,2099-12-31,NA
+760511,Closed fracture of proximal phalanx of right thumb,Condition,SNOMED,Disorder,S,10937321000119107,2015-03-01,2099-12-31,NA
+760512,Closed fracture of proximal phalanx of left thumb,Condition,SNOMED,Disorder,S,10937361000119102,2015-03-01,2099-12-31,NA
+760513,Closed fracture of distal phalanx of right thumb,Condition,SNOMED,Disorder,S,10937401000119106,2015-03-01,2099-12-31,NA
+760514,Closed fracture of distal phalanx of left thumb,Condition,SNOMED,Disorder,S,10937441000119108,2015-03-01,2099-12-31,NA
+760515,Closed fracture of trapezium bone of right wrist,Condition,SNOMED,Disorder,S,10937481000119103,2015-03-01,2099-12-31,NA
+760516,Closed fracture of triquetral bone of right wrist,Condition,SNOMED,Disorder,S,10937561000119108,2015-03-01,2099-12-31,NA
+760517,Closed fracture of triquetral bone of left wrist,Condition,SNOMED,Disorder,S,10937601000119108,2015-03-01,2099-12-31,NA
+760518,Closed fracture of right shoulder,Condition,SNOMED,Disorder,S,10937641000119105,2015-03-01,2099-12-31,NA
+760519,Closed fracture of right wrist,Condition,SNOMED,Disorder,S,10937721000119106,2015-03-01,2099-12-31,NA
+760520,Closed fracture of phalanx of right thumb,Condition,SNOMED,Disorder,S,10937801000119109,2015-03-01,2099-12-31,NA
+760521,Closed fracture of phalanx of left thumb,Condition,SNOMED,Disorder,S,10937841000119106,2015-03-01,2099-12-31,NA
+760522,Closed fracture of right hand,Condition,SNOMED,Disorder,S,10937881000119101,2015-03-01,2099-12-31,NA
+760523,Closed fracture of left hand,Condition,SNOMED,Disorder,S,10937921000119108,2015-03-01,2099-12-31,NA
+760524,Closed fracture of right elbow,Condition,SNOMED,Disorder,S,10937961000119103,2015-03-01,2099-12-31,NA
+760525,Closed fracture of left elbow,Condition,SNOMED,Disorder,S,10938001000119101,2015-03-01,2099-12-31,NA
+760583,Pathological fracture of right humerus due to osteoporosis,Condition,SNOMED,Disorder,S,11305481000119104,2015-03-01,2099-12-31,NA
+760584,Pathological fracture of left humerus due to neoplasm,Condition,SNOMED,Disorder,S,11305601000119109,2015-03-01,2099-12-31,NA
+760585,Pathological fracture of right humerus,Condition,SNOMED,Disorder,S,11305641000119106,2015-03-01,2099-12-31,NA
+760586,Pathological fracture of left humerus,Condition,SNOMED,Disorder,S,11305681000119101,2015-03-01,2099-12-31,NA
+760587,Pathological fracture of right humerus due to secondary osteoporosis,Condition,SNOMED,Disorder,S,11305721000119107,2015-09-01,2099-12-31,NA
+760588,Pathological fracture of left humerus due to secondary osteoporosis,Condition,SNOMED,Disorder,S,11305761000119102,2015-09-01,2099-12-31,NA
+760589,Pathological fracture of right clavicle due to osteoporosis,Condition,SNOMED,Disorder,S,11305801000119105,2015-09-01,2099-12-31,NA
+760590,Pathological fracture of left clavicle due to osteoporosis,Condition,SNOMED,Disorder,S,11305841000119107,2015-09-01,2099-12-31,NA
+760591,Pathological fracture of right clavicle,Condition,SNOMED,Disorder,S,11305961000119104,2015-03-01,2099-12-31,NA
+760592,Pathological fracture of right clavicle due to secondary osteoporosis,Condition,SNOMED,Disorder,S,11306041000119109,2015-09-01,2099-12-31,NA
+760651,Pathological fracture of right hand due to osteoporosis,Condition,SNOMED,Disorder,S,11312241000119101,2015-09-01,2099-12-31,NA
+760652,Pathological fracture of left hand due to osteoporosis,Condition,SNOMED,Disorder,S,11312281000119106,2015-09-01,2099-12-31,NA
+760653,Pathological fracture of left hand due to neoplastic disease,Condition,SNOMED,Disorder,S,11312361000119106,2015-09-01,2099-12-31,NA
+760654,Pathological fracture of right hand,Condition,SNOMED,Disorder,S,11312401000119102,2015-03-01,2099-12-31,NA
+760655,Pathological fracture of left hand,Condition,SNOMED,Disorder,S,11312441000119100,2015-03-01,2099-12-31,NA
+760656,Pathological fracture of phalanx of finger of right hand,Condition,SNOMED,Disorder,S,11312481000119105,2015-03-01,2099-12-31,NA
+760657,Pathological fracture of phalanx of finger of left hand,Condition,SNOMED,Disorder,S,11312521000119105,2015-03-01,2099-12-31,NA
+760658,Pathological fracture of right ulna due to osteoporosis,Condition,SNOMED,Disorder,S,11312681000119108,2015-03-01,2099-12-31,NA
+760659,Pathological fracture of left radius due to osteoporosis,Condition,SNOMED,Disorder,S,11312761000119107,2015-03-01,2099-12-31,NA
+760660,Pathological fracture of left ulna due to neoplasm,Condition,SNOMED,Disorder,S,11312841000119102,2015-03-01,2099-12-31,NA
+760661,Pathological fracture of right radius due to neoplasm,Condition,SNOMED,Disorder,S,11312881000119107,2015-03-01,2099-12-31,NA
+760662,Pathological fracture of right ulna,Condition,SNOMED,Disorder,S,11312961000119105,2015-03-01,2099-12-31,NA
+760663,Pathological fracture of left ulna,Condition,SNOMED,Disorder,S,11313001000119102,2015-03-01,2099-12-31,NA
+760664,Pathological fracture of right radius,Condition,SNOMED,Disorder,S,11313041000119100,2015-03-01,2099-12-31,NA
+760665,Pathological fracture of left radius,Condition,SNOMED,Disorder,S,11313081000119105,2015-03-01,2099-12-31,NA
+760667,Pathological fracture of left scapula due to osteoporosis,Condition,SNOMED,Disorder,S,11313321000119109,2015-09-01,2099-12-31,NA
+760668,Pathological fracture of right scapula,Condition,SNOMED,Disorder,S,11313441000119105,2015-03-01,2099-12-31,NA
+760669,Pathological fracture of left scapula,Condition,SNOMED,Disorder,S,11313481000119100,2015-09-01,2099-12-31,NA
+760672,Stress fracture of right ulna,Condition,SNOMED,Disorder,S,11313801000119106,2015-03-01,2099-12-31,NA
+760673,Stress fracture of left ulna,Condition,SNOMED,Disorder,S,11313841000119108,2015-03-01,2099-12-31,NA
+760674,Stress fracture of left clavicle,Condition,SNOMED,Disorder,S,11314001000119104,2015-03-01,2099-12-31,NA
+760675,Stress fracture of right humerus,Condition,SNOMED,Disorder,S,11314041000119102,2015-03-01,2099-12-31,NA
+760676,Stress fracture of left humerus,Condition,SNOMED,Disorder,S,11314081000119107,2015-03-01,2099-12-31,NA
+760678,Stress fracture of right radius,Condition,SNOMED,Disorder,S,11314121000119109,2015-03-01,2099-12-31,NA
+760679,Stress fracture of left radius,Condition,SNOMED,Disorder,S,11314161000119104,2015-03-01,2099-12-31,NA
+760680,Stress fracture of left hand,Condition,SNOMED,Disorder,S,11314241000119106,2015-03-01,2099-12-31,NA
+760681,Stress fracture of finger of right hand,Condition,SNOMED,Disorder,S,11314281000119101,2015-03-01,2099-12-31,NA
+760682,Stress fracture of finger of left hand,Condition,SNOMED,Disorder,S,11314321000119106,2015-03-01,2099-12-31,NA
+760995,Fracture of left radius,Condition,SNOMED,Disorder,S,12960001000004104,2015-03-01,2099-12-31,NA
+761015,Fracture of left ulna,Condition,SNOMED,Disorder,S,13270001000004101,2015-09-01,2099-12-31,NA
+761086,Fracture of distal end of right ulna,Condition,SNOMED,Disorder,S,14430001000004102,2015-09-01,2099-12-31,NA
+761905,Fracture of distal end of right radius,Condition,SNOMED,Disorder,S,18310001000004100,2015-09-01,2099-12-31,NA
+761939,Nonunion fracture of right ulna,Condition,SNOMED,Disorder,S,22120001000004107,2015-09-01,2099-12-31,NA
+761943,Comminuted fracture of left humerus,Condition,SNOMED,Disorder,S,22770001000004100,2015-09-01,2099-12-31,NA
+761956,Supracondylar fracture of right humerus,Condition,SNOMED,Disorder,S,23630001000004100,2015-09-01,2099-12-31,NA
+761981,Fracture of head of right radius,Condition,SNOMED,Disorder,S,25860001000004107,2015-09-01,2099-12-31,NA
+763792,Fracture of right radius,Condition,SNOMED,Disorder,S,446461000124103,2015-03-01,2099-12-31,NA
+763794,Open fracture of proximal end of right ulna,Condition,SNOMED,Disorder,S,446481000124108,2015-03-01,2099-12-31,NA
+763797,Closed fracture of metacarpal bone of left hand,Condition,SNOMED,Disorder,S,446511000124100,2015-03-01,2099-12-31,NA
+763803,Closed fracture of metacarpal bone of right hand,Condition,SNOMED,Disorder,S,446571000124109,2015-03-01,2099-12-31,NA
+763806,Closed fracture of left upper limb,Condition,SNOMED,Disorder,S,446601000124102,2015-03-01,2099-12-31,NA
+763807,Closed fracture of right upper limb,Condition,SNOMED,Disorder,S,446611000124104,2015-03-01,2099-12-31,NA
+763808,Fracture of left upper limb,Condition,SNOMED,Disorder,S,446621000124107,2015-03-01,2099-12-31,NA
+763809,Fracture of right upper limb,Condition,SNOMED,Disorder,S,446631000124105,2015-03-01,2099-12-31,NA
+763810,Closed fracture of distal phalanx of finger of left hand,Condition,SNOMED,Disorder,S,446641000124100,2015-03-01,2099-12-31,NA
+764378,Pathological fracture of left ulna due to osteoporosis,Condition,SNOMED,Disorder,S,454201000124109,2017-09-01,2099-12-31,NA
+764427,Open fracture of right upper limb,Condition,SNOMED,Disorder,S,454771000124106,2017-09-01,2099-12-31,NA
+764591,Closed fracture of pisiform bone of right wrist,Condition,SNOMED,Disorder,S,457161000124106,2018-03-01,2099-12-31,NA
+764998,Closed fracture of base of second metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10923721000119100,2015-03-01,2099-12-31,NA
+765001,Closed fracture of third metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927361000119104,2015-03-01,2099-12-31,NA
+765002,Closed fracture of fifth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10927561000119105,2015-03-01,2099-12-31,NA
+765008,Closed fracture of neck of fourth metacarpal of left hand,Condition,SNOMED,Disorder,S,10927801000119106,2015-03-01,2099-12-31,NA
+765009,Closed fracture of right humerus,Condition,SNOMED,Disorder,S,10929201000119103,2015-03-01,2099-12-31,NA
+765016,Closed fracture of proximal phalanx of little finger of left hand,Condition,SNOMED,Disorder,S,10935761000119107,2015-03-01,2099-12-31,NA
+765017,Closed fracture of trapezium bone of left wrist,Condition,SNOMED,Disorder,S,10937521000119103,2015-03-01,2099-12-31,NA
+765018,Closed fracture of left wrist,Condition,SNOMED,Disorder,S,10937761000119101,2015-03-01,2099-12-31,NA
+765031,Pathological fracture of left clavicle,Condition,SNOMED,Disorder,S,11306001000119107,2015-03-01,2099-12-31,NA
+765102,Open fracture of distal phalanx of right little finger,Condition,SNOMED,Disorder,S,10816341000119100,2015-03-01,2099-12-31,NA
+765103,Open fracture of shaft of second metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10817581000119101,2015-03-01,2099-12-31,NA
+765105,Open fracture of right ulna,Condition,SNOMED,Disorder,S,10832541000119101,2015-03-01,2099-12-31,NA
+765106,Open fracture of first metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10832901000119106,2015-03-01,2099-12-31,NA
+765107,Open supracondylar fracture of left humerus,Condition,SNOMED,Disorder,S,10833221000119100,2015-03-01,2099-12-31,NA
+765121,Supracondylar fracture of left humerus,Condition,SNOMED,Disorder,S,29750001000004107,2015-09-01,2099-12-31,NA
+765182,Pathological fracture of right humerus due to neoplasm,Condition,SNOMED,Disorder,S,11305561000119109,2015-03-01,2099-12-31,NA
+765183,Pathological fracture of left clavicle due to neoplastic disease,Condition,SNOMED,Disorder,S,11305921000119109,2015-09-01,2099-12-31,NA
+765192,Pathological fracture of right radius due to osteoporosis,Condition,SNOMED,Disorder,S,11312721000119102,2015-03-01,2099-12-31,NA
+765193,Stress fracture of right clavicle,Condition,SNOMED,Disorder,S,11313961000119100,2015-03-01,2099-12-31,NA
+765194,Stress fracture of right hand,Condition,SNOMED,Disorder,S,11314201000119109,2015-03-01,2099-12-31,NA
+765286,Open fracture of shaft of metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10815381000119104,2015-03-01,2099-12-31,NA
+765287,Open fracture of phalanx of right little finger,Condition,SNOMED,Disorder,S,10816461000119106,2015-03-01,2099-12-31,NA
+765288,Open fracture of middle phalanx of middle finger of right hand,Condition,SNOMED,Disorder,S,10818061000119102,2015-03-01,2099-12-31,NA
+765289,Open fracture of distal phalanx of left little finger,Condition,SNOMED,Disorder,S,10818221000119104,2015-03-01,2099-12-31,NA
+765291,Open fracture of shaft of left clavicle,Condition,SNOMED,Disorder,S,10819861000119103,2015-03-01,2099-12-31,NA
+765292,Open fracture of base of fifth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10820851000119104,2015-03-01,2099-12-31,NA
+765294,Open fracture of middle phalanx of left little finger,Condition,SNOMED,Disorder,S,10823331000119107,2015-03-01,2099-12-31,NA
+765295,Open fracture of phalanx of ring finger of left hand,Condition,SNOMED,Disorder,S,10824011000119101,2015-03-01,2099-12-31,NA
+765297,Open fracture of proximal phalanx of ring finger of right hand,Condition,SNOMED,Disorder,S,10830701000119107,2015-03-01,2099-12-31,NA
+765299,Open fracture of shaft of metacarpus of left thumb,Condition,SNOMED,Disorder,S,10832661000119101,2015-03-01,2099-12-31,NA
+765306,Open fracture of olecranon of left ulna,Condition,SNOMED,Disorder,S,10836981000119104,2015-03-01,2099-12-31,NA
+765307,Open fracture of third metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10837261000119102,2015-03-01,2099-12-31,NA
+765324,Closed fracture of epiphyseal plate of distal right ulna,Condition,SNOMED,Disorder,S,10923321000119104,2015-03-01,2099-12-31,NA
+765325,Closed fracture of base of fifth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10924001000119109,2015-03-01,2099-12-31,NA
+765326,Closed fracture of epiphyseal plate of proximal left humerus,Condition,SNOMED,Disorder,S,10924081000119101,2015-03-01,2099-12-31,NA
+765328,Closed fracture of left ulna,Condition,SNOMED,Disorder,S,10926121000119109,2015-03-01,2099-12-31,NA
+765330,Closed fracture of shaft of third metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10926961000119102,2015-03-01,2099-12-31,NA
+765331,Closed fracture of second metacarpal of left hand,Condition,SNOMED,Disorder,S,10927321000119109,2015-03-01,2099-12-31,NA
+765332,Closed fracture of neck of fifth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927841000119108,2015-03-01,2099-12-31,NA
+765333,Closed fracture of medial epicondyle of right humerus,Condition,SNOMED,Disorder,S,10928801000119107,2015-03-01,2099-12-31,NA
+765334,Closed transcondylar fracture of distal left humerus,Condition,SNOMED,Disorder,S,10929161000119108,2015-03-01,2099-12-31,NA
+765341,Closed fracture of head of right radius,Condition,SNOMED,Disorder,S,10933881000119108,2015-03-01,2099-12-31,NA
+765342,Closed fracture of glenoid cavity of left scapula,Condition,SNOMED,Disorder,S,10934001000119107,2015-03-01,2099-12-31,NA
+765343,Closed fracture of capitate bone of left wrist,Condition,SNOMED,Disorder,S,10934321000119100,2015-03-01,2099-12-31,NA
+765344,Closed mallet fracture of distal phalanx of ring finger of right hand,Condition,SNOMED,Disorder,S,10934681000119107,2015-03-01,2099-12-31,NA
+765345,Closed fracture of phalanx of left little finger,Condition,SNOMED,Disorder,S,10936081000119105,2015-03-01,2099-12-31,NA
+765346,Closed fracture of epiphyseal plate of distal end of left radius,Condition,SNOMED,Disorder,S,10936561000119105,2015-09-01,2099-12-31,NA
+765347,Closed fracture of proximal end of left radius,Condition,SNOMED,Disorder,S,10936961000119100,2015-03-01,2099-12-31,NA
+765350,Closed fracture of hamate bone of left wrist,Condition,SNOMED,Disorder,S,10937201000119105,2015-03-01,2099-12-31,NA
+765351,Closed fracture of left shoulder,Condition,SNOMED,Disorder,S,10937681000119100,2015-03-01,2099-12-31,NA
+765680,Open fracture of left upper limb,Condition,SNOMED,Disorder,S,454781000124109,2017-09-01,2099-12-31,NA
+765890,Closed fracture of third metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10927401000119108,2015-03-01,2099-12-31,NA
+765891,Closed fracture of phalanx of left index finger,Condition,SNOMED,Disorder,S,10935841000119102,2015-03-01,2099-12-31,NA
+765893,Pathological fracture of left humerus due to osteoporosis,Condition,SNOMED,Disorder,S,11305521000119104,2015-03-01,2099-12-31,NA
+1075036,Fracture of bone adjacent to right elbow joint prosthesis,Condition,SNOMED,Disorder,S,12206231000119101,2024-03-01,2099-12-31,NA
+1075051,Fracture of bone adjacent to left elbow joint prosthesis,Condition,SNOMED,Disorder,S,12217561000119107,2024-03-01,2099-12-31,NA
+1075232,Fracture of bone adjacent to elbow prosthesis,Condition,SNOMED,Disorder,S,1303207001,2024-03-01,2099-12-31,NA
+1077289,Fracture of distal end of left humerus,Condition,SNOMED,Disorder,S,46131000087103,2024-07-01,2099-12-31,NA
+1077290,Fracture of distal end of right humerus,Condition,SNOMED,Disorder,S,46161000087105,2024-07-01,2099-12-31,NA
+1077291,Fracture of left carpus,Condition,SNOMED,Disorder,S,46171000087101,2024-07-01,2099-12-31,NA
+1077301,Fracture of proximal end of left humerus,Condition,SNOMED,Disorder,S,46271000087105,2024-07-01,2099-12-31,NA
+1077302,Fracture of proximal end of left radius,Condition,SNOMED,Disorder,S,46281000087107,2024-07-01,2099-12-31,NA
+1077303,Fracture of proximal end of left ulna,Condition,SNOMED,Disorder,S,46291000087109,2024-07-01,2099-12-31,NA
+1077304,Fracture of proximal end of right humerus,Condition,SNOMED,Disorder,S,46301000087108,2024-07-01,2099-12-31,NA
+1077305,Fracture of proximal end of right radius,Condition,SNOMED,Disorder,S,46311000087105,2024-07-01,2099-12-31,NA
+1077306,Fracture of proximal end of right ulna,Condition,SNOMED,Disorder,S,46321000087102,2024-07-01,2099-12-31,NA
+1077307,Fracture of right carpus,Condition,SNOMED,Disorder,S,46331000087100,2024-07-01,2099-12-31,NA
+1077315,Fracture of first metacarpal bone of left hand,Condition,SNOMED,Disorder,S,46411000087104,2024-07-01,2099-12-31,NA
+1077316,Fracture of first metacarpal bone of right hand,Condition,SNOMED,Disorder,S,46421000087107,2024-07-01,2099-12-31,NA
+1244281,Closed fracture of phalanx of multiple fingers,Condition,SNOMED,Disorder,S,1286750004,2023-09-01,2099-12-31,NA
+1244762,Stress fracture of bone of wrist region,Condition,SNOMED,Disorder,S,1290784005,2023-11-01,2099-12-31,NA
+1245427,Fracture of bone of bilateral clavicles,Condition,SNOMED,Disorder,S,1303379002,2024-02-01,2099-12-31,NA
+1245428,Fracture of left clavicle,Condition,SNOMED,Disorder,S,1303380004,2024-02-01,2099-12-31,NA
+1245429,Fracture of right clavicle,Condition,SNOMED,Disorder,S,1303381000,2024-02-01,2099-12-31,NA
+1245430,Fracture of left olecranon,Condition,SNOMED,Disorder,S,1303382007,2024-02-01,2099-12-31,NA
+1245431,Fracture of right olecranon,Condition,SNOMED,Disorder,S,1303383002,2024-02-01,2099-12-31,NA
+1245435,Fracture of bone of right shoulder region,Condition,SNOMED,Disorder,S,1303388006,2024-02-01,2099-12-31,NA
+1245436,Fracture of bone of left shoulder region,Condition,SNOMED,Disorder,S,1303389003,2024-02-01,2099-12-31,NA
+1245437,Fracture of bone of left forearm,Condition,SNOMED,Disorder,S,1303390007,2024-02-01,2099-12-31,NA
+1245438,Fracture of bone of right forearm,Condition,SNOMED,Disorder,S,1303391006,2024-02-01,2099-12-31,NA
+1245439,Fracture of bone of left elbow joint region,Condition,SNOMED,Disorder,S,1303392004,2024-02-01,2099-12-31,NA
+1245440,Fracture of bone of right elbow joint region,Condition,SNOMED,Disorder,S,1303393009,2024-02-01,2099-12-31,NA
+1245441,Fracture of bone of left wrist region,Condition,SNOMED,Disorder,S,1303394003,2024-02-01,2099-12-31,NA
+1245442,Fracture of bone of right wrist region,Condition,SNOMED,Disorder,S,1303395002,2024-02-01,2099-12-31,NA
+1245443,Fracture of bone of bilateral wrist regions,Condition,SNOMED,Disorder,S,1303396001,2024-02-01,2099-12-31,NA
+1245444,Fracture of bone of wrist region,Condition,SNOMED,Disorder,S,1303397005,2024-02-01,2099-12-31,NA
+1245445,Fracture of phalanx of finger of right hand,Condition,SNOMED,Disorder,S,1303398000,2024-02-01,2099-12-31,NA
+1245446,Fracture of phalanx of finger of left hand,Condition,SNOMED,Disorder,S,1303399008,2024-02-01,2099-12-31,NA
+1245447,Fracture of phalanx of right thumb,Condition,SNOMED,Disorder,S,1303400001,2024-02-01,2099-12-31,NA
+1245448,Fracture of phalanx of left thumb,Condition,SNOMED,Disorder,S,1303401002,2024-02-01,2099-12-31,NA
+1449996,Fracture of distal phalanx of little finger,Condition,SNOMED,Disorder,S,1354599007,2025-01-01,2099-12-31,NA
+1449997,Fracture of distal phalanx of ring finger,Condition,SNOMED,Disorder,S,1354600005,2025-01-01,2099-12-31,NA
+1449998,Fracture of distal phalanx of index finger,Condition,SNOMED,Disorder,S,1354601009,2025-01-01,2099-12-31,NA
+1449999,Fracture of distal phalanx of middle finger,Condition,SNOMED,Disorder,S,1354602002,2025-01-01,2099-12-31,NA
+1450000,Fracture of middle phalanx of ring finger,Condition,SNOMED,Disorder,S,1354603007,2025-01-01,2099-12-31,NA
+1450001,Fracture of middle phalanx of little finger,Condition,SNOMED,Disorder,S,1354604001,2025-01-01,2099-12-31,NA
+1450002,Fracture of middle phalanx of index finger,Condition,SNOMED,Disorder,S,1354605000,2025-01-01,2099-12-31,NA
+1450003,Fracture of middle phalanx of middle finger,Condition,SNOMED,Disorder,S,1354606004,2025-01-01,2099-12-31,NA
+1450004,Fracture of proximal phalanx of little finger,Condition,SNOMED,Disorder,S,1354607008,2025-01-01,2099-12-31,NA
+1450005,Fracture of proximal phalanx of index finger,Condition,SNOMED,Disorder,S,1354608003,2025-01-01,2099-12-31,NA
+1450006,Fracture of proximal phalanx of ring finger,Condition,SNOMED,Disorder,S,1354609006,2025-01-01,2099-12-31,NA
+1450490,Fracture of left scapula,Condition,SNOMED,Disorder,S,46451000087100,2025-01-01,2099-12-31,NA
+1450491,Fracture of metacarpal bone of left hand,Condition,SNOMED,Disorder,S,46461000087102,2025-01-01,2099-12-31,NA
+1450492,Fracture of metacarpal bone of right hand,Condition,SNOMED,Disorder,S,46471000087106,2025-01-01,2099-12-31,NA
+1450497,Fracture of right scapula,Condition,SNOMED,Disorder,S,46561000087103,2025-01-01,2099-12-31,NA
+1450502,Fracture of distal phalanx of right thumb,Condition,SNOMED,Disorder,S,46631000087106,2025-01-01,2099-12-31,NA
+1450503,Fracture of distal phalanx of left thumb,Condition,SNOMED,Disorder,S,46641000087100,2025-01-01,2099-12-31,NA
+1450504,Fracture of distal phalanx of left index finger,Condition,SNOMED,Disorder,S,46651000087102,2025-01-01,2099-12-31,NA
+1450505,Fracture of distal phalanx of left little finger,Condition,SNOMED,Disorder,S,46661000087104,2025-01-01,2099-12-31,NA
+1450506,Fracture of distal phalanx of left ring finger,Condition,SNOMED,Disorder,S,46671000087108,2025-01-01,2099-12-31,NA
+1450507,Fracture of distal phalanx of right index finger,Condition,SNOMED,Disorder,S,46681000087105,2025-01-01,2099-12-31,NA
+1450508,Fracture of distal phalanx of right little finger,Condition,SNOMED,Disorder,S,46691000087107,2025-01-01,2099-12-31,NA
+1450509,Fracture of distal phalanx of right ring finger,Condition,SNOMED,Disorder,S,46701000087107,2025-01-01,2099-12-31,NA
+1450511,Fracture of distal phalanx of left middle finger,Condition,SNOMED,Disorder,S,46901000087109,2025-01-01,2099-12-31,NA
+1450512,Fracture of distal phalanx of right middle finger,Condition,SNOMED,Disorder,S,46911000087106,2025-01-01,2099-12-31,NA
+1450513,Fracture of middle phalanx of left index finger,Condition,SNOMED,Disorder,S,46921000087103,2025-01-01,2099-12-31,NA
+1450514,Fracture of middle phalanx of left little finger,Condition,SNOMED,Disorder,S,46931000087101,2025-01-01,2099-12-31,NA
+1450515,Fracture of middle phalanx of left middle finger,Condition,SNOMED,Disorder,S,46941000087107,2025-01-01,2099-12-31,NA
+1450516,Fracture of middle phalanx of left ring finger,Condition,SNOMED,Disorder,S,46951000087105,2025-01-01,2099-12-31,NA
+1450517,Fracture of middle phalanx of right index finger,Condition,SNOMED,Disorder,S,46961000087108,2025-01-01,2099-12-31,NA
+1450518,Fracture of middle phalanx of right little finger,Condition,SNOMED,Disorder,S,46971000087104,2025-01-01,2099-12-31,NA
+1450519,Fracture of middle phalanx of right middle finger,Condition,SNOMED,Disorder,S,46981000087102,2025-01-01,2099-12-31,NA
+1450520,Fracture of middle phalanx of right ring finger,Condition,SNOMED,Disorder,S,46991000087100,2025-01-01,2099-12-31,NA
+1450521,Fracture of proximal phalanx of left index finger,Condition,SNOMED,Disorder,S,47001000087108,2025-01-01,2099-12-31,NA
+1450522,Fracture of proximal phalanx of left little finger,Condition,SNOMED,Disorder,S,47011000087105,2025-01-01,2099-12-31,NA
+1450523,Fracture of proximal phalanx of left ring finger,Condition,SNOMED,Disorder,S,47021000087102,2025-01-01,2099-12-31,NA
+1450524,Fracture of proximal phalanx of left thumb,Condition,SNOMED,Disorder,S,47031000087100,2025-01-01,2099-12-31,NA
+1450525,Fracture of proximal phalanx of right index finger,Condition,SNOMED,Disorder,S,47041000087106,2025-01-01,2099-12-31,NA
+1450526,Fracture of proximal phalanx of right little finger,Condition,SNOMED,Disorder,S,47051000087109,2025-01-01,2099-12-31,NA
+1450527,Fracture of proximal phalanx of right ring finger,Condition,SNOMED,Disorder,S,47061000087107,2025-01-01,2099-12-31,NA
+1450528,Fracture of proximal phalanx of right thumb,Condition,SNOMED,Disorder,S,47071000087103,2025-01-01,2099-12-31,NA
+1450592,Fracture of shaft of left humerus,Condition,SNOMED,Disorder,S,47951000087108,2025-01-01,2099-12-31,NA
+1450593,Fracture of shaft of left radius,Condition,SNOMED,Disorder,S,47961000087106,2025-01-01,2099-12-31,NA
+1450594,Fracture of shaft of left ulna,Condition,SNOMED,Disorder,S,47971000087102,2025-01-01,2099-12-31,NA
+1450597,Fracture of shaft of right humerus,Condition,SNOMED,Disorder,S,47991000087103,2025-01-01,2099-12-31,NA
+1450598,Fracture of shaft of right radius,Condition,SNOMED,Disorder,S,48001000087109,2025-01-01,2099-12-31,NA
+1450599,Fracture of shaft of right ulna,Condition,SNOMED,Disorder,S,48011000087106,2025-01-01,2099-12-31,NA
+1450602,Fracture of coracoid process of left scapula,Condition,SNOMED,Disorder,S,48121000087104,2025-01-01,2099-12-31,NA
+1450603,Fracture of coracoid process of right scapula,Condition,SNOMED,Disorder,S,48131000087102,2025-01-01,2099-12-31,NA
+1450610,Fracture of head of left humerus,Condition,SNOMED,Disorder,S,48201000087104,2025-01-01,2099-12-31,NA
+1450611,Fracture of head of right humerus,Condition,SNOMED,Disorder,S,48221000087105,2025-01-01,2099-12-31,NA
+1450614,Fracture of left scaphoid bone,Condition,SNOMED,Disorder,S,48261000087100,2025-01-01,2099-12-31,NA
+1450624,Fracture of right scaphoid bone,Condition,SNOMED,Disorder,S,48391000087103,2025-01-01,2099-12-31,NA
+1450628,Fracture of styloid process of left ulna,Condition,SNOMED,Disorder,S,48441000087102,2025-01-01,2099-12-31,NA
+1450629,Fracture of styloid process of right ulna,Condition,SNOMED,Disorder,S,48451000087104,2025-01-01,2099-12-31,NA
+3170982,Open fracture of left thumb,Condition,Nebraska Lexicon,Clinical Finding,S,18330001000004105,2016-01-28,2099-12-31,NA
+3179703,Bilateral elbow fractures,Condition,Nebraska Lexicon,Clinical Finding,S,20520001000004106,2016-01-28,2099-12-31,NA
+3181637,Closed fracture of third metacarpal,Condition,Nebraska Lexicon,Clinical Finding,S,27130001000004106,2016-01-28,2099-12-31,NA
+3183373,Pathologic fracture of right humerus,Condition,Nebraska Lexicon,Clinical Finding,S,26820001000004103,2016-01-28,2099-12-31,NA
+3186783,Bilateral proximal humeral fractures,Condition,Nebraska Lexicon,Clinical Finding,S,31190001000004101,2016-01-28,2099-12-31,NA
+4009298,"Closed fracture scapula, spine",Condition,SNOMED,Disorder,S,208228004,2002-01-31,2099-12-31,NA
+4009299,"Closed fracture scapula, neck",Condition,SNOMED,Disorder,S,208229007,2002-01-31,2099-12-31,NA
+4009300,"Open fracture scapula, blade",Condition,SNOMED,Disorder,S,208234006,2002-01-31,2099-12-31,NA
+4009302,"Closed fracture of humerus, upper epiphysis",Condition,SNOMED,Disorder,S,208244008,2002-01-31,2099-12-31,NA
+4009431,"Open fracture proximal humerus, neck",Condition,SNOMED,Disorder,S,208250003,2002-01-31,2099-12-31,NA
+4009433,"Open fracture of humerus, upper epiphysis",Condition,SNOMED,Disorder,S,208255008,2002-01-31,2099-12-31,NA
+4009434,"Open fracture proximal humerus, three part",Condition,SNOMED,Disorder,S,208256009,2002-01-31,2099-12-31,NA
+4009435,"Closed fracture olecranon, extra-articular",Condition,SNOMED,Disorder,S,208294009,2002-01-31,2099-12-31,NA
+4009436,"Closed fracture olecranon, intra-articular",Condition,SNOMED,Disorder,S,208298007,2002-01-31,2099-12-31,NA
+4009437,"Open fracture proximal ulna, comminuted",Condition,SNOMED,Disorder,S,208303009,2002-01-31,2099-12-31,NA
+4009442,"Open fracture of ulna, lower epiphysis",Condition,SNOMED,Disorder,S,208337001,2002-01-31,2099-12-31,NA
+4009443,Open Galeazzi fracture,Condition,SNOMED,Disorder,S,208341002,2002-01-31,2099-12-31,NA
+4009444,Open dorsal Barton's fracture,Condition,SNOMED,Disorder,S,208343004,2002-01-31,2099-12-31,NA
+4009445,Open fracture radial styloid,Condition,SNOMED,Disorder,S,208344005,2002-01-31,2099-12-31,NA
+4009446,"Open fracture distal radius, intra-articular, die-punch",Condition,SNOMED,Disorder,S,208345006,2002-01-31,2099-12-31,NA
+4009449,"Closed fracture scaphoid, proximal pole",Condition,SNOMED,Disorder,S,208370006,2002-01-31,2099-12-31,NA
+4009450,Open fracture finger metacarpal base,Condition,SNOMED,Disorder,S,208414008,2002-01-31,2099-12-31,NA
+4009451,Open fracture finger metacarpal head,Condition,SNOMED,Disorder,S,208417001,2002-01-31,2099-12-31,NA
+4009453,Open fracture of thumb metacarpal,Condition,SNOMED,Disorder,S,208420009,2002-01-31,2099-12-31,NA
+4009454,Open fracture thumb metacarpal neck,Condition,SNOMED,Disorder,S,208423006,2002-01-31,2099-12-31,NA
+4009456,Open fracture of sesamoid bone of hand,Condition,SNOMED,Disorder,S,208428002,2002-01-31,2099-12-31,NA
+4009457,Closed fracture thumb proximal phalanx,Condition,SNOMED,Disorder,S,208434009,2002-01-31,2099-12-31,NA
+4009458,"Closed fracture thumb distal phalanx, shaft",Condition,SNOMED,Disorder,S,208441003,2002-01-31,2099-12-31,NA
+4009459,"Closed fracture finger proximal phalanx, base",Condition,SNOMED,Disorder,S,208445007,2002-01-31,2099-12-31,NA
+4009460,"Closed fracture finger proximal phalanx, neck",Condition,SNOMED,Disorder,S,208447004,2002-01-31,2099-12-31,NA
+4009592,"Closed fracture finger middle phalanx, shaft",Condition,SNOMED,Disorder,S,208452009,2002-01-31,2099-12-31,NA
+4009593,"Closed fracture finger distal phalanx, base",Condition,SNOMED,Disorder,S,208456007,2002-01-31,2099-12-31,NA
+4009596,"Open fracture thumb distal phalanx, shaft",Condition,SNOMED,Disorder,S,208474003,2002-01-31,2099-12-31,NA
+4009597,"Open fracture finger proximal phalanx, shaft",Condition,SNOMED,Disorder,S,208479008,2002-01-31,2099-12-31,NA
+4009598,"Open fracture finger proximal phalanx, neck",Condition,SNOMED,Disorder,S,208480006,2002-01-31,2099-12-31,NA
+4010238,"Open fracture scapula, neck",Condition,SNOMED,Disorder,S,208236008,2002-01-31,2099-12-31,NA
+4010239,"Closed fracture proximal humerus, three part",Condition,SNOMED,Disorder,S,208245009,2002-01-31,2099-12-31,NA
+4010363,"Closed fracture of distal humerus, trochlea",Condition,SNOMED,Disorder,S,208270009,2002-01-31,2099-12-31,NA
+4010365,"Open fracture distal humerus, bicondylar (T-Y fracture)",Condition,SNOMED,Disorder,S,208285003,2002-01-31,2099-12-31,NA
+4010370,Open fracture of midshaft of radius and ulna,Condition,SNOMED,Disorder,S,208312006,2002-01-31,2099-12-31,NA
+4010371,"Closed fracture of ulna, lower epiphysis",Condition,SNOMED,Disorder,S,208318005,2002-01-31,2099-12-31,NA
+4010373,"Closed fracture distal radius, intra-articular, die-punch",Condition,SNOMED,Disorder,S,208326002,2002-01-31,2099-12-31,NA
+4010378,"Closed fracture hamate, hook",Condition,SNOMED,Disorder,S,208369005,2002-01-31,2099-12-31,NA
+4010379,"Closed fracture scaphoid, waist, comminuted",Condition,SNOMED,Disorder,S,208373008,2002-01-31,2099-12-31,NA
+4010380,"Closed fracture scaphoid, tuberosity",Condition,SNOMED,Disorder,S,208374002,2002-01-31,2099-12-31,NA
+4010382,"Open fracture scaphoid, waist, oblique",Condition,SNOMED,Disorder,S,208382002,2002-01-31,2099-12-31,NA
+4010383,"Open fracture scaphoid, waist, comminuted",Condition,SNOMED,Disorder,S,208383007,2002-01-31,2099-12-31,NA
+4010384,Open fracture of multiple carpal bones,Condition,SNOMED,Disorder,S,208385000,2002-01-31,2099-12-31,NA
+4010385,Fracture of first metacarpal bone,Condition,SNOMED,Disorder,S,208390002,2002-01-31,2099-12-31,NA
+4010386,Closed fracture finger metacarpal base,Condition,SNOMED,Disorder,S,208397004,2002-01-31,2099-12-31,NA
+4010388,Closed fracture thumb metacarpal head,Condition,SNOMED,Disorder,S,208408001,2002-01-31,2099-12-31,NA
+4010523,"Open fracture thumb metacarpal base, intra-articular, Rolando",Condition,SNOMED,Disorder,S,208421008,2002-01-31,2099-12-31,NA
+4010524,Open fracture thumb metacarpal shaft,Condition,SNOMED,Disorder,S,208422001,2002-01-31,2099-12-31,NA
+4010525,Open fracture thumb metacarpal head,Condition,SNOMED,Disorder,S,208424000,2002-01-31,2099-12-31,NA
+4010527,Closed fracture of sesamoid bone of hand,Condition,SNOMED,Disorder,S,208427007,2002-01-31,2099-12-31,NA
+4010529,"Closed fracture thumb distal phalanx, base",Condition,SNOMED,Disorder,S,208440002,2002-01-31,2099-12-31,NA
+4010530,"Closed fracture finger proximal phalanx, shaft",Condition,SNOMED,Disorder,S,208446008,2002-01-31,2099-12-31,NA
+4010531,"Closed fracture finger middle phalanx, neck",Condition,SNOMED,Disorder,S,208453004,2002-01-31,2099-12-31,NA
+4010533,"Closed fracture finger distal phalanx, shaft",Condition,SNOMED,Disorder,S,208457003,2002-01-31,2099-12-31,NA
+4010534,"Closed fracture finger distal phalanx, tuft",Condition,SNOMED,Disorder,S,208458008,2002-01-31,2099-12-31,NA
+4010535,"Closed fracture finger distal phalanx, mallet",Condition,SNOMED,Disorder,S,208459000,2002-01-31,2099-12-31,NA
+4012140,Closed fracture dislocation elbow joint,Condition,SNOMED,Disorder,S,209252000,2002-01-31,2099-12-31,NA
+4012141,Open fracture dislocation superior radioulnar joint,Condition,SNOMED,Disorder,S,209256002,2002-01-31,2099-12-31,NA
+4012142,Closed fracture dislocation lunate (volar),Condition,SNOMED,Disorder,S,209269003,2002-01-31,2099-12-31,NA
+4012143,Closed fracture dislocation perilunate (dorsal),Condition,SNOMED,Disorder,S,209270002,2002-01-31,2099-12-31,NA
+4012144,Open fracture dislocation lunate (volar),Condition,SNOMED,Disorder,S,209279001,2002-01-31,2099-12-31,NA
+4012145,Closed fracture subluxation perilunate (dorsal),Condition,SNOMED,Disorder,S,209289002,2002-01-31,2099-12-31,NA
+4012146,Open fracture subluxation of distal radioulnar joint,Condition,SNOMED,Disorder,S,209293008,2002-01-31,2099-12-31,NA
+4012147,Open fracture subluxation of carpometacarpal joint,Condition,SNOMED,Disorder,S,209296000,2002-01-31,2099-12-31,NA
+4012148,Open fracture subluxation lunate (volar),Condition,SNOMED,Disorder,S,209297009,2002-01-31,2099-12-31,NA
+4012149,Open fracture subluxation perilunate (dorsal),Condition,SNOMED,Disorder,S,209298004,2002-01-31,2099-12-31,NA
+4012150,Closed fracture dislocation of metacarpophalangeal joint,Condition,SNOMED,Disorder,S,209304008,2002-01-31,2099-12-31,NA
+4012276,Closed fracture dislocation of interphalangeal joint of thumb,Condition,SNOMED,Disorder,S,209308006,2002-01-31,2099-12-31,NA
+4012277,Open fracture dislocation of interphalangeal joint of thumb,Condition,SNOMED,Disorder,S,209316002,2002-01-31,2099-12-31,NA
+4012279,Closed fracture subluxation of metacarpophalangeal joint,Condition,SNOMED,Disorder,S,209320003,2002-01-31,2099-12-31,NA
+4012298,Open fracture of proximal phalanx of thumb,Condition,SNOMED,Disorder,S,208467008,2002-01-31,2099-12-31,NA
+4012299,"Open fracture thumb proximal phalanx, neck",Condition,SNOMED,Disorder,S,208470007,2002-01-31,2099-12-31,NA
+4012300,"Open fracture thumb proximal phalanx, head",Condition,SNOMED,Disorder,S,208471006,2002-01-31,2099-12-31,NA
+4012301,"Open fracture thumb distal phalanx, tuft",Condition,SNOMED,Disorder,S,208475002,2002-01-31,2099-12-31,NA
+4012302,"Open fracture thumb distal phalanx, mallet",Condition,SNOMED,Disorder,S,208476001,2002-01-31,2099-12-31,NA
+4012303,Open fracture of proximal phalanx of multiple fingers,Condition,SNOMED,Disorder,S,208482003,2002-01-31,2099-12-31,NA
+4012304,"Open fracture finger middle phalanx, shaft",Condition,SNOMED,Disorder,S,208485001,2002-01-31,2099-12-31,NA
+4012428,"Open fracture finger middle phalanx, neck",Condition,SNOMED,Disorder,S,208486000,2002-01-31,2099-12-31,NA
+4012429,"Open fracture finger distal phalanx, base",Condition,SNOMED,Disorder,S,208489007,2002-01-31,2099-12-31,NA
+4012430,Fractures involving multiple regions of both upper limbs,Condition,SNOMED,Disorder,S,208514006,2002-01-31,2099-12-31,NA
+4013453,"Closed fracture scapula, glenoid",Condition,SNOMED,Disorder,S,208226000,2002-01-31,2099-12-31,NA
+4013454,"Closed fracture scapula, blade",Condition,SNOMED,Disorder,S,208227009,2002-01-31,2099-12-31,NA
+4013455,"Open fracture scapula, glenoid",Condition,SNOMED,Disorder,S,208233000,2002-01-31,2099-12-31,NA
+4013458,"Closed fracture proximal humerus, four part",Condition,SNOMED,Disorder,S,208246005,2002-01-31,2099-12-31,NA
+4013461,"Closed fracture distal humerus, lateral condyle",Condition,SNOMED,Disorder,S,208267005,2002-01-31,2099-12-31,NA
+4013462,"Closed fracture distal humerus, bicondylar (T-Y fracture)",Condition,SNOMED,Disorder,S,208273006,2002-01-31,2099-12-31,NA
+4013463,"Open fracture distal humerus, capitellum",Condition,SNOMED,Disorder,S,208284004,2002-01-31,2099-12-31,NA
+4013464,Multiple open fractures of distal humerus,Condition,SNOMED,Disorder,S,208286002,2002-01-31,2099-12-31,NA
+4013465,"Closed fracture of proximal ulna, comminuted",Condition,SNOMED,Disorder,S,208295005,2002-01-31,2099-12-31,NA
+4013466,"Open fracture olecranon, extra-articular",Condition,SNOMED,Disorder,S,208301006,2002-01-31,2099-12-31,NA
+4013467,"Open fracture proximal radius, comminuted",Condition,SNOMED,Disorder,S,208304003,2002-01-31,2099-12-31,NA
+4013468,"Open fracture olecranon, intra-articular",Condition,SNOMED,Disorder,S,208306001,2002-01-31,2099-12-31,NA
+4013469,Closed Galeazzi fracture,Condition,SNOMED,Disorder,S,208322000,2002-01-31,2099-12-31,NA
+4013470,"Open fracture of ulna, styloid process",Condition,SNOMED,Disorder,S,208336005,2002-01-31,2099-12-31,NA
+4013472,Open volar Barton's fracture,Condition,SNOMED,Disorder,S,208342009,2002-01-31,2099-12-31,NA
+4013476,Closed fracture of multiple carpal bones,Condition,SNOMED,Disorder,S,208375001,2002-01-31,2099-12-31,NA
+4013477,"Open fracture scaphoid, tuberosity",Condition,SNOMED,Disorder,S,208384001,2002-01-31,2099-12-31,NA
+4013919,"Open fracture scapula, spine",Condition,SNOMED,Disorder,S,208235007,2002-01-31,2099-12-31,NA
+4013920,"Closed fracture proximal humerus, neck",Condition,SNOMED,Disorder,S,208240004,2002-01-31,2099-12-31,NA
+4013921,"Open fracture proximal humerus, head",Condition,SNOMED,Disorder,S,208254007,2002-01-31,2099-12-31,NA
+4013922,"Open fracture proximal humerus, four part",Condition,SNOMED,Disorder,S,208257000,2002-01-31,2099-12-31,NA
+4014050,"Closed fracture distal humerus, capitellum",Condition,SNOMED,Disorder,S,208272001,2002-01-31,2099-12-31,NA
+4014051,Multiple closed fractures of distal humerus,Condition,SNOMED,Disorder,S,208274000,2002-01-31,2099-12-31,NA
+4014054,"Open fracture of distal humerus, trochlea",Condition,SNOMED,Disorder,S,208281007,2002-01-31,2099-12-31,NA
+4014057,"Closed fracture proximal radius, comminuted",Condition,SNOMED,Disorder,S,208296006,2002-01-31,2099-12-31,NA
+4014060,"Closed fracture radius and ulna, middle",Condition,SNOMED,Disorder,S,208309008,2002-01-31,2099-12-31,NA
+4014064,Closed volar Barton's fracture,Condition,SNOMED,Disorder,S,208323005,2002-01-31,2099-12-31,NA
+4014065,Closed dorsal Barton's fracture,Condition,SNOMED,Disorder,S,208324004,2002-01-31,2099-12-31,NA
+4014066,Closed fracture radial styloid,Condition,SNOMED,Disorder,S,208325003,2002-01-31,2099-12-31,NA
+4014075,"Closed fracture scaphoid, waist, transverse",Condition,SNOMED,Disorder,S,208371005,2002-01-31,2099-12-31,NA
+4014076,"Closed fracture scaphoid, waist, oblique",Condition,SNOMED,Disorder,S,208372003,2002-01-31,2099-12-31,NA
+4014079,"Open fracture hamate, hook",Condition,SNOMED,Disorder,S,208379007,2002-01-31,2099-12-31,NA
+4014202,"Open fracture scaphoid, proximal pole",Condition,SNOMED,Disorder,S,208380005,2002-01-31,2099-12-31,NA
+4015056,Open fracture dislocation shoulder joint,Condition,SNOMED,Disorder,S,209242004,2002-01-31,2099-12-31,NA
+4015058,Closed fracture subluxation shoulder joint,Condition,SNOMED,Disorder,S,209245002,2002-01-31,2099-12-31,NA
+4015059,Open fracture dislocation elbow joint,Condition,SNOMED,Disorder,S,209255003,2002-01-31,2099-12-31,NA
+4015060,Open fracture subluxation of elbow joint,Condition,SNOMED,Disorder,S,209261000,2002-01-31,2099-12-31,NA
+4015061,Closed fracture dislocation of carpometacarpal joint,Condition,SNOMED,Disorder,S,209268006,2002-01-31,2099-12-31,NA
+4015062,Open fracture dislocation wrist,Condition,SNOMED,Disorder,S,209273000,2002-01-31,2099-12-31,NA
+4015064,Open fracture dislocation midcarpal,Condition,SNOMED,Disorder,S,209277004,2002-01-31,2099-12-31,NA
+4015065,Open fracture dislocation carpometacarpal joint,Condition,SNOMED,Disorder,S,209278009,2002-01-31,2099-12-31,NA
+4015066,Open fracture dislocation perilunate (dorsal),Condition,SNOMED,Disorder,S,209280003,2002-01-31,2099-12-31,NA
+4015067,Closed fracture subluxation of distal radioulnar joint,Condition,SNOMED,Disorder,S,209284007,2002-01-31,2099-12-31,NA
+4015068,Closed fracture subluxation radiocarpal joint,Condition,SNOMED,Disorder,S,209285008,2002-01-31,2099-12-31,NA
+4015069,Closed fracture subluxation lunate (volar),Condition,SNOMED,Disorder,S,209288005,2002-01-31,2099-12-31,NA
+4015070,Open fracture subluxation perilunate transscaphoid,Condition,SNOMED,Disorder,S,209299007,2002-01-31,2099-12-31,NA
+4015073,Open fracture dislocation of metacarpophalangeal joint,Condition,SNOMED,Disorder,S,209312000,2002-01-31,2099-12-31,NA
+4015076,Closed fracture subluxation of interphalangeal joint of thumb,Condition,SNOMED,Disorder,S,209324007,2002-01-31,2099-12-31,NA
+4015078,Open fracture subluxation of metacarpophalangeal joint,Condition,SNOMED,Disorder,S,209328005,2002-01-31,2099-12-31,NA
+4015080,Open fracture subluxation of interphalangeal joint of thumb,Condition,SNOMED,Disorder,S,209332004,2002-01-31,2099-12-31,NA
+4015350,Fracture at wrist and/or hand level,Condition,SNOMED,Disorder,S,208388003,2002-01-31,2099-12-31,NA
+4015352,Fracture of metacarpal bone,Condition,SNOMED,Disorder,S,208393000,2002-01-31,2099-12-31,NA
+4015354,Closed fracture finger metacarpal neck,Condition,SNOMED,Disorder,S,208399001,2002-01-31,2099-12-31,NA
+4015355,Closed fracture finger metacarpal head,Condition,SNOMED,Disorder,S,208400008,2002-01-31,2099-12-31,NA
+4015356,Closed fracture of thumb metacarpal,Condition,SNOMED,Disorder,S,208403005,2002-01-31,2099-12-31,NA
+4015357,Closed fracture thumb metacarpal shaft,Condition,SNOMED,Disorder,S,208405003,2002-01-31,2099-12-31,NA
+4015358,Closed fracture thumb metacarpal neck,Condition,SNOMED,Disorder,S,208406002,2002-01-31,2099-12-31,NA
+4015361,Open fracture finger metacarpal neck,Condition,SNOMED,Disorder,S,208416005,2002-01-31,2099-12-31,NA
+4015364,"Closed fracture thumb proximal phalanx, neck",Condition,SNOMED,Disorder,S,208437002,2002-01-31,2099-12-31,NA
+4015365,Closed fracture thumb distal phalanx,Condition,SNOMED,Disorder,S,208439004,2002-01-31,2099-12-31,NA
+4015366,"Closed fracture thumb distal phalanx, tuft",Condition,SNOMED,Disorder,S,208442005,2002-01-31,2099-12-31,NA
+4015483,"Closed fracture finger middle phalanx, head",Condition,SNOMED,Disorder,S,208454005,2002-01-31,2099-12-31,NA
+4015485,"Open fracture thumb proximal phalanx, shaft",Condition,SNOMED,Disorder,S,208469006,2002-01-31,2099-12-31,NA
+4015486,Open fracture of distal phalanx of thumb,Condition,SNOMED,Disorder,S,208472004,2002-01-31,2099-12-31,NA
+4015487,"Open fracture finger proximal phalanx, base",Condition,SNOMED,Disorder,S,208478000,2002-01-31,2099-12-31,NA
+4015488,"Open fracture finger proximal phalanx, head",Condition,SNOMED,Disorder,S,208481005,2002-01-31,2099-12-31,NA
+4015489,"Open fracture finger middle phalanx, base",Condition,SNOMED,Disorder,S,208484002,2002-01-31,2099-12-31,NA
+4015490,"Open fracture finger middle phalanx, head",Condition,SNOMED,Disorder,S,208487009,2002-01-31,2099-12-31,NA
+4015491,"Open fracture finger distal phalanx, tuft",Condition,SNOMED,Disorder,S,208491004,2002-01-31,2099-12-31,NA
+4015492,"Open fracture finger distal phalanx, mallet",Condition,SNOMED,Disorder,S,208492006,2002-01-31,2099-12-31,NA
+4015868,"Open fracture scaphoid, waist, transverse",Condition,SNOMED,Disorder,S,208381009,2002-01-31,2099-12-31,NA
+4015871,Closed fracture finger metacarpal,Condition,SNOMED,Disorder,S,208401007,2002-01-31,2099-12-31,NA
+4015872,"Closed fracture thumb metacarpal base, intra-articular, Rolando",Condition,SNOMED,Disorder,S,208404004,2002-01-31,2099-12-31,NA
+4015873,Open fracture finger metacarpal,Condition,SNOMED,Disorder,S,208418006,2002-01-31,2099-12-31,NA
+4015874,"Closed fracture thumb proximal phalanx, base",Condition,SNOMED,Disorder,S,208435005,2002-01-31,2099-12-31,NA
+4015875,"Closed fracture thumb proximal phalanx, shaft",Condition,SNOMED,Disorder,S,208436006,2002-01-31,2099-12-31,NA
+4015876,"Closed fracture thumb proximal phalanx, head",Condition,SNOMED,Disorder,S,208438007,2002-01-31,2099-12-31,NA
+4015877,"Closed fracture thumb distal phalanx, mallet",Condition,SNOMED,Disorder,S,208443000,2002-01-31,2099-12-31,NA
+4015878,"Closed fracture finger proximal phalanx, head",Condition,SNOMED,Disorder,S,208448009,2002-01-31,2099-12-31,NA
+4015879,"Closed fracture finger middle phalanx, base",Condition,SNOMED,Disorder,S,208451002,2002-01-31,2099-12-31,NA
+4015963,"Open fracture thumb proximal phalanx, base",Condition,SNOMED,Disorder,S,208468003,2002-01-31,2099-12-31,NA
+4015964,"Open fracture thumb distal phalanx, base",Condition,SNOMED,Disorder,S,208473009,2002-01-31,2099-12-31,NA
+4015965,"Open fracture finger distal phalanx, shaft",Condition,SNOMED,Disorder,S,208490003,2002-01-31,2099-12-31,NA
+4015970,"Multiple fractures of clavicle, scapula and humerus",Condition,SNOMED,Disorder,S,208510002,2002-01-31,2099-12-31,NA
+4015971,Multiple fractures of forearm,Condition,SNOMED,Disorder,S,208513000,2002-01-31,2099-12-31,NA
+4017653,Closed fracture dislocation superior radioulnar joint,Condition,SNOMED,Disorder,S,209253005,2002-01-31,2099-12-31,NA
+4017655,Closed fracture dislocation distal radioulnar joint,Condition,SNOMED,Disorder,S,209265009,2002-01-31,2099-12-31,NA
+4017656,Closed fracture dislocation radiocarpal joint,Condition,SNOMED,Disorder,S,209266005,2002-01-31,2099-12-31,NA
+4017657,Closed fracture dislocation perilunate transscaphoid,Condition,SNOMED,Disorder,S,209271003,2002-01-31,2099-12-31,NA
+4017658,Open fracture dislocation of distal radioulnar joint,Condition,SNOMED,Disorder,S,209274006,2002-01-31,2099-12-31,NA
+4017659,Open fracture dislocation radiocarpal joint,Condition,SNOMED,Disorder,S,209276008,2002-01-31,2099-12-31,NA
+4017661,Closed fracture subluxation midcarpal,Condition,SNOMED,Disorder,S,209286009,2002-01-31,2099-12-31,NA
+4017662,Closed fracture subluxation of carpometacarpal joint,Condition,SNOMED,Disorder,S,209287000,2002-01-31,2099-12-31,NA
+4017663,Open fracture subluxation of wrist,Condition,SNOMED,Disorder,S,209292003,2002-01-31,2099-12-31,NA
+4018213,Closed fracture dislocation shoulder joint,Condition,SNOMED,Disorder,S,209238002,2002-01-31,2099-12-31,NA
+4018215,Open fracture subluxation shoulder joint,Condition,SNOMED,Disorder,S,209248000,2002-01-31,2099-12-31,NA
+4018217,Closed fracture subluxation of elbow joint,Condition,SNOMED,Disorder,S,209258001,2002-01-31,2099-12-31,NA
+4018218,Closed fracture subluxation superior radioulnar joint,Condition,SNOMED,Disorder,S,209259009,2002-01-31,2099-12-31,NA
+4018219,Open fracture subluxation superior radioulnar joint,Condition,SNOMED,Disorder,S,209262007,2002-01-31,2099-12-31,NA
+4018221,Closed fracture dislocation of wrist,Condition,SNOMED,Disorder,S,209264008,2002-01-31,2099-12-31,NA
+4018222,Closed fracture dislocation midcarpal,Condition,SNOMED,Disorder,S,209267001,2002-01-31,2099-12-31,NA
+4018224,Open fracture dislocation perilunate transscaphoid,Condition,SNOMED,Disorder,S,209281004,2002-01-31,2099-12-31,NA
+4018225,Closed fracture subluxation of wrist,Condition,SNOMED,Disorder,S,209283001,2002-01-31,2099-12-31,NA
+4018226,Closed fracture subluxation perilunate transscaphoid,Condition,SNOMED,Disorder,S,209290006,2002-01-31,2099-12-31,NA
+4018228,Open fracture subluxation radiocarpal joint,Condition,SNOMED,Disorder,S,209294002,2002-01-31,2099-12-31,NA
+4018229,Open fracture subluxation midcarpal,Condition,SNOMED,Disorder,S,209295001,2002-01-31,2099-12-31,NA
+4018348,Open fracture dislocation of distal interphalangeal joint,Condition,SNOMED,Disorder,S,209314004,2002-01-31,2099-12-31,NA
+4032935,Fracture of trapezoidal bone of wrist,Condition,SNOMED,Disorder,S,14916000,2002-01-31,2099-12-31,NA
+4043407,Multiple fractures of upper limb with sternum AND ribs,Condition,SNOMED,Disorder,S,23039002,2002-01-31,2099-12-31,NA
+4044387,Fracture of glenoid cavity AND neck of scapula,Condition,SNOMED,Disorder,S,23055009,2002-01-31,2099-12-31,NA
+4046019,Open reverse Colles' fracture,Condition,SNOMED,Disorder,S,123619001,2002-01-31,2099-12-31,NA
+4046953,Open fracture of lower epiphysis of humerus,Condition,SNOMED,Disorder,S,122773008,2002-01-31,2099-12-31,NA
+4047787,Colles' fracture,Condition,SNOMED,Disorder,S,123971006,2002-01-31,2099-12-31,NA
+4047788,Reversed Colles' fracture,Condition,SNOMED,Disorder,S,123972004,2002-01-31,2099-12-31,NA
+4047854,Fracture of humerus due to birth trauma,Condition,SNOMED,Disorder,S,206211008,2002-01-31,2099-12-31,NA
+4048846,Monteggia's fracture,Condition,SNOMED,Disorder,S,123973009,2002-01-31,2099-12-31,NA
+4049285,Closed reverse Colles' fracture,Condition,SNOMED,Disorder,S,123618009,2002-01-31,2099-12-31,NA
+4050747,Fracture of upper limb,Condition,SNOMED,Disorder,S,23406007,2002-01-31,2099-12-31,NA
+4057580,Fracture of phalanx of finger,Condition,SNOMED,Disorder,S,18171007,2002-01-31,2099-12-31,NA
+4059163,Multiple fractures of upper limb with sternum,Condition,SNOMED,Disorder,S,16111009,2002-01-31,2099-12-31,NA
+4063560,Fracture of lunate bone of wrist,Condition,SNOMED,Disorder,S,2012002,2002-01-31,2099-12-31,NA
+4067970,Open fracture of phalanx of finger,Condition,SNOMED,Disorder,S,21698002,2002-01-31,2099-12-31,NA
+4071876,Fracture of hand,Condition,SNOMED,Disorder,S,20511007,2002-01-31,2099-12-31,NA
+4079931,Open fracture of upper limb,Condition,SNOMED,Disorder,S,18336000,2002-01-31,2099-12-31,NA
+4082258,Open multiple fractures of both upper limbs,Condition,SNOMED,Disorder,S,18276007,2002-01-31,2099-12-31,NA
+4083374,Transscaphoid-capitate-perilunate fracture dislocation,Condition,SNOMED,Disorder,S,281514001,2002-01-31,2099-12-31,NA
+4083375,Fracture of radial styloid,Condition,SNOMED,Disorder,S,281527002,2002-01-31,2099-12-31,NA
+4083488,Fracture of olecranon,Condition,SNOMED,Disorder,S,281528007,2002-01-31,2099-12-31,NA
+4083489,Fracture of coronoid process of ulna,Condition,SNOMED,Disorder,S,281529004,2002-01-31,2099-12-31,NA
+4084432,Fracture of the medial humeral epicondyle,Condition,SNOMED,Disorder,S,281526006,2002-01-31,2099-12-31,NA
+4085543,Transscaphoid-capitate-hamate-triquetral-perilunate fracture dislocation,Condition,SNOMED,Disorder,S,281515000,2002-01-31,2099-12-31,NA
+4085544,Transstyloid-scaphoid-perilunate fracture dislocation,Condition,SNOMED,Disorder,S,281517008,2002-01-31,2099-12-31,NA
+4085545,Volar transscaphoid-lunate fracture dislocation,Condition,SNOMED,Disorder,S,281518003,2002-01-31,2099-12-31,NA
+4085546,Fracture subluxation of joint of upper limb,Condition,SNOMED,Disorder,S,281519006,2002-01-31,2099-12-31,NA
+4085550,Fracture of the lateral humeral epicondyle,Condition,SNOMED,Disorder,S,281525005,2002-01-31,2099-12-31,NA
+4088051,Closed fracture of phalanx of finger,Condition,SNOMED,Disorder,S,24424003,2002-01-31,2099-12-31,NA
+4097991,Skillern's fracture,Condition,SNOMED,Disorder,S,27094009,2002-01-31,2099-12-31,NA
+4101989,Closed fracture of shaft of bone of forearm,Condition,SNOMED,Disorder,S,28078000,2002-01-31,2099-12-31,NA
+4105123,Transscaphoid-perilunate fracture dislocation,Condition,SNOMED,Disorder,S,281513007,2002-01-31,2099-12-31,NA
+4105124,Transstyloid-perilunate fracture dislocation,Condition,SNOMED,Disorder,S,281516004,2002-01-31,2099-12-31,NA
+4105126,Fracture of ulnar styloid,Condition,SNOMED,Disorder,S,281530009,2002-01-31,2099-12-31,NA
+4115178,Fracture malunion - shoulder,Condition,SNOMED,Disorder,S,287073003,2002-01-31,2099-12-31,NA
+4115179,Fracture malunion - forearm,Condition,SNOMED,Disorder,S,287074009,2002-01-31,2099-12-31,NA
+4115180,Fracture malunion - hand,Condition,SNOMED,Disorder,S,287075005,2002-01-31,2099-12-31,NA
+4117238,Hill-Sachs lesion,Condition,SNOMED,Disorder,S,202141001,2002-01-31,2099-12-31,NA
+4117701,Pathological fracture - shoulder,Condition,SNOMED,Disorder,S,287064006,2002-01-31,2099-12-31,NA
+4118017,Pathological fracture - hand,Condition,SNOMED,Disorder,S,287067004,2002-01-31,2099-12-31,NA
+4118792,Elbow fracture - closed,Condition,SNOMED,Disorder,S,302222008,2002-01-31,2099-12-31,NA
+4118794,Elbow fracture - open,Condition,SNOMED,Disorder,S,302232001,2002-01-31,2099-12-31,NA
+4118909,Fracture malunion - upper arm,Condition,SNOMED,Disorder,S,288244006,2002-01-31,2099-12-31,NA
+4131595,Fracture of radius,Condition,SNOMED,Disorder,S,12676007,2002-01-31,2099-12-31,NA
+4133610,Fracture of upper end of humerus,Condition,SNOMED,Disorder,S,127286005,2002-01-31,2099-12-31,NA
+4134187,Fracture dislocation of shoulder joint,Condition,SNOMED,Disorder,S,263077007,2002-01-31,2099-12-31,NA
+4134188,Fracture dislocation of finger or thumb,Condition,SNOMED,Disorder,S,263084004,2002-01-31,2099-12-31,NA
+4134189,Fracture dislocation of finger,Condition,SNOMED,Disorder,S,263085003,2002-01-31,2099-12-31,NA
+4134304,Fracture subluxation of wrist,Condition,SNOMED,Disorder,S,263102004,2002-01-31,2099-12-31,NA
+4134305,Fracture subluxation of distal radioulnar joint,Condition,SNOMED,Disorder,S,263103009,2002-01-31,2099-12-31,NA
+4134321,Fracture of neck of humerus,Condition,SNOMED,Disorder,S,263191003,2002-01-31,2099-12-31,NA
+4134322,Fracture of distal end of radius,Condition,SNOMED,Disorder,S,263199001,2002-01-31,2099-12-31,NA
+4134323,Volar Barton's fracture,Condition,SNOMED,Disorder,S,263200003,2002-01-31,2099-12-31,NA
+4134325,Fracture of shaft of ulna,Condition,SNOMED,Disorder,S,263204007,2002-01-31,2099-12-31,NA
+4134326,Fracture of proximal end of radius and ulna,Condition,SNOMED,Disorder,S,263206009,2002-01-31,2099-12-31,NA
+4135097,Fracture dislocation of joint of upper limb,Condition,SNOMED,Disorder,S,263073006,2002-01-31,2099-12-31,NA
+4135098,Fracture dislocation of radiocarpal joint,Condition,SNOMED,Disorder,S,263080008,2002-01-31,2099-12-31,NA
+4135099,Fracture dislocation of midcarpal joint,Condition,SNOMED,Disorder,S,263081007,2002-01-31,2099-12-31,NA
+4135100,Fracture dislocation of thumb,Condition,SNOMED,Disorder,S,263086002,2002-01-31,2099-12-31,NA
+4135636,Fracture subluxation of elbow joint,Condition,SNOMED,Disorder,S,263100007,2002-01-31,2099-12-31,NA
+4135637,Fracture subluxation of superior radioulnar joint,Condition,SNOMED,Disorder,S,263101006,2002-01-31,2099-12-31,NA
+4135638,Fracture subluxation of radiocarpal joint,Condition,SNOMED,Disorder,S,263104003,2002-01-31,2099-12-31,NA
+4135639,Fracture subluxation of midcarpal joint,Condition,SNOMED,Disorder,S,263106001,2002-01-31,2099-12-31,NA
+4135641,Fracture subluxation of lunate,Condition,SNOMED,Disorder,S,263108000,2002-01-31,2099-12-31,NA
+4135642,Fracture subluxation of perilunate joint,Condition,SNOMED,Disorder,S,263109008,2002-01-31,2099-12-31,NA
+4135643,Fracture subluxation of thumb,Condition,SNOMED,Disorder,S,263111004,2002-01-31,2099-12-31,NA
+4135742,Dorsal Barton's fracture,Condition,SNOMED,Disorder,S,263201004,2002-01-31,2099-12-31,NA
+4135743,Fracture of distal end of ulna,Condition,SNOMED,Disorder,S,263205008,2002-01-31,2099-12-31,NA
+4135744,Fracture of base of fifth metacarpal,Condition,SNOMED,Disorder,S,263209002,2002-01-31,2099-12-31,NA
+4135745,Fracture of neck of fifth metacarpal,Condition,SNOMED,Disorder,S,263210007,2002-01-31,2099-12-31,NA
+4136569,Fracture dislocation of scapulothoracic joint,Condition,SNOMED,Disorder,S,263076003,2002-01-31,2099-12-31,NA
+4136570,Fracture dislocation of lunate,Condition,SNOMED,Disorder,S,263082000,2002-01-31,2099-12-31,NA
+4136571,Fracture dislocation of perilunate joint,Condition,SNOMED,Disorder,S,263083005,2002-01-31,2099-12-31,NA
+4136688,Fracture subluxation of shoulder joint,Condition,SNOMED,Disorder,S,263098007,2002-01-31,2099-12-31,NA
+4136714,Supracondylar fracture of humerus,Condition,SNOMED,Disorder,S,263193000,2002-01-31,2099-12-31,NA
+4136715,Fracture of proximal end of radius,Condition,SNOMED,Disorder,S,263195007,2002-01-31,2099-12-31,NA
+4136716,Fracture of radial head,Condition,SNOMED,Disorder,S,263196008,2002-01-31,2099-12-31,NA
+4136717,Fracture of shaft of radius,Condition,SNOMED,Disorder,S,263198009,2002-01-31,2099-12-31,NA
+4136718,Fracture of proximal end of ulna,Condition,SNOMED,Disorder,S,263203001,2002-01-31,2099-12-31,NA
+4136719,Fracture of shaft of radius and/or ulna,Condition,SNOMED,Disorder,S,263207000,2002-01-31,2099-12-31,NA
+4136720,Fracture of sesamoid bone of hand,Condition,SNOMED,Disorder,S,263211006,2002-01-31,2099-12-31,NA
+4137945,Fracture of scaphoid bone of wrist,Condition,SNOMED,Disorder,S,31975004,2002-01-31,2099-12-31,NA
+4138274,Fracture dislocation of elbow joint,Condition,SNOMED,Disorder,S,263078002,2002-01-31,2099-12-31,NA
+4138280,Fracture subluxation of joint of hand,Condition,SNOMED,Disorder,S,263105002,2002-01-31,2099-12-31,NA
+4138281,Fracture subluxation of finger,Condition,SNOMED,Disorder,S,263110003,2002-01-31,2099-12-31,NA
+4138299,Fracture of distal end of humerus,Condition,SNOMED,Disorder,S,263192005,2002-01-31,2099-12-31,NA
+4138300,Fracture of radial neck,Condition,SNOMED,Disorder,S,263197004,2002-01-31,2099-12-31,NA
+4138301,Fracture of distal end of radius and ulna,Condition,SNOMED,Disorder,S,263208005,2002-01-31,2099-12-31,NA
+4141395,Open Barton's fracture,Condition,SNOMED,Disorder,S,307712005,2002-01-31,2099-12-31,NA
+4142415,Hutchinson's fracture,Condition,SNOMED,Disorder,S,426467005,2007-07-31,2099-12-31,NA
+4143860,Fracture dislocation of carpometacarpal joint,Condition,SNOMED,Disorder,S,307171000,2002-01-31,2099-12-31,NA
+4144831,Closed multiple fractures of upper limb with sternum,Condition,SNOMED,Disorder,S,33829000,2002-01-31,2099-12-31,NA
+4145731,Fracture dislocation distal radioulnar joint,Condition,SNOMED,Disorder,S,307172007,2002-01-31,2099-12-31,NA
+4145732,Fracture of metacarpophalangeal joint,Condition,SNOMED,Disorder,S,307173002,2002-01-31,2099-12-31,NA
+4146169,Closed Barton's fracture,Condition,SNOMED,Disorder,S,307713000,2002-01-31,2099-12-31,NA
+4152174,Galeazzi fracture dislocation,Condition,SNOMED,Disorder,S,271576001,2002-01-31,2099-12-31,NA
+4153450,Fracture of radius and/or ulna due to birth trauma,Condition,SNOMED,Disorder,S,268824003,2002-01-31,2099-12-31,NA
+4160571,Nonunion of fracture of clavicle,Condition,SNOMED,Disorder,S,431011000,2008-07-31,2099-12-31,NA
+4164959,Closed fracture of styloid process of ulna,Condition,SNOMED,Disorder,S,41036008,2002-01-31,2099-12-31,NA
+4165047,Fracture of multiple bones of upper limb,Condition,SNOMED,Disorder,S,45678008,2002-01-31,2099-12-31,NA
+4166901,Fracture of phalanx of thumb,Condition,SNOMED,Disorder,S,274160002,2002-01-31,2099-12-31,NA
+4167849,Closed fracture dislocation of distal interphalangeal joint of finger,Condition,SNOMED,Disorder,S,416176009,2005-07-31,2099-12-31,NA
+4167912,Shoulder fracture - open,Condition,SNOMED,Disorder,S,275337006,2002-01-31,2099-12-31,NA
+4170447,Birth fracture of ulna,Condition,SNOMED,Disorder,S,275366009,2002-01-31,2099-12-31,NA
+4171170,Open multiple fractures of upper limb with sternum,Condition,SNOMED,Disorder,S,47648003,2002-01-31,2099-12-31,NA
+4173795,Birth fracture of radius,Condition,SNOMED,Disorder,S,275365008,2002-01-31,2099-12-31,NA
+4174010,Fracture of middle phalanx of finger,Condition,SNOMED,Disorder,S,297131007,2002-01-31,2099-12-31,NA
+4174011,Fracture distal phalanx of thumb,Condition,SNOMED,Disorder,S,297132000,2002-01-31,2099-12-31,NA
+4174655,Fracture of coracoid process of scapula,Condition,SNOMED,Disorder,S,50655009,2002-01-31,2099-12-31,NA
+4175616,Fracture of shaft of humerus,Condition,SNOMED,Disorder,S,50890004,2002-01-31,2099-12-31,NA
+4178395,Fracture of proximal phalanx of finger,Condition,SNOMED,Disorder,S,297130008,2002-01-31,2099-12-31,NA
+4178396,Fracture proximal phalanx of thumb,Condition,SNOMED,Disorder,S,297133005,2002-01-31,2099-12-31,NA
+4179653,Closed fracture of scapular body,Condition,SNOMED,Disorder,S,427803007,2008-01-31,2099-12-31,NA
+4182555,Fracture of ulna,Condition,SNOMED,Disorder,S,54556006,2002-01-31,2099-12-31,NA
+4183283,Barton's fracture,Condition,SNOMED,Disorder,S,54645004,2002-01-31,2099-12-31,NA
+4184754,Fracture of neck of metacarpal bone,Condition,SNOMED,Disorder,S,55874001,2002-01-31,2099-12-31,NA
+4185307,Closed fracture of head of humerus,Condition,SNOMED,Disorder,S,413875004,2005-01-31,2099-12-31,NA
+4189553,Bennett's fracture,Condition,SNOMED,Disorder,S,61653009,2002-01-31,2099-12-31,NA
+4194631,Closed Bennett's fracture,Condition,SNOMED,Disorder,S,67730008,2002-01-31,2099-12-31,NA
+4195752,Open fracture of shaft of bone of forearm,Condition,SNOMED,Disorder,S,79858001,2002-01-31,2099-12-31,NA
+4199441,Fracture of acromial end of clavicle,Condition,SNOMED,Disorder,S,52784000,2002-01-31,2099-12-31,NA
+4201447,Closed multiple fractures of both upper limbs,Condition,SNOMED,Disorder,S,51673001,2002-01-31,2099-12-31,NA
+4205238,Elbow fracture,Condition,SNOMED,Disorder,S,309464009,2002-01-31,2099-12-31,NA
+4205584,Fracture of base of metacarpal bone other than first metacarpal,Condition,SNOMED,Disorder,S,55716004,2002-01-31,2099-12-31,NA
+4208503,Closed fractures involving multiple regions of both upper limbs,Condition,SNOMED,Disorder,S,311819007,2002-01-31,2099-12-31,NA
+4208511,Open fracture involving multiple regions upper with lower limbs,Condition,SNOMED,Disorder,S,311859005,2002-01-31,2099-12-31,NA
+4208594,Open fracture of medial epicondyle of humerus,Condition,SNOMED,Disorder,S,439426005,2009-01-31,2099-12-31,NA
+4209559,Closed fractures involving multiple regions upper with lower limb,Condition,SNOMED,Disorder,S,311857007,2002-01-31,2099-12-31,NA
+4211244,Fracture of sternal end of clavicle,Condition,SNOMED,Disorder,S,56642004,2002-01-31,2099-12-31,NA
+4213266,Fracture dislocation of joint of shoulder girdle,Condition,SNOMED,Disorder,S,417039001,2005-07-31,2099-12-31,NA
+4213541,Closed fracture dislocation of proximal interphalangeal joint of digit of hand,Condition,SNOMED,Disorder,S,417349008,2005-07-31,2099-12-31,NA
+4214931,Open fracture dislocation of digit of hand,Condition,SNOMED,Disorder,S,417580004,2005-07-31,2099-12-31,NA
+4215380,Open fracture dislocation of joint of shoulder girdle,Condition,SNOMED,Disorder,S,416645004,2005-07-31,2099-12-31,NA
+4215591,Fracture of middle AND/OR proximal phalanx of finger,Condition,SNOMED,Disorder,S,80597004,2002-01-31,2099-12-31,NA
+4218146,Closed fracture dislocation of joint of shoulder girdle,Condition,SNOMED,Disorder,S,416833005,2005-07-31,2099-12-31,NA
+4218482,Open fracture-dislocation of multiple digits of hand,Condition,SNOMED,Disorder,S,417613000,2005-07-31,2099-12-31,NA
+4218884,Fracture of carpal bone,Condition,SNOMED,Disorder,S,82065001,2002-01-31,2099-12-31,NA
+4219384,Closed fracture dislocation of digit of hand,Condition,SNOMED,Disorder,S,417474005,2005-07-31,2099-12-31,NA
+4219822,Fracture of shaft of clavicle,Condition,SNOMED,Disorder,S,41972004,2002-01-31,2099-12-31,NA
+4219842,Closed fracture dislocation of multiple digits of hand,Condition,SNOMED,Disorder,S,417675000,2005-07-31,2099-12-31,NA
+4222457,Fracture of pisiform bone of wrist,Condition,SNOMED,Disorder,S,84030002,2002-01-31,2099-12-31,NA
+4222942,Open multiple fractures of upper end of ulna,Condition,SNOMED,Disorder,S,84595002,2002-01-31,2099-12-31,NA
+4226282,Fracture of phalanx of hand,Condition,SNOMED,Disorder,S,405817008,2004-01-31,2099-12-31,NA
+4230454,Fracture of scapular body,Condition,SNOMED,Disorder,S,40643005,2002-01-31,2099-12-31,NA
+4237458,Fracture of clavicle,Condition,SNOMED,Disorder,S,58150001,2002-01-31,2099-12-31,NA
+4239478,Open multiple fractures of upper limb with ribs,Condition,SNOMED,Disorder,S,58731007,2002-01-31,2099-12-31,NA
+4240204,Closed multiple fractures of upper limb with ribs,Condition,SNOMED,Disorder,S,58007009,2002-01-31,2099-12-31,NA
+4240329,Moore's fracture,Condition,SNOMED,Disorder,S,58722007,2002-01-31,2099-12-31,NA
+4243291,Fracture of multiple sites of metacarpus,Condition,SNOMED,Disorder,S,9275003,2002-01-31,2099-12-31,NA
+4243344,Closed multiple fractures of upper end of radius,Condition,SNOMED,Disorder,S,5895007,2002-01-31,2099-12-31,NA
+4246617,Closed fracture of multiple bones of upper limb,Condition,SNOMED,Disorder,S,60843004,2002-01-31,2099-12-31,NA
+4248416,Closed multiple fractures of upper end of ulna,Condition,SNOMED,Disorder,S,7341005,2002-01-31,2099-12-31,NA
+4249740,Fracture of capitate bone of wrist,Condition,SNOMED,Disorder,S,73316002,2002-01-31,2099-12-31,NA
+4253933,Fracture of trapezium of wrist,Condition,SNOMED,Disorder,S,74465000,2002-01-31,2099-12-31,NA
+4260258,Closed fracture of the medial epicondyle of humerus,Condition,SNOMED,Disorder,S,440366004,2009-01-31,2099-12-31,NA
+4261321,Multiple fractures of upper AND lower limbs,Condition,SNOMED,Disorder,S,4478002,2002-01-31,2099-12-31,NA
+4262655,Open multiple fractures of upper end of radius,Condition,SNOMED,Disorder,S,46357007,2002-01-31,2099-12-31,NA
+4263321,Quervain's fracture,Condition,SNOMED,Disorder,S,46773004,2002-01-31,2099-12-31,NA
+4263567,Closed fracture of head of ulna,Condition,SNOMED,Disorder,S,6163002,2002-01-31,2099-12-31,NA
+4278672,Fracture of forearm,Condition,SNOMED,Disorder,S,65966004,2002-01-31,2099-12-31,NA
+4280503,Multiple fractures of upper limb with ribs,Condition,SNOMED,Disorder,S,65595002,2002-01-31,2099-12-31,NA
+4282532,Fracture of distal phalanx of finger,Condition,SNOMED,Disorder,S,36778005,2002-01-31,2099-12-31,NA
+4282857,Closed fracture of upper limb,Condition,SNOMED,Disorder,S,36991002,2002-01-31,2099-12-31,NA
+4292073,Multiple fractures of hand bones,Condition,SNOMED,Disorder,S,37418005,2002-01-31,2099-12-31,NA
+4294410,Open multiple fractures of upper limb with sternum AND ribs,Condition,SNOMED,Disorder,S,76103002,2002-01-31,2099-12-31,NA
+4297304,Closed fracture of distal phalanx of finger,Condition,SNOMED,Disorder,S,76865005,2002-01-31,2099-12-31,NA
+4297795,Open Bennett's fracture,Condition,SNOMED,Disorder,S,76597001,2002-01-31,2099-12-31,NA
+4301733,Fracture of shaft of metacarpal bone,Condition,SNOMED,Disorder,S,78292000,2002-01-31,2099-12-31,NA
+4307551,Pathological fracture of scapula,Condition,SNOMED,Disorder,S,422469006,2007-01-31,2099-12-31,NA
+4308550,Fractures involving multiple regions of upper limb(s) with lower limb(s),Condition,SNOMED,Disorder,S,213358004,2002-01-31,2099-12-31,NA
+4311941,Fracture of hamate bone of wrist,Condition,SNOMED,Disorder,S,85922006,2002-01-31,2099-12-31,NA
+4313341,Pathological fracture of clavicle,Condition,SNOMED,Disorder,S,424455005,2007-01-31,2099-12-31,NA
+4318109,Metaphyseal fracture of bone of upper limb,Condition,SNOMED,Disorder,S,95852000,2002-01-31,2099-12-31,NA
+4319889,Fracture of scapula,Condition,SNOMED,Disorder,S,9682006,2002-01-31,2099-12-31,NA
+4320634,Fracture of base of thumb,Condition,SNOMED,Disorder,S,69916004,2002-01-31,2099-12-31,NA
+4328220,Fracture of triquetral bone of wrist,Condition,SNOMED,Disorder,S,7585008,2002-01-31,2099-12-31,NA
+4337263,Fracture of acromial process of scapula,Condition,SNOMED,Disorder,S,8704005,2002-01-31,2099-12-31,NA
+4338231,Fracture of interligamentous part of clavicle,Condition,SNOMED,Disorder,S,88196000,2002-01-31,2099-12-31,NA
+36675161,Closed fractures involving multiple regions of left upper limb,Condition,SNOMED,Disorder,S,771491009,2019-01-31,2099-12-31,NA
+36675162,Closed fractures involving multiple regions of right upper limb,Condition,SNOMED,Disorder,S,771492002,2019-01-31,2099-12-31,NA
+36675163,Fractures involving multiple regions of left upper limb,Condition,SNOMED,Disorder,S,771493007,2019-01-31,2099-12-31,NA
+36675164,Fractures involving multiple regions of right upper limb,Condition,SNOMED,Disorder,S,771494001,2019-01-31,2099-12-31,NA
+36675165,Open fractures involving multiple regions of left upper limb,Condition,SNOMED,Disorder,S,771495000,2019-01-31,2099-12-31,NA
+36675166,Open fractures involving multiple regions of right upper limb,Condition,SNOMED,Disorder,S,771496004,2019-01-31,2099-12-31,NA
+36686096,Open fracture of neck of metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10815421000119108,2018-09-01,2099-12-31,NA
+36686099,Open fracture of surgical neck of right humerus,Condition,SNOMED,Disorder,S,10828521000119107,2018-09-01,2099-12-31,NA
+36686100,Open fracture of shaft of right humerus,Condition,SNOMED,Disorder,S,10828801000119101,2018-09-01,2099-12-31,NA
+36686101,Open fracture of shaft of right radius,Condition,SNOMED,Disorder,S,10831141000119102,2018-09-01,2099-12-31,NA
+36686103,Open fracture of head of left radius,Condition,SNOMED,Disorder,S,10838141000119108,2018-09-01,2099-12-31,NA
+36686183,Closed fracture of neck of left scapula,Condition,SNOMED,Disorder,S,10936321000119109,2018-09-01,2099-12-31,NA
+36686341,Stress fracture of right scapula,Condition,SNOMED,Disorder,S,11313881000119103,2018-09-01,2099-12-31,NA
+36686342,Stress fracture of left scapula,Condition,SNOMED,Disorder,S,11313921000119105,2018-09-01,2099-12-31,NA
+37116502,Fracture of shaft of ulna and radius,Condition,SNOMED,Disorder,S,733235002,2017-07-31,2099-12-31,NA
+37116628,Multiple fractures of clavicle,Condition,SNOMED,Disorder,S,733403004,2017-07-31,2099-12-31,NA
+37116629,Multiple fractures of scapula,Condition,SNOMED,Disorder,S,733404005,2017-07-31,2099-12-31,NA
+37116630,Fracture of surgical neck of humerus,Condition,SNOMED,Disorder,S,733405006,2017-07-31,2099-12-31,NA
+37116631,Fracture of greater tuberosity of humerus,Condition,SNOMED,Disorder,S,733406007,2017-07-31,2099-12-31,NA
+37116632,Fracture of lesser tuberosity of humerus,Condition,SNOMED,Disorder,S,733407003,2017-07-31,2099-12-31,NA
+37116633,Fracture of lateral condyle of humerus,Condition,SNOMED,Disorder,S,733408008,2017-07-31,2099-12-31,NA
+37116634,Fracture of medial condyle of humerus,Condition,SNOMED,Disorder,S,733409000,2017-07-31,2099-12-31,NA
+37116635,Multiple fractures of humerus,Condition,SNOMED,Disorder,S,733410005,2017-07-31,2099-12-31,NA
+37160013,Open fracture of base of second metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10817101000119103,2023-06-30,2099-12-31,NA
+37160014,Open fracture of glenoid cavity of right scapula,Condition,SNOMED,Disorder,S,10818541000119107,2023-06-30,2099-12-31,NA
+37160015,Open fracture of trapezium bone of left wrist,Condition,SNOMED,Disorder,S,10820381000119101,2023-06-30,2099-12-31,NA
+37160016,Open fracture of base of fourth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10824441000119107,2023-06-30,2099-12-31,NA
+37160020,Open fracture of base of fourth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10831861000119108,2023-06-30,2099-12-31,NA
+37160022,Open fracture of trapezium bone of right wrist,Condition,SNOMED,Disorder,S,10835021000119109,2023-06-30,2099-12-31,NA
+37160024,Open fracture of base of second metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10836621000119107,2023-06-30,2099-12-31,NA
+37160025,Open fracture of glenoid cavity of left scapula,Condition,SNOMED,Disorder,S,10838421000119105,2023-06-30,2099-12-31,NA
+37163751,Fracture of bone adjacent to right wrist joint prosthesis,Condition,SNOMED,Disorder,S,12202711000119103,2023-03-31,2099-12-31,NA
+37163839,Fracture of bone adjacent to right shoulder joint prosthesis,Condition,SNOMED,Disorder,S,12209041000119109,2023-03-31,2099-12-31,NA
+37163846,Fracture of bone adjacent to left shoulder joint prosthesis,Condition,SNOMED,Disorder,S,12217761000119100,2023-03-31,2099-12-31,NA
+37163847,Fracture of bone adjacent to left wrist joint prosthesis,Condition,SNOMED,Disorder,S,12217801000119108,2023-03-31,2099-12-31,NA
+37165576,Open fracture of middle phalanx of multiple fingers,Condition,SNOMED,Disorder,S,1255173002,2022-10-31,2099-12-31,NA
+37165577,Open comminuted fracture of middle phalanx of finger,Condition,SNOMED,Disorder,S,1255174008,2022-10-31,2099-12-31,NA
+37165578,Open comminuted fracture of distal phalanx of finger,Condition,SNOMED,Disorder,S,1255175009,2022-10-31,2099-12-31,NA
+37165579,Open fracture of distal phalanx of multiple fingers,Condition,SNOMED,Disorder,S,1255176005,2022-10-31,2099-12-31,NA
+37165604,Open fracture of multiple metacarpal bones,Condition,SNOMED,Disorder,S,1255232007,2022-10-31,2099-12-31,NA
+37165605,Open comminuted fracture of metacarpal bone,Condition,SNOMED,Disorder,S,1255233002,2022-10-31,2099-12-31,NA
+37165613,Closed fracture of multiple metacarpal bones,Condition,SNOMED,Disorder,S,1255244005,2022-10-31,2099-12-31,NA
+37165614,Closed fracture of middle phalanx of multiple fingers,Condition,SNOMED,Disorder,S,1255245006,2022-10-31,2099-12-31,NA
+37165615,Closed comminuted fracture of middle phalanx of finger,Condition,SNOMED,Disorder,S,1255246007,2022-10-31,2099-12-31,NA
+37165633,Closed fracture of distal phalanx of multiple fingers,Condition,SNOMED,Disorder,S,1255272003,2022-10-31,2099-12-31,NA
+37165634,Closed comminuted fracture of distal phalanx of finger,Condition,SNOMED,Disorder,S,1255273008,2022-10-31,2099-12-31,NA
+37165636,Open comminuted fracture of proximal phalanx of finger,Condition,SNOMED,Disorder,S,1255275001,2022-10-31,2099-12-31,NA
+37165637,Closed fracture of proximal phalanx of multiple fingers,Condition,SNOMED,Disorder,S,1255276000,2022-10-31,2099-12-31,NA
+37165638,Closed comminuted fracture of proximal phalanx of finger,Condition,SNOMED,Disorder,S,1255277009,2022-10-31,2099-12-31,NA
+37165640,Open fracture of multiple phalanges of finger,Condition,SNOMED,Disorder,S,1255279007,2022-10-31,2099-12-31,NA
+37165644,Open fracture of multiple bones of upper limb,Condition,SNOMED,Disorder,S,1255285000,2022-10-31,2099-12-31,NA
+37165659,Closed fracture of multiple phalanges of fingers,Condition,SNOMED,Disorder,S,1255340003,2022-10-31,2099-12-31,NA
+37165660,Closed comminuted fracture of phalanx of finger,Condition,SNOMED,Disorder,S,1255341004,2022-10-31,2099-12-31,NA
+37165683,Fracture of multiple phalanges of finger,Condition,SNOMED,Disorder,S,1255414005,2022-10-31,2099-12-31,NA
+37165684,Comminuted fracture of phalanx of finger,Condition,SNOMED,Disorder,S,1255415006,2022-10-31,2099-12-31,NA
+37165685,Fracture of phalanx of multiple fingers,Condition,SNOMED,Disorder,S,1255416007,2022-10-31,2099-12-31,NA
+37167472,Fracture of bone adjacent to prosthesis of wrist joint,Condition,SNOMED,Disorder,S,1264544004,2023-03-31,2099-12-31,NA
+37167508,Fracture of bone adjacent to shoulder joint prosthesis,Condition,SNOMED,Disorder,S,1268328001,2023-03-31,2099-12-31,NA
+37168313,Open fracture of metaphysis of distal radius,Condition,SNOMED,Disorder,S,1279741006,2023-06-30,2099-12-31,NA
+37168382,Closed fracture of metaphysis of distal end of radius,Condition,SNOMED,Disorder,S,1279881008,2023-06-30,2099-12-31,NA
+37168796,Fracture of right ulna,Condition,SNOMED,Disorder,S,1285721004,2023-07-31,2099-12-31,NA
+37168797,Fracture of distal end of left ulna,Condition,SNOMED,Disorder,S,1285722006,2023-07-31,2099-12-31,NA
+37168798,Fracture of distal end of left radius,Condition,SNOMED,Disorder,S,1285724007,2023-07-31,2099-12-31,NA
+37168811,Avulsion fracture of phalanx of thumb,Condition,SNOMED,Disorder,S,1286703008,2023-07-31,2099-12-31,NA
+37168812,Fracture of proximal phalanx of middle finger,Condition,SNOMED,Disorder,S,1286706000,2023-07-31,2099-12-31,NA
+37168845,Fracture of bone of right shoulder girdle,Condition,SNOMED,Disorder,S,1286864008,2023-07-31,2099-12-31,NA
+37168846,Fracture of bone of shoulder girdle,Condition,SNOMED,Disorder,S,1286865009,2023-07-31,2099-12-31,NA
+37170182,Open fracture of metaphysis of distal right radius,Condition,SNOMED,Disorder,S,16543151000119106,2023-06-30,2099-12-31,NA
+37170183,Open fracture of metaphysis of distal left radius,Condition,SNOMED,Disorder,S,16543671000119105,2023-06-30,2099-12-31,NA
+37171690,Fracture of proximal phalanx of left middle finger,Condition,SNOMED,Disorder,S,40521000087105,2023-07-31,2099-12-31,NA
+37171691,Fracture of proximal phalanx of right middle finger,Condition,SNOMED,Disorder,S,40531000087107,2023-07-31,2099-12-31,NA
+37171705,Avulsion fracture of phalanx of left thumb,Condition,SNOMED,Disorder,S,41011000087101,2023-07-31,2099-12-31,NA
+37171706,Avulsion fracture of phalanx of right thumb,Condition,SNOMED,Disorder,S,41021000087109,2023-07-31,2099-12-31,NA
+37172983,Open fracture of scaphoid of left wrist,Condition,SNOMED,Disorder,S,560871000124109,2022-09-01,2099-12-31,NA
+37208071,Fracture of bone of left hand,Condition,SNOMED,Disorder,S,460161000124100,2019-03-01,2099-12-31,NA
+37208072,Fracture of bone of right hand,Condition,SNOMED,Disorder,S,460171000124107,2019-03-01,2099-12-31,NA
+37208089,Fracture of bone of left shoulder girdle,Condition,SNOMED,Disorder,S,460351000124104,2019-03-01,2099-12-31,NA
+37209088,Open fracture of middle phalanx of right little finger,Condition,SNOMED,Disorder,S,10816261000119105,2019-03-01,2099-12-31,NA
+37209091,Open fracture of neck of second metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10817621000119101,2019-03-01,2099-12-31,NA
+37209094,Open fracture of acromial process of right scapula,Condition,SNOMED,Disorder,S,10818661000119107,2019-03-01,2099-12-31,NA
+37209095,Open fracture of body of right scapula,Condition,SNOMED,Disorder,S,10818701000119100,2019-03-01,2099-12-31,NA
+37209096,Open fracture of right scapula,Condition,SNOMED,Disorder,S,10818741000119103,2019-03-01,2099-12-31,NA
+37209098,Open fracture of coronoid process of left ulna,Condition,SNOMED,Disorder,S,10819381000119102,2019-03-01,2099-12-31,NA
+37209100,Open fracture of acromial end of left clavicle,Condition,SNOMED,Disorder,S,10819901000119109,2019-03-01,2099-12-31,NA
+37209101,Open fracture of left clavicle,Condition,SNOMED,Disorder,S,10819941000119106,2019-03-01,2099-12-31,NA
+37209103,Open fracture of left elbow,Condition,SNOMED,Disorder,S,10820261000119101,2019-07-31,2099-12-31,NA
+37209105,Open fracture of shaft of fifth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10821171000119107,2019-03-01,2099-12-31,NA
+37209106,Open fracture of shaft of fifth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10821211000119109,2019-03-01,2099-12-31,NA
+37209107,Open fracture of neck of fifth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10821291000119100,2019-03-01,2099-12-31,NA
+37209120,Open fracture of middle phalanx of middle finger of left hand,Condition,SNOMED,Disorder,S,10823371000119105,2019-07-31,2099-12-31,NA
+37209121,Open fracture of proximal phalanx of ring finger of left hand,Condition,SNOMED,Disorder,S,10823771000119109,2019-07-31,2099-12-31,NA
+37209122,Open fracture of proximal phalanx of middle finger of left hand,Condition,SNOMED,Disorder,S,10823811000119109,2019-03-01,2099-12-31,NA
+37209123,Open fracture of shaft of fourth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10825001000119103,2019-03-01,2099-12-31,NA
+37209124,Open fracture of neck of fourth metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10825041000119101,2019-03-01,2099-12-31,NA
+37209125,Open fracture of neck of second metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10828321000119103,2019-03-01,2099-12-31,NA
+37209127,Open fracture of neck of right radius,Condition,SNOMED,Disorder,S,10831181000119107,2019-03-01,2099-12-31,NA
+37209130,Open fracture of shaft of third metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10832701000119108,2019-03-01,2099-12-31,NA
+37209131,Open fracture of neck of fourth metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10832821000119105,2019-03-01,2099-12-31,NA
+37209132,Open fracture of third metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10832981000119103,2019-03-01,2099-12-31,NA
+37209133,Open fracture of anatomical neck of proximal left humerus,Condition,SNOMED,Disorder,S,10833021000119108,2019-03-01,2099-12-31,NA
+37209135,Open fracture of middle phalanx of index finger of right hand,Condition,SNOMED,Disorder,S,10834421000119103,2019-07-31,2099-12-31,NA
+37209136,Open fracture of proximal phalanx of index finger of right hand,Condition,SNOMED,Disorder,S,10834541000119105,2019-07-31,2099-12-31,NA
+37209142,Open fracture of shaft of metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10837101000119107,2019-03-01,2099-12-31,NA
+37209143,Open fracture of shaft of second metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10837141000119109,2019-03-01,2099-12-31,NA
+37209144,Open fracture of shaft of third metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10837181000119104,2019-03-01,2099-12-31,NA
+37209145,Open fracture of acromial end of right clavicle,Condition,SNOMED,Disorder,S,10837421000119106,2019-03-01,2099-12-31,NA
+37209146,Open fracture of right clavicle,Condition,SNOMED,Disorder,S,10837461000119101,2019-03-01,2099-12-31,NA
+37209150,Open fracture of acromial process of left scapula,Condition,SNOMED,Disorder,S,10838541000119103,2019-03-01,2099-12-31,NA
+37209151,Open fracture of left scapula,Condition,SNOMED,Disorder,S,10838581000119108,2019-03-01,2099-12-31,NA
+37209152,Open fracture of body of left scapula,Condition,SNOMED,Disorder,S,10838621000119108,2019-03-01,2099-12-31,NA
+37209156,Closed fracture of shaft of first metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10926761000119100,2019-07-31,2099-12-31,NA
+37209157,Closed fracture of neck of first metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10927201000119107,2019-07-31,2099-12-31,NA
+37209159,Closed fracture of trapezoidal bone of right wrist,Condition,SNOMED,Disorder,S,10936201000119107,2019-07-31,2099-12-31,NA
+37209160,Closed fracture of trapezoidal bone of left wrist,Condition,SNOMED,Disorder,S,10936241000119109,2019-07-31,2099-12-31,NA
+37209161,Closed fracture of lunate bone of left wrist,Condition,SNOMED,Disorder,S,10937281000119102,2019-07-31,2099-12-31,NA
+37209163,Pathological fracture of right clavicle due to neoplastic disease,Condition,SNOMED,Disorder,S,11305881000119102,2019-03-01,2099-12-31,NA
+37209171,Pathological fracture of bone of right hand due to neoplastic disease,Condition,SNOMED,Disorder,S,11312321000119101,2019-03-01,2099-12-31,NA
+37209172,Pathological fracture of right ulna due to neoplastic disease,Condition,SNOMED,Disorder,S,11312801000119104,2019-03-01,2099-12-31,NA
+37209173,Pathological fracture of left radius due to neoplastic disease,Condition,SNOMED,Disorder,S,11312921000119100,2019-03-01,2099-12-31,NA
+37209174,Pathological fracture of right scapula due to osteoporosis,Condition,SNOMED,Disorder,S,11313281000119104,2019-03-01,2099-12-31,NA
+37209175,Pathological fracture of right scapula due to neoplastic disease,Condition,SNOMED,Disorder,S,11313361000119104,2019-03-01,2099-12-31,NA
+37209176,Pathological fracture of left scapula due to neoplastic disease,Condition,SNOMED,Disorder,S,11313401000119108,2019-03-01,2099-12-31,NA
+37209546,Closed fracture of metaphysis of distal end of left radius,Condition,SNOMED,Disorder,S,16542861000119107,2019-07-31,2099-12-31,NA
+37209547,Closed fracture of metaphysis of distal end of right radius,Condition,SNOMED,Disorder,S,16542901000119101,2019-07-31,2099-12-31,NA
+37309611,Closed mallet fracture of distal phalanx of middle finger of right hand,Condition,SNOMED,Disorder,S,16898401000119104,2020-01-31,2099-12-31,NA
+37309612,Closed mallet fracture of distal phalanx of middle finger of left hand,Condition,SNOMED,Disorder,S,16898361000119108,2020-01-31,2099-12-31,NA
+37309613,Closed fracture of distal phalanx of ring finger of right hand,Condition,SNOMED,Disorder,S,16898321000119103,2020-01-31,2099-12-31,NA
+37309616,Closed fracture of capitellum of left humerus,Condition,SNOMED,Disorder,S,16867081000119101,2020-01-31,2099-12-31,NA
+37309617,Closed fracture of capitellum of right humerus,Condition,SNOMED,Disorder,S,16866431000119108,2020-01-31,2099-12-31,NA
+37310210,Open fracture of base of third metacarpal bone of left hand,Condition,SNOMED,Disorder,S,10836661000119102,2020-01-31,2099-12-31,NA
+37310211,Open mallet fracture of distal phalanx of index finger of right hand,Condition,SNOMED,Disorder,S,10834461000119108,2020-01-31,2099-12-31,NA
+37310230,Open mallet fracture of distal phalanx of ring finger of left hand,Condition,SNOMED,Disorder,S,10823571000119104,2020-01-31,2099-12-31,NA
+37310231,Open mallet fracture of distal phalanx of middle finger of left hand,Condition,SNOMED,Disorder,S,10823531000119102,2020-01-31,2099-12-31,NA
+37310232,Open mallet fracture of distal phalanx of index finger of left hand,Condition,SNOMED,Disorder,S,10823451000119107,2020-01-31,2099-12-31,NA
+37310235,Open mallet fracture of distal phalanx of middle finger of right hand,Condition,SNOMED,Disorder,S,10818101000119104,2020-01-31,2099-12-31,NA
+37310237,Open fracture of base of third metacarpal bone of right hand,Condition,SNOMED,Disorder,S,10831901000119102,2020-01-31,2099-12-31,NA
+37310238,Open mallet fracture of distal phalanx of ring finger of right hand,Condition,SNOMED,Disorder,S,10830741000119109,2020-01-31,2099-12-31,NA
+37310246,Open mallet fracture of distal phalanx of little finger of right hand,Condition,SNOMED,Disorder,S,10816301000119102,2020-01-31,2099-12-31,NA
+37311956,Fracture of phalanx of ring finger,Condition,SNOMED,Disorder,S,788942009,2020-01-31,2099-12-31,NA
+37311957,Fracture of phalanx of middle finger,Condition,SNOMED,Disorder,S,788941002,2020-01-31,2099-12-31,NA
+37311958,Fracture of phalanx of little finger,Condition,SNOMED,Disorder,S,788940001,2020-01-31,2099-12-31,NA
+37311959,Fracture of phalanx of index finger,Condition,SNOMED,Disorder,S,788939003,2020-01-31,2099-12-31,NA
+37311960,Fracture of head of humerus,Condition,SNOMED,Disorder,S,788938006,2020-01-31,2099-12-31,NA
+37311962,Fracture of anatomical neck of humerus,Condition,SNOMED,Disorder,S,788936005,2020-01-31,2099-12-31,NA
+40479208,Transcondylar fracture of distal humerus,Condition,SNOMED,Disorder,S,441496000,2009-07-31,2099-12-31,NA
+40483548,Fracture of head of radius with dislocation of distal radioulnar joint and interosseous membrane disruption,Condition,SNOMED,Disorder,S,442448003,2009-07-31,2099-12-31,NA
+40484195,Pathological fracture of distal radius,Condition,SNOMED,Disorder,S,445537004,2010-07-31,2099-12-31,NA
+40484196,Pathological fracture of distal ulna,Condition,SNOMED,Disorder,S,445538009,2010-07-31,2099-12-31,NA
+40489449,Greenstick fracture of distal radius,Condition,SNOMED,Disorder,S,448355005,2011-07-31,2099-12-31,NA
+40490828,Open fracture of lateral condyle of humerus,Condition,SNOMED,Disorder,S,447018003,2011-01-31,2099-12-31,NA
+40491988,Closed extraarticular fracture of distal radius,Condition,SNOMED,Disorder,S,448838000,2011-07-31,2099-12-31,NA
+40598639,Closed fracture of shaft of radius and ulna,Condition,SNOMED,Disorder,S,54819005,2017-01-31,2099-12-31,NA
+42537719,Fracture of lower end of radius with volar tilt,Condition,SNOMED,Disorder,S,737262009,2018-01-31,2099-12-31,NA
+42539096,Fracture of lower end of radius with dorsal tilt,Condition,SNOMED,Disorder,S,737261002,2018-01-31,2099-12-31,NA
+42573150,Broken wing,Condition,SNOMED Veterinary,Clinical Finding,S,35461000009105,2008-08-29,2099-12-31,NA
+42597182,Fracture of third carpal bone,Condition,SNOMED Veterinary,Clinical Finding,S,319921000009104,2010-12-21,2099-12-31,NA
+42597339,Chip fracture of distal radius,Condition,SNOMED Veterinary,Clinical Finding,S,322031000009103,2011-02-24,2099-12-31,NA
+42597341,Slab fracture of radial carpal bone of equine limb,Condition,SNOMED Veterinary,Clinical Finding,S,322041000009109,2011-02-24,2099-12-31,NA
+42597342,Chip fracture of radial carpal bone of equine limb,Condition,SNOMED Veterinary,Clinical Finding,S,322051000009107,2011-02-24,2099-12-31,NA
+42597343,Chip fracture of intermediate carpal bone of equine limb,Condition,SNOMED Veterinary,Clinical Finding,S,322061000009105,2011-02-24,2099-12-31,NA
+42597344,Slab fracture of intermediate carpal bone of equine limb,Condition,SNOMED Veterinary,Clinical Finding,S,322071000009101,2011-02-24,2099-12-31,NA
+42597345,Fracture of ulnar carpal bone of equine limb,Condition,SNOMED Veterinary,Clinical Finding,S,322081000009104,2011-02-24,2099-12-31,NA
+42597346,Slab fracture of third carpal bone of equine limb,Condition,SNOMED Veterinary,Clinical Finding,S,322091000009102,2011-02-24,2099-12-31,NA
+42597347,Chip fracture of third carpal bone of equine limb,Condition,SNOMED Veterinary,Clinical Finding,S,322101000009107,2011-02-24,2099-12-31,NA
+42597349,Fracture of greater tubercle of humerus,Condition,SNOMED Veterinary,Clinical Finding,S,322121000009101,2011-02-24,2099-12-31,NA
+42597350,Fracture of supraglenoid tuberosity,Condition,SNOMED Veterinary,Clinical Finding,S,322131000009104,2011-02-24,2099-12-31,NA
+42597356,Fracture of accessory carpal bone of equine limb,Condition,SNOMED Veterinary,Clinical Finding,S,322191000009103,2011-02-24,2099-12-31,NA
+42598013,Fracture of radial carpal bone,Condition,SNOMED Veterinary,Clinical Finding,S,328541000009103,2011-04-22,2099-12-31,NA
+42598014,Fracture of intermediate carpal bone,Condition,SNOMED Veterinary,Clinical Finding,S,328551000009100,2011-04-22,2099-12-31,NA
+42598015,Fracture of fourth carpal bone,Condition,SNOMED Veterinary,Clinical Finding,S,328561000009102,2011-04-22,2099-12-31,NA
+43021072,Open fracture of bone of wrist and/or hand,Condition,SNOMED,Disorder,S,472856002,2013-01-31,2099-12-31,NA
+44782594,Closed fracture of base of third metacarpal,Condition,SNOMED,Disorder,S,698058005,2014-01-31,2099-12-31,NA
+44783856,Closed fracture of base of fifth metacarpal,Condition,SNOMED,Disorder,S,698056009,2014-01-31,2099-12-31,NA
+44783857,Closed fracture of base of fourth metacarpal,Condition,SNOMED,Disorder,S,698057000,2014-01-31,2099-12-31,NA
+44783858,Closed fracture of base of second metacarpal,Condition,SNOMED,Disorder,S,698059002,2014-01-31,2099-12-31,NA
+44808507,Open extra-articular fracture of distal radius,Condition,SNOMED,Disorder,S,849671000000101,2012-10-01,2099-12-31,NA
+44808508,Open intra-articular fracture of distal radius,Condition,SNOMED,Disorder,S,849681000000104,2012-10-01,2099-12-31,NA
+44811335,Open fracture of thumb,Condition,SNOMED,Disorder,S,864031000000104,2013-04-01,2099-12-31,NA
+45763685,Avulsion fracture of medial epicondyle of humerus,Condition,SNOMED,Disorder,S,700147004,2014-07-31,2099-12-31,NA
+45766722,Closed fracture of lesser tuberosity of humerus,Condition,SNOMED,Disorder,S,703947004,2015-01-31,2099-12-31,NA
+45766754,Closed fracture of distal phalanx of index finger,Condition,SNOMED,Disorder,S,703986000,2015-01-31,2099-12-31,NA
+45766755,Closed fracture of distal phalanx of middle finger,Condition,SNOMED,Disorder,S,703988004,2015-01-31,2099-12-31,NA
+45766764,Closed fracture of distal phalanx of ring finger,Condition,SNOMED,Disorder,S,704001001,2015-01-31,2099-12-31,NA
+45766765,Closed fracture of fifth metacarpal,Condition,SNOMED,Disorder,S,704003003,2015-01-31,2099-12-31,NA
+45766766,Closed fracture of fourth metacarpal,Condition,SNOMED,Disorder,S,704004009,2015-01-31,2099-12-31,NA
+45766772,Open fracture of phalanx of ring finger,Condition,SNOMED,Disorder,S,704012001,2015-01-31,2099-12-31,NA
+45766773,Open fracture of hand,Condition,SNOMED,Disorder,S,704013006,2015-01-31,2099-12-31,NA
+45766774,Open fracture of lesser tuberosity of humerus,Condition,SNOMED,Disorder,S,704014000,2015-01-31,2099-12-31,NA
+45766776,Open fracture of neck of third metacarpal bone,Condition,SNOMED,Disorder,S,704016003,2015-01-31,2099-12-31,NA
+45766777,Open fracture of neck of second metacarpal bone,Condition,SNOMED,Disorder,S,704017007,2015-01-31,2099-12-31,NA
+45766781,Closed fracture of shaft of fifth metacarpal bone,Condition,SNOMED,Disorder,S,704021000,2015-01-31,2099-12-31,NA
+45766782,Closed fracture of shaft of fourth metacarpal bone,Condition,SNOMED,Disorder,S,704022007,2015-01-31,2099-12-31,NA
+45766783,Closed fracture of shaft of second metacarpal bone,Condition,SNOMED,Disorder,S,704023002,2015-01-31,2099-12-31,NA
+45766784,Closed fracture of shaft of third metacarpal bone,Condition,SNOMED,Disorder,S,704024008,2015-01-31,2099-12-31,NA
+45766785,Open fracture of base of fifth metacarpal bone,Condition,SNOMED,Disorder,S,704025009,2015-01-31,2099-12-31,NA
+45766786,Open fracture of base of fourth metacarpal bone,Condition,SNOMED,Disorder,S,704026005,2015-01-31,2099-12-31,NA
+45766787,Open fracture of base of second metacarpal bone,Condition,SNOMED,Disorder,S,704027001,2015-01-31,2099-12-31,NA
+45766788,Closed mallet fracture of distal phalanx of index finger,Condition,SNOMED,Disorder,S,704028006,2015-01-31,2099-12-31,NA
+45766789,Closed mallet fracture of distal phalanx of little finger,Condition,SNOMED,Disorder,S,704030008,2015-01-31,2099-12-31,NA
+45766813,Stress fracture of ulna,Condition,SNOMED,Disorder,S,704056001,2015-01-31,2099-12-31,NA
+45766814,Stress fracture of scapula,Condition,SNOMED,Disorder,S,704058000,2015-01-31,2099-12-31,NA
+45766815,Stress fracture of radius,Condition,SNOMED,Disorder,S,704059008,2015-01-31,2099-12-31,NA
+45766818,Stress fracture of hand,Condition,SNOMED,Disorder,S,704064007,2015-01-31,2099-12-31,NA
+45766820,Stress fracture of phalanx of finger,Condition,SNOMED,Disorder,S,704066009,2015-01-31,2099-12-31,NA
+45766822,Stress fracture of clavicle,Condition,SNOMED,Disorder,S,704069002,2015-01-31,2099-12-31,NA
+45766837,Open fracture of shaft of second metacarpal bone,Condition,SNOMED,Disorder,S,704088009,2015-01-31,2099-12-31,NA
+45766838,Open fracture of shaft of third metacarpal bone,Condition,SNOMED,Disorder,S,704090005,2015-01-31,2099-12-31,NA
+45766839,Open fracture of shaft of fourth metacarpal bone,Condition,SNOMED,Disorder,S,704091009,2015-01-31,2099-12-31,NA
+45766840,Open fracture of shaft of fifth metacarpal bone,Condition,SNOMED,Disorder,S,704092002,2015-01-31,2099-12-31,NA
+45766841,Closed mallet fracture of distal phalanx of ring finger,Condition,SNOMED,Disorder,S,704093007,2015-01-31,2099-12-31,NA
+45766842,Closed fracture of proximal phalanx of ring finger,Condition,SNOMED,Disorder,S,704094001,2015-01-31,2099-12-31,NA
+45766889,Open fracture of proximal phalanx of index finger,Condition,SNOMED,Disorder,S,704148002,2015-01-31,2099-12-31,NA
+45766890,Open fracture of proximal phalanx of middle finger,Condition,SNOMED,Disorder,S,704150005,2015-01-31,2099-12-31,NA
+45766891,Open fracture of proximal phalanx of ring finger,Condition,SNOMED,Disorder,S,704151009,2015-01-31,2099-12-31,NA
+45766894,Closed fracture of phalanx of middle finger,Condition,SNOMED,Disorder,S,704156004,2015-01-31,2099-12-31,NA
+45766895,Closed fracture of phalanx of little finger,Condition,SNOMED,Disorder,S,704157008,2015-01-31,2099-12-31,NA
+45766896,Closed fracture of phalanx of index finger,Condition,SNOMED,Disorder,S,704158003,2015-01-31,2099-12-31,NA
+45766897,Closed fracture of middle phalanx of middle finger,Condition,SNOMED,Disorder,S,704159006,2015-01-31,2099-12-31,NA
+45766898,Closed fracture of proximal phalanx of little finger,Condition,SNOMED,Disorder,S,704161002,2015-01-31,2099-12-31,NA
+45766899,Closed fracture of proximal phalanx of index finger,Condition,SNOMED,Disorder,S,704162009,2015-01-31,2099-12-31,NA
+45766900,Closed fracture of middle phalanx of little finger,Condition,SNOMED,Disorder,S,704164005,2015-01-31,2099-12-31,NA
+45766901,Closed fracture of middle phalanx of index finger,Condition,SNOMED,Disorder,S,704165006,2015-01-31,2099-12-31,NA
+45766902,Pathological fracture of ulna,Condition,SNOMED,Disorder,S,704167003,2015-01-31,2099-12-31,NA
+45766905,Pathological fracture of radius,Condition,SNOMED,Disorder,S,704170004,2015-01-31,2099-12-31,NA
+45766907,Pathological fracture of phalanx of finger,Condition,SNOMED,Disorder,S,704172007,2015-01-31,2099-12-31,NA
+45766911,Closed fracture of second metacarpal,Condition,SNOMED,Disorder,S,704177001,2015-01-31,2099-12-31,NA
+45766912,Closed fracture of neck of third metacarpal,Condition,SNOMED,Disorder,S,704178006,2015-01-31,2099-12-31,NA
+45766913,Closed fracture of neck of second metacarpal,Condition,SNOMED,Disorder,S,704179003,2015-01-31,2099-12-31,NA
+45766915,Closed fracture of neck of fourth metacarpal,Condition,SNOMED,Disorder,S,704181001,2015-01-31,2099-12-31,NA
+45766917,Open mallet fracture of distal phalanx of ring finger,Condition,SNOMED,Disorder,S,704183003,2015-01-31,2099-12-31,NA
+45766920,Open fracture of distal phalanx of index finger,Condition,SNOMED,Disorder,S,704187002,2015-01-31,2099-12-31,NA
+45766921,Open fracture of distal phalanx of middle finger,Condition,SNOMED,Disorder,S,704188007,2015-01-31,2099-12-31,NA
+45766922,Open fracture of distal phalanx of ring finger,Condition,SNOMED,Disorder,S,704189004,2015-01-31,2099-12-31,NA
+45766940,Closed fracture of shoulder,Condition,SNOMED,Disorder,S,704210003,2015-01-31,2099-12-31,NA
+45766942,Closed fracture of distal epiphysis of radius,Condition,SNOMED,Disorder,S,704212006,2015-01-31,2099-12-31,NA
+45766943,Open fracture of base of third metacarpal bone,Condition,SNOMED,Disorder,S,704214007,2015-01-31,2099-12-31,NA
+45766944,Open fracture of body of scapula,Condition,SNOMED,Disorder,S,704215008,2015-01-31,2099-12-31,NA
+45766945,Open fracture of fifth metacarpal bone,Condition,SNOMED,Disorder,S,704216009,2015-01-31,2099-12-31,NA
+45766946,Open fracture of fourth metacarpal bone,Condition,SNOMED,Disorder,S,704217000,2015-01-31,2099-12-31,NA
+45766947,Open fracture of third metacarpal bone,Condition,SNOMED,Disorder,S,704219002,2015-01-31,2099-12-31,NA
+45766948,Open fracture of neck of fifth metacarpal bone,Condition,SNOMED,Disorder,S,704220008,2015-01-31,2099-12-31,NA
+45766949,Open fracture of neck of fourth metacarpal bone,Condition,SNOMED,Disorder,S,704221007,2015-01-31,2099-12-31,NA
+45766950,Open fracture of middle phalanx of middle finger,Condition,SNOMED,Disorder,S,704222000,2015-01-31,2099-12-31,NA
+45766951,Open fracture of middle phalanx of index finger,Condition,SNOMED,Disorder,S,704225003,2015-01-31,2099-12-31,NA
+45766958,Open fracture of phalanx of little finger,Condition,SNOMED,Disorder,S,704234008,2015-01-31,2099-12-31,NA
+45766959,Open fracture of phalanx of middle finger,Condition,SNOMED,Disorder,S,704235009,2015-01-31,2099-12-31,NA
+45766960,Open fracture of phalanx of thumb,Condition,SNOMED,Disorder,S,704236005,2015-01-31,2099-12-31,NA
+45766961,Open mallet fracture of distal phalanx of little finger,Condition,SNOMED,Disorder,S,704238006,2015-01-31,2099-12-31,NA
+45766966,Pathologic fracture of ulna at site of neoplasm,Condition,SNOMED,Disorder,S,704244005,2015-01-31,2099-12-31,NA
+45766968,Pathologic fracture of scapula at site of neoplasm,Condition,SNOMED,Disorder,S,704246007,2015-01-31,2099-12-31,NA
+45766969,Pathologic fracture of radius at site of neoplasm,Condition,SNOMED,Disorder,S,704247003,2015-01-31,2099-12-31,NA
+45766970,Pathologic fracture of humerus at site of neoplasm,Condition,SNOMED,Disorder,S,704248008,2015-01-31,2099-12-31,NA
+45766971,Pathologic fracture of bone of hand at site of neoplasm,Condition,SNOMED,Disorder,S,704250000,2015-01-31,2099-12-31,NA
+45766975,Pathologic fracture of clavicle at site of neoplasm,Condition,SNOMED,Disorder,S,704254009,2015-01-31,2099-12-31,NA
+45767001,Secondary osteoporotic fracture of ulna,Condition,SNOMED,Disorder,S,704282002,2015-01-31,2099-12-31,NA
+45767003,Secondary osteoporotic fracture of scapula,Condition,SNOMED,Disorder,S,704284001,2015-01-31,2099-12-31,NA
+45767004,Secondary osteoporotic fracture of humerus,Condition,SNOMED,Disorder,S,704286004,2015-01-31,2099-12-31,NA
+45767006,Secondary osteoporotic fracture of hand,Condition,SNOMED,Disorder,S,704288003,2015-01-31,2099-12-31,NA
+45767010,Secondary osteoporotic fracture of clavicle,Condition,SNOMED,Disorder,S,704292005,2015-01-31,2099-12-31,NA
+45767036,Osteoporotic fracture of clavicle,Condition,SNOMED,Disorder,S,704329006,2015-01-31,2099-12-31,NA
+45767040,Osteoporotic fracture of hand,Condition,SNOMED,Disorder,S,704333004,2015-01-31,2099-12-31,NA
+45767042,Osteoporotic fracture of humerus,Condition,SNOMED,Disorder,S,704335006,2015-01-31,2099-12-31,NA
+45767043,Osteoporotic fracture of scapula,Condition,SNOMED,Disorder,S,704337003,2015-01-31,2099-12-31,NA
+45767045,Osteoporotic fracture of ulna,Condition,SNOMED,Disorder,S,704339000,2015-01-31,2099-12-31,NA
+45767104,Closed transcondylar fracture of distal humerus,Condition,SNOMED,Disorder,S,704410001,2015-01-31,2099-12-31,NA
+45767610,Closed fracture of epiphyseal plate of distal humerus,Condition,SNOMED,Disorder,S,705076001,2015-01-31,2099-12-31,NA
+45767612,Closed fracture of epiphyseal plate of phalanx of thumb,Condition,SNOMED,Disorder,S,705078000,2015-01-31,2099-12-31,NA
+45767615,Closed fracture of epiphyseal plate of phalanx of finger,Condition,SNOMED,Disorder,S,705081005,2015-01-31,2099-12-31,NA
+45767634,Closed fracture of navicular bone of wrist with dislocation of perilunate joint,Condition,SNOMED,Disorder,S,705103007,2015-01-31,2099-12-31,NA
+45771402,Stress fracture of humerus,Condition,SNOMED,Disorder,S,704062006,2015-01-31,2099-12-31,NA
+45771405,Closed fracture of neck of fifth metacarpal bone,Condition,SNOMED,Disorder,S,704080002,2015-01-31,2099-12-31,NA
+45771407,Open fracture of proximal phalanx of little finger,Condition,SNOMED,Disorder,S,704149005,2015-01-31,2099-12-31,NA
+45771408,Closed fracture of phalanx of ring finger,Condition,SNOMED,Disorder,S,704155000,2015-01-31,2099-12-31,NA
+45771409,Closed fracture of proximal phalanx of middle finger,Condition,SNOMED,Disorder,S,704160001,2015-01-31,2099-12-31,NA
+45771410,Open fracture of second metacarpal bone,Condition,SNOMED,Disorder,S,704218005,2015-01-31,2099-12-31,NA
+45771411,Open fracture of middle phalanx of ring finger,Condition,SNOMED,Disorder,S,704223005,2015-01-31,2099-12-31,NA
+45771416,Open mallet fracture of distal phalanx of middle finger,Condition,SNOMED,Disorder,S,704239003,2015-01-31,2099-12-31,NA
+45771431,Open transcondylar fracture of distal humerus,Condition,SNOMED,Disorder,S,704411002,2015-01-31,2099-12-31,NA
+45772685,Closed fracture of hand,Condition,SNOMED,Disorder,S,704005005,2015-01-31,2099-12-31,NA
+45772686,Open fracture of phalanx of index finger,Condition,SNOMED,Disorder,S,704011008,2015-01-31,2099-12-31,NA
+45772701,Closed fracture of middle phalanx of ring finger,Condition,SNOMED,Disorder,S,704163004,2015-01-31,2099-12-31,NA
+45772703,Closed fracture of third metacarpal,Condition,SNOMED,Disorder,S,704176005,2015-01-31,2099-12-31,NA
+45772704,Open fracture of distal phalanx of little finger,Condition,SNOMED,Disorder,S,704185005,2015-01-31,2099-12-31,NA
+45772707,Closed fracture of phalanx of thumb,Condition,SNOMED,Disorder,S,704213001,2015-01-31,2099-12-31,NA
+45772708,Open fracture of middle phalanx of little finger,Condition,SNOMED,Disorder,S,704224004,2015-01-31,2099-12-31,NA
+45772709,Open mallet fracture of distal phalanx of index finger,Condition,SNOMED,Disorder,S,704237001,2015-01-31,2099-12-31,NA
+45772713,Secondary osteoporotic fracture of radius,Condition,SNOMED,Disorder,S,704285000,2015-01-31,2099-12-31,NA
+45772718,Osteoporotic fracture of radius,Condition,SNOMED,Disorder,S,704336007,2015-01-31,2099-12-31,NA
+45773540,Closed fracture of distal phalanx of little finger,Condition,SNOMED,Disorder,S,703987009,2015-01-31,2099-12-31,NA
+45773541,Closed fracture of proximal epiphysis of radius,Condition,SNOMED,Disorder,S,704208000,2015-01-31,2099-12-31,NA
+46270167,Fracture of thumb due to gunshot wound,Condition,SNOMED,Disorder,S,16000001000004109,2015-07-31,2099-12-31,NA
+46270317,Fracture of shoulder,Condition,SNOMED,Disorder,S,16250001000004107,2015-07-31,2099-12-31,NA
+46271800,Pathological fracture of distal radius and distal ulna,Condition,SNOMED,Disorder,S,710052000,2015-07-31,2099-12-31,NA

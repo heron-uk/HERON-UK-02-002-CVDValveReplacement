@@ -1,0 +1,25 @@
+concept_id,found_from,concept_name,domain_id,vocabulary_id,standard_concept
+313209,From initial search,Left bundle branch hemiblock,Condition,SNOMED,S
+316432,From initial search,Right bundle branch block AND left anterior fascicular block,Condition,SNOMED,S
+316998,From initial search,Left bundle branch block,Condition,SNOMED,S
+321315,From descendants,Trifascicular block,Condition,SNOMED,S
+321587,From descendants,Bilateral bundle branch block,Condition,SNOMED,S
+321590,From initial search,Right bundle branch block AND left posterior fascicular block,Condition,SNOMED,S
+4032785,From initial search,"Right bundle branch block, posterior fascicular block AND incomplete left bundle branch block",Condition,SNOMED,S
+4064614,From initial search,EKG: left bundle branch block,Condition,SNOMED,S
+4088336,From initial search,Incomplete left bundle branch block,Condition,SNOMED,S
+4111543,From initial search,Left main stem bundle branch block,Condition,SNOMED,S
+4138973,From initial search,Right bundle branch block with left bundle branch block,Condition,SNOMED,S
+4184950,From initial search,Right bundle branch block AND incomplete left bundle branch block,Condition,SNOMED,S
+4217860,From descendants,"Right bundle branch block, anterior fascicular block AND incomplete posterior fascicular block",Condition,SNOMED,S
+4244693,From initial search,"Right bundle branch block, anterior fascicular block AND incomplete left bundle branch block",Condition,SNOMED,S
+4267892,From initial search,Complete left bundle branch block,Condition,SNOMED,S
+4268046,From descendants,Left posterior fascicular block,Condition,SNOMED,S
+4280348,From descendants,"Right bundle branch block, posterior fascicular block AND incomplete anterior fascicular block",Condition,SNOMED,S
+4295336,From descendants,Left anterior fascicular block,Condition,SNOMED,S
+4296729,From descendants,"Anterior fascicular block, posterior fascicular block AND incomplete right bundle branch block",Condition,SNOMED,S
+37118682,From initial search,ECG complete left bundle branch block,Condition,SNOMED,S
+40482086,From descendants,Left anterior fascicular block on electrocardiogram,Condition,SNOMED,S
+40482505,From descendants,Left posterior fascicular block on electrocardiogram,Condition,SNOMED,S
+40482887,From initial search,Right bundle branch block and left anterior fascicular block on electrocardiogram,Condition,SNOMED,S
+40483359,From initial search,Right bundle branch block and left posterior fascicular block on electrocardiogram,Condition,SNOMED,S

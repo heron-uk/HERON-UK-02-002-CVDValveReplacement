@@ -1,0 +1,4 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+4127718,Calculus in pelviureteric junction,Condition,SNOMED,Disorder,S,236711008,2002-01-31,2099-12-31,NA
+4148260,Calculus of kidney and ureter,Condition,SNOMED,Disorder,S,266556005,2002-01-31,2099-12-31,NA
+42537304,Hydronephrosis due to calculus of kidney and ureter,Condition,SNOMED,Disorder,S,736640009,2018-01-31,2099-12-31,NA

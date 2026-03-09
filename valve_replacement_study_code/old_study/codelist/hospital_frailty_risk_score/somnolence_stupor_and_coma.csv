@@ -1,0 +1,168 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+135360,Syncope,Condition,SNOMED,Clinical Finding,S,271594007,2002-01-31,2099-12-31,NA
+140586,Heat syncope,Condition,SNOMED,Clinical Finding,S,89797005,2002-01-31,2099-12-31,NA
+194856,Hepatic coma due to viral hepatitis A,Condition,SNOMED,Disorder,S,16060001,2002-01-31,2099-12-31,NA
+196029,Hepatic coma due to viral hepatitis,Condition,SNOMED,Disorder,S,40946000,2002-01-31,2099-12-31,NA
+200031,Hepatic coma due to viral hepatitis B,Condition,SNOMED,Disorder,S,26206000,2002-01-31,2099-12-31,NA
+201530,Hyperosmolar coma due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,190331003,2002-01-31,2099-12-31,NA
+201531,Hyperosmolar coma due to type 1 diabetes mellitus,Condition,SNOMED,Disorder,S,190330002,2002-01-31,2099-12-31,NA
+372444,Coma in the newborn,Condition,SNOMED,Disorder,S,90224001,2002-01-31,2099-12-31,NA
+372448,Loss of consciousness,Observation,SNOMED,Clinical Finding,S,419045004,2006-01-31,2099-12-31,NA
+375671,Concussion with loss of consciousness,Condition,SNOMED,Disorder,S,62564004,2002-01-31,2099-12-31,NA
+376961,Disturbance of consciousness,Observation,SNOMED,Clinical Finding,S,3006004,2002-01-31,2099-12-31,NA
+377604,Hepatic coma,Condition,SNOMED,Disorder,S,72836002,2002-01-31,2099-12-31,NA
+380688,Hypoglycemic coma,Condition,SNOMED,Disorder,S,267384006,2002-01-31,2099-12-31,NA
+380834,Coma,Condition,SNOMED,Disorder,S,371632003,2002-07-31,2099-12-31,NA
+380844,Prolonged loss of consciousness,Observation,SNOMED,Clinical Finding,S,7862002,2002-01-31,2099-12-31,NA
+381135,Brief loss of consciousness,Observation,SNOMED,Clinical Finding,S,32834005,2002-01-31,2099-12-31,NA
+381966,Moderate loss of consciousness,Observation,SNOMED,Clinical Finding,S,40863000,2002-01-31,2099-12-31,NA
+433624,Intracranial hemorrhage following injury with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,13289004,2002-01-31,2099-12-31,NA
+434774,Cortex contusion with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,81412002,2002-01-31,2099-12-31,NA
+436526,Intracranial hemorrhage following injury with prolonged loss of consciousness AND return to pre-existing conscious level,Condition,SNOMED,Disorder,S,127311008,2002-01-31,2099-12-31,NA
+437106,Intracranial hemorrhage following injury with prolonged loss of consciousness without return to pre-existing conscious level,Condition,SNOMED,Disorder,S,127312001,2002-01-31,2099-12-31,NA
+437385,Intracranial injury with loss of consciousness,Condition,SNOMED,Disorder,S,127297005,2002-01-31,2099-12-31,NA
+438279,Extradural hemorrhage following injury with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,111681000,2002-01-31,2099-12-31,NA
+439194,Subdural hemorrhage following injury with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,45659008,2002-01-31,2099-12-31,NA
+439672,Hepatic coma due to viral hepatitis C,Condition,SNOMED,Disorder,S,186628001,2002-01-31,2099-12-31,NA
+439675,Hepatic coma due to acute hepatitis B with delta agent,Condition,SNOMED,Disorder,S,186624004,2002-01-31,2099-12-31,NA
+440244,Subarachnoid hemorrhage following injury with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,75507000,2002-01-31,2099-12-31,NA
+440551,Brain injury with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,13752003,2002-01-31,2099-12-31,NA
+441702,Cerebellar contusion with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,19233004,2002-01-31,2099-12-31,NA
+442114,Cortex laceration with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,41870008,2002-01-31,2099-12-31,NA
+442616,Brain stem contusion with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,66393002,2002-01-31,2099-12-31,NA
+443735,Coma due to diabetes mellitus,Condition,SNOMED,Disorder,S,420662003,2006-07-31,2099-12-31,NA
+443799,Brain stem laceration with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,3119002,2002-01-31,2099-12-31,NA
+444196,Intracranial hemorrhage following injury with moderate loss of consciousness,Condition,SNOMED,Disorder,S,127310009,2002-01-31,2099-12-31,NA
+444197,Intracranial hemorrhage following injury with brief loss of consciousness,Condition,SNOMED,Disorder,S,127309004,2002-01-31,2099-12-31,NA
+444198,Intracranial hemorrhage following injury with loss of consciousness,Condition,SNOMED,Disorder,S,127308007,2002-01-31,2099-12-31,NA
+444257,Cerebellar laceration with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,84900008,2002-01-31,2099-12-31,NA
+601160,Hyperosmolar coma due to drug induced diabetes mellitus,Condition,SNOMED,Disorder,S,367241000119104,2021-01-31,2099-12-31,NA
+604740,Hind brain laceration with open intracranial wound and loss of consciousness,Condition,SNOMED,Disorder,S,1003584006,2021-01-31,2099-12-31,NA
+605653,Hepatic coma due to viral hepatitis D,Condition,SNOMED,Disorder,S,1137357005,2021-07-31,2099-12-31,NA
+618762,Brain stem laceration with loss of consciousness,Condition,SNOMED,Disorder,S,874943000,2021-01-31,2099-12-31,NA
+763021,Chronic viral hepatitis C with hepatic coma,Condition,SNOMED,Disorder,S,435101000124104,2013-09-01,2099-12-31,NA
+1340466,Exacerbation of sedation,Condition,OMOP Extension,Clinical Finding,S,OMOP5166121,2022-05-06,2099-12-31,NA
+1340472,Exacerbation of syncope,Condition,OMOP Extension,Clinical Finding,S,OMOP5166127,2022-05-06,2099-12-31,NA
+1450403,Exercise syncope,Condition,SNOMED,Clinical Finding,S,2427351000000100,2025-04-09,2099-12-31,NA
+3169641,Deep coma due to concussion,Condition,Nebraska Lexicon,Clinical Finding,S,12500001000004105,2016-01-28,2099-12-31,NA
+3188049,Episodic altered awareness,Condition,Nebraska Lexicon,Clinical Finding,S,22870001000004103,2016-01-28,2099-12-31,NA
+3189861,Sundowner's syndrome,Condition,Nebraska Lexicon,Clinical Finding,S,20070001000004107,2016-01-28,2099-12-31,NA
+3190265,Psychogenic coma,Condition,Nebraska Lexicon,Clinical Finding,S,20890001000004103,2016-01-28,2099-12-31,NA
+4008577,Insulin coma,Condition,SNOMED,Disorder,S,111558006,2002-01-31,2099-12-31,NA
+4016541,Intracranial injury with prolonged coma,Condition,SNOMED,Disorder,S,210039000,2002-01-31,2099-12-31,NA
+4019263,Concussion with less than 1 hour loss of consciousness,Condition,SNOMED,Disorder,S,209827006,2002-01-31,2099-12-31,NA
+4035682,Chronic confusion,Observation,SNOMED,Clinical Finding,S,130988005,2002-01-31,2099-12-31,NA
+4038794,Acute confusion,Observation,SNOMED,Clinical Finding,S,130987000,2002-01-31,2099-12-31,NA
+4043563,Excessive daytime sleepiness with sleep paralysis,Condition,SNOMED,Disorder,S,230492006,2002-01-31,2099-12-31,NA
+4043888,Post-ictal coma,Condition,SNOMED,Disorder,S,230801000,2002-01-31,2099-12-31,NA
+4045847,Post-traumatic coma,Condition,SNOMED,Disorder,S,230799003,2002-01-31,2099-12-31,NA
+4045848,Alcoholic coma,Condition,SNOMED,Disorder,S,230800004,2002-01-31,2099-12-31,NA
+4048804,Pituitary coma,Condition,SNOMED,Disorder,S,230795009,2002-01-31,2099-12-31,NA
+4048805,Non-diabetic hypoglycemic coma,Condition,SNOMED,Disorder,S,230796005,2002-01-31,2099-12-31,NA
+4048806,Post-anoxic coma,Condition,SNOMED,Disorder,S,230797001,2002-01-31,2099-12-31,NA
+4048807,Hypothermic coma,Condition,SNOMED,Disorder,S,230798006,2002-01-31,2099-12-31,NA
+4053712,Syncope caused by centrifugal force in flying,Condition,SNOMED,Clinical Finding,S,242030003,2002-01-31,2099-12-31,NA
+4059416,Myxedema coma,Condition,SNOMED,Disorder,S,21263006,2002-01-31,2099-12-31,NA
+4077017,Sedated,Observation,SNOMED,Clinical Finding,S,17971005,2002-01-31,2099-12-31,NA
+4078686,Seems in a dream,Observation,SNOMED,Clinical Finding,S,19129003,2002-01-31,2099-12-31,NA
+4083373,Drug-induced coma,Condition,SNOMED,Disorder,S,281510005,2002-01-31,2099-12-31,NA
+4084430,Hypoxic-ischemic coma,Condition,SNOMED,Disorder,S,281509000,2002-01-31,2099-12-31,NA
+4085732,Intermittent confusion,Observation,SNOMED,Clinical Finding,S,281793005,2002-01-31,2099-12-31,NA
+4087467,Feeling faint,Observation,SNOMED,Clinical Finding,S,248223005,2002-01-31,2099-12-31,NA
+4087468,Seems in a trance,Observation,SNOMED,Clinical Finding,S,248225003,2002-01-31,2099-12-31,NA
+4093832,Absences,Observation,SNOMED,Clinical Finding,S,248227006,2002-01-31,2099-12-31,NA
+4093833,Funny turn,Observation,SNOMED,Clinical Finding,S,248228001,2002-01-31,2099-12-31,NA
+4095288,Ketoacidotic coma due to diabetes mellitus,Condition,SNOMED,Disorder,S,26298008,2002-01-31,2099-12-31,NA
+4098310,Psychogenic stupor,Condition,SNOMED,Disorder,S,191683009,2002-01-31,2099-12-31,NA
+4102966,Acute stupor state due to acute stress reaction,Condition,SNOMED,Disorder,S,192039002,2002-01-31,2099-12-31,NA
+4108537,Disorder of excessive somnolence,Condition,SNOMED,Disorder,S,194439006,2002-01-31,2099-12-31,NA
+4116724,Vacant episode,Observation,SNOMED,Clinical Finding,S,285741001,2002-01-31,2099-12-31,NA
+4119784,Defecation syncope,Condition,SNOMED,Clinical Finding,S,234169009,2002-01-31,2099-12-31,NA
+4120935,Malignant vasovagal syndrome,Condition,SNOMED,Clinical Finding,S,234164004,2002-01-31,2099-12-31,NA
+4120936,Vasovagal syncope due to immersion,Condition,SNOMED,Clinical Finding,S,234166002,2002-01-31,2099-12-31,NA
+4121812,Situational syncope,Condition,SNOMED,Clinical Finding,S,234167006,2002-01-31,2099-12-31,NA
+4121813,Micturition syncope,Condition,SNOMED,Clinical Finding,S,234168001,2002-01-31,2099-12-31,NA
+4125000,Elderly vasovagal syndrome,Condition,SNOMED,Clinical Finding,S,234165003,2002-01-31,2099-12-31,NA
+4125001,Deglutition syncope,Condition,SNOMED,Clinical Finding,S,234170005,2002-01-31,2099-12-31,NA
+4132082,Traumatic brain injury with loss of consciousness,Condition,SNOMED,Disorder,S,127298000,2002-01-31,2099-12-31,NA
+4132083,Traumatic brain injury with brief loss of consciousness,Condition,SNOMED,Disorder,S,127299008,2002-01-31,2099-12-31,NA
+4133017,Traumatic brain injury with moderate loss of consciousness,Condition,SNOMED,Disorder,S,127300000,2002-01-31,2099-12-31,NA
+4133018,Traumatic brain injury with prolonged loss of consciousness,Condition,SNOMED,Disorder,S,127301001,2002-01-31,2099-12-31,NA
+4135923,Grayout,Observation,SNOMED,Clinical Finding,S,31804002,2002-01-31,2099-12-31,NA
+4147917,Drugged state,Observation,SNOMED,Clinical Finding,S,34951003,2002-01-31,2099-12-31,NA
+4149868,Gets drowsiness,Observation,SNOMED,Clinical Finding,S,267088000,2002-01-31,2099-12-31,NA
+4152074,Effort syncope,Condition,SNOMED,Clinical Finding,S,31457007,2002-01-31,2099-12-31,NA
+4152347,Drowsy,Observation,SNOMED,Clinical Finding,S,271782001,2002-01-31,2099-12-31,NA
+4154638,Stokes-Adams attack,Condition,SNOMED,Disorder,S,271547004,2002-01-31,2099-12-31,NA
+4154699,Traumatic intracranial subdural hematoma with brief loss of consciousness,Condition,SNOMED,Disorder,S,371050006,2002-07-31,2099-12-31,NA
+4158341,Semiconscious,Observation,SNOMED,Clinical Finding,S,271783006,2002-01-31,2099-12-31,NA
+4158978,Somnolence syndrome,Condition,SNOMED,Disorder,S,370971007,2002-07-31,2099-12-31,NA
+4162208,Syncope due to orthostatic hypotension,Condition,SNOMED,Clinical Finding,S,432524006,2008-07-31,2099-12-31,NA
+4162976,Vasovagal syncope,Condition,SNOMED,Clinical Finding,S,398665005,2003-07-31,2099-12-31,NA
+4164633,Clouded consciousness,Observation,SNOMED,Clinical Finding,S,40917007,2002-01-31,2099-12-31,NA
+4168031,Unconscious,Observation,SNOMED,Clinical Finding,S,418107008,2006-01-31,2099-12-31,NA
+4168294,Nitrogen narcosis,Condition,SNOMED,Disorder,S,48620000,2002-01-31,2099-12-31,NA
+4170464,Post-cardiorespiratory arrest coma,Condition,SNOMED,Disorder,S,275470000,2002-01-31,2099-12-31,NA
+4187714,Excessive somnolence,Observation,SNOMED,Clinical Finding,S,372947007,2002-07-31,2099-12-31,NA
+4199932,Intermittent drowsiness,Observation,SNOMED,Clinical Finding,S,315243006,2002-01-31,2099-12-31,NA
+4206148,Syncope and collapse,Condition,SNOMED,Clinical Finding,S,309585006,2002-01-31,2099-12-31,NA
+4206874,Intracranial injury with prolonged coma without open wound,Condition,SNOMED,Disorder,S,311827003,2002-01-31,2099-12-31,NA
+4209118,Post-ictal drowsiness,Condition,SNOMED,Clinical Finding,S,313432002,2002-01-31,2099-12-31,NA
+4210440,Intracranial injury with prolonged coma with open wound,Condition,SNOMED,Disorder,S,311829000,2002-01-31,2099-12-31,NA
+4218239,Whiteout,Observation,SNOMED,Clinical Finding,S,81879005,2002-01-31,2099-12-31,NA
+4221933,Coma due to malnutrition-related diabetes mellitus,Condition,SNOMED,Disorder,S,420996007,2006-07-31,2099-12-31,NA
+4223734,Non-ketotic non-hyperosmolar coma due to diabetes mellitus,Condition,SNOMED,Disorder,S,421966007,2006-07-31,2099-12-31,NA
+4224254,Ketoacidotic coma due to type 1 diabetes mellitus,Condition,SNOMED,Disorder,S,421075007,2006-07-31,2099-12-31,NA
+4226238,Hyperosmolar coma due to diabetes mellitus,Condition,SNOMED,Disorder,S,422126006,2006-07-31,2099-12-31,NA
+4226798,Hypoglycemic coma due to diabetes mellitus,Condition,SNOMED,Disorder,S,421725003,2006-07-31,2099-12-31,NA
+4228112,Hypoglycemic coma due to type 1 diabetes mellitus,Condition,SNOMED,Disorder,S,421437000,2006-07-31,2099-12-31,NA
+4228443,Ketoacidotic coma due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,421847006,2006-07-31,2099-12-31,NA
+4229670,Convulsive syncope,Condition,SNOMED,Clinical Finding,S,438113009,2009-01-31,2099-12-31,NA
+4229897,Stupor,Observation,SNOMED,Clinical Finding,S,89458003,2002-01-31,2099-12-31,NA
+4231885,Narcosis,Observation,SNOMED,Clinical Finding,S,90172009,2002-01-31,2099-12-31,NA
+4234105,Tussive syncope,Condition,SNOMED,Clinical Finding,S,90129003,2002-01-31,2099-12-31,NA
+4240219,Hypotensive syncope,Condition,SNOMED,Clinical Finding,S,58077008,2002-01-31,2099-12-31,NA
+4248425,Irreversible coma,Condition,SNOMED,Disorder,S,73453007,2002-01-31,2099-12-31,NA
+4290701,Hypnotic state,Observation,SNOMED,Clinical Finding,S,70503004,2002-01-31,2099-12-31,NA
+4297376,Lightheadedness,Observation,SNOMED,Clinical Finding,S,386705008,2003-01-31,2099-12-31,NA
+4302044,Somnolence syndrome following radiotherapy,Condition,SNOMED,Disorder,S,418424006,2006-01-31,2099-12-31,NA
+4302523,Psychogenic syncope,Condition,SNOMED,Disorder,S,386572005,2003-01-31,2099-12-31,NA
+4303087,Delirious,Observation,SNOMED,Clinical Finding,S,419567006,2006-01-31,2099-12-31,NA
+4308946,Hepatic coma due to chronic hepatitis B,Condition,SNOMED,Disorder,S,424340000,2007-01-31,2099-12-31,NA
+4314443,Hepatic coma due to acute hepatitis B,Condition,SNOMED,Disorder,S,424099008,2007-01-31,2099-12-31,NA
+4316365,Uremic coma,Condition,SNOMED,Disorder,S,95569006,2002-01-31,2099-12-31,NA
+4318860,Drowsiness of the newborn,Condition,SNOMED,Disorder,S,95631006,2002-01-31,2099-12-31,NA
+4347540,Rabies coma,Condition,SNOMED,Disorder,S,240464004,2002-01-31,2099-12-31,NA
+35622321,Idiopathic recurrent stupor,Condition,SNOMED,Disorder,S,763739002,2018-07-31,2099-12-31,NA
+36712926,Nonspecific paroxysmal spell,Observation,SNOMED,Clinical Finding,S,15625571000119102,2017-01-31,2099-12-31,NA
+36714116,Hypoglycemic coma due to type 2 diabetes mellitus,Condition,SNOMED,Disorder,S,719216001,2017-01-31,2099-12-31,NA
+36716914,Syncope due to autonomic failure,Condition,SNOMED,Clinical Finding,S,723148003,2017-01-31,2099-12-31,NA
+36716918,Minimally conscious state plus,Condition,SNOMED,Disorder,S,723152003,2017-01-31,2099-12-31,NA
+36716919,Minimally conscious state minus,Condition,SNOMED,Disorder,S,723153008,2017-01-31,2099-12-31,NA
+37016355,Hyperosmolar coma due to secondary diabetes mellitus,Condition,SNOMED,Disorder,S,368601000119102,2016-01-31,2099-12-31,NA
+37109288,Traumatic subarachnoid hemorrhage with loss of consciousness,Condition,SNOMED,Disorder,S,329671000119106,2017-07-31,2099-12-31,NA
+37161445,Myxedema coma due to subclinical hypothyroidism,Condition,SNOMED,Disorder,S,1179376009,2021-11-30,2099-12-31,NA
+37161485,Iatrogenic myxedema coma,Condition,SNOMED,Disorder,S,1179455003,2021-11-30,2099-12-31,NA
+37163461,Drug-induced insulin coma in nondiabetic,Condition,SNOMED,Disorder,S,1217077001,2022-04-30,2099-12-31,NA
+37312020,Cardiac syncope,Condition,SNOMED,Clinical Finding,S,788877005,2020-01-31,2099-12-31,NA
+37312516,Post-injection delirium sedation syndrome,Observation,SNOMED,Clinical Finding,S,792858001,2020-01-31,2099-12-31,NA
+40481424,Decreased level of consciousness,Observation,SNOMED,Clinical Finding,S,443371007,2010-01-31,2099-12-31,NA
+40484193,Witnessed syncope,Condition,SNOMED,Clinical Finding,S,445535007,2010-07-31,2099-12-31,NA
+42536603,Hyperosmolar hyperglycemic coma due to diabetes mellitus without ketoacidosis,Condition,SNOMED,Disorder,S,735537007,2018-01-31,2099-12-31,NA
+42536710,Incomplete loss of consciousness without amnesia,Observation,SNOMED,Clinical Finding,S,735662004,2018-01-31,2099-12-31,NA
+42537140,Dissociative neurological symptom disorder co-occurrent with alteration of consciousness,Condition,SNOMED,Disorder,S,736315009,2018-01-31,2099-12-31,NA
+42574152,Non-cardiogenic syncope,Condition,SNOMED Veterinary,Clinical Finding,S,359001000009103,2017-03-27,2099-12-31,NA
+42872394,Daytime somnolence,Observation,SNOMED,Clinical Finding,S,141000119100,2012-07-31,2099-12-31,NA
+43530669,Ischemic stroke with coma,Condition,SNOMED,Disorder,S,140911000119109,2013-07-31,2099-12-31,NA
+44784464,Closed fracture of vault of skull with loss of consciousness,Condition,SNOMED,Disorder,S,698616008,2014-01-31,2099-12-31,NA
+44784466,Open fracture of vault of skull with loss of consciousness,Condition,SNOMED,Disorder,S,698618009,2014-01-31,2099-12-31,NA
+44784468,Closed fracture of base of skull with loss of consciousness,Condition,SNOMED,Disorder,S,698620007,2014-01-31,2099-12-31,NA
+46269697,Hepatic coma due to hepatitis,Condition,SNOMED,Disorder,S,103931000119102,2015-07-31,2099-12-31,NA
+46269814,Hepatic coma due to acute hepatic failure,Condition,SNOMED,Disorder,S,1082511000119102,2015-07-31,2099-12-31,NA
+46269818,Hepatic coma due to alcoholic liver failure,Condition,SNOMED,Disorder,S,1082621000119108,2015-07-31,2099-12-31,NA
+46269836,Hepatic coma due to chronic hepatic failure,Condition,SNOMED,Disorder,S,1085091000119108,2015-07-31,2099-12-31,NA
+46269949,Hepatic coma due to subacute liver failure,Condition,SNOMED,Disorder,S,1092691000119109,2015-07-31,2099-12-31,NA
+46270037,Hepatic coma due to acute hepatitis C,Condition,SNOMED,Disorder,S,125921000119106,2015-07-31,2099-12-31,NA
+46270142,Hepatic coma due to chronic hepatitis C,Condition,SNOMED,Disorder,S,146371000119104,2015-07-31,2099-12-31,NA
+46270152,Hepatic coma due to chronic hepatitis B with delta agent,Condition,SNOMED,Disorder,S,153091000119109,2015-07-31,2099-12-31,NA
+46270996,Minimally conscious state,Condition,SNOMED,Disorder,S,709012003,2015-07-31,2099-12-31,NA

@@ -1,0 +1,417 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+506638,Under care of health visitor,Observation,SNOMED,Clinical Finding,S,1052751000000108,2016-10-01,2099-12-31,NA
+601788,Mild food insecurity on United States household food security survey module,Observation,SNOMED,Clinical Finding,S,470911000124109,2021-09-01,2099-12-31,NA
+601790,Moderate food insecurity on United States household food security survey module,Observation,SNOMED,Clinical Finding,S,470941000124108,2021-09-01,2099-12-31,NA
+601791,Severe food insecurity on United States household food security survey module,Observation,SNOMED,Clinical Finding,S,470951000124105,2021-09-01,2099-12-31,NA
+601831,Under care of physician assistant,Observation,SNOMED,Clinical Finding,S,471431000124102,2021-09-01,2099-12-31,NA
+602662,Food security,Observation,SNOMED,Clinical Finding,S,1078229009,2021-01-31,2099-12-31,NA
+603165,Effective protective ability,Observation,SNOMED,Clinical Finding,S,1156934008,2021-07-31,2099-12-31,NA
+605672,Able to participate in care planning,Observation,SNOMED,Clinical Finding,S,1137426009,2021-07-31,2099-12-31,NA
+607009,Able to perform health maintenance,Observation,SNOMED,Clinical Finding,S,1148972003,2021-07-31,2099-12-31,NA
+607607,Limited access to nutrition supplies,Observation,SNOMED,Clinical Finding,S,1155680000,2021-07-31,2099-12-31,NA
+761929,Under care of multiple providers,Observation,SNOMED,Clinical Finding,S,2091000124100,2011-08-01,2099-12-31,NA
+764365,Unable to afford medication,Observation,SNOMED,Clinical Finding,S,454061000124102,2017-09-01,2099-12-31,NA
+764690,Unable to afford glucose monitoring device,Observation,SNOMED,Clinical Finding,S,5371000175108,2016-03-01,2099-12-31,NA
+765484,Unable to afford blood pressure monitor,Observation,SNOMED,Clinical Finding,S,5521000175101,2016-03-01,2099-12-31,NA
+765498,Unable to afford weight scale,Observation,SNOMED,Clinical Finding,S,5731000175109,2016-03-01,2099-12-31,NA
+1076413,Inadequate digital access affecting health care,Observation,SNOMED,Clinical Finding,S,1343356001,2024-08-01,2099-12-31,NA
+1077497,Inadequate digital access due to inadequate internet service in geographical region,Observation,SNOMED,Clinical Finding,S,861171000124107,2024-09-01,2099-12-31,NA
+1245915,Has plan for transition from paediatric specialist to adult specialist care,Observation,SNOMED,Clinical Finding,S,1854501000000108,2023-11-22,2099-12-31,NA
+1245916,Under care of paediatric specialist and adult health service,Observation,SNOMED,Clinical Finding,S,1854511000000105,2023-11-22,2099-12-31,NA
+1448932,Inadequate digital literacy skills affecting health care,Observation,SNOMED,Clinical Finding,S,1344884006,2024-09-01,2099-12-31,NA
+1450080,Household energy poverty due to energy service disruption in geographical region,Observation,SNOMED,Clinical Finding,S,1354888004,2025-01-01,2099-12-31,NA
+3196520,Ineffective self health management,Observation,Nebraska Lexicon,Clinical Finding,S,30620001000004102,2016-01-28,2099-12-31,NA
+3661911,Personalised Care and Support Plan agreed,Observation,SNOMED,Clinical Finding,S,1187911000000105,2020-08-05,2099-12-31,NA
+4030758,Communication with community resources,Observation,SNOMED,Clinical Finding,S,129686009,2002-01-31,2099-12-31,NA
+4031364,Healthcare supervision finding,Observation,SNOMED,Clinical Finding,S,129825007,2002-01-31,2099-12-31,NA
+4031369,Health management finding,Observation,SNOMED,Clinical Finding,S,129843006,2002-01-31,2099-12-31,NA
+4032525,Ineffective protection,Observation,SNOMED,Clinical Finding,S,129837009,2002-01-31,2099-12-31,NA
+4039433,Difficulty coping with pain,Observation,SNOMED,Clinical Finding,S,16399001,2002-01-31,2099-12-31,NA
+4047210,Under care of community alcohol team,Observation,SNOMED,Clinical Finding,S,135827004,2002-01-31,2099-12-31,NA
+4047215,Has community mental health team key worker,Observation,SNOMED,Clinical Finding,S,135846003,2002-01-31,2099-12-31,NA
+4047988,Has support worker,Observation,SNOMED,Clinical Finding,S,135821003,2002-01-31,2099-12-31,NA
+4047989,Under care of community drug team,Observation,SNOMED,Clinical Finding,S,135828009,2002-01-31,2099-12-31,NA
+4073196,Health maintenance alteration,Observation,SNOMED,Clinical Finding,S,24441001,2002-01-31,2099-12-31,NA
+4124067,Under care of genetic counselor,Observation,SNOMED,Clinical Finding,S,305441001,2002-01-31,2099-12-31,NA
+4124068,Under care of homeopath,Observation,SNOMED,Clinical Finding,S,305447002,2002-01-31,2099-12-31,NA
+4124069,Under care of osteopath,Observation,SNOMED,Clinical Finding,S,305449004,2002-01-31,2099-12-31,NA
+4124070,Under care of radiotherapist,Observation,SNOMED,Clinical Finding,S,305454008,2002-01-31,2099-12-31,NA
+4124071,Under care of GP,Observation,SNOMED,Clinical Finding,S,305455009,2002-01-31,2099-12-31,NA
+4124072,Under care of clinical allergist,Observation,SNOMED,Clinical Finding,S,305471009,2002-01-31,2099-12-31,NA
+4124073,Under care of clinical neurophysiologist,Observation,SNOMED,Clinical Finding,S,305478003,2002-01-31,2099-12-31,NA
+4124074,Under care of clinical pharmacologist,Observation,SNOMED,Clinical Finding,S,305479006,2002-01-31,2099-12-31,NA
+4124075,Under care of dermatologist,Observation,SNOMED,Clinical Finding,S,305481008,2002-01-31,2099-12-31,NA
+4124076,Under care of gastroenterologist,Observation,SNOMED,Clinical Finding,S,305483006,2002-01-31,2099-12-31,NA
+4124077,Under care of geneticist,Observation,SNOMED,Clinical Finding,S,305485004,2002-01-31,2099-12-31,NA
+4124078,Under care of nephrologist,Observation,SNOMED,Clinical Finding,S,305493004,2002-01-31,2099-12-31,NA
+4124079,Under care of neurologist,Observation,SNOMED,Clinical Finding,S,305494005,2002-01-31,2099-12-31,NA
+4124080,Under care of nuclear medicine physician,Observation,SNOMED,Clinical Finding,S,305495006,2002-01-31,2099-12-31,NA
+4124081,Under care of pediatrician,Observation,SNOMED,Clinical Finding,S,305500009,2002-01-31,2099-12-31,NA
+4124082,Under care of general pathologist,Observation,SNOMED,Clinical Finding,S,305508002,2002-01-31,2099-12-31,NA
+4124083,Under care of immunopathologist,Observation,SNOMED,Clinical Finding,S,305510000,2002-01-31,2099-12-31,NA
+4124084,Under care of neuropathologist,Observation,SNOMED,Clinical Finding,S,305512008,2002-01-31,2099-12-31,NA
+4124085,Under care of child and adolescent psychiatrist,Observation,SNOMED,Clinical Finding,S,305514009,2002-01-31,2099-12-31,NA
+4124086,Under care of forensic psychiatrist,Observation,SNOMED,Clinical Finding,S,305515005,2002-01-31,2099-12-31,NA
+4124087,Under care of obstetrician and gynecologist,Observation,SNOMED,Clinical Finding,S,305520005,2002-01-31,2099-12-31,NA
+4124088,Under care of obstetrician,Observation,SNOMED,Clinical Finding,S,305522002,2002-01-31,2099-12-31,NA
+4124089,Under care of cardiothoracic surgeon,Observation,SNOMED,Clinical Finding,S,305527008,2002-01-31,2099-12-31,NA
+4124090,Under care of dental surgeon,Observation,SNOMED,Clinical Finding,S,305530001,2002-01-31,2099-12-31,NA
+4124091,Under care of restorative dentist,Observation,SNOMED,Clinical Finding,S,305533004,2002-01-31,2099-12-31,NA
+4124092,"Under care of ear, nose and throat surgeon",Observation,SNOMED,Clinical Finding,S,305534005,2002-01-31,2099-12-31,NA
+4124093,Under care of endocrine surgeon,Observation,SNOMED,Clinical Finding,S,305535006,2002-01-31,2099-12-31,NA
+4124094,Under care of gastrointestinal surgeon,Observation,SNOMED,Clinical Finding,S,305536007,2002-01-31,2099-12-31,NA
+4124095,Under care of colorectal surgeon,Observation,SNOMED,Clinical Finding,S,305539000,2002-01-31,2099-12-31,NA
+4124096,Under care of general surgeon,Observation,SNOMED,Clinical Finding,S,305540003,2002-01-31,2099-12-31,NA
+4124097,Under care of pediatric surgeon,Observation,SNOMED,Clinical Finding,S,305547000,2002-01-31,2099-12-31,NA
+4124098,Under care of pancreatic surgeon,Observation,SNOMED,Clinical Finding,S,305548005,2002-01-31,2099-12-31,NA
+4124099,Under care of transplant surgeon,Observation,SNOMED,Clinical Finding,S,305550002,2002-01-31,2099-12-31,NA
+4124100,Under care of trauma surgeon,Observation,SNOMED,Clinical Finding,S,305551003,2002-01-31,2099-12-31,NA
+4124211,Under care of agency nurse,Observation,SNOMED,Clinical Finding,S,305555007,2002-01-31,2099-12-31,NA
+4124212,Under care of contact tracing nurse,Observation,SNOMED,Clinical Finding,S,305559001,2002-01-31,2099-12-31,NA
+4124213,Under care of genitourinary nurse,Observation,SNOMED,Clinical Finding,S,305562003,2002-01-31,2099-12-31,NA
+4124214,Under care of Marie Curie nurse,Observation,SNOMED,Clinical Finding,S,305564002,2002-01-31,2099-12-31,NA
+4124215,Under care of nurse psychotherapist,Observation,SNOMED,Clinical Finding,S,305567009,2002-01-31,2099-12-31,NA
+4124216,Under care of rheumatology nurse specialist,Observation,SNOMED,Clinical Finding,S,305572000,2002-01-31,2099-12-31,NA
+4124217,Under care of stoma nurse,Observation,SNOMED,Clinical Finding,S,305573005,2002-01-31,2099-12-31,NA
+4124218,Under care of community psychiatric nurse,Observation,SNOMED,Clinical Finding,S,305575003,2002-01-31,2099-12-31,NA
+4124219,Under care of district nurse,Observation,SNOMED,Clinical Finding,S,305578001,2002-01-31,2099-12-31,NA
+4124220,Under care of hospital-based midwife,Observation,SNOMED,Clinical Finding,S,305588000,2002-01-31,2099-12-31,NA
+4124221,Under care of arts therapist,Observation,SNOMED,Clinical Finding,S,305591000,2002-01-31,2099-12-31,NA
+4124222,Under care of dance therapist,Observation,SNOMED,Clinical Finding,S,305593002,2002-01-31,2099-12-31,NA
+4124223,Under care of audiologist,Observation,SNOMED,Clinical Finding,S,305597001,2002-01-31,2099-12-31,NA
+4124224,Under care of hospital-based physiotherapist,Observation,SNOMED,Clinical Finding,S,305615004,2002-01-31,2099-12-31,NA
+4128747,Under care of chiropractor,Observation,SNOMED,Clinical Finding,S,305446006,2002-01-31,2099-12-31,NA
+4128748,Under care of anesthetist,Observation,SNOMED,Clinical Finding,S,305452007,2002-01-31,2099-12-31,NA
+4128749,Under care of own GP,Observation,SNOMED,Clinical Finding,S,305456005,2002-01-31,2099-12-31,NA
+4128750,Under care of adult intensive care specialist,Observation,SNOMED,Clinical Finding,S,305466002,2002-01-31,2099-12-31,NA
+4128751,Under care of pain management specialist,Observation,SNOMED,Clinical Finding,S,305469009,2002-01-31,2099-12-31,NA
+4128753,Under care of clinical immunologist,Observation,SNOMED,Clinical Finding,S,305477008,2002-01-31,2099-12-31,NA
+4128754,Under care of clinical physiologist,Observation,SNOMED,Clinical Finding,S,305480009,2002-01-31,2099-12-31,NA
+4128755,Under care of clinical geneticist,Observation,SNOMED,Clinical Finding,S,305486003,2002-01-31,2099-12-31,NA
+4128756,Under care of clinical molecular geneticist,Observation,SNOMED,Clinical Finding,S,305488002,2002-01-31,2099-12-31,NA
+4128757,Under care of infectious diseases physician,Observation,SNOMED,Clinical Finding,S,305491002,2002-01-31,2099-12-31,NA
+4128758,Under care of medical ophthalmologist,Observation,SNOMED,Clinical Finding,S,305492009,2002-01-31,2099-12-31,NA
+4128759,Under care of radiologist,Observation,SNOMED,Clinical Finding,S,305497003,2002-01-31,2099-12-31,NA
+4128760,Under care of community pediatrician,Observation,SNOMED,Clinical Finding,S,305501008,2002-01-31,2099-12-31,NA
+4128761,Under care of neonatologist,Observation,SNOMED,Clinical Finding,S,305502001,2002-01-31,2099-12-31,NA
+4128762,Under care of pathologist,Observation,SNOMED,Clinical Finding,S,305505004,2002-01-31,2099-12-31,NA
+4128763,Under care of liaison psychiatrist,Observation,SNOMED,Clinical Finding,S,305516006,2002-01-31,2099-12-31,NA
+4128764,Under care of rehabilitation psychiatrist,Observation,SNOMED,Clinical Finding,S,305519004,2002-01-31,2099-12-31,NA
+4131382,Clinical management plan agreed,Observation,SNOMED,Clinical Finding,S,413094005,2004-07-31,2099-12-31,NA
+4131513,Under care of pediatric specialist nurse,Observation,SNOMED,Clinical Finding,S,413151002,2004-07-31,2099-12-31,NA
+4131514,Under care of pediatric dietitian,Observation,SNOMED,Clinical Finding,S,413152009,2004-07-31,2099-12-31,NA
+4134412,Staff member inadequately supervised,Observation,SNOMED,Clinical Finding,S,397976005,2003-07-31,2099-12-31,NA
+4134549,Staff member inadequately assisted,Observation,SNOMED,Clinical Finding,S,398087002,2003-07-31,2099-12-31,NA
+4134868,Staff member fatigued,Observation,SNOMED,Clinical Finding,S,398051009,2003-07-31,2099-12-31,NA
+4136471,Under care of occupational health physician,Observation,SNOMED,Clinical Finding,S,305523007,2002-01-31,2099-12-31,NA
+4136472,Under care of thoracic surgeon,Observation,SNOMED,Clinical Finding,S,305528003,2002-01-31,2099-12-31,NA
+4136473,Under care of general gastrointestinal surgeon,Observation,SNOMED,Clinical Finding,S,305537003,2002-01-31,2099-12-31,NA
+4136474,Under care of hand surgeon,Observation,SNOMED,Clinical Finding,S,305541004,2002-01-31,2099-12-31,NA
+4136475,Under care of urologist,Observation,SNOMED,Clinical Finding,S,305552005,2002-01-31,2099-12-31,NA
+4136476,Under care of vascular surgeon,Observation,SNOMED,Clinical Finding,S,305553000,2002-01-31,2099-12-31,NA
+4136477,Under care of cardiac rehabilitation nurse,Observation,SNOMED,Clinical Finding,S,305558009,2002-01-31,2099-12-31,NA
+4136478,Under care of continence nurse,Observation,SNOMED,Clinical Finding,S,305560006,2002-01-31,2099-12-31,NA
+4136479,Under care of diabetic liaison nurse,Observation,SNOMED,Clinical Finding,S,305561005,2002-01-31,2099-12-31,NA
+4136481,Under care of lymphedema care nurse,Observation,SNOMED,Clinical Finding,S,305565001,2002-01-31,2099-12-31,NA
+4136482,Under care of nurse behavioral therapist,Observation,SNOMED,Clinical Finding,S,305566000,2002-01-31,2099-12-31,NA
+4136483,Under care of psychiatric nurse,Observation,SNOMED,Clinical Finding,S,305570008,2002-01-31,2099-12-31,NA
+4136484,Under care of community-based nurse,Observation,SNOMED,Clinical Finding,S,305574004,2002-01-31,2099-12-31,NA
+4136486,Under care of liaison nurse,Observation,SNOMED,Clinical Finding,S,305582004,2002-01-31,2099-12-31,NA
+4136487,Under care of outreach nurse,Observation,SNOMED,Clinical Finding,S,305584003,2002-01-31,2099-12-31,NA
+4136488,Under care of community-based midwife,Observation,SNOMED,Clinical Finding,S,305587005,2002-01-31,2099-12-31,NA
+4136489,Under care of professional allied to medicine,Observation,SNOMED,Clinical Finding,S,305590004,2002-01-31,2099-12-31,NA
+4136490,Under care of drama therapist,Observation,SNOMED,Clinical Finding,S,305594008,2002-01-31,2099-12-31,NA
+4136491,Under care of music therapist,Observation,SNOMED,Clinical Finding,S,305595009,2002-01-31,2099-12-31,NA
+4136492,Under care of community-based occupational therapist,Observation,SNOMED,Clinical Finding,S,305606006,2002-01-31,2099-12-31,NA
+4136493,Under care of social services department occupational therapist,Observation,SNOMED,Clinical Finding,S,305607002,2002-01-31,2099-12-31,NA
+4136611,Under care of community-based physiotherapist,Observation,SNOMED,Clinical Finding,S,305614000,2002-01-31,2099-12-31,NA
+4136612,Under care of hospital-based speech and language therapist,Observation,SNOMED,Clinical Finding,S,305618002,2002-01-31,2099-12-31,NA
+4138060,Under care of counselor,Observation,SNOMED,Clinical Finding,S,305439002,2002-01-31,2099-12-31,NA
+4138061,Under care of mental health counselor,Observation,SNOMED,Clinical Finding,S,305443003,2002-01-31,2099-12-31,NA
+4138062,Under care of complementary therapist,Observation,SNOMED,Clinical Finding,S,305444009,2002-01-31,2099-12-31,NA
+4138063,Under care of acupuncturist,Observation,SNOMED,Clinical Finding,S,305445005,2002-01-31,2099-12-31,NA
+4138064,Under care of clinical oncologist,Observation,SNOMED,Clinical Finding,S,305453002,2002-01-31,2099-12-31,NA
+4138065,Under care of intensive care specialist,Observation,SNOMED,Clinical Finding,S,305465003,2002-01-31,2099-12-31,NA
+4138066,Under care of pediatric intensive care specialist,Observation,SNOMED,Clinical Finding,S,305468001,2002-01-31,2099-12-31,NA
+4138067,Under care of thoracic physician,Observation,SNOMED,Clinical Finding,S,305474001,2002-01-31,2099-12-31,NA
+4138068,Under care of endocrinologist,Observation,SNOMED,Clinical Finding,S,305482001,2002-01-31,2099-12-31,NA
+4138069,Under care of clinical cytogeneticist,Observation,SNOMED,Clinical Finding,S,305487007,2002-01-31,2099-12-31,NA
+4138194,Under care of care of the elderly physician,Observation,SNOMED,Clinical Finding,S,305490001,2002-01-31,2099-12-31,NA
+4138195,Under care of palliative care physician,Observation,SNOMED,Clinical Finding,S,305496007,2002-01-31,2099-12-31,NA
+4138196,Under care of rheumatologist,Observation,SNOMED,Clinical Finding,S,305499000,2002-01-31,2099-12-31,NA
+4138197,Under care of chemical pathologist,Observation,SNOMED,Clinical Finding,S,305507007,2002-01-31,2099-12-31,NA
+4138199,Under care of gynecologist,Observation,SNOMED,Clinical Finding,S,305521009,2002-01-31,2099-12-31,NA
+4138200,Under care of breast surgeon,Observation,SNOMED,Clinical Finding,S,305526004,2002-01-31,2099-12-31,NA
+4138201,Under care of cardiac surgeon,Observation,SNOMED,Clinical Finding,S,305529006,2002-01-31,2099-12-31,NA
+4138202,Under care of pediatric dentist,Observation,SNOMED,Clinical Finding,S,305532009,2002-01-31,2099-12-31,NA
+4138203,Under care of upper gastrointestinal surgeon,Observation,SNOMED,Clinical Finding,S,305538008,2002-01-31,2099-12-31,NA
+4138204,Under care of hepatobiliary surgeon,Observation,SNOMED,Clinical Finding,S,305542006,2002-01-31,2099-12-31,NA
+4138205,Under care of ophthalmologist,Observation,SNOMED,Clinical Finding,S,305544007,2002-01-31,2099-12-31,NA
+4138206,Under care of orthopedic surgeon,Observation,SNOMED,Clinical Finding,S,305546009,2002-01-31,2099-12-31,NA
+4138207,Under care of plastic surgeon,Observation,SNOMED,Clinical Finding,S,305549002,2002-01-31,2099-12-31,NA
+4138208,Under care of nurse,Observation,SNOMED,Clinical Finding,S,305554006,2002-01-31,2099-12-31,NA
+4138209,Under care of breast care nurse,Observation,SNOMED,Clinical Finding,S,305557004,2002-01-31,2099-12-31,NA
+4138210,Under care of pain management nurse,Observation,SNOMED,Clinical Finding,S,305568004,2002-01-31,2099-12-31,NA
+4138211,Under care of company nurse,Observation,SNOMED,Clinical Finding,S,305577006,2002-01-31,2099-12-31,NA
+4138212,Under care of practice nurse,Observation,SNOMED,Clinical Finding,S,305580007,2002-01-31,2099-12-31,NA
+4138213,Under care of psychotherapist,Observation,SNOMED,Clinical Finding,S,305589008,2002-01-31,2099-12-31,NA
+4138214,Under care of play therapist,Observation,SNOMED,Clinical Finding,S,305596005,2002-01-31,2099-12-31,NA
+4139067,Under care of bereavement counselor,Observation,SNOMED,Clinical Finding,S,305440000,2002-01-31,2099-12-31,NA
+4139068,Under care of marriage guidance counselor,Observation,SNOMED,Clinical Finding,S,305442008,2002-01-31,2099-12-31,NA
+4139069,Under care of hypnotherapist,Observation,SNOMED,Clinical Finding,S,305448007,2002-01-31,2099-12-31,NA
+4139070,Under care of doctor,Observation,SNOMED,Clinical Finding,S,305450004,2002-01-31,2099-12-31,NA
+4139071,Under care of Accident and Emergency doctor,Observation,SNOMED,Clinical Finding,S,305451000,2002-01-31,2099-12-31,NA
+4139072,Under care of GP partner,Observation,SNOMED,Clinical Finding,S,305457001,2002-01-31,2099-12-31,NA
+4139073,Under care of family planning doctor,Observation,SNOMED,Clinical Finding,S,305464004,2002-01-31,2099-12-31,NA
+4139074,Under care of cardiologist,Observation,SNOMED,Clinical Finding,S,305472002,2002-01-31,2099-12-31,NA
+4139075,Under care of chest physician,Observation,SNOMED,Clinical Finding,S,305473007,2002-01-31,2099-12-31,NA
+4139076,Under care of respiratory physician,Observation,SNOMED,Clinical Finding,S,305476004,2002-01-31,2099-12-31,NA
+4139077,Under care of general physician,Observation,SNOMED,Clinical Finding,S,305484000,2002-01-31,2099-12-31,NA
+4139078,Under care of genitourinary medicine physician,Observation,SNOMED,Clinical Finding,S,305489005,2002-01-31,2099-12-31,NA
+4139079,Under care of rehabilitation physician,Observation,SNOMED,Clinical Finding,S,305498008,2002-01-31,2099-12-31,NA
+4139080,Under care of pediatric neurologist,Observation,SNOMED,Clinical Finding,S,305503006,2002-01-31,2099-12-31,NA
+4139081,Under care of pediatric oncologist,Observation,SNOMED,Clinical Finding,S,305504000,2002-01-31,2099-12-31,NA
+4139082,Under care of blood transfusion doctor,Observation,SNOMED,Clinical Finding,S,305506003,2002-01-31,2099-12-31,NA
+4139083,Under care of hematologist,Observation,SNOMED,Clinical Finding,S,305509005,2002-01-31,2099-12-31,NA
+4139084,Under care of medical microbiologist,Observation,SNOMED,Clinical Finding,S,305511001,2002-01-31,2099-12-31,NA
+4139085,Under care of psychiatrist,Observation,SNOMED,Clinical Finding,S,305513003,2002-01-31,2099-12-31,NA
+4139086,Under care of psychogeriatrician,Observation,SNOMED,Clinical Finding,S,305517002,2002-01-31,2099-12-31,NA
+4139087,Under care of public health physician,Observation,SNOMED,Clinical Finding,S,305524001,2002-01-31,2099-12-31,NA
+4139088,Under care of surgeon,Observation,SNOMED,Clinical Finding,S,305525000,2002-01-31,2099-12-31,NA
+4139089,Under care of orthodontist,Observation,SNOMED,Clinical Finding,S,305531002,2002-01-31,2099-12-31,NA
+4139090,Under care of neurosurgeon,Observation,SNOMED,Clinical Finding,S,305543001,2002-01-31,2099-12-31,NA
+4139091,Under care of clinical nurse specialist,Observation,SNOMED,Clinical Finding,S,305556008,2002-01-31,2099-12-31,NA
+4139092,Under care of pediatric nurse,Observation,SNOMED,Clinical Finding,S,305569007,2002-01-31,2099-12-31,NA
+4139093,Under care of oncology nurse,Observation,SNOMED,Clinical Finding,S,305571007,2002-01-31,2099-12-31,NA
+4139095,Under care of school nurse,Observation,SNOMED,Clinical Finding,S,305581006,2002-01-31,2099-12-31,NA
+4139096,Under care of nurse practitioner,Observation,SNOMED,Clinical Finding,S,305583009,2002-01-31,2099-12-31,NA
+4139097,Under care of research nurse,Observation,SNOMED,Clinical Finding,S,305585002,2002-01-31,2099-12-31,NA
+4139098,Under care of midwife,Observation,SNOMED,Clinical Finding,S,305586001,2002-01-31,2099-12-31,NA
+4139099,Under care of art therapist,Observation,SNOMED,Clinical Finding,S,305592007,2002-01-31,2099-12-31,NA
+4139217,Under care of community-based podiatrist,Observation,SNOMED,Clinical Finding,S,305600000,2002-01-31,2099-12-31,NA
+4139218,Under care of hospital-based podiatrist,Observation,SNOMED,Clinical Finding,S,305601001,2002-01-31,2099-12-31,NA
+4139219,Under care of hospital-based dietitian,Observation,SNOMED,Clinical Finding,S,305604009,2002-01-31,2099-12-31,NA
+4139220,Under care of orthoptist,Observation,SNOMED,Clinical Finding,S,305610009,2002-01-31,2099-12-31,NA
+4139221,Under care of orthotist,Observation,SNOMED,Clinical Finding,S,305611008,2002-01-31,2099-12-31,NA
+4139704,Under care of audiology technician,Observation,SNOMED,Clinical Finding,S,305598006,2002-01-31,2099-12-31,NA
+4139705,Under care of podiatrist,Observation,SNOMED,Clinical Finding,S,305599003,2002-01-31,2099-12-31,NA
+4139706,Under care of dietitian,Observation,SNOMED,Clinical Finding,S,305602008,2002-01-31,2099-12-31,NA
+4139707,Under care of community-based dietitian,Observation,SNOMED,Clinical Finding,S,305603003,2002-01-31,2099-12-31,NA
+4139708,Under care of occupational therapist,Observation,SNOMED,Clinical Finding,S,305605005,2002-01-31,2099-12-31,NA
+4139709,Under care of hospital-based occupational therapist,Observation,SNOMED,Clinical Finding,S,305608007,2002-01-31,2099-12-31,NA
+4139710,Under care of optometrist,Observation,SNOMED,Clinical Finding,S,305609004,2002-01-31,2099-12-31,NA
+4140638,Under care of surgical fitter,Observation,SNOMED,Clinical Finding,S,305612001,2002-01-31,2099-12-31,NA
+4140639,Under care of physiotherapist,Observation,SNOMED,Clinical Finding,S,305613006,2002-01-31,2099-12-31,NA
+4140640,Under care of speech and language therapist,Observation,SNOMED,Clinical Finding,S,305616003,2002-01-31,2099-12-31,NA
+4140641,Under care of community-based speech and language therapist,Observation,SNOMED,Clinical Finding,S,305617007,2002-01-31,2099-12-31,NA
+4142142,Under care of general dental surgeon,Observation,SNOMED,Clinical Finding,S,306737006,2002-01-31,2099-12-31,NA
+4143734,Under care of clinical hematologist,Observation,SNOMED,Clinical Finding,S,307062006,2002-01-31,2099-12-31,NA
+4144635,Under care of audiological physician,Observation,SNOMED,Clinical Finding,S,306859002,2002-01-31,2099-12-31,NA
+4149446,Under care of medical oncologist,Observation,SNOMED,Clinical Finding,S,310517007,2002-01-31,2099-12-31,NA
+4152698,Patient given choice of treatment,Observation,SNOMED,Clinical Finding,S,314846003,2002-01-31,2099-12-31,NA
+4162236,Relief staff member not available,Observation,SNOMED,Clinical Finding,S,398133006,2003-07-31,2099-12-31,NA
+4167377,Perioperative care consistent with individualized perioperative care plan,Observation,SNOMED,Clinical Finding,S,417882004,2006-01-31,2099-12-31,NA
+4168182,Under care of dyspepsia specialist nurse,Observation,SNOMED,Clinical Finding,S,416202003,2005-07-31,2099-12-31,NA
+4174544,Incongruent personal goals,Observation,SNOMED,Clinical Finding,S,425372005,2007-01-31,2099-12-31,NA
+4190503,Ineffective health maintenance,Observation,SNOMED,Clinical Finding,S,414487007,2005-01-31,2099-12-31,NA
+4190809,Goal achievement finding,Observation,SNOMED,Clinical Finding,S,390800000,2003-01-31,2099-12-31,NA
+4191706,Goal achieved,Observation,SNOMED,Clinical Finding,S,390802008,2003-01-31,2099-12-31,NA
+4196133,Treatment plan given,Observation,SNOMED,Clinical Finding,S,314705003,2002-01-31,2099-12-31,NA
+4197696,"Pain self-management deficit, chronic",Observation,SNOMED,Clinical Finding,S,51777006,2002-01-31,2099-12-31,NA
+4210123,Under care of person,Observation,SNOMED,Clinical Finding,S,312884005,2002-01-31,2099-12-31,NA
+4211663,Community detoxification registered,Observation,SNOMED,Clinical Finding,S,413897002,2005-01-31,2099-12-31,NA
+4212186,Under care of case manager,Observation,SNOMED,Clinical Finding,S,416933006,2005-07-31,2099-12-31,NA
+4218928,Health management deficit (total),Observation,SNOMED,Clinical Finding,S,73121005,2002-01-31,2099-12-31,NA
+4219572,Plan of care consistent with patient level of function and ability during perioperative period,Observation,SNOMED,Clinical Finding,S,397596005,2003-07-31,2099-12-31,NA
+4219732,"Perioperative plan of care consistent with patient value system, lifestyle, ethnicity, and culture",Observation,SNOMED,Clinical Finding,S,397607002,2003-07-31,2099-12-31,NA
+4220639,Under care of mental health team,Observation,SNOMED,Clinical Finding,S,401272006,2003-07-31,2099-12-31,NA
+4225233,Staff member distraction,Observation,SNOMED,Clinical Finding,S,405502000,2004-01-31,2099-12-31,NA
+4231688,Staff member inattention,Observation,SNOMED,Clinical Finding,S,405503005,2004-01-31,2099-12-31,NA
+4234817,Recovery room bed not available,Observation,SNOMED,Clinical Finding,S,405366000,2004-01-31,2099-12-31,NA
+4235256,Under care of diabetic foot screener,Observation,SNOMED,Clinical Finding,S,408394009,2004-01-31,2099-12-31,NA
+4236719,Staff member ill,Observation,SNOMED,Clinical Finding,S,405536006,2004-01-31,2099-12-31,NA
+4236857,Operating room unavailable,Observation,SNOMED,Clinical Finding,S,405625008,2004-01-31,2099-12-31,NA
+4236889,Under care of social worker,Observation,SNOMED,Clinical Finding,S,405775000,2004-01-31,2099-12-31,NA
+4243155,Health management deficit,Observation,SNOMED,Clinical Finding,S,38334009,2002-01-31,2099-12-31,NA
+4247101,Under care of diabetes specialist nurse,Observation,SNOMED,Clinical Finding,S,408392008,2004-01-31,2099-12-31,NA
+4252228,Under care of retinal screener,Observation,SNOMED,Clinical Finding,S,408393003,2004-01-31,2099-12-31,NA
+4252229,Under the care of psychologist,Observation,SNOMED,Clinical Finding,S,408395005,2004-01-31,2099-12-31,NA
+4255394,Under care of diabetologist,Observation,SNOMED,Clinical Finding,S,408391001,2004-01-31,2099-12-31,NA
+4265446,Finding related to care delivery,Observation,SNOMED,Clinical Finding,S,397597001,2003-07-31,2099-12-31,NA
+4265452,Competent and ethical care delivered within legal standards of practice,Observation,SNOMED,Clinical Finding,S,397665008,2003-07-31,2099-12-31,NA
+4265572,Perioperative care consistent with perioperative care plan,Observation,SNOMED,Clinical Finding,S,397700007,2003-07-31,2099-12-31,NA
+4265891,Consistent and comparable level of care given across all settings,Observation,SNOMED,Clinical Finding,S,397711004,2003-07-31,2099-12-31,NA
+4266227,"Pain self-management deficit, acute",Observation,SNOMED,Clinical Finding,S,61264001,2002-01-31,2099-12-31,NA
+4270026,Under care of team,Observation,SNOMED,Clinical Finding,S,401322007,2003-07-31,2099-12-31,NA
+4287648,Finding related to care planning,Observation,SNOMED,Clinical Finding,S,397608007,2003-07-31,2099-12-31,NA
+4288381,Participates in perioperative plan of care decisions,Observation,SNOMED,Clinical Finding,S,397629003,2003-07-31,2099-12-31,NA
+4306348,Unable to use communication device to communicate with community resources,Observation,SNOMED,Clinical Finding,S,422454005,2007-01-31,2099-12-31,NA
+4307716,Difficulty understanding community service provider role,Observation,SNOMED,Clinical Finding,S,422716006,2007-01-31,2099-12-31,NA
+4308357,Goal not achieved,Observation,SNOMED,Clinical Finding,S,390801001,2003-01-31,2099-12-31,NA
+4309239,Limited access to community support services,Observation,SNOMED,Clinical Finding,S,422651008,2007-01-31,2099-12-31,NA
+4309417,Inadequate community resources,Observation,SNOMED,Clinical Finding,S,422923002,2007-01-31,2099-12-31,NA
+4309699,Unable to coordinate multiple treatment plans,Observation,SNOMED,Clinical Finding,S,423782006,2007-01-31,2099-12-31,NA
+4310152,Community resource finding,Observation,SNOMED,Clinical Finding,S,424924007,2007-01-31,2099-12-31,NA
+4310279,Unable to coordinate multiple appointments,Observation,SNOMED,Clinical Finding,S,422958000,2007-01-31,2099-12-31,NA
+4310711,Inadequate treatment plan,Observation,SNOMED,Clinical Finding,S,424181003,2007-01-31,2099-12-31,NA
+4310869,Cultural barrier impedes ability to use community resources,Observation,SNOMED,Clinical Finding,S,422423006,2007-01-31,2099-12-31,NA
+4311126,Inadequate use of communication device to communicate with community resources,Observation,SNOMED,Clinical Finding,S,423525008,2007-01-31,2099-12-31,NA
+4311312,Unavailable community resources,Observation,SNOMED,Clinical Finding,S,423839002,2007-01-31,2099-12-31,NA
+4311442,Language barrier impedes ability to use community resources,Observation,SNOMED,Clinical Finding,S,424423005,2007-01-31,2099-12-31,NA
+4311711,Unable to communicate concern to community service provider,Observation,SNOMED,Clinical Finding,S,424746008,2007-01-31,2099-12-31,NA
+4311864,Caregiver difficulty providing physical safety,Observation,SNOMED,Clinical Finding,S,422787005,2007-01-31,2099-12-31,NA
+4312922,Dissatisfaction with community resource services,Observation,SNOMED,Clinical Finding,S,425296002,2007-01-31,2099-12-31,NA
+4313750,Inadequate healthcare resources,Observation,SNOMED,Clinical Finding,S,423593006,2007-01-31,2099-12-31,NA
+4314831,Transportation barrier impedes ability to use community resources,Observation,SNOMED,Clinical Finding,S,424629004,2007-01-31,2099-12-31,NA
+4314938,Inadequate community resources to encourage healthy living,Observation,SNOMED,Clinical Finding,S,424839007,2007-01-31,2099-12-31,NA
+4322225,Educational barrier impedes ability to use community resources,Observation,SNOMED,Clinical Finding,S,424994000,2007-01-31,2099-12-31,NA
+4322382,Unfamiliar with process for obtaining community services,Observation,SNOMED,Clinical Finding,S,425209002,2007-01-31,2099-12-31,NA
+35609506,Treatment Escalation Plan decision - not appropriate for antibiotics,Observation,SNOMED,Clinical Finding,S,1082791000000108,2017-10-01,2099-12-31,NA
+35609507,Treatment Escalation Plan decision - appropriate for antibiotics,Observation,SNOMED,Clinical Finding,S,1082801000000107,2017-10-01,2099-12-31,NA
+35609508,Treatment Escalation Plan decision - not appropriate for intravenous fluids,Observation,SNOMED,Clinical Finding,S,1082811000000109,2017-10-01,2099-12-31,NA
+35609509,Treatment Escalation Plan decision - appropriate for intravenous fluids,Observation,SNOMED,Clinical Finding,S,1082821000000103,2017-10-01,2099-12-31,NA
+35609510,Treatment Escalation Plan decision - appropriate for deactivation of implantable cardioverter defibrillator,Observation,SNOMED,Clinical Finding,S,1082831000000101,2017-10-01,2099-12-31,NA
+35609511,Treatment Escalation Plan decision - not appropriate for deactivation of implantable cardioverter defibrillator,Observation,SNOMED,Clinical Finding,S,1082841000000105,2017-10-01,2099-12-31,NA
+35609512,Treatment Escalation Plan decision - appropriate for dialysis,Observation,SNOMED,Clinical Finding,S,1082851000000108,2017-10-01,2099-12-31,NA
+35609513,Treatment Escalation Plan decision - not appropriate for dialysis,Observation,SNOMED,Clinical Finding,S,1082861000000106,2017-10-01,2099-12-31,NA
+35609514,Treatment Escalation Plan decision - not appropriate for artificial feeding,Observation,SNOMED,Clinical Finding,S,1082871000000104,2017-10-01,2099-12-31,NA
+35609515,Treatment Escalation Plan decision - appropriate for artificial feeding,Observation,SNOMED,Clinical Finding,S,1082881000000102,2017-10-01,2099-12-31,NA
+35609516,Treatment Escalation Plan decision - appropriate for ward non-invasive ventilation,Observation,SNOMED,Clinical Finding,S,1082891000000100,2017-10-01,2099-12-31,NA
+35609517,Treatment Escalation Plan decision - not appropriate for ward non-invasive ventilation,Observation,SNOMED,Clinical Finding,S,1082901000000104,2017-10-01,2099-12-31,NA
+35609518,Treatment Escalation Plan decision - appropriate for end of life care plan,Observation,SNOMED,Clinical Finding,S,1082911000000102,2017-10-01,2099-12-31,NA
+35609519,Treatment Escalation Plan decision - not appropriate for end of life care plan,Observation,SNOMED,Clinical Finding,S,1082921000000108,2017-10-01,2099-12-31,NA
+35609520,Treatment Escalation Plan decision - not appropriate for admission to acute hospital,Observation,SNOMED,Clinical Finding,S,1082931000000105,2017-10-01,2099-12-31,NA
+35609521,Treatment Escalation Plan decision - appropriate for admission to acute hospital,Observation,SNOMED,Clinical Finding,S,1082941000000101,2017-10-01,2099-12-31,NA
+35609522,Treatment Escalation Plan decision - not appropriate for referral to critical care,Observation,SNOMED,Clinical Finding,S,1082951000000103,2017-10-01,2099-12-31,NA
+35609523,Treatment Escalation Plan decision - appropriate for referral to critical care,Observation,SNOMED,Clinical Finding,S,1082961000000100,2017-10-01,2099-12-31,NA
+35610623,Dementia advance care plan agreed,Observation,SNOMED,Clinical Finding,S,1095121000000102,2018-04-01,2099-12-31,NA
+35610626,Has end of life advance care plan,Observation,SNOMED,Clinical Finding,S,1095151000000107,2018-04-01,2099-12-31,NA
+36684999,Patient refuses community resource assistance,Observation,SNOMED,Clinical Finding,S,459931000124106,2018-09-01,2099-12-31,NA
+36685263,Advance care plan agreed,Observation,SNOMED,Clinical Finding,S,1095851000000100,2018-10-01,2099-12-31,NA
+36716483,Variance from care plan goal,Observation,SNOMED,Clinical Finding,S,722506008,2017-01-31,2099-12-31,NA
+36716484,Care plan goal achievement status unknown,Observation,SNOMED,Clinical Finding,S,722507004,2017-01-31,2099-12-31,NA
+36717350,Care plan goal agreed,Observation,SNOMED,Clinical Finding,S,722504006,2017-01-31,2099-12-31,NA
+36717565,Care plan goal not agreed,Observation,SNOMED,Clinical Finding,S,722505007,2017-01-31,2099-12-31,NA
+37017405,Has end of life care plan,Observation,SNOMED,Clinical Finding,S,713673000,2016-01-31,2099-12-31,NA
+37018026,Difficulty agreeing with care plan,Observation,SNOMED,Clinical Finding,S,714421002,2016-01-31,2099-12-31,NA
+37018357,Unable to agree with care plan,Observation,SNOMED,Clinical Finding,S,714830003,2016-01-31,2099-12-31,NA
+37018787,Able to agree with care plan,Observation,SNOMED,Clinical Finding,S,714411005,2016-01-31,2099-12-31,NA
+37018830,Does agree with care plan,Observation,SNOMED,Clinical Finding,S,714831004,2016-01-31,2099-12-31,NA
+37018930,Under care of radiologist and surgeon,Observation,SNOMED,Clinical Finding,S,712981006,2016-01-31,2099-12-31,NA
+37019154,Has advance care plan,Observation,SNOMED,Clinical Finding,S,714748000,2016-01-31,2099-12-31,NA
+37019169,Unsuitable for advance care planning,Observation,SNOMED,Clinical Finding,S,714975004,2016-01-31,2099-12-31,NA
+37116643,Food insecurity,Observation,SNOMED,Clinical Finding,S,733423003,2017-07-31,2099-12-31,NA
+37160566,Goal discontinued,Observation,SNOMED,Clinical Finding,S,1162727003,2021-09-30,2099-12-31,NA
+37160763,Food and/or nutrition goal not attainable,Observation,SNOMED,Clinical Finding,S,1163285004,2021-09-30,2099-12-31,NA
+37163502,Effective continuity of care,Observation,SNOMED,Clinical Finding,S,1217127002,2022-04-30,2099-12-31,NA
+37167678,Able to afford medication,Observation,SNOMED,Clinical Finding,S,1268779009,2023-03-31,2099-12-31,NA
+37172874,Under care of hospice team,Observation,SNOMED,Clinical Finding,S,551781000124102,2022-03-01,2099-12-31,NA
+37173578,Concern with care plan,Observation,SNOMED,Clinical Finding,S,621531000124102,2022-09-01,2099-12-31,NA
+37173579,Inadequate specialty care services,Observation,SNOMED,Clinical Finding,S,621541000124107,2022-09-01,2099-12-31,NA
+37173987,Feels food intake quantity is adequate for meals and snacks,Observation,SNOMED,Clinical Finding,S,671311000124101,2023-03-01,2099-12-31,NA
+37173988,Feels food intake quantity is adequate for snacks,Observation,SNOMED,Clinical Finding,S,671321000124109,2023-03-01,2099-12-31,NA
+37173989,Feels food intake quantity is adequate for meals,Observation,SNOMED,Clinical Finding,S,671331000124107,2023-03-01,2099-12-31,NA
+37175314,Under care of learning disability team,Observation,SNOMED,Clinical Finding,S,1366181000000109,2022-02-16,2099-12-31,NA
+37208682,Has ReSPECT (Recommended Summary Plan for Emergency Care and Treatment),Observation,SNOMED,Clinical Finding,S,1107891000000106,2019-06-01,2099-12-31,NA
+37310423,Does use digital self-management support tool for COPD (chronic obstructive pulmonary disease),Observation,SNOMED,Clinical Finding,S,1129881000000105,2019-10-01,2099-12-31,NA
+37310424,Does use digital self-management support tool,Observation,SNOMED,Clinical Finding,S,1129871000000108,2019-10-01,2099-12-31,NA
+37394007,Under care of hospital-based diabetes specialist nurse,Observation,SNOMED,Clinical Finding,S,1024551000000109,2016-04-01,2099-12-31,NA
+37394685,Has CHAT (Comprehensive Health Assessment Tool) care plan,Observation,SNOMED,Clinical Finding,S,1037131000000101,2016-04-01,2099-12-31,NA
+37394686,Has CHAT (Comprehensive Health Assessment Tool) immediate care plan,Observation,SNOMED,Clinical Finding,S,1037151000000108,2016-04-01,2099-12-31,NA
+37398757,Under care of community-based diabetes specialist nurse,Observation,SNOMED,Clinical Finding,S,1024571000000100,2016-04-01,2099-12-31,NA
+37398839,Has CHAT (Comprehensive Health Assessment Tool) discharge plan,Observation,SNOMED,Clinical Finding,S,1037191000000100,2016-04-01,2099-12-31,NA
+42538268,Needs assistance with community resources,Observation,SNOMED,Clinical Finding,S,74811000119102,2018-01-31,2099-12-31,NA
+42539494,Under care of podiatric surgeon,Observation,SNOMED,Clinical Finding,S,736010008,2018-01-31,2099-12-31,NA
+42689950,Difficulty managing pain in body part,Observation,SNOMED,Clinical Finding,S,1070461000000102,2017-04-01,2099-12-31,NA
+42690000,Difficulty tolerating generalised pain,Observation,SNOMED,Clinical Finding,S,1071031000000107,2017-04-01,2099-12-31,NA
+42690001,Difficulty tolerating pain in body part,Observation,SNOMED,Clinical Finding,S,1071041000000103,2017-04-01,2099-12-31,NA
+42690613,Difficulty managing generalised pain,Observation,SNOMED,Clinical Finding,S,1070371000000103,2017-04-01,2099-12-31,NA
+44784373,Under care of asthma specialist nurse,Observation,SNOMED,Clinical Finding,S,698509001,2014-01-31,2099-12-31,NA
+44787818,Under care of mental health home treatment team,Observation,SNOMED,Clinical Finding,S,108271000000109,2004-01-31,2099-12-31,NA
+44787835,Has contact with multiple support agencies,Observation,SNOMED,Clinical Finding,S,110741000000105,2004-01-31,2099-12-31,NA
+44788788,Under care of community matron,Observation,SNOMED,Clinical Finding,S,201161000000102,2006-04-01,2099-12-31,NA
+44789037,Has contact with multiple community healthcare professions,Observation,SNOMED,Clinical Finding,S,197121000000102,2006-04-01,2099-12-31,NA
+44789038,Has contact with single community healthcare profession,Observation,SNOMED,Clinical Finding,S,197131000000100,2006-04-01,2099-12-31,NA
+44789042,Medication goal achieved,Observation,SNOMED,Clinical Finding,S,197191000000104,2006-04-01,2099-12-31,NA
+44789046,Under care of hospital psychiatric team,Observation,SNOMED,Clinical Finding,S,199521000000100,2006-04-01,2099-12-31,NA
+44789199,Assessed as not suitable for case management,Observation,SNOMED,Clinical Finding,S,199971000000107,2006-04-01,2099-12-31,NA
+44789506,Under care of care programme approach worker,Observation,SNOMED,Clinical Finding,S,204311000000104,2006-04-01,2099-12-31,NA
+44790923,Under the care of community palliative care team,Observation,SNOMED,Clinical Finding,S,246931000000107,2006-10-02,2099-12-31,NA
+44790939,Under care of cancer primary healthcare multidisciplinary team,Observation,SNOMED,Clinical Finding,S,247141000000103,2006-10-02,2099-12-31,NA
+44791035,Under care of community respiratory team,Observation,SNOMED,Clinical Finding,S,247691000000100,2006-10-02,2099-12-31,NA
+44791265,Cancer care plan given,Observation,SNOMED,Clinical Finding,S,25031000000106,2004-01-31,2099-12-31,NA
+44792636,Dermatology management plan given,Observation,SNOMED,Clinical Finding,S,361271000000105,2008-10-01,2099-12-31,NA
+44793074,Chronic obstructive pulmonary disease patient unsuitable for pulmonary rehabilitation,Observation,SNOMED,Clinical Finding,S,371611000000107,2009-04-01,2099-12-31,NA
+44794262,Under care of associate general practitioner,Observation,SNOMED,Clinical Finding,S,388741000000104,2009-04-01,2099-12-31,NA
+44794264,Under care of deputising general practitioner,Observation,SNOMED,Clinical Finding,S,388761000000103,2009-04-01,2099-12-31,NA
+44796495,Under care of GP (general practitioner) locum,Observation,SNOMED,Clinical Finding,S,424201000000101,2009-04-01,2099-12-31,NA
+44799545,Under care of co-operative general practitioner,Observation,SNOMED,Clinical Finding,S,461381000000107,2009-04-01,2099-12-31,NA
+44799894,Under care of assistant GP (general practitioner),Observation,SNOMED,Clinical Finding,S,449181000000104,2009-04-01,2099-12-31,NA
+44800178,Under care of general practitioner registrar,Observation,SNOMED,Clinical Finding,S,476961000000102,2009-04-01,2099-12-31,NA
+44802171,Under multi-agency care,Observation,SNOMED,Clinical Finding,S,512521000000100,2010-04-01,2099-12-31,NA
+44802298,Under care of tissue viability specialist nurse,Observation,SNOMED,Clinical Finding,S,493541000000106,2009-10-01,2099-12-31,NA
+44804900,Variance from goal,Observation,SNOMED,Clinical Finding,S,782781000000109,2011-10-03,2099-12-31,NA
+44804901,Goal agreed,Observation,SNOMED,Clinical Finding,S,782791000000106,2011-10-03,2099-12-31,NA
+44804902,Goal not agreed,Observation,SNOMED,Clinical Finding,S,782801000000105,2011-10-03,2099-12-31,NA
+44806037,Under care of community care team,Observation,SNOMED,Clinical Finding,S,790141000000100,2011-10-03,2099-12-31,NA
+44806249,Under care of epilepsy specialist nurse,Observation,SNOMED,Clinical Finding,S,811411000000104,2012-04-01,2099-12-31,NA
+44806267,Under care of non-NHS physiotherapist,Observation,SNOMED,Clinical Finding,S,820541000000104,2012-04-01,2099-12-31,NA
+44806270,Has involved healthcare professional in discussion about ADRT (advance decision to refuse treatment) (Mental Capacity Act 2005),Observation,SNOMED,Clinical Finding,S,820621000000107,2012-04-01,2099-12-31,NA
+44806363,Health and social care plan agreed,Observation,SNOMED,Clinical Finding,S,811871000000107,2012-04-01,2099-12-31,NA
+44806364,Multiple sclerosis care plan agreed,Observation,SNOMED,Clinical Finding,S,811881000000109,2012-04-01,2099-12-31,NA
+44806366,Angina self-management plan agreed,Observation,SNOMED,Clinical Finding,S,811901000000107,2012-04-01,2099-12-31,NA
+44806367,Asthma self-management plan agreed,Observation,SNOMED,Clinical Finding,S,811921000000103,2012-04-01,2099-12-31,NA
+44806368,Chronic kidney disease self-management plan agreed,Observation,SNOMED,Clinical Finding,S,811941000000105,2012-04-01,2099-12-31,NA
+44806369,Chronic obstructive pulmonary disease self-management plan agreed,Observation,SNOMED,Clinical Finding,S,811961000000106,2012-04-01,2099-12-31,NA
+44806370,Diabetes self-management plan agreed,Observation,SNOMED,Clinical Finding,S,811981000000102,2012-04-01,2099-12-31,NA
+44806371,Heart failure self-management plan agreed,Observation,SNOMED,Clinical Finding,S,812001000000102,2012-04-01,2099-12-31,NA
+44806372,Hypertension self-management plan agreed,Observation,SNOMED,Clinical Finding,S,812021000000106,2012-04-01,2099-12-31,NA
+44806373,Stroke self-management plan agreed,Observation,SNOMED,Clinical Finding,S,812041000000104,2012-04-01,2099-12-31,NA
+44806616,Care plan agreed,Observation,SNOMED,Clinical Finding,S,802321000000106,2011-10-03,2099-12-31,NA
+44806933,Under care of safeguarding adult team,Observation,SNOMED,Clinical Finding,S,794091000000102,2011-10-03,2099-12-31,NA
+44807269,Has advance statement (Mental Capacity Act 2005),Observation,SNOMED,Clinical Finding,S,816281000000101,2012-04-01,2099-12-31,NA
+44807270,Has ADRT (advance decision to refuse treatment) (Mental Capacity Act 2005),Observation,SNOMED,Clinical Finding,S,816301000000100,2012-04-01,2099-12-31,NA
+44807271,Has ADRT (advance decision to refuse treatment) for life sustaining treatment (Mental Capacity Act 2005),Observation,SNOMED,Clinical Finding,S,816321000000109,2012-04-01,2099-12-31,NA
+44807605,Clinical management plan updated,Observation,SNOMED,Clinical Finding,S,807231000000100,2011-10-03,2099-12-31,NA
+44807799,Has involved healthcare professional in discussion about advance care planning,Observation,SNOMED,Clinical Finding,S,827011000000106,2012-04-01,2099-12-31,NA
+44808814,Acute stroke management plan agreed,Observation,SNOMED,Clinical Finding,S,842421000000106,2012-10-01,2099-12-31,NA
+44808854,Under care of palliative care specialist nurse,Observation,SNOMED,Clinical Finding,S,850951000000107,2012-10-01,2099-12-31,NA
+44809301,Healthcare professional would not be surprised (Gold Standards Framework surprise question),Observation,SNOMED,Clinical Finding,S,845041000000103,2012-10-01,2099-12-31,NA
+44809395,Under care of family nurse partnership team,Observation,SNOMED,Clinical Finding,S,836171000000102,2012-10-01,2099-12-31,NA
+44809770,Continence treatment plan given,Observation,SNOMED,Clinical Finding,S,884441000000103,2013-10-01,2099-12-31,NA
+44809771,Continence treatment plan agreed,Observation,SNOMED,Clinical Finding,S,884451000000100,2013-10-01,2099-12-31,NA
+44810607,Under care of educational psychologist,Observation,SNOMED,Clinical Finding,S,869301000000109,2013-04-01,2099-12-31,NA
+44810714,Inadequate self monitoring of dietetic intervention,Observation,SNOMED,Clinical Finding,S,898991000000108,2014-04-01,2099-12-31,NA
+44810741,Under care of mental health in-reach team,Observation,SNOMED,Clinical Finding,S,880291000000104,2013-10-01,2099-12-31,NA
+44810810,Under care of community learning disability team,Observation,SNOMED,Clinical Finding,S,870651000000103,2013-04-01,2099-12-31,NA
+44811181,Has Advance Decision to Refuse Treatment (Mental Capacity Act 2005) - Refuses all blood transfusion and administration of primary blood components and minor fractions,Observation,SNOMED,Clinical Finding,S,892021000000107,2014-04-01,2099-12-31,NA
+44811583,Subject actions in care plan not agreed,Observation,SNOMED,Clinical Finding,S,904941000000103,2014-04-01,2099-12-31,NA
+44811594,Need not agreed,Observation,SNOMED,Clinical Finding,S,905141000000102,2014-04-01,2099-12-31,NA
+44811595,Need agreed,Observation,SNOMED,Clinical Finding,S,905151000000104,2014-04-01,2099-12-31,NA
+44811596,Subject actions in care plan agreed,Observation,SNOMED,Clinical Finding,S,905161000000101,2014-04-01,2099-12-31,NA
+44811597,Healthcare professional actions in care plan not agreed,Observation,SNOMED,Clinical Finding,S,905171000000108,2014-04-01,2099-12-31,NA
+44811598,Healthcare professional actions in care plan agreed,Observation,SNOMED,Clinical Finding,S,905181000000105,2014-04-01,2099-12-31,NA
+44811625,Admission avoidance care plan agreed,Observation,SNOMED,Clinical Finding,S,913681000000100,2014-04-01,2099-12-31,NA
+44813828,Under care of oncologist,Observation,SNOMED,Clinical Finding,S,851011000000103,2012-10-01,2099-12-31,NA
+45763728,Caregiver does not understand care plan,Observation,SNOMED,Clinical Finding,S,700224007,2014-07-31,2099-12-31,NA
+45763729,Caregiver understands care plan,Observation,SNOMED,Clinical Finding,S,700225008,2014-07-31,2099-12-31,NA
+45765763,Emergency health care plan agreed,Observation,SNOMED,Clinical Finding,S,702779007,2014-07-31,2099-12-31,NA
+45767589,Difficulty participating in care planning,Observation,SNOMED,Clinical Finding,S,705045007,2015-01-31,2099-12-31,NA
+45768443,Insufficient food supply,Observation,SNOMED,Clinical Finding,S,706875005,2015-01-31,2099-12-31,NA
+45768445,Problem with high complexity of treatment regime,Observation,SNOMED,Clinical Finding,S,706877002,2015-01-31,2099-12-31,NA
+45768467,No progress toward goal,Observation,SNOMED,Clinical Finding,S,706906006,2015-01-31,2099-12-31,NA
+45768468,Some progress toward goal,Observation,SNOMED,Clinical Finding,S,706907002,2015-01-31,2099-12-31,NA
+45770145,Has named person (Getting It Right For Every Child),Observation,SNOMED,Clinical Finding,S,923841000000102,2014-10-01,2099-12-31,NA
+45770146,Has lead professional (Getting It Right For Every Child),Observation,SNOMED,Clinical Finding,S,923861000000101,2014-10-01,2099-12-31,NA
+45770439,Integrated care coordinator identified,Observation,SNOMED,Clinical Finding,S,928831000000102,2014-10-01,2099-12-31,NA
+45770597,Discussion about do not attempt cardiopulmonary resuscitation not appropriate at this time,Observation,SNOMED,Clinical Finding,S,931761000000106,2014-10-01,2099-12-31,NA
+45770788,Under care of prison primary mental health care team,Observation,SNOMED,Clinical Finding,S,936341000000104,2014-10-01,2099-12-31,NA
+45770988,Some digression away from goal,Observation,SNOMED,Clinical Finding,S,706908007,2015-01-31,2099-12-31,NA
+45771187,Discussion about advance care planning not appropriate at this time,Observation,SNOMED,Clinical Finding,S,922321000000108,2014-10-01,2099-12-31,NA
+45771419,Problem with continuity of care,Observation,SNOMED,Clinical Finding,S,704303006,2015-01-31,2099-12-31,NA
+45772880,Goal not attainable,Observation,SNOMED,Clinical Finding,S,706905005,2015-01-31,2099-12-31,NA
+45772907,Does not agree with care plan,Observation,SNOMED,Clinical Finding,S,707165003,2015-01-31,2099-12-31,NA
+46284254,Safeguarding adults protection plan agreed,Observation,SNOMED,Clinical Finding,S,943001000000107,2015-04-01,2099-12-31,NA
+46284426,Personal health management finding,Observation,SNOMED,Clinical Finding,S,945991000000100,2015-04-01,2099-12-31,NA
+46284876,Dementia care plan agreed,Observation,SNOMED,Clinical Finding,S,956841000000106,2015-04-01,2099-12-31,NA
+46285147,Patient allocated named accountable general practitioner,Observation,SNOMED,Clinical Finding,S,965831000000103,2015-04-01,2099-12-31,NA

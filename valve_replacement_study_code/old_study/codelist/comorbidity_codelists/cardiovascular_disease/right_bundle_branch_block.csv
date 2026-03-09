@@ -1,0 +1,26 @@
+concept_id,found_from,concept_name,domain_id,vocabulary_id,standard_concept
+314059,From initial search,Right bundle branch block,Condition,SNOMED,S
+316432,From initial search,Right bundle branch block AND left anterior fascicular block,Condition,SNOMED,S
+321315,From descendants,Trifascicular block,Condition,SNOMED,S
+321587,From descendants,Bilateral bundle branch block,Condition,SNOMED,S
+321590,From initial search,Right bundle branch block AND left posterior fascicular block,Condition,SNOMED,S
+4032785,From initial search,"Right bundle branch block, posterior fascicular block AND incomplete left bundle branch block",Condition,SNOMED,S
+4064460,From initial search,EKG: right bundle branch block,Condition,SNOMED,S
+4088337,From initial search,Complete right bundle branch block,Condition,SNOMED,S
+4088338,From initial search,Incomplete right bundle branch block,Condition,SNOMED,S
+4121613,From initial search,Familial isolated complete right bundle branch block,Condition,SNOMED,S
+4138545,From initial search,"Right bundle branch block, anterior fascicular block AND posterior fascicular block",Condition,SNOMED,S
+4138973,From initial search,Right bundle branch block with left bundle branch block,Condition,SNOMED,S
+4184950,From initial search,Right bundle branch block AND incomplete left bundle branch block,Condition,SNOMED,S
+4217860,From initial search,"Right bundle branch block, anterior fascicular block AND incomplete posterior fascicular block",Condition,SNOMED,S
+4244693,From initial search,"Right bundle branch block, anterior fascicular block AND incomplete left bundle branch block",Condition,SNOMED,S
+4249027,From descendants,"Right branch block, incomplete anterior fascicular block AND incomplete posterior fascicular block",Condition,SNOMED,S
+4280348,From initial search,"Right bundle branch block, posterior fascicular block AND incomplete anterior fascicular block",Condition,SNOMED,S
+4296729,From initial search,"Anterior fascicular block, posterior fascicular block AND incomplete right bundle branch block",Condition,SNOMED,S
+37017193,From initial search,EKG: Incomplete right bundle branch block,Condition,SNOMED,S
+37017194,From initial search,EKG: complete right bundle branch block,Condition,SNOMED,S
+37163035,From descendants,Brugada electrocardiograph pattern,Condition,SNOMED,S
+37163269,From descendants,Provoked Brugada electrocardiograph pattern,Condition,SNOMED,S
+37163291,From descendants,Spontaneous Brugada electrocardiograph pattern,Condition,SNOMED,S
+40482887,From initial search,Right bundle branch block and left anterior fascicular block on electrocardiogram,Condition,SNOMED,S
+40483359,From initial search,Right bundle branch block and left posterior fascicular block on electrocardiogram,Condition,SNOMED,S

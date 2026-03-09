@@ -1,0 +1,222 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+374326,Arteriosclerotic dementia with depression,Condition,SNOMED,Disorder,S,191466007,2002-01-31,2099-12-31,NA
+374341,Huntington's chorea,Condition,SNOMED,Disorder,S,58756001,2002-01-31,2099-12-31,NA
+374888,Dementia associated with another disease,Condition,SNOMED,Disorder,S,191519005,2002-01-31,2099-12-31,NA
+375791,Uncomplicated senile dementia,Condition,SNOMED,Disorder,S,191449005,2002-01-31,2099-12-31,NA
+376085,Uncomplicated presenile dementia,Condition,SNOMED,Disorder,S,191451009,2002-01-31,2099-12-31,NA
+376094,Arteriosclerotic dementia with delirium,Condition,SNOMED,Disorder,S,191464005,2002-01-31,2099-12-31,NA
+376095,Drug-induced dementia,Condition,SNOMED,Disorder,S,191493005,2002-01-31,2099-12-31,NA
+376946,Senile dementia with delirium,Condition,SNOMED,Disorder,S,191461002,2002-01-31,2099-12-31,NA
+377254,"Multi-infarct dementia, uncomplicated",Condition,SNOMED,Disorder,S,70936005,2002-01-31,2099-12-31,NA
+377527,Presenile dementia with depression,Condition,SNOMED,Disorder,S,191455000,2002-01-31,2099-12-31,NA
+377788,General paresis - neurosyphilis,Condition,SNOMED,Disorder,S,51928006,2002-01-31,2099-12-31,NA
+378125,Presenile dementia,Condition,SNOMED,Disorder,S,12348006,2002-01-31,2099-12-31,NA
+378419,Alzheimer's disease,Condition,SNOMED,Disorder,S,26929004,2002-01-31,2099-12-31,NA
+378726,Dementia associated with alcoholism,Condition,SNOMED,Disorder,S,281004,2002-01-31,2099-12-31,NA
+379778,Multi-infarct dementia,Condition,SNOMED,Disorder,S,56267009,2002-01-31,2099-12-31,NA
+379784,Senile dementia with depression,Condition,SNOMED,Disorder,S,191459006,2002-01-31,2099-12-31,NA
+380986,Senile dementia with delusion,Condition,SNOMED,Disorder,S,371024007,2002-07-31,2099-12-31,NA
+381832,Presenile dementia with delirium,Condition,SNOMED,Disorder,S,191452002,2002-01-31,2099-12-31,NA
+439276,Uncomplicated arteriosclerotic dementia,Condition,SNOMED,Disorder,S,191463004,2002-01-31,2099-12-31,NA
+441002,Dementia of frontal lobe type,Condition,SNOMED,Disorder,S,278857002,2002-01-31,2099-12-31,NA
+443605,Vascular dementia,Condition,SNOMED,Disorder,S,429998004,2008-07-31,2099-12-31,NA
+443790,Multi-infarct dementia with delusions,Condition,SNOMED,Disorder,S,25772007,2002-01-31,2099-12-31,NA
+443864,Multi-infarct dementia with depression,Condition,SNOMED,Disorder,S,14070001,2002-01-31,2099-12-31,NA
+444091,Multi-infarct dementia with delirium,Condition,SNOMED,Disorder,S,10349009,2002-01-31,2099-12-31,NA
+603149,Autosomal dominant Alzheimer disease due to mutation of presenilin 1,Condition,SNOMED,Disorder,S,1156800008,2021-07-31,2099-12-31,NA
+606974,Dementia due to deficiency of folic acid,Condition,SNOMED,Disorder,S,1148924004,2021-07-31,2099-12-31,NA
+608051,Autosomal dominant Alzheimer disease due to mutation of amyloid precursor protein,Condition,SNOMED,Disorder,S,1156789004,2021-07-31,2099-12-31,NA
+608060,Autosomal dominant Alzheimer disease due to mutation of presenilin 2,Condition,SNOMED,Disorder,S,1156798001,2021-07-31,2099-12-31,NA
+762497,Mild dementia,Condition,SNOMED,Disorder,S,428051000124108,2012-09-01,2099-12-31,NA
+762578,"Primary degenerative dementia of the Alzheimer type, senile onset, with behavioral disturbance",Condition,SNOMED,Disorder,S,429161000124103,2012-09-01,2099-12-31,NA
+762704,Moderate dementia,Condition,SNOMED,Disorder,S,430771000124100,2012-09-01,2099-12-31,NA
+765653,Severe dementia,Condition,SNOMED,Disorder,S,428351000124105,2012-09-01,2099-12-31,NA
+1076291,Dementia caused by ionizing radiation,Condition,SNOMED,Disorder,S,1339031006,2024-07-01,2099-12-31,NA
+1340302,Exacerbation of dementia,Condition,OMOP Extension,Disorder,S,OMOP5165957,2022-05-06,2099-12-31,NA
+1340358,Exacerbation of Huntington's chorea,Condition,OMOP Extension,Disorder,S,OMOP5166013,2022-05-06,2099-12-31,NA
+1340510,Progression of Alzheimer's disease,Condition,OMOP Extension,Disorder,S,OMOP5166165,2022-05-06,2099-12-31,NA
+3170377,Alzheimers continuum,Condition,Nebraska Lexicon,Clinical Finding,S,245761000004103,2019-08-15,2099-12-31,NA
+3176418,Intermediate level Alzheimers neuropathology changes,Condition,Nebraska Lexicon,Clinical Finding,S,481291000004108,2019-08-15,2099-12-31,NA
+3177168,Low level Alzheimers neuropathology changes,Condition,Nebraska Lexicon,Clinical Finding,S,471041000004103,2019-08-15,2099-12-31,NA
+3179057,Early Alzheimers disease,Condition,Nebraska Lexicon,Clinical Finding,S,13160001000004109,2016-01-28,2099-12-31,NA
+3184947,High level Alzheimers neuropathology changes,Condition,Nebraska Lexicon,Clinical Finding,S,481311000004107,2019-08-15,2099-12-31,NA
+3188986,Dementia with aggressive behavior,Condition,Nebraska Lexicon,Clinical Finding,S,9960001000004109,2016-01-28,2099-12-31,NA
+3654434,Cortical vascular dementia,Condition,SNOMED,Disorder,S,833326008,2020-07-31,2099-12-31,NA
+3654598,"Amyotrophic lateral sclerosis, parkinsonism, dementia complex",Condition,SNOMED,Disorder,S,838276009,2020-07-31,2099-12-31,NA
+3654920,Dementia due to carbon monoxide poisoning,Condition,SNOMED,Disorder,S,840464007,2020-07-31,2099-12-31,NA
+3654921,Dementia due to iron deficiency,Condition,SNOMED,Disorder,S,840465008,2020-07-31,2099-12-31,NA
+4009647,Psychoactive substance-induced organic dementia,Condition,SNOMED,Disorder,S,111480006,2002-01-31,2099-12-31,NA
+4019705,"Primary degenerative dementia of the Alzheimer type, presenile onset, with depression",Condition,SNOMED,Disorder,S,10532003,2002-01-31,2099-12-31,NA
+4043241,Familial Alzheimer's disease of early onset,Condition,SNOMED,Disorder,S,230265002,2002-01-31,2099-12-31,NA
+4043242,Non-familial Alzheimer's disease of early onset,Condition,SNOMED,Disorder,S,230266001,2002-01-31,2099-12-31,NA
+4043243,Familial Alzheimer's disease of late onset,Condition,SNOMED,Disorder,S,230267005,2002-01-31,2099-12-31,NA
+4043244,Non-familial Alzheimer's disease of late onset,Condition,SNOMED,Disorder,S,230268000,2002-01-31,2099-12-31,NA
+4043377,Focal Alzheimer's disease,Condition,SNOMED,Disorder,S,230269008,2002-01-31,2099-12-31,NA
+4043378,Frontotemporal dementia,Condition,SNOMED,Disorder,S,230270009,2002-01-31,2099-12-31,NA
+4043379,Progressive aphasia in Alzheimer's disease,Condition,SNOMED,Disorder,S,230280008,2002-01-31,2099-12-31,NA
+4043381,Juvenile onset Huntington's disease,Condition,SNOMED,Disorder,S,230299004,2002-01-31,2099-12-31,NA
+4044049,Pick's disease with Pick cells and no Pick bodies,Condition,SNOMED,Disorder,S,230272001,2002-01-31,2099-12-31,NA
+4044051,Frontal lobe degeneration with motor neurone disease,Condition,SNOMED,Disorder,S,230274000,2002-01-31,2099-12-31,NA
+4046089,Vascular dementia of acute onset,Condition,SNOMED,Disorder,S,230285003,2002-01-31,2099-12-31,NA
+4046090,Mixed cortical and subcortical vascular dementia,Condition,SNOMED,Disorder,S,230287006,2002-01-31,2099-12-31,NA
+4046091,Semantic dementia,Condition,SNOMED,Disorder,S,230288001,2002-01-31,2099-12-31,NA
+4046095,Akinetic-rigid form of Huntington's disease,Condition,SNOMED,Disorder,S,230301006,2002-01-31,2099-12-31,NA
+4047744,Pick's disease with Pick bodies,Condition,SNOMED,Disorder,S,230271008,2002-01-31,2099-12-31,NA
+4047745,Traumatic encephalopathy,Condition,SNOMED,Disorder,S,230282000,2002-01-31,2099-12-31,NA
+4047747,Subcortical vascular dementia,Condition,SNOMED,Disorder,S,230286002,2002-01-31,2099-12-31,NA
+4047748,Patchy dementia,Condition,SNOMED,Disorder,S,230289009,2002-01-31,2099-12-31,NA
+4047752,Late onset Huntington's disease,Condition,SNOMED,Disorder,S,230300007,2002-01-31,2099-12-31,NA
+4048875,Senile dementia,Condition,SNOMED,Disorder,S,15662003,2002-01-31,2099-12-31,NA
+4097384,"Primary degenerative dementia of the Alzheimer type, senile onset, with depression",Condition,SNOMED,Disorder,S,26852004,2002-01-31,2099-12-31,NA
+4098163,Presenile dementia with paranoia,Condition,SNOMED,Disorder,S,191454001,2002-01-31,2099-12-31,NA
+4100250,Senile dementia with paranoia,Condition,SNOMED,Disorder,S,191458003,2002-01-31,2099-12-31,NA
+4100252,Arteriosclerotic dementia with paranoia,Condition,SNOMED,Disorder,S,191465006,2002-01-31,2099-12-31,NA
+4101137,Senile dementia with depressive or paranoid features,Condition,SNOMED,Disorder,S,191457008,2002-01-31,2099-12-31,NA
+4139421,Inhalant-induced persisting dementia,Condition,SNOMED,Disorder,S,32875003,2002-01-31,2099-12-31,NA
+4152048,Senile and presenile organic psychotic conditions,Condition,SNOMED,Disorder,S,268612007,2002-01-31,2099-12-31,NA
+4159643,Senile dementia with psychosis,Condition,SNOMED,Disorder,S,371026009,2002-07-31,2099-12-31,NA
+4167839,"Primary degenerative dementia of the Alzheimer type, senile onset, with delirium",Condition,SNOMED,Disorder,S,4817008,2002-01-31,2099-12-31,NA
+4180284,Dementia due to Creutzfeldt Jakob disease,Condition,SNOMED,Disorder,S,429458009,2008-01-31,2099-12-31,NA
+4182210,Dementia,Condition,SNOMED,Disorder,S,52448006,2002-01-31,2099-12-31,NA
+4182539,"Primary degenerative dementia of the Alzheimer type, presenile onset, with delusions",Condition,SNOMED,Disorder,S,54502004,2002-01-31,2099-12-31,NA
+4196433,Senile dementia of the Lewy body type,Condition,SNOMED,Disorder,S,312991009,2002-01-31,2099-12-31,NA
+4204688,"Primary degenerative dementia of the Alzheimer type, senile onset, with delusions",Condition,SNOMED,Disorder,S,55009008,2002-01-31,2099-12-31,NA
+4218017,"Primary degenerative dementia of the Alzheimer type, presenile onset",Condition,SNOMED,Disorder,S,416780008,2005-07-31,2099-12-31,NA
+4220313,"Primary degenerative dementia of the Alzheimer type, senile onset",Condition,SNOMED,Disorder,S,416975007,2005-07-31,2099-12-31,NA
+4224240,Presenile dementia with AIDS (acquired immunodeficiency syndrome),Condition,SNOMED,Disorder,S,421023003,2006-07-31,2099-12-31,NA
+4224860,Organic dementia with AIDS (acquired immunodeficiency syndrome),Condition,SNOMED,Disorder,S,420614009,2006-07-31,2099-12-31,NA
+4228133,Dementia with AIDS (acquired immunodeficiency syndrome),Condition,SNOMED,Disorder,S,421529006,2006-07-31,2099-12-31,NA
+4234089,Subcortical leukoencephalopathy,Condition,SNOMED,Disorder,S,90099008,2002-01-31,2099-12-31,NA
+4244346,Dialysis dementia,Condition,SNOMED,Disorder,S,9345005,2002-01-31,2099-12-31,NA
+4245766,"Sedative, hypnotic AND/OR anxiolytic-induced persisting dementia",Condition,SNOMED,Disorder,S,59651006,2002-01-31,2099-12-31,NA
+4277444,"Primary degenerative dementia of the Alzheimer type, presenile onset, uncomplicated",Condition,SNOMED,Disorder,S,6475002,2002-01-31,2099-12-31,NA
+4277746,"Primary degenerative dementia of the Alzheimer type, presenile onset, with delirium",Condition,SNOMED,Disorder,S,65096006,2002-01-31,2099-12-31,NA
+4278830,"Primary degenerative dementia of the Alzheimer type, senile onset, uncomplicated",Condition,SNOMED,Disorder,S,66108005,2002-01-31,2099-12-31,NA
+4307791,Dementia paralytica juvenilis,Condition,SNOMED,Disorder,S,82959004,2002-01-31,2099-12-31,NA
+4314734,Dementia associated with Parkinson's Disease,Condition,SNOMED,Disorder,S,425390006,2007-01-31,2099-12-31,NA
+35610096,Presenile dementia with psychosis,Condition,SNOMED,Disorder,S,1089501000000102,2018-04-01,2099-12-31,NA
+35610098,Predominantly cortical dementia,Condition,SNOMED,Disorder,S,1089521000000106,2018-04-01,2099-12-31,NA
+35610099,Predominantly cortical vascular dementia,Condition,SNOMED,Disorder,S,1089531000000108,2018-04-01,2099-12-31,NA
+36674472,PRKAR1B-related neurodegenerative dementia with intermediate filaments,Condition,SNOMED,Disorder,S,774069007,2019-01-31,2099-12-31,NA
+36716558,Non-amnestic Alzheimer disease,Condition,SNOMED,Disorder,S,722600006,2017-01-31,2099-12-31,NA
+36716795,Dementia co-occurrent and due to neurocysticercosis,Condition,SNOMED,Disorder,S,722977005,2017-01-31,2099-12-31,NA
+36716796,Dementia due to metabolic abnormality,Condition,SNOMED,Disorder,S,722979008,2017-01-31,2099-12-31,NA
+36716797,Dementia due to chromosomal anomaly,Condition,SNOMED,Disorder,S,722980006,2017-01-31,2099-12-31,NA
+36717248,Ischemic vascular dementia,Condition,SNOMED,Disorder,S,723123001,2017-01-31,2099-12-31,NA
+36717598,Toxic dementia,Condition,SNOMED,Disorder,S,722978000,2017-01-31,2099-12-31,NA
+37017247,Presenile dementia co-occurrent with human immunodeficiency virus infection,Condition,SNOMED,Disorder,S,713488003,2016-01-31,2099-12-31,NA
+37017549,Dementia co-occurrent with human immunodeficiency virus infection,Condition,SNOMED,Disorder,S,713844000,2016-01-31,2099-12-31,NA
+37018608,Epileptic dementia with behavioral disturbance,Condition,SNOMED,Disorder,S,82381000119103,2016-01-31,2099-12-31,NA
+37018688,Vascular dementia with behavioral disturbance,Condition,SNOMED,Disorder,S,288631000119104,2016-01-31,2099-12-31,NA
+37109056,Vascular dementia without behavioral disturbance,Condition,SNOMED,Disorder,S,16276361000119109,2017-07-31,2099-12-31,NA
+37109222,Hallucinations co-occurrent and due to late onset dementia,Condition,SNOMED,Disorder,S,2421000119107,2017-07-31,2099-12-31,NA
+37109635,Rapidly progressive dementia,Condition,SNOMED,Disorder,S,723390000,2017-07-31,2099-12-31,NA
+37110513,Dementia due to disorder of central nervous system,Condition,SNOMED,Disorder,S,724776007,2017-07-31,2099-12-31,NA
+37110677,Epilepsy co-occurrent and due to dementia,Condition,SNOMED,Disorder,S,724992007,2017-07-31,2099-12-31,NA
+37111242,Delirium co-occurrent with dementia,Condition,SNOMED,Disorder,S,725898002,2017-07-31,2099-12-31,NA
+37116464,Dementia caused by heavy metal exposure,Condition,SNOMED,Disorder,S,733184002,2017-07-31,2099-12-31,NA
+37116465,Dementia due to primary malignant neoplasm of brain,Condition,SNOMED,Disorder,S,733190003,2017-07-31,2099-12-31,NA
+37116466,Dementia due to chronic subdural hematoma,Condition,SNOMED,Disorder,S,733191004,2017-07-31,2099-12-31,NA
+37116467,Dementia due to herpes encephalitis,Condition,SNOMED,Disorder,S,733192006,2017-07-31,2099-12-31,NA
+37116468,Dementia with progressive multifocal leukoencephalopathy,Condition,SNOMED,Disorder,S,733193001,2017-07-31,2099-12-31,NA
+37116469,Dementia with Down syndrome,Condition,SNOMED,Disorder,S,733194007,2017-07-31,2099-12-31,NA
+37117145,Behavioral disturbance co-occurrent and due to late onset Alzheimer dementia,Condition,SNOMED,Disorder,S,16219201000119101,2017-07-31,2099-12-31,NA
+37119154,Dementia due to infectious disease,Condition,SNOMED,Disorder,S,724777003,2017-07-31,2099-12-31,NA
+37155661,Behavioral disturbance due to multi-infarct dementia,Condition,SNOMED,Disorder,S,293671000119109,2022-04-30,2099-12-31,NA
+37162098,HTRA1-related autosomal dominant cerebral small vessel disease,Condition,SNOMED,Disorder,S,1186724002,2021-11-30,2099-12-31,NA
+37162177,Dementia due to vitamin E deficiency,Condition,SNOMED,Disorder,S,1186877003,2021-11-30,2099-12-31,NA
+37162179,Dementia due to thiamine deficiency,Condition,SNOMED,Disorder,S,1186879000,2021-11-30,2099-12-31,NA
+37162180,Dementia due to cobalamin deficiency,Condition,SNOMED,Disorder,S,1186880002,2021-11-30,2099-12-31,NA
+37162181,Dementia due to niacin deficiency,Condition,SNOMED,Disorder,S,1186881003,2021-11-30,2099-12-31,NA
+37162183,Dementia due to nutritional deficiency,Condition,SNOMED,Disorder,S,1186883000,2021-11-30,2099-12-31,NA
+37162187,Dementia caused by manganese,Condition,SNOMED,Disorder,S,1186887004,2021-11-30,2099-12-31,NA
+37162223,Chronic traumatic encephalopathy,Condition,SNOMED,Disorder,S,1187004001,2021-11-30,2099-12-31,NA
+37162253,ITM2B-related amyloidosis,Condition,SNOMED,Disorder,S,1187126002,2021-11-30,2099-12-31,NA
+37166122,Amyotrophic lateral sclerosis with frontotemporal dementia,Condition,SNOMED,Disorder,S,1259124000,2022-11-30,2099-12-31,NA
+37166126,Alzheimer disease with psychosis,Condition,SNOMED,Disorder,S,1259128002,2022-11-30,2099-12-31,NA
+37166332,Dementia due to hepatic failure,Condition,SNOMED,Disorder,S,1259465009,2023-01-31,2099-12-31,NA
+37166334,Dementia due to hypercalcemia,Condition,SNOMED,Disorder,S,1259467001,2023-01-31,2099-12-31,NA
+37166336,Dementia due to Gerstmann Straussler Scheinker syndrome,Condition,SNOMED,Disorder,S,1259469003,2023-01-31,2099-12-31,NA
+37166338,Dementia due to Hashimoto encephalopathy,Condition,SNOMED,Disorder,S,1259471003,2023-01-31,2099-12-31,NA
+37166340,Dementia due to fragile X syndrome,Condition,SNOMED,Disorder,S,1259473000,2023-01-31,2099-12-31,NA
+37166343,Dementia due to genetic disease,Condition,SNOMED,Disorder,S,1259476008,2023-01-31,2099-12-31,NA
+37166345,Dementia due to familial Creutzfeldt-Jakob disease,Condition,SNOMED,Disorder,S,1259478009,2023-01-31,2099-12-31,NA
+37166347,Dementia due to fatal familial insomnia,Condition,SNOMED,Disorder,S,1259480003,2023-01-31,2099-12-31,NA
+37166351,Dementia due to cerebral vasculitis,Condition,SNOMED,Disorder,S,1259485008,2023-01-31,2099-12-31,NA
+37166354,Dementia due to cerebral amyloid angiopathy,Condition,SNOMED,Disorder,S,1259488005,2023-01-31,2099-12-31,NA
+37166357,Dementia due to metastatic malignant neoplasm to brain,Condition,SNOMED,Disorder,S,1259492003,2023-01-31,2099-12-31,NA
+37166359,Dementia due to leukodystrophy,Condition,SNOMED,Disorder,S,1259494002,2023-01-31,2099-12-31,NA
+37166361,Dementia due to Lyme disease,Condition,SNOMED,Disorder,S,1259496000,2023-01-31,2099-12-31,NA
+37166364,Dementia due to hemorrhagic cerebral infarction due to hypertension,Condition,SNOMED,Disorder,S,1259499007,2023-01-31,2099-12-31,NA
+37166366,Dementia due to kuru,Condition,SNOMED,Disorder,S,1259501004,2023-01-31,2099-12-31,NA
+37166368,Dementia due to iatrogenic Creutzfeldt-Jakob disease,Condition,SNOMED,Disorder,S,1259503001,2023-01-31,2099-12-31,NA
+37166374,Dementia due to Wilson disease,Condition,SNOMED,Disorder,S,1259511006,2023-01-31,2099-12-31,NA
+37166376,Dementia due to Whipple disease,Condition,SNOMED,Disorder,S,1259513009,2023-01-31,2099-12-31,NA
+37166380,Dementia due to systemic lupus erythematosus,Condition,SNOMED,Disorder,S,1259517005,2023-01-31,2099-12-31,NA
+37166382,Dementia due to subacute sclerosing panencephalitis,Condition,SNOMED,Disorder,S,1259519008,2023-01-31,2099-12-31,NA
+37166385,Dementia due to variant Creutzfeldt-Jakob disease,Condition,SNOMED,Disorder,S,1259522005,2023-01-31,2099-12-31,NA
+37166387,Dementia due to trypanosomiasis,Condition,SNOMED,Disorder,S,1259524006,2023-01-31,2099-12-31,NA
+37166391,Dementia due to sporadic Creutzfeldt-Jakob disease,Condition,SNOMED,Disorder,S,1259529001,2023-01-31,2099-12-31,NA
+37166393,Dementia due to hypertensive encephalopathy,Condition,SNOMED,Disorder,S,1259531005,2023-01-31,2099-12-31,NA
+37166436,Dementia due to Behcet syndrome,Condition,SNOMED,Disorder,S,1259579003,2023-01-31,2099-12-31,NA
+37166438,Dementia due to celiac disease,Condition,SNOMED,Disorder,S,1259581001,2023-01-31,2099-12-31,NA
+37166441,Post-dialysis dementia,Condition,SNOMED,Disorder,S,1259584009,2023-01-31,2099-12-31,NA
+37166443,Dementia due to autoimmune encephalitis,Condition,SNOMED,Disorder,S,1259586006,2023-01-31,2099-12-31,NA
+37166448,Dementia due to acquired hypothyroidism,Condition,SNOMED,Disorder,S,1259591007,2023-01-31,2099-12-31,NA
+37166508,Dementia due to renal failure,Condition,SNOMED,Disorder,S,1259656006,2023-01-31,2099-12-31,NA
+37166513,Dementia due to rheumatological disease,Condition,SNOMED,Disorder,S,1259661008,2023-01-31,2099-12-31,NA
+37166515,Dementia due to polyarteritis nodosa,Condition,SNOMED,Disorder,S,1259663006,2023-01-31,2099-12-31,NA
+37166517,Dementia due to progressive subcortical gliosis,Condition,SNOMED,Disorder,S,1259665004,2023-01-31,2099-12-31,NA
+37166519,Dementia due to paraneoplastic encephalitis,Condition,SNOMED,Disorder,S,1259667007,2023-01-31,2099-12-31,NA
+37166524,Dementia due to neurofilament inclusion body disease,Condition,SNOMED,Disorder,S,1259673008,2023-01-31,2099-12-31,NA
+37166526,Dementia due to obstructive hydrocephalus,Condition,SNOMED,Disorder,S,1259675001,2023-01-31,2099-12-31,NA
+37166528,Dementia due to multiple system atrophy,Condition,SNOMED,Disorder,S,1259677009,2023-01-31,2099-12-31,NA
+37166530,Dementia due to atypical pantothenate kinase associated neurodegeneration,Condition,SNOMED,Disorder,S,1259679007,2023-01-31,2099-12-31,NA
+37166714,Dementia due to classical pantothenate kinase associated neurodegeneration,Condition,SNOMED,Disorder,S,1259990004,2023-01-31,2099-12-31,NA
+37166904,Frontotemporal dementia due to TARDBP mutation,Condition,SNOMED,Disorder,S,1260352009,2023-02-28,2099-12-31,NA
+37166905,Frontotemporal dementia due to VCP mutation,Condition,SNOMED,Disorder,S,1260353004,2023-02-28,2099-12-31,NA
+37166906,Frontotemporal dementia due to C9orf72 mutation,Condition,SNOMED,Disorder,S,1260354005,2023-02-28,2099-12-31,NA
+37166907,Frontotemporal dementia due to FUS mutation,Condition,SNOMED,Disorder,S,1260355006,2023-02-28,2099-12-31,NA
+37167043,Logopenic non-amnestic Alzheimer disease,Condition,SNOMED,Disorder,S,1263555006,2023-02-28,2099-12-31,NA
+37167060,Frontal variant non-amnestic Alzheimer disease,Condition,SNOMED,Disorder,S,1263585001,2023-02-28,2099-12-31,NA
+37204495,ABri amyloidosis,Condition,SNOMED,Disorder,S,783161005,2019-07-31,2099-12-31,NA
+37204554,ADan amyloidosis,Condition,SNOMED,Disorder,S,783258000,2019-07-31,2099-12-31,NA
+37311665,Disinhibited behavior due to dementia,Condition,SNOMED,Disorder,S,789170003,2020-01-31,2099-12-31,NA
+37311998,Dementia due to pellagra,Condition,SNOMED,Disorder,S,788899002,2020-01-31,2099-12-31,NA
+37311999,Dementia caused by volatile inhalant,Condition,SNOMED,Disorder,S,788898005,2020-01-31,2099-12-31,NA
+37395562,Multi-infarct dementia due to atherosclerosis,Condition,SNOMED,Disorder,S,106021000119105,2016-07-31,2099-12-31,NA
+37395572,Alzheimer's disease co-occurrent with delirium,Condition,SNOMED,Disorder,S,142011000119109,2016-07-31,2099-12-31,NA
+37396063,Parkinsonism with dementia of Guadeloupe,Condition,SNOMED,Disorder,S,715737004,2016-07-31,2099-12-31,NA
+37396752,Right temporal lobar atrophy,Condition,SNOMED,Disorder,S,716667005,2016-07-31,2099-12-31,NA
+37397762,Altered behavior due to Pick's disease,Condition,SNOMED,Disorder,S,82351000119105,2016-07-31,2099-12-31,NA
+37399020,Behavioral variant of frontotemporal dementia,Condition,SNOMED,Disorder,S,716994006,2016-07-31,2099-12-31,NA
+40483103,Dementia due to Huntington chorea,Condition,SNOMED,Disorder,S,442344002,2009-07-31,2099-12-31,NA
+42538609,Dementia due to prion disease,Condition,SNOMED,Disorder,S,762350007,2018-01-31,2099-12-31,NA
+42538610,Dementia due to and following injury of head,Condition,SNOMED,Disorder,S,762351006,2018-01-31,2099-12-31,NA
+42538857,Subcortical dementia,Condition,SNOMED,Disorder,S,762707000,2018-01-31,2099-12-31,NA
+43020422,Dementia due to Rett syndrome,Condition,SNOMED,Disorder,S,130121000119104,2013-01-31,2099-12-31,NA
+43020444,Primary degenerative dementia,Condition,SNOMED,Disorder,S,22381000119105,2013-01-31,2099-12-31,NA
+43021816,Mixed dementia,Condition,SNOMED,Disorder,S,79341000119107,2013-01-31,2099-12-31,NA
+43530664,Dementia of the Alzheimer type with behavioral disturbance,Condition,SNOMED,Disorder,S,1581000119101,2013-07-31,2099-12-31,NA
+43530666,Dementia with behavioral disturbance,Condition,SNOMED,Disorder,S,1591000119103,2012-09-01,2099-12-31,NA
+44782422,Dementia due to Parkinson's disease,Condition,SNOMED,Disorder,S,101421000119107,2014-01-31,2099-12-31,NA
+44782432,Early onset Alzheimer's disease with behavioral disturbance,Condition,SNOMED,Disorder,S,105421000119105,2014-01-31,2099-12-31,NA
+44782559,Dementia due to multiple sclerosis with altered behavior,Condition,SNOMED,Disorder,S,82371000119101,2014-01-31,2099-12-31,NA
+44782710,Dementia due to Pick's disease,Condition,SNOMED,Disorder,S,21921000119103,2014-01-31,2099-12-31,NA
+44782726,Delusions in Alzheimer's disease,Condition,SNOMED,Disorder,S,141991000119109,2014-01-31,2099-12-31,NA
+44782727,Depressed mood in Alzheimer's disease,Condition,SNOMED,Disorder,S,142001000119106,2014-01-31,2099-12-31,NA
+44782771,Presenile dementia with delusions,Condition,SNOMED,Disorder,S,31081000119101,2014-01-31,2099-12-31,NA
+44782934,Vascular dementia in remission,Condition,SNOMED,Disorder,S,698948009,2014-01-31,2099-12-31,NA
+44782935,Dementia in remission,Condition,SNOMED,Disorder,S,698949001,2014-01-31,2099-12-31,NA
+44782940,"Primary degenerative dementia of the Alzheimer type, senile onset in remission",Condition,SNOMED,Disorder,S,698954005,2014-01-31,2099-12-31,NA
+44782941,"Primary degenerative dementia of the Alzheimer type, presenile onset in remission",Condition,SNOMED,Disorder,S,698955006,2014-01-31,2099-12-31,NA
+44784472,Dementia associated with cerebral lipidosis,Condition,SNOMED,Disorder,S,698624003,2014-01-31,2099-12-31,NA
+44784473,Dementia associated with normal pressure hydrocephalus,Condition,SNOMED,Disorder,S,698625002,2014-01-31,2099-12-31,NA
+44784474,Dementia associated with multiple sclerosis,Condition,SNOMED,Disorder,S,698626001,2014-01-31,2099-12-31,NA
+44784521,Post-traumatic dementia with behavioral change,Condition,SNOMED,Disorder,S,698687007,2014-01-31,2099-12-31,NA
+44784559,Dementia associated with neurosyphilis,Condition,SNOMED,Disorder,S,698725008,2014-01-31,2099-12-31,NA
+44784560,Dementia associated with viral encephalitis,Condition,SNOMED,Disorder,S,698726009,2014-01-31,2099-12-31,NA
+44784607,Dementia associated with cerebral anoxia,Condition,SNOMED,Disorder,S,698781002,2014-01-31,2099-12-31,NA
+44784620,Altered behavior in Huntington's dementia,Condition,SNOMED,Disorder,S,82361000119107,2014-01-31,2099-12-31,NA
+44784643,Altered behavior in Alzheimer's disease,Condition,SNOMED,Disorder,S,97751000119108,2014-01-31,2099-12-31,NA
+45771254,CHMP2B-related frontotemporal dementia,Condition,SNOMED,Disorder,S,702393003,2014-07-31,2099-12-31,NA

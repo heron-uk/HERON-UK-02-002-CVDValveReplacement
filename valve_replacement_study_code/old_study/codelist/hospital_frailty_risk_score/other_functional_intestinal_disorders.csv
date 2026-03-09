@@ -1,0 +1,95 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+75576,Irritable bowel syndrome,Condition,SNOMED,Disorder,S,10743008,2002-01-31,2099-12-31,NA
+79061,Slow transit constipation,Condition,SNOMED,Disorder,S,35298007,2002-01-31,2099-12-31,NA
+194149,Congenital aganglionic megacolon,Condition,SNOMED,Disorder,S,204739008,2002-01-31,2099-12-31,NA
+196151,Functional disorder of intestine,Condition,SNOMED,Disorder,S,81120009,2002-01-31,2099-12-31,NA
+198465,Acquired megacolon,Condition,SNOMED,Disorder,S,33995003,2002-01-31,2099-12-31,NA
+201905,Constipation by outlet obstruction,Condition,SNOMED,Disorder,S,85920003,2002-01-31,2099-12-31,NA
+608039,Neuronal intestinal pseudo-obstruction,Condition,SNOMED,Disorder,S,1156770004,2021-07-31,2099-12-31,NA
+608196,Congenital interstitial cell of Cajal hyperplasia with neuronal intestinal dysplasia,Condition,SNOMED,Disorder,S,1156992005,2021-07-31,2099-12-31,NA
+619073,Mowat-Wilson syndrome due to monosomy 2q22,Condition,SNOMED,Disorder,S,890118006,2021-01-31,2099-12-31,NA
+1245043,Functional bloating after eating certain foods,Condition,SNOMED,Disorder,S,1296520006,2023-12-01,2099-12-31,NA
+1340381,Exacerbation of irritable bowel syndrome,Condition,OMOP Extension,Disorder,S,OMOP5166036,2022-05-06,2099-12-31,NA
+3177467,Constipation due to pain medication,Condition,Nebraska Lexicon,Clinical Finding,S,18490001000004109,2016-01-28,2099-12-31,NA
+4002470,Short segment Hirschsprung's disease,Condition,SNOMED,Disorder,S,204741009,2002-01-31,2099-12-31,NA
+4005774,Long segment Hirschsprung's disease,Condition,SNOMED,Disorder,S,204740005,2002-01-31,2099-12-31,NA
+4005775,Total intestinal aganglionosis,Condition,SNOMED,Disorder,S,204745000,2002-01-31,2099-12-31,NA
+4008552,Obstipation,Condition,SNOMED,Disorder,S,111360009,2002-01-31,2099-12-31,NA
+4026011,Chronic constipation without overflow,Condition,SNOMED,Disorder,S,197120000,2002-01-31,2099-12-31,NA
+4055110,Functional constipation,Condition,SNOMED,Disorder,S,197118003,2002-01-31,2099-12-31,NA
+4055112,Secondary megacolon - congenital,Condition,SNOMED,Disorder,S,197140007,2002-01-31,2099-12-31,NA
+4055114,Secondary acquired megacolon,Condition,SNOMED,Disorder,S,197141006,2002-01-31,2099-12-31,NA
+4057826,Irritable bowel syndrome with diarrhea,Condition,SNOMED,Disorder,S,197125005,2002-01-31,2099-12-31,NA
+4057830,Idiopathic megacolon,Condition,SNOMED,Disorder,S,197139005,2002-01-31,2099-12-31,NA
+4058396,Primary chronic pseudo-obstruction of small intestine,Condition,SNOMED,Disorder,S,19881001,2002-01-31,2099-12-31,NA
+4070750,Drug-induced constipation,Condition,SNOMED,Disorder,S,21782001,2002-01-31,2099-12-31,NA
+4105587,Atony of colon,Condition,SNOMED,Disorder,S,29479008,2002-01-31,2099-12-31,NA
+4108887,"Megacystis, microcolon, hypoperistalsis syndrome",Condition,SNOMED,Disorder,S,253781004,2002-01-31,2099-12-31,NA
+4109616,Generalized congenital intestinal dysmotility,Condition,SNOMED,Disorder,S,253785008,2002-01-31,2099-12-31,NA
+4109785,Congenital dysmotility of small intestine,Condition,SNOMED,Disorder,S,253768006,2002-01-31,2099-12-31,NA
+4109787,Neuronal intestinal dysplasia,Condition,SNOMED,Disorder,S,253783001,2002-01-31,2099-12-31,NA
+4118149,Acquired megacolon in child,Condition,SNOMED,Disorder,S,259058004,2002-01-31,2099-12-31,NA
+4127016,Idiopathic megacolon in child,Condition,SNOMED,Disorder,S,259583007,2002-01-31,2099-12-31,NA
+4135220,Chronic constipation with overflow,Condition,SNOMED,Disorder,S,31499008,2002-01-31,2099-12-31,NA
+4147292,Primary chronic pseudo-obstruction of colon,Condition,SNOMED,Disorder,S,35065006,2002-01-31,2099-12-31,NA
+4150028,Enterospasm,Condition,SNOMED,Disorder,S,30993009,2002-01-31,2099-12-31,NA
+4201305,Secondary intestinal pseudo-obstruction,Condition,SNOMED,Disorder,S,51522004,2002-01-31,2099-12-31,NA
+4215744,Primary chronic pseudo-obstruction of large intestine,Condition,SNOMED,Disorder,S,80761006,2002-01-31,2099-12-31,NA
+4225690,Toxic megacolon due to Clostridium difficile infection,Condition,SNOMED,Disorder,S,404907009,2004-01-31,2099-12-31,NA
+4225691,Toxic megacolon due to ulcerative colitis,Condition,SNOMED,Disorder,S,404908004,2004-01-31,2099-12-31,NA
+4231315,Aganglionosis of Auerbach's plexus,Condition,SNOMED,Disorder,S,360434004,2002-01-31,2099-12-31,NA
+4234788,Irritable bowel syndrome characterized by alternating bowel habit,Condition,SNOMED,Disorder,S,440544005,2009-01-31,2099-12-31,NA
+4261072,Irritable bowel syndrome characterized by constipation,Condition,SNOMED,Disorder,S,440630006,2009-01-31,2099-12-31,NA
+4270789,Hereditary hollow viscus myopathy,Condition,SNOMED,Disorder,S,63684002,2002-01-31,2099-12-31,NA
+4288861,Paralysis of colon,Condition,SNOMED,Disorder,S,69098002,2002-01-31,2099-12-31,NA
+4306923,Chronic idiopathic constipation,Condition,SNOMED,Disorder,S,82934008,2002-01-31,2099-12-31,NA
+4328435,Constipation due to spasm of colon,Condition,SNOMED,Disorder,S,430097009,2008-07-31,2099-12-31,NA
+4333213,Constipation due to neurogenic bowel,Condition,SNOMED,Disorder,S,432994008,2008-07-31,2099-12-31,NA
+4333890,Atonic constipation,Condition,SNOMED,Disorder,S,432414001,2008-07-31,2099-12-31,NA
+4340368,Motility disorder of intestine,Condition,SNOMED,Disorder,S,235823004,2002-01-31,2099-12-31,NA
+4340369,Absence of peristalsis of intestine,Condition,SNOMED,Disorder,S,235824005,2002-01-31,2099-12-31,NA
+4340370,Acute pseudo-obstruction of small intestine,Condition,SNOMED,Disorder,S,235827003,2002-01-31,2099-12-31,NA
+4340371,Chronic intestinal pseudo-obstruction,Condition,SNOMED,Disorder,S,235828008,2002-01-31,2099-12-31,NA
+4340372,Hollow visceral myopathy,Condition,SNOMED,Disorder,S,235831009,2002-01-31,2099-12-31,NA
+4340374,Irritable bowel syndrome variant of childhood with constipation,Condition,SNOMED,Disorder,S,235840008,2002-01-31,2099-12-31,NA
+4340520,Chronic constipation,Condition,SNOMED,Disorder,S,236069009,2002-01-31,2099-12-31,NA
+4340932,Acute intestinal pseudo-obstruction,Condition,SNOMED,Disorder,S,235826007,2002-01-31,2099-12-31,NA
+4340933,Chronic pseudo-obstruction of small intestine,Condition,SNOMED,Disorder,S,235829000,2002-01-31,2099-12-31,NA
+4340934,Drug-induced megacolon,Condition,SNOMED,Disorder,S,235830005,2002-01-31,2099-12-31,NA
+4341644,Irritable bowel syndrome variant of childhood,Condition,SNOMED,Disorder,S,235838003,2002-01-31,2099-12-31,NA
+4341645,Irritable bowel syndrome variant of childhood with diarrhea,Condition,SNOMED,Disorder,S,235839006,2002-01-31,2099-12-31,NA
+4342766,Pseudo-obstruction of intestine,Condition,SNOMED,Disorder,S,235825006,2002-01-31,2099-12-31,NA
+4345357,Toxic megacolon due to amebic infection,Condition,SNOMED,Disorder,S,240363009,2002-01-31,2099-12-31,NA
+36714655,Haddad syndrome,Condition,SNOMED,Disorder,S,719972004,2017-01-31,2099-12-31,NA
+36715042,Chronic atrial and intestinal dysrhythmia,Condition,SNOMED,Disorder,S,720507006,2017-01-31,2099-12-31,NA
+36715518,Hirschsprung disease with type D brachydactyly syndrome,Condition,SNOMED,Disorder,S,721222007,2017-01-31,2099-12-31,NA
+36715519,Hirschsprung disease with nail hypoplasia and dysmorphism,Condition,SNOMED,Disorder,S,721223002,2017-01-31,2099-12-31,NA
+36715838,Extensive aganglionosis Hirschsprung disease,Condition,SNOMED,Disorder,S,721609009,2017-01-31,2099-12-31,NA
+36715898,Pseudo-obstruction of colon,Condition,SNOMED,Disorder,S,721680006,2017-01-31,2099-12-31,NA
+36716157,Oculogastrointestinal muscular dystrophy,Condition,SNOMED,Disorder,S,722060007,2017-01-31,2099-12-31,NA
+36716683,Anorectal dysfunction due to pelvic organ prolapse,Condition,SNOMED,Disorder,S,722834005,2017-01-31,2099-12-31,NA
+36716718,Functional heartburn,Condition,SNOMED,Disorder,S,722876002,2017-01-31,2099-12-31,NA
+36716724,Infant dyschezia,Condition,SNOMED,Disorder,S,722885002,2017-01-31,2099-12-31,NA
+36717041,Goldberg Shprintzen megacolon syndrome,Condition,SNOMED,Disorder,S,717822006,2017-01-31,2099-12-31,NA
+36717151,Hirschsprung disease with deafness and polydactyly syndrome,Condition,SNOMED,Disorder,S,721221000,2017-01-31,2099-12-31,NA
+36717219,Toxic megacolon due to infectious colitis,Condition,SNOMED,Disorder,S,722541007,2017-01-31,2099-12-31,NA
+36717236,Functional fecal incontinence,Condition,SNOMED,Disorder,S,722881006,2017-01-31,2099-12-31,NA
+36717345,Hirschsprung disease of rectosigmoid region,Condition,SNOMED,Disorder,S,721608001,2017-01-31,2099-12-31,NA
+36717588,Secondary chronic intestinal pseudo-obstruction,Condition,SNOMED,Disorder,S,722847000,2017-01-31,2099-12-31,NA
+36717591,Functional bloating,Condition,SNOMED,Disorder,S,722879009,2017-01-31,2099-12-31,NA
+37017181,Obstructive defecation syndrome,Condition,SNOMED,Disorder,S,713411004,2016-01-31,2099-12-31,NA
+37162833,Dysmotility of small intestine caused by drug,Condition,SNOMED,Disorder,S,1197672004,2022-02-28,2099-12-31,NA
+37162834,Dysmotility of small intestine due to systemic disease,Condition,SNOMED,Disorder,S,1197673009,2022-02-28,2099-12-31,NA
+37162878,Functional constipation of infant,Condition,SNOMED,Disorder,S,1197721001,2022-02-28,2099-12-31,NA
+37162894,Chronic idiopathic intestinal pseudo-obstruction,Condition,SNOMED,Disorder,S,1197738002,2022-02-28,2099-12-31,NA
+37163918,Primary desmosis coli,Condition,SNOMED,Disorder,S,1222675000,2022-05-31,2099-12-31,NA
+37167952,Toxic state due to colonic dilatation,Condition,SNOMED,Disorder,S,1269214001,2023-04-30,2099-12-31,NA
+37167990,Acquired megacolon in adult,Condition,SNOMED,Disorder,S,1269300004,2023-04-30,2099-12-31,NA
+37167991,Idiopathic megacolon in adult,Condition,SNOMED,Disorder,S,1269301000,2023-04-30,2099-12-31,NA
+37396221,Waardenburg Shah syndrome,Condition,SNOMED,Disorder,S,715952000,2016-07-31,2099-12-31,NA
+42537669,Acquired hypoganglionosis of large intestine,Condition,SNOMED,Disorder,S,737199001,2018-01-31,2099-12-31,NA
+42539091,Motility disorder of small intestine,Condition,SNOMED,Disorder,S,737192005,2018-01-31,2099-12-31,NA
+42539688,Motility disorder of large intestine,Condition,SNOMED,Disorder,S,737198009,2018-01-31,2099-12-31,NA
+45757425,Therapeutic opioid induced constipation,Condition,SNOMED,Disorder,S,136801000119102,2015-01-31,2099-12-31,NA
+45757556,Constipation due to pelvic floor outlet obstruction,Condition,SNOMED,Disorder,S,202161000119104,2015-01-31,2099-12-31,NA
+45766388,Mowat-Wilson syndrome,Condition,SNOMED,Disorder,S,703535000,2014-07-31,2099-12-31,NA
