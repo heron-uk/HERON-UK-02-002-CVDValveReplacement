@@ -35,20 +35,11 @@ omopgenerics::logMessage(message = "Study cohorts instantiated")
 
 # Run analyses ----
 omopgenerics::logMessage(message = "Run study analyses")
-# results[["code_use_indications"]]   <- CodelistGenerator::summariseCohortCodeUse(cdm$indications)
-# results[["code_use_procedures"]]    <- CodelistGenerator::summariseCohortCodeUse(cdm$procedures)
-# results[["code_use_comorbidities"]] <- CodelistGenerator::summariseCohortCodeUse(cdm$comorbidities)
-# results[["code_use_treatments"]]    <- CodelistGenerator::summariseCohortCodeUse(cdm$treatments)
-
-omopgenerics::logMessage(message = "Get cohort attrition")
-results[["attrition_proc_one"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$procedures_plus_aortic_stenosis) 
-results[["attrition_proc"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$procedures_objective_one) 
+results[["code_use_indications"]]   <- CodelistGenerator::summariseCohortCodeUse(cdm$indications)
+results[["code_use_procedures"]]    <- CodelistGenerator::summariseCohortCodeUse(cdm$procedures_objective_one)
 
 source(here::here("analyses", "1-ObjectiveOne.R"))
-
 source(here::here("analyses", "2-ObjectiveTwo.R"))
-
-source(here::here("analyses", "3-ObjectiveThreeAndFour.R"))
 
 omopgenerics::logMessage("Analyses finished")
 

@@ -20,7 +20,7 @@ library(clock)
 library(rlang)
 # database metadata and connection details
 # The name/ acronym for the database
-dbName <- "CPRD GOLD"
+dbName <- ""
 
 # Database connection details
 # In this study we also use the DBI package to connect to the database
@@ -38,22 +38,22 @@ dbName <- "CPRD GOLD"
 #   password = password
 # )
 db <- dbConnect(RPostgres::Postgres(),
-                dbname = Sys.getenv("server_dbi_cprd"),
-                host   = Sys.getenv("host"),
-                user   = Sys.getenv("user"),
-                password = Sys.getenv("password"))
+                dbname = "",
+                host   = "",
+                user   = "",
+                password = "")
 
 # The name of the schema that contains the OMOP CDM with patient-level data
-cdmSchema <- "public_100k"
+cdmSchema <- ""
 
 # A prefix for all permanent tables in the database
-writePrefix <- "avr"
+writePrefix <- ""
 
 # The name of the schema where results tables will be created
-writeSchema <- "results"
+writeSchema <- ""
 
 # The name of the schema where the achilles tables are
-achillesSchema <- "results"
+achillesSchema <- ""
 
 # minimum counts that can be displayed according to data governance
 minCellCount <- 5

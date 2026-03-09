@@ -2,7 +2,7 @@ omopgenerics::logMessage(message = "INSTANTIATING COHORTS")
 
 # Procedures ---
 omopgenerics::logMessage(message = "Importing procedure codelists")
-codelist <- importCodelistWithDetails(here::here("codelist", "study_codelists" ))
+codelist <- importCodelistWithDetails(here::here("codelist", "study_codelists"))
 
 omopgenerics::logMessage(message = "Creating SAVI/TAVI no restrictions cohort")
 cdm[["avr_no_restrictions"]] <- CohortConstructor::conceptCohort(cdm = cdm, 
