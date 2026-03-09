@@ -25,7 +25,6 @@ cdm$healthy <- cdm$healthy |>
   PatientProfiles::addSex() |>
   addEthnicity() |>
   addAge(col_name = "age_start") |>
-  addSES() |>
   PatientProfiles::addDeathDate(deathDateName = "death_date") |>
   addAge(col_name = "age_death", date_name = "death_date") |>
   dplyr::filter(is.na(death_date) | (death_date > cohort_start_date)) |> 
