@@ -1,9 +1,0 @@
-concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
-4008093,"Functional disorder present, condition terminal",Condition,SNOMED,Clinical Finding,S,111947009,2002-01-31,2099-12-31,NA
-4036795,Terminal illness - early stage,Condition,SNOMED,Clinical Finding,S,162607003,2002-01-31,2099-12-31,NA
-4037846,Terminal illness - late stage,Condition,SNOMED,Clinical Finding,S,162608008,2002-01-31,2099-12-31,NA
-4116982,Terminal illness,Condition,SNOMED,Clinical Finding,S,300936002,2002-01-31,2099-12-31,NA
-4192174,Illness,Condition,SNOMED,Clinical Finding,S,39104002,2002-01-31,2099-12-31,NA
-4319159,Influenza-like illness,Condition,SNOMED,Clinical Finding,S,95891005,2002-01-31,2099-12-31,NA
-40493255,Viral syndrome,Condition,SNOMED,Clinical Finding,S,445939008,2011-01-31,2099-12-31,NA
-44809657,Life expectancy limiting condition,Condition,SNOMED,Clinical Finding,S,837481000000105,2012-10-01,2099-12-31,NA
