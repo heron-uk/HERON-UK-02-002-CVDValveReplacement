@@ -1,7 +1,0 @@
-concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
-443600,Localized infection of skin AND/OR subcutaneous tissue,Condition,SNOMED,Disorder,S,430348006,2008-07-31,2099-12-31,NA
-3176778,Chronic abdominal wound infection,Condition,Nebraska Lexicon,Clinical Finding,S,21110001000004103,2016-01-28,2099-12-31,NA
-3655648,Localized cutaneous leishmaniasis co-occurrent with nodular lymphangitis,Condition,SNOMED,Disorder,S,866117003,2020-07-31,2099-12-31,NA
-4102125,Episiotomy infection,Condition,SNOMED,Disorder,S,300927001,2002-01-31,2099-12-31,NA
-4291612,Localized cutaneous gonococcal infection,Condition,SNOMED,Disorder,S,402956009,2003-07-31,2099-12-31,NA
-42536499,Localized infection of subcutaneous tissue,Condition,SNOMED,Disorder,S,735400004,2018-01-31,2099-12-31,NA

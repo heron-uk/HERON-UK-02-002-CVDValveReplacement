@@ -1,8 +1,0 @@
-concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
-4253214,Hyponatremia with extracellular fluid depletion,Condition,SNOMED,Disorder,S,74185008,2002-01-31,2099-12-31,NA
-37311264,Extrarenal fluid volume depletion,Condition,SNOMED,Clinical Finding,S,816163006,2020-01-31,2099-12-31,NA
-37311265,Gastrointestinal fluid volume depletion,Condition,SNOMED,Clinical Finding,S,816162001,2020-01-31,2099-12-31,NA
-37311271,Relative hypovolemia,Condition,SNOMED,Clinical Finding,S,816156006,2020-01-31,2099-12-31,NA
-37311272,Absolute hypovolemia,Condition,SNOMED,Clinical Finding,S,816155005,2020-01-31,2099-12-31,NA
-37311319,Hypovolemia,Condition,SNOMED,Clinical Finding,S,816082000,2020-01-31,2099-12-31,NA
-37311320,Extracellular fluid volume depletion,Condition,SNOMED,Clinical Finding,S,816081007,2020-01-31,2099-12-31,NA

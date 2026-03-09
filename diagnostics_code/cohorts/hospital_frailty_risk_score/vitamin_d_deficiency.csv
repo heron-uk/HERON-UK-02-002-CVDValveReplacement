@@ -1,5 +1,0 @@
-concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
-436070,Vitamin D deficiency,Condition,SNOMED,Disorder,S,34713006,2002-01-31,2099-12-31,NA
-606951,Vitamin D deficiency due to chronic kidney disease,Condition,SNOMED,Disorder,S,1148896009,2021-07-31,2099-12-31,NA
-4300954,Deficiency of vitamin D2,Condition,SNOMED,Disorder,S,386070008,2003-01-31,2099-12-31,NA
-4300955,Deficiency of vitamin D3,Condition,SNOMED,Disorder,S,386072000,2003-01-31,2099-12-31,NA
