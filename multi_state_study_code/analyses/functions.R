@@ -62,7 +62,7 @@ addEthnicity <- function(cohort) {
       dplyr::mutate(
         ethnicity_group = dplyr::case_when(
           .data$race_source_value %in% c("Bangladeshi", "Chinese", "Indian", "Other Asian", "Pakistani") ~ "Asian",
-          .data$race_source_value %in% c("African", "Caribbean", "Other Black", ) ~ "Black",
+          .data$race_source_value %in% c("African", "Caribbean", "Other Black") ~ "Black",
           .data$race_source_value %in% c("Gypsy/Traveller", "Irish", "Other British", "Other White", "Polish", "Scottish") ~ "White",
           .data$race_source_value %in% c("Other Mixed", "White and Asian", "White and Black African", "White and Black Caribbean") ~ "Mix",
           .data$race_source_value %in% c("Arab", "Other ethnic group") ~ "Other",
