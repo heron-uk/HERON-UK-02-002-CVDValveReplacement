@@ -49,24 +49,17 @@ cdm$avd <- conceptCohort(cdm = cdm,
                     conceptSet = list(aortic_stenosis = study_codes$aortic_stenosis,
                                       aortic_stenosis_avr = study_codes$aortic_stenosis_avr,
                                       aortic_valve_disease = study_codes$aortic_valve_disease,
-                                      aortic_insufficiency = study_codes$aortic_insufficiency,
                                       aortic_insufficiency = study_codes$aortic_insufficiency_avr,
-                                      aortic_endocarditis = study_codes$aortic_endocarditis,
                                       aortic_endocarditis = study_codes$aortic_endocarditis_avr),
-                    exit = "event_start_date") |>
-  exitAtObservationEnd()
+                    exit = "event_start_date")
 
-cdm$congenital_avd <- cdm$avd |>
+cdm$congenital_avd <- conceptCohort(cdm = cdm,
+                                    name = "congenital_avd",
+                                    conceptSet = list(aortic_stenosis_congenital =
+                                                        study_codes$aortic_stenosis_congenital),
+                                    exit = "event_start_date") |>
   requireAge(ageRange = c(0, 17),
-             name = "congenital_avd") |>
-  renameCohort(newCohortName = "congenital_aortic_stenosis",
-               cohortId = "aortic_stenosis") |>
-  renameCohort(newCohortName = "congenital_aortic_valve_disease",
-               cohortId = "aortic_valve_disease") |>
-  renameCohort(newCohortName = "congenital_aortic_insufficiency",
-               cohortId = "aortic_insufficiency") |>
-  renameCohort(newCohortName = "congenital_aortic_endocarditis",
-               cohortId = "aortic_endocarditis")
+             name = "congenital_avd")
 
 # comorbidities -----
 cdm$comorbidities <- conceptCohort(cdm = cdm,
@@ -208,6 +201,6 @@ cdm <- omopgenerics::bind(cdm$obesity,
 # bind -----
 cdm <- bind(cdm$congenital_avd, cdm$avd, name = "indications")
 cdm <- bind(cdm$tavi, cdm$savr,  cdm$aortic_valve_replacement, name = "procedures")
-
+cdm <- bind(cdm$indications, cdm$procedures, name = "study_cohorts")
 
 
