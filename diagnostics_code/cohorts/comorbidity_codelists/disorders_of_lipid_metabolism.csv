@@ -1,130 +1,130 @@
-﻿concept_id,found_from,domain_id,vocabulary_id,standard_concept,concept_name,dlp_highlevels
-4177711,From descendants,Observation,SNOMED,S,Dietary education for hyperlipidemia,T
-4323359,From initial search,Observation,SNOMED,S,Dietary education for lipid disorder,T
-44807086,From initial search,Observation,SNOMED,S,Dietary surveillance in hypercholesterolaemia,T
-37165179,In synonyms,Condition,SNOMED,S,Diffuse plane xanthoma due to hyperlipidemia,T
-4047784,From descendants,Condition,SNOMED,S,Disorder of cholesterol metabolism,T
-437530,From initial search,Condition,SNOMED,S,Disorder of lipid metabolism,T
-4031808,From initial search,Condition,SNOMED,S,Disorder of lipid storage and metabolism,T
-4170226,From initial search,Condition,SNOMED,S,Disorder of lipoprotein AND/OR lipid metabolism,T
-4031814,From descendants,Condition,SNOMED,S,Disorder of lipoprotein storage and metabolism,T
-35608140,From initial search,Condition,SNOMED,S,Double heterozygous familial hypercholesterolemia,T
-4159131,From initial search,Condition,SNOMED,S,Dyslipidemia,T
-37016353,From initial search,Condition,SNOMED,S,Dyslipidemia due to type 1 diabetes mellitus,T
-43531564,From initial search,Condition,SNOMED,S,Dyslipidemia due to type 2 diabetes mellitus,T
-762494,From initial search,Observation,SNOMED,S,Dyslipidemia education,T
-45757280,From initial search,Condition,SNOMED,S,Dyslipidemia with high density lipoprotein below reference range and triglyceride above reference range due to type 2 diabetes mellitus,T
-4030618,In synonyms,Condition,SNOMED,S,Endogenous hyperlipidemia,T
-1340362,From initial search,Condition,OMOP Extension,S,Exacerbation of hypercholesterolemia,T
-766254,From descendants,Condition,OMOP Extension,S,Exacerbation of hyperlipidaemia,T
-4030586,In synonyms,Condition,SNOMED,S,Exogenous hyperlipidemia,T
-4053770,In synonyms,Observation,SNOMED,S,Extracellular lipid aggregate alteration,T
-4143177,From descendants,Condition,SNOMED,S,Familial apolipoprotein C-II deficiency,T
-37162785,From descendants,Condition,SNOMED,S,Familial chylomicronemia syndrome,T
-4079876,In synonyms,Condition,SNOMED,S,Familial combined hyperlipidemia,T
-4029890,In synonyms,Condition,SNOMED,S,Familial defective apolipoprotein B-100,T
-4134862,From initial search,Condition,SNOMED,S,Familial hypercholesterolemia,T
-4029259,From initial search,Condition,SNOMED,S,Familial hypercholesterolemia - heterozygous,T
-4079885,From initial search,Condition,SNOMED,S,Familial hypercholesterolemia - homozygous,T
-4295609,From initial search,Condition,SNOMED,S,Familial hypercholesterolemia due to genetic defect of apolipoprotein B,T
-4295608,From initial search,Condition,SNOMED,S,Familial hypercholesterolemia due to heterozygous LDL receptor mutation,T
-4298010,From initial search,Condition,SNOMED,S,Familial hypercholesterolemia due to homozygous LDL receptor mutation,T
-437521,From descendants,Condition,SNOMED,S,Familial hyperchylomicronemia,T
-4142496,From descendants,Condition,SNOMED,S,Familial hypertriglyceridemia,T
-4301409,From descendants,Condition,SNOMED,S,Familial lipoprotein lipase deficiency with type I phenotype,T
-4300461,From descendants,Condition,SNOMED,S,Familial lipoprotein lipase deficiency with type V phenotype,T
-4104485,In synonyms,Condition,SNOMED,S,Familial multiple lipoprotein-type hyperlipidemia,T
-4162681,In synonyms,Condition,SNOMED,S,Familial type 3 hyperlipoproteinemia,T
-4144529,From descendants,Condition,SNOMED,S,Familial type 5 hyperlipoproteinemia,T
-35610398,From initial search,Observation,SNOMED,S,Family history of double heterozygous familial hypercholesterolemia,T
-40481865,From initial search,Observation,SNOMED,S,Family history of familial hypercholesterolemia,T
-37154299,From descendants,Observation,SNOMED,S,Family history of Fredrickson type IIa hyperlipoproteinemia,T
-4220010,From descendants,Condition,SNOMED,S,Fredrickson type IIa hyperlipoproteinemia,T
-4029261,From descendants,Condition,SNOMED,S,Fredrickson type IV hyperlipoproteinemia,T
-37169678,From initial search,Observation,SNOMED,S,Genetic variant of uncertain significance for familial hypercholesterolaemia detected,T
-36715325,From descendants,Condition,SNOMED,S,Hepatic lipase deficiency,T
-4178180,From descendants,Condition,SNOMED,S,Heterozygous sitosterolemia,T
-40491984,From descendants,Condition,SNOMED,S,High density lipoprotein deficiency,T
-4179809,From descendants,Condition,SNOMED,S,Homozygous sitosterolemia,T
-4098481,From descendants,Condition,SNOMED,S,Hyperbetalipoproteinemia,T
-4029305,From initial search,Condition,SNOMED,S,Hypercholesterolemia,T
-36674388,From initial search,Condition,SNOMED,S,Hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency,T
-40484632,From initial search,Observation,SNOMED,S,Hypercholesterolemia well controlled,T
-432867,In synonyms,Condition,SNOMED,S,Hyperlipidemia,T
-45757432,In synonyms,Condition,SNOMED,S,Hyperlipidemia due to type 1 diabetes mellitus,T
-45770880,In synonyms,Condition,SNOMED,S,Hyperlipidemia due to type 2 diabetes mellitus,T
-4298723,In synonyms,Condition,SNOMED,S,Hyperlipidemia with lipid deposition in skin,T
-4096215,In synonyms,Condition,SNOMED,S,"Hyperlipidemia, group A",T
-4292079,From descendants,Condition,SNOMED,S,Hyperlipoproteinemia,T
-4077382,From descendants,Condition,SNOMED,S,"Hyperlipoproteinemia, type I",T
-4120314,From descendants,Condition,SNOMED,S,Hypertriglyceridemia,T
-4098594,From descendants,Condition,SNOMED,S,Hypoalphalipoproteinemia,T
-4096217,From descendants,Condition,SNOMED,S,Hypo-beta-lipoproteinemia,T
-4266240,From descendants,Condition,SNOMED,S,Hypocholesterolemia,T
-4079888,In synonyms,Condition,SNOMED,S,Hypolipidemia,T
-4176937,From descendants,Condition,SNOMED,S,Hypolipoproteinemia,T
-4183326,From descendants,Condition,SNOMED,S,Inborn error of lipoprotein metabolism,T
-36714145,From descendants,Condition,SNOMED,S,Lathosterolosis,T
-4029265,From descendants,Condition,SNOMED,S,Lecithin cholesterol acyltransferase deficiency,T
-43021491,From initial search,Observation,SNOMED,S,Lipid disorder follow up assessment,T
-43021492,From initial search,Observation,SNOMED,S,Lipid disorder initial assessment,T
-4154089,From initial search,Observation,SNOMED,S,Lipid disorder monitoring,T
-44791835,From initial search,Observation,SNOMED,S,Lipid disorder monitoring declined,T
-44803686,From initial search,Observation,SNOMED,S,Lipid disorder monitoring first letter,T
-44804342,From initial search,Observation,SNOMED,S,Lipid disorder monitoring invitation,T
-44803789,From initial search,Observation,SNOMED,S,Lipid disorder monitoring second letter,T
-44792011,From initial search,Observation,SNOMED,S,Lipid disorder monitoring status,T
-44803788,From initial search,Observation,SNOMED,S,Lipid disorder monitoring telephone invitation,T
-44803787,From initial search,Observation,SNOMED,S,Lipid disorder monitoring third letter,T
-44803761,From initial search,Observation,SNOMED,S,Lipid disorder monitoring verbal invitation,T
-44813199,From initial search,Observation,SNOMED,S,Lipid disorder treatment changed,T
-44804677,From initial search,Observation,SNOMED,S,Lipid disorder treatment started,T
-44804678,From initial search,Observation,SNOMED,S,Lipid disorder treatment stopped,T
-3661544,In synonyms,Condition,SNOMED,S,Lipid granuloma of skin caused by mineral oil,T
-4319578,In synonyms,Condition,SNOMED,S,Lipidemia retinalis,T
-443372,In synonyms,Observation,SNOMED,S,Lipid-lowering drug adverse reaction,T
-4173858,In synonyms,Condition,SNOMED,S,Lipid-lowering drug overdose,T
-764149,In synonyms,Condition,SNOMED,S,Lipid-rich atherosclerosis of coronary artery,T
-4244518,In synonyms,Observation,SNOMED,S,Lipid-rich carcinoma,T
-37167374,From descendants,Condition,SNOMED,S,Lipoprotein (a) hyperlipoproteinemia,T
-435516,From descendants,Condition,SNOMED,S,Lipoprotein deficiency disorder,T
-40490326,From descendants,Condition,SNOMED,S,Lipoprotein glomerulopathy,T
-35608141,From descendants,Condition,SNOMED,S,Low density lipoprotein receptor adaptor protein 1 mutation,T
-40481634,From descendants,Condition,SNOMED,S,Low density lipoprotein receptor mutation,T
-4030619,From initial search,Condition,SNOMED,S,Mixed hypercholesterolemia and hypertriglyceridemia,T
-438720,In synonyms,Condition,SNOMED,S,Mixed hyperlipidemia,T
-43530660,In synonyms,Condition,SNOMED,S,Mixed hyperlipidemia due to type 1 diabetes mellitus,T
-43531651,In synonyms,Condition,SNOMED,S,Mixed hyperlipidemia due to type 2 diabetes mellitus,T
-4029258,From initial search,Condition,SNOMED,S,Polygenic hypercholesterolemia,T
-43022006,From initial search,Observation,SNOMED,S,Possible familial hypercholesterolemia,T
-44802342,From initial search,Observation,SNOMED,S,Possible heterozygous familial hypercholesterolaemia,T
-40482885,In synonyms,Condition,SNOMED,S,Posttransplant hyperlipidemia,T
-4223495,From descendants,Condition,SNOMED,S,Primary acquired chylomicronemia,T
-4291436,From descendants,Condition,SNOMED,S,Primary chylomicronemia,T
-4029263,In synonyms,Condition,SNOMED,S,Primary combined hyperlipidemia,T
-4298733,In synonyms,Condition,SNOMED,S,Primary genetic hyperlipidemia,T
-4294297,In synonyms,Condition,SNOMED,S,Primary genetic mixed hyperlipidemia,T
-4031945,From initial search,Condition,SNOMED,S,Primary hypercholesterolemia,T
-4029260,From descendants,Condition,SNOMED,S,Primary hypertriglyceridemia,T
-4270878,In synonyms,Condition,SNOMED,S,Primary polygenic type IIb combined hyperlipidemia,T
-37168357,From descendants,Condition,SNOMED,S,Primary triglyceride deposit cardiomyovasculopathy,T
-44810134,From initial search,Observation,SNOMED,S,Probable familial hypercholesterolaemia,T
-437827,From initial search,Condition,SNOMED,S,Pure hypercholesterolemia,T
-440360,From descendants,Condition,SNOMED,S,Pure hyperglyceridemia,T
-4079887,In synonyms,Condition,SNOMED,S,Secondary combined hyperlipidemia,T
-4029891,From initial search,Condition,SNOMED,S,Secondary hypercholesterolemia,T
-4292672,In synonyms,Condition,SNOMED,S,Secondary hyperlipidemia,T
-4029892,From descendants,Condition,SNOMED,S,Secondary hypertriglyceridemia,T
-4031951,From descendants,Condition,SNOMED,S,Sitosterolemia,T
-4279153,From descendants,Condition,SNOMED,S,Sitosterolemia with xanthomatosis,T
-4299409,From descendants,Condition,SNOMED,S,Sporadic primary hypertriglyceridemia,T
-40761394,From initial search,Observation,LOINC,S,Taken medication for high blood cholesterol,T
-36676683,From descendants,Condition,SNOMED,S,Transient infantile hypertriglyceridemia and hepatosteatosis,T
-4024103,From descendants,Condition,SNOMED,S,Triglyceride storage disease with ichthyosis,T
-4223494,From descendants,Condition,SNOMED,S,Tubero-eruptive xanthoma,T
-37166026,From descendants,Condition,SNOMED,S,Xanthoma due to primary chylomicronemia,T
-37165946,In synonyms,Condition,SNOMED,S,Xanthoma due to primary combined hyperlipidemia,T
-37165947,From initial search,Condition,SNOMED,S,Xanthoma due to primary hypercholesterolemia,T
-37165945,From descendants,Condition,SNOMED,S,Xanthoma due to primary hypertriglyceridemia,T
-37165942,In synonyms,Condition,SNOMED,S,Xanthoma due to secondary hyperlipidemia,T
-4029257,From descendants,Condition,SNOMED,S,"Xanthomatosis, familial",T
+concept_id
+432867
+435516
+437521
+437530
+437827
+438720
+440360
+443372
+762494
+764149
+766254
+1340362
+3661544
+4024103
+4029257
+4029258
+4029259
+4029260
+4029261
+4029263
+4029265
+4029305
+4029890
+4029891
+4029892
+4030586
+4030618
+4030619
+4031808
+4031814
+4031945
+4031951
+4047784
+4053770
+4077382
+4079876
+4079885
+4079887
+4079888
+4096215
+4096217
+4098481
+4098594
+4104485
+4120314
+4134862
+4142496
+4143177
+4144529
+4154089
+4159131
+4162681
+4170226
+4173858
+4176937
+4177711
+4178180
+4179809
+4183326
+4220010
+4223494
+4223495
+4244518
+4266240
+4270878
+4279153
+4291436
+4292079
+4292672
+4294297
+4295608
+4295609
+4298010
+4298723
+4298733
+4299409
+4300461
+4301409
+4319578
+4323359
+35608140
+35608141
+35610398
+36674388
+36676683
+36714145
+36715325
+37016353
+37154299
+37162785
+37165179
+37165942
+37165945
+37165946
+37165947
+37166026
+37167374
+37168357
+37169678
+40481634
+40481865
+40482885
+40484632
+40490326
+40491984
+40761394
+43021491
+43021492
+43022006
+43530660
+43531564
+43531651
+44791835
+44792011
+44802342
+44803686
+44803761
+44803787
+44803788
+44803789
+44804342
+44804677
+44804678
+44807086
+44810134
+44813199
+45757280
+45757432
+45770880

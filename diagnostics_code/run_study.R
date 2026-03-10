@@ -9,9 +9,18 @@ logMessage("LOG CREATED")
 
 # run ----
 source(here("cohorts","instantiate_cohorts.R"))
-diagnostics <- phenotypeDiagnostics(cdm$study_cohorts,
+diagnostics <- phenotypeDiagnostics(cdm$procedures,
+                                    diagnostics = "codelistDiagnostics",
                                     clinicalTableSample = 0,
-                          populationDateRange = as.Date(c("2012-01-01", NA)))
+                                    populationDateRange = as.Date(c("2012-01-01", NA)))
+diagnostics <- phenotypeDiagnostics(cdm$indications,
+                                    diagnostics = "codelistDiagnostics",
+                                    clinicalTableSample = 0,
+                                    populationDateRange = as.Date(c("2012-01-01", NA)))
+diagnostics <- phenotypeDiagnostics(cdm$comorbidities,
+                                    diagnostics = "codelistDiagnostics",
+                                    clinicalTableSample = 0,
+                                    populationDateRange = as.Date(c("2012-01-01", NA)))
 exportSummarisedResult(diagnostics,
                        minCellCount = minCellCount,
                        fileName = "phenotyper_results_{cdm_name}_{date}.csv",

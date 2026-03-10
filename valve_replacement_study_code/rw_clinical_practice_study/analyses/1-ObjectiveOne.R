@@ -105,7 +105,7 @@ for(i in seq_along(groups$cdm_name)){
       "estimate_value" = c(as.character(total_count - sum(counts)), 
                            as.character((total_count - sum(counts))/total_count*100)),
       "additional_name" = "overall",
-      "additional_value" = "overall"
+      "additional_level" = "overall"
     )
   )
 }
