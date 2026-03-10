@@ -89,11 +89,11 @@ aortic_insufficiency <- list("aortic_insufficiency" = avd_reviewed |>
   omopgenerics::newCodelist()
 
 omopgenerics::exportCodelist(aortic_valve_disease,
-                             here::here("cohorts", "codelists"), "csv")
+                             here::here("cohorts", "study_codelists"), "csv")
 omopgenerics::exportCodelist(aortic_stenosis,
-                             here::here("cohorts", "codelists"), "csv")
+                             here::here("cohorts", "study_codelists"), "csv")
 omopgenerics::exportCodelist(aortic_endocarditis,
-                             here::here("cohorts", "codelists"), "csv")
+                             here::here("cohorts", "study_codelists"), "csv")
 omopgenerics::exportCodelist(aortic_insufficiency,
-                             here::here("cohorts", "codelists"), "csv")
+                             here::here("cohorts", "study_codelists"), "csv")
 
