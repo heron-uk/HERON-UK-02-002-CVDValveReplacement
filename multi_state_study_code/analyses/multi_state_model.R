@@ -20,12 +20,20 @@ for (cohort_name in cohort_names) {
   data <- cdm$multi_state_as |>
     dplyr::filter(.data$cohort_name == .env$cohort_name) |>
     dplyr::collect() |>
-    select(!c(
+    dplyr::select(!c(
       "cohort_definition_id",
       "from",
       "to",
       "trans"
-    ))
+    )) |>
+    dplyr::mutate(
+      ses = factor(ses),
+      sex = factor(sex)
+    ) |>
+   dplyr:: mutate(
+      ses  = relevel(ses, ref = "1"),        
+      sex  = relevel(sex, ref = "Female"),   
+    )
   cli::cli_inform(glue::glue(" -- dataset rows: {nrow(data)}"))
 
   n_events <- data |>
@@ -93,7 +101,7 @@ for (cohort_name in cohort_names) {
       form_base <- stats::as.formula(
         paste0("rms::Surv(t_start, t_stop, status) ~ ", rhs)
       )
-
+    
       model <- rms::cph(
         form_base,
         data = data,
