@@ -27,6 +27,23 @@ results[["obs_period"]] <- OmopSketch::summariseObservationPeriod(cdm$observatio
 omopgenerics::logMessage("Instantiating study cohorts")
 source(here("cohorts", "instantiate_cohorts.R"))
 
+# Instantiate code use
+results[["code_use"]] <- CodelistGenerator::summariseCodeUse(
+  x = codes,
+  cdm = cdm,
+  countBy = c("record", "person"),
+  byYear = TRUE,
+  bySex = TRUE,
+  ageGroup = list(
+    c(0, 4),
+    c(5, 9),
+    c(10, 14),
+    c(15, 17)
+  ),
+  dateRange = study_period
+)
+
+
 # Apply study period restriction
 cdm$study_cohorts <- CohortConstructor::requireInDateRange(
   cohort = cdm$study_cohorts,
