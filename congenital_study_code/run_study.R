@@ -27,23 +27,6 @@ results[["obs_period"]] <- OmopSketch::summariseObservationPeriod(cdm$observatio
 omopgenerics::logMessage("Instantiating study cohorts")
 source(here("cohorts", "instantiate_cohorts.R"))
 
-# Instantiate code use
-results[["code_use"]] <- CodelistGenerator::summariseCodeUse(
-  x = codes,
-  cdm = cdm,
-  countBy = c("record", "person"),
-  byYear = TRUE,
-  bySex = TRUE,
-  ageGroup = list(
-    c(0, 4),
-    c(5, 9),
-    c(10, 14),
-    c(15, 17)
-  ),
-  dateRange = study_period
-)
-
-
 # Apply study period restriction
 cdm$study_cohorts <- CohortConstructor::requireInDateRange(
   cohort = cdm$study_cohorts,
@@ -55,6 +38,15 @@ omopgenerics::logMessage("Study cohorts instantiated")
 # Cohort counts and attrition ----
 results[["counts"]] <- CohortCharacteristics::summariseCohortCount(cdm$study_cohorts)
 results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$study_cohorts)
+
+# Summarise cohort code use ----
+omopgenerics::logMessage("Summarising cohort code use")
+results[["cohort_code_use"]] <- CodelistGenerator::summariseCohortCodeUse(
+  x = codes,
+  cdm = cdm, 
+  cohortTable = "study_cohorts"
+)
+omopgenerics::logMessage("Cohort code use summarised")
 
 # Run analyses ----
 omopgenerics::logMessage("Run study analyses")
@@ -70,8 +62,8 @@ results <- results |>
   vctrs::list_drop_empty() |>
   omopgenerics::bind()
 omopgenerics::exportSummarisedResult(results,
-                       minCellCount = min_cell_count,
-                       fileName = "results_{cdm_name}_{date}.csv",
-                       path = here("results"))
+                                     minCellCount = min_cell_count,
+                                     fileName = "results_{cdm_name}_{date}.csv",
+                                     path = here("results"))
 
 cli::cli_alert_success("Study finished")
