@@ -52,6 +52,7 @@ source(here::here("analyses", "incidence_prevalence.R"))
 
 source(here::here("analyses", "multi_state_data_preparation.R"))
 
+source(here::here("analyses", "EpiStandard.R"))
 source(here::here("analyses", "multi_state_model.R"))
 omopgenerics::logMessage("Analyses finished")
 

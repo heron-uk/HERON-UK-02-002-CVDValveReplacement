@@ -28,11 +28,11 @@ incidence_to_standardise <- results[["incidence"]] |>
     result_type == "incidence"
   )
 
-standard_pop <- EpiStandard::standardPopulation(region = "Europe") |>
-  EpiStandard::mergeAgeGroups(newGroups = new_groups) |>
+standard_pop <- esp2013 |>
+  mergeAgeGroups(newGroups = new_groups) |>
   dplyr::rename("denominator_age_group" = "age_group")
 
-res_standardised_incidence <- EpiStandard::directlyStandardiseRates(
+res_standardised_incidence <- directlyStandardiseRates(
   data = incidence_to_standardise |> IncidencePrevalence::asIncidenceResult(),
   refdata = standard_pop,
   event = "outcome_count",
