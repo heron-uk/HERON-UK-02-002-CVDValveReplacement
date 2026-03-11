@@ -124,7 +124,8 @@ omopgenerics::logMessage(message = "Characterise healthy cohort")
 
 cdm$healthy_pop <- cdm$multi_state_as |>
   CohortConstructor::subsetCohorts(cohortId = "healthy_to_as", name = "healthy_pop") |>
-  CohortConstructor::renameCohort(newCohortName = "healthy") |> 
+  CohortConstructor::renameCohort(newCohortName = "healthy")
+cdm$healthy_pop <- cdm$healthy_pop |> 
   addCKDStage()
 
 results[["characterisation_multi_state_healthy"]] <- CohortCharacteristics::summariseCharacteristics(cdm$healthy_pop,
@@ -158,7 +159,8 @@ cdm$transitions <- cdm$multi_state_as |>
   CohortConstructor::copyCohorts(name = "transitions") |>
   filter(status == 1) |>
   mutate(cohort_start_date = cohort_end_date) |>
-  rename("time_to_event" = "time") |> 
+  rename("time_to_event" = "time") 
+cdm$transitions <- cdm$transitions |> 
   addCKDStage()
 
 
