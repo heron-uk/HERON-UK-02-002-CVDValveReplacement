@@ -85,6 +85,11 @@ aortic_valve_disease <- list("aortic_valve_disease" = avd_reviewed |>
                                filter(aortic_valve_disease_broad == "T") |>
                                pull(concept_id)) |>
   omopgenerics::newCodelist()
+# add source code for leeds
+aortic_valve_disease <- aortic_valve_disease |>
+  CodelistGenerator::addConcepts(cdm_vocab_2025_08,
+                                 c(45548017))
+
 aortic_stenosis <- list("aortic_stenosis" = avd_reviewed |>
                           filter(aortic_stenosis == "T") |>
                           pull(concept_id)) |>
