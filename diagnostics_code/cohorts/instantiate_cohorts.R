@@ -55,8 +55,12 @@ cdm$avd <- conceptCohort(cdm = cdm,
 
 cdm$congenital_avd <- conceptCohort(cdm = cdm,
                                     name = "congenital_avd",
-                                    conceptSet = list(aortic_stenosis_congenital =
-                                                        study_codes$aortic_stenosis_congenital),
+                                    conceptSet = list(aortic_valve_disease_congenital =
+                                                        study_codes$aortic_valve_disease,
+                                                      aortic_stenosis_congenital =
+                                                        study_codes$aortic_stenosis_congenital,
+                                                      aortic_insufficiency_congenital =
+                                                        study_codes$aortic_insufficiency_congenital),
                                     exit = "event_start_date") |>
   requireAge(ageRange = c(0, 17),
              name = "congenital_avd")

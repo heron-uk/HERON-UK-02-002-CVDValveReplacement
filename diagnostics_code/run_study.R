@@ -17,6 +17,7 @@ exportSummarisedResult(diagnostics_comorbidities,
                        minCellCount = minCellCount,
                        fileName = "phenotyper_diagnostics_comorbidities_results_{cdm_name}_{date}.csv",
                        path = resultsFolder)
+
 diagnostics_study <- phenotypeDiagnostics(cdm$study_cohorts,
                                     clinicalTableSample = 0,
                                     populationDateRange = as.Date(c("2012-01-01", NA)))
