@@ -207,10 +207,6 @@ cdm$ckd_stage <- cdm$ckd_stage |>
                              "ckd_stage_4","ckd_stage_5"),
                 name = "ckd_stage")
 
-cdm <- bind(cdm$ckd_stage, 
-            cdm$comorbidities, 
-            name = "comorbidities")
-
 # meds -----
 omopgenerics::logMessage(message = "Medication cohorts")
 cdm$meds <- CohortConstructor::conceptCohort(
