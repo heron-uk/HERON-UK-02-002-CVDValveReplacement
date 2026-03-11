@@ -2,7 +2,6 @@ omopgenerics::logMessage("Running baseline characteristics analysis of congenita
 
 results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharacteristics(
   cdm$study_cohorts,
-  cohortId = c("congenital_aortic_stenosis", "congenital_aortic_valve_disease"),
   ageGroup = list(
     c(0, 4),
     c(5, 9),
@@ -14,14 +13,15 @@ results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharact
 omopgenerics::logMessage("Baseline characteristics analysis complete")
 
 omopgenerics::logMessage("Running large scale characteristics analysis of congenital AS/AVD ")
+nameFollowUp <- glue::glue("day_post_to_{followUpDays}_days_after")
 results[["large_scale_characteristics"]] <- CohortCharacteristics::summariseLargeScaleCharacteristics(
   cdm$study_cohorts,
-  cohortId = c("congenital_aortic_stenosis", "congenital_aortic_valve_disease"),
-  window = list(
-    "any_time_prior" = c(-Inf, -1),
-    "index_date" = c(0, 0),
-    "one_year_after" = c(1, 365),
-    "any_time_after" = c(1, Inf)
+  includeSource = TRUE,
+  excludedCodes = NULL,
+  window = rlang::list2(
+    "any_time_prior_to_day_prior" = c(-Inf, -1),
+    "on_index_date" = c(0, 0),
+    !!nameFollowUp := c(1, followUpDays)
   ),
   eventInWindow = c(
     "condition_occurrence",
