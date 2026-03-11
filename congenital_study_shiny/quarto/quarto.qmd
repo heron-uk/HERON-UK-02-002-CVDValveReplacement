@@ -1,0 +1,192 @@
+---
+title: ""
+format:
+  html:
+    page-layout: full
+    css: styles.css
+editor: visual
+fig-width: 12  
+---
+
+::: {style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2em; margin-top: 1em;"}
+::: {style="flex-grow: 1;"}
+# Congenital Aortic Stenosis
+:::
+::: {style="display: flex; gap: 1em; align-items: center;"}
+![](hds_logo.svg){width="80px"} ![](ohdsi_logo.svg){width="80px"}
+:::
+:::
+
+
+```{r loading results, echo=FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(tidyr)
+library(gt)
+library(ggplot2)
+
+# Load all CSV results
+all_results <- list.files(
+  path = "data",
+  pattern = "\\.csv$",
+  full.names = TRUE
+) |>
+  lapply(read.csv) |>
+  bind_rows()
+
+# Filter and prepare survival data for table
+survival_table <- all_results |>
+  filter(
+    result_id %in% c(13, 17),
+    variable_name == "outcome"
+  ) |>
+  select(cdm_name, group_level, variable_level, estimate_name, estimate_value) |>
+  pivot_wider(
+    names_from = estimate_name,
+    values_from = estimate_value
+  ) |>
+  mutate(
+    # Format median survival with CI
+    median_survival_formatted = case_when(
+      is.na(median_survival) | median_survival == "NA" ~ "–",
+      TRUE ~ sprintf(
+        "%.2f (%.2f, %.2f)",
+        as.numeric(median_survival),
+        as.numeric(median_survival_95CI_lower),
+        as.numeric(median_survival_95CI_higher)
+      )
+    ),
+    # Format restricted mean survival with CI
+    restricted_mean_survival_formatted = sprintf(
+      "%.2f (%.2f, %.2f)",
+      as.numeric(restricted_mean_survival),
+      as.numeric(restricted_mean_survival_95CI_lower),
+      as.numeric(restricted_mean_survival_95CI_upper)
+    ),
+    estimate_name = "Restricted mean survival"
+  ) |>
+  select(
+    `CDM name` = cdm_name,
+    `Target cohort` = group_level,
+    `Outcome name` = variable_level,
+    `Number records` = number_records_count,
+    `Number events` = n_events_count,
+    `Median survival (95% CI)` = median_survival_formatted,
+    `Estimate name` = estimate_name,
+    `Restricted mean survival (95% CI)` = restricted_mean_survival_formatted
+  ) |>
+  arrange(`CDM name`, `Target cohort`, `Outcome name`)
+
+# Prepare survival curve data for plotting
+survival_curves <- all_results |>
+  filter(
+    result_id %in% c(11, 15),
+    variable_name == "outcome",
+    estimate_name %in% c("estimate", "estimate_95CI_lower", "estimate_95CI_upper")
+  ) |>
+  select(cdm_name, group_level, variable_level, estimate_name, estimate_value, additional_level) |>
+  mutate(
+    time = as.numeric(additional_level),
+    estimate_value = as.numeric(estimate_value)
+  ) |>
+  pivot_wider(
+    names_from = estimate_name,
+    values_from = estimate_value
+  ) |>
+  rename(
+    survival_prob = estimate,
+    ci_lower = estimate_95CI_lower,
+    ci_upper = estimate_95CI_upper,
+    target_cohort = group_level,
+    outcome = variable_level
+  ) |>
+  mutate(
+    cohort_outcome = paste0("(", target_cohort, ",", 
+                           ifelse(outcome == "avr", "1", "2"), ")")
+  )
+
+```
+
+## Survival Analysis Results
+### Summary Table
+
+```{r survival-table, echo=FALSE, warning=FALSE, message=FALSE}
+survival_table |>
+  gt() |>
+  tab_header(title = "Survival Analysis Results") |>
+  cols_align(
+    align = "center",
+    columns = c(
+      `Number records`, 
+      `Number events`, 
+      `Median survival (95% CI)`,
+      `Restricted mean survival (95% CI)`
+    )
+  ) |>
+  cols_align(
+    align = "left",
+    columns = c(`CDM name`, `Target cohort`, `Outcome name`, `Estimate name`)
+  ) |>
+  tab_style(
+    style = cell_borders(sides = "all", color = "#D3D3D3", weight = px(1)),
+    locations = cells_body()
+  ) |>
+  tab_style(
+    style = cell_fill(color = "#F0F0F0"),
+    locations = cells_column_labels()
+  ) |>
+  tab_options(
+    table.font.size = px(12),
+    heading.align = "left"
+  )
+```
+
+### Survival Curves
+
+```{r survival-plots, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=6}
+survival_curves |>
+  mutate(
+    # Create display labels matching the image
+    cohort_label = paste0("(", target_cohort, ",", 
+                         ifelse(outcome == "avr", "1", "2"), ")")
+  ) |>
+  ggplot(aes(x = time, y = survival_prob, 
+             color = target_cohort, 
+             fill = target_cohort,
+             linetype = outcome)) +
+  geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.3, color = NA) +
+  geom_line(linewidth = 0.6) +
+  facet_wrap(~ cdm_name, scales = "free_x") +
+  scale_color_manual(
+    values = c(
+      "congenital_aortic_stenosis" = "#F8766D",
+      "congenital_aortic_valve_disease" = "#00BFC4"
+    ),
+    name = "Target cohort"
+  ) +
+  scale_fill_manual(
+    values = c(
+      "congenital_aortic_stenosis" = "#F8766D",
+      "congenital_aortic_valve_disease" = "#00BFC4"
+    ),
+    name = "Target cohort"
+  ) +
+  scale_linetype_manual(
+    values = c("avr" = "solid", "death_cohort" = "dashed"),
+    labels = c("avr" = "AVR", "death_cohort" = "Death"),
+    name = "Outcome"
+  ) +
+  labs(
+    x = "Time in days",
+    y = "Survival probability",
+    title = "Survival Analysis by CDM and Target Cohort"
+  ) +
+  theme_minimal() +
+  theme(
+    strip.background = element_rect(fill = "#E0E0E0", color = NA),
+    strip.text = element_text(size = 12, face = "bold"),
+    legend.position = "right",
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(size = 11),
+    axis.text = element_text(size = 10)
+  )
+```
