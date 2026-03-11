@@ -124,17 +124,29 @@ omopgenerics::logMessage(message = "Characterise healthy cohort")
 
 cdm$healthy_pop <- cdm$multi_state_as |>
   CohortConstructor::subsetCohorts(cohortId = "healthy_to_as", name = "healthy_pop") |>
-  CohortConstructor::renameCohort(newCohortName = "healthy")
+  CohortConstructor::renameCohort(newCohortName = "healthy") |> 
+  addCKDStage()
 
 results[["characterisation_multi_state_healthy"]] <- CohortCharacteristics::summariseCharacteristics(cdm$healthy_pop,
-                                                                                                     strata = c("ses", "sex"),
-                                                                                                     demographics = TRUE,
-                                                                                                     ageGroup = age_groups,
-                                                                                                     cohortIntersectFlag = list(
-                                                                                                       "Comorbidities" = list(
-                                                                                                         targetCohortTable = "comorbidities",
-                                                                                                         window = c(-Inf, 0))), 
-                                                                                                     otherVariables = c("ethnicity_group", "ethnicity"))
+  demographics = TRUE,
+  ageGroup = age_groups,
+  strata = list(c("ses")),
+  cohortIntersectFlag = list(
+    "Comorbidities" = list(
+      targetCohortTable = "comorbidities",
+      window = c(-Inf, 0) 
+    ),
+    "Medications" = list(
+      targetCohortTable = "meds",
+      window = c(-365, 0) 
+    )
+  ),
+  otherVariables = c(
+    "ses",
+    "ethnicity_group", "ethnicity",
+    "ckd_stage"
+  )
+)
 
 
 # people making transitions
@@ -146,20 +158,27 @@ cdm$transitions <- cdm$multi_state_as |>
   CohortConstructor::copyCohorts(name = "transitions") |>
   filter(status == 1) |>
   mutate(cohort_start_date = cohort_end_date) |>
-  rename("time_to_event" = "time")
+  rename("time_to_event" = "time") |> 
+  addCKDStage()
 
 
 results[["characterisation_multi_state_trans"]] <- CohortCharacteristics::summariseCharacteristics(cdm$transitions,
   demographics = TRUE,
   ageGroup = age_groups,
-  strata = c("ses", "sex"),
+  strata = list(c("ses")),
   cohortIntersectFlag = list(
     "Comorbidities" = list(
       targetCohortTable = "comorbidities",
       window = c(-Inf, 0) 
-    )),
+    ),
+    "Medications" = list(
+      targetCohortTable = "meds",
+      window = c(-365, 0) 
+    )
+    ),
   otherVariables = c(
-    "time_to_event",
-    "ethnicity_group", "ethnicity"
+    "time_to_event", "ses",
+    "ethnicity_group", "ethnicity",
+    "ckd_stage"
   )
 )
