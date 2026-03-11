@@ -10,3 +10,4 @@ study_code/results/*.csv
 .DS_Store
 code_to_run_local.R
 congenital_study_shiny/quarto/data/*
+congenital_study_shiny/quarto/quarto_files/*
