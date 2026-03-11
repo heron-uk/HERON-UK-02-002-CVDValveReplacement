@@ -156,13 +156,14 @@ cdm$transitions <- cdm$multi_state_as |>
 results[["characterisation_multi_state_trans"]] <- CohortCharacteristics::summariseCharacteristics(cdm$transitions,
   demographics = TRUE,
   ageGroup = age_groups,
+  strata = "ses",
   cohortIntersectFlag = list(
     "Comorbidities" = list(
       targetCohortTable = "comorbidities",
       window = c(-Inf, 0) 
     )),
   otherVariables = c(
-    "time_to_event", "ses",
+    "time_to_event",
     "ethnicity_group", "ethnicity"
   )
 )
