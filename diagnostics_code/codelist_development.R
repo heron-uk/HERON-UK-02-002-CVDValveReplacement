@@ -76,7 +76,7 @@ write_xlsx(list("codes_for_review" = avd |>
                          aortic_insufficiency = NA_character_)),
            "aortic_valve_disease_codes_for_review.xlsx")
 
-# codes reviewed
+# codes reviewed -----
 library(readxl)
 avd_reviewed <- read_xlsx(here::here("aortic_valve_disease_codes_reviewed.xlsx"), sheet = 1)
 # colnames(avd_reviewed)
@@ -97,11 +97,16 @@ aortic_stenosis_avr <- list("aortic_stenosis_avr" = avd_reviewed |>
 aortic_stenosis_avr <- aortic_stenosis_avr |>
   CodelistGenerator::addConcepts(cdm_vocab_2025_08,
                                  c(4230774, 4195003, 4314258))
-aortic_stenosis_congenital <- list("aortic_stenosis_congenital" = avd_reviewed |>
-                              filter(aortic_stenosis_congenital == "T") |>
+
+aortic_insufficiency_congenital <- list("aortic_insufficiency_congenital" = avd_reviewed |>
+                              filter(aortic_insufficiency_congenital == "T") |>
                               pull(concept_id)) |>
   omopgenerics::newCodelist()
 
+aortic_stenosis_congenital <- list("aortic_stenosis_congenital" = avd_reviewed |>
+                                     filter(aortic_stenosis_congenital == "T") |>
+                                     pull(concept_id)) |>
+  omopgenerics::newCodelist()
 
 aortic_insufficiency_avr <- list("aortic_insufficiency_avr" = avd_reviewed |>
                                filter(aortic_insufficiency_avr == "T") |>
@@ -133,6 +138,8 @@ omopgenerics::exportCodelist(aortic_stenosis,
 omopgenerics::exportCodelist(aortic_stenosis_avr,
                              here::here("cohorts", "study_codelists"), "csv")
 omopgenerics::exportCodelist(aortic_stenosis_congenital,
+                             here::here("cohorts", "study_codelists"), "csv")
+omopgenerics::exportCodelist(aortic_insufficiency_congenital,
                              here::here("cohorts", "study_codelists"), "csv")
 omopgenerics::exportCodelist(aortic_endocarditis_avr,
                              here::here("cohorts", "study_codelists"), "csv")
