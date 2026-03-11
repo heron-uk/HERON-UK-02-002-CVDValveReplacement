@@ -22,7 +22,7 @@ cdm$study_cohorts <- CohortConstructor::conceptCohort(
 cdm$intervention_cohorts <- CohortConstructor::conceptCohort(
   cdm = cdm,
   name = "intervention_cohorts",
-  conceptSet = procedure_codelists,
+  conceptSet = procedure_codes,
   exit = "event_start_date", 
   useSourceFields = useSourceCodes
 )

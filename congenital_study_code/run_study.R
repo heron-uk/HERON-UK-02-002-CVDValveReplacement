@@ -43,9 +43,14 @@ results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$st
 
 # Summarise cohort code use ----
 omopgenerics::logMessage("Summarising cohort code use")
+# results[["cohort_code_use_study_cohorts"]] <- CodelistGenerator::summariseCohortCodeUse(
+#   x = cdm$study_cohorts,
+#   cdm = cdm, 
+#   useSourceCodes = TRUE
+# )
 results[["cohort_code_use_study_cohorts"]] <- CodelistGenerator::summariseCohortCodeUse(
-  x = cdm$study_cohorts,
   cdm = cdm, 
+  cohortTable = "study_cohorts",
   useSourceCodes = TRUE
 )
 results[["cohort_code_use_intervention_cohorts"]] <- CodelistGenerator::summariseCohortCodeUse(
