@@ -127,18 +127,14 @@ cdm$healthy_pop <- cdm$multi_state_as |>
   CohortConstructor::renameCohort(newCohortName = "healthy")
 
 results[["characterisation_multi_state_healthy"]] <- CohortCharacteristics::summariseCharacteristics(cdm$healthy_pop,
-  demographics = TRUE,
-  ageGroup = age_groups,
-  cohortIntersectFlag = list(
-    "Comorbidities" = list(
-      targetCohortTable = "comorbidities",
-      window = c(-Inf, 0) 
-    )),
-  otherVariables = c(
-    "ses",
-    "ethnicity_group", "ethnicity"
-  )
-)
+                                                                                                     strata = c("ses", "sex"),
+                                                                                                     demographics = TRUE,
+                                                                                                     ageGroup = age_groups,
+                                                                                                     cohortIntersectFlag = list(
+                                                                                                       "Comorbidities" = list(
+                                                                                                         targetCohortTable = "comorbidities",
+                                                                                                         window = c(-Inf, 0))), 
+                                                                                                     otherVariables = c("ethnicity_group", "ethnicity"))
 
 
 # people making transitions
@@ -156,7 +152,7 @@ cdm$transitions <- cdm$multi_state_as |>
 results[["characterisation_multi_state_trans"]] <- CohortCharacteristics::summariseCharacteristics(cdm$transitions,
   demographics = TRUE,
   ageGroup = age_groups,
-  strata = "ses",
+  strata = c("ses", "sex"),
   cohortIntersectFlag = list(
     "Comorbidities" = list(
       targetCohortTable = "comorbidities",
