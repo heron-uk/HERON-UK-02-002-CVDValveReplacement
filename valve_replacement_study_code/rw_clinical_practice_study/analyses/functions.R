@@ -1,4 +1,5 @@
 createProceduresCohorts <- function(avrCohortName, taviCohortName, saviCohortName, proceduresCohortName, restrictions) {
+  
   cdm[[paste0(taviCohortName, "_from_additional")]] <- cdm[[avrCohortName]] |>
     requireConceptIntersect(conceptSet = codelist["tavi_additional"],
                             window = c(0, 0),
