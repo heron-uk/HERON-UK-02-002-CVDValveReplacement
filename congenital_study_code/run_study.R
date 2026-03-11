@@ -39,6 +39,15 @@ omopgenerics::logMessage("Study cohorts instantiated")
 results[["counts"]] <- CohortCharacteristics::summariseCohortCount(cdm$study_cohorts)
 results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$study_cohorts)
 
+# Summarise cohort code use ----
+omopgenerics::logMessage("Summarising cohort code use")
+results[["cohort_code_use"]] <- CodelistGenerator::summariseCohortCodeUse(
+  x = codes,
+  cdm = cdm, 
+  cohortTable = "study_cohorts"
+)
+omopgenerics::logMessage("Cohort code use summarised")
+
 # Run analyses ----
 omopgenerics::logMessage("Run study analyses")
 source(here("analyses", "cohort_characteristics.R"))
@@ -53,8 +62,8 @@ results <- results |>
   vctrs::list_drop_empty() |>
   omopgenerics::bind()
 omopgenerics::exportSummarisedResult(results,
-                       minCellCount = min_cell_count,
-                       fileName = "results_{cdm_name}_{date}.csv",
-                       path = here("results"))
+                                     minCellCount = min_cell_count,
+                                     fileName = "results_{cdm_name}_{date}.csv",
+                                     path = here("results"))
 
 cli::cli_alert_success("Study finished")
