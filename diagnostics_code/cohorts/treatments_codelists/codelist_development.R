@@ -12,7 +12,7 @@ acei_arbs <- getDrugIngredientCodes(
   type = "codelist") |>
   unionCodelists()
 names(acei_arbs) <- "acei_arbs"
-exportCodelist(acei_arbs, path = here::here("Cohorts", "drugs"),
+exportCodelist(acei_arbs, path = here::here("cohorts", "treatments_codelists"),
                type = "csv")
 
 # beta blockers -------
@@ -27,29 +27,32 @@ beta_blockers <- getDrugIngredientCodes(
   type = "codelist") |>
   unionCodelists()
 names(beta_blockers) <- "beta_blockers"
-exportCodelist(beta_blockers, path = here::here("Cohorts", "drugs"),
+exportCodelist(beta_blockers, path = here::here("cohorts", "treatments_codelists"),
                type = "csv")
 
 
 x <- getDrugIngredientCodes(cdm_vocab_2025_08,
                             name = c("spironolactone", "eplerenone"),
                             nameStyle = "{concept_name}",
-                            type = "codelist_with_details")
+                            type = "codelist")
 x <- unionCodelists(x)
 names(x) <- "mineralocorticoid_receptor_antagonists"
-write_csv(x[[1]], file = here("cohorts", "treatments_codelists", "mineralocorticoid_receptor_antagonists.csv"))
+omopgenerics::exportCodelist(x, path = here::here("cohorts", "treatments_codelists"),
+                             type = "csv")
 
 x <- getDrugIngredientCodes(cdm_vocab_2025_08,
                             name = c("furosemide"),
                             nameStyle = "{concept_name}",
-                            type = "codelist_with_details")
-write_csv(x[[1]], file = here("cohorts", "treatments_codelists", "furosemide.csv"))
+                            type = "codelist")
+omopgenerics::exportCodelist(x, path = here::here("cohorts", "treatments_codelists"),
+                             type = "csv")
 
 x <- getDrugIngredientCodes(cdm_vocab_2025_08,
                             name = c("canagliflozin", "dapagliflozin", "empagliflozin", "ertugliflozin"),
                             nameStyle = "{concept_name}",
-                            type = "codelist_with_details")
+                            type = "codelist")
 x <- unionCodelists(x)
 names(x) <- "isglt2"
-write_csv(x[[1]], file = here("cohorts", "treatments_codelists", "isglt2.csv"))
+omopgenerics::exportCodelist(x, path = here::here("cohorts", "treatments_codelists"),
+                             type = "csv")
 
