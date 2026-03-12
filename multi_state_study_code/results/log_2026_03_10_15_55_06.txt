@@ -1,0 +1,7 @@
+[2026-03-10 15:55:06] - Log file created
+[2026-03-10 15:55:06] - LOG CREATED
+[2026-03-10 15:55:18] - Instantiating study cohorts
+[2026-03-10 15:55:18] - Importing codelists
+[2026-03-10 15:55:19] - Instastiating cohorts
+[2026-03-10 15:55:19] -  -- AS and AVR concept cohorts
+[2026-03-10 15:56:18] -  -- Study criteria

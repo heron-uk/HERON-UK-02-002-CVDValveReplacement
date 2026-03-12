@@ -1,0 +1,24 @@
+[2026-03-10 16:20:56] - Log file created
+[2026-03-10 16:20:56] - LOG CREATED
+[2026-03-10 16:21:10] - Instantiating study cohorts
+[2026-03-10 16:21:10] - Importing codelists
+[2026-03-10 16:21:10] - Instastiating cohorts
+[2026-03-10 16:21:10] -  -- AS and AVR concept cohorts
+[2026-03-10 16:22:17] -  -- Study criteria
+[2026-03-10 16:24:54] - Comorbidity cohorts
+[2026-03-10 16:26:22] - Get denominator cohort
+[2026-03-10 16:27:19] - Add socioeconomic status
+[2026-03-10 16:27:35] - Study cohorts instantiated
+[2026-03-10 16:27:35] - Run study analyses
+[2026-03-10 16:27:35] - Get cohort code use
+[2026-03-10 16:28:16] - Get cohort attrition
+[2026-03-10 16:28:16] - Estimate incidence
+[2026-03-10 16:32:13] - Estimate age standardised incidence
+[2026-03-10 16:32:14] - Prepare data for multi state model
+[2026-03-10 16:32:14] - Create healthy cohort (starting state)
+[2026-03-10 16:33:23] - Create transitions cohorts
+[2026-03-10 16:34:40] - Characterise healthy cohort
+[2026-03-10 16:35:14] - Characterise transition cohorts
+[2026-03-10 16:36:06] - Fit multi state model
+[2026-03-10 16:36:21] - Analyses finished
+[2026-03-10 16:36:22] - Exporting log file
