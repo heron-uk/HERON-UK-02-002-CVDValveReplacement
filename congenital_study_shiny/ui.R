@@ -1026,6 +1026,22 @@ ui <- bslib::page_navbar(
           options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
         ),
         shinyWidgets::pickerInput(
+          inputId = "survival_age_group",
+          label = "Age group",
+          choices = choices$survival_age_group,
+          selected = selected$survival_age_group,
+          multiple = TRUE,
+          options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+        ),
+        shinyWidgets::pickerInput(
+          inputId = "survival_sex",
+          label = "Sex",
+          choices = choices$survival_sex,
+          selected = selected$survival_sex,
+          multiple = TRUE,
+          options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+        ),
+        shinyWidgets::pickerInput(
           inputId = "survival_reason",
           label = "Reason",
           choices = choices$survival_reason,
@@ -1252,7 +1268,7 @@ ui <- bslib::page_navbar(
                 shinyWidgets::pickerInput(
                   inputId = "survival_plot_survival_facet",
                   label = "Facet",
-                  choices = c("cdm_name", "target_cohort", "reason", "time", "reason_id", "analysis_type", "censor_on_cohort_exit", "competing_outcome", "eventgap", "follow_up_days", "minimum_survival_days", "outcome", "outcome_date_variable", "outcome_washout"),
+                  choices = c("cdm_name", "target_cohort", "age_group", "sex", "reason", "time", "reason_id", "analysis_type", "censor_on_cohort_exit", "competing_outcome", "eventgap", "follow_up_days", "minimum_survival_days", "outcome", "outcome_date_variable", "outcome_washout"),
                   selected = "cdm_name",
                   multiple = TRUE,
                   options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
@@ -1260,7 +1276,7 @@ ui <- bslib::page_navbar(
                 shinyWidgets::pickerInput(
                   inputId = "survival_plot_survival_colour",
                   label = "Colour",
-                  choices = c("cdm_name", "target_cohort", "reason", "time", "reason_id", "analysis_type", "censor_on_cohort_exit", "competing_outcome", "eventgap", "follow_up_days", "minimum_survival_days", "outcome", "outcome_date_variable", "outcome_washout"),
+                  choices = c("cdm_name", "target_cohort", "age_group", "sex", "reason", "time", "reason_id", "analysis_type", "censor_on_cohort_exit", "competing_outcome", "eventgap", "follow_up_days", "minimum_survival_days", "outcome", "outcome_date_variable", "outcome_washout"),
                   selected = "target_cohort",
                   multiple = TRUE,
                   options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
