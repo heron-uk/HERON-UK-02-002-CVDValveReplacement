@@ -11,7 +11,9 @@ model_specs <- list(
   ses_age_sex = c("age", "sex", "ses"),
   ses = c("ses")
 )
-
+age_limits <- list("overall" = c(0,150), 
+  "minor_80" = c(0, 79),
+  "over_80" = c(80, 150))
 res <- list()
 
 
@@ -35,10 +37,15 @@ for (cohort_name in cohort_names) {
       sex  = relevel(sex, ref = "Female"),   
     )
   cli::cli_inform(glue::glue(" -- dataset rows: {nrow(data)}"))
-
-  n_events <- data |>
-    filter(status == 1) |>
-    nrow()
+  for (age_limit in names(age_limits)) {
+    lower_limit <- age_limits[[age_limit]][1]
+    upper_limit <- age_limits[[age_limit]][2]
+    data_age <- data |>
+      dplyr::filter(age < upper_limit & age >= lower_limit)
+    n_events <- data_age |>
+      filter(status == 1) |>
+      nrow()
+  
 
   cli::cli_inform(glue::glue(" -- n events: {n_events}"))
 
@@ -46,7 +53,7 @@ for (cohort_name in cohort_names) {
   if (n_events < 10) {
     cli::cli_warn("skipping due to low event count")
   } else {
-    dd <- rms::datadist(data)
+    dd <- rms::datadist(data_age)
     options(datadist = "dd")
     flin <- rms::Surv(t_start, t_stop, status) ~ age
     f_rcs3 <- rms::Surv(t_start, t_stop, status) ~ rms::rcs(age, 3)
@@ -54,21 +61,21 @@ for (cohort_name in cohort_names) {
     fit <- list()
     fit[["linear"]] <- rms::cph(
       flin,
-      data = data,
+      data = data_age,
       x = TRUE,
       y = TRUE,
       surv = TRUE
     )
     fit[["rcs3"]] <- rms::cph(
       f_rcs3,
-      data = data,
+      data = data_age,
       x = TRUE,
       y = TRUE,
       surv = TRUE
     )
     fit[["rcs4"]] <- rms::cph(
       f_rcs4,
-      data = data,
+      data = data_age,
       x = TRUE,
       y = TRUE,
       surv = TRUE
@@ -86,9 +93,10 @@ for (cohort_name in cohort_names) {
     )
 
 
-    res[[paste(cohort_name, "age", chosen_age, sep = "_")]] <- hr_summary_age_model(fit[[chosen_age]],
+    res[[paste(cohort_name,"age_limit",age_limit, "age", chosen_age, sep = "_")]] <- hr_summary_age_model(fit[[chosen_age]],
       transition = cohort_name,
-      model_name = paste0("age_", chosen_age)
+      model_name = paste0("age_", chosen_age), 
+      age_limit = age_limit
     )
 
 
@@ -104,14 +112,23 @@ for (cohort_name in cohort_names) {
     
       model <- rms::cph(
         form_base,
-        data = data,
+        data = data_age,
         x = TRUE,
         y = TRUE,
         surv = TRUE
       )
-      res[[paste(cohort_name, nm, sep = "_")]] <- hr_summary(model, transition = cohort_name, model_name = nm)
+      res[[paste(cohort_name, age_limit, nm, sep = "_")]] <- hr_summary(model, transition = cohort_name, model_name = nm, age_limit = age_limit)
     }
+  }
   }
 }
 
+
+
+
 results[["multi_state_model"]] <- omopgenerics::bind(res)
+
+
+results[["multi_state_model"]] |> omopgenerics::addSettings("age_limit") |>
+  dplyr::group_by(age_limit)
+
