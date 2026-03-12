@@ -18,6 +18,6 @@ results[["incidence"]] <- IncidencePrevalence::estimateIncidence(
   interval = c("years"),
   repeatedEvents = FALSE,
   completeDatabaseIntervals = TRUE
-) 
+)
 
 omopgenerics::logMessage(message = "OBJECTIVE 2 FINISHED")
