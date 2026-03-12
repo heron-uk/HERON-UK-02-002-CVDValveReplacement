@@ -18,6 +18,8 @@ library(RPostgres)
 library(readr)
 library(clock)
 library(rlang)
+library(stringr)
+
 # database metadata and connection details
 # The name/ acronym for the database
 dbName <- "CPRD GOLD"
@@ -47,7 +49,7 @@ db <- dbConnect(RPostgres::Postgres(),
 cdmSchema <- "public_100k"
 
 # A prefix for all permanent tables in the database
-writePrefix <- "avr"
+writePrefix <- "avr_mah_"
 
 # The name of the schema where results tables will be created
 writeSchema <- "results"
@@ -71,31 +73,32 @@ cdm <- cdmFromCon(
 # Run the study
 source(here("run_study.R"))
 
-db <- DBI::dbConnect(odbc::odbc(),
-                     Driver = "ODBC Driver 17 for SQL Server",
-                     Server = "163.1.64.74",
-                     Database = "vocabularies",
-                     UID = "apratsuribe",
-                     PWD = "Spring2nOxford25!",
-                     TrustServerCertificate = "yes",
-                     Port = 1433)
 
-cdm_vocab_2025_08 <- CDMConnector::cdmFromCon(con = db,
-                                              cdmSchema = c("vocabularies", "vocab_2025_08"),
-                                              writeSchema = c("vocabularies", "results"),
-                                              cdmName = "v_")
+# db <- DBI::dbConnect(odbc::odbc(),
+#                      Driver = "ODBC Driver 17 for SQL Server",
+#                      Server = "163.1.64.74",
+#                      Database = "vocabularies",
+#                      UID = "apratsuribe",
+#                      PWD = "Spring2nOxford25!",
+#                      TrustServerCertificate = "yes",
+#                      Port = 1433)
 
-tavi_additional <- read_csv("~/HERON-UK-02-002-CVDValveReplacement/diagnostics_code/cohorts/study_codelists/tavi_additional.csv")
-cdm_vocab_2025_08[["concept"]] |>
-  filter(concept_id %in% tavi_additional$concept_id) |>
-  select(concept_id, concept_name) |>
-  collect() |>
-  write_csv(here("tavi_additional.csv"))
-
-list("tavi_additional" = read_csv("~/HERON-UK-02-002-CVDValveReplacement/diagnostics_code/cohorts/study_codelists/tavi_additional_reviewed.csv") |>
-       filter(`...3` == TRUE) |>
-       pull("concept_id")) |>
-  newCodelist() |>
-  exportCodelist("~/HERON-UK-02-002-CVDValveReplacement/diagnostics_code/cohorts/study_codelists/", "csv")
+# cdm_vocab_2025_08 <- CDMConnector::cdmFromCon(con = db,
+#                                               cdmSchema = c("vocabularies", "vocab_2025_08"),
+#                                               writeSchema = c("vocabularies", "results"),
+#                                               cdmName = "v_")
+# 
+# tavi_additional <- read_csv("~/HERON-UK-02-002-CVDValveReplacement/diagnostics_code/cohorts/study_codelists/tavi_additional.csv")
+# cdm_vocab_2025_08[["concept"]] |>
+#   filter(concept_id %in% tavi_additional$concept_id) |>
+#   select(concept_id, concept_name) |>
+#   collect() |>
+#   write_csv(here("tavi_additional.csv"))
+# 
+# list("tavi_additional" = read_csv("~/HERON-UK-02-002-CVDValveReplacement/diagnostics_code/cohorts/study_codelists/tavi_additional_reviewed.csv") |>
+#        filter(`...3` == TRUE) |>
+#        pull("concept_id")) |>
+#   newCodelist() |>
+#   exportCodelist("~/HERON-UK-02-002-CVDValveReplacement/diagnostics_code/cohorts/study_codelists/", "csv")
 
 
