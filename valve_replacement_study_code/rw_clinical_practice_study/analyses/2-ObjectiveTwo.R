@@ -1,6 +1,6 @@
 omopgenerics::logMessage(message = "STARTING OBJECTIVE 2")
-omopgenerics::logMessage(message = "Get denominator cohort")
 
+omopgenerics::logMessage(message = "Get denominator cohort")
 cdm <- IncidencePrevalence::generateDenominatorCohortSet(
   cdm = cdm, 
   name = "denominator",
@@ -11,11 +11,10 @@ cdm <- IncidencePrevalence::generateDenominatorCohortSet(
   sex = c("Both", "Male", "Female")) 
 
 omopgenerics::logMessage(message = "Estimate incidence")
-
 results[["incidence"]] <- IncidencePrevalence::estimateIncidence(
   cdm = cdm,
   denominatorTable = "denominator",
-  outcomeTable = "procedures_no_restrictions",
+  outcomeTable = "procedures_nr",
   interval = c("years"),
   repeatedEvents = FALSE,
   completeDatabaseIntervals = TRUE
