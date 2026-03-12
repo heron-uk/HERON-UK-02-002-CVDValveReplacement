@@ -147,7 +147,7 @@ addCKDStage <- function(cohort) {
     compute(name = name, temporary = FALSE)
 }
 
-hr_summary <- function(model, transition, model_name) {
+hr_summary <- function(model, transition, model_name, age_limit) {
   
   p_res <- as.data.frame(stats::anova(model)) |>
     tibble::as_tibble(rownames = "variable") |>
@@ -171,6 +171,7 @@ hr_summary <- function(model, transition, model_name) {
     dplyr::mutate(
       transition = transition,
       model_name = model_name,
+      age_limit = age_limit,
       result_type = "hr_summary",
       package_name = "HERON-UK-02-002-CVDValveReplacement"
     ) |>
@@ -180,7 +181,7 @@ hr_summary <- function(model, transition, model_name) {
       group = "transition",
       estimates = c("hazard_ratio", "se_coef", "lower_hr", "upper_hr", "p_value"),
       additional = "model_name",
-      settings = c("result_type", "package_name")
+      settings = c("result_type", "package_name", "age_limit")
     )
 }
 
@@ -249,6 +250,7 @@ clean_variables <- function(df, var_col = "variable_name") {
 hr_summary_age_model <- function(model,
                                  transition,
                                  model_name,
+                                 age_limit, 
                                  reference_age = 70, # reference age
                                  comparison_age = seq(20, 100, 1)) { # comparison ages
   res <- list()
@@ -282,6 +284,7 @@ hr_summary_age_model <- function(model,
     dplyr::mutate(
       transition = transition,
       model_name = model_name,
+      age_limit = age_limit,
       result_type = "hr_summary",
       package_name = "HERON-UK-02-002-CVDValveReplacement",
       package_version = "1.0"
@@ -291,10 +294,10 @@ hr_summary_age_model <- function(model,
     omopgenerics::transformToSummarisedResult(
       group = "transition",
       estimates = c("hazard_ratio", "lower_hr", "upper_hr", "aic", "bic", "se_coef"),
-      additional = "model_name", "ref_age",
+      additional = c("model_name", "ref_age"),
       settings = c(
         "result_type", "package_name",
-        "package_version"
+        "package_version", "age_limit"
       )
     )
 }
