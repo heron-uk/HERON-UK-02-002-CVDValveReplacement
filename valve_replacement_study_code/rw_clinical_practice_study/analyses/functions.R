@@ -1,4 +1,4 @@
-createProceduresCohorts <- function(avrCohortName, taviCohortName, saviCohortName, proceduresCohortName, restrictions) {
+createProceduresCohorts <- function(cdm, avrCohortName, taviCohortName, saviCohortName, proceduresCohortName, restrictions) {
   
   cdm[[paste0(taviCohortName, "_from_additional")]] <- cdm[[avrCohortName]] |>
     requireConceptIntersect(conceptSet = codelist["tavi_additional"],
@@ -30,11 +30,7 @@ createProceduresCohorts <- function(avrCohortName, taviCohortName, saviCohortNam
                            name = saviCohortName) |>
     renameCohort("savr")
   
-  if (dbName == "CPRD GOLD") {
-    cdm <- bind(cdm[[avrCohortName]], cdm[[taviCohortName]], cdm[[saviCohortName]], name = proceduresCohortName)
-  } else {
-    cdm <- bind(cdm[[taviCohortName]], cdm[[saviCohortName]], name = proceduresCohortName)
-  }
+  cdm <- bind(cdm[[avrCohortName]], cdm[[taviCohortName]], cdm[[saviCohortName]], name = proceduresCohortName)
   
   cdm <- dropSourceTable(cdm, name = c(paste0(taviCohortName, "_from_additional"),
                                        paste0(taviCohortName, "_direct"),

@@ -11,20 +11,25 @@ cdm[["aortic_valve_replacement_nr"]] <- conceptCohort(cdm = cdm,
                                               exit = "event_start_date")
 
 omopgenerics::logMessage(message = "Instantiate tavi & savi (no restrictions)")
-cdm <- createProceduresCohorts(avrCohortName = "aortic_valve_replacement_nr", 
+cdm <- createProceduresCohorts(cdm, 
+                               avrCohortName = "aortic_valve_replacement_nr", 
                                taviCohortName = "tavi_nr", 
                                saviCohortName = "savr_nr",
                                proceduresCohortName = "procedures_nr",
                                restrictions = FALSE) 
 
 cdm[["aortic_valve_replacement"]] <- cdm[["aortic_valve_replacement_nr"]] |>
-  copyCohorts(name = "aortic_valve_replacement")
+  copyCohorts(name = "aortic_valve_replacement") |>
+  newCohortTable(cohortSetRef = settings(cdm[["aortic_valve_replacement_nr"]]),
+                 cohortAttritionRef = attrition(cdm[["aortic_valve_replacement_nr"]]),
+                 cohortCodelistRef = attr(cdm[["aortic_valve_replacement_nr"]], "cohort_codelist"))
 
 omopgenerics::logMessage(message = "Anchor AVR to an aortic stenosis diagnosis")
 cdm[["aortic_valve_replacement_nr"]] <- cdm[["aortic_valve_replacement_nr"]] |>
   requireConceptIntersect(conceptSet = codelist["aortic_stenosis_avr"], 
                           window = c(-365, 0), 
-                          intersections = c(1,Inf))
+                          intersections = c(1,Inf), 
+                          name = "aortic_valve_replacement_nr")
 
 # Create procedures objective one cohorts ----
 omopgenerics::logMessage(message = "Add requirements to avr cohort")
@@ -33,7 +38,8 @@ cdm[["aortic_valve_replacement"]] <- cdm[["aortic_valve_replacement"]] |>
   requireInDateRange(dateRange = study_period)
 
 omopgenerics::logMessage(message = "Add requirements to savr and tavi cohorts")
-cdm <- createProceduresCohorts(avrCohortName = "aortic_valve_replacement",
+cdm <- createProceduresCohorts(cdm,
+                               avrCohortName = "aortic_valve_replacement",
                                taviCohortName = "tavi", 
                                saviCohortName = "savr",
                                proceduresCohortName = "procedures",
@@ -76,6 +82,8 @@ cdm[["aortic_endocarditis"]] <- conceptCohort(cdm = cdm,
                          intersections = c(1,Inf)) |>
   requireIsLastEntry()
 
+cdm <- bind(cdm[["aortic_stenosis"]], cdm[["aortic_insufficiency"]], cdm[["aortic_endocarditis"]],
+            name = "indications")
 omopgenerics::logMessage(message = "FINISH INSTANTIATING COHORTS")
 
 
