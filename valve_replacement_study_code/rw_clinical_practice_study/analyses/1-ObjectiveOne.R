@@ -121,7 +121,7 @@ cdm[["procedures"]] <- cdm[["procedures"]] |>
 omopgenerics::logMessage(message = "Summarise characteristics - on procedures")
 results[["objective_one"]] <- summariseCharacteristics(cdm[["procedures"]], 
                                                        demographics = FALSE, 
-                                                       strata = list("calendar_year", c("calendar_year", "age_group"), c("calendar_year", "sex")),
+                                                       strata = list("calendar_year", "age_group", "sex", c("calendar_year", "age_group"), c("calendar_year", "sex")),
                                                        cohortIntersectFlag = list(
                                                          "Indications" = list("targetCohortTable" = "indications",
                                                                               "window" = c(-365, 0),
