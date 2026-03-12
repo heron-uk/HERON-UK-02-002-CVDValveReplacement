@@ -15,6 +15,8 @@ library(IncidencePrevalence)
 library(CohortSurvival)
 library(odbc)
 library(RPostgres)
+library(mstate)
+library(rms)
 
 # database metadata and connection details
 # The name/ acronym for the database

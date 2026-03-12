@@ -13,6 +13,7 @@ omopgenerics::assertNumeric(min_cell_count)
 
 # Load custom functions -----
 source(here::here("analyses", "functions.R"))
+source(here::here("analyses", "EpiStandard.R"))
 
 # Create a log file ----
 omopgenerics::createLogFile(logFile = here::here("results", "log_{date}_{time}"))
@@ -52,7 +53,6 @@ source(here::here("analyses", "incidence_prevalence.R"))
 
 source(here::here("analyses", "multi_state_data_preparation.R"))
 
-source(here::here("analyses", "EpiStandard.R"))
 source(here::here("analyses", "multi_state_model.R"))
 omopgenerics::logMessage("Analyses finished")
 
