@@ -18,6 +18,8 @@ library(RPostgres)
 library(readr)
 library(clock)
 library(rlang)
+library(stringr)
+
 # database metadata and connection details
 # The name/ acronym for the database
 dbName <- ""
