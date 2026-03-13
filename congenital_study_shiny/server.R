@@ -501,6 +501,8 @@ server <- function(input, output, session) {
     shiny::bindEvent(
       input$survival_cdm_name,
       input$survival_target_cohort,
+      input$survival_age_group,
+      input$survival_sex,
       input$survival_reason,
       input$survival_variable_level,
       input$survival_analysis_type,
@@ -532,7 +534,11 @@ server <- function(input, output, session) {
         .data$variable_level %in% input$survival_variable_level
       ) |>
       omopgenerics::filterGroup(.data$target_cohort %in% input$survival_target_cohort) |>
-      omopgenerics::filterStrata(.data$reason %in% input$survival_reason) |>
+      omopgenerics::filterStrata(
+        .data$age_group %in% input$survival_age_group,
+        .data$sex %in% input$survival_sex,
+        .data$reason %in% input$survival_reason
+      ) |>
       omopgenerics::filterSettings(
         .data$analysis_type %in% input$survival_analysis_type,
         .data$censor_on_cohort_exit %in% input$survival_censor_on_cohort_exit,

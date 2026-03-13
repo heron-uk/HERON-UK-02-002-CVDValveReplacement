@@ -116,8 +116,38 @@ addEthnicity <- function(cohort) {
   }
 }
 
+addCKDStage <- function(cohort) {
+  name <- tableName(cohort)
+  cdm[[name]] |>
+    addCohortIntersectDays(
+      targetCohortTable = "ckd_stage",
+      order = "last",
+      window = c(-Inf, 0),
+      nameStyle = "{cohort_name}",
+      name = name
+    ) |>
+    mutate(
+      ckd_stage_1 = abs(coalesce(ckd_stage_1, 999)),
+      ckd_stage_2 = abs(coalesce(ckd_stage_2, 999)),
+      ckd_stage_3 = abs(coalesce(ckd_stage_3, 999)),
+      ckd_stage_4 = abs(coalesce(ckd_stage_4, 999)),
+      ckd_stage_5 = abs(coalesce(ckd_stage_5, 999))
+    ) |>
+    mutate(
+      ckd_stage = case_when(
+        ckd_stage_1 == 999 & ckd_stage_2 == 999 & ckd_stage_3 == 999 & ckd_stage_4 == 999 & ckd_stage_5 == 999 ~ "Missing",
+        ckd_stage_1 <= ckd_stage_2 & ckd_stage_1 <= ckd_stage_3 & ckd_stage_1 <= ckd_stage_4 & ckd_stage_1 <= ckd_stage_5 ~ "Stage 1",
+        ckd_stage_2 <= ckd_stage_3 & ckd_stage_2 <= ckd_stage_4 & ckd_stage_2 <= ckd_stage_5 ~ "Stage 2",
+        ckd_stage_3 <= ckd_stage_4 & ckd_stage_3 <= ckd_stage_5 ~ "Stage 3",
+        ckd_stage_4 <= ckd_stage_5 ~ "Stage 4",
+        .default = "Stage 5"
+      )
+    ) |>
+    select(!all_of(c(paste0("ckd_stage_", 1:5)))) |>
+    compute(name = name, temporary = FALSE)
+}
 
-hr_summary <- function(model, transition, model_name) {
+hr_summary <- function(model, transition, model_name, age_limit) {
   
   p_res <- as.data.frame(stats::anova(model)) |>
     tibble::as_tibble(rownames = "variable") |>
@@ -141,6 +171,7 @@ hr_summary <- function(model, transition, model_name) {
     dplyr::mutate(
       transition = transition,
       model_name = model_name,
+      age_limit = age_limit,
       result_type = "hr_summary",
       package_name = "HERON-UK-02-002-CVDValveReplacement"
     ) |>
@@ -150,7 +181,7 @@ hr_summary <- function(model, transition, model_name) {
       group = "transition",
       estimates = c("hazard_ratio", "se_coef", "lower_hr", "upper_hr", "p_value"),
       additional = "model_name",
-      settings = c("result_type", "package_name")
+      settings = c("result_type", "package_name", "age_limit")
     )
 }
 
@@ -219,6 +250,7 @@ clean_variables <- function(df, var_col = "variable_name") {
 hr_summary_age_model <- function(model,
                                  transition,
                                  model_name,
+                                 age_limit, 
                                  reference_age = 70, # reference age
                                  comparison_age = seq(20, 100, 1)) { # comparison ages
   res <- list()
@@ -252,6 +284,7 @@ hr_summary_age_model <- function(model,
     dplyr::mutate(
       transition = transition,
       model_name = model_name,
+      age_limit = age_limit,
       result_type = "hr_summary",
       package_name = "HERON-UK-02-002-CVDValveReplacement",
       package_version = "1.0"
@@ -261,10 +294,10 @@ hr_summary_age_model <- function(model,
     omopgenerics::transformToSummarisedResult(
       group = "transition",
       estimates = c("hazard_ratio", "lower_hr", "upper_hr", "aic", "bic", "se_coef"),
-      additional = "model_name", "ref_age",
+      additional = c("model_name", "ref_age"),
       settings = c(
         "result_type", "package_name",
-        "package_version"
+        "package_version", "age_limit"
       )
     )
 }
