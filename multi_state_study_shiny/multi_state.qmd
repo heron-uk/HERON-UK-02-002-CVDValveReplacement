@@ -3,6 +3,7 @@ title: "multi_state_quarto"
 format: docx
 editor: visual
 ---
+
 ```{r, setup, include=FALSE}
 # hide messages/warnings and set default figure size & resolution
 knitr::opts_chunk$set(
@@ -25,7 +26,23 @@ knitr::opts_chunk$set(
 
 ```{r, echo = FALSE}
 library(ggplot2)
+library(dplyr)
+library(stringr)
 results <- omopgenerics::importSummarisedResult(here::here("rawData"))
+
+
+renameCdm <- function(res){
+  res |>
+    mutate(cdm_name =
+             case_when(str_detect(tolower(cdm_name), "aurum|heron_cdm")  ~ "CPRD Aurum",
+                       str_detect(tolower(cdm_name), "dataloch") ~ "DataLoch Lothian",
+                       .default = cdm_name
+             )
+    )
+}
+results <- results |>
+  renameCdm()
+
 ```
 
 ## Incidence
@@ -33,7 +50,59 @@ results <- omopgenerics::importSummarisedResult(here::here("rawData"))
 ```{r, echo = FALSE}
 data_inc <- results |>
   omopgenerics::filterSettings(result_type == "incidence")
+data_inc <- data_inc |> 
+  mutate(group_level = str_replace(
+    group_level, 
+    "aortic_stenosis", "Aortic stenosis")) |> 
+  mutate(group_level = str_replace(
+    group_level, 
+    "aortic_valve_replacement", "Aortic valve replacement"))
 ```
+
+### Figure 1. Incidence by age and socioeconomic status 
+
+```{r, echo = FALSE}
+sesIncPlotAge <- function() {
+  working_plot <- data_inc |>
+    omopgenerics::filterSettings(standardised_incidence == "FALSE") |>
+    omopgenerics::filterAdditional(analysis_interval == "overall") |>
+    omopgenerics::filterSettings(denominator_sex == "Both") |>
+    omopgenerics::filterSettings(denominator_age_group != "20 to 150") |>
+    omopgenerics::filterStrata(ses != "Missing") |>
+    dplyr::filter(strata_level != "overall") |> 
+    IncidencePrevalence::plotIncidence(colour = "ses", 
+                                       x = "denominator_age_group",
+                                       facet = ses~cdm_name, 
+                                       line = TRUE, ribbon = TRUE) +
+    theme_bw() +
+    theme(
+      axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        strip.background = element_rect(
+          fill = "gray94"
+    )) +
+    facet_grid(outcome_cohort_name~cdm_name, scales = "free_y")+
+    labs(colour = "Socioeconomic status",
+         fill = "Socioeconomic status") +
+    theme(legend.position = "top")+
+    xlab("Age") +
+    scale_y_sqrt(limits = c(0, NA),                   
+                 expand = expansion(mult = c(0, 0.05)))
+  
+  working_plot@data <- working_plot@data |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "1",
+      "1 (most deprived)", ses)) |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "5",
+      "5 (least deprived)", ses))
+  
+  working_plot
+  
+  working_plot
+}
+sesIncPlotAge()
+```
+
 Age-standardised incidence by socioeconomic status and sex
 
 ```{r, echo = FALSE}
@@ -50,8 +119,8 @@ data_inc |>
 
 ```
 
-
 Incidence of Aortic Stenosis by age group and socioeconomic status
+
 ```{r, echo = FALSE}
 data_inc |>
   omopgenerics::filterSettings(standardised_incidence == "FALSE") |>
@@ -65,6 +134,7 @@ data_inc |>
   )
   
 ```
+
 Incidence of Aortic Valve Replacement by age group and socioeconomic status
 
 ```{r, echo = FALSE}
@@ -79,13 +149,16 @@ data_inc |>
     axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)
   )
 ```
-## Characteristics 
+
+## Characteristics
 
 ```{r, echo = FALSE}
 data_char <- results |>
   omopgenerics::filterSettings(result_type == "summarise_characteristics")
 ```
+
 ### Characteristics of healthy population
+
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "healthy") |>
@@ -93,7 +166,9 @@ data_char |>
   CohortCharacteristics::tableCharacteristics()
 
 ```
+
 ### Characteristics of aortic stenosis patients
+
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "healthy_to_as") |>
@@ -101,7 +176,9 @@ data_char |>
   CohortCharacteristics::tableCharacteristics()
 
 ```
-### Characteristics of patients dying after AVR 
+
+### Characteristics of patients dying after AVR
+
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "healthy_to_death") |>
@@ -109,7 +186,9 @@ data_char |>
   CohortCharacteristics::tableCharacteristics()
 
 ```
+
 ### Characteristics of patients receiving AVR after AS diagnosis
+
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "as_to_avr") |>
@@ -117,7 +196,9 @@ data_char |>
   CohortCharacteristics::tableCharacteristics()
 
 ```
+
 ### Characteristics of patients dying after AS diagnosis without receiving AVR
+
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "as_to_death") |>
@@ -125,7 +206,9 @@ data_char |>
   CohortCharacteristics::tableCharacteristics()
 
 ```
-### Characteristics of patients dying after AVR 
+
+### Characteristics of patients dying after AVR
+
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "avr_to_death") |>
@@ -134,7 +217,8 @@ data_char |>
 
 ```
 
-### age and sex distribution 
+### age and sex distribution
+
 ```{r}
 data_char |>
   omopgenerics::tidy() |> 
@@ -144,15 +228,15 @@ data_char |>
     
 ```
 
-
-
-
 ## Multi state model
+
 ```{r, echo = FALSE}
 data_hr <- results |>
   omopgenerics::filterSettings(result_type == "hr_summary")
 ```
+
 ### only age model
+
 ```{r, echo = FALSE}
 data_hr |> omopgenerics::filterStrata(.data$ref_age == "70") |>
       omopgenerics::tidy()|>
@@ -182,7 +266,9 @@ data_hr |> omopgenerics::filterStrata(.data$ref_age == "70") |>
         subtitle = "Reference age: 70"
       )
 ```
+
 ### Other models
+
 ```{r, echo = FALSE}
 data_hr |> 
   omopgenerics::filterStrata(.data$ref_age != "70") |>
@@ -213,6 +299,7 @@ data_hr |>
   )
       
 ```
+
 ```{r, echo = FALSE}
 estimates <- c("Hazard Ratio [95% CI]" = "<hazard_ratio> [<lower_hr>, <upper_hr>]", 
                "P Value" = "<p_value>", 
@@ -228,4 +315,3 @@ data_hr |>
                                .options = list(decimals = c("numeric" = 3))
                                )
 ```
-
