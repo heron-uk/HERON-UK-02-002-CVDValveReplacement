@@ -27,13 +27,16 @@ for (cohort_name in cohort_names) {
       "from",
       "to",
       "trans"
-    )) |>
+    )) 
+  ses_levels <- data$ses |> unique() |> as.numeric()
+  ref <- min(ses_levels)|> as.character()
+  data <- data |>
     dplyr::mutate(
       ses = factor(ses),
       sex = factor(sex)
     ) |>
    dplyr:: mutate(
-      ses  = relevel(ses, ref = "1"),        
+      ses  = relevel(ses, ref = .env$ref),        
       sex  = relevel(sex, ref = "Female"),   
     )
   cli::cli_inform(glue::glue(" -- dataset rows: {nrow(data)}"))
@@ -128,7 +131,4 @@ for (cohort_name in cohort_names) {
 
 results[["multi_state_model"]] <- omopgenerics::bind(res)
 
-
-results[["multi_state_model"]] |> omopgenerics::addSettings("age_limit") |>
-  dplyr::group_by(age_limit)
 
