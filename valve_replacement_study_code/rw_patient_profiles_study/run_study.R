@@ -7,8 +7,6 @@ omopgenerics::validateCdmArgument(cdm,
                                                      "concept"))
 omopgenerics::assertNumeric(minCellCount)
 
-source(here("analyses", "functions.R"))
-
 # Create a log file ----
 omopgenerics::createLogFile(logFile = tempfile(pattern = "log_{date}_{time}"))
 logMessage(message = "LOG CREATED")
