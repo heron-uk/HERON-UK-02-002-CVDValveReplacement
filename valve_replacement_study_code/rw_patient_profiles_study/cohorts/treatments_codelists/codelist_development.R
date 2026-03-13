@@ -41,9 +41,10 @@ omopgenerics::exportCodelist(x, path = here::here("cohorts", "treatments_codelis
                              type = "csv")
 
 x <- getDrugIngredientCodes(cdm_vocab_2025_08,
-                            name = c("furosemide"),
+                            name = c("furosemide","bumetanide"),
                             nameStyle = "{concept_name}",
                             type = "codelist")
+x <- unionCodelists(x)
 omopgenerics::exportCodelist(x, path = here::here("cohorts", "treatments_codelists"),
                              type = "csv")
 

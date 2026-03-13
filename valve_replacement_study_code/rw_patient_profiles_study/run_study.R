@@ -17,7 +17,6 @@ logMessage(message = "LOG CREATED")
 study_period <- c(as.Date("2012-01-01"), as.Date(NA))
 sex <- TRUE
 age_groups <- list(c(0, 64), c(65, 150))
-age_groups_extended <- list(c(0, 39), c(40, 64), c(65, 69), c(70, 74), c(75,79), c(80, 84), c(85, 150))
 source(here("analyses", "functions.R"))
 
 # Initialise list to store results as we go -----
