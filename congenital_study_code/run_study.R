@@ -1,4 +1,13 @@
 
+if(stringr::str_detect(tolower(cdmName(cdm)), c("ltht|leeds"))){
+  useSourceCodes <- TRUE  
+} else {
+  useSourceCodes <- FALSE
+}
+
+followUpDays <- 1096
+
+
 # Check codeToRun inputs ----
 omopgenerics::validateCdmArgument(cdm,
                                   requiredTables = c("person",
@@ -13,7 +22,7 @@ createLogFile(logFile = tempfile(pattern = "log_{date}_{time}"))
 omopgenerics::logMessage("LOG CREATED")
 
 # Define analysis settings -----
-study_period <- c(as.Date("2000-01-01"), as.Date("2024-12-31"))
+study_period <- c(as.Date("2019-01-01"), NA)
 
 # Initialise list to store results as we go -----
 results <- list()
@@ -26,13 +35,6 @@ results[["obs_period"]] <- OmopSketch::summariseObservationPeriod(cdm$observatio
 # Instantiate study cohorts ----
 omopgenerics::logMessage("Instantiating study cohorts")
 source(here("cohorts", "instantiate_cohorts.R"))
-
-# Apply study period restriction
-cdm$study_cohorts <- CohortConstructor::requireInDateRange(
-  cohort = cdm$study_cohorts,
-  dateRange = study_period
-)
-
 omopgenerics::logMessage("Study cohorts instantiated")
 
 # Cohort counts and attrition ----
@@ -41,11 +43,19 @@ results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$st
 
 # Summarise cohort code use ----
 omopgenerics::logMessage("Summarising cohort code use")
-results[["cohort_code_use"]] <- CodelistGenerator::summariseCohortCodeUse(
-  x = codes,
+
+results[["cohort_code_use_study_cohorts"]] <- CodelistGenerator::summariseCohortCodeUse(
   cdm = cdm, 
-  cohortTable = "study_cohorts"
+  cohortTable = "study_cohorts",
+  useSourceCodes = TRUE
 )
+
+results[["cohort_code_use_intervention_cohorts"]] <- CodelistGenerator::summariseCohortCodeUse(
+  cdm = cdm, 
+  cohortTable = "intervention_cohorts", 
+  useSourceCodes = TRUE
+)
+
 omopgenerics::logMessage("Cohort code use summarised")
 
 # Run analyses ----
@@ -67,3 +77,4 @@ omopgenerics::exportSummarisedResult(results,
                                      path = here("results"))
 
 cli::cli_alert_success("Study finished")
+

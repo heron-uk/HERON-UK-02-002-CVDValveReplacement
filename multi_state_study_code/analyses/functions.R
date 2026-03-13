@@ -116,6 +116,36 @@ addEthnicity <- function(cohort) {
   }
 }
 
+addCKDStage <- function(cohort) {
+  name <- tableName(cohort)
+  cdm[[name]] |>
+    addCohortIntersectDays(
+      targetCohortTable = "ckd_stage",
+      order = "last",
+      window = c(-Inf, 0),
+      nameStyle = "{cohort_name}",
+      name = name
+    ) |>
+    mutate(
+      ckd_stage_1 = abs(coalesce(ckd_stage_1, 999)),
+      ckd_stage_2 = abs(coalesce(ckd_stage_2, 999)),
+      ckd_stage_3 = abs(coalesce(ckd_stage_3, 999)),
+      ckd_stage_4 = abs(coalesce(ckd_stage_4, 999)),
+      ckd_stage_5 = abs(coalesce(ckd_stage_5, 999))
+    ) |>
+    mutate(
+      ckd_stage = case_when(
+        ckd_stage_1 == 999 & ckd_stage_2 == 999 & ckd_stage_3 == 999 & ckd_stage_4 == 999 & ckd_stage_5 == 999 ~ "Missing",
+        ckd_stage_1 <= ckd_stage_2 & ckd_stage_1 <= ckd_stage_3 & ckd_stage_1 <= ckd_stage_4 & ckd_stage_1 <= ckd_stage_5 ~ "Stage 1",
+        ckd_stage_2 <= ckd_stage_3 & ckd_stage_2 <= ckd_stage_4 & ckd_stage_2 <= ckd_stage_5 ~ "Stage 2",
+        ckd_stage_3 <= ckd_stage_4 & ckd_stage_3 <= ckd_stage_5 ~ "Stage 3",
+        ckd_stage_4 <= ckd_stage_5 ~ "Stage 4",
+        .default = "Stage 5"
+      )
+    ) |>
+    select(!all_of(c(paste0("ckd_stage_", 1:5)))) |>
+    compute(name = name, temporary = FALSE)
+}
 
 hr_summary <- function(model, transition, model_name, age_limit) {
   
@@ -150,7 +180,11 @@ hr_summary <- function(model, transition, model_name, age_limit) {
     omopgenerics::transformToSummarisedResult(
       group = "transition",
       estimates = c("hazard_ratio", "se_coef", "lower_hr", "upper_hr", "p_value"),
+<<<<<<< HEAD
       additional = c("model_name"),
+=======
+      additional = "model_name",
+>>>>>>> 1d88492c1e35386fbc7c4f7f1c2652009eb26979
       settings = c("result_type", "package_name", "age_limit")
     )
 }
@@ -220,7 +254,11 @@ clean_variables <- function(df, var_col = "variable_name") {
 hr_summary_age_model <- function(model,
                                  transition,
                                  model_name,
+<<<<<<< HEAD
                                  age_limit,
+=======
+                                 age_limit, 
+>>>>>>> 1d88492c1e35386fbc7c4f7f1c2652009eb26979
                                  reference_age = 70, # reference age
                                  comparison_age = seq(20, 100, 1)) { # comparison ages
   res <- list()

@@ -2,21 +2,22 @@ source(here::here("analyses", "functions.R"))
 
 omopgenerics::logMessage(message = "Importing codelists")
 
-codelist <- omopgenerics::importCodelist(here::here("codelist"), "csv")
+# codelists ----
+study_codelist <- omopgenerics::importCodelist(here::here("cohorts","study_codelist"), "csv")
+comorbidity_codelist <- omopgenerics::importCodelist(here::here("cohorts","comorbidity_codelist"), "csv")
+meds_codelist <- omopgenerics::importCodelist(here::here("cohorts","meds_codelist"), "csv")
 
 # For testing uncomment the below to get counts
 # codelist <- codelist |> CodelistGenerator::addConcepts(cdm,
 #                                            concepts = c(316139L),
 #                                            codelistName = "aortic_valve_replacement")
 
+# as and avr ----
 omopgenerics::logMessage(message = "Instastiating cohorts")
 omopgenerics::logMessage(message = " -- AS and AVR concept cohorts")
 cdm$study_cohorts_inc <- CohortConstructor::conceptCohort(
   cdm = cdm,
-  conceptSet = c(
-    codelist["aortic_stenosis"],
-    codelist["aortic_valve_replacement"]
-  ),
+  conceptSet = c(study_codelist),
   name = "study_cohorts_inc",
   exit = "event_start_date"
 )
@@ -65,16 +66,61 @@ cdm$study_cohorts <- cdm$study_cohorts |>
     name = "study_cohorts"
   )
 
+# comorbidities ----
 omopgenerics::logMessage(message = "Comorbidity cohorts")
 cdm$comorbidities <- CohortConstructor::conceptCohort(
   cdm = cdm,
-  conceptSet = codelist[stringr::str_detect(names(codelist),
-                                "aortic_stenosis|aortic_valve_replacement",
-                                negate = TRUE)],
+  conceptSet = comorbidity_codelist,
   name = "comorbidities",
   exit = "event_start_date"
 ) |> 
   CohortConstructor::exitAtObservationEnd()
+
+## Obesity 
+obesity_diag <- list(obesity = c(
+  604591, 4271317, 4171972,  4270189, 4079899,  4235799,
+  4087487,  40481140, 36713437,  36678790,  45763687,  4097929,  4097996,  4182506,
+  4100857,  4160821,  4029277,  4029276,  37166819,  4029900,  36717154,  4005991,
+  4163032,  4185912,  4171147,  4177337,  4220527,  4203289,  35622038,  36674490,
+  36674893,  4171317,  438731,  37208175,  37164247,  42872398,  4216214,  36716144,
+  37110069,  434005,  37395980,  433736,  4212443,  4215969,  4189665,  36716555,
+  36717199,  37204685,  37206117,  37397209,
+  37162364,  36716151,  37204815,  37311904,  45757112,  4183240,
+  4093860,  37163354, 36674827,  3199162,
+  45771307,  36676689,  37204691,  37018860,  42539192,  37164244,
+  4217557,  37166818,  4211019,  36714072, 36714548,  37165655
+))
+cdm$obesity <- conceptCohort(
+  cdm = cdm, conceptSet = obesity_diag, exit = "event_start_date", name = "obesity"
+)
+
+cdm$obesity_bmi <- measurementCohort(
+  cdm = cdm, 
+  conceptSet = list("bmi_measurement" = c(3038553, 36304833)), 
+  valueAsNumber = list("bmi_measurement" = list(c(30, 60))),   
+  name = "obesity_bmi"
+)
+# body weight cohort
+cdm$obesity_body_weight <- measurementCohort(
+  cdm = cdm, conceptSet = list("body_weight"= c(3025315, 4099154, 3013762,
+                                                3023166, 3027492)), 
+  valueAsNumber = list("body_weight"= list("9529" = c(120, 200), 
+                                           "3195625" = c(265, 440))),
+  name = "obesity_body_weight"
+)
+# bind and union
+cdm <- omopgenerics::bind(cdm$obesity, 
+                          cdm$obesity_bmi, 
+                          cdm$obesity_body_weight, 
+                          name = "obesity")
+cdm$obesity <- cdm$obesity |>
+  unionCohorts(cohortName = "obesity") |> 
+  exitAtObservationEnd()
+
+# add to other comorbidities
+cdm <- bind(cdm$obesity, 
+            cdm$comorbidities, 
+            name = "comorbidities")
 
 ## CKD stage from measurements
 egfr_codes <- c(
@@ -103,7 +149,7 @@ cdm$ckd_stage_meausurement <- measurementCohort(
   name = "ckd_stage_meausurement"
 )
 
-## CKD stage from diagnoses -----
+## CKD stage from diagnoses
 ckd_diag_codes <- list(ckd_stage_1_diag = c(765535, 46284566, 46284567, 46284570, 443614, 46270354,
                                             601161, 44782703, 45773576, 43531559, 44792226, 44792227,
                                             44784640, 43021853),
@@ -134,6 +180,8 @@ cdm$ckd_stage_diagnosis <- conceptCohort(cdm = cdm,
                                          ckd_diag_codes,
                                          name = "ckd_stage_diagnosis",
                                          exit = "event_start_date")
+
+
 ## combine
 cdm <- bind(cdm$ckd_stage_meausurement,
             cdm$ckd_stage_diagnosis,
@@ -159,8 +207,16 @@ cdm$ckd_stage <- cdm$ckd_stage |>
                              "ckd_stage_4","ckd_stage_5"),
                 name = "ckd_stage")
 
+# meds -----
+omopgenerics::logMessage(message = "Medication cohorts")
+cdm$meds <- CohortConstructor::conceptCohort(
+  cdm = cdm,
+  conceptSet = meds_codelist,
+  name = "meds",
+  exit = "event_end_date"
+) 
 
-
+# denominator ----
 omopgenerics::logMessage(message = "Get denominator cohort")
 
 cdm <- IncidencePrevalence::generateDenominatorCohortSet(

@@ -35,22 +35,21 @@ omopgenerics::logMessage(message = "Study cohorts instantiated")
 
 # Run analyses ----
 omopgenerics::logMessage(message = "Run study analyses")
-results[["code_use_indications"]]   <- CodelistGenerator::summariseCohortCodeUse(cdm,
-                                                                                 cohortTable = "indications")
-results[["code_use_procedures"]]    <- CodelistGenerator::summariseCohortCodeUse(cdm, 
-                                                                                 cohortTable = "procedures_objective_one")
+results[["code_use_indications"]] <- summariseCohortCodeUse(cdm,
+                                                            cohortTable = "indications")
+results[["code_use_procedures"]]  <- summariseCohortCodeUse(cdm, 
+                                                            cohortTable = "procedures")
 
 source(here::here("analyses", "1-ObjectiveOne.R"))
 source(here::here("analyses", "2-ObjectiveTwo.R"))
-
 omopgenerics::logMessage("Analyses finished")
 
 # Finish ----
 results <- results |>
   omopgenerics::bind()
 omopgenerics::exportSummarisedResult(results,
-                       minCellCount = min_cell_count,
-                       fileName = "results_{cdm_name}_{date}.csv",
-                       path = here("results"))
+                                     minCellCount = min_cell_count,
+                                     fileName = "results_{cdm_name}_{date}.csv",
+                                     path = here("results"))
 
 cli::cli_alert_success("Study finished")
