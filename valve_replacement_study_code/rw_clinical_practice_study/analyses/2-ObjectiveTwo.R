@@ -7,7 +7,7 @@ cdm <- IncidencePrevalence::generateDenominatorCohortSet(
   cohortDateRange = study_period,
   daysPriorObservation = 365,
   ageGroup = c(list(c(0, 150)), age_groups_extended),
-  requirementInteractions = FALSE,
+  requirementInteractions = TRUE,
   sex = c("Both", "Male", "Female")) 
 
 omopgenerics::logMessage(message = "Estimate incidence")
