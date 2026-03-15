@@ -1,0 +1,77 @@
+concept_id,concept_name,domain_id,vocabulary_id,standard_concept,codelist_name
+318689,Syphilitic endocarditis of aortic valve,Condition,SNOMED,standard,aortic_endocarditis_avr
+4232337,Valvular endocarditis,Condition,SNOMED,standard,aortic_endocarditis_avr
+42539157,Endocarditis of neoaortic valve,Condition,SNOMED,standard,aortic_endocarditis_avr
+43020882,Infective endocarditis of aortic valve,Condition,SNOMED,standard,aortic_endocarditis_avr
+45766095,Endocarditis of prosthetic aortic valve,Condition,SNOMED,standard,aortic_endocarditis_avr
+315564,Aortic valve regurgitation,Condition,SNOMED,standard,aortic_insufficiency_avr
+321041,Mitral stenosis and aortic insufficiency,Condition,SNOMED,standard,aortic_insufficiency_avr
+321107,Congenital insufficiency of aortic valve,Condition,SNOMED,standard,aortic_insufficiency_avr
+439834,Rheumatic aortic regurgitation,Condition,SNOMED,standard,aortic_insufficiency_avr
+3654798,Mild aortic valve regurgitation,Condition,SNOMED,standard,aortic_insufficiency_avr
+3654799,Moderate aortic valve regurgitation,Condition,SNOMED,standard,aortic_insufficiency_avr
+3654800,Severe aortic valve regurgitation,Condition,SNOMED,standard,aortic_insufficiency_avr
+4108596,Aortic cusp regurgitation,Condition,SNOMED,standard,aortic_insufficiency_avr
+4108659,Mitral and aortic incompetence,Condition,SNOMED,standard,aortic_insufficiency_avr
+4111409,"Aortic incompetence, non-rheumatic",Condition,SNOMED,standard,aortic_insufficiency_avr
+4119589,Aortic regurgitation due to cystic medial necrosis of aorta,Condition,SNOMED,standard,aortic_insufficiency_avr
+4189522,Syphilitic aortic incompetence,Condition,SNOMED,standard,aortic_insufficiency_avr
+4215619,Rheumatic mitral valve stenosis AND aortic valve insufficiency,Condition,SNOMED,standard,aortic_insufficiency_avr
+4230774,Heart valve regurgitation,Condition,SNOMED,standard,aortic_insufficiency_avr
+4244437,Rheumatic mitral AND aortic valve regurgitation,Condition,SNOMED,standard,aortic_insufficiency_avr
+43021945,Regurgitation of fetal aortic valve,Condition,SNOMED,standard,aortic_insufficiency_avr
+45766136,Non-rheumatic aortic valve stenosis with regurgitation,Condition,SNOMED,standard,aortic_insufficiency_avr
+45766210,Aortic valve regurgitation due to trauma,Condition,SNOMED,standard,aortic_insufficiency_avr
+45766211,Aortic valve regurgitation due to dissection,Condition,SNOMED,standard,aortic_insufficiency_avr
+45771326,Aortic valve regurgitation due to aortic dilation,Condition,SNOMED,standard,aortic_insufficiency_avr
+313221,Rheumatic aortic stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+314457,Congenital stenosis of aortic valve,Condition,SNOMED,standard,aortic_stenosis_avr
+317890,Mitral and aortic stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+320115,Mitral insufficiency and aortic stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+320429,Rheumatic aortic stenosis with regurgitation,Condition,SNOMED,standard,aortic_stenosis_avr
+607641,Rheumatic aortic valve obstruction,Condition,SNOMED,standard,aortic_stenosis_avr
+3654574,Mild aortic valve stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+3654575,Moderate aortic valve stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+3654576,Severe aortic valve stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+4058384,Nodular calcific aortic valve stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+4081037,Isolated aortic stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+4108595,Aortic stenosis with doming,Condition,SNOMED,standard,aortic_stenosis_avr
+4111098,"Aortic stenosis, non-rheumatic",Condition,SNOMED,standard,aortic_stenosis_avr
+4111099,Aortic valve stenosis with insufficiency,Condition,SNOMED,standard,aortic_stenosis_avr
+4119463,Calcific aortic stenosis - bicuspid valve,Condition,SNOMED,standard,aortic_stenosis_avr
+4119956,Senile aortic stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+4144901,Critical stenosis of aortic valve,Condition,SNOMED,standard,aortic_stenosis_avr
+4156119,Rheumatic mitral AND aortic valve obstruction,Condition,SNOMED,standard,aortic_stenosis_avr
+4181949,Rheumatic aortic valve sclerosis,Condition,SNOMED,standard,aortic_stenosis_avr
+4189343,Aortic valve stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+4195003,Heart valve stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+4230774,Heart valve regurgitation,Condition,SNOMED,standard,aortic_stenosis_avr
+4244966,Congenital hypertrophy of aortic valve,Condition,SNOMED,standard,aortic_stenosis_avr
+4259295,Rheumatic mitral valve and aortic valve stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+4304541,Rheumatic mitral valve insufficiency and aortic valve stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+4314258,Calcific stenosis,Observation,SNOMED,standard,aortic_stenosis_avr
+43020959,Stenosis of fetal aortic valve,Condition,SNOMED,standard,aortic_stenosis_avr
+45766081,Prosthetic aortic valve stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+45766125,Postprocedural aortic valve stenosis,Condition,SNOMED,standard,aortic_stenosis_avr
+45766136,Non-rheumatic aortic valve stenosis with regurgitation,Condition,SNOMED,standard,aortic_stenosis_avr
+45766186,Prosthetic aortic valve stenosis and regurgitation,Condition,SNOMED,standard,aortic_stenosis_avr
+4018560,Homograft aortic valve replacement,Procedure,SNOMED,standard,aortic_valve_replacement
+4018561,Mechanical prosthetic aortic valve replacement,Procedure,SNOMED,standard,aortic_valve_replacement
+4020077,Xenograft aortic valve replacement,Procedure,SNOMED,standard,aortic_valve_replacement
+4095407,Replacement of aortic valve,Procedure,SNOMED,standard,aortic_valve_replacement
+4166457,Bi-leaflet aortic valve replacement,Procedure,SNOMED,standard,aortic_valve_replacement
+4170281,Ball valve aortic valve replacement,Procedure,SNOMED,standard,aortic_valve_replacement
+4339824,Aortic valve replacement and replacement of ascending aorta,Procedure,SNOMED,standard,aortic_valve_replacement
+4020077,Xenograft aortic valve replacement,Procedure,SNOMED,standard,aortic_valve_replacement_potential_tavi
+4095407,Replacement of aortic valve,Procedure,SNOMED,standard,aortic_valve_replacement_potential_tavi
+4166457,Bi-leaflet aortic valve replacement,Procedure,SNOMED,standard,aortic_valve_replacement_potential_tavi
+4170281,Ball valve aortic valve replacement,Procedure,SNOMED,standard,aortic_valve_replacement_potential_tavi
+36676805,Transcatheter aortic valve implantation,Procedure,SNOMED,standard,tavi
+37157401,Bioprosthetic transcatheter aortic valve implantation,Procedure,SNOMED,standard,tavi
+4011473,Transarterial approach,Observation,SNOMED,standard,tavi_additional
+4044372,Transaxillary approach,Observation,SNOMED,standard,tavi_additional
+4125581,Via femoral artery,Observation,SNOMED,standard,tavi_additional
+4129306,Transaortic approach,Observation,SNOMED,standard,tavi_additional
+4129781,Via subclavian artery,Observation,SNOMED,standard,tavi_additional
+44517104,Other specified approach to organ through artery,Observation,OPCS4,standard,tavi_additional
+44793263,Transapical approach to heart,Observation,SNOMED,standard,tavi_additional
