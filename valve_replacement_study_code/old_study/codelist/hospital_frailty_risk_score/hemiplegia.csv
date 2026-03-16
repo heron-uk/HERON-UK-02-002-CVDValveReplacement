@@ -1,0 +1,49 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+372613,Flaccid hemiplegia,Condition,SNOMED,Disorder,S,80935004,2002-01-31,2099-12-31,NA
+374022,Hemiplegia,Condition,SNOMED,Disorder,S,50582007,2002-01-31,2099-12-31,NA
+374336,Infantile hemiplegia,Condition,SNOMED,Disorder,S,1593000,2002-01-31,2099-12-31,NA
+375528,Spastic hemiplegia,Condition,SNOMED,Disorder,S,79633009,2002-01-31,2099-12-31,NA
+443599,Paralytic syndrome of nondominant side as late effect of stroke,Condition,SNOMED,Disorder,S,430947007,2008-07-31,2099-12-31,NA
+443609,Paralytic syndrome of dominant side as late effect of stroke,Condition,SNOMED,Disorder,S,430959006,2008-07-31,2099-12-31,NA
+764815,Hemiplegia of nondominant side due to and following hemorrhagic cerebrovascular accident,Condition,SNOMED,Disorder,S,672451000119101,2017-09-01,2099-12-31,NA
+764816,Hemiplegia of dominant side due to and following hemorrhagic cerebrovascular accident,Condition,SNOMED,Disorder,S,672471000119105,2017-09-01,2099-12-31,NA
+764853,Hemiplegia of dominant side due to and following embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690281000119101,2017-09-01,2099-12-31,NA
+3184686,Hemiplegia complicating stroke,Condition,Nebraska Lexicon,Clinical Finding,S,5440001000004106,2016-01-28,2099-12-31,NA
+4044233,Alternating hemiplegia of childhood,Condition,SNOMED,Disorder,S,230466004,2002-01-31,2099-12-31,NA
+4077819,Millard-Gubler syndrome,Condition,SNOMED,Disorder,S,276221006,2002-01-31,2099-12-31,NA
+4083063,Right hemiplegia,Condition,SNOMED,Disorder,S,278284007,2002-01-31,2099-12-31,NA
+4136090,Facial hemiplegia,Condition,SNOMED,Disorder,S,32162001,2002-01-31,2099-12-31,NA
+4145619,Cerebral hemiplegia,Condition,SNOMED,Disorder,S,34209003,2002-01-31,2099-12-31,NA
+4175708,Left hemiplegia,Condition,SNOMED,Disorder,S,278285008,2002-01-31,2099-12-31,NA
+4208096,Spinal hemiplegia,Condition,SNOMED,Disorder,S,55637002,2002-01-31,2099-12-31,NA
+4209119,Residual hemiplegia,Condition,SNOMED,Disorder,S,313434001,2002-01-31,2099-12-31,NA
+4219507,Alternating hypoglossal hemiplegia,Condition,SNOMED,Disorder,S,72655000,2002-01-31,2099-12-31,NA
+4222487,Laryngeal hemiplegia,Condition,SNOMED,Disorder,S,84160009,2002-01-31,2099-12-31,NA
+4223948,Alternating hemiplegia,Condition,SNOMED,Disorder,S,404689008,2004-01-31,2099-12-31,NA
+4318559,Transient hemiplegia,Condition,SNOMED,Disorder,S,95650006,2002-01-31,2099-12-31,NA
+36675040,Benign nocturnal alternating hemiplegia of childhood,Condition,SNOMED,Disorder,S,771304005,2019-01-31,2099-12-31,NA
+40480429,Hemiplegia of nondominant side,Condition,SNOMED,Disorder,S,441717007,2009-07-31,2099-12-31,NA
+40480435,Spastic hemiplegia of nondominant side,Condition,SNOMED,Disorder,S,441722007,2009-07-31,2099-12-31,NA
+40480944,Spastic hemiplegia of dominant side,Condition,SNOMED,Disorder,S,441892008,2009-07-31,2099-12-31,NA
+40481757,Flaccid hemiplegia of dominant side,Condition,SNOMED,Disorder,S,442020005,2009-07-31,2099-12-31,NA
+40481762,Hemiplegia as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,442024001,2009-07-31,2099-12-31,NA
+40481820,Flaccid hemiplegia of nondominant side,Condition,SNOMED,Disorder,S,442077006,2009-07-31,2099-12-31,NA
+40482237,Hemiplegia of dominant side,Condition,SNOMED,Disorder,S,442155009,2009-07-31,2099-12-31,NA
+40484513,Hemiplegia of nondominant side as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,442668000,2009-07-31,2099-12-31,NA
+40484522,Hemiplegia of dominant side as late effect of cerebrovascular disease,Condition,SNOMED,Disorder,S,442676003,2009-07-31,2099-12-31,NA
+40484910,Hemiplegia as late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,442733008,2009-07-31,2099-12-31,NA
+42535404,Spastic hemiplegia of left dominant side,Condition,SNOMED,Disorder,S,290461000119109,2018-01-31,2099-12-31,NA
+42535405,Spastic hemiplegia of left nondominant side,Condition,SNOMED,Disorder,S,290471000119103,2018-01-31,2099-12-31,NA
+42535406,Spastic hemiplegia of right dominant side,Condition,SNOMED,Disorder,S,290481000119100,2018-01-31,2099-12-31,NA
+42535407,Spastic hemiplegia of right nondominant side,Condition,SNOMED,Disorder,S,290491000119102,2018-01-31,2099-12-31,NA
+42535476,Flaccid hemiplegia of left dominant side,Condition,SNOMED,Disorder,S,294041000119107,2018-01-31,2099-12-31,NA
+42535477,Flaccid hemiplegia of left nondominant side,Condition,SNOMED,Disorder,S,294051000119109,2018-01-31,2099-12-31,NA
+42535478,Flaccid hemiplegia of right nondominant side,Condition,SNOMED,Disorder,S,294071000119100,2018-01-31,2099-12-31,NA
+42535480,Hemiplegia of left dominant side,Condition,SNOMED,Disorder,S,294101000119109,2018-01-31,2099-12-31,NA
+42535481,Hemiplegia of left nondominant side,Condition,SNOMED,Disorder,S,294111000119107,2018-01-31,2099-12-31,NA
+42535482,Hemiplegia of right dominant side,Condition,SNOMED,Disorder,S,294121000119100,2018-01-31,2099-12-31,NA
+42535483,Hemiplegia of right nondominant side,Condition,SNOMED,Disorder,S,294131000119102,2018-01-31,2099-12-31,NA
+42535676,Hemiplegia of nondominant side as sequela of ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672441000119103,2018-01-31,2099-12-31,NA
+42535677,Hemiplegia of dominant side as sequela of ischemic cerebrovascular accident,Condition,SNOMED,Disorder,S,672461000119104,2018-01-31,2099-12-31,NA
+42535704,Hemiplegia of nondominant side as sequela of embolic cerebrovascular accident,Condition,SNOMED,Disorder,S,690271000119104,2018-01-31,2099-12-31,NA
+42539286,Flaccid hemiplegia of right dominant side,Condition,SNOMED,Disorder,S,294061000119106,2018-01-31,2099-12-31,NA

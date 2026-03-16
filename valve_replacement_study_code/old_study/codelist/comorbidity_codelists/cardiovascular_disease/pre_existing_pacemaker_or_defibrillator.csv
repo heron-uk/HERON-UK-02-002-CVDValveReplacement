@@ -1,0 +1,753 @@
+concept_id,found_from,concept_name,domain_id,vocabulary_id,standard_concept
+135417,From initial search,Disorder of implantable defibrillator,Condition,SNOMED,S
+506573,From initial search,Renewal of single chamber intravenous cardiac pacemaker system,Procedure,SNOMED,S
+506574,From initial search,Renewal of dual chamber intravenous cardiac pacemaker system,Procedure,SNOMED,S
+506575,From initial search,Renewal of single chamber cardiac pacemaker system,Procedure,SNOMED,S
+506576,From initial search,Renewal of biventricular cardiac pacemaker,Procedure,SNOMED,S
+506577,From initial search,Renewal of dual chamber cardiac pacemaker system,Procedure,SNOMED,S
+507776,From initial search,Renewal of biventricular intravenous cardiac pacemaker system,Procedure,SNOMED,S
+722703,From initial search,Level1 Pacemaker and Similar Procedures,Observation,APC,S
+722773,From initial search,Level 3 Pacemaker and Similar Procedures,Observation,APC,S
+722795,From initial search,Level 4 Pacemaker and Similar Procedures,Observation,APC,S
+722988,From initial search,Level 2 Pacemaker and Similar Procedures,Observation,APC,S
+764090,From initial search,Defibrillation using automated external cardiac defibrillator,Procedure,SNOMED,S
+911827,From initial search,Other specified other cardiac pacemaker system introduced through vein,Procedure,OPCS4,S
+1073865,From initial search,Fluoroscopy guided implantation of cardiac resynchronization defibrillator system,Procedure,SNOMED,S
+1126208,From initial search,"Insertion of new or replacement of permanent pacemaker with atrial transvenous electrode(s), with insertion of pacing electrode, cardiac venous system, for left ventricular pacing, at time of insertion of implantable defibrillator or pacemaker pulse ge...",Procedure,HCPCS,S
+1126209,From initial search,"Insertion of new or replacement of permanent pacemaker with ventricular transvenous electrode(s), with insertion of pacing electrode, cardiac venous system, for left ventricular pacing, at time of insertion of implantable defibrillator or pacemaker pul...",Procedure,HCPCS,S
+1126210,From initial search,"Insertion of new or replacement of permanent pacemaker with atrial and ventricular transvenous electrode(s), with insertion of pacing electrode, cardiac venous system, for left ventricular pacing, at time of insertion of implantable defibrillator or pa...",Procedure,HCPCS,S
+1126211,From initial search,"Removal of permanent pacemaker pulse generator with replacement of pacemaker pulse generator, dual lead system, with insertion of pacing electrode, cardiac venous system, for left ventricular pacing, at time of insertion of implantable defibrillator or...",Procedure,HCPCS,S
+1242809,From initial search,Repair of cardiac pacemaker pocket,Procedure,SNOMED,S
+1242813,From initial search,Electrophysiologic evaluation of cardioverter defibrillator,Procedure,SNOMED,S
+1242814,From initial search,Electrophysiologic evaluation of cardioverter defibrillator lead,Procedure,SNOMED,S
+1244511,From initial search,Debridement of pacemaker pocket,Procedure,SNOMED,S
+1523450,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Open @ Subcutaneous Defibrillator Lead",Procedure,ICD10PCS,S
+1523516,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Removal @ Subcutaneous Tissue and Fascia, Trunk @ Percutaneous @ Subcutaneous Defibrillator Lead",Procedure,ICD10PCS,S
+1523682,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Removal @ Subcutaneous Tissue and Fascia, Trunk @ Open @ Subcutaneous Defibrillator Lead",Procedure,ICD10PCS,S
+1523707,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Revision @ Subcutaneous Tissue and Fascia, Trunk @ Percutaneous @ Subcutaneous Defibrillator Lead",Procedure,ICD10PCS,S
+1523733,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Percutaneous @ Subcutaneous Defibrillator Lead",Procedure,ICD10PCS,S
+1523882,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Revision @ Subcutaneous Tissue and Fascia, Trunk @ Open @ Subcutaneous Defibrillator Lead",Procedure,ICD10PCS,S
+1523915,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Revision @ Subcutaneous Tissue and Fascia, Trunk @ External @ Subcutaneous Defibrillator Lead",Procedure,ICD10PCS,S
+1524149,From initial search,"Revision of Subcutaneous Defibrillator Lead in Trunk Subcutaneous Tissue and Fascia, External Approach",Procedure,ICD10PCS,S
+1524150,From initial search,"Revision of Subcutaneous Defibrillator Lead in Trunk Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+1524151,From initial search,"Revision of Subcutaneous Defibrillator Lead in Trunk Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+1524152,From initial search,"Insertion of Subcutaneous Defibrillator Lead into Chest Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+1524153,From initial search,"Insertion of Subcutaneous Defibrillator Lead into Chest Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+1524154,From initial search,"Removal of Subcutaneous Defibrillator Lead from Trunk Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+1524155,From initial search,"Removal of Subcutaneous Defibrillator Lead from Trunk Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+1532755,From initial search,Medical and Surgical @ Respiratory System @ Insertion @ Diaphragm @ Percutaneous @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+1532954,From initial search,Medical and Surgical @ Respiratory System @ Insertion @ Diaphragm @ Percutaneous Endoscopic @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+1534873,From initial search,Medical and Surgical @ Respiratory System @ Insertion @ Diaphragm @ Open @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+1988736,From initial search,Provider of automated external defibrillator use,Observation,LOINC,S
+2000048,From initial search,"Implantation of cardiac resynchronization pacemaker without mention of defibrillation, total system [CRT-P]",Procedure,ICD9Proc,S
+2000049,From initial search,"Implantation of cardiac resynchronization defibrillator, total system [CRT-D]",Procedure,ICD9Proc,S
+2000050,From descendants,Implantation or replacement of transvenous lead [electrode] into left ventricular coronary venous system,Procedure,ICD9Proc,S
+2000051,From initial search,Implantation or replacement of cardiac resynchronization pacemaker pulse generator only [CRT-P],Procedure,ICD9Proc,S
+2000052,From initial search,Implantation or replacement of cardiac resynchronization defibrillator pulse generator only [CRT-D],Procedure,ICD9Proc,S
+2001571,From initial search,"Insertion, revision, replacement, and removal of leads; insertion of temporary pacemaker system; or revision of cardiac device pocket",Procedure,ICD9Proc,S
+2001572,From descendants,"Initial insertion of lead [electrode], not otherwise specified",Procedure,ICD9Proc,S
+2001576,From descendants,Insertion or replacement of epicardial lead [electrode] into epicardium,Procedure,ICD9Proc,S
+2001578,From descendants,Replacement of transvenous atrial and/or ventricular lead(s) [electrode],Procedure,ICD9Proc,S
+2001581,From descendants,Revision or relocation of cardiac device pocket,Procedure,ICD9Proc,S
+2001972,From initial search,"Insertion, replacement, removal, and revision of pacemaker device",Procedure,ICD9Proc,S
+2001973,From initial search,"Insertion of permanent pacemaker, initial or replacement, type of device not specified",Procedure,ICD9Proc,S
+2001980,From initial search,Revision or removal of pacemaker device,Procedure,ICD9Proc,S
+2001996,From initial search,"Implantation or replacement of automatic cardioverter/defibrillator, total system [AICD]",Procedure,ICD9Proc,S
+2001997,From initial search,Implantation of automatic cardioverter/defibrillator lead(s) only,Procedure,ICD9Proc,S
+2001999,From initial search,Replacement of automatic cardioverter/defibrillator lead(s) only,Procedure,ICD9Proc,S
+2006614,From descendants,"Insertion or replacement of single array neurostimulator pulse generator, not specified as rechargeable",Procedure,ICD9Proc,S
+2006615,From descendants,"Insertion or replacement of multiple array neurostimulator pulse generator, not specified as rechargeable",Procedure,ICD9Proc,S
+2006616,From descendants,Insertion or replacement of other neurostimulator pulse generator,Procedure,ICD9Proc,S
+2006617,From descendants,Insertion or replacement of single array rechargeable neurostimulator pulse generator,Procedure,ICD9Proc,S
+2006618,From descendants,Insertion or replacement of multiple array (two or more) rechargeable neurostimulator pulse generator,Procedure,ICD9Proc,S
+2007054,From initial search,Cardiac stress tests and pacemaker and defibrillator checks,Procedure,ICD9Proc,S
+2007058,From descendants,Other cardiovascular stress test,Procedure,ICD9Proc,S
+2723486,From descendants,"Removal of Neurostimulator Lead from Brain, Open Approach",Procedure,ICD10PCS,S
+2723493,From descendants,"Removal of Neurostimulator Lead from Brain, Percutaneous Approach",Procedure,ICD10PCS,S
+2723500,From descendants,"Removal of Neurostimulator Lead from Brain, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2723504,From descendants,"Removal of Neurostimulator Lead from Brain, External Approach",Procedure,ICD10PCS,S
+2725709,From initial search,"Insertion of Pacemaker Lead into Coronary Vein, Open Approach",Procedure,ICD10PCS,S
+2725710,From initial search,"Insertion of Defibrillator Lead into Coronary Vein, Open Approach",Procedure,ICD10PCS,S
+2725711,From descendants,"Insertion of Cardiac Lead into Coronary Vein, Open Approach",Procedure,ICD10PCS,S
+2726059,From descendants,"Removal of Cardiac Lead from Heart, Open Approach",Procedure,ICD10PCS,S
+2726070,From descendants,"Removal of Cardiac Lead from Heart, Percutaneous Approach",Procedure,ICD10PCS,S
+2726081,From descendants,"Removal of Cardiac Lead from Heart, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726087,From descendants,"Removal of Cardiac Lead from Heart, External Approach",Procedure,ICD10PCS,S
+2726167,From initial search,"Insertion of Pacemaker Lead into Coronary Vein, Percutaneous Approach",Procedure,ICD10PCS,S
+2726168,From initial search,"Insertion of Defibrillator Lead into Coronary Vein, Percutaneous Approach",Procedure,ICD10PCS,S
+2726169,From descendants,"Insertion of Cardiac Lead into Coronary Vein, Percutaneous Approach",Procedure,ICD10PCS,S
+2726174,From initial search,"Insertion of Pacemaker Lead into Coronary Vein, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726175,From initial search,"Insertion of Defibrillator Lead into Coronary Vein, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726176,From descendants,"Insertion of Cardiac Lead into Coronary Vein, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726181,From initial search,"Insertion of Pacemaker Lead into Right Atrium, Open Approach",Procedure,ICD10PCS,S
+2726182,From initial search,"Insertion of Defibrillator Lead into Right Atrium, Open Approach",Procedure,ICD10PCS,S
+2726183,From descendants,"Insertion of Cardiac Lead into Right Atrium, Open Approach",Procedure,ICD10PCS,S
+2726188,From initial search,"Insertion of Pacemaker Lead into Right Atrium, Percutaneous Approach",Procedure,ICD10PCS,S
+2726189,From initial search,"Insertion of Defibrillator Lead into Right Atrium, Percutaneous Approach",Procedure,ICD10PCS,S
+2726190,From descendants,"Insertion of Cardiac Lead into Right Atrium, Percutaneous Approach",Procedure,ICD10PCS,S
+2726195,From initial search,"Insertion of Pacemaker Lead into Right Atrium, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726196,From initial search,"Insertion of Defibrillator Lead into Right Atrium, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726197,From descendants,"Insertion of Cardiac Lead into Right Atrium, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726202,From initial search,"Insertion of Pacemaker Lead into Left Atrium, Open Approach",Procedure,ICD10PCS,S
+2726203,From initial search,"Insertion of Defibrillator Lead into Left Atrium, Open Approach",Procedure,ICD10PCS,S
+2726204,From descendants,"Insertion of Cardiac Lead into Left Atrium, Open Approach",Procedure,ICD10PCS,S
+2726209,From initial search,"Insertion of Pacemaker Lead into Left Atrium, Percutaneous Approach",Procedure,ICD10PCS,S
+2726210,From initial search,"Insertion of Defibrillator Lead into Left Atrium, Percutaneous Approach",Procedure,ICD10PCS,S
+2726211,From descendants,"Insertion of Cardiac Lead into Left Atrium, Percutaneous Approach",Procedure,ICD10PCS,S
+2726216,From initial search,"Insertion of Pacemaker Lead into Left Atrium, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726217,From initial search,"Insertion of Defibrillator Lead into Left Atrium, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726218,From descendants,"Insertion of Cardiac Lead into Left Atrium, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726232,From initial search,"Insertion of Pacemaker Lead into Right Ventricle, Open Approach",Procedure,ICD10PCS,S
+2726233,From initial search,"Insertion of Defibrillator Lead into Right Ventricle, Open Approach",Procedure,ICD10PCS,S
+2726234,From descendants,"Insertion of Cardiac Lead into Right Ventricle, Open Approach",Procedure,ICD10PCS,S
+2726239,From initial search,"Insertion of Pacemaker Lead into Right Ventricle, Percutaneous Approach",Procedure,ICD10PCS,S
+2726240,From initial search,"Insertion of Defibrillator Lead into Right Ventricle, Percutaneous Approach",Procedure,ICD10PCS,S
+2726241,From descendants,"Insertion of Cardiac Lead into Right Ventricle, Percutaneous Approach",Procedure,ICD10PCS,S
+2726246,From initial search,"Insertion of Pacemaker Lead into Right Ventricle, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726247,From initial search,"Insertion of Defibrillator Lead into Right Ventricle, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726248,From descendants,"Insertion of Cardiac Lead into Right Ventricle, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726253,From initial search,"Insertion of Pacemaker Lead into Left Ventricle, Open Approach",Procedure,ICD10PCS,S
+2726254,From initial search,"Insertion of Defibrillator Lead into Left Ventricle, Open Approach",Procedure,ICD10PCS,S
+2726255,From descendants,"Insertion of Cardiac Lead into Left Ventricle, Open Approach",Procedure,ICD10PCS,S
+2726260,From initial search,"Insertion of Pacemaker Lead into Left Ventricle, Percutaneous Approach",Procedure,ICD10PCS,S
+2726261,From initial search,"Insertion of Defibrillator Lead into Left Ventricle, Percutaneous Approach",Procedure,ICD10PCS,S
+2726262,From descendants,"Insertion of Cardiac Lead into Left Ventricle, Percutaneous Approach",Procedure,ICD10PCS,S
+2726267,From initial search,"Insertion of Pacemaker Lead into Left Ventricle, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726268,From initial search,"Insertion of Defibrillator Lead into Left Ventricle, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726269,From descendants,"Insertion of Cardiac Lead into Left Ventricle, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726272,From initial search,"Insertion of Pacemaker Lead into Pericardium, Open Approach",Procedure,ICD10PCS,S
+2726273,From initial search,"Insertion of Defibrillator Lead into Pericardium, Open Approach",Procedure,ICD10PCS,S
+2726274,From descendants,"Insertion of Cardiac Lead into Pericardium, Open Approach",Procedure,ICD10PCS,S
+2726277,From initial search,"Insertion of Pacemaker Lead into Pericardium, Percutaneous Approach",Procedure,ICD10PCS,S
+2726278,From initial search,"Insertion of Defibrillator Lead into Pericardium, Percutaneous Approach",Procedure,ICD10PCS,S
+2726279,From descendants,"Insertion of Cardiac Lead into Pericardium, Percutaneous Approach",Procedure,ICD10PCS,S
+2726282,From initial search,"Insertion of Pacemaker Lead into Pericardium, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726283,From initial search,"Insertion of Defibrillator Lead into Pericardium, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2726284,From descendants,"Insertion of Cardiac Lead into Pericardium, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2727195,From descendants,"Revision of Cardiac Lead in Heart, Open Approach",Procedure,ICD10PCS,S
+2727206,From descendants,"Revision of Cardiac Lead in Heart, Percutaneous Approach",Procedure,ICD10PCS,S
+2727217,From descendants,"Revision of Cardiac Lead in Heart, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2727228,From descendants,"Revision of Cardiac Lead in Heart, External Approach",Procedure,ICD10PCS,S
+2741862,From initial search,"Insertion of Diaphragmatic Pacemaker Lead into Right Diaphragm, Open Approach (Deprecated)",Procedure,ICD10PCS,S
+2741864,From initial search,"Insertion of Diaphragmatic Pacemaker Lead into Right Diaphragm, Percutaneous Approach (Deprecated)",Procedure,ICD10PCS,S
+2741866,From initial search,"Insertion of Diaphragmatic Pacemaker Lead into Right Diaphragm, Percutaneous Endoscopic Approach (Deprecated)",Procedure,ICD10PCS,S
+2741868,From initial search,"Insertion of Diaphragmatic Pacemaker Lead into Left Diaphragm, Open Approach (Deprecated)",Procedure,ICD10PCS,S
+2741870,From initial search,"Insertion of Diaphragmatic Pacemaker Lead into Left Diaphragm, Percutaneous Approach (Deprecated)",Procedure,ICD10PCS,S
+2741872,From initial search,"Insertion of Diaphragmatic Pacemaker Lead into Left Diaphragm, Percutaneous Endoscopic Approach (Deprecated)",Procedure,ICD10PCS,S
+2741926,From initial search,"Revision of Diaphragmatic Pacemaker Lead in Diaphragm, Open Approach",Procedure,ICD10PCS,S
+2741932,From initial search,"Revision of Diaphragmatic Pacemaker Lead in Diaphragm, Percutaneous Approach",Procedure,ICD10PCS,S
+2741938,From initial search,"Revision of Diaphragmatic Pacemaker Lead in Diaphragm, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2741944,From initial search,"Revision of Diaphragmatic Pacemaker Lead in Diaphragm, Via Natural or Artificial Opening",Procedure,ICD10PCS,S
+2741950,From initial search,"Revision of Diaphragmatic Pacemaker Lead in Diaphragm, Via Natural or Artificial Opening Endoscopic",Procedure,ICD10PCS,S
+2741956,From initial search,"Revision of Diaphragmatic Pacemaker Lead in Diaphragm, External Approach",Procedure,ICD10PCS,S
+2743685,From initial search,"Removal of Diaphragmatic Pacemaker Lead from Diaphragm, Open Approach",Procedure,ICD10PCS,S
+2743691,From initial search,"Removal of Diaphragmatic Pacemaker Lead from Diaphragm, Percutaneous Approach",Procedure,ICD10PCS,S
+2743697,From initial search,"Removal of Diaphragmatic Pacemaker Lead from Diaphragm, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+2743703,From initial search,"Removal of Diaphragmatic Pacemaker Lead from Diaphragm, Via Natural or Artificial Opening",Procedure,ICD10PCS,S
+2743709,From initial search,"Removal of Diaphragmatic Pacemaker Lead from Diaphragm, Via Natural or Artificial Opening Endoscopic",Procedure,ICD10PCS,S
+2743712,From initial search,"Removal of Diaphragmatic Pacemaker Lead from Diaphragm, External Approach",Procedure,ICD10PCS,S
+2755317,From descendants,"Revision of Cardiac Rhythm Related Device in Trunk Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2755330,From descendants,"Revision of Cardiac Rhythm Related Device in Trunk Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2755343,From descendants,"Revision of Cardiac Rhythm Related Device in Trunk Subcutaneous Tissue and Fascia, External Approach",Procedure,ICD10PCS,S
+2756515,From initial search,"Insertion of Pacemaker, Single Chamber into Chest Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756516,From initial search,"Insertion of Pacemaker, Single Chamber Rate Responsive into Chest Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756517,From initial search,"Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756518,From initial search,"Insertion of Cardiac Resynchronization Pacemaker Pulse Generator into Chest Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756519,From initial search,"Insertion of Defibrillator Generator into Chest Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756520,From initial search,"Insertion of Cardiac Resynchronization Defibrillator Pulse Generator into Chest Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756535,From initial search,"Insertion of Pacemaker, Single Chamber into Chest Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2756536,From initial search,"Insertion of Pacemaker, Single Chamber Rate Responsive into Chest Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2756537,From initial search,"Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2756538,From initial search,"Insertion of Cardiac Resynchronization Pacemaker Pulse Generator into Chest Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2756539,From initial search,"Insertion of Defibrillator Generator into Chest Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2756540,From initial search,"Insertion of Cardiac Resynchronization Defibrillator Pulse Generator into Chest Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2756569,From initial search,"Insertion of Pacemaker, Single Chamber into Abdomen Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756570,From initial search,"Insertion of Pacemaker, Single Chamber Rate Responsive into Abdomen Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756571,From initial search,"Insertion of Pacemaker, Dual Chamber into Abdomen Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756572,From initial search,"Insertion of Cardiac Resynchronization Pacemaker Pulse Generator into Abdomen Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756768,From initial search,"Insertion of Defibrillator Generator into Abdomen Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756769,From initial search,"Insertion of Cardiac Resynchronization Defibrillator Pulse Generator into Abdomen Subcutaneous Tissue and Fascia, Open Approach",Procedure,ICD10PCS,S
+2756784,From initial search,"Insertion of Pacemaker, Single Chamber into Abdomen Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2756785,From initial search,"Insertion of Pacemaker, Single Chamber Rate Responsive into Abdomen Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2756786,From initial search,"Insertion of Pacemaker, Dual Chamber into Abdomen Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2756787,From initial search,"Insertion of Cardiac Resynchronization Pacemaker Pulse Generator into Abdomen Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2756788,From initial search,"Insertion of Defibrillator Generator into Abdomen Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2756789,From initial search,"Insertion of Cardiac Resynchronization Defibrillator Pulse Generator into Abdomen Subcutaneous Tissue and Fascia, Percutaneous Approach",Procedure,ICD10PCS,S
+2787806,From initial search,"Measurement of Cardiac Pacemaker, External Approach",Procedure,ICD10PCS,S
+2787807,From initial search,"Measurement of Cardiac Defibrillator, External Approach",Procedure,ICD10PCS,S
+2787808,From initial search,"Measurement of Respiratory Pacemaker, External Approach",Procedure,ICD10PCS,S
+2788031,From descendants,"Performance of Cardiac Pacing, Intermittent",Procedure,ICD10PCS,S
+2788033,From descendants,"Performance of Cardiac Pacing, Continuous",Procedure,ICD10PCS,S
+2794368,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Coronary Vein @ Percutaneous @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2799665,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Percutaneous @ Pacemaker, Single Chamber",Procedure,ICD10PCS,S
+2799666,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Percutaneous @ Defibrillator Generator",Procedure,ICD10PCS,S
+2800074,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Coronary Vein @ Percutaneous Endoscopic @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2800076,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Right @ Open @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2800079,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Left @ Percutaneous @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2803963,From initial search,Medical and Surgical @ Respiratory System @ Revision @ Diaphragm @ Via Natural or Artificial Opening Endoscopic @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2804686,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Open @ Pacemaker, Single Chamber",Procedure,ICD10PCS,S
+2804688,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Percutaneous @ Defibrillator Generator",Procedure,ICD10PCS,S
+2807723,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Right @ Open @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2807725,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Left @ Percutaneous Endoscopic @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2808661,From initial search,Medical and Surgical @ Respiratory System @ Removal @ Diaphragm @ Via Natural or Artificial Opening @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2810412,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Percutaneous @ Pacemaker, Single Chamber Rate Responsive",Procedure,ICD10PCS,S
+2815403,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Left @ Percutaneous @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2816546,From initial search,Medical and Surgical @ Respiratory System @ Removal @ Diaphragm @ Percutaneous @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2821562,From initial search,Medical and Surgical @ Respiratory System @ Revision @ Diaphragm @ Open @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2821893,From initial search,Medical and Surgical @ Respiratory System @ Removal @ Diaphragm @ External @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2822818,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Right @ Percutaneous Endoscopic @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2822819,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Right @ Percutaneous Endoscopic @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2822826,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Pericardium @ Percutaneous @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2825440,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Open @ Pacemaker, Single Chamber Rate Responsive",Procedure,ICD10PCS,S
+2825443,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Open @ Cardiac Resynchronization Pacemaker Pulse Generator",Procedure,ICD10PCS,S
+2828024,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Coronary Vein @ Open @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2828025,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Coronary Vein @ Percutaneous Endoscopic @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2828159,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Pericardium @ Open @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2834150,From initial search,Medical and Surgical @ Respiratory System @ Removal @ Diaphragm @ Open @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2836028,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Pericardium @ Open @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2836029,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Pericardium @ Percutaneous Endoscopic @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2836593,From initial search,"Medical and Surgical @ Respiratory System @ Insertion @ Diaphragm, Right @ Open @ Diaphragmatic Pacemaker Lead (Deprecated)",Procedure,ICD10PCS,S
+2837875,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Percutaneous @ Pacemaker, Single Chamber Rate Responsive",Procedure,ICD10PCS,S
+2837876,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Percutaneous @ Cardiac Resynchronization Pacemaker Pulse Generator",Procedure,ICD10PCS,S
+2840587,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Left @ Percutaneous Endoscopic @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2841643,From initial search,Measurement and Monitoring @ Physiological Devices @ Measurement @ Cardiac @ External @ Defibrillator,Procedure,ICD10PCS,S
+2842371,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Percutaneous @ Pacemaker, Single Chamber",Procedure,ICD10PCS,S
+2844344,From initial search,Medical and Surgical @ Respiratory System @ Revision @ Diaphragm @ Via Natural or Artificial Opening @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2848485,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Left @ Percutaneous @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2849221,From initial search,"Medical and Surgical @ Respiratory System @ Insertion @ Diaphragm, Right @ Percutaneous @ Diaphragmatic Pacemaker Lead (Deprecated)",Procedure,ICD10PCS,S
+2849395,From initial search,Medical and Surgical @ Respiratory System @ Removal @ Diaphragm @ Via Natural or Artificial Opening Endoscopic @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2849710,From initial search,Medical and Surgical @ Respiratory System @ Revision @ Diaphragm @ Percutaneous Endoscopic @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2850416,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Open @ Pacemaker, Single Chamber",Procedure,ICD10PCS,S
+2853009,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Coronary Vein @ Open @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2853011,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Right @ Percutaneous @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2853017,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Right @ Open @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2853019,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Pericardium @ Percutaneous @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2855411,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Open @ Pacemaker, Dual Chamber",Procedure,ICD10PCS,S
+2855412,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Open @ Cardiac Resynchronization Defibrillator Pulse Generator",Procedure,ICD10PCS,S
+2855413,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Percutaneous @ Pacemaker, Dual Chamber",Procedure,ICD10PCS,S
+2855414,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Percutaneous @ Cardiac Resynchronization Pacemaker Pulse Generator",Procedure,ICD10PCS,S
+2855416,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Open @ Pacemaker, Single Chamber Rate Responsive",Procedure,ICD10PCS,S
+2856883,From initial search,"Medical and Surgical @ Respiratory System @ Insertion @ Diaphragm, Left @ Percutaneous Endoscopic @ Diaphragmatic Pacemaker Lead (Deprecated)",Procedure,ICD10PCS,S
+2857185,From initial search,Medical and Surgical @ Respiratory System @ Removal @ Diaphragm @ Percutaneous Endoscopic @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2861694,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Left @ Open @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2861822,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Left @ Open @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2861826,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Left @ Open @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2863070,From initial search,Medical and Surgical @ Respiratory System @ Revision @ Diaphragm @ External @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2863997,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Open @ Defibrillator Generator",Procedure,ICD10PCS,S
+2866558,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Right @ Open @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2866559,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Right @ Percutaneous @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2866685,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Right @ Percutaneous @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2866687,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Left @ Percutaneous Endoscopic @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2869035,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Percutaneous @ Cardiac Resynchronization Defibrillator Pulse Generator",Procedure,ICD10PCS,S
+2870273,From initial search,"Medical and Surgical @ Respiratory System @ Insertion @ Diaphragm, Right @ Percutaneous Endoscopic @ Diaphragmatic Pacemaker Lead (Deprecated)",Procedure,ICD10PCS,S
+2870274,From initial search,"Medical and Surgical @ Respiratory System @ Insertion @ Diaphragm, Left @ Percutaneous @ Diaphragmatic Pacemaker Lead (Deprecated)",Procedure,ICD10PCS,S
+2874749,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Left @ Open @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2877005,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Percutaneous @ Pacemaker, Dual Chamber",Procedure,ICD10PCS,S
+2880118,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Left @ Percutaneous @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2880119,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Left @ Percutaneous Endoscopic @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2882549,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Chest @ Open @ Cardiac Resynchronization Pacemaker Pulse Generator",Procedure,ICD10PCS,S
+2882552,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Open @ Defibrillator Generator",Procedure,ICD10PCS,S
+2882553,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Open @ Cardiac Resynchronization Defibrillator Pulse Generator",Procedure,ICD10PCS,S
+2884333,From initial search,Medical and Surgical @ Respiratory System @ Revision @ Diaphragm @ Percutaneous @ Diaphragmatic Pacemaker Lead,Procedure,ICD10PCS,S
+2886049,From initial search,Measurement and Monitoring @ Physiological Devices @ Measurement @ Cardiac @ External @ Pacemaker,Procedure,ICD10PCS,S
+2887959,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Coronary Vein @ Percutaneous @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2887963,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Pericardium @ Percutaneous Endoscopic @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2888696,From initial search,"Medical and Surgical @ Respiratory System @ Insertion @ Diaphragm, Left @ Open @ Diaphragmatic Pacemaker Lead (Deprecated)",Procedure,ICD10PCS,S
+2892997,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Right @ Percutaneous @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2892999,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Right @ Percutaneous Endoscopic @ Cardiac Lead, Pacemaker",Procedure,ICD10PCS,S
+2893000,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Right @ Percutaneous Endoscopic @ Cardiac Lead, Defibrillator",Procedure,ICD10PCS,S
+2893762,From initial search,Measurement and Monitoring @ Physiological Devices @ Measurement @ Respiratory @ External @ Pacemaker,Procedure,ICD10PCS,S
+2895348,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Open @ Pacemaker, Dual Chamber",Procedure,ICD10PCS,S
+2895484,From initial search,"Medical and Surgical @ Subcutaneous Tissue and Fascia @ Insertion @ Subcutaneous Tissue and Fascia, Abdomen @ Percutaneous @ Cardiac Resynchronization Defibrillator Pulse Generator",Procedure,ICD10PCS,S
+3168437,From descendants,Removal of AICD due to infected leads,Procedure,Nebraska Lexicon,S
+3174501,From initial search,Implanted cardiac defibrillator infection,Condition,Nebraska Lexicon,S
+3175422,From initial search,Right ventricular pacemaker lead revision,Procedure,Nebraska Lexicon,S
+3176607,From initial search,Biventricular pacemaker with defibrillator,Procedure,Nebraska Lexicon,S
+3178424,From initial search,Diaphragmatic stimulation by pacemaker,Condition,Nebraska Lexicon,S
+3179809,From initial search,Fractured atrial pacemaker lead wire,Condition,Nebraska Lexicon,S
+3181475,From initial search,Gastric pacemaker insertion,Procedure,Nebraska Lexicon,S
+3182147,From descendants,Replacement of left ventricular pacing lead,Procedure,Nebraska Lexicon,S
+3183100,From initial search,Repositioning of atrial pacemaker lead,Procedure,Nebraska Lexicon,S
+3185480,From initial search,Skin erosion due to defibrillator lead,Condition,Nebraska Lexicon,S
+3190461,From initial search,Insertion of AAI pacemaker,Procedure,Nebraska Lexicon,S
+3655806,From descendants,Cardiac resynchronization therapy,Procedure,SNOMED,S
+3655970,From descendants,Rate-adaptive pacing,Procedure,SNOMED,S
+4012334,From descendants,Removal of peripheral neurostimulator receiver,Procedure,SNOMED,S
+4018842,From initial search,Resiting of lead of intravenous pacemaker system,Procedure,SNOMED,S
+4018843,From initial search,Maintenance of battery of intravenous cardiac pacemaker system,Procedure,SNOMED,S
+4018844,From initial search,Implantation of permanent intravenous cardiac pacemaker,Procedure,SNOMED,S
+4019139,From initial search,Introduction of cardiac pacemaker system via vein,Procedure,SNOMED,S
+4019140,From initial search,Complete removal of implanted cardiac pacemaker system,Procedure,SNOMED,S
+4019141,From initial search,Implantation of intravenous atrial overdrive pacemaker,Procedure,SNOMED,S
+4020233,From initial search,Implantation of intravenous fixed-rate cardiac pacemaker,Procedure,SNOMED,S
+4020234,From initial search,Implantation of intravenous pacemaker for atrial fibrillation,Procedure,SNOMED,S
+4020668,From initial search,Implantation of intravenous triggered cardiac pacemaker,Procedure,SNOMED,S
+4029763,From initial search,Check artificial pacemaker for electrode impedance,Procedure,SNOMED,S
+4030583,From initial search,Cardiac pacemaker twiddler syndrome,Condition,SNOMED,S
+4035447,From descendants,Implantation of rate-responsive cardiac single-chamber device,Procedure,SNOMED,S
+4036236,From descendants,Repositioning of permanent transvenous electrodes,Procedure,SNOMED,S
+4043871,From descendants,"Implantation of electrode into cardiac atrium, replacement",Procedure,SNOMED,S
+4044395,From initial search,Reposition of cardiac pacemaker pocket,Procedure,SNOMED,S
+4046707,From descendants,Replacement of permanent transvenous electrodes,Procedure,SNOMED,S
+4048694,From initial search,Electronic analysis of internal pacemaker system,Procedure,SNOMED,S
+4049398,From initial search,Temporary cardiac pacemaker procedure,Procedure,SNOMED,S
+4049399,From descendants,Insertion of epicardial electrode for temporary cardiac pacing,Procedure,SNOMED,S
+4049400,From initial search,Indirect temporary cardiac pacemaker procedure,Procedure,SNOMED,S
+4049402,From descendants,Transthoracic cardiac pacing procedure,Procedure,SNOMED,S
+4049403,From initial search,Maintenance procedure for cardiac pacemaker system,Procedure,SNOMED,S
+4049989,From initial search,Removal of automatic cardiac defibrillator,Procedure,SNOMED,S
+4049990,From descendants,Transesophageal cardiac pacing procedure,Procedure,SNOMED,S
+4049991,From initial search,Reprogramming of cardiac pacemaker,Procedure,SNOMED,S
+4049992,From descendants,Removal of cardiac pacing electrode,Procedure,SNOMED,S
+4050571,From initial search,Automatic defibrillator procedure,Procedure,SNOMED,S
+4050572,From initial search,Implantation of automatic cardiac defibrillator,Procedure,SNOMED,S
+4050573,From initial search,Direct temporary cardiac pacemaker procedure,Procedure,SNOMED,S
+4050574,From initial search,Insertion of permanent epicardial cardiac pacemaker system,Procedure,SNOMED,S
+4050575,From initial search,Removal of implanted cardiac pacemaker system or components,Procedure,SNOMED,S
+4050710,From initial search,Repair of cardiac pacemaker,Procedure,SNOMED,S
+4051472,From descendants,Replacement of electronic heart device battery,Procedure,SNOMED,S
+4051938,From initial search,Cardiac pacemaker procedure,Procedure,SNOMED,S
+4051939,From descendants,Insertion of endocardial electrode for temporary cardiac pacing,Procedure,SNOMED,S
+4051940,From initial search,Permanent cardiac pacemaker procedure,Procedure,SNOMED,S
+4055567,From initial search,Removal of cardiac pacemaker from epicardium with replacement of atrial and/or ventricular leads,Procedure,SNOMED,S
+4062879,From descendants,Removal of neurostimulator electrode from brain tissue,Procedure,SNOMED,S
+4070936,From initial search,Relocation of cardiac pacemaker pocket to new site in subcutaneous tissue,Procedure,SNOMED,S
+4077018,From initial search,Replacement of transvenous atrial pacemaker electrode leads,Procedure,SNOMED,S
+4078453,From initial search,General maintenance of cardiac pacemaker,Procedure,SNOMED,S
+4085558,From initial search,Insertion of temporary cardiac pacemaker,Procedure,SNOMED,S
+4087076,From initial search,Check artificial pacemaker for waveform artifact,Procedure,SNOMED,S
+4087901,From descendants,Cardiac pacing,Procedure,SNOMED,S
+4088998,From descendants,AV sequential pacing pattern,Condition,SNOMED,S
+4089488,From descendants,Atrial pacing pattern,Condition,SNOMED,S
+4089489,From initial search,Ineffective cardiac pacemaker pattern,Condition,SNOMED,S
+4089511,From descendants,Demand pacing,Procedure,SNOMED,S
+4092038,From descendants,Ventricular pacing pattern,Condition,SNOMED,S
+4099402,From initial search,Insertion of intracardiac pacemaker,Procedure,SNOMED,S
+4099484,From descendants,Removal of transvenous electrodes,Procedure,SNOMED,S
+4101854,From descendants,Removal of electronic heart device pulse generator,Procedure,SNOMED,S
+4111551,From initial search,Wandering atrial pacemaker,Condition,SNOMED,S
+4117045,From descendants,Atrial overdrive pacing,Procedure,SNOMED,S
+4117046,From initial search,Fixed-rate cardiac pacemaker,Procedure,SNOMED,S
+4117616,From initial search,Diaphragm pacemaker procedure,Procedure,SNOMED,S
+4119917,From initial search,Emergency cardiac pacemaker,Procedure,SNOMED,S
+4120285,From initial search,Pacemaker electrode displacement,Condition,SNOMED,S
+4120286,From initial search,Pacemaker electrode lead fracture,Condition,SNOMED,S
+4120287,From initial search,Cardiac pacemaker sensitivity problem,Condition,SNOMED,S
+4120288,From initial search,Oversensing cardiac pacemaker,Condition,SNOMED,S
+4120289,From initial search,Implanted defibrillator electrode displacement,Condition,SNOMED,S
+4120290,From initial search,Implanted defibrillator generator failure,Condition,SNOMED,S
+4120291,From initial search,High threshold for implanted defibrillator,Condition,SNOMED,S
+4120945,From initial search,Pacemaker electrode infection,Condition,SNOMED,S
+4120946,From initial search,Pacemaker electrode lead displacement,Condition,SNOMED,S
+4120947,From initial search,Disorder of pacemaker pulse generator,Condition,SNOMED,S
+4120948,From initial search,Cardiac pacemaker myoinhibition,Condition,SNOMED,S
+4120949,From initial search,Cardiac pacemaker re-entrant tachycardia,Condition,SNOMED,S
+4120950,From initial search,Runaway cardiac pacemaker,Condition,SNOMED,S
+4120951,From initial search,Implanted defibrillator electrode lead fracture,Condition,SNOMED,S
+4120952,From initial search,Disorder of defibrillator function,Condition,SNOMED,S
+4120953,From initial search,Inappropriate shocks from implanted defibrillator,Condition,SNOMED,S
+4121584,From descendants,Removal of IV endocardial electrode,Procedure,SNOMED,S
+4122768,From initial search,Disorder of cardiac pacemaker electrode,Condition,SNOMED,S
+4122769,From initial search,Infected pacemaker,Condition,SNOMED,S
+4122770,From initial search,Pacemaker pulse generator failure,Condition,SNOMED,S
+4122771,From descendants,Disorder of pacing function,Condition,SNOMED,S
+4122772,From initial search,Undersensing cardiac pacemaker,Condition,SNOMED,S
+4122773,From initial search,Cardiac pacemaker syndrome,Condition,SNOMED,S
+4122774,From initial search,Disorder of implanted cardiac defibrillator electrode,Condition,SNOMED,S
+4122775,From initial search,Implanted defibrillator electrode infection,Condition,SNOMED,S
+4122776,From initial search,Disorder of implanted defibrillator generator,Condition,SNOMED,S
+4125013,From initial search,Failure of cardiac pacemaker to capture,Condition,SNOMED,S
+4125014,From initial search,Cardiac pacemaker electrical interference,Condition,SNOMED,S
+4125015,From initial search,Cross-talk in dual chamber cardiac pacemaker,Condition,SNOMED,S
+4125016,From initial search,Implanted defibrillator electrode lead displacement,Condition,SNOMED,S
+4125017,From initial search,Implanted defibrillator generator infection,Condition,SNOMED,S
+4125933,From descendants,Insertion of IV endocardial electrode,Procedure,SNOMED,S
+4136517,From initial search,Replacement of transvenous ventricular pacemaker electrode leads,Procedure,SNOMED,S
+4137700,From initial search,Implantation of cardioverter defibrillator with one electrode lead,Procedure,SNOMED,S
+4138468,From descendants,External ventricular defibrillation,Procedure,SNOMED,S
+4138751,From initial search,Cardioverter defibrillator procedure,Procedure,SNOMED,S
+4138896,From initial search,Cardiac pacemaker active on electrocardiogram,Condition,SNOMED,S
+4140976,From initial search,Check artificial pacemaker for amperage threshold,Procedure,SNOMED,S
+4140992,From initial search,Insertion of permanent atrial pacemaker with transvenous electrodes,Procedure,SNOMED,S
+4142917,From initial search,"Insertion of permanent pacemaker with transvenous electrodes, AV sequential",Procedure,SNOMED,S
+4144100,From initial search,Revision of automatic implantable cardioverter/defibrillator,Procedure,SNOMED,S
+4144860,From initial search,Implantation of emergency intravenous cardiac pacemaker,Procedure,SNOMED,S
+4144899,From initial search,Implantation of cardioverter defibrillator with two electrode leads,Procedure,SNOMED,S
+4144921,From initial search,Implantation of cardiac pacemaker,Procedure,SNOMED,S
+4145787,From descendants,Replacement of IV endocardial electrode,Procedure,SNOMED,S
+4149327,From descendants,"Replacement of electronic heart device, pulse generator",Procedure,SNOMED,S
+4150419,From initial search,Implantation of intravenous dual chamber permanent cardiac pacemaker,Procedure,SNOMED,S
+4152132,From initial search,"Electronic wave or pacemaker analysis, remote",Procedure,SNOMED,S
+4152603,From initial search,Fibrosis of cardiac pacemaker electrode,Condition,SNOMED,S
+4152713,From initial search,Seen by cardiac pacemaker technician,Observation,SNOMED,S
+4155081,From initial search,Disorder of cardiac pacemaker system,Condition,SNOMED,S
+4155152,From descendants,Magnet induced pacing,Procedure,SNOMED,S
+4155153,From descendants,Atrioventricular sequential pacing,Procedure,SNOMED,S
+4161527,From initial search,Removal of temporary cardiac pacemaker lead using fluoroscopic guidance,Procedure,SNOMED,S
+4161821,From descendants,Ventricular pacing lead positioned,Procedure,SNOMED,S
+4162052,From initial search,Insertion of cardiac defibrillator using fluoroscopic guidance,Procedure,SNOMED,S
+4164309,From descendants,"Implantation of electrode into cardiac ventricle, replacement",Procedure,SNOMED,S
+4171841,From initial search,Fluoroscopic monitoring and radiography for cardiac pacemaker insertion,Procedure,SNOMED,S
+4174419,From initial search,Maintenance of temporary cardiac pacemaker settings,Procedure,SNOMED,S
+4174878,From initial search,Maintenance of temporary cardiac pacemaker system,Procedure,SNOMED,S
+4175656,From initial search,Maintenance of temporary epicardial cardiac pacemaker system,Procedure,SNOMED,S
+4177682,From descendants,Biphasic defibrillation procedure,Procedure,SNOMED,S
+4179363,From initial search,Implantation of cardiac resynchronization therapy implantable pacemaker,Procedure,SNOMED,S
+4180293,From initial search,Implantation of intravenous single chamber cardiac pacemaker system,Procedure,SNOMED,S
+4180298,From initial search,Implantation of intravenous cardiac resynchronization therapy implantable pacemaker,Procedure,SNOMED,S
+4180456,From descendants,Monophasic defibrillation,Procedure,SNOMED,S
+4180890,From initial search,Transvenous implantation of automatic cardiac defibrillator,Procedure,SNOMED,S
+4181003,From initial search,Replacement of cardioverter defibrillator,Procedure,SNOMED,S
+4181993,From initial search,Finding of cardiac pacemaker electrocardiographic pattern,Condition,SNOMED,S
+4183537,From descendants,Initial implantation of cardiac single-chamber device,Procedure,SNOMED,S
+4184306,From initial search,Insertion of carotid pacemaker,Procedure,SNOMED,S
+4185147,From initial search,Cardiac pacemaker observable,Observation,SNOMED,S
+4185148,From descendants,Cardiac pacing rate,Observation,SNOMED,S
+4185446,From descendants,Diaphragm pacing rate,Observation,SNOMED,S
+4187537,From initial search,Removal of cardiac pacemaker electrodes with replacement,Procedure,SNOMED,S
+4191948,From initial search,Implantation of internal cardiac defibrillator,Procedure,SNOMED,S
+4193790,From descendants,Removal of electronic stimulator of brain with synchronous replacement,Procedure,SNOMED,S
+4198013,From initial search,Replacement of permanent cardiac pacemaker using fluoroscopic guidance,Procedure,SNOMED,S
+4198540,From initial search,Electronic analysis of dual chamber internal cardiac pacemaker system with reprogramming,Procedure,SNOMED,S
+4199753,From initial search,Removal of neuropacemaker of brain,Procedure,SNOMED,S
+4201134,From initial search,Electronic analysis of dual chamber internal cardiac pacemaker system without reprogramming,Procedure,SNOMED,S
+4201196,From initial search,Mechanical malfunction of biventricular automatic implantable cardioverter defibrillator,Condition,SNOMED,S
+4202898,From initial search,Malfunction of biventricular cardiac pacemaker,Condition,SNOMED,S
+4202955,From initial search,Implantation of complex one wire intravenous cardiac pacemaker,Procedure,SNOMED,S
+4203562,From initial search,Reimplantation of cardiac pacemaker electrode,Procedure,SNOMED,S
+4204395,From initial search,"Insertion of permanent pacemaker with transvenous electrodes, ventricular",Procedure,SNOMED,S
+4205990,From initial search,Implantation of simple one wire intravenous cardiac pacemaker,Procedure,SNOMED,S
+4205991,From initial search,Implantation of complex two wire intravenous cardiac pacemaker,Procedure,SNOMED,S
+4206128,From initial search,Implantation of temporary intravenous cardiac pacemaker,Procedure,SNOMED,S
+4209748,From initial search,Removal of automatic implantable cardioverter/defibrillator pads and electrodes,Procedure,SNOMED,S
+4209904,From initial search,Revision of pacemaker electrode leads,Procedure,SNOMED,S
+4210734,From initial search,Removal of spinal pacemaker with synchronous replacement,Procedure,SNOMED,S
+4212871,From initial search,Diaphragm pacemaker observable,Observation,SNOMED,S
+4215909,From initial search,Artificial pacemaker rate check,Procedure,SNOMED,S
+4216345,From initial search,Replacement of cardiac pacemaker with single chamber pacemaker not specified as rate responsive,Procedure,SNOMED,S
+4216485,From initial search,Removal of internal cardiac defibrillator,Procedure,SNOMED,S
+4216602,From descendants,Removal of sacral nerve stimulator,Procedure,SNOMED,S
+4217643,From initial search,Electro-mechanical dissociation caused by cardiac pacemaker,Condition,SNOMED,S
+4217923,From initial search,Replacement of neural pacemaker from peripheral nerve,Procedure,SNOMED,S
+4223369,From initial search,"Electronic analysis of internal pacemaker system, complete",Procedure,SNOMED,S
+4225150,From descendants,Intraventricular pacing,Procedure,SNOMED,S
+4226342,From descendants,Bundle of His pacing,Procedure,SNOMED,S
+4228672,From initial search,Removal of cardioverter/defibrillator pulse generator without replacement,Procedure,SNOMED,S
+4229766,From initial search,Replacement of temporary transvenous pacemaker system,Procedure,SNOMED,S
+4232614,From initial search,Check artificial pacemaker for voltage threshold,Procedure,SNOMED,S
+4233296,From initial search,Hematoma caused by cardiac pacemaker,Condition,SNOMED,S
+4234975,From descendants,Removal of electrodes from peripheral nerve with synchronous replacement,Procedure,SNOMED,S
+4235124,From descendants,"Replacement of electronic heart device, transvenous electrode",Procedure,SNOMED,S
+4235141,From initial search,Check artificial pacemaker,Procedure,SNOMED,S
+4236489,From descendants,Intraoperative cardiac pacing and mapping,Procedure,SNOMED,S
+4237586,From descendants,Removal of electronic heart device battery,Procedure,SNOMED,S
+4238833,From descendants,Removal of epicardial electrodes,Procedure,SNOMED,S
+4238843,From descendants,"Implantation of electrode into cardiac atrium and ventricle, replacement",Procedure,SNOMED,S
+4239324,From descendants,Repair of cardiac pulse generator,Procedure,SNOMED,S
+4241102,From descendants,Temporary transcutaneous pacing,Procedure,SNOMED,S
+4242529,From initial search,Removal of cardiac pacemaker and replacement with single-chamber cardiac device,Procedure,SNOMED,S
+4243151,From initial search,Repair of pacemaker with replacement of pulse generator,Procedure,SNOMED,S
+4243335,From descendants,Initial implantation of cardiac dual-chamber device,Procedure,SNOMED,S
+4243615,From initial search,Monitoring of pacemaker,Observation,SNOMED,S
+4244395,From initial search,Temporary insertion of pacemaker into atrium by transvenous route,Procedure,SNOMED,S
+4246210,From descendants,"Implantation of cardiac dual-chamber device, replacement",Procedure,SNOMED,S
+4249002,From descendants,Removal of neurostimulator electrode from peripheral nerve,Procedure,SNOMED,S
+4250607,From initial search,Replacement of transvenous atrial and ventricular pacemaker electrode leads,Procedure,SNOMED,S
+4251175,From initial search,Uterine pacemaker,Observation,SNOMED,S
+4251591,From initial search,Pacemaker care assessment,Procedure,SNOMED,S
+4254785,From initial search,Pacemaker care education,Observation,SNOMED,S
+4261878,From initial search,Pacemaker care management,Procedure,SNOMED,S
+4263193,From initial search,Removal of neuropacemaker of peripheral nerve,Procedure,SNOMED,S
+4263207,From initial search,Repositioning of cardioverter/defibrillator leads,Procedure,SNOMED,S
+4268034,From initial search,Implantation of diaphragmatic pacemaker,Procedure,SNOMED,S
+4270363,From initial search,Removal of cardiac pacemaker,Procedure,SNOMED,S
+4275747,From initial search,Subcutaneous implantation of cardiac pacemaker,Procedure,SNOMED,S
+4280489,From initial search,Check artificial pacemaker by slew rate check,Procedure,SNOMED,S
+4280816,From initial search,Repositioning of cardioverter/defibrillator pulse generator,Procedure,SNOMED,S
+4281670,From initial search,Implantation of cardiac temporary transvenous pacemaker system during and immediately following cardiac surgery,Procedure,SNOMED,S
+4286037,From initial search,Electrocardiographic recording from artificial pacemaker,Procedure,SNOMED,S
+4286047,From descendants,Insertion of permanent transvenous electrodes,Procedure,SNOMED,S
+4287115,From descendants,Intra-atrial pacing,Procedure,SNOMED,S
+4290930,From initial search,Insertion of pacemaker pulse generator,Procedure,SNOMED,S
+4293626,From initial search,Replacement of cardiac pacemaker device with dual-chamber device,Procedure,SNOMED,S
+4294868,From initial search,Renewal of intravenous cardiac pacemaker system,Procedure,SNOMED,S
+4296792,From initial search,"Removal of cardiac pacemaker with replacement by single-chamber device, rate-responsive",Procedure,SNOMED,S
+4299518,From initial search,Removal of pacemaker electrode leads without replacement,Procedure,SNOMED,S
+4300181,From initial search,Revision of permanent cardiac pacemaker device,Procedure,SNOMED,S
+4300434,From descendants,Induction of arrhythmia by electrical pacing,Procedure,SNOMED,S
+4301015,From initial search,Cardiac arrest due to pacemaker failure,Condition,SNOMED,S
+4307238,From initial search,Creation of cardiac pacemaker pocket new site in subcutaneous tissue,Procedure,SNOMED,S
+4308117,From initial search,Relocation of automatic implantable cardioverter/defibrillator,Procedure,SNOMED,S
+4308455,From initial search,Maintenance of temporary epicardial cardiac pacemaker settings,Procedure,SNOMED,S
+4310280,From initial search,Maintenance of permanent cardiac pacemaker settings,Procedure,SNOMED,S
+4315013,From initial search,Repair of pacemaker electrodes,Procedure,SNOMED,S
+4318831,From initial search,Removal of neuropacemaker from peripheral nerve with synchronous replacement,Procedure,SNOMED,S
+4322483,From descendants,Removal of epicardial electrodes with replacement of epicardial lead,Procedure,SNOMED,S
+4322971,From initial search,"Replacement of automatic cardioverter/defibrillator, total system",Procedure,SNOMED,S
+4328649,From initial search,Reposition of permanent cardiac pacemaker using fluoroscopic guidance,Procedure,SNOMED,S
+4329105,From initial search,Fluoroscopy of heart for checking of permanent cardiac pacemaker position,Procedure,SNOMED,S
+4329391,From initial search,Removal of cardiac pacemaker lead using fluoroscopic guidance,Procedure,SNOMED,S
+4331102,From initial search,Management of permanent pacemaker,Procedure,SNOMED,S
+4331222,From initial search,Insertion of temporary cardiac pacemaker using fluoroscopic guidance,Procedure,SNOMED,S
+4332711,From descendants,Removal of neurostimulator electrode from spinal nerve root,Procedure,SNOMED,S
+4333083,From initial search,Fluoroscopy of heart for checking of cardiac pacemaker electrode position,Procedure,SNOMED,S
+4335171,From initial search,Revision of skin pocket for pacemaker,Procedure,SNOMED,S
+4335369,From initial search,Infection of biventricular cardiac pacemaker,Condition,SNOMED,S
+4335395,From initial search,Malfunction of cardiac pacemaker,Condition,SNOMED,S
+4335529,From initial search,Replacement of cardiac defibrillator using fluoroscopic guidance,Procedure,SNOMED,S
+35609510,From initial search,Treatment Escalation Plan decision - appropriate for deactivation of implantable cardioverter defibrillator,Observation,SNOMED,S
+35609511,From initial search,Treatment Escalation Plan decision - not appropriate for deactivation of implantable cardioverter defibrillator,Observation,SNOMED,S
+35622031,From initial search,Intraoperative insertion of cardiac pacemaker,Procedure,SNOMED,S
+36675210,From initial search,Replacement of cardiac biventricular implantable cardioverter defibrillator,Procedure,SNOMED,S
+36802693,From initial search,"Insertion of Defibrillator Lead into Mediastinum, Open Approach",Procedure,ICD10PCS,S
+36802694,From initial search,"Insertion of Defibrillator Lead into Mediastinum, Percutaneous Approach",Procedure,ICD10PCS,S
+36802695,From initial search,"Insertion of Defibrillator Lead into Mediastinum, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+36802696,From initial search,"Removal of Defibrillator Lead from Mediastinum, Open Approach",Procedure,ICD10PCS,S
+36802697,From initial search,"Removal of Defibrillator Lead from Mediastinum, Percutaneous Approach",Procedure,ICD10PCS,S
+36802698,From initial search,"Removal of Defibrillator Lead from Mediastinum, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+36802699,From initial search,"Removal of Defibrillator Lead from Mediastinum, External Approach",Procedure,ICD10PCS,S
+36802700,From initial search,"Revision of Defibrillator Lead in Mediastinum, Open Approach",Procedure,ICD10PCS,S
+36802701,From initial search,"Revision of Defibrillator Lead in Mediastinum, Percutaneous Approach",Procedure,ICD10PCS,S
+36802702,From initial search,"Revision of Defibrillator Lead in Mediastinum, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+36802703,From initial search,"Revision of Defibrillator Lead in Mediastinum, External Approach",Procedure,ICD10PCS,S
+36802771,From initial search,"Insertion of Dual-Chamber Intracardiac Pacemaker into Right Atrium, Percutaneous Approach, New Technology Group 9",Procedure,ICD10PCS,S
+36802772,From initial search,"Insertion of Dual-Chamber Intracardiac Pacemaker into Right Ventricle, Percutaneous Approach, New Technology Group 9",Procedure,ICD10PCS,S
+36802936,From initial search,"Medical and Surgical @ Anatomical Regions, General @ Revision @ Mediastinum @ Open @ Defibrillator Lead",Procedure,ICD10PCS,S
+36802975,From initial search,"Medical and Surgical @ Anatomical Regions, General @ Revision @ Mediastinum @ External @ Defibrillator Lead",Procedure,ICD10PCS,S
+36803015,From initial search,"Medical and Surgical @ Anatomical Regions, General @ Removal @ Mediastinum @ External @ Defibrillator Lead",Procedure,ICD10PCS,S
+36803019,From initial search,"Medical and Surgical @ Anatomical Regions, General @ Removal @ Mediastinum @ Open @ Defibrillator Lead",Procedure,ICD10PCS,S
+36803139,From initial search,"Medical and Surgical @ Anatomical Regions, General @ Insertion @ Mediastinum @ Percutaneous @ Defibrillator Lead",Procedure,ICD10PCS,S
+36803176,From initial search,"Medical and Surgical @ Anatomical Regions, General @ Insertion @ Mediastinum @ Open @ Defibrillator Lead",Procedure,ICD10PCS,S
+36803214,From initial search,"New Technology @ Cardiovascular System @ Insertion @ Ventricle, Right @ Percutaneous @ Intracardiac Pacemaker, Dual-Chamber",Procedure,ICD10PCS,S
+36803244,From initial search,"Medical and Surgical @ Anatomical Regions, General @ Removal @ Mediastinum @ Percutaneous @ Defibrillator Lead",Procedure,ICD10PCS,S
+36803251,From initial search,"Medical and Surgical @ Anatomical Regions, General @ Revision @ Mediastinum @ Percutaneous @ Defibrillator Lead",Procedure,ICD10PCS,S
+36803298,From initial search,"Medical and Surgical @ Anatomical Regions, General @ Insertion @ Mediastinum @ Percutaneous Endoscopic @ Defibrillator Lead",Procedure,ICD10PCS,S
+36803321,From initial search,"New Technology @ Cardiovascular System @ Insertion @ Atrium, Right @ Percutaneous @ Intracardiac Pacemaker, Dual-Chamber",Procedure,ICD10PCS,S
+36803347,From initial search,"Medical and Surgical @ Anatomical Regions, General @ Removal @ Mediastinum @ Percutaneous Endoscopic @ Defibrillator Lead",Procedure,ICD10PCS,S
+36803404,From initial search,"Medical and Surgical @ Anatomical Regions, General @ Revision @ Mediastinum @ Percutaneous Endoscopic @ Defibrillator Lead",Procedure,ICD10PCS,S
+37016896,From initial search,Fluoroscopy guided removal of cardiac pacemaker,Procedure,SNOMED,S
+37016921,From initial search,Fluoroscopy guided removal of automatic cardiac defibrillator,Procedure,SNOMED,S
+37110243,From initial search,Malfunction of implantable defibrillator ventricular lead,Condition,SNOMED,S
+37110244,From descendants,Implantable cardioverter battery end of life,Condition,SNOMED,S
+37110245,From descendants,Inappropriate implantable cardioverter shock,Condition,SNOMED,S
+37151476,From initial search,Implantation of subcutaneous implantable cardioverter defibrillator,Procedure,SNOMED,S
+37153707,From initial search,Implantation of cardiac resynchronization defibrillator lead,Procedure,SNOMED,S
+37157743,From initial search,Implantation of leadless cardiac pacemaker,Procedure,SNOMED,S
+37157799,From initial search,Implantation of subcutaneous cardioverter defibrillator lead,Procedure,SNOMED,S
+37157813,From initial search,Implantation of cardiac resynchronization defibrillator system,Procedure,SNOMED,S
+37163004,From initial search,Implantable cardioverter defibrillator ventricular lead insulation break,Condition,SNOMED,S
+37163005,From initial search,Implantable cardioverter defibrillator ventricular lead dislodgement,Condition,SNOMED,S
+37163006,From initial search,Implantable cardioverter defibrillator ventricular lead fracture,Condition,SNOMED,S
+37163007,From initial search,Implantable cardioverter defibrillator generator dysfunction,Condition,SNOMED,S
+37163008,From initial search,High voltage component dysfunction of implantable cardioverter defibrillator,Condition,SNOMED,S
+37163009,From initial search,Implantable cardioverter defibrillator battery elective replacement required,Condition,SNOMED,S
+37163072,From initial search,Inappropriate withholding of pacing by implantable cardioverter defibrillator,Condition,SNOMED,S
+37163094,From initial search,Removal of leadless cardiac pacemaker,Procedure,SNOMED,S
+37163243,From initial search,Implantable cardioverter and defibrillator coronary sinus lead fracture,Condition,SNOMED,S
+37163245,From initial search,Implantable cardioverter and defibrillator coronary sinus lead insulation fracture,Condition,SNOMED,S
+37163246,From initial search,Pacemaker ventricular lead insulation fracture,Condition,SNOMED,S
+37163247,From initial search,Dislodgement of implantable cardioverter defibrillator coronary sinus lead,Condition,SNOMED,S
+37163248,From initial search,Dislodgement of cardiac pacemaker ventricular lead,Condition,SNOMED,S
+37163252,From initial search,Pacemaker mediated tachycardia,Condition,SNOMED,S
+37163307,From initial search,Fracture of atrial lead of implantable cardioverter and defibrillator,Condition,SNOMED,S
+37163308,From initial search,Breakage of atrial insulation of implantable cardioverter and defibrillator,Condition,SNOMED,S
+37163310,From initial search,Dislodgement of implantable cardioverter defibrillator atrial lead,Condition,SNOMED,S
+37164794,From initial search,Replacement of cardiac resynchronization therapy defibrillator pulse generator,Procedure,SNOMED,S
+37164796,From initial search,Replacement of leadless cardiac pacemaker,Procedure,SNOMED,S
+37203868,From initial search,Implantation of permanent cardiac pacemaker using fluoroscopic guidance,Procedure,SNOMED,S
+37203869,From initial search,Implantation of cardiac biventricular permanent pacemaker using fluoroscopic guidance,Procedure,SNOMED,S
+38001066,From initial search,Cardiac defibrillator implant w/o cardiac cath w MCC,Observation,DRG,S
+38001067,From initial search,Cardiac defibrillator implant w/o cardiac cath w/o MCC,Observation,DRG,S
+38001082,From initial search,Permanent cardiac pacemaker implant w MCC,Observation,DRG,S
+38001083,From initial search,Permanent cardiac pacemaker implant w CC,Observation,DRG,S
+38001084,From initial search,Permanent cardiac pacemaker implant w/o CC/MCC,Observation,DRG,S
+38001100,From initial search,Cardiac pacemaker device replacement w MCC,Observation,DRG,S
+38001101,From initial search,Cardiac pacemaker device replacement w/o MCC,Observation,DRG,S
+38001102,From initial search,Cardiac pacemaker revision except device replacement w MCC,Observation,DRG,S
+38001103,From initial search,Cardiac pacemaker revision except device replacement w CC,Observation,DRG,S
+38001104,From initial search,Cardiac pacemaker revision except device replacement w/o CC/MCC,Observation,DRG,S
+40217340,From descendants,"Interrogation device evaluation(s), (remote) up to 30 days; implantable cardiovascular physiologic monitor system, implantable loop recorder system, or subcutaneous cardiac rhythm monitor system, remote data acquisition(s), receipt of tran... (Deprecated)",Observation,HCPCS,S
+40479221,From initial search,Surgical removal of single chamber pacing cardioverter defibrillator electrode by transthoracic approach,Procedure,SNOMED,S
+40479293,From initial search,Revision of skin pocket for dual chamber pacing cardioverter defibrillator,Procedure,SNOMED,S
+40479379,From initial search,Insertion of single chamber pacing cardioverter defibrillator pulse generator,Procedure,SNOMED,S
+40479415,From initial search,Insertion of transvenous electrode of dual chamber pacing cardioverter defibrillator pulse generator,Procedure,SNOMED,S
+40479674,From initial search,Revision of skin pocket for single chamber pacing cardioverter defibrillator,Procedure,SNOMED,S
+40479833,From initial search,Insertion of single chamber pacing cardioverter defibrillator pulse generator and transvenous electrode,Procedure,SNOMED,S
+40479859,From initial search,Replacement of cardiac pacemaker,Procedure,SNOMED,S
+40481055,From descendants,Insertion of dual chamber pulse generator and repositioning of cardioverter defibrillation pulse generator lead,Procedure,SNOMED,S
+40481058,From initial search,Surgical removal of transvenous electrode of dual chamber pacing cardioverter defibrillator pulse generator by transthoracic approach,Procedure,SNOMED,S
+40481073,From initial search,Infection associated with cardiac resynchronization therapy implantable defibrillator,Condition,SNOMED,S
+40481373,From initial search,No cardiac pacemaker in situ,Observation,SNOMED,S
+40481494,From descendants,Replacement of dual chamber pulse generator,Procedure,SNOMED,S
+40481805,From initial search,Presence of cardiac pacemaker not known,Observation,SNOMED,S
+40481890,From initial search,Surgical removal of transvenous electrode of dual chamber pacing cardioverter defibrillator pulse generator by transvenous approach,Procedure,SNOMED,S
+40481942,From descendants,Insertion of permanent transvenous electrode of dual chamber pulse generator,Procedure,SNOMED,S
+40482387,From descendants,Insertion of temporary transvenous electrode of dual chamber cardiac pulse generator,Procedure,SNOMED,S
+40482665,From initial search,Implantation of cardioverter defibrillator with three electrode leads,Procedure,SNOMED,S
+40482781,From initial search,Surgical removal of transvenous electrode of single chamber pacing cardioverter defibrillator pulse generator by transthoracic approach,Procedure,SNOMED,S
+40483201,From initial search,Insertion of transvenous electrode of single chamber pacing cardioverter defibrillator pulse generator,Procedure,SNOMED,S
+40483213,From initial search,Insertion of single chamber cardiac pacemaker pulse generator,Procedure,SNOMED,S
+40483283,From descendants,Insertion of temporary transvenous electrode of single chamber pacing pulse generator,Procedure,SNOMED,S
+40483670,From descendants,Replacement of temporary transvenous electrode of dual chamber pulse generator,Procedure,SNOMED,S
+40484152,From initial search,Surgical removal of transvenous electrode of single chamber pacing cardioverter defibrillator pulse generator by transvenous approach,Procedure,SNOMED,S
+40485437,From initial search,Insertion of dual chamber cardiac pacemaker pulse generator,Procedure,SNOMED,S
+40486971,From descendants,Removal of vagal nerve stimulator,Procedure,SNOMED,S
+40487117,From initial search,Insertion of permanent cardiac pacemaker pulse generator and electrode,Procedure,SNOMED,S
+40487514,From initial search,Removal of cardiac biventricular permanent pacemaker using fluoroscopic guidance,Procedure,SNOMED,S
+40488431,From initial search,Interrogation of cardiac pacemaker,Procedure,SNOMED,S
+40488484,From initial search,Removal of cardiac biventricular implantable cardioverter defibrillator using fluoroscopic guidance,Procedure,SNOMED,S
+40488929,From initial search,Repositioning of cardiac pacemaker lead using fluoroscopic guidance,Procedure,SNOMED,S
+40490499,From initial search,Maintenance of intravenous cardiac pacemaker system,Procedure,SNOMED,S
+40491027,From initial search,Thoracotomy and removal of cardiac pacemaker electrodes,Procedure,SNOMED,S
+40491992,From initial search,Replacement of cardiac biventricular implantable cardioverter defibrillator using fluoroscopic guidance,Procedure,SNOMED,S
+40492022,From initial search,Replacement of cardiac biventricular permanent pacemaker using fluoroscopic guidance,Procedure,SNOMED,S
+40664741,From initial search,"Insertion or replacement of a permanent pacing cardioverter-defibrillator system with transvenous lead(s), single or dual chamber with insertion of pacing electrode, cardiac venous system, for left ventricular pacing",Procedure,HCPCS,S
+40756775,From descendants,"Implantation or replacement of carotid sinus stimulation device, total system",Procedure,ICD9Proc,S
+40756777,From descendants,Implantation or replacement of carotid sinus stimulation lead(s) only,Procedure,ICD9Proc,S
+40756819,From descendants,Implantation or replacement of carotid sinus stimulation pulse generator only,Procedure,ICD9Proc,S
+40761372,From initial search,Permanent pacemaker insertion,Observation,LOINC,S
+40761373,From initial search,Year permanent pacemaker inserted,Observation,LOINC,S
+42537346,From initial search,Revision of internal cardiac defibrillator lead using fluoroscopic guidance,Procedure,SNOMED,S
+42537348,From initial search,Revision of biventricular permanent pacemaker lead using fluoroscopic guidance,Procedure,SNOMED,S
+42538527,From initial search,Erosion of pacemaker pocket due to and following implantation of cardiac pacemaker,Condition,SNOMED,S
+42538832,From initial search,Breakage of implantable cardiac defibrillator lead insulation,Condition,SNOMED,S
+42538833,From initial search,Dysfunction of implantable cardiac defibrillator lead,Condition,SNOMED,S
+42538837,From initial search,Stimulation of muscle pocket as complication of implantation of automatic cardiac defibrillator,Condition,SNOMED,S
+42538838,From initial search,Stimulation of muscle pocket as complication of implantation of cardiac pacemaker,Condition,SNOMED,S
+42538839,From initial search,Stimulation of phrenic nerve as complication of implantation of automatic cardiac defibrillator,Condition,SNOMED,S
+42538840,From initial search,Stimulation of phrenic nerve as complication of implantation of cardiac pacemaker,Condition,SNOMED,S
+42538848,From initial search,Breakage of cardiac pacemaker lead insulation,Condition,SNOMED,S
+42538849,From initial search,Dysfunction of cardiac pacemaker lead,Condition,SNOMED,S
+42539500,From initial search,Revision of cardiac biventricular implantable cardioverter defibrillator lead using fluoroscopic guidance,Procedure,SNOMED,S
+42539733,From initial search,Education about internal cardiac defibrillator,Observation,SNOMED,S
+42599741,From initial search,Epicardial pacemaker in situ,Condition,SNOMED Veterinary,S
+42599766,From initial search,Thrombus of pacemaker electrode,Condition,SNOMED Veterinary,S
+42599767,From initial search,Transvenous dual chamber pacemaker in situ,Condition,SNOMED Veterinary,S
+42599768,From initial search,Transvenous single chamber pacemaker in situ,Condition,SNOMED Veterinary,S
+42599771,From initial search,Electrocardiogram: pacemaker - DDD,Condition,SNOMED Veterinary,S
+42599772,From initial search,Electrocardiogram: pacemaker - DDDR,Condition,SNOMED Veterinary,S
+42599773,From initial search,"Electrocardiogram: pacemaker ventricle pacing, dual sensing, dual inhibited, rate modulated",Condition,SNOMED Veterinary,S
+42599774,From initial search,"Electrocardiogram: pacemaker ventricular pacing, ventricular sensing, ventricle inhibited",Condition,SNOMED Veterinary,S
+42599775,From initial search,Electrocardiogram: pacemaker - VVIR,Condition,SNOMED Veterinary,S
+42872818,From initial search,Maintenance of battery of cardiac pacemaker system,Procedure,SNOMED,S
+42872827,From initial search,Replacement of pulse generator of permanent cardiac pacemaker using fluoroscopic guidance,Procedure,SNOMED,S
+42872828,From initial search,Replacement of pulse generator of implantable cardioverter defibrillator using fluoroscopic guidance,Procedure,SNOMED,S
+42894719,From initial search,"Insertion of Intracardiac Pacemaker into Coronary Vein, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+42894720,From initial search,"Insertion of Intracardiac Pacemaker into Right Atrium, Open Approach",Procedure,ICD10PCS,S
+42894721,From initial search,"Insertion of Intracardiac Pacemaker into Right Atrium, Percutaneous Approach",Procedure,ICD10PCS,S
+42894722,From initial search,"Insertion of Intracardiac Pacemaker into Right Atrium, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+42894723,From initial search,"Insertion of Intracardiac Pacemaker into Left Atrium, Open Approach",Procedure,ICD10PCS,S
+42894724,From initial search,"Insertion of Intracardiac Pacemaker into Left Atrium, Percutaneous Approach",Procedure,ICD10PCS,S
+42894725,From initial search,"Insertion of Intracardiac Pacemaker into Left Atrium, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+42894726,From initial search,"Insertion of Intracardiac Pacemaker into Right Ventricle, Open Approach",Procedure,ICD10PCS,S
+42894727,From initial search,"Insertion of Intracardiac Pacemaker into Right Ventricle, Percutaneous Approach",Procedure,ICD10PCS,S
+42894728,From initial search,"Insertion of Intracardiac Pacemaker into Right Ventricle, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+42894729,From initial search,"Insertion of Intracardiac Pacemaker into Left Ventricle, Open Approach",Procedure,ICD10PCS,S
+42894730,From initial search,"Insertion of Intracardiac Pacemaker into Left Ventricle, Percutaneous Approach",Procedure,ICD10PCS,S
+42894731,From initial search,"Insertion of Intracardiac Pacemaker into Left Ventricle, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+42894753,From initial search,"Insertion of Intracardiac Pacemaker into Coronary Vein, Open Approach",Procedure,ICD10PCS,S
+42894754,From initial search,"Insertion of Intracardiac Pacemaker into Coronary Vein, Percutaneous Approach",Procedure,ICD10PCS,S
+42894758,From initial search,"Removal of Intracardiac Pacemaker from Heart, Open Approach",Procedure,ICD10PCS,S
+42894759,From initial search,"Removal of Intracardiac Pacemaker from Heart, Percutaneous Approach",Procedure,ICD10PCS,S
+42894763,From initial search,"Removal of Intracardiac Pacemaker from Heart, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+42894862,From initial search,"Revision of Intracardiac Pacemaker in Heart, Open Approach",Procedure,ICD10PCS,S
+42894863,From initial search,"Revision of Intracardiac Pacemaker in Heart, Percutaneous Approach",Procedure,ICD10PCS,S
+42894864,From initial search,"Revision of Intracardiac Pacemaker in Heart, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+42894865,From initial search,"Revision of Intracardiac Pacemaker in Heart, External Approach",Procedure,ICD10PCS,S
+43016833,From initial search,"Insertion of Diaphragmatic Pacemaker Lead into Diaphragm, Open Approach",Procedure,ICD10PCS,S
+43016836,From initial search,"Insertion of Diaphragmatic Pacemaker Lead into Diaphragm, Percutaneous Approach",Procedure,ICD10PCS,S
+43016839,From initial search,"Insertion of Diaphragmatic Pacemaker Lead into Diaphragm, Percutaneous Endoscopic Approach",Procedure,ICD10PCS,S
+43018408,From initial search,Medical and Surgical @ Heart and Great Vessels @ Insertion @ Coronary Vein @ Open @ Intracardiac Pacemaker,Procedure,ICD10PCS,S
+43018409,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Left @ Percutaneous Endoscopic @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43018411,From initial search,Medical and Surgical @ Heart and Great Vessels @ Removal @ Heart @ Open @ Intracardiac Pacemaker,Procedure,ICD10PCS,S
+43018418,From initial search,Medical and Surgical @ Heart and Great Vessels @ Revision @ Heart @ Percutaneous @ Intracardiac Pacemaker,Procedure,ICD10PCS,S
+43018575,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Left @ Open @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43018687,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Left @ Percutaneous @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43018688,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Right @ Percutaneous @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43018745,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Right @ Open @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43018892,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Right @ Open @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43018893,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Left @ Percutaneous @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43018989,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Right @ Percutaneous Endoscopic @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43019076,From initial search,Medical and Surgical @ Heart and Great Vessels @ Insertion @ Coronary Vein @ Percutaneous Endoscopic @ Intracardiac Pacemaker,Procedure,ICD10PCS,S
+43019338,From initial search,Medical and Surgical @ Heart and Great Vessels @ Insertion @ Coronary Vein @ Percutaneous @ Intracardiac Pacemaker,Procedure,ICD10PCS,S
+43019339,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Left @ Open @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43019463,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Ventricle, Left @ Percutaneous Endoscopic @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43019465,From initial search,Medical and Surgical @ Heart and Great Vessels @ Removal @ Heart @ Percutaneous @ Intracardiac Pacemaker,Procedure,ICD10PCS,S
+43019494,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Right @ Percutaneous @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43019597,From initial search,Medical and Surgical @ Heart and Great Vessels @ Removal @ Heart @ Percutaneous Endoscopic @ Intracardiac Pacemaker,Procedure,ICD10PCS,S
+43019780,From initial search,Medical and Surgical @ Heart and Great Vessels @ Revision @ Heart @ Open @ Intracardiac Pacemaker,Procedure,ICD10PCS,S
+43019888,From initial search,"Medical and Surgical @ Heart and Great Vessels @ Insertion @ Atrium, Right @ Percutaneous Endoscopic @ Intracardiac Pacemaker",Procedure,ICD10PCS,S
+43019900,From initial search,Medical and Surgical @ Heart and Great Vessels @ Revision @ Heart @ Percutaneous Endoscopic @ Intracardiac Pacemaker,Procedure,ICD10PCS,S
+43019901,From initial search,Medical and Surgical @ Heart and Great Vessels @ Revision @ Heart @ External @ Intracardiac Pacemaker,Procedure,ICD10PCS,S
+43021263,From initial search,Infection of pacemaker pulse generator site,Condition,SNOMED,S
+43021392,From initial search,Superficial ulcer of skin of pacemaker pulse generator site,Condition,SNOMED,S
+43021396,From initial search,Pacemaker battery depletion,Condition,SNOMED,S
+43021405,From initial search,Hematoma of pacemaker pulse generator site,Condition,SNOMED,S
+43021822,From initial search,Malfunction of biventricular automatic implantable cardioverter defibrillator,Condition,SNOMED,S
+43021855,From initial search,Malfunction of biventricular automatic implantable cardioverter defibrillator generator,Condition,SNOMED,S
+43021856,From initial search,Malfunction of biventricular cardiac pacemaker battery,Condition,SNOMED,S
+43021978,From initial search,Complication associated with cardiac pacemaker lead,Condition,SNOMED,S
+44511195,From initial search,Renewal of cardioverter defibrillator NEC,Procedure,OPCS4,S
+44511196,From initial search,Removal of cardioverter defibrillator,Procedure,OPCS4,S
+44511198,From initial search,Other specified cardioverter defibrillator introduced through the vein,Procedure,OPCS4,S
+44511202,From initial search,Renewal of intravenous cardiac pacemaker system NEC,Procedure,OPCS4,S
+44511203,From initial search,Removal of intravenous cardiac pacemaker system,Procedure,OPCS4,S
+44511207,From initial search,Other specified cardiac pacemaker system introduced through vein,Procedure,OPCS4,S
+44511210,From initial search,Resiting of lead of cardiac pacemaker system NEC,Procedure,OPCS4,S
+44511211,From initial search,Renewal of cardiac pacemaker system NEC,Procedure,OPCS4,S
+44511216,From initial search,Other specified other cardiac pacemaker system,Procedure,OPCS4,S
+44514185,From initial search,Other specified pacemaker testing,Procedure,OPCS4,S
+44782661,From initial search,Insertion of programmable cardiac pacemaker,Procedure,SNOMED,S
+44782864,From initial search,Replacement of pulse generator of automatic cardioverter/defibrillator,Procedure,SNOMED,S
+44782865,From initial search,Replacement of lead of automatic cardioverter/defibrillator,Procedure,SNOMED,S
+44783080,From initial search,Removal of single-chamber cardiac pacemaker with replacement by dual-chamber cardiac pacemaker,Procedure,SNOMED,S
+44783089,From initial search,Implantation of cardiac defibrillator lead,Procedure,SNOMED,S
+44783090,From initial search,Insertion of pulse generator of implantable cardioverter defibrillator,Procedure,SNOMED,S
+44783769,From initial search,Maintenance of automatic cardiac defibrillator,Procedure,SNOMED,S
+44790271,From initial search,Pacemaker testing,Procedure,SNOMED,S
+44790298,From initial search,Implantation of single chamber cardiac pacemaker system,Procedure,SNOMED,S
+44790410,From initial search,Cardioverter defibrillator introduced through the vein,Procedure,SNOMED,S
+44790432,From initial search,Implantation of intravenous dual chamber cardiac pacemaker system,Procedure,SNOMED,S
+44790501,From initial search,Implantation of dual chamber cardiac pacemaker system,Procedure,SNOMED,S
+44790530,From initial search,Distant pacemaker test,Procedure,SNOMED,S
+44790597,From descendants,Temporary transvenous pacing,Procedure,SNOMED,S
+44790598,From initial search,Transvenous pacemaker sensitivity measurement,Procedure,SNOMED,S
+44790754,From initial search,Non-shockable heart rhythm - automated external defibrillator,Condition,SNOMED,S
+44790756,From initial search,Shockable heart rhythm - automated external defibrillator,Condition,SNOMED,S
+44790777,From descendants,Electrocardiogram shows electrical capture following temporary pacing,Condition,SNOMED,S
+44790778,From descendants,Electrocardiogram shows paced rhythm with electrical capture,Condition,SNOMED,S
+44790963,From initial search,Problem with cardiac pacemaker,Condition,SNOMED,S
+44791688,From descendants,Electrical capture by temporary transvenous pacing,Procedure,SNOMED,S
+44791697,From descendants,Mechanical capture by temporary transvenous pacing,Procedure,SNOMED,S
+44792097,From initial search,Fluoroscopy guided revision of cardiac defibrillator,Procedure,SNOMED,S
+44792098,From initial search,Fluoroscopy guided revision of permanent cardiac pacemaker,Procedure,SNOMED,S
+44804881,From initial search,Fluoroscopy guided revision of cardiac biventricular permanent pacemaker lead,Procedure,SNOMED,S
+44805280,From initial search,Referral for cardiac pacemaker check,Observation,SNOMED,S
+44806121,From initial search,Deactivation of automatic implantable cardioverter defibrillator,Procedure,SNOMED,S
+44807219,From initial search,Assessment using National Institute for Health and Clinical Excellence criteria for implantable cardioverter defibrillator,Procedure,SNOMED,S
+44807585,From initial search,Education for internal cardiac defibrillator,Observation,SNOMED,S
+44807913,From initial search,Fluoroscopy guided insertion of permanent biventricular pacemaker lead,Procedure,SNOMED,S
+44807914,From initial search,Fluoroscopy guided insertion of biventricular implantable cardioverter defibrillator lead,Procedure,SNOMED,S
+44808073,From initial search,Consent given for deactivation of automatic implantable cardioverter defibrillator,Observation,SNOMED,S
+44809477,From initial search,Fluoroscopy guided removal of cardiac pacemaker lead using laser sheath,Procedure,SNOMED,S
+44810457,From initial search,Repositioning of lead of subcutaneous cardioverter defibrillator,Procedure,SNOMED,S
+44810458,From initial search,Replacement of subcutaneous cardioverter defibrillator,Procedure,SNOMED,S
+44810459,From initial search,Removal of subcutaneous cardioverter defibrillator,Procedure,SNOMED,S
+44811732,From initial search,Fluoroscopy guided insertion of cardiac single chamber permanent pacemaker,Procedure,SNOMED,S
+44812152,From initial search,Fluoroscopy guided insertion of permanent pacemaker lead,Procedure,SNOMED,S
+44812153,From initial search,Fluoroscopy guided insertion of permanent pacemaker atrial lead,Procedure,SNOMED,S
+44812154,From initial search,Fluoroscopy guided insertion of permanent pacemaker ventricular lead,Procedure,SNOMED,S
+44814155,From initial search,Discussion about deactivation of automatic implantable cardioverter defibrillator,Procedure,SNOMED,S
+45763727,From initial search,Checking of automatic implantable cardiac defibrillator,Procedure,SNOMED,S
+45765997,From initial search,Fluoroscopy guided cardiac pacemaker procedure,Procedure,SNOMED,S
+45766752,From descendants,Monophasic cardioversion procedure,Procedure,SNOMED,S
+45766861,From initial search,Revision of cardiac pacemaker electrode using fluoroscopic guidance,Procedure,SNOMED,S
+45766874,From initial search,Shockable heart rhythm detected by automated external defibrillator,Condition,SNOMED,S
+45769198,From initial search,Non-shockable heart rhythm detected by automated external defibrillator,Condition,SNOMED,S
+45770684,From initial search,Fluoroscopy guided removal of cardiac defibrillator,Procedure,SNOMED,S
+46270021,From initial search,Malfunction of automatic implantable cardioverter defibrillator,Condition,SNOMED,S
+46270022,From initial search,Cardiac pacemaker battery malfunction,Condition,SNOMED,S
+46270138,From initial search,Removal of gastric pacemaker,Procedure,SNOMED,S
+46270961,From initial search,Percutaneous removal of cardiac pacemaker electrode,Procedure,SNOMED,S
+46272748,From initial search,Removal of implantable cardiac pacemaker,Procedure,SNOMED,S
+46286804,From initial search,Internal cardiac defibrillator device triggered by dysrhythmia,Observation,SNOMED,S

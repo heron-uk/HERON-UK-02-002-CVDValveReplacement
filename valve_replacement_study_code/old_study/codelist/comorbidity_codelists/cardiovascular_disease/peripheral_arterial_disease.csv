@@ -1,0 +1,254 @@
+concept_id,found_from,concept_name,domain_id,vocabulary_id,standard_concept
+192657,From descendants,Embolism of iliac artery,Condition,SNOMED,S
+195834,From descendants,Atherosclerosis of renal artery,Condition,SNOMED,S
+200132,From descendants,Atheroembolism of renal arteries,Condition,SNOMED,S
+315558,From descendants,Atherosclerosis of arteries of the extremities,Condition,SNOMED,S
+317309,From initial search,Peripheral arterial occlusive disease,Condition,SNOMED,S
+434961,From descendants,Occlusion of lower limb artery,Condition,SNOMED,S
+439836,From descendants,Atheromatous embolus of upper limb,Condition,SNOMED,S
+441044,From descendants,Atheromatous embolus of lower limb,Condition,SNOMED,S
+443407,From descendants,Lower limb arterial embolus,Condition,SNOMED,S
+443408,From descendants,Upper limb arterial embolus,Condition,SNOMED,S
+444264,From descendants,Thrombosis of iliac artery,Condition,SNOMED,S
+603303,From descendants,Bilateral atherosclerosis of nonautologous biological bypass graft of lower limbs,Condition,SNOMED,S
+605282,From descendants,Thromboembolus of artery of upper limb,Condition,SNOMED,S
+605283,From descendants,Thromboembolus of artery of lower limb,Condition,SNOMED,S
+609007,From descendants,Bilateral thrombosis of common femoral arteries,Condition,SNOMED,S
+609008,From descendants,Bilateral thrombosis of femoral arteries,Condition,SNOMED,S
+609010,From descendants,Atherosclerosis of autologous vein bypass graft of left upper limb,Condition,SNOMED,S
+609011,From descendants,Atherosclerosis of autologous vein bypass graft of right upper limb,Condition,SNOMED,S
+609012,From descendants,Left lower limb atherosclerosis of nonbiological bypass graft,Condition,SNOMED,S
+609013,From descendants,Atherosclerosis of bypass graft of left upper limb,Condition,SNOMED,S
+609014,From descendants,Right lower limb atherosclerosis of nonbiological bypass graft,Condition,SNOMED,S
+609015,From descendants,Atherosclerosis of bypass graft of right upper limb,Condition,SNOMED,S
+760869,From descendants,Bilateral atherosclerosis of arteries of lower limbs,Condition,SNOMED,S
+761428,From descendants,Stenosis of left renal artery,Condition,SNOMED,S
+761429,From descendants,Atherosclerosis of nonautologous biological bypass graft of left lower limb,Condition,SNOMED,S
+761430,From descendants,Atherosclerosis of bypass graft of right lower limb,Condition,SNOMED,S
+761431,From descendants,Atherosclerosis of nonautologous biological bypass graft of right lower limb,Condition,SNOMED,S
+761432,From descendants,Atherosclerosis of autologous bypass graft of left lower limb,Condition,SNOMED,S
+761433,From descendants,Atherosclerosis of autologous bypass graft of bilateral lower limbs,Condition,SNOMED,S
+761434,From descendants,Atherosclerosis of bypass graft of bilateral lower limbs,Condition,SNOMED,S
+761740,From descendants,Congenital stenosis of right renal artery,Condition,SNOMED,S
+761741,From descendants,Congenital stenosis of left renal artery,Condition,SNOMED,S
+761742,From descendants,Atheroembolism of right renal artery,Condition,SNOMED,S
+761743,From descendants,Atheroembolism of bilateral renal arteries,Condition,SNOMED,S
+761744,From descendants,Atheroembolism of left renal artery,Condition,SNOMED,S
+761748,From descendants,Embolism of left iliac artery,Condition,SNOMED,S
+761749,From descendants,Embolism of right iliac artery,Condition,SNOMED,S
+761804,From descendants,Stenosis of artery of right upper limb,Condition,SNOMED,S
+761805,From descendants,Stenosis of artery of left upper limb,Condition,SNOMED,S
+761812,From descendants,Thrombosis of artery of bilateral upper limbs,Condition,SNOMED,S
+761813,From descendants,Thrombosis of left ulnar artery,Condition,SNOMED,S
+761814,From descendants,Atheroembolism of artery of left upper limb,Condition,SNOMED,S
+761815,From descendants,Atheroembolism of artery of right upper limb,Condition,SNOMED,S
+761816,From descendants,Stenosis of artery of bilateral lower limbs,Condition,SNOMED,S
+761822,From descendants,Atheroembolism of right lower limb,Condition,SNOMED,S
+761823,From descendants,Thrombosis of artery of bilateral lower limbs,Condition,SNOMED,S
+761824,From descendants,Thrombosis of bilateral popliteal arteries,Condition,SNOMED,S
+761825,From descendants,Claudication of bilateral upper limbs co-occurrent and due to atherosclerosis,Condition,SNOMED,S
+761829,From descendants,Claudication of left upper limb co-occurrent and due to atherosclerosis,Condition,SNOMED,S
+762053,From descendants,Stenosis of right iliac artery,Condition,SNOMED,S
+765079,From descendants,Stenosis of right renal artery,Condition,SNOMED,S
+765080,From descendants,Atherosclerosis of bypass graft of left lower limb,Condition,SNOMED,S
+765226,From descendants,Atherosclerosis of autologous bypass graft of right lower limb,Condition,SNOMED,S
+765284,From descendants,Thrombosis of right ulnar artery,Condition,SNOMED,S
+765300,From descendants,Atheroembolism of left lower limb,Condition,SNOMED,S
+765301,From descendants,Claudication of right upper limb co-occurrent and due to atherosclerosis,Condition,SNOMED,S
+1075375,From descendants,Right external iliac artery stenosis,Condition,SNOMED,S
+1075376,From descendants,Left external iliac artery stenosis,Condition,SNOMED,S
+1245705,From descendants,Bilateral congenital stenosis of renal arteries,Condition,SNOMED,S
+1340431,From initial search,Exacerbation of peripheral arterial occlusive disease,Condition,OMOP Extension,S
+3171253,From descendants,Thrombus of right radial artery,Condition,Nebraska Lexicon,S
+3173537,From descendants,Arterial microemboli of left hand,Condition,Nebraska Lexicon,S
+3173780,From descendants,Atherosclerotic peripheral vascular disease with gangrene,Condition,Nebraska Lexicon,S
+3176693,From descendants,Left axillary artery thrombus,Condition,Nebraska Lexicon,S
+3654996,From initial search,Peripheral arterial disease,Condition,SNOMED,S
+4025854,From descendants,Superior mesenteric artery thrombosis,Condition,SNOMED,S
+4030663,From descendants,Renal artery occlusion,Condition,SNOMED,S
+4055025,From descendants,Superior mesenteric artery embolus,Condition,SNOMED,S
+4108375,From descendants,Embolism and thrombosis of the radial artery,Condition,SNOMED,S
+4108376,From descendants,Embolism and thrombosis of the femoral artery,Condition,SNOMED,S
+4108377,From descendants,Embolism and thrombosis of the dorsalis pedis artery,Condition,SNOMED,S
+4108380,From descendants,Embolism and thrombosis of the subclavian artery,Condition,SNOMED,S
+4108381,From descendants,Embolism and thrombosis of the axillary artery,Condition,SNOMED,S
+4110331,From descendants,Embolism and thrombosis of the ulnar artery,Condition,SNOMED,S
+4110333,From descendants,Embolism and thrombosis of the popliteal artery,Condition,SNOMED,S
+4111848,From descendants,Embolism and thrombosis of the posterior tibial artery,Condition,SNOMED,S
+4111850,From descendants,Embolism and/or thrombosis of the common iliac artery,Condition,SNOMED,S
+4112161,From descendants,Embolism and thrombosis of the brachial artery,Condition,SNOMED,S
+4112162,From descendants,Embolism and thrombosis of the anterior tibial artery,Condition,SNOMED,S
+4114011,From descendants,Subclavian artery stenosis,Condition,SNOMED,S
+4115229,From descendants,Digital arterial thrombosis,Condition,SNOMED,S
+4117679,From descendants,Peripheral arterial embolism,Condition,SNOMED,S
+4117933,From descendants,Femoral popliteal occlusion,Condition,SNOMED,S
+4118795,From descendants,Renal artery stenosis,Condition,SNOMED,S
+4119141,From descendants,Atherosclerotic renal artery stenosis,Condition,SNOMED,S
+4119614,From descendants,Femoral artery embolus,Condition,SNOMED,S
+4120098,From descendants,Superficial femoral artery stenosis,Condition,SNOMED,S
+4121625,From descendants,Common iliac artery stenosis,Condition,SNOMED,S
+4121626,From descendants,External iliac artery stenosis,Condition,SNOMED,S
+4121627,From descendants,Brachial artery embolus,Condition,SNOMED,S
+4127997,From descendants,Acquired renal artery stenosis,Condition,SNOMED,S
+4136335,From descendants,Thrombosis of arteries of upper extremity,Condition,SNOMED,S
+4137550,From descendants,Occlusion of femoropopliteal bypass graft,Condition,SNOMED,S
+4137551,From descendants,Occlusion of femorofemoral crossover bypass graft,Condition,SNOMED,S
+4139534,From descendants,Bilateral renal artery stenosis,Condition,SNOMED,S
+4140616,From descendants,Thrombosis of ulnar artery,Condition,SNOMED,S
+4141106,From descendants,Thrombosis of arteries of the extremities,Condition,SNOMED,S
+4141975,From descendants,Occlusion of superior mesenteric artery,Condition,SNOMED,S
+4143588,From descendants,Occlusion of renal artery bypass graft,Condition,SNOMED,S
+4151848,From descendants,Renal artery stenosis of unknown cause,Condition,SNOMED,S
+4153293,From descendants,Congenital renal artery stenosis,Condition,SNOMED,S
+4173167,From descendants,Mesenteric embolus,Condition,SNOMED,S
+4174012,From descendants,Subclavian artery embolus,Condition,SNOMED,S
+4174013,From descendants,Axillary artery embolus,Condition,SNOMED,S
+4174014,From descendants,Inferior mesenteric artery embolus,Condition,SNOMED,S
+4174015,From descendants,Popliteal artery embolus,Condition,SNOMED,S
+4175569,From descendants,Common femoral artery thrombosis,Condition,SNOMED,S
+4175570,From descendants,Subclavian artery thrombosis,Condition,SNOMED,S
+4178399,From descendants,Common iliac artery thrombosis,Condition,SNOMED,S
+4178400,From descendants,External iliac artery thrombosis,Condition,SNOMED,S
+4178609,From descendants,Femoral artery thrombosis,Condition,SNOMED,S
+4179907,From descendants,Brachial artery thrombosis,Condition,SNOMED,S
+4179908,From descendants,Internal iliac artery thrombosis,Condition,SNOMED,S
+4179909,From descendants,Profunda femoris artery thrombosis,Condition,SNOMED,S
+4179910,From descendants,Superficial femoral artery thrombosis,Condition,SNOMED,S
+4182191,From descendants,Crural artery thrombosis,Condition,SNOMED,S
+4193056,From descendants,Femoral artery occlusion,Condition,SNOMED,S
+4193057,From descendants,Popliteal artery occlusion,Condition,SNOMED,S
+4193302,From descendants,Post-radiological embolism of upper limb artery,Condition,SNOMED,S
+4194886,From descendants,External iliac artery occlusion,Condition,SNOMED,S
+4195971,From descendants,Common iliac artery occlusion,Condition,SNOMED,S
+4195972,From descendants,Superficial femoral artery occlusion,Condition,SNOMED,S
+4195973,From descendants,Common femoral artery occlusion,Condition,SNOMED,S
+4199183,From descendants,Iliac artery occlusion,Condition,SNOMED,S
+4208072,From descendants,Common femoral artery stenosis,Condition,SNOMED,S
+4208809,From descendants,Post-radiological embolism of lower limb artery,Condition,SNOMED,S
+4208944,From descendants,Iliac artery stenosis,Condition,SNOMED,S
+4226026,From descendants,Stenosis of lower limb artery,Condition,SNOMED,S
+4231816,From descendants,Mesenteric artery stenosis,Condition,SNOMED,S
+4231826,From descendants,Upper limb artery stenosis,Condition,SNOMED,S
+4236905,From descendants,Thrombosis of arteries of lower extremity,Condition,SNOMED,S
+4246643,From descendants,Congenital stenosis of subclavian artery,Condition,SNOMED,S
+4264734,From descendants,Thromboembolism of renal arteries,Condition,SNOMED,S
+4316367,From descendants,Thrombosis of renal artery,Condition,SNOMED,S
+4318843,From descendants,Renal artery embolism,Condition,SNOMED,S
+4329498,From descendants,Occlusion of artery of upper extremity,Condition,SNOMED,S
+4337367,From descendants,Popliteal artery thrombosis,Condition,SNOMED,S
+4341646,From descendants,Occlusive mesenteric ischemia,Condition,SNOMED,S
+4348039,From descendants,Thrombosis of mesenteric artery,Condition,SNOMED,S
+4348319,From descendants,Acute mesenteric arterial occlusion,Condition,SNOMED,S
+35611566,From descendants,Bilateral lower limb pain at rest due to atherosclerosis,Condition,SNOMED,S
+35615018,From descendants,Atherosclerosis of artery of right upper limb,Condition,SNOMED,S
+35615019,From descendants,Atherosclerosis of artery of left upper limb,Condition,SNOMED,S
+35615020,From descendants,Atherosclerosis of right renal artery,Condition,SNOMED,S
+35615021,From descendants,Atherosclerosis of left renal artery,Condition,SNOMED,S
+35615028,From descendants,Bilateral atherosclerosis of lower limbs with gangrene,Condition,SNOMED,S
+35615054,From descendants,Bilateral subclavian artery stenosis,Condition,SNOMED,S
+35615061,From descendants,Thrombosis of left iliac artery,Condition,SNOMED,S
+35615062,From descendants,Thrombosis of right iliac artery,Condition,SNOMED,S
+35615063,From descendants,Thrombosis of bilateral iliac arteries,Condition,SNOMED,S
+35615075,From descendants,Occlusion of distal artery of right upper limb,Condition,SNOMED,S
+35615076,From descendants,Occlusion of distal artery of left upper limb,Condition,SNOMED,S
+35615080,From descendants,Thrombosis of artery of right upper extremity,Condition,SNOMED,S
+35615081,From descendants,Thrombosis of artery of left upper extremity,Condition,SNOMED,S
+35615082,From descendants,Embolism of artery of right upper limb,Condition,SNOMED,S
+35615083,From descendants,Embolism of artery of left upper limb,Condition,SNOMED,S
+35615086,From descendants,Stenosis of artery of left lower limb,Condition,SNOMED,S
+35615087,From descendants,Stenosis of artery of right lower limb,Condition,SNOMED,S
+35615088,From descendants,Embolism of artery of left lower limb,Condition,SNOMED,S
+35615089,From descendants,Embolism of artery of right lower limb,Condition,SNOMED,S
+35615090,From descendants,Embolism of left popliteal artery,Condition,SNOMED,S
+35615091,From descendants,Embolism of right popliteal artery,Condition,SNOMED,S
+35615092,From descendants,Bilateral atheroembolism of lower limbs,Condition,SNOMED,S
+35615093,From descendants,Thrombosis of artery of right lower extremity,Condition,SNOMED,S
+35615094,From descendants,Thrombosis of artery of left lower extremity,Condition,SNOMED,S
+35615095,From descendants,Thrombosis of left popliteal artery,Condition,SNOMED,S
+35615096,From descendants,Thrombosis of right popliteal artery,Condition,SNOMED,S
+35615097,From descendants,Thrombosis of left femoral artery,Condition,SNOMED,S
+35615098,From descendants,Thrombosis of right femoral artery,Condition,SNOMED,S
+35615099,From descendants,Thrombosis of right common femoral artery,Condition,SNOMED,S
+35615100,From descendants,Thrombosis of left common femoral artery,Condition,SNOMED,S
+35615106,From descendants,Occlusion of right popliteal artery,Condition,SNOMED,S
+35615107,From descendants,Occlusion of left popliteal artery,Condition,SNOMED,S
+35615116,From descendants,Bilateral lower limb atherosclerosis of non-biological bypass graft,Condition,SNOMED,S
+36712805,From descendants,Pain at rest of left lower limb due to atherosclerosis,Condition,SNOMED,S
+36712807,From descendants,Pain at rest of right lower limb due to atherosclerosis,Condition,SNOMED,S
+36712955,From descendants,Atherosclerosis of bilateral renal arteries,Condition,SNOMED,S
+36712987,From descendants,Stenosis of right subclavian artery,Condition,SNOMED,S
+36713012,From descendants,Occlusion of left femoral artery,Condition,SNOMED,S
+36713013,From descendants,Occlusion of right femoral artery,Condition,SNOMED,S
+36713014,From descendants,Atherosclerosis of bilateral iliac arteries,Condition,SNOMED,S
+36713015,From descendants,Atherosclerosis of right iliac artery,Condition,SNOMED,S
+36717256,From descendants,Occlusion of aortoiliac artery,Condition,SNOMED,S
+37016147,From descendants,Occlusion of renal artery due to embolism,Condition,SNOMED,S
+37017533,From descendants,Transplant renal artery stenosis,Condition,SNOMED,S
+37109920,From descendants,Acute occlusion of aortoiliac artery co-occurrent and due to thromboembolus,Condition,SNOMED,S
+37109921,From descendants,Acute occlusion of artery of lower limb co-occurrent and due to thromboembolus,Condition,SNOMED,S
+37109922,From descendants,Acute occlusion of aortoiliac artery due to thrombosis,Condition,SNOMED,S
+37109923,From descendants,Acute occlusion of artery of lower limb due to thrombosis,Condition,SNOMED,S
+37110250,From descendants,Atherosclerosis of artery of lower limb,Condition,SNOMED,S
+37110251,From descendants,Non-atherosclerotic chronic arterial occlusive disease,Condition,SNOMED,S
+37116421,From descendants,Acute occlusion of artery of upper limb caused by thromboembolus,Condition,SNOMED,S
+37116422,From descendants,Acute occlusion of artery of upper limb caused by thrombus,Condition,SNOMED,S
+37162999,From descendants,Cholesterol atheromatous embolism of digital artery,Condition,SNOMED,S
+37163013,From descendants,Atherosclerosis of axillary artery,Condition,SNOMED,S
+37163014,From descendants,Atherosclerosis of brachial artery,Condition,SNOMED,S
+37163038,From descendants,Atherosclerosis of superficial femoral artery,Condition,SNOMED,S
+37163039,From descendants,Atherosclerosis of popliteal artery,Condition,SNOMED,S
+37163040,From descendants,Atherosclerosis of subclavian artery,Condition,SNOMED,S
+37163041,From descendants,Atherosclerosis of crural artery,Condition,SNOMED,S
+37163042,From descendants,Atherosclerosis of iliac artery,Condition,SNOMED,S
+37163043,From descendants,Acute thromboembolic subclavian artery occlusion,Condition,SNOMED,S
+37163044,From descendants,Acute thrombotic subclavian artery occlusion,Condition,SNOMED,S
+37163045,From descendants,Acute thromboembolic renal artery occlusion,Condition,SNOMED,S
+37163046,From descendants,Acute thrombotic renal artery occlusion,Condition,SNOMED,S
+37163047,From descendants,Acute thrombotic popliteal artery occlusion,Condition,SNOMED,S
+37163048,From descendants,Acute thrombotic iliac artery occlusion,Condition,SNOMED,S
+37163049,From descendants,Acute occlusion of popliteal artery due to thromboembolus,Condition,SNOMED,S
+37163050,From descendants,Acute thrombotic crural artery occlusion,Condition,SNOMED,S
+37163051,From descendants,Acute thromboembolic iliac artery occlusion,Condition,SNOMED,S
+37163052,From descendants,Acute thrombotic common femoral artery occlusion,Condition,SNOMED,S
+37163053,From descendants,Acute thromboembolic crural artery occlusion,Condition,SNOMED,S
+37163062,From descendants,Acute occlusion of superficial femoral artery due to thromboembolus,Condition,SNOMED,S
+37163063,From descendants,Acute occlusion of superficial femoral artery due to thrombosis,Condition,SNOMED,S
+37163074,From descendants,Acute occlusion of brachial artery due to thrombosis,Condition,SNOMED,S
+37163075,From descendants,Acute occlusion of common femoral artery due to thromboembolus,Condition,SNOMED,S
+37163076,From descendants,Acute occlusion of brachial artery due to thromboembolus,Condition,SNOMED,S
+37163077,From descendants,Acute occlusion of axillary artery due to thromboembolus,Condition,SNOMED,S
+37163078,From descendants,Acute occlusion of axillary artery due to thrombosis,Condition,SNOMED,S
+37163292,From descendants,Renal artery stenosis due to fibromuscular hyperplasia,Condition,SNOMED,S
+37164957,From descendants,Left lower limb arteriosclerosis,Condition,SNOMED,S
+37164958,From descendants,Right lower limb atherosclerosis,Condition,SNOMED,S
+37166012,From descendants,Atherosclerosis of femoral artery,Condition,SNOMED,S
+37168346,From descendants,Acute occlusion of peripheral artery due to thrombosis,Condition,SNOMED,S
+37168561,From descendants,Bilateral atherosclerosis of artery of upper limbs,Condition,SNOMED,S
+37169464,From descendants,Bilateral thrombosis of ulnar arteries,Condition,SNOMED,S
+37169469,From descendants,Bilateral atheroembolism of upper limbs,Condition,SNOMED,S
+37209668,From descendants,Atherosclerosis of superior mesenteric artery,Condition,SNOMED,S
+40483538,From descendants,Atherosclerosis of bypass graft of limb,Condition,SNOMED,S
+40484541,From descendants,Atherosclerosis of autologous vein bypass graft of limb,Condition,SNOMED,S
+40484551,From descendants,Atherosclerosis of nonautologous biological bypass graft of limb,Condition,SNOMED,S
+40484912,From descendants,Atherosclerosis of nonautologous bypass graft of limb,Condition,SNOMED,S
+42535143,From descendants,Atherosclerosis of left iliac artery,Condition,SNOMED,S
+42535335,From descendants,Stenosis of left subclavian artery,Condition,SNOMED,S
+42535829,From descendants,Thromboembolus of external iliac artery,Condition,SNOMED,S
+42536634,From descendants,Acute occlusion of artery of upper limb,Condition,SNOMED,S
+42536636,From descendants,Acute occlusion of artery of lower limb,Condition,SNOMED,S
+42539410,From descendants,Thromboembolus of internal iliac artery,Condition,SNOMED,S
+42599802,From descendants,Unilateral thromboembolism of iliac artery,Condition,SNOMED Veterinary,S
+42599894,From descendants,Bilateral thromboembolus of iliac arteries,Condition,SNOMED Veterinary,S
+43021846,From descendants,Peripheral arterial insufficiency,Condition,SNOMED,S
+43022064,From descendants,Atherosclerosis of aortoiliac bypass graft,Condition,SNOMED,S
+44782819,From descendants,Chronic occlusion of artery of extremity,Condition,SNOMED,S
+44808745,From descendants,Occlusion of brachial artery,Condition,SNOMED,S
+44808746,From descendants,Occlusion of ulnar artery,Condition,SNOMED,S
+44808747,From descendants,Occlusion of dorsalis pedis artery,Condition,SNOMED,S
+44808832,From descendants,Occlusion of anterior tibial artery,Condition,SNOMED,S
+44808833,From descendants,Occlusion of posterior tibial artery,Condition,SNOMED,S
+44813802,From descendants,Thrombosis of stent of renal artery,Condition,SNOMED,S
+44813823,From descendants,Occlusion of radial artery,Condition,SNOMED,S
+46271459,From descendants,Atherosclerosis of bypass graft of lower limb,Condition,SNOMED,S
+46271460,From descendants,Atherosclerosis of nonautologous biological bypass graft of lower limb,Condition,SNOMED,S
+46271462,From descendants,Atherosclerosis of autologous bypass graft of lower limb,Condition,SNOMED,S

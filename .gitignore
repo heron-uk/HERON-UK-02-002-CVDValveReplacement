@@ -8,4 +8,7 @@ diagnostics_shiny/data/raw/*.csv
 study_code_avr/code_to_run_local.R
 study_code/results/*.csv
 .DS_Store
-.DS_Store
+code_to_run_local.R
+quarto_files/
+congenital_study_shiny/quarto/data/*.csv
+congenital_study_shiny/quarto/quarto_files

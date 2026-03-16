@@ -1,0 +1,5 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+197444,Vascular complication of medical care,Condition,SNOMED,Disorder,S,28104001,2002-01-31,2099-12-31,NA
+434814,Late effect of medical and surgical care complication,Condition,SNOMED,Disorder,S,269191009,2002-01-31,2099-12-31,NA
+440005,Complication of medical care,Condition,SNOMED,Disorder,S,35688006,2002-01-31,2099-12-31,NA
+3181307,Iatrogenic diabetes insipidus,Condition,Nebraska Lexicon,Clinical Finding,S,1720001000004100,2016-01-28,2099-12-31,NA

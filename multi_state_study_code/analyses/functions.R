@@ -62,7 +62,7 @@ addEthnicity <- function(cohort) {
       dplyr::mutate(
         ethnicity_group = dplyr::case_when(
           .data$race_source_value %in% c("Bangladeshi", "Chinese", "Indian", "Other Asian", "Pakistani") ~ "Asian",
-          .data$race_source_value %in% c("African", "Caribbean", "Other Black", ) ~ "Black",
+          .data$race_source_value %in% c("African", "Caribbean", "Other Black") ~ "Black",
           .data$race_source_value %in% c("Gypsy/Traveller", "Irish", "Other British", "Other White", "Polish", "Scottish") ~ "White",
           .data$race_source_value %in% c("Other Mixed", "White and Asian", "White and Black African", "White and Black Caribbean") ~ "Mix",
           .data$race_source_value %in% c("Arab", "Other ethnic group") ~ "Other",
@@ -116,19 +116,49 @@ addEthnicity <- function(cohort) {
   }
 }
 
+addCKDStage <- function(cohort) {
+  name <- tableName(cohort)
+  cdm[[name]] |>
+    addCohortIntersectDays(
+      targetCohortTable = "ckd_stage",
+      order = "last",
+      window = c(-Inf, 0),
+      nameStyle = "{cohort_name}",
+      name = name
+    ) |>
+    mutate(
+      ckd_stage_1 = abs(coalesce(ckd_stage_1, 999)),
+      ckd_stage_2 = abs(coalesce(ckd_stage_2, 999)),
+      ckd_stage_3 = abs(coalesce(ckd_stage_3, 999)),
+      ckd_stage_4 = abs(coalesce(ckd_stage_4, 999)),
+      ckd_stage_5 = abs(coalesce(ckd_stage_5, 999))
+    ) |>
+    mutate(
+      ckd_stage = case_when(
+        ckd_stage_1 == 999 & ckd_stage_2 == 999 & ckd_stage_3 == 999 & ckd_stage_4 == 999 & ckd_stage_5 == 999 ~ "Missing",
+        ckd_stage_1 <= ckd_stage_2 & ckd_stage_1 <= ckd_stage_3 & ckd_stage_1 <= ckd_stage_4 & ckd_stage_1 <= ckd_stage_5 ~ "Stage 1",
+        ckd_stage_2 <= ckd_stage_3 & ckd_stage_2 <= ckd_stage_4 & ckd_stage_2 <= ckd_stage_5 ~ "Stage 2",
+        ckd_stage_3 <= ckd_stage_4 & ckd_stage_3 <= ckd_stage_5 ~ "Stage 3",
+        ckd_stage_4 <= ckd_stage_5 ~ "Stage 4",
+        .default = "Stage 5"
+      )
+    ) |>
+    select(!all_of(c(paste0("ckd_stage_", 1:5)))) |>
+    compute(name = name, temporary = FALSE)
+}
 
-hr_summary <- function(model, transition, model_name) {
-  summary <- as.data.frame(summary({{ model }}, antilog = FALSE)) |> tibble::as_tibble(rownames = "variable")
+hr_summary <- function(model, transition, model_name, age_limit) {
+  
   p_res <- as.data.frame(stats::anova(model)) |>
     tibble::as_tibble(rownames = "variable") |>
     dplyr::select("variable", "p_value" = "P")
-  summary |>
-    dplyr::mutate(
-      hazard_ratio = exp(.data$Effect),
-      lower_hr = exp(`Lower 0.95`),
-      upper_hr = exp(`Upper 0.95`)
-    ) |>
-    dplyr::select("variable", "hazard_ratio", "se_coef" = "S.E.", "lower_hr", "upper_hr") |>
+  tibble::tibble(
+    "variable" = names(coef(model)),
+    "hazard_ratio" = exp(coef(model)),
+    "lower_hr" = exp(confint(model)[,1]),
+    "upper_hr" = exp(confint(model)[,2]),
+    "se_coef" = sqrt(diag(stats::vcov(model)))
+  ) |>
     dplyr::mutate(
       variable_name = dplyr::if_else(
         stringr::str_detect(variable, "\\.[0-9]+$"),
@@ -141,6 +171,7 @@ hr_summary <- function(model, transition, model_name) {
     dplyr::mutate(
       transition = transition,
       model_name = model_name,
+      age_limit = age_limit,
       result_type = "hr_summary",
       package_name = "HERON-UK-02-002-CVDValveReplacement"
     ) |>
@@ -150,7 +181,7 @@ hr_summary <- function(model, transition, model_name) {
       group = "transition",
       estimates = c("hazard_ratio", "se_coef", "lower_hr", "upper_hr", "p_value"),
       additional = "model_name",
-      settings = c("result_type", "package_name")
+      settings = c("result_type", "package_name", "age_limit")
     )
 }
 
@@ -159,41 +190,67 @@ hr_summary <- function(model, transition, model_name) {
 clean_variables <- function(df, var_col = "variable_name") {
   df |>
     dplyr::mutate(
-      # ensure character
       tmp_var = as.character(.data[[var_col]]),
-
-      # position of first Uppercase letter or digit (start of level)
-      loc = stringr::str_locate(tmp_var, "[A-Z0-9]")[, 1],
-
-      # raw base (everything before the level start) and raw level
-      base_raw = dplyr::if_else(is.na(loc), tmp_var, substr(tmp_var, 1, loc - 1)),
-      level_raw = dplyr::if_else(is.na(loc), NA_character_, substr(tmp_var, loc, nchar(tmp_var))),
-
-      # clean base: remove leading/trailing separators and whitespace
+      
+      # First handle "=" explicitly
+      has_equal = stringr::str_detect(tmp_var, "="),
+      
+      base_raw = dplyr::if_else(
+        has_equal,
+        stringr::str_replace(tmp_var, "^(.*)=(.*)$", "\\1"),
+        tmp_var
+      ),
+      
+      level_raw = dplyr::if_else(
+        has_equal,
+        stringr::str_replace(tmp_var, "^(.*)=(.*)$", "\\2"),
+        NA_character_
+      ),
+      
+      # If no "=", fallback to uppercase/digit split
+      loc = stringr::str_locate(base_raw, "[A-Z0-9]")[, 1],
+      
+      base_raw = dplyr::if_else(
+        is.na(level_raw) & !is.na(loc),
+        substr(base_raw, 1, loc - 1),
+        base_raw
+      ),
+      
+      level_raw = dplyr::if_else(
+        is.na(level_raw) & !is.na(loc),
+        substr(tmp_var, loc, nchar(tmp_var)),
+        level_raw
+      ),
+      
+      # Clean base
       base = base_raw |>
-        stringr::str_replace_all("^\\s*[\\._-]+\\s*", "") |> # leading separators
-        stringr::str_replace_all("[\\._\\-\\s]+$", "") |> # trailing separators/spaces
+        stringr::str_replace_all("^\\s*[\\._\\-=]+\\s*", "") |>
+        stringr::str_replace_all("[\\._\\-=\\s]+$", "") |>
         stringr::str_trim() |>
         dplyr::na_if(""),
-
-      # clean level: remove leading separators, trim, turn empty -> NA
+      
+      # Clean level
       variable_level = level_raw |>
-        stringr::str_replace_all("^\\s*[\\._-]+\\s*", "") |> # leading separators
+        stringr::str_replace_all("^\\s*[\\._\\-=]+\\s*", "") |>
         stringr::str_trim() |>
         dplyr::na_if("")
-    ) %>%
+    ) |>
     dplyr::mutate(
-      # final variable name: prefer cleaned base, otherwise fallback to tmp_var
       !!var_col := dplyr::if_else(!is.na(base), base, tmp_var),
-
-      # replace dots in level with space (optional) and keep original separators inside level (e.g. "Male:Female")
-      variable_level = ifelse(is.na(variable_level), NA_character_, gsub("\\.", " ", variable_level))
-    ) %>%
-    dplyr::select(-tmp_var, -loc, -base_raw, -level_raw, -base)
+      
+      # Replace dots with space
+      variable_level = ifelse(
+        is.na(variable_level),
+        NA_character_,
+        gsub("\\.", " ", variable_level)
+      )
+    ) |>
+    dplyr::select(-tmp_var, -has_equal, -loc, -base_raw, -level_raw, -base)
 }
 hr_summary_age_model <- function(model,
                                  transition,
                                  model_name,
+                                 age_limit, 
                                  reference_age = 70, # reference age
                                  comparison_age = seq(20, 100, 1)) { # comparison ages
   res <- list()
@@ -227,6 +284,7 @@ hr_summary_age_model <- function(model,
     dplyr::mutate(
       transition = transition,
       model_name = model_name,
+      age_limit = age_limit,
       result_type = "hr_summary",
       package_name = "HERON-UK-02-002-CVDValveReplacement",
       package_version = "1.0"
@@ -236,10 +294,10 @@ hr_summary_age_model <- function(model,
     omopgenerics::transformToSummarisedResult(
       group = "transition",
       estimates = c("hazard_ratio", "lower_hr", "upper_hr", "aic", "bic", "se_coef"),
-      additional = "model_name", "ref_age",
+      additional = c("model_name", "ref_age"),
       settings = c(
         "result_type", "package_name",
-        "package_version"
+        "package_version", "age_limit"
       )
     )
 }

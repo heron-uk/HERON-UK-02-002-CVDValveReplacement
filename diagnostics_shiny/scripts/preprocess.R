@@ -25,6 +25,23 @@ cli::cli_inform("Importing results")
 result <- omopgenerics::importSummarisedResult(file.path(getwd(),"data", "raw"), recursive = FALSE)
 cli::cli_alert_success("Results imported")
 
+renameCdm <- function(res){
+  res |>
+    mutate(cdm_name =
+             case_when(str_detect(tolower(cdm_name), "aurum|heron_cdm")  ~ "CPRD Aurum",
+                       str_detect(tolower(cdm_name), "gosh") ~ "Great Ormond Street Hospital",
+                       str_detect(tolower(cdm_name), "idril") ~ "Lancashire Teaching Hospital",
+                       str_detect(tolower(cdm_name), "ltht") ~ "Leeds Teaching Hospitals",
+                       str_detect(tolower(cdm_name), "uclh") ~ "University College London Hospitals",
+                       str_detect(tolower(cdm_name), "dataloch") ~ "DataLoch Lothian",
+                       .default = cdm_name
+             )
+    )
+}
+result <- result |>
+  renameCdm()
+
+
 if(nrow(result) == 0){
   cli::cli_warn("No data found in data/raw")
   result <- omopgenerics::emptySummarisedResult()

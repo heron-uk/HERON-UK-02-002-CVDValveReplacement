@@ -1,0 +1,137 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+132797,Sepsis,Condition,SNOMED,Disorder,S,91302008,2002-01-31,2099-12-31,NA
+133594,Bacterial sepsis of newborn,Condition,SNOMED,Disorder,S,276669000,2002-01-31,2099-12-31,NA
+602996,Sepsis caused by Erysipelothrix rhusiopathiae,Condition,SNOMED,Disorder,S,1149494008,2021-07-31,2099-12-31,NA
+603033,Sepsis caused by vancomycin resistant Enterococcus,Condition,SNOMED,Disorder,S,1153534006,2021-07-31,2099-12-31,NA
+607320,Sepsis caused by Coliform,Condition,SNOMED,Disorder,S,1149481006,2021-07-31,2099-12-31,NA
+607321,Sepsis caused by Clostridium,Condition,SNOMED,Disorder,S,1149482004,2021-07-31,2099-12-31,NA
+607325,Sepsis caused by Proteus,Condition,SNOMED,Disorder,S,1149486001,2021-07-31,2099-12-31,NA
+760981,Sepsis without acute organ dysfunction caused by Serratia species,Condition,SNOMED,Disorder,S,126811000119102,2017-09-01,2099-12-31,NA
+760987,Sepsis caused by Staphylococcus without acute organ dysfunction,Condition,SNOMED,Disorder,S,127751000119108,2017-03-01,2099-12-31,NA
+761851,Neonatal sepsis caused by Staphylococcus,Condition,SNOMED,Disorder,S,16060271000119109,2017-03-01,2099-12-31,NA
+761852,Neonatal sepsis caused by Streptococcus,Condition,SNOMED,Disorder,S,16060311000119109,2017-03-01,2099-12-31,NA
+763027,Sepsis of newborn due to Streptococcus agalactiae,Condition,SNOMED,Disorder,S,435181000124108,2013-09-01,2099-12-31,NA
+763164,Septicemia associated with vascular access catheter,Condition,SNOMED,Disorder,S,436741000124105,2013-09-01,2099-12-31,NA
+763165,Sepsis associated with internal vascular access,Condition,SNOMED,Disorder,S,436751000124107,2013-09-01,2099-12-31,NA
+1075272,Sepsis due to infection caused by Citrobacter,Condition,SNOMED,Disorder,S,1303592000,2024-03-01,2099-12-31,NA
+1076394,Sepsis caused by central venous catheter in situ,Condition,SNOMED,Disorder,S,1342338008,2024-07-01,2099-12-31,NA
+1244226,Sepsis due to and following procedure,Condition,SNOMED,Disorder,S,12204111000119105,2023-10-01,2099-12-31,NA
+3655975,Sepsis due to disease caused by COVID-19,Condition,SNOMED,Disorder,S,870588003,2020-07-31,2099-12-31,NA
+4000938,Bacterial sepsis,Condition,SNOMED,Disorder,S,10001005,2002-01-31,2099-12-31,NA
+4009954,Sepsis during labor,Condition,SNOMED,Disorder,S,1125006,2002-01-31,2099-12-31,NA
+4029251,Intrauterine sepsis of fetus,Condition,SNOMED,Disorder,S,1089000,2002-01-31,2099-12-31,NA
+4042397,Acute tubulointerstitial nephritis associated with systemic infection,Condition,SNOMED,Disorder,S,16751003,2002-01-31,2099-12-31,NA
+4048275,Sepsis of newborn caused by anaerobes,Condition,SNOMED,Disorder,S,206380000,2002-01-31,2099-12-31,NA
+4048594,Sepsis of newborn caused by Staphylococcus aureus,Condition,SNOMED,Disorder,S,206378006,2002-01-31,2099-12-31,NA
+4071063,Sepsis of the newborn,Condition,SNOMED,Disorder,S,206376005,2002-01-31,2099-12-31,NA
+4071727,Sepsis of newborn caused by Escherichia coli,Condition,SNOMED,Disorder,S,206379003,2002-01-31,2099-12-31,NA
+4073090,Failed attempted termination of pregnancy with sepsis,Condition,SNOMED,Disorder,S,24444009,2002-01-31,2099-12-31,NA
+4102318,Puerperal sepsis,Condition,SNOMED,Disorder,S,2858002,2002-01-31,2099-12-31,NA
+4111261,Gram positive sepsis,Condition,SNOMED,Disorder,S,194394004,2002-01-31,2099-12-31,NA
+4154698,Transient respiratory distress with sepsis,Condition,SNOMED,Disorder,S,371044001,2002-07-31,2099-12-31,NA
+4179524,Pyemia,Condition,SNOMED,Disorder,S,42939002,2002-01-31,2099-12-31,NA
+4197963,"Sepsis following infusion, injection, transfusion AND/OR vaccination",Condition,SNOMED,Disorder,S,51831006,2002-01-31,2099-12-31,NA
+4285746,Miscarriage with sepsis,Condition,SNOMED,Disorder,S,67465009,2002-01-31,2099-12-31,NA
+4310674,Brazilian purpuric fever,Condition,SNOMED,Disorder,S,8554002,2002-01-31,2099-12-31,NA
+35622880,Early-onset neonatal sepsis,Condition,SNOMED,Disorder,S,765106006,2018-07-31,2099-12-31,NA
+35622881,Late-onset neonatal sepsis,Condition,SNOMED,Disorder,S,765107002,2018-07-31,2099-12-31,NA
+36674642,Sepsis caused by virus,Condition,SNOMED,Disorder,S,770349000,2019-01-31,2099-12-31,NA
+36684427,Sepsis due to methicillin-sensitive Staphylococcus aureus,Condition,SNOMED,Disorder,S,22241000175107,2018-09-01,2099-12-31,NA
+36715430,Sepsis due to urinary tract infection,Condition,SNOMED,Disorder,S,721104000,2017-01-31,2099-12-31,NA
+36715567,Neonatal sepsis caused by Malassezia,Condition,SNOMED,Disorder,S,721278008,2017-01-31,2099-12-31,NA
+36715806,Sepsis caused by Pseudomonas aeruginosa,Condition,SNOMED,Disorder,S,721572008,2017-01-31,2099-12-31,NA
+37016131,Sepsis caused by Gonococcus,Condition,SNOMED,Disorder,S,1092601000119103,2016-01-31,2099-12-31,NA
+37016160,Septic shock co-occurrent with acute organ dysfunction due to Staphylococcus,Condition,SNOMED,Disorder,S,127241000119104,2016-01-31,2099-12-31,NA
+37017557,Perinatal sepsis,Condition,SNOMED,Disorder,S,713854001,2016-01-31,2099-12-31,NA
+37017566,Perinatal sepsis caused by Escherichia coli,Condition,SNOMED,Disorder,S,713866007,2016-01-31,2099-12-31,NA
+37018498,Sepsis caused by Peptostreptococcus,Condition,SNOMED,Disorder,S,715070000,2016-01-31,2099-12-31,NA
+37018499,Sepsis caused by anaerobic streptococcus,Condition,SNOMED,Disorder,S,715071001,2016-01-31,2099-12-31,NA
+37018755,Recurrent salmonella sepsis co-occurrent with human immunodeficiency virus infection,Condition,SNOMED,Disorder,S,714083007,2016-01-31,2099-12-31,NA
+37019087,Perinatal sepsis caused by Streptococcus agalactiae,Condition,SNOMED,Disorder,S,713865006,2016-01-31,2099-12-31,NA
+37116435,Sepsis following obstructed labor,Condition,SNOMED,Disorder,S,733142005,2017-07-31,2099-12-31,NA
+37151377,Lung injury with sepsis,Condition,SNOMED,Disorder,S,1204459002,2022-03-31,2099-12-31,NA
+37162933,Sepsis caused by Bacteroides,Condition,SNOMED,Disorder,S,1201760007,2022-03-31,2099-12-31,NA
+37163128,Myocardial dysfunction with sepsis,Condition,SNOMED,Disorder,S,1204460007,2022-03-31,2099-12-31,NA
+37163129,Gastrointestinal lesion with sepsis,Condition,SNOMED,Disorder,S,1204461006,2022-03-31,2099-12-31,NA
+37163130,Left ventricular failure with sepsis,Condition,SNOMED,Disorder,S,1204462004,2022-03-31,2099-12-31,NA
+37163131,Encephalopathy with sepsis,Condition,SNOMED,Disorder,S,1204463009,2022-03-31,2099-12-31,NA
+37163132,Gastrointestinal hemorrhage with sepsis,Condition,SNOMED,Disorder,S,1204464003,2022-03-31,2099-12-31,NA
+37163133,Gastritis with sepsis,Condition,SNOMED,Disorder,S,1204466001,2022-03-31,2099-12-31,NA
+37163134,Gastrointestinal ulceration due to sepsis,Condition,SNOMED,Disorder,S,1204467005,2022-03-31,2099-12-31,NA
+37163135,Right ventricular failure with sepsis,Condition,SNOMED,Disorder,S,1204468000,2022-03-31,2099-12-31,NA
+37164410,Sepsis of premature infant,Condition,SNOMED,Disorder,S,1230323000,2022-06-30,2099-12-31,NA
+37167199,Sepsis following molar pregnancy,Condition,SNOMED,Disorder,S,1263979002,2023-02-28,2099-12-31,NA
+37167232,Sepsis following ectopic pregnancy,Condition,SNOMED,Disorder,S,1264020006,2023-02-28,2099-12-31,NA
+37168933,Sepsis caused by monkeypox virus,Condition,SNOMED,Disorder,S,1290841000000104,2022-06-08,2099-12-31,NA
+37175321,Antepartum septicemia,Condition,SNOMED,Disorder,S,137701000119106,2023-06-30,2099-12-31,NA
+37312594,Sepsis without septic shock,Condition,SNOMED,Disorder,S,789043007,2020-01-31,2099-12-31,NA
+37394658,Severe sepsis,Condition,SNOMED,Disorder,S,1036671000000106,2016-04-01,2099-12-31,NA
+37395591,Line sepsis associated with dialysis catheter,Condition,SNOMED,Disorder,S,32751000119100,2016-07-31,2099-12-31,NA
+40484176,Neutropenic sepsis,Condition,SNOMED,Disorder,S,443980004,2010-01-31,2099-12-31,NA
+40486058,Sepsis caused by Erysipelothrix,Condition,SNOMED,Disorder,S,447684006,2011-07-31,2099-12-31,NA
+40486059,Sepsis caused by Haemophilus influenzae,Condition,SNOMED,Disorder,S,447685007,2011-07-31,2099-12-31,NA
+40486629,Sepsis caused by Candida,Condition,SNOMED,Disorder,S,447841007,2011-07-31,2099-12-31,NA
+40486631,Sepsis caused by anaerobic bacteria,Condition,SNOMED,Disorder,S,447843005,2011-07-31,2099-12-31,NA
+40486685,Sepsis caused by Listeria monocytogenes,Condition,SNOMED,Disorder,S,449335002,2011-07-31,2099-12-31,NA
+40487059,Sepsis caused by Staphylococcus,Condition,SNOMED,Disorder,S,447894003,2011-07-31,2099-12-31,NA
+40487062,Sepsis caused by Acinetobacter,Condition,SNOMED,Disorder,S,447897005,2011-07-31,2099-12-31,NA
+40487063,Sepsis caused by Actinomyces,Condition,SNOMED,Disorder,S,447898000,2011-07-31,2099-12-31,NA
+40487064,Sepsis caused by Escherichia coli,Condition,SNOMED,Disorder,S,447899008,2011-07-31,2099-12-31,NA
+40487616,Sepsis caused by Streptococcus pyogenes,Condition,SNOMED,Disorder,S,449504009,2011-07-31,2099-12-31,NA
+40487617,Sepsis caused by coagulase negative Staphylococcus,Condition,SNOMED,Disorder,S,449505005,2011-07-31,2099-12-31,NA
+40487662,Sepsis caused by Haemophilus influenzae type b,Condition,SNOMED,Disorder,S,449546000,2011-07-31,2099-12-31,NA
+40489907,Sepsis caused by Staphylococcus aureus,Condition,SNOMED,Disorder,S,448417001,2011-07-31,2099-12-31,NA
+40489908,Sepsis caused by Streptococcus,Condition,SNOMED,Disorder,S,448418006,2011-07-31,2099-12-31,NA
+40489909,Sepsis caused by Streptococcus agalactiae,Condition,SNOMED,Disorder,S,448419003,2011-07-31,2099-12-31,NA
+40489910,Sepsis caused by Streptococcus group D,Condition,SNOMED,Disorder,S,448420009,2011-07-31,2099-12-31,NA
+40489912,Sepsis caused by Streptococcus pneumoniae,Condition,SNOMED,Disorder,S,448421008,2011-07-31,2099-12-31,NA
+40489913,Sepsis caused by Streptococcus suis,Condition,SNOMED,Disorder,S,448422001,2011-07-31,2099-12-31,NA
+40489979,Sepsis caused by Bacillus anthracis,Condition,SNOMED,Disorder,S,448482003,2011-07-31,2099-12-31,NA
+40489980,Sepsis caused by Enterobacter,Condition,SNOMED,Disorder,S,448483008,2011-07-31,2099-12-31,NA
+40491523,Sepsis due to herpes simplex,Condition,SNOMED,Disorder,S,448784003,2011-07-31,2099-12-31,NA
+40491960,Sepsis caused by methicillin resistant Staphylococcus aureus,Condition,SNOMED,Disorder,S,448812000,2011-07-31,2099-12-31,NA
+40491961,Sepsis caused by Pseudomonas,Condition,SNOMED,Disorder,S,448813005,2011-07-31,2099-12-31,NA
+40493038,Sepsis caused by Gram negative bacteria,Condition,SNOMED,Disorder,S,449082003,2011-07-31,2099-12-31,NA
+40493039,Sepsis caused by Salmonella,Condition,SNOMED,Disorder,S,449083008,2011-07-31,2099-12-31,NA
+40493415,Sepsis caused by Serratia,Condition,SNOMED,Disorder,S,449084002,2011-07-31,2099-12-31,NA
+42536689,Sepsis of neonate caused by Streptococcus pyogenes,Condition,SNOMED,Disorder,S,735637004,2018-01-31,2099-12-31,NA
+42536690,Sepsis of fetus caused by Streptococcus pyogenes,Condition,SNOMED,Disorder,S,735638009,2018-01-31,2099-12-31,NA
+42538750,Sepsis caused by Acinetobacter baumannii,Condition,SNOMED,Disorder,S,762529004,2018-01-31,2099-12-31,NA
+42539372,Sepsis caused by Klebsiella pneumoniae,Condition,SNOMED,Disorder,S,762528007,2018-01-31,2099-12-31,NA
+42690418,Amber flag sepsis,Condition,SNOMED,Disorder,S,1076281000000108,2017-04-01,2099-12-31,NA
+44782630,Sepsis in asplenic subject,Condition,SNOMED,Disorder,S,700051000,2014-01-31,2099-12-31,NA
+44782631,Sepsis with cutaneous manifestations,Condition,SNOMED,Disorder,S,700055009,2014-01-31,2099-12-31,NA
+44782822,Postoperative sepsis,Condition,SNOMED,Disorder,S,698819004,2014-01-31,2099-12-31,NA
+44784135,Overwhelming infection in asplenic patient,Condition,SNOMED,Disorder,S,700050004,2014-01-31,2099-12-31,NA
+44784136,Post-splenectomy sepsis,Condition,SNOMED,Disorder,S,700052007,2014-01-31,2099-12-31,NA
+44784137,Sepsis with acquired immunodeficiency syndrome,Condition,SNOMED,Disorder,S,700053002,2014-01-31,2099-12-31,NA
+44784138,Sepsis caused by fungus,Condition,SNOMED,Disorder,S,700054008,2014-01-31,2099-12-31,NA
+44805136,Biliary sepsis,Condition,SNOMED,Disorder,S,750511000000101,2010-10-01,2099-12-31,NA
+45757198,Sepsis due to incomplete miscarriage,Condition,SNOMED,Disorder,S,10812001000119100,2015-01-31,2099-12-31,NA
+45768767,Sepsis due to oral infection,Condition,SNOMED,Disorder,S,707271004,2015-01-31,2099-12-31,NA
+46269807,Sepsis due to ectopic pregnancy,Condition,SNOMED,Disorder,S,10751351000119104,2015-07-31,2099-12-31,NA
+46269938,Septic shock co-occurrent with acute organ dysfunction due to coagulase-negative Staphylococcus,Condition,SNOMED,Disorder,S,1092481000119108,2015-07-31,2099-12-31,NA
+46269939,Septic shock co-occurrent with acute organ dysfunction due to Enterococcus,Condition,SNOMED,Disorder,S,1092491000119106,2015-07-31,2099-12-31,NA
+46269940,Septic shock co-occurrent with acute organ dysfunction due to Gonococcus,Condition,SNOMED,Disorder,S,1092501000119104,2015-07-31,2099-12-31,NA
+46269941,Septic shock co-occurrent with acute organ dysfunction due to Gram-positive coccus,Condition,SNOMED,Disorder,S,1092511000119101,2015-07-31,2099-12-31,NA
+46269942,Septic shock co-occurrent with acute organ dysfunction due to Group A streptococcus,Condition,SNOMED,Disorder,S,1092531000119106,2015-07-31,2099-12-31,NA
+46269943,Septic shock co-occurrent with acute organ dysfunction due to Group B streptococcus,Condition,SNOMED,Disorder,S,1092541000119102,2015-07-31,2099-12-31,NA
+46269944,Sepsis caused by Chromobacterium,Condition,SNOMED,Disorder,S,1092571000119109,2015-07-31,2099-12-31,NA
+46269946,Sepsis caused by Enterococcus,Condition,SNOMED,Disorder,S,1092591000119105,2015-07-31,2099-12-31,NA
+46270041,Sepsis of newborn caused by group B Streptococcus,Condition,SNOMED,Disorder,S,127091000119100,2015-07-31,2099-12-31,NA
+46270042,Septic shock co-occurrent with acute organ dysfunction caused by anaerobic bacteria,Condition,SNOMED,Disorder,S,127141000119107,2015-07-31,2099-12-31,NA
+46270043,Septic shock co-occurrent with acute organ dysfunction caused by Haemophilus influenzae,Condition,SNOMED,Disorder,S,127171000119100,2015-07-31,2099-12-31,NA
+46270044,Septic shock co-occurrent with acute organ dysfunction caused by methicillin susceptible Staphylococcus aureus,Condition,SNOMED,Disorder,S,127191000119104,2015-07-31,2099-12-31,NA
+46270045,Septic shock co-occurrent with acute organ dysfunction caused by Pseudomonas,Condition,SNOMED,Disorder,S,127201000119101,2015-07-31,2099-12-31,NA
+46270046,Septic shock co-occurrent with acute organ dysfunction caused by Serratia,Condition,SNOMED,Disorder,S,127231000119108,2015-07-31,2099-12-31,NA
+46270047,Septic shock co-occurrent with acute organ dysfunction caused by Streptococcus,Condition,SNOMED,Disorder,S,127251000119102,2015-07-31,2099-12-31,NA
+46270048,Septic shock co-occurrent with acute organ dysfunction caused by Pneumococcus,Condition,SNOMED,Disorder,S,127261000119100,2015-07-31,2099-12-31,NA
+46270051,Sepsis caused by Meningococcus,Condition,SNOMED,Disorder,S,127311000119106,2015-07-31,2099-12-31,NA
+46270052,Sepsis caused by methicillin susceptible Staphylococcus aureus,Condition,SNOMED,Disorder,S,127331000119101,2015-07-31,2099-12-31,NA
+46270063,Septic shock co-occurrent with acute organ dysfunction caused by methicillin resistant Staphylococcus aureus,Condition,SNOMED,Disorder,S,128381000119104,2015-07-31,2099-12-31,NA
+46273475,Septic shock co-occurrent with acute organ dysfunction caused by Meningococcus,Condition,SNOMED,Disorder,S,127181000119102,2015-07-31,2099-12-31,NA
+46274080,Septic shock co-occurrent with acute organ dysfunction due to Chromobacterium,Condition,SNOMED,Disorder,S,1092471000119105,2015-07-31,2099-12-31,NA
+46284320,Neonatal sepsis due to Staphylococcus,Condition,SNOMED,Disorder,S,944071000000101,2015-04-01,2099-12-31,NA
+46284901,Uncomplicated sepsis,Condition,SNOMED,Disorder,S,957421000000104,2015-04-01,2099-12-31,NA
+46284902,Red flag sepsis,Condition,SNOMED,Disorder,S,957431000000102,2015-04-01,2099-12-31,NA
+46287153,Neonatal sepsis due to Streptococcus,Condition,SNOMED,Disorder,S,944061000000108,2015-04-01,2099-12-31,NA

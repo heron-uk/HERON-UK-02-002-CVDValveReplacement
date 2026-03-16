@@ -1,0 +1,21 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+26823,Oral phase dysphagia,Condition,SNOMED,Disorder,S,429975007,2008-07-31,2099-12-31,NA
+31317,Dysphagia,Condition,SNOMED,Disorder,S,40739000,2002-01-31,2099-12-31,NA
+440530,Oropharyngeal dysphagia,Condition,SNOMED,Disorder,S,71457002,2002-01-31,2099-12-31,NA
+443465,Dysphagia as a late effect of cerebrovascular accident,Condition,SNOMED,Disorder,S,426033005,2007-07-31,2099-12-31,NA
+1340317,Exacerbation of dysphagia,Condition,OMOP Extension,Disorder,S,OMOP5165972,2022-05-06,2099-12-31,NA
+3177916,Late effects of stroke: dysphagia,Condition,Nebraska Lexicon,Clinical Finding,S,5580001000004108,2016-01-28,2099-12-31,NA
+4055360,Intermittent dysphagia,Condition,SNOMED,Disorder,S,19597002,2002-01-31,2099-12-31,NA
+4198185,Plummer-Vinson syndrome,Condition,SNOMED,Disorder,S,80126007,2002-01-31,2099-12-31,NA
+4209546,Aberrant retro-esophageal subclavian artery causing dysphagia,Condition,SNOMED,Disorder,S,311808009,2002-01-31,2099-12-31,NA
+4254223,Esophageal dysphagia,Condition,SNOMED,Disorder,S,40890009,2002-01-31,2099-12-31,NA
+4278990,Constant low-grade dysphagia,Condition,SNOMED,Disorder,S,65191003,2002-01-31,2099-12-31,NA
+4338737,Dysphagia lusoria,Condition,SNOMED,Disorder,S,231719009,2002-01-31,2099-12-31,NA
+4340669,Post-vagotomy dysphagia,Condition,SNOMED,Disorder,S,235636002,2002-01-31,2099-12-31,NA
+36716717,Functional dysphagia,Condition,SNOMED,Disorder,S,722875003,2017-01-31,2099-12-31,NA
+37396384,Boder syndrome,Condition,SNOMED,Disorder,S,716180009,2016-07-31,2099-12-31,NA
+42535413,Dysphagia due to and following non-traumatic intracerebral hemorrhage,Condition,SNOMED,Disorder,S,290641000119107,2018-01-31,2099-12-31,NA
+42535428,Dysphagia due to and following non-traumatic subarachnoid hemorrhage,Condition,SNOMED,Disorder,S,291681000119108,2018-01-31,2099-12-31,NA
+44788952,Acquired dysphagia,Condition,SNOMED,Disorder,S,196841000000100,2006-04-01,2099-12-31,NA
+44788979,Developmental dysphagia,Condition,SNOMED,Disorder,S,196871000000106,2006-04-01,2099-12-31,NA
+45757559,Pharyngeal dysphagia,Condition,SNOMED,Disorder,S,21101000119105,2015-01-31,2099-12-31,NA

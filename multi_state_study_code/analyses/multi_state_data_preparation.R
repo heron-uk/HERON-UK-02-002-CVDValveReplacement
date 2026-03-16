@@ -25,7 +25,6 @@ cdm$healthy <- cdm$healthy |>
   PatientProfiles::addSex() |>
   addEthnicity() |>
   addAge(col_name = "age_start") |>
-  addSES() |>
   PatientProfiles::addDeathDate(deathDateName = "death_date") |>
   addAge(col_name = "age_death", date_name = "death_date") |>
   dplyr::filter(is.na(death_date) | (death_date > cohort_start_date)) |> 
@@ -126,13 +125,27 @@ omopgenerics::logMessage(message = "Characterise healthy cohort")
 cdm$healthy_pop <- cdm$multi_state_as |>
   CohortConstructor::subsetCohorts(cohortId = "healthy_to_as", name = "healthy_pop") |>
   CohortConstructor::renameCohort(newCohortName = "healthy")
+cdm$healthy_pop <- cdm$healthy_pop |> 
+  addCKDStage()
 
 results[["characterisation_multi_state_healthy"]] <- CohortCharacteristics::summariseCharacteristics(cdm$healthy_pop,
   demographics = TRUE,
   ageGroup = age_groups,
+  strata = list(c("ses")),
+  cohortIntersectFlag = list(
+    "Comorbidities" = list(
+      targetCohortTable = "comorbidities",
+      window = c(-Inf, 0) 
+    ),
+    "Medications" = list(
+      targetCohortTable = "meds",
+      window = c(-365, 0) 
+    )
+  ),
   otherVariables = c(
     "ses",
-    "ethnicity_group", "ethnicity"
+    "ethnicity_group", "ethnicity",
+    "ckd_stage"
   )
 )
 
@@ -146,14 +159,28 @@ cdm$transitions <- cdm$multi_state_as |>
   CohortConstructor::copyCohorts(name = "transitions") |>
   filter(status == 1) |>
   mutate(cohort_start_date = cohort_end_date) |>
-  rename("time_to_event" = "time")
+  rename("time_to_event" = "time") 
+cdm$transitions <- cdm$transitions |> 
+  addCKDStage()
 
 
 results[["characterisation_multi_state_trans"]] <- CohortCharacteristics::summariseCharacteristics(cdm$transitions,
   demographics = TRUE,
   ageGroup = age_groups,
+  strata = list(c("ses")),
+  cohortIntersectFlag = list(
+    "Comorbidities" = list(
+      targetCohortTable = "comorbidities",
+      window = c(-Inf, 0) 
+    ),
+    "Medications" = list(
+      targetCohortTable = "meds",
+      window = c(-365, 0) 
+    )
+    ),
   otherVariables = c(
     "time_to_event", "ses",
-    "ethnicity_group", "ethnicity"
+    "ethnicity_group", "ethnicity",
+    "ckd_stage"
   )
 )

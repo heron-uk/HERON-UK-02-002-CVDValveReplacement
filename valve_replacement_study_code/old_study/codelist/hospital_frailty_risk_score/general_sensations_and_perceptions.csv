@@ -1,0 +1,133 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+372607,Alcohol hallucinosis,Condition,SNOMED,Disorder,S,7052005,2002-01-31,2099-12-31,NA
+373175,Organic hallucinosis,Condition,SNOMED,Disorder,S,45912004,2002-01-31,2099-12-31,NA
+378163,Hyperacusis,Condition,SNOMED,Disorder,S,25289003,2002-01-31,2099-12-31,NA
+433031,Hallucinations,Condition,SNOMED,Clinical Finding,S,7011001,2002-01-31,2099-12-31,NA
+439277,Alcohol withdrawal hallucinosis,Condition,SNOMED,Disorder,S,191476005,2002-01-31,2099-12-31,NA
+439790,Psychalgia,Condition,SNOMED,Clinical Finding,S,8971008,2002-01-31,2099-12-31,NA
+440987,Hallucinosis caused by drug,Condition,SNOMED,Disorder,S,191486006,2002-01-31,2099-12-31,NA
+1340344,Exacerbation of hallucinations,Condition,OMOP Extension,Clinical Finding,S,OMOP5165999,2022-05-06,2099-12-31,NA
+3168101,Pain with psychologic and medical features,Condition,Nebraska Lexicon,Clinical Finding,S,9600001000004107,2016-01-28,2099-12-31,NA
+4012112,Schizophrenic reaction,Condition,SNOMED,Clinical Finding,S,102940002,2002-01-31,2099-12-31,NA
+4021191,False perception,Condition,SNOMED,Clinical Finding,S,225453006,2002-01-31,2099-12-31,NA
+4021646,Sensory distortion,Condition,SNOMED,Clinical Finding,S,225454000,2002-01-31,2099-12-31,NA
+4024296,Opioid-induced psychotic disorder with hallucinations,Condition,SNOMED,Disorder,S,19445006,2002-01-31,2099-12-31,NA
+4024707,Perception AND/OR perception disturbance,Condition,SNOMED,Clinical Finding,S,106134006,2002-01-31,2099-12-31,NA
+4034686,Formication,Condition,SNOMED,Clinical Finding,S,15037002,2002-01-31,2099-12-31,NA
+4061069,Functional hallucinations,Condition,SNOMED,Clinical Finding,S,19865006,2002-01-31,2099-12-31,NA
+4077430,Autoscopic hallucination,Condition,SNOMED,Clinical Finding,S,18966001,2002-01-31,2099-12-31,NA
+4079160,Third person verbal auditory hallucinations,Condition,SNOMED,Clinical Finding,S,277533007,2002-01-31,2099-12-31,NA
+4081310,Movement of visual image - finding,Condition,SNOMED,Clinical Finding,S,246650003,2002-01-31,2099-12-31,NA
+4084422,Thought echo,Condition,SNOMED,Clinical Finding,S,247644004,2002-01-31,2099-12-31,NA
+4084550,Perception that things appear colorless,Condition,SNOMED,Clinical Finding,S,247709005,2002-01-31,2099-12-31,NA
+4084551,Perception that things appear gray,Condition,SNOMED,Clinical Finding,S,247710000,2002-01-31,2099-12-31,NA
+4084552,Heightened perception,Condition,SNOMED,Clinical Finding,S,247712008,2002-01-31,2099-12-31,NA
+4084553,Heightened perception of taste,Condition,SNOMED,Clinical Finding,S,247722002,2002-01-31,2099-12-31,NA
+4084554,Time seems to go very slowly,Condition,SNOMED,Clinical Finding,S,247724001,2002-01-31,2099-12-31,NA
+4084555,Non-verbal auditory hallucinations,Condition,SNOMED,Clinical Finding,S,247731002,2002-01-31,2099-12-31,NA
+4084556,Hallucination of self giving off a smell,Condition,SNOMED,Clinical Finding,S,247736007,2002-01-31,2099-12-31,NA
+4084557,Hallucinations of temperature,Condition,SNOMED,Clinical Finding,S,247739000,2002-01-31,2099-12-31,NA
+4084558,Hallucinations in several modalities at once,Condition,SNOMED,Clinical Finding,S,247740003,2002-01-31,2099-12-31,NA
+4085027,Perception of things changing shape,Condition,SNOMED,Clinical Finding,S,247705004,2002-01-31,2099-12-31,NA
+4085029,Heightened auditory perception,Condition,SNOMED,Clinical Finding,S,247713003,2002-01-31,2099-12-31,NA
+4085030,Sounds seem unnaturally clear,Condition,SNOMED,Clinical Finding,S,247714009,2002-01-31,2099-12-31,NA
+4085031,Things appear vividly colored,Condition,SNOMED,Clinical Finding,S,247717002,2002-01-31,2099-12-31,NA
+4085032,Patterns appear intricately detailed,Condition,SNOMED,Clinical Finding,S,247718007,2002-01-31,2099-12-31,NA
+4085033,Patterns appear interesting,Condition,SNOMED,Clinical Finding,S,247719004,2002-01-31,2099-12-31,NA
+4085034,Changed perception of time,Condition,SNOMED,Clinical Finding,S,247723007,2002-01-31,2099-12-31,NA
+4085035,People seem to be actors in a film,Condition,SNOMED,Clinical Finding,S,247729006,2002-01-31,2099-12-31,NA
+4085036,Verbal auditory hallucinations,Condition,SNOMED,Clinical Finding,S,247730001,2002-01-31,2099-12-31,NA
+4085038,Formed visual hallucinations,Condition,SNOMED,Clinical Finding,S,247734005,2002-01-31,2099-12-31,NA
+4085039,Sexual hallucinations,Condition,SNOMED,Clinical Finding,S,247743001,2002-01-31,2099-12-31,NA
+4085040,Dissociative visual hallucinations,Condition,SNOMED,Clinical Finding,S,247746009,2002-01-31,2099-12-31,NA
+4085523,Hypoesthesia of special senses,Condition,SNOMED,Clinical Finding,S,247708002,2002-01-31,2099-12-31,NA
+4085525,Heightened tactile perception,Condition,SNOMED,Clinical Finding,S,247721009,2002-01-31,2099-12-31,NA
+4085526,Time seems to go unnaturally fast,Condition,SNOMED,Clinical Finding,S,247725000,2002-01-31,2099-12-31,NA
+4085527,Feels own body is unreal,Condition,SNOMED,Clinical Finding,S,247726004,2002-01-31,2099-12-31,NA
+4085528,Own reflection in mirror seems unreal,Condition,SNOMED,Clinical Finding,S,247727008,2002-01-31,2099-12-31,NA
+4085529,Objects seem unreal,Condition,SNOMED,Clinical Finding,S,247728003,2002-01-31,2099-12-31,NA
+4085530,Unformed visual hallucinations,Condition,SNOMED,Clinical Finding,S,247733004,2002-01-31,2099-12-31,NA
+4085531,Scenic visual hallucinations,Condition,SNOMED,Clinical Finding,S,247735006,2002-01-31,2099-12-31,NA
+4085532,Hallucination of others giving off a smell,Condition,SNOMED,Clinical Finding,S,247737003,2002-01-31,2099-12-31,NA
+4085533,Hallucinations of pain,Condition,SNOMED,Clinical Finding,S,247738008,2002-01-31,2099-12-31,NA
+4085534,Dissociative hallucinations,Condition,SNOMED,Clinical Finding,S,247744007,2002-01-31,2099-12-31,NA
+4085535,Dissociative auditory hallucinations,Condition,SNOMED,Clinical Finding,S,247745008,2002-01-31,2099-12-31,NA
+4085536,Dissociative olfactory hallucinations,Condition,SNOMED,Clinical Finding,S,247747000,2002-01-31,2099-12-31,NA
+4085650,Dissociative hallucinations of bodily sensation,Condition,SNOMED,Clinical Finding,S,247748005,2002-01-31,2099-12-31,NA
+4085651,Dissociative tactile hallucinations,Condition,SNOMED,Clinical Finding,S,247749002,2002-01-31,2099-12-31,NA
+4092108,Normal perception,Observation,SNOMED,Clinical Finding,S,247700009,2002-01-31,2099-12-31,NA
+4092109,LSD (lysergic acid diethylamide) reaction,Condition,SNOMED,Clinical Finding,S,247703006,2002-01-31,2099-12-31,NA
+4092112,Perception that things appear flat,Condition,SNOMED,Clinical Finding,S,247711001,2002-01-31,2099-12-31,NA
+4092113,Heightened visual perception,Condition,SNOMED,Clinical Finding,S,247716006,2002-01-31,2099-12-31,NA
+4092114,Heightened olfactory perception,Condition,SNOMED,Clinical Finding,S,247720005,2002-01-31,2099-12-31,NA
+4092115,Hallucinations of music,Condition,SNOMED,Clinical Finding,S,247732009,2002-01-31,2099-12-31,NA
+4092116,Hallucinations associated with bereavement,Condition,SNOMED,Clinical Finding,S,247742006,2002-01-31,2099-12-31,NA
+4096921,Mood-congruent hallucination,Condition,SNOMED,Clinical Finding,S,26433004,2002-01-31,2099-12-31,NA
+4097389,Cannabis-induced psychotic disorder with hallucinations,Condition,SNOMED,Disorder,S,26714005,2002-01-31,2099-12-31,NA
+4103748,Charles Bonnet syndrome,Condition,SNOMED,Disorder,S,193756007,2002-01-31,2099-12-31,NA
+4104518,Gustatory hallucinations,Condition,SNOMED,Clinical Finding,S,29139005,2002-01-31,2099-12-31,NA
+4110162,Formed hallucinations of insects,Condition,SNOMED,Clinical Finding,S,285746006,2002-01-31,2099-12-31,NA
+4110163,Formed hallucinations of objects,Condition,SNOMED,Clinical Finding,S,285747002,2002-01-31,2099-12-31,NA
+4112797,Hallucinations of simple sounds,Condition,SNOMED,Clinical Finding,S,285743003,2002-01-31,2099-12-31,NA
+4112798,Formed hallucinations of people,Condition,SNOMED,Clinical Finding,S,285744009,2002-01-31,2099-12-31,NA
+4113940,Reflex hallucinations,Condition,SNOMED,Clinical Finding,S,285799000,2002-01-31,2099-12-31,NA
+4116725,Hears voices laughing at self,Condition,SNOMED,Clinical Finding,S,285742008,2002-01-31,2099-12-31,NA
+4116726,Formed hallucinations of animals,Condition,SNOMED,Clinical Finding,S,285745005,2002-01-31,2099-12-31,NA
+4128822,Hyperesthesia of special senses,Condition,SNOMED,Clinical Finding,S,289174003,2002-01-31,2099-12-31,NA
+4137955,Hallucinogen hallucinosis,Condition,SNOMED,Disorder,S,32009006,2002-01-31,2099-12-31,NA
+4141280,Phencyclidine-induced psychotic disorder with hallucinations,Condition,SNOMED,Disorder,S,33871004,2002-01-31,2099-12-31,NA
+4142448,Out of body experience,Condition,SNOMED,Clinical Finding,S,307050007,2002-01-31,2099-12-31,NA
+4142456,Hears mocking voices,Condition,SNOMED,Clinical Finding,S,307079000,2002-01-31,2099-12-31,NA
+4155336,Psychoactive substance-induced organic hallucinosis,Condition,SNOMED,Disorder,S,28368009,2002-01-31,2099-12-31,NA
+4164151,Auditory hallucinations,Condition,SNOMED,Clinical Finding,S,45150006,2002-01-31,2099-12-31,NA
+4171175,"Sedative, hypnotic AND/OR anxiolytic-induced psychotic disorder with hallucinations",Condition,SNOMED,Disorder,S,47664006,2002-01-31,2099-12-31,NA
+4173950,Second person verbal auditory hallucinations,Condition,SNOMED,Clinical Finding,S,277529000,2002-01-31,2099-12-31,NA
+4181180,Illusion of intermetamorphosis,Condition,SNOMED,Clinical Finding,S,42996007,2002-01-31,2099-12-31,NA
+4194953,Depersonalization,Condition,SNOMED,Clinical Finding,S,79499004,2002-01-31,2099-12-31,NA
+4197434,Amphetamine-induced psychotic disorder with hallucinations,Condition,SNOMED,Disorder,S,51443000,2002-01-31,2099-12-31,NA
+4197446,Extrasensory perception,Condition,SNOMED,Clinical Finding,S,51470007,2002-01-31,2099-12-31,NA
+4197452,Role playing,Condition,SNOMED,Clinical Finding,S,51491004,2002-01-31,2099-12-31,NA
+4201304,Illusion,Condition,SNOMED,Clinical Finding,S,5152006,2002-01-31,2099-12-31,NA
+4214950,Alcohol induced hallucinations,Condition,SNOMED,Clinical Finding,S,417633001,2005-07-31,2099-12-31,NA
+4216738,Transient hallucinations,Condition,SNOMED,Clinical Finding,S,416571005,2005-07-31,2099-12-31,NA
+4218541,Olfactory hallucinations,Condition,SNOMED,Clinical Finding,S,39672001,2002-01-31,2099-12-31,NA
+4218896,Hallucinatory neuralgia,Condition,SNOMED,Clinical Finding,S,82116008,2002-01-31,2099-12-31,NA
+4225265,Synesthesia,Condition,SNOMED,Clinical Finding,S,8488006,2002-01-31,2099-12-31,NA
+4233346,Derealization,Condition,SNOMED,Clinical Finding,S,40806005,2002-01-31,2099-12-31,NA
+4237292,Pseudohallucinations,Condition,SNOMED,Clinical Finding,S,57095008,2002-01-31,2099-12-31,NA
+4239803,Mood-incongruent hallucination,Condition,SNOMED,Clinical Finding,S,57553009,2002-01-31,2099-12-31,NA
+4242405,Extracampine hallucinations,Condition,SNOMED,Clinical Finding,S,38190007,2002-01-31,2099-12-31,NA
+4252399,Hallucinosis,Condition,SNOMED,Clinical Finding,S,73917004,2002-01-31,2099-12-31,NA
+4264363,Hypnagogic hallucinations,Condition,SNOMED,Clinical Finding,S,44780000,2002-01-31,2099-12-31,NA
+4266208,Elementary hallucination,Condition,SNOMED,Clinical Finding,S,61199005,2002-01-31,2099-12-31,NA
+4269569,Disturbance of perception associated with conversion and dissociative phenomenon,Condition,SNOMED,Clinical Finding,S,36480000,2002-01-31,2099-12-31,NA
+4271051,Inhalant-induced psychotic disorder with hallucinations,Condition,SNOMED,Disorder,S,63983005,2002-01-31,2099-12-31,NA
+4272033,Cocaine-induced psychotic disorder with hallucinations,Condition,SNOMED,Disorder,S,6348008,2002-01-31,2099-12-31,NA
+4275889,Visual hallucinations,Condition,SNOMED,Clinical Finding,S,64269007,2002-01-31,2099-12-31,NA
+4280834,Tactile hallucinations,Condition,SNOMED,Clinical Finding,S,66609003,2002-01-31,2099-12-31,NA
+4288173,Hypnopompic hallucinations,Condition,SNOMED,Clinical Finding,S,69690008,2002-01-31,2099-12-31,NA
+4295328,Formication of skin,Condition,SNOMED,Clinical Finding,S,403600002,2003-07-31,2099-12-31,NA
+4301877,Command hallucination,Condition,SNOMED,Clinical Finding,S,78595002,2002-01-31,2099-12-31,NA
+4309957,Hallucinations of bodily sensation,Condition,SNOMED,Clinical Finding,S,85550003,2002-01-31,2099-12-31,NA
+4321840,Trailing phenomenon,Condition,SNOMED,Clinical Finding,S,70720002,2002-01-31,2099-12-31,NA
+36685095,Bilateral hyperacusis of ears,Condition,SNOMED,Disorder,S,1083821000119101,2019-01-31,2099-12-31,NA
+36685164,Hyperacusis of left ear,Condition,SNOMED,Disorder,S,1088941000119107,2019-01-31,2099-12-31,NA
+36685235,Hyperacusis of right ear,Condition,SNOMED,Disorder,S,1091551000119105,2019-01-31,2099-12-31,NA
+37109222,Hallucinations co-occurrent and due to late onset dementia,Condition,SNOMED,Disorder,S,2421000119107,2017-07-31,2099-12-31,NA
+37109948,Perceptual disturbances and seizures co-occurrent and due to alcohol withdrawal,Condition,SNOMED,Disorder,S,723926008,2017-07-31,2099-12-31,NA
+37110417,Perceptual disturbances co-occurrent and due to sedative withdrawal,Condition,SNOMED,Disorder,S,724665004,2017-07-31,2099-12-31,NA
+37110418,Perceptual disturbances co-occurrent and due to hypnotic withdrawal,Condition,SNOMED,Disorder,S,724666003,2017-07-31,2099-12-31,NA
+37110419,Perceptual disturbances co-occurrent and due to anxiolytic withdrawal,Condition,SNOMED,Disorder,S,724667007,2017-07-31,2099-12-31,NA
+37110423,Perceptual disturbances and seizures co-occurrent and due to sedative withdrawal,Condition,SNOMED,Disorder,S,724671005,2017-07-31,2099-12-31,NA
+37110424,Perceptual disturbances and seizures co-occurrent and due to hypnotic withdrawal,Condition,SNOMED,Disorder,S,724672003,2017-07-31,2099-12-31,NA
+37110469,Perceptual disturbances co-occurrent and due to psychoactive substance withdrawal,Condition,SNOMED,Disorder,S,724726005,2017-07-31,2099-12-31,NA
+37110471,Perceptual disturbances and seizures co-occurrent and due to psychoactive substance withdrawal,Condition,SNOMED,Disorder,S,724728006,2017-07-31,2099-12-31,NA
+37110491,Hypnogogic exploding head syndrome,Condition,SNOMED,Disorder,S,724752004,2017-07-31,2099-12-31,NA
+37110492,Recurrent isolated sleep-related hallucinations,Condition,SNOMED,Disorder,S,724753009,2017-07-31,2099-12-31,NA
+37164679,Pulfrich stereo illusion,Condition,SNOMED,Clinical Finding,S,1231642002,2022-09-30,2099-12-31,NA
+37165554,Perceptual disturbance due to alcohol withdrawal,Condition,SNOMED,Disorder,S,1255066009,2022-10-31,2099-12-31,NA
+40482080,Sleep related hallucinations,Condition,SNOMED,Clinical Finding,S,445112001,2010-07-31,2099-12-31,NA
+42537691,Secondary psychotic syndrome with hallucinations and delusions,Condition,SNOMED,Disorder,S,737225007,2018-01-31,2099-12-31,NA
+42538587,Psychotic disorder with hallucinations caused by stimulant,Condition,SNOMED,Disorder,S,762326005,2018-01-31,2099-12-31,NA
+42538732,Psychotic disorder with hallucinations caused by synthetic cathinone,Condition,SNOMED,Disorder,S,762508008,2018-01-31,2099-12-31,NA
+42538812,Somatic hallucination,Condition,SNOMED,Clinical Finding,S,762620006,2018-01-31,2099-12-31,NA

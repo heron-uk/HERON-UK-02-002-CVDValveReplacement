@@ -1,0 +1,208 @@
+---
+title: ""
+format:
+  html:
+    page-layout: full
+    css: styles.css
+editor: visual
+fig-width: 12  
+---
+
+::: {style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2em; margin-top: 1em;"}
+::: {style="flex-grow: 1;"}
+# Congenital Aortic Stenosis
+:::
+::: {style="display: flex; gap: 1em; align-items: center;"}
+![](hds_logo.svg){width="80px"} ![](ohdsi_logo.svg){width="80px"}
+:::
+:::
+
+
+```{r loading results, echo=FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(tidyr)
+library(gt)
+library(ggplot2)
+
+# Load all CSV results
+all_results <- list.files("data", pattern = "\\.csv$", full.names = TRUE) |>
+  lapply(read.csv) |>
+  bind_rows()
+
+# Helper function to process survival curves with dynamic column renaming
+process_survival_curves <- function(data, strata_filter = "overall") {
+  raw_data <- data |>
+    filter(
+      result_id %in% c(12, 16),
+      variable_name == "outcome",
+      grepl("estimate", estimate_name, ignore.case = TRUE),
+      if(strata_filter == "overall") strata_name == "overall" else grepl(strata_filter, strata_name)
+    ) |>
+    select(cdm_name, group_level, variable_level, any_of("strata_level"), 
+           estimate_name, estimate_value, additional_level) |>
+    mutate(time = as.numeric(additional_level),
+           estimate_value = as.numeric(estimate_value)) |>
+    pivot_wider(names_from = estimate_name, values_from = estimate_value, values_fn = first)
+  
+  # Dynamic column renaming - build named vector for rename
+  cols <- names(raw_data)
+  result <- raw_data |> rename(target_cohort = group_level, outcome = variable_level)
+  
+  # Rename survival probability column
+  if("estimate" %in% cols) {
+    result <- result |> rename(survival_prob = estimate)
+  } else if(any(grepl("^estimate$|survival.*estimate", cols, ignore.case = TRUE))) {
+    est_col <- cols[grepl("^estimate$|survival.*estimate", cols, ignore.case = TRUE)][1]
+    result <- result |> rename(survival_prob = !!est_col)
+  }
+  
+  # Rename CI lower column
+  if("estimate_95CI_lower" %in% cols) {
+    result <- result |> rename(ci_lower = estimate_95CI_lower)
+  } else if(any(grepl("lower|min", cols, ignore.case = TRUE))) {
+    ci_col <- cols[grepl("lower|min", cols, ignore.case = TRUE)][1]
+    result <- result |> rename(ci_lower = !!ci_col)
+  }
+  
+  # Rename CI upper column
+  if("estimate_95CI_upper" %in% cols) {
+    result <- result |> rename(ci_upper = estimate_95CI_upper)
+  } else if(any(grepl("upper|max", cols, ignore.case = TRUE))) {
+    ci_col <- cols[grepl("upper|max", cols, ignore.case = TRUE)][1]
+    result <- result |> rename(ci_upper = !!ci_col)
+  }
+  
+  result
+}
+
+# Helper function to format cohort labels
+format_cohort_labels <- function(cohort) {
+  case_when(
+    cohort == "aortic_insufficiency_congenital" ~ "Aortic Insufficiency",
+    cohort == "aortic_stenosis_congenital" ~ "Aortic Stenosis",
+    cohort == "congenital_aortic_stenosis" ~ "Congenital Aortic Stenosis",
+    cohort == "congenital_aortic_valve_disease" ~ "Congenital Aortic Valve Disease",
+    TRUE ~ gsub("_", " ", cohort) |> tools::toTitleCase()
+  )
+}
+
+# Prepare survival summary table
+survival_table_raw <- all_results |>
+  filter(result_id %in% c(14, 18), variable_name == "outcome", strata_name == "overall") |>
+  select(cdm_name, group_level, variable_level, estimate_name, estimate_value) |>
+  mutate(estimate_value = as.numeric(estimate_value)) |>
+  pivot_wider(names_from = estimate_name, values_from = estimate_value, values_fn = first)
+
+table_cols <- names(survival_table_raw)
+survival_table <- survival_table_raw |>
+  mutate(
+    median_survival_formatted = if("median_survival" %in% table_cols && 
+                                     all(c("median_survival_95CI_lower", "median_survival_95CI_higher") %in% table_cols)) {
+      ifelse(is.na(median_survival), "–", 
+             sprintf("%.2f (%.2f, %.2f)", median_survival, median_survival_95CI_lower, median_survival_95CI_higher))
+    } else "–",
+    restricted_mean_survival_formatted = if(all(c("restricted_mean_survival", "restricted_mean_survival_95CI_lower", 
+                                                   "restricted_mean_survival_95CI_upper") %in% table_cols)) {
+      sprintf("%.2f (%.2f, %.2f)", restricted_mean_survival, restricted_mean_survival_95CI_lower, restricted_mean_survival_95CI_upper)
+    } else NA_character_
+  ) |>
+  select(`CDM name` = cdm_name, `Target cohort` = group_level, `Outcome name` = variable_level,
+         any_of(c("Number records" = "number_records_count", "Number events" = "n_events_count")),
+         `Median survival (95% CI)` = median_survival_formatted,
+         `Restricted mean survival (95% CI)` = restricted_mean_survival_formatted) |>
+  arrange(`CDM name`, `Target cohort`, `Outcome name`)
+
+# Prepare survival curves for different stratifications
+survival_curves <- process_survival_curves(all_results, "overall")
+survival_by_age <- process_survival_curves(all_results, "age_group") |> rename(age_group = strata_level)
+survival_by_sex <- process_survival_curves(all_results, "sex") |> rename(sex = strata_level)
+
+```
+
+## Survival Analysis Results
+### Summary Table
+
+```{r survival-table, echo=FALSE, warning=FALSE, message=FALSE}
+# Build gt table with conditional column alignment
+table_col_names <- names(survival_table)
+center_cols <- intersect(c("Number records", "Number events", "Median survival (95% CI)", 
+                           "Restricted mean survival (95% CI)"), table_col_names)
+left_cols <- intersect(c("CDM name", "Target cohort", "Outcome name"), table_col_names)
+
+gt_table <- survival_table |> gt() |>
+  tab_header(title = "Survival Analysis Results") |>
+  tab_style(style = cell_borders(sides = "all", color = "#D3D3D3", weight = px(1)), locations = cells_body()) |>
+  tab_style(style = cell_fill(color = "#F0F0F0"), locations = cells_column_labels()) |>
+  tab_options(table.font.size = px(12), heading.align = "left")
+
+if(length(center_cols) > 0) gt_table <- gt_table |> cols_align(align = "center", columns = all_of(center_cols))
+if(length(left_cols) > 0) gt_table <- gt_table |> cols_align(align = "left", columns = all_of(left_cols))
+
+gt_table
+```
+
+### Survival Curves
+
+```{r survival-plots, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=6}
+survival_curves |>
+  ggplot(aes(x = time, y = survival_prob, color = target_cohort, fill = target_cohort, linetype = outcome)) +
+  geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.3, color = NA) +
+  geom_line(linewidth = 0.6) +
+  facet_wrap(~ cdm_name, scales = "free_x") +
+  scale_color_manual(values = c("congenital_aortic_stenosis" = "#F8766D", "congenital_aortic_valve_disease" = "#00BFC4"),
+                     name = "Target cohort") +
+  scale_fill_manual(values = c("congenital_aortic_stenosis" = "#F8766D", "congenital_aortic_valve_disease" = "#00BFC4"),
+                    name = "Target cohort") +
+  scale_linetype_manual(values = c("avr" = "solid", "death_cohort" = "dashed"),
+                       labels = c("avr" = "AVR", "death_cohort" = "Death"), name = "Outcome") +
+  labs(x = "Time in days", y = "Survival probability", title = "Survival Analysis by CDM and Target Cohort") +
+  theme_minimal() +
+  theme(strip.background = element_rect(fill = "#E0E0E0", color = NA), strip.text = element_text(size = 12, face = "bold"),
+        legend.position = "right", panel.grid.minor = element_blank(),
+        axis.title = element_text(size = 11), axis.text = element_text(size = 10))
+```
+
+## Survival Analysis by Age Group
+
+```{r survival-by-age, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8}
+if(nrow(survival_by_age) > 0) {
+  survival_by_age |>
+    mutate(cohort_label = format_cohort_labels(target_cohort)) |>
+    ggplot(aes(x = time, y = survival_prob, color = age_group, fill = age_group, linetype = outcome)) +
+    geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.2, color = NA) +
+    geom_line(linewidth = 0.6) +
+    facet_grid(cohort_label ~ cdm_name, scales = "free") +
+    scale_linetype_manual(values = c("avr" = "solid", "death_cohort" = "dashed"),
+                         labels = c("avr" = "AVR", "death_cohort" = "Death"), name = "Outcome") +
+    labs(x = "Time in days", y = "Survival probability", title = "Survival Analysis by Age Group",
+         color = "Age Group", fill = "Age Group") +
+    theme_minimal() +
+    theme(strip.background = element_rect(fill = "#E0E0E0", color = NA),
+          strip.text = element_text(size = 11, face = "bold"), strip.text.y = element_text(angle = 0),
+          legend.position = "right", panel.grid.minor = element_blank(),
+          axis.title = element_text(size = 11), axis.text = element_text(size = 9))
+} else cat("No age-stratified survival data available.")
+```
+
+## Survival Analysis by Sex
+
+```{r survival-by-sex, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=6}
+if(nrow(survival_by_sex) > 0) {
+  survival_by_sex |>
+    mutate(cohort_label = format_cohort_labels(target_cohort)) |>
+    ggplot(aes(x = time, y = survival_prob, color = sex, fill = sex, linetype = outcome)) +
+    geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.2, color = NA) +
+    geom_line(linewidth = 0.6) +
+    facet_grid(cohort_label ~ cdm_name, scales = "free") +
+    scale_color_manual(values = c("Female" = "#FF6B9D", "Male" = "#4A90E2"), name = "Sex") +
+    scale_fill_manual(values = c("Female" = "#FF6B9D", "Male" = "#4A90E2"), name = "Sex") +
+    scale_linetype_manual(values = c("avr" = "solid", "death_cohort" = "dashed"),
+                         labels = c("avr" = "AVR", "death_cohort" = "Death"), name = "Outcome") +
+    labs(x = "Time in days", y = "Survival probability", title = "Survival Analysis by Sex") +
+    theme_minimal() +
+    theme(strip.background = element_rect(fill = "#E0E0E0", color = NA),
+          strip.text = element_text(size = 11, face = "bold"), strip.text.y = element_text(angle = 0),
+          legend.position = "right", panel.grid.minor = element_blank(),
+          axis.title = element_text(size = 11), axis.text = element_text(size = 10))
+} else cat("No sex-stratified survival data available.")
+```

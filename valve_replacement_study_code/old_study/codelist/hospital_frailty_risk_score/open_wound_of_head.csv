@@ -1,0 +1,631 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+72468,Open dislocation of jaw,Condition,SNOMED,Disorder,S,208748005,2002-01-31,2099-12-31,NA
+372479,Laceration of eye,Condition,SNOMED,Disorder,S,231795004,2002-01-31,2099-12-31,NA
+373057,Subarachnoid hemorrhage following injury with open intracranial wound AND concussion,Condition,SNOMED,Disorder,S,48518008,2002-01-31,2099-12-31,NA
+374202,Penetrating wound of eye,Condition,SNOMED,Disorder,S,315296002,2002-01-31,2099-12-31,NA
+375393,Laceration of skin of eyelid AND periocular area,Condition,SNOMED,Disorder,S,14997005,2002-01-31,2099-12-31,NA
+375404,Ocular laceration with prolapse AND/OR exposure of intraocular tissue,Condition,SNOMED,Disorder,S,37911007,2002-01-31,2099-12-31,NA
+376552,Cerebral laceration and contusion,Condition,SNOMED,Disorder,S,269144002,2002-01-31,2099-12-31,NA
+377114,Open fracture of multiple sites of mandible,Condition,SNOMED,Disorder,S,207776000,2002-01-31,2099-12-31,NA
+378264,Open fracture of base of skull with cerebral laceration AND contusion,Condition,SNOMED,Disorder,S,30371007,2002-01-31,2099-12-31,NA
+378265,Open fracture of mandible,Condition,SNOMED,Disorder,S,23611004,2002-01-31,2099-12-31,NA
+379157,Open fracture of orbital floor (blow-out),Condition,SNOMED,Disorder,S,3421000,2002-01-31,2099-12-31,NA
+379185,Open wound of eyeball,Condition,SNOMED,Disorder,S,85100000,2002-01-31,2099-12-31,NA
+432476,Cortex laceration with open intracranial wound,Condition,SNOMED,Disorder,S,59748008,2002-01-31,2099-12-31,NA
+432751,Cortex contusion with open intracranial wound,Condition,SNOMED,Disorder,S,87888006,2002-01-31,2099-12-31,NA
+432756,Penetrating wound of orbit with foreign body,Condition,SNOMED,Disorder,S,76371008,2002-01-31,2099-12-31,NA
+433037,Open fracture of vault of skull with intracranial hemorrhage,Condition,SNOMED,Disorder,S,111597003,2002-01-31,2099-12-31,NA
+433050,Subdural hemorrhage following injury with open intracranial wound AND concussion,Condition,SNOMED,Disorder,S,43262000,2002-01-31,2099-12-31,NA
+433624,Intracranial hemorrhage following injury with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,13289004,2002-01-31,2099-12-31,NA
+434176,Open fracture of nasal bones,Condition,SNOMED,Disorder,S,40613008,2002-01-31,2099-12-31,NA
+434178,"Open fracture of mandible, coronoid process",Condition,SNOMED,Disorder,S,207769005,2002-01-31,2099-12-31,NA
+434506,Cerebellar contusion with open intracranial wound,Condition,SNOMED,Disorder,S,82344002,2002-01-31,2099-12-31,NA
+434508,Extradural hemorrhage following injury with open intracranial wound AND concussion,Condition,SNOMED,Disorder,S,28155008,2002-01-31,2099-12-31,NA
+434774,Cortex contusion with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,81412002,2002-01-31,2099-12-31,NA
+434785,Intracranial hemorrhage following injury with open intracranial wound,Condition,SNOMED,Disorder,S,77768006,2002-01-31,2099-12-31,NA
+435378,Open fracture of base of skull with intracranial hemorrhage,Condition,SNOMED,Disorder,S,111605007,2002-01-31,2099-12-31,NA
+435384,"Cortex laceration with open intracranial wound, with no loss of consciousness",Condition,SNOMED,Disorder,S,209864000,2002-01-31,2099-12-31,NA
+435660,Open fracture of symphysis of body of mandible,Condition,SNOMED,Disorder,S,61202000,2002-01-31,2099-12-31,NA
+435681,Brain injury with open intracranial wound AND concussion,Condition,SNOMED,Disorder,S,5202009,2002-01-31,2099-12-31,NA
+435931,Open skull fracture with intracranial hemorrhage,Condition,SNOMED,Disorder,S,111615001,2002-01-31,2099-12-31,NA
+435953,Cerebellar laceration with open intracranial wound,Condition,SNOMED,Disorder,S,30858001,2002-01-31,2099-12-31,NA
+435960,Extradural hemorrhage following injury with open intracranial wound,Condition,SNOMED,Disorder,S,65189006,2002-01-31,2099-12-31,NA
+436261,Penetrating wound of orbit without foreign body,Condition,SNOMED,Disorder,S,37795008,2002-01-31,2099-12-31,NA
+436527,Open fracture of ramus of mandible,Condition,SNOMED,Disorder,S,20158009,2002-01-31,2099-12-31,NA
+436818,Open fracture of base of skull with intracranial injury,Condition,SNOMED,Disorder,S,111607004,2002-01-31,2099-12-31,NA
+437386,Open skull fracture with intracranial injury,Condition,SNOMED,Disorder,S,111617009,2002-01-31,2099-12-31,NA
+437397,"Open fracture of mandible, condylar process",Condition,SNOMED,Disorder,S,207767007,2002-01-31,2099-12-31,NA
+437398,"Open fracture of mandible, subcondylar",Condition,SNOMED,Disorder,S,207768002,2002-01-31,2099-12-31,NA
+437996,Open fracture of facial bones,Condition,SNOMED,Disorder,S,111609001,2002-01-31,2099-12-31,NA
+438279,Extradural hemorrhage following injury with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,111681000,2002-01-31,2099-12-31,NA
+438578,"Open fracture of mandible, angle of jaw",Condition,SNOMED,Disorder,S,207771005,2002-01-31,2099-12-31,NA
+438588,"Cortex contusion with open intracranial wound, with no loss of consciousness",Condition,SNOMED,Disorder,S,209845006,2002-01-31,2099-12-31,NA
+438590,Brain injury with open intracranial wound,Condition,SNOMED,Disorder,S,28188001,2002-01-31,2099-12-31,NA
+439143,Open fracture vault of skull with intracranial injury,Condition,SNOMED,Disorder,S,207705002,2002-01-31,2099-12-31,NA
+439152,"Fracture of malar or maxillary bones, open",Condition,SNOMED,Disorder,S,269057007,2002-01-31,2099-12-31,NA
+439160,Open fracture of body of mandible,Condition,SNOMED,Disorder,S,69425000,2002-01-31,2099-12-31,NA
+439170,Cerebellar contusion with open intracranial wound AND concussion,Condition,SNOMED,Disorder,S,86125000,2002-01-31,2099-12-31,NA
+439194,Subdural hemorrhage following injury with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,45659008,2002-01-31,2099-12-31,NA
+439384,Open fracture of skull,Condition,SNOMED,Disorder,S,371161001,2002-07-31,2099-12-31,NA
+439950,Intracranial hemorrhage following injury with open intracranial wound AND concussion,Condition,SNOMED,Disorder,S,78879009,2002-01-31,2099-12-31,NA
+440235,Cerebellar laceration with open intracranial wound AND no loss of consciousness,Condition,SNOMED,Disorder,S,14434006,2002-01-31,2099-12-31,NA
+440244,Subarachnoid hemorrhage following injury with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,75507000,2002-01-31,2099-12-31,NA
+440539,Open fracture of alveolar border of body of mandible,Condition,SNOMED,Disorder,S,43337002,2002-01-31,2099-12-31,NA
+440550,Cortex contusion with open intracranial wound AND concussion,Condition,SNOMED,Disorder,S,73413009,2002-01-31,2099-12-31,NA
+440551,Brain injury with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,13752003,2002-01-31,2099-12-31,NA
+441702,Cerebellar contusion with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,19233004,2002-01-31,2099-12-31,NA
+441709,Subarachnoid hemorrhage following injury with open intracranial wound,Condition,SNOMED,Disorder,S,5251007,2002-01-31,2099-12-31,NA
+441712,Open wound of ocular adnexa,Condition,SNOMED,Disorder,S,16998003,2002-01-31,2099-12-31,NA
+442114,Cortex laceration with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,41870008,2002-01-31,2099-12-31,NA
+442318,Brain stem laceration with open intracranial wound AND concussion,Condition,SNOMED,Disorder,S,41222005,2002-01-31,2099-12-31,NA
+442337,Penetration of eyeball with nonmagnetic foreign body,Condition,SNOMED,Disorder,S,44199000,2002-01-31,2099-12-31,NA
+442509,Full thickness eyelid laceration without lacrimal passage involvement,Condition,SNOMED,Disorder,S,210277000,2002-01-31,2099-12-31,NA
+442595,Brain stem contusion with open intracranial wound AND concussion,Condition,SNOMED,Disorder,S,78028004,2002-01-31,2099-12-31,NA
+442616,Brain stem contusion with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,66393002,2002-01-31,2099-12-31,NA
+442762,Cerebellar laceration with open intracranial wound AND concussion,Condition,SNOMED,Disorder,S,59918000,2002-01-31,2099-12-31,NA
+443232,Eyelid and lacrimal drainage system laceration,Condition,SNOMED,Disorder,S,269164007,2002-01-31,2099-12-31,NA
+443696,Brain stem laceration with open intracranial wound AND no loss of consciousness,Condition,SNOMED,Disorder,S,19210000,2002-01-31,2099-12-31,NA
+443799,Brain stem laceration with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,3119002,2002-01-31,2099-12-31,NA
+443910,Penetration of eyeball with magnetic foreign body,Condition,SNOMED,Disorder,S,3018008,2002-01-31,2099-12-31,NA
+444217,Brain stem laceration with open intracranial wound,Condition,SNOMED,Disorder,S,12589008,2002-01-31,2099-12-31,NA
+444248,Brain stem contusion with open intracranial wound,Condition,SNOMED,Disorder,S,78968003,2002-01-31,2099-12-31,NA
+444257,Cerebellar laceration with open intracranial wound AND loss of consciousness,Condition,SNOMED,Disorder,S,84900008,2002-01-31,2099-12-31,NA
+444379,Cortex laceration with open intracranial wound AND concussion,Condition,SNOMED,Disorder,S,69875006,2002-01-31,2099-12-31,NA
+604740,Hind brain laceration with open intracranial wound and loss of consciousness,Condition,SNOMED,Disorder,S,1003584006,2021-01-31,2099-12-31,NA
+606071,Laceration of scalp due to birth trauma,Condition,SNOMED,Disorder,S,1142096002,2021-07-31,2099-12-31,NA
+607638,Tear of frenulum of upper lip,Condition,SNOMED,Disorder,S,1155718008,2021-07-31,2099-12-31,NA
+609302,Abrasion of mouth region,Condition,SNOMED,Disorder,S,347218661000119103,2021-07-31,2099-12-31,NA
+618758,Cerebral cortex laceration with concussion,Condition,SNOMED,Disorder,S,874937002,2021-01-31,2099-12-31,NA
+618759,Subdural hemorrhage with open intracranial wound,Condition,SNOMED,Disorder,S,874938007,2021-01-31,2099-12-31,NA
+618760,Cerebellar laceration with concussion,Condition,SNOMED,Disorder,S,874939004,2021-01-31,2099-12-31,NA
+618761,Brain stem laceration with concussion,Condition,SNOMED,Disorder,S,874940002,2021-01-31,2099-12-31,NA
+618762,Brain stem laceration with loss of consciousness,Condition,SNOMED,Disorder,S,874943000,2021-01-31,2099-12-31,NA
+618944,Multiple open fractures of skull,Condition,SNOMED,Disorder,S,879901005,2021-01-31,2099-12-31,NA
+618945,Multiple open fractures of facial bones,Condition,SNOMED,Disorder,S,879902003,2021-01-31,2099-12-31,NA
+760136,Laceration of right ear region,Condition,SNOMED,Disorder,S,10876871000119109,2016-09-01,2099-12-31,NA
+760137,Laceration of left ear region,Condition,SNOMED,Disorder,S,10876911000119107,2016-09-01,2099-12-31,NA
+1075004,Infected abrasion of skin of nose,Condition,SNOMED,Disorder,S,11843111000119107,2024-03-01,2099-12-31,NA
+1077218,Simple laceration of left periorbital region,Condition,SNOMED,Disorder,S,43331000087107,2024-07-01,2099-12-31,NA
+1077219,Simple laceration of left pinna,Condition,SNOMED,Disorder,S,43341000087101,2024-07-01,2099-12-31,NA
+1077220,Simple laceration of right periorbital region,Condition,SNOMED,Disorder,S,43361000087100,2024-07-01,2099-12-31,NA
+1077221,Simple laceration of right pinna,Condition,SNOMED,Disorder,S,43391000087108,2024-07-01,2099-12-31,NA
+1077222,Open wound of left lower eyelid,Condition,SNOMED,Disorder,S,43441000087109,2024-07-01,2099-12-31,NA
+1077223,Open wound of left ocular adnexa,Condition,SNOMED,Disorder,S,43451000087107,2024-07-01,2099-12-31,NA
+1077224,Open wound of left upper eyelid,Condition,SNOMED,Disorder,S,43461000087105,2024-07-01,2099-12-31,NA
+1077225,Open wound of right lower eyelid,Condition,SNOMED,Disorder,S,43471000087101,2024-07-01,2099-12-31,NA
+1077226,Open wound of right ocular adnexa,Condition,SNOMED,Disorder,S,43481000087104,2024-07-01,2099-12-31,NA
+1077227,Open wound of right upper eyelid,Condition,SNOMED,Disorder,S,43491000087102,2024-07-01,2099-12-31,NA
+1077270,Complex laceration of left periorbital region,Condition,SNOMED,Disorder,S,44391000087106,2024-07-01,2099-12-31,NA
+1077271,Complex laceration of right periorbital region,Condition,SNOMED,Disorder,S,44401000087109,2024-07-01,2099-12-31,NA
+1077272,Complex laceration of left pinna,Condition,SNOMED,Disorder,S,44411000087106,2024-07-01,2099-12-31,NA
+1077274,Complex laceration of right pinna,Condition,SNOMED,Disorder,S,44421000087103,2024-07-01,2099-12-31,NA
+1244205,Open wound of lip due to human bite,Condition,SNOMED,Disorder,S,10898811000119109,2023-10-01,2099-12-31,NA
+1244388,Abrasion of skin of scalp,Condition,SNOMED,Disorder,S,1287525007,2023-09-01,2099-12-31,NA
+1244389,Abrasion of skin of scalp due to birth trauma,Condition,SNOMED,Disorder,S,1287526008,2023-09-01,2099-12-31,NA
+1244390,Infected abrasion of skin of scalp,Condition,SNOMED,Disorder,S,1287527004,2023-09-01,2099-12-31,NA
+1244394,Abrasion of skin of head,Condition,SNOMED,Disorder,S,1287534002,2023-09-01,2099-12-31,NA
+1244395,Abrasion of skin of cheek,Condition,SNOMED,Disorder,S,1287535001,2023-09-01,2099-12-31,NA
+1244396,Abrasion of skin of face,Condition,SNOMED,Disorder,S,1287536000,2023-09-01,2099-12-31,NA
+1244397,Infected abrasion of skin of eyelid,Condition,SNOMED,Disorder,S,1287537009,2023-09-01,2099-12-31,NA
+1244723,Intraoperative open wound of scalp associated with Mayfield head clamp,Condition,SNOMED,Disorder,S,1290701000,2023-11-01,2099-12-31,NA
+1245232,Puncture wound of lower eyelid,Condition,SNOMED,Disorder,S,1297164003,2024-01-01,2099-12-31,NA
+1246501,Puncture wound of left ear,Condition,SNOMED,Disorder,S,41561000087105,2024-01-01,2099-12-31,NA
+1246503,Puncture wound of right ear,Condition,SNOMED,Disorder,S,41581000087104,2024-01-01,2099-12-31,NA
+1246506,Puncture wound of left lower eyelid,Condition,SNOMED,Disorder,S,41611000087107,2024-01-01,2099-12-31,NA
+1246507,Puncture wound of right lower eyelid,Condition,SNOMED,Disorder,S,41621000087104,2024-01-01,2099-12-31,NA
+1246541,Abrasion of left conjunctiva,Condition,SNOMED,Disorder,S,41981000087106,2024-01-01,2099-12-31,NA
+1246542,Abrasion of right conjunctiva,Condition,SNOMED,Disorder,S,41991000087108,2024-01-01,2099-12-31,NA
+1246549,Penetrating wound of right eye proper due to foreign body,Condition,SNOMED,Disorder,S,42241000087103,2024-01-01,2099-12-31,NA
+1246550,Penetrating wound of left eye proper due to foreign body,Condition,SNOMED,Disorder,S,42251000087100,2024-01-01,2099-12-31,NA
+1448749,Infected abrasion of skin of forehead,Condition,SNOMED,Disorder,S,11849741000119107,2025-01-01,2099-12-31,NA
+1450553,Abrasion of left eye region,Condition,SNOMED,Disorder,S,47401000087104,2025-01-01,2099-12-31,NA
+1450554,Abrasion of right eye region,Condition,SNOMED,Disorder,S,47411000087102,2025-01-01,2099-12-31,NA
+3176412,Laceration of ear lobe,Condition,Nebraska Lexicon,Clinical Finding,S,29870001000004107,2016-01-28,2099-12-31,NA
+3176556,Excoriation of right cheek,Condition,Nebraska Lexicon,Clinical Finding,S,21850001000004100,2016-01-28,2099-12-31,NA
+3179550,Cerebral dura mater laceration,Condition,Nebraska Lexicon,Clinical Finding,S,8600001000004109,2016-01-28,2099-12-31,NA
+3181127,Traumatic laceration of lacrimal duct,Condition,Nebraska Lexicon,Clinical Finding,S,8650001000004102,2016-01-28,2099-12-31,NA
+3182707,Occipital scalp laceration,Condition,Nebraska Lexicon,Clinical Finding,S,16510001000004108,2016-01-28,2099-12-31,NA
+3185417,Cerebral hematoma with open intracranial wound,Condition,Nebraska Lexicon,Clinical Finding,S,8410001000004109,2016-01-28,2099-12-31,NA
+3189822,Subdural hygroma with open skull wound,Condition,Nebraska Lexicon,Clinical Finding,S,6600001000004103,2016-01-28,2099-12-31,NA
+3655339,Full thickness open wound of eyelid,Condition,SNOMED,Disorder,S,860882006,2020-07-31,2099-12-31,NA
+3655827,Partial thickness open wound of eyelid,Condition,SNOMED,Disorder,S,870289005,2020-07-31,2099-12-31,NA
+3655841,Penetrating wound of eyeball with foreign body,Condition,SNOMED,Disorder,S,870312007,2020-07-31,2099-12-31,NA
+3655847,Open wound of skin of eyelid,Condition,SNOMED,Disorder,S,870322001,2020-07-31,2099-12-31,NA
+3655955,Closed fracture of skull with cerebral laceration,Condition,SNOMED,Disorder,S,870548008,2020-07-31,2099-12-31,NA
+3655957,Closed fracture of base of skull with cerebral laceration,Condition,SNOMED,Disorder,S,870550000,2020-07-31,2099-12-31,NA
+3655960,Open fracture of vault of skull with cerebral laceration,Condition,SNOMED,Disorder,S,870553003,2020-07-31,2099-12-31,NA
+3655961,Open fracture of vault of skull with cerebral contusion,Condition,SNOMED,Disorder,S,870554009,2020-07-31,2099-12-31,NA
+3655962,Open fracture of skull with cerebral contusion,Condition,SNOMED,Disorder,S,870555005,2020-07-31,2099-12-31,NA
+3655963,Open fracture of skull with cerebral laceration,Condition,SNOMED,Disorder,S,870556006,2020-07-31,2099-12-31,NA
+3657669,Abrasion of skin of right eyelid,Condition,SNOMED,Disorder,S,11848461000119109,2020-07-31,2099-12-31,NA
+3657913,Puncture wound of tongue,Condition,SNOMED,Disorder,S,10899371000119104,2020-07-31,2099-12-31,NA
+3657916,Gunshot wound of face,Condition,SNOMED,Disorder,S,10907361000119107,2020-07-31,2099-12-31,NA
+3657965,Infected abrasion of oral mucosa,Condition,SNOMED,Disorder,S,11847781000119106,2020-07-31,2099-12-31,NA
+3662171,Abrasion of skin of right ear,Condition,SNOMED,Disorder,S,11843711000119106,2020-07-31,2099-12-31,NA
+3662172,Abrasion of skin of left ear,Condition,SNOMED,Disorder,S,11843751000119107,2020-07-31,2099-12-31,NA
+3662173,Infected abrasion of skin of right ear,Condition,SNOMED,Disorder,S,11843951000119105,2020-07-31,2099-12-31,NA
+3662174,Infected abrasion of skin of left ear,Condition,SNOMED,Disorder,S,11843991000119100,2020-07-31,2099-12-31,NA
+3662175,Abrasion of skin of lip,Condition,SNOMED,Disorder,S,11847251000119105,2020-07-31,2099-12-31,NA
+3662176,Infected abrasion of skin of right eyelid,Condition,SNOMED,Disorder,S,11848501000119109,2020-07-31,2099-12-31,NA
+3662177,Abrasion of skin of left eyelid,Condition,SNOMED,Disorder,S,11848541000119106,2020-07-31,2099-12-31,NA
+3662178,Infected abrasion of skin of left eyelid,Condition,SNOMED,Disorder,S,11848581000119101,2020-07-31,2099-12-31,NA
+3663250,Contusion of cerebrum with open intracranial wound,Condition,SNOMED,Disorder,S,870563006,2020-07-31,2099-12-31,NA
+3663252,Contusion of hindbrain with open intracranial wound,Condition,SNOMED,Disorder,S,870565004,2020-07-31,2099-12-31,NA
+4001157,Bednar's aphthae,Condition,SNOMED,Disorder,S,109778006,2002-01-31,2099-12-31,NA
+4001333,Open fracture of zygomatic tripod,Condition,SNOMED,Disorder,S,110018008,2002-01-31,2099-12-31,NA
+4001335,Open pyramidal fracture of maxilla,Condition,SNOMED,Disorder,S,110027009,2002-01-31,2099-12-31,NA
+4001338,Contaminated complex laceration of cheek,Condition,SNOMED,Disorder,S,110040004,2002-01-31,2099-12-31,NA
+4001340,Complex laceration of malar region of cheek,Condition,SNOMED,Disorder,S,110044008,2002-01-31,2099-12-31,NA
+4001341,Contaminated complex laceration of malar region of cheek,Condition,SNOMED,Disorder,S,110045009,2002-01-31,2099-12-31,NA
+4001342,Simple laceration of preauricular region of face,Condition,SNOMED,Disorder,S,110047001,2002-01-31,2099-12-31,NA
+4001343,Complex laceration of preauricular region of face,Condition,SNOMED,Disorder,S,110049003,2002-01-31,2099-12-31,NA
+4001344,Complex laceration of circumoral region of face,Condition,SNOMED,Disorder,S,110054007,2002-01-31,2099-12-31,NA
+4001484,Contaminated complex laceration of forehead,Condition,SNOMED,Disorder,S,110060007,2002-01-31,2099-12-31,NA
+4001485,Simple laceration of auricle of ear,Condition,SNOMED,Disorder,S,110062004,2002-01-31,2099-12-31,NA
+4001486,Complex laceration of scalp,Condition,SNOMED,Disorder,S,110069008,2002-01-31,2099-12-31,NA
+4001487,Avulsion of scalp,Condition,SNOMED,Disorder,S,110071008,2002-01-31,2099-12-31,NA
+4001488,Contaminated simple laceration of chin,Condition,SNOMED,Disorder,S,110078002,2002-01-31,2099-12-31,NA
+4001679,Complex laceration of tongue,Condition,SNOMED,Disorder,S,110086002,2002-01-31,2099-12-31,NA
+4001681,Complex laceration of floor of mouth,Condition,SNOMED,Disorder,S,110091001,2002-01-31,2099-12-31,NA
+4001683,Contaminated simple laceration of labial mucosa,Condition,SNOMED,Disorder,S,110095005,2002-01-31,2099-12-31,NA
+4001684,Contaminated complex laceration of labial mucosa,Condition,SNOMED,Disorder,S,110097002,2002-01-31,2099-12-31,NA
+4001686,Contaminated simple laceration of buccal mucosa,Condition,SNOMED,Disorder,S,110100007,2002-01-31,2099-12-31,NA
+4001688,Contaminated simple laceration of mandibular vestibule,Condition,SNOMED,Disorder,S,110105002,2002-01-31,2099-12-31,NA
+4001689,Contaminated complex laceration of mandibular vestibule,Condition,SNOMED,Disorder,S,110107005,2002-01-31,2099-12-31,NA
+4001690,Simple laceration of maxillary vestibule,Condition,SNOMED,Disorder,S,110109008,2002-01-31,2099-12-31,NA
+4001821,Complex laceration of mandibular attached gingiva,Condition,SNOMED,Disorder,S,110116009,2002-01-31,2099-12-31,NA
+4001822,Simple laceration of maxillary attached gingiva,Condition,SNOMED,Disorder,S,110119002,2002-01-31,2099-12-31,NA
+4001824,Complex laceration of maxillary attached gingiva,Condition,SNOMED,Disorder,S,110121007,2002-01-31,2099-12-31,NA
+4001826,Simple laceration of hard palate,Condition,SNOMED,Disorder,S,110124004,2002-01-31,2099-12-31,NA
+4001828,Simple laceration of oropharynx,Condition,SNOMED,Disorder,S,110139003,2002-01-31,2099-12-31,NA
+4001829,Contaminated simple laceration of oropharynx,Condition,SNOMED,Disorder,S,110140001,2002-01-31,2099-12-31,NA
+4001831,Abrasion of maxillary vestibule,Condition,SNOMED,Disorder,S,110153003,2002-01-31,2099-12-31,NA
+4001832,Abrasion of oropharynx,Condition,SNOMED,Disorder,S,110162001,2002-01-31,2099-12-31,NA
+4001833,Abrasion of skin of forehead,Condition,SNOMED,Disorder,S,110164000,2002-01-31,2099-12-31,NA
+4001834,Abrasion of skin of preauricular region of face,Condition,SNOMED,Disorder,S,110169005,2002-01-31,2099-12-31,NA
+4002499,Decapitation,Condition,SNOMED,Disorder,S,110014005,2002-01-31,2099-12-31,NA
+4002502,Contaminated simple periorbital laceration,Condition,SNOMED,Disorder,S,110033000,2002-01-31,2099-12-31,NA
+4002503,Contaminated complex periorbital laceration,Condition,SNOMED,Disorder,S,110035007,2002-01-31,2099-12-31,NA
+4002504,Simple laceration of cheek,Condition,SNOMED,Disorder,S,110037004,2002-01-31,2099-12-31,NA
+4002505,Contaminated simple laceration of cheek,Condition,SNOMED,Disorder,S,110038009,2002-01-31,2099-12-31,NA
+4002506,Complex laceration of cheek,Condition,SNOMED,Disorder,S,110039001,2002-01-31,2099-12-31,NA
+4002508,Simple laceration of malar region of cheek,Condition,SNOMED,Disorder,S,110042007,2002-01-31,2099-12-31,NA
+4002509,Contaminated simple laceration of malar region of cheek,Condition,SNOMED,Disorder,S,110043002,2002-01-31,2099-12-31,NA
+4002510,Contaminated complex laceration of circumoral region of face,Condition,SNOMED,Disorder,S,110055008,2002-01-31,2099-12-31,NA
+4002511,Contaminated simple laceration of forehead,Condition,SNOMED,Disorder,S,110058005,2002-01-31,2099-12-31,NA
+4002512,Complex laceration of forehead,Condition,SNOMED,Disorder,S,110059002,2002-01-31,2099-12-31,NA
+4002513,Complex laceration of auricle of ear,Condition,SNOMED,Disorder,S,110064003,2002-01-31,2099-12-31,NA
+4002514,Contaminated complex laceration of nose,Condition,SNOMED,Disorder,S,110075004,2002-01-31,2099-12-31,NA
+4002515,Complex laceration of chin,Condition,SNOMED,Disorder,S,110079005,2002-01-31,2099-12-31,NA
+4002516,Contaminated simple laceration of tongue,Condition,SNOMED,Disorder,S,110085003,2002-01-31,2099-12-31,NA
+4002517,Avulsion of tongue,Condition,SNOMED,Disorder,S,110088001,2002-01-31,2099-12-31,NA
+4002518,Simple laceration of buccal mucosa,Condition,SNOMED,Disorder,S,110099004,2002-01-31,2099-12-31,NA
+4002520,Contaminated complex laceration of maxillary vestibule,Condition,SNOMED,Disorder,S,110112006,2002-01-31,2099-12-31,NA
+4002521,Simple laceration of mandibular attached gingiva,Condition,SNOMED,Disorder,S,110114007,2002-01-31,2099-12-31,NA
+4002522,Contaminated simple laceration of mandibular attached gingiva,Condition,SNOMED,Disorder,S,110115008,2002-01-31,2099-12-31,NA
+4002523,Contaminated complex laceration of mandibular attached gingiva,Condition,SNOMED,Disorder,S,110117000,2002-01-31,2099-12-31,NA
+4002525,Simple laceration of soft palate,Condition,SNOMED,Disorder,S,110129009,2002-01-31,2099-12-31,NA
+4002655,Contaminated complex laceration of soft palate,Condition,SNOMED,Disorder,S,110132007,2002-01-31,2099-12-31,NA
+4002657,Contaminated simple laceration of tonsil,Condition,SNOMED,Disorder,S,110135009,2002-01-31,2099-12-31,NA
+4002662,Abrasion of mandibular vestibule,Condition,SNOMED,Disorder,S,110154009,2002-01-31,2099-12-31,NA
+4002663,Abrasion of mandibular attached gingiva,Condition,SNOMED,Disorder,S,110156006,2002-01-31,2099-12-31,NA
+4002664,Abrasion of floor of mouth,Condition,SNOMED,Disorder,S,110157002,2002-01-31,2099-12-31,NA
+4002665,Abrasion of tonsil,Condition,SNOMED,Disorder,S,110161008,2002-01-31,2099-12-31,NA
+4002666,Abrasion of tongue,Condition,SNOMED,Disorder,S,110163006,2002-01-31,2099-12-31,NA
+4002667,Abrasion of skin of periorbital region of face,Condition,SNOMED,Disorder,S,110165004,2002-01-31,2099-12-31,NA
+4002668,Abrasion of skin of chin,Condition,SNOMED,Disorder,S,110168002,2002-01-31,2099-12-31,NA
+4003190,Open fracture of orbital portion of zygomatic bone,Condition,SNOMED,Disorder,S,110020006,2002-01-31,2099-12-31,NA
+4003193,Open horizontal fracture of maxilla,Condition,SNOMED,Disorder,S,110026000,2002-01-31,2099-12-31,NA
+4003194,Complete open fracture of maxilla,Condition,SNOMED,Disorder,S,110028004,2002-01-31,2099-12-31,NA
+4003195,Simple periorbital laceration,Condition,SNOMED,Disorder,S,110032005,2002-01-31,2099-12-31,NA
+4003196,Contaminated complex laceration of preauricular region of face,Condition,SNOMED,Disorder,S,110050003,2002-01-31,2099-12-31,NA
+4003197,Avulsion of preauricular region of face,Condition,SNOMED,Disorder,S,110051004,2002-01-31,2099-12-31,NA
+4003198,Simple laceration of circumoral region of face,Condition,SNOMED,Disorder,S,110052006,2002-01-31,2099-12-31,NA
+4003327,Simple laceration of forehead,Condition,SNOMED,Disorder,S,110057000,2002-01-31,2099-12-31,NA
+4003328,Simple laceration of chin,Condition,SNOMED,Disorder,S,110077007,2002-01-31,2099-12-31,NA
+4003329,Contaminated complex laceration of chin,Condition,SNOMED,Disorder,S,110080008,2002-01-31,2099-12-31,NA
+4003332,Simple laceration of floor of mouth,Condition,SNOMED,Disorder,S,110089009,2002-01-31,2099-12-31,NA
+4003333,Contaminated complex laceration of floor of mouth,Condition,SNOMED,Disorder,S,110092008,2002-01-31,2099-12-31,NA
+4003334,Simple laceration of labial mucosa,Condition,SNOMED,Disorder,S,110094009,2002-01-31,2099-12-31,NA
+4003335,Complex laceration of labial mucosa,Condition,SNOMED,Disorder,S,110096006,2002-01-31,2099-12-31,NA
+4003338,Simple laceration of mandibular vestibule,Condition,SNOMED,Disorder,S,110104003,2002-01-31,2099-12-31,NA
+4003340,Contaminated simple laceration of maxillary attached gingiva,Condition,SNOMED,Disorder,S,110120008,2002-01-31,2099-12-31,NA
+4003341,Contaminated complex laceration of maxillary attached gingiva,Condition,SNOMED,Disorder,S,110122000,2002-01-31,2099-12-31,NA
+4003342,Contaminated complex laceration of hard palate,Condition,SNOMED,Disorder,S,110127006,2002-01-31,2099-12-31,NA
+4003343,Complex laceration of tonsil,Condition,SNOMED,Disorder,S,110136005,2002-01-31,2099-12-31,NA
+4003345,Contaminated complex laceration of oropharynx,Condition,SNOMED,Disorder,S,110142009,2002-01-31,2099-12-31,NA
+4003347,Abrasion of buccal mucosa,Condition,SNOMED,Disorder,S,110152008,2002-01-31,2099-12-31,NA
+4003348,Abrasion of maxillary attached gingiva,Condition,SNOMED,Disorder,S,110155005,2002-01-31,2099-12-31,NA
+4003350,Abrasion of soft palate,Condition,SNOMED,Disorder,S,110160009,2002-01-31,2099-12-31,NA
+4003352,Abrasion of skin of circumoral region of face,Condition,SNOMED,Disorder,S,110167007,2002-01-31,2099-12-31,NA
+4003842,Complex periorbital laceration,Condition,SNOMED,Disorder,S,110034006,2002-01-31,2099-12-31,NA
+4003844,Contaminated simple laceration of preauricular region of face,Condition,SNOMED,Disorder,S,110048006,2002-01-31,2099-12-31,NA
+4003846,Contaminated simple laceration of circumoral region of face,Condition,SNOMED,Disorder,S,110053001,2002-01-31,2099-12-31,NA
+4003848,Contaminated simple laceration of auricle of ear,Condition,SNOMED,Disorder,S,110063009,2002-01-31,2099-12-31,NA
+4003849,Contaminated complex laceration of auricle of ear,Condition,SNOMED,Disorder,S,110065002,2002-01-31,2099-12-31,NA
+4003851,Simple laceration of scalp,Condition,SNOMED,Disorder,S,110067005,2002-01-31,2099-12-31,NA
+4003852,Contaminated simple laceration of scalp,Condition,SNOMED,Disorder,S,110068000,2002-01-31,2099-12-31,NA
+4003853,Contaminated complex laceration of scalp,Condition,SNOMED,Disorder,S,110070009,2002-01-31,2099-12-31,NA
+4003855,Simple laceration of nose,Condition,SNOMED,Disorder,S,110072001,2002-01-31,2099-12-31,NA
+4005481,Contaminated simple laceration of nose,Condition,SNOMED,Disorder,S,110073006,2002-01-31,2099-12-31,NA
+4005482,Complex laceration of nose,Condition,SNOMED,Disorder,S,110074000,2002-01-31,2099-12-31,NA
+4005483,Avulsion of nose,Condition,SNOMED,Disorder,S,110076003,2002-01-31,2099-12-31,NA
+4005484,Simple laceration of tongue,Condition,SNOMED,Disorder,S,110084004,2002-01-31,2099-12-31,NA
+4005485,Contaminated complex laceration of tongue,Condition,SNOMED,Disorder,S,110087006,2002-01-31,2099-12-31,NA
+4005486,Contaminated simple laceration of floor of mouth,Condition,SNOMED,Disorder,S,110090000,2002-01-31,2099-12-31,NA
+4005487,Complex laceration of buccal mucosa,Condition,SNOMED,Disorder,S,110101006,2002-01-31,2099-12-31,NA
+4005488,Contaminated complex laceration of buccal mucosa,Condition,SNOMED,Disorder,S,110102004,2002-01-31,2099-12-31,NA
+4005489,Complex laceration of mandibular vestibule,Condition,SNOMED,Disorder,S,110106001,2002-01-31,2099-12-31,NA
+4005490,Contaminated simple laceration of maxillary vestibule,Condition,SNOMED,Disorder,S,110110003,2002-01-31,2099-12-31,NA
+4005491,Complex laceration of maxillary vestibule,Condition,SNOMED,Disorder,S,110111004,2002-01-31,2099-12-31,NA
+4005492,Contaminated simple laceration of hard palate,Condition,SNOMED,Disorder,S,110125003,2002-01-31,2099-12-31,NA
+4005493,Complex laceration of hard palate,Condition,SNOMED,Disorder,S,110126002,2002-01-31,2099-12-31,NA
+4005494,Contaminated simple laceration of soft palate,Condition,SNOMED,Disorder,S,110130004,2002-01-31,2099-12-31,NA
+4005495,Complex laceration of soft palate,Condition,SNOMED,Disorder,S,110131000,2002-01-31,2099-12-31,NA
+4005496,Simple laceration of tonsil,Condition,SNOMED,Disorder,S,110134008,2002-01-31,2099-12-31,NA
+4005497,Contaminated complex laceration of tonsil,Condition,SNOMED,Disorder,S,110137001,2002-01-31,2099-12-31,NA
+4005498,Complex laceration of oropharynx,Condition,SNOMED,Disorder,S,110141002,2002-01-31,2099-12-31,NA
+4005624,Abrasion of hard palate,Condition,SNOMED,Disorder,S,110159004,2002-01-31,2099-12-31,NA
+4005625,Abrasion of skin of zygomatic region of face,Condition,SNOMED,Disorder,S,110166003,2002-01-31,2099-12-31,NA
+4007910,"Open fracture of vault of skull with intracranial injury, with no loss of consciousness",Condition,SNOMED,Disorder,S,207707005,2002-01-31,2099-12-31,NA
+4007916,Open fracture of maxilla,Condition,SNOMED,Disorder,S,207782002,2002-01-31,2099-12-31,NA
+4008048,"Fracture of palate, open",Condition,SNOMED,Disorder,S,207800002,2002-01-31,2099-12-31,NA
+4010871,"Open fracture of base of skull with intracranial injury, with no loss of consciousness",Condition,SNOMED,Disorder,S,207745006,2002-01-31,2099-12-31,NA
+4011013,"Fracture of alveolus, open",Condition,SNOMED,Disorder,S,207798009,2002-01-31,2099-12-31,NA
+4011990,Open subluxation atlanto-occipital joint,Condition,SNOMED,Disorder,S,209153001,2002-01-31,2099-12-31,NA
+4012596,Open subluxation jaw,Condition,SNOMED,Disorder,S,208750002,2002-01-31,2099-12-31,NA
+4014512,"Open division, temporomandibular ligament",Condition,SNOMED,Disorder,S,209736004,2002-01-31,2099-12-31,NA
+4016974,Hind brain laceration with open intracranial wound,Condition,SNOMED,Disorder,S,209900006,2002-01-31,2099-12-31,NA
+4016975,"Hind brain laceration with open intracranial wound, with no loss of consciousness",Condition,SNOMED,Disorder,S,209902003,2002-01-31,2099-12-31,NA
+4017105,Subdural hemorrhage following open wound of head,Condition,SNOMED,Disorder,S,209956005,2002-01-31,2099-12-31,NA
+4033975,Abrasion of neck of tooth,Condition,SNOMED,Disorder,S,109585008,2002-01-31,2099-12-31,NA
+4034214,Open wound of ear,Condition,SNOMED,Disorder,S,11386000,2002-01-31,2099-12-31,NA
+4038534,Laceration of brain with open intracranial wound,Condition,SNOMED,Disorder,S,22819008,2002-01-31,2099-12-31,NA
+4049948,Open wound of eustachian tube,Condition,SNOMED,Disorder,S,210309004,2002-01-31,2099-12-31,NA
+4049953,Open wound of nasal cavity,Condition,SNOMED,Disorder,S,210328006,2002-01-31,2099-12-31,NA
+4049954,Open wound of nasal sinus,Condition,SNOMED,Disorder,S,210329003,2002-01-31,2099-12-31,NA
+4049957,Open wound of face,Condition,SNOMED,Disorder,S,210339009,2002-01-31,2099-12-31,NA
+4049959,Open wound of eyebrow,Condition,SNOMED,Disorder,S,210343008,2002-01-31,2099-12-31,NA
+4049960,Open wound of lip,Condition,SNOMED,Disorder,S,210344002,2002-01-31,2099-12-31,NA
+4050078,Open wound of tongue,Condition,SNOMED,Disorder,S,210363001,2002-01-31,2099-12-31,NA
+4050695,Infected abrasion of skin of face,Condition,SNOMED,Disorder,S,210992005,2002-01-31,2099-12-31,NA
+4050997,Open wound of external ear,Condition,SNOMED,Disorder,S,210294003,2002-01-31,2099-12-31,NA
+4051000,Open wound of ear ossicle,Condition,SNOMED,Disorder,S,210308007,2002-01-31,2099-12-31,NA
+4051001,Open wound of cochlea,Condition,SNOMED,Disorder,S,210310009,2002-01-31,2099-12-31,NA
+4051004,Open wound of scalp,Condition,SNOMED,Disorder,S,210323002,2002-01-31,2099-12-31,NA
+4051005,Open wound of nose,Condition,SNOMED,Disorder,S,210325009,2002-01-31,2099-12-31,NA
+4051120,Open wound of forehead,Condition,SNOMED,Disorder,S,210342003,2002-01-31,2099-12-31,NA
+4051121,Open wound of jaw,Condition,SNOMED,Disorder,S,210345001,2002-01-31,2099-12-31,NA
+4051124,Open wound of buccal mucosa,Condition,SNOMED,Disorder,S,210360003,2002-01-31,2099-12-31,NA
+4051125,Open wound of gum,Condition,SNOMED,Disorder,S,210361004,2002-01-31,2099-12-31,NA
+4051126,Multiple open mouth wounds,Condition,SNOMED,Disorder,S,210368005,2002-01-31,2099-12-31,NA
+4052229,Infected abrasion of scalp,Condition,SNOMED,Disorder,S,210994006,2002-01-31,2099-12-31,NA
+4052815,Ocular laceration with intraocular prolapse,Condition,SNOMED,Disorder,S,210285009,2002-01-31,2099-12-31,NA
+4052818,Traumatic amputation of ear,Condition,SNOMED,Disorder,S,210305005,2002-01-31,2099-12-31,NA
+4052824,Open wound of cheek,Condition,SNOMED,Disorder,S,210341005,2002-01-31,2099-12-31,NA
+4052826,Open wound in mouth,Condition,SNOMED,Disorder,S,210358000,2002-01-31,2099-12-31,NA
+4052970,Open wounds involving head with neck,Condition,SNOMED,Disorder,S,210493006,2002-01-31,2099-12-31,NA
+4054460,Open wound of auditory canal,Condition,SNOMED,Disorder,S,210297005,2002-01-31,2099-12-31,NA
+4054463,Open wound of nasal septum,Condition,SNOMED,Disorder,S,210327001,2002-01-31,2099-12-31,NA
+4054534,Multiple open wounds of face,Condition,SNOMED,Disorder,S,210347009,2002-01-31,2099-12-31,NA
+4054536,Open wound of mouth floor,Condition,SNOMED,Disorder,S,210364007,2002-01-31,2099-12-31,NA
+4054537,Open wound of palate,Condition,SNOMED,Disorder,S,210365008,2002-01-31,2099-12-31,NA
+4055699,Abrasion of face,Condition,SNOMED,Disorder,S,210987008,2002-01-31,2099-12-31,NA
+4055700,Abrasion of scalp,Condition,SNOMED,Disorder,S,210989006,2002-01-31,2099-12-31,NA
+4063270,Superficial laceration of cornea,Condition,SNOMED,Disorder,S,21549001,2002-01-31,2099-12-31,NA
+4071588,Tentorial tear due to birth trauma,Condition,SNOMED,Disorder,S,206192007,2002-01-31,2099-12-31,NA
+4071592,Abrasion of scalp due to birth trauma,Condition,SNOMED,Disorder,S,206203003,2002-01-31,2099-12-31,NA
+4079854,Tentorial laceration - acute syndrome,Condition,SNOMED,Disorder,S,276590002,2002-01-31,2099-12-31,NA
+4086206,Scratch of eye region,Condition,SNOMED,Disorder,S,283069000,2002-01-31,2099-12-31,NA
+4094831,Laceration of buccal mucosa,Condition,SNOMED,Disorder,S,262627001,2002-01-31,2099-12-31,NA
+4094832,Laceration of intraoral surface of lip,Condition,SNOMED,Disorder,S,262628006,2002-01-31,2099-12-31,NA
+4094846,Cerebellar laceration and contusion,Condition,SNOMED,Disorder,S,262687004,2002-01-31,2099-12-31,NA
+4095254,Superficial laceration of head,Condition,SNOMED,Disorder,S,262544007,2002-01-31,2099-12-31,NA
+4095273,Laceration of oral alveolar mucosa,Condition,SNOMED,Disorder,S,262629003,2002-01-31,2099-12-31,NA
+4095274,Abrasion of palate,Condition,SNOMED,Disorder,S,262631007,2002-01-31,2099-12-31,NA
+4095276,Penetrating injury of gingivae,Condition,SNOMED,Disorder,S,262658000,2002-01-31,2099-12-31,NA
+4095545,Laceration of lacrimal passage,Condition,SNOMED,Disorder,S,262752008,2002-01-31,2099-12-31,NA
+4095548,Laceration of salivary gland,Condition,SNOMED,Disorder,S,262769005,2002-01-31,2099-12-31,NA
+4095872,Abrasion of intraoral surface of lip,Condition,SNOMED,Disorder,S,262632000,2002-01-31,2099-12-31,NA
+4095873,Abrasion of oral alveolar mucosa,Condition,SNOMED,Disorder,S,262633005,2002-01-31,2099-12-31,NA
+4095879,Penetrating injury of tongue,Condition,SNOMED,Disorder,S,262659008,2002-01-31,2099-12-31,NA
+4095880,Penetrating injury of buccal mucosa,Condition,SNOMED,Disorder,S,262661004,2002-01-31,2099-12-31,NA
+4095881,Penetrating injury of intraoral surface of lip,Condition,SNOMED,Disorder,S,262662006,2002-01-31,2099-12-31,NA
+4095882,Penetrating injury of oral alveolar mucosa,Condition,SNOMED,Disorder,S,262663001,2002-01-31,2099-12-31,NA
+4095883,Laceration of oropharynx,Condition,SNOMED,Disorder,S,262665008,2002-01-31,2099-12-31,NA
+4095884,Penetrating injury of oropharynx,Condition,SNOMED,Disorder,S,262669002,2002-01-31,2099-12-31,NA
+4095993,Laceration of cerebrum,Condition,SNOMED,Disorder,S,262691009,2002-01-31,2099-12-31,NA
+4096496,Penetrating injury of oral cavity,Condition,SNOMED,Disorder,S,262656001,2002-01-31,2099-12-31,NA
+4096497,Penetrating injury of palate,Condition,SNOMED,Disorder,S,262657005,2002-01-31,2099-12-31,NA
+4096608,Penetrating injury of floor of mouth,Condition,SNOMED,Disorder,S,262660003,2002-01-31,2099-12-31,NA
+4096615,Cortex laceration and contusion,Condition,SNOMED,Disorder,S,262688009,2002-01-31,2099-12-31,NA
+4096635,Open wound of eyelid,Condition,SNOMED,Disorder,S,262749000,2002-01-31,2099-12-31,NA
+4096636,Periocular open wound,Condition,SNOMED,Disorder,S,262750000,2002-01-31,2099-12-31,NA
+4106357,Abrasion of head,Condition,SNOMED,Disorder,S,283049005,2002-01-31,2099-12-31,NA
+4106358,Abrasion of skin of ear,Condition,SNOMED,Disorder,S,283051009,2002-01-31,2099-12-31,NA
+4106359,Abrasion of cheek,Condition,SNOMED,Disorder,S,283053007,2002-01-31,2099-12-31,NA
+4106681,Abrasion of skin of nose,Condition,SNOMED,Disorder,S,283052002,2002-01-31,2099-12-31,NA
+4106865,Cut of head,Condition,SNOMED,Disorder,S,283398009,2002-01-31,2099-12-31,NA
+4106866,Cut of nose,Condition,SNOMED,Disorder,S,283404004,2002-01-31,2099-12-31,NA
+4106867,Cut of cheek,Condition,SNOMED,Disorder,S,283405003,2002-01-31,2099-12-31,NA
+4107768,Cut of face,Condition,SNOMED,Disorder,S,283400008,2002-01-31,2099-12-31,NA
+4107769,Cut of forehead,Condition,SNOMED,Disorder,S,283401007,2002-01-31,2099-12-31,NA
+4108644,Abrasion of eye region,Condition,SNOMED,Disorder,S,283050005,2002-01-31,2099-12-31,NA
+4108650,Scratch of mouth,Condition,SNOMED,Disorder,S,283073002,2002-01-31,2099-12-31,NA
+4112921,Superficial laceration of face,Condition,SNOMED,Disorder,S,284476005,2002-01-31,2099-12-31,NA
+4113346,Laceration of palate,Condition,SNOMED,Disorder,S,286620007,2002-01-31,2099-12-31,NA
+4113347,Laceration of gingivae,Condition,SNOMED,Disorder,S,286622004,2002-01-31,2099-12-31,NA
+4113391,Excoriation of pinna,Condition,SNOMED,Disorder,S,300100001,2002-01-31,2099-12-31,NA
+4116705,Open wound of skin of nose,Condition,SNOMED,Disorder,S,285670000,2002-01-31,2099-12-31,NA
+4117360,Laceration of tongue,Condition,SNOMED,Disorder,S,286623009,2002-01-31,2099-12-31,NA
+4132548,Brain stem laceration,Condition,SNOMED,Disorder,S,127307002,2002-01-31,2099-12-31,NA
+4133019,Cortex laceration,Condition,SNOMED,Disorder,S,127303003,2002-01-31,2099-12-31,NA
+4133716,Cerebellar laceration,Condition,SNOMED,Disorder,S,127306006,2002-01-31,2099-12-31,NA
+4134877,Laceration of nasopharynx,Condition,SNOMED,Disorder,S,398076005,2003-07-31,2099-12-31,NA
+4147007,Open dislocation atlanto-occipital joint,Condition,SNOMED,Disorder,S,269122007,2002-01-31,2099-12-31,NA
+4147014,Open wound of eardrum,Condition,SNOMED,Disorder,S,269165008,2002-01-31,2099-12-31,NA
+4151095,"Open wound of head, neck and trunk",Condition,SNOMED,Disorder,S,269163001,2002-01-31,2099-12-31,NA
+4151540,Stab wound of head and neck,Condition,SNOMED,Disorder,S,283446008,2002-01-31,2099-12-31,NA
+4151541,Stab wound of scalp,Condition,SNOMED,Disorder,S,283448009,2002-01-31,2099-12-31,NA
+4151542,Stab wound of face,Condition,SNOMED,Disorder,S,283449001,2002-01-31,2099-12-31,NA
+4151663,Stab wound of forehead,Condition,SNOMED,Disorder,S,283450001,2002-01-31,2099-12-31,NA
+4151664,Stab wound of eye region,Condition,SNOMED,Disorder,S,283451002,2002-01-31,2099-12-31,NA
+4151665,Stab wound of nose,Condition,SNOMED,Disorder,S,283453004,2002-01-31,2099-12-31,NA
+4151666,Stab wound of lip,Condition,SNOMED,Disorder,S,283456007,2002-01-31,2099-12-31,NA
+4151674,Puncture wound of ear region,Condition,SNOMED,Disorder,S,283504002,2002-01-31,2099-12-31,NA
+4151689,Pellet wound of face,Condition,SNOMED,Disorder,S,283549004,2002-01-31,2099-12-31,NA
+4151690,Pellet wound of lip,Condition,SNOMED,Disorder,S,283556005,2002-01-31,2099-12-31,NA
+4151703,Needle stick injury of face,Condition,SNOMED,Disorder,S,283600002,2002-01-31,2099-12-31,NA
+4151820,Needle stick injury of forehead,Condition,SNOMED,Disorder,S,283601003,2002-01-31,2099-12-31,NA
+4151821,Needle stick injury of eye region,Condition,SNOMED,Disorder,S,283602005,2002-01-31,2099-12-31,NA
+4151834,Nail wound of head,Condition,SNOMED,Disorder,S,283652001,2002-01-31,2099-12-31,NA
+4152066,Eyelid laceration with lid margin involvement,Condition,SNOMED,Disorder,S,314536008,2002-01-31,2099-12-31,NA
+4152402,Eyelid laceration without lid margin involvement,Condition,SNOMED,Disorder,S,314535007,2002-01-31,2099-12-31,NA
+4152931,Laceration of ear region,Condition,SNOMED,Disorder,S,283361008,2002-01-31,2099-12-31,NA
+4152961,Laceration of eye region,Condition,SNOMED,Disorder,S,283360009,2002-01-31,2099-12-31,NA
+4153070,Cut of scalp,Condition,SNOMED,Disorder,S,283399001,2002-01-31,2099-12-31,NA
+4153071,Cut of eye region,Condition,SNOMED,Disorder,S,283402000,2002-01-31,2099-12-31,NA
+4153072,Cut of ear region,Condition,SNOMED,Disorder,S,283403005,2002-01-31,2099-12-31,NA
+4153083,Stab wound of head,Condition,SNOMED,Disorder,S,283447004,2002-01-31,2099-12-31,NA
+4153084,Stab wound of ear region,Condition,SNOMED,Disorder,S,283452009,2002-01-31,2099-12-31,NA
+4153237,Stab wound of mouth,Condition,SNOMED,Disorder,S,283455006,2002-01-31,2099-12-31,NA
+4153249,Puncture wound of head and neck,Condition,SNOMED,Disorder,S,283498005,2002-01-31,2099-12-31,NA
+4153251,Puncture wound of face,Condition,SNOMED,Disorder,S,283501005,2002-01-31,2099-12-31,NA
+4153252,Puncture wound of forehead,Condition,SNOMED,Disorder,S,283502003,2002-01-31,2099-12-31,NA
+4153253,Puncture wound of nose,Condition,SNOMED,Disorder,S,283505001,2002-01-31,2099-12-31,NA
+4153254,Puncture wound of cheek,Condition,SNOMED,Disorder,S,283506000,2002-01-31,2099-12-31,NA
+4153265,Pellet wound of scalp,Condition,SNOMED,Disorder,S,283548007,2002-01-31,2099-12-31,NA
+4153267,Pellet wound of mouth,Condition,SNOMED,Disorder,S,283555009,2002-01-31,2099-12-31,NA
+4153371,Infected corneal abrasion,Condition,SNOMED,Disorder,S,371124005,2002-07-31,2099-12-31,NA
+4153392,Needle stick injury of head,Condition,SNOMED,Disorder,S,283598008,2002-01-31,2099-12-31,NA
+4153393,Needle stick injury of cheek,Condition,SNOMED,Disorder,S,283605007,2002-01-31,2099-12-31,NA
+4153406,Nail wound of head and neck,Condition,SNOMED,Disorder,S,283651008,2002-01-31,2099-12-31,NA
+4153689,Puncture wound of scalp,Condition,SNOMED,Disorder,S,283500006,2002-01-31,2099-12-31,NA
+4153690,Puncture wound of eye region,Condition,SNOMED,Disorder,S,283503008,2002-01-31,2099-12-31,NA
+4153691,Puncture wound of mouth,Condition,SNOMED,Disorder,S,283507009,2002-01-31,2099-12-31,NA
+4153698,Pellet wound of head,Condition,SNOMED,Disorder,S,283547002,2002-01-31,2099-12-31,NA
+4153699,Pellet wound of forehead,Condition,SNOMED,Disorder,S,283550004,2002-01-31,2099-12-31,NA
+4153711,Needle stick of scalp,Condition,SNOMED,Disorder,S,283599000,2002-01-31,2099-12-31,NA
+4153712,Needle stick injury of ear region,Condition,SNOMED,Disorder,S,283603000,2002-01-31,2099-12-31,NA
+4153713,Needle stick injury of mouth,Condition,SNOMED,Disorder,S,283606008,2002-01-31,2099-12-31,NA
+4154438,Degloving injury of head and neck,Condition,SNOMED,Disorder,S,283841009,2002-01-31,2099-12-31,NA
+4154439,Degloving injury of head,Condition,SNOMED,Disorder,S,283842002,2002-01-31,2099-12-31,NA
+4155029,Laceration of oral cavity,Condition,SNOMED,Disorder,S,283355005,2002-01-31,2099-12-31,NA
+4155030,Laceration of head and neck,Condition,SNOMED,Disorder,S,283358007,2002-01-31,2099-12-31,NA
+4155031,Laceration of forehead,Condition,SNOMED,Disorder,S,283359004,2002-01-31,2099-12-31,NA
+4155032,Laceration of cheek,Condition,SNOMED,Disorder,S,283362001,2002-01-31,2099-12-31,NA
+4155033,Laceration of lip,Condition,SNOMED,Disorder,S,283363006,2002-01-31,2099-12-31,NA
+4155045,Cut of head and neck,Condition,SNOMED,Disorder,S,283397004,2002-01-31,2099-12-31,NA
+4155047,Cut of mouth,Condition,SNOMED,Disorder,S,283406002,2002-01-31,2099-12-31,NA
+4155059,Stab wound of cheek,Condition,SNOMED,Disorder,S,283454005,2002-01-31,2099-12-31,NA
+4155186,Puncture wound of head,Condition,SNOMED,Disorder,S,283499002,2002-01-31,2099-12-31,NA
+4155199,Pellet wound of head and neck,Condition,SNOMED,Disorder,S,283546006,2002-01-31,2099-12-31,NA
+4155200,Pellet wound of eye region,Condition,SNOMED,Disorder,S,283551000,2002-01-31,2099-12-31,NA
+4155201,Pellet wound of ear region,Condition,SNOMED,Disorder,S,283552007,2002-01-31,2099-12-31,NA
+4155202,Pellet wound of nose,Condition,SNOMED,Disorder,S,283553002,2002-01-31,2099-12-31,NA
+4155203,Pellet wound of cheek,Condition,SNOMED,Disorder,S,283554008,2002-01-31,2099-12-31,NA
+4155322,Needle stick injury of nose,Condition,SNOMED,Disorder,S,283604006,2002-01-31,2099-12-31,NA
+4156265,Facial laceration,Condition,SNOMED,Disorder,S,370247008,2002-07-31,2099-12-31,NA
+4159658,Contact lens related corneal abrasion,Condition,SNOMED,Disorder,S,371066008,2002-07-31,2099-12-31,NA
+4159754,Infected conjunctival abrasion,Condition,SNOMED,Disorder,S,371123004,2002-07-31,2099-12-31,NA
+4162441,Laceration of nose,Condition,SNOMED,Disorder,S,373602003,2002-07-31,2099-12-31,NA
+4166564,Conjunctival laceration,Condition,SNOMED,Disorder,S,417750006,2005-07-31,2099-12-31,NA
+4166902,Scalp laceration,Condition,SNOMED,Disorder,S,274166008,2002-01-31,2099-12-31,NA
+4167919,Falx laceration,Condition,SNOMED,Disorder,S,275362006,2002-01-31,2099-12-31,NA
+4170446,Tentorial laceration,Condition,SNOMED,Disorder,S,275361004,2002-01-31,2099-12-31,NA
+4171107,Tentorial laceration - subacute syndrome,Condition,SNOMED,Disorder,S,276591003,2002-01-31,2099-12-31,NA
+4171118,Neonatal abrasion of skin of scalp,Condition,SNOMED,Disorder,S,276623000,2002-01-31,2099-12-31,NA
+4173000,Perinatal intracranial laceration,Condition,SNOMED,Disorder,S,276588003,2002-01-31,2099-12-31,NA
+4173001,Perinatal tentorial laceration,Condition,SNOMED,Disorder,S,276589006,2002-01-31,2099-12-31,NA
+4173198,Perinatal falx laceration,Condition,SNOMED,Disorder,S,276593000,2002-01-31,2099-12-31,NA
+4173808,Laceration of floor of mouth,Condition,SNOMED,Disorder,S,275456000,2002-01-31,2099-12-31,NA
+4179537,Open undisplaced fracture of nasal bone,Condition,SNOMED,Disorder,S,427773004,2008-01-31,2099-12-31,NA
+4179823,Laceration of head,Condition,SNOMED,Disorder,S,428088000,2008-01-31,2099-12-31,NA
+4189670,"Open, displaced fracture of nasal bone",Condition,SNOMED,Disorder,S,414944000,2005-01-31,2099-12-31,NA
+4193520,Laceration of brain,Condition,SNOMED,Disorder,S,78914008,2002-01-31,2099-12-31,NA
+4196704,Open wound of chin,Condition,SNOMED,Disorder,S,313261004,2002-01-31,2099-12-31,NA
+4198022,Open wound of face with foreign body,Condition,SNOMED,Disorder,S,431875001,2008-07-31,2099-12-31,NA
+4201028,Traumatic extradural hematoma with open intracranial wound,Condition,SNOMED,Disorder,S,315049003,2002-01-31,2099-12-31,NA
+4201635,Traumatic subdural hematoma with open intracranial wound,Condition,SNOMED,Disorder,S,315047001,2002-01-31,2099-12-31,NA
+4208505,Traumatic cerebral edema with open intracranial wound,Condition,SNOMED,Disorder,S,311826007,2002-01-31,2099-12-31,NA
+4209558,Open fractures involving head with neck,Condition,SNOMED,Disorder,S,311848001,2002-01-31,2099-12-31,NA
+4210440,Intracranial injury with prolonged coma with open wound,Condition,SNOMED,Disorder,S,311829000,2002-01-31,2099-12-31,NA
+4212185,Corneoscleral laceration,Condition,SNOMED,Disorder,S,416931008,2005-07-31,2099-12-31,NA
+4218018,Penetrating injury of lens,Condition,SNOMED,Disorder,S,416786002,2005-07-31,2099-12-31,NA
+4221998,Open fracture of zygoma,Condition,SNOMED,Disorder,S,84111004,2002-01-31,2099-12-31,NA
+4222768,Contusion of brain with open intracranial wound,Condition,SNOMED,Disorder,S,84170006,2002-01-31,2099-12-31,NA
+4237920,Open fracture of zygomatic arch,Condition,SNOMED,Disorder,S,5708009,2002-01-31,2099-12-31,NA
+4243161,Open wound of head,Condition,SNOMED,Disorder,S,38354005,2002-01-31,2099-12-31,NA
+4312493,Corneal abrasion,Condition,SNOMED,Disorder,S,85848002,2002-01-31,2099-12-31,NA
+4317978,Corneal laceration,Condition,SNOMED,Disorder,S,95725002,2002-01-31,2099-12-31,NA
+4318707,Scleral laceration,Condition,SNOMED,Disorder,S,95799000,2002-01-31,2099-12-31,NA
+4333983,Full thickness eyelid laceration,Condition,SNOMED,Disorder,S,231817002,2002-01-31,2099-12-31,NA
+4334126,Tears of iris stroma,Condition,SNOMED,Disorder,S,231952009,2002-01-31,2099-12-31,NA
+4334732,Laceration of lacrimal canaliculus,Condition,SNOMED,Disorder,S,231845008,2002-01-31,2099-12-31,NA
+4334734,Penetrating wound of orbit,Condition,SNOMED,Disorder,S,231851003,2002-01-31,2099-12-31,NA
+4334757,Tear of iris root,Condition,SNOMED,Disorder,S,231953004,2002-01-31,2099-12-31,NA
+4338754,Abrasion of skin of eyelid,Condition,SNOMED,Disorder,S,231815005,2002-01-31,2099-12-31,NA
+4338755,Laceration of eyelid,Condition,SNOMED,Disorder,S,231816006,2002-01-31,2099-12-31,NA
+4338756,Full thickness eyelid laceration with lacrimal passage damage,Condition,SNOMED,Disorder,S,231818007,2002-01-31,2099-12-31,NA
+36686128,Open wound of nose due to dog bite,Condition,SNOMED,Disorder,S,10872731000119103,2018-09-01,2099-12-31,NA
+36686131,Open wound of right ear due to dog bite,Condition,SNOMED,Disorder,S,10873411000119105,2018-09-01,2099-12-31,NA
+36686132,Open wound of left ear due to dog bite,Condition,SNOMED,Disorder,S,10873451000119106,2018-09-01,2099-12-31,NA
+36686134,Laceration of right eyelid,Condition,SNOMED,Disorder,S,10874791000119106,2019-01-31,2099-12-31,NA
+36686135,Laceration of left eyelid,Condition,SNOMED,Disorder,S,10874831000119100,2019-01-31,2099-12-31,NA
+36686138,Open wound of right eyelid due to dog bite,Condition,SNOMED,Disorder,S,10875551000119108,2018-09-01,2099-12-31,NA
+36686139,Open wound of left eyelid due to dog bite,Condition,SNOMED,Disorder,S,10875631000119103,2018-09-01,2099-12-31,NA
+36686153,Open wound of lip due to dog bite,Condition,SNOMED,Disorder,S,10898371000119105,2018-09-01,2099-12-31,NA
+36686154,Open wound of tongue due to bite,Condition,SNOMED,Disorder,S,10899011000119105,2018-09-01,2099-12-31,NA
+36686156,Laceration of right cornea,Condition,SNOMED,Disorder,S,10900351000119106,2019-01-31,2099-12-31,NA
+36686157,Laceration of left cornea,Condition,SNOMED,Disorder,S,10900391000119101,2019-01-31,2099-12-31,NA
+36686158,Laceration of globe of right eye,Condition,SNOMED,Disorder,S,10900431000119106,2019-01-31,2099-12-31,NA
+36686159,Laceration of globe of left eye,Condition,SNOMED,Disorder,S,10900471000119109,2019-01-31,2099-12-31,NA
+36686172,Open wound of face due to human bite,Condition,SNOMED,Disorder,S,10905551000119107,2018-09-01,2099-12-31,NA
+36686173,Open wound of face due to dog bite,Condition,SNOMED,Disorder,S,10905711000119100,2019-01-31,2099-12-31,NA
+36686174,Open wound of chin due to dog bite,Condition,SNOMED,Disorder,S,10905751000119104,2018-09-01,2099-12-31,NA
+36686175,Open wound of jaw due to dog bite,Condition,SNOMED,Disorder,S,10905791000119109,2018-09-01,2099-12-31,NA
+36686176,Open wound of face due to animal bite,Condition,SNOMED,Disorder,S,10905871000119100,2018-09-01,2099-12-31,NA
+36686177,Open wound of face due to cat bite,Condition,SNOMED,Disorder,S,10905991000119106,2018-09-01,2099-12-31,NA
+36686178,Laceration of jaw,Condition,SNOMED,Disorder,S,10906231000119109,2018-09-01,2099-12-31,NA
+36686179,Open wound of head due to dog bite,Condition,SNOMED,Disorder,S,10906311000119107,2018-09-01,2099-12-31,NA
+36686180,Open wound of head due to human bite,Condition,SNOMED,Disorder,S,10906431000119108,2018-09-01,2099-12-31,NA
+36686181,Open wound of face due to bite,Condition,SNOMED,Disorder,S,10907161000119109,2018-09-01,2099-12-31,NA
+36686182,Open wound of jaw due to bite,Condition,SNOMED,Disorder,S,10907281000119107,2018-09-01,2099-12-31,NA
+36687217,Laceration of right eyebrow,Condition,SNOMED,Disorder,S,16526801000119108,2019-01-31,2099-12-31,NA
+36687218,Laceration of left eyebrow,Condition,SNOMED,Disorder,S,16527081000119105,2019-01-31,2099-12-31,NA
+36712760,Laceration of chin,Condition,SNOMED,Disorder,S,10906271000119107,2017-01-31,2099-12-31,NA
+36715594,Open bite of head,Condition,SNOMED,Disorder,S,721316001,2017-01-31,2099-12-31,NA
+36715610,Complete traumatic amputation of external ear,Condition,SNOMED,Disorder,S,721334002,2017-01-31,2099-12-31,NA
+36715611,Traumatic partial amputation of external ear,Condition,SNOMED,Disorder,S,721335001,2017-01-31,2099-12-31,NA
+36715612,Traumatic partial amputation of nose,Condition,SNOMED,Disorder,S,721337009,2017-01-31,2099-12-31,NA
+36715613,Laceration of muscle of head,Condition,SNOMED,Disorder,S,721338004,2017-01-31,2099-12-31,NA
+36715614,Laceration of tendon of head,Condition,SNOMED,Disorder,S,721339007,2017-01-31,2099-12-31,NA
+36716563,Laceration with foreign body of head,Condition,SNOMED,Disorder,S,722609007,2017-01-31,2099-12-31,NA
+36716565,Multiple open wounds of head,Condition,SNOMED,Disorder,S,722612005,2017-01-31,2099-12-31,NA
+36716566,Penetrating wound of eyeball without foreign body,Condition,SNOMED,Disorder,S,722613000,2017-01-31,2099-12-31,NA
+36716568,Focal laceration of cerebrum,Condition,SNOMED,Disorder,S,722616008,2017-01-31,2099-12-31,NA
+36716575,Focal laceration of brainstem,Condition,SNOMED,Disorder,S,722625002,2017-01-31,2099-12-31,NA
+36716584,Traumatic amputation of part of head,Condition,SNOMED,Disorder,S,722635008,2017-01-31,2099-12-31,NA
+36716625,Puncture wound of head with foreign body,Condition,SNOMED,Disorder,S,722701000,2017-01-31,2099-12-31,NA
+36716626,Focal laceration of cerebellum,Condition,SNOMED,Disorder,S,722702007,2017-01-31,2099-12-31,NA
+36716628,Traumatic amputation of nose,Condition,SNOMED,Disorder,S,722704008,2017-01-31,2099-12-31,NA
+36716735,Intracranial laceration due to birth trauma,Condition,SNOMED,Disorder,S,722905003,2017-01-31,2099-12-31,NA
+36716809,Complex wound of head,Condition,SNOMED,Disorder,S,722993001,2017-01-31,2099-12-31,NA
+36716908,Intracranial hemorrhage co-occurrent and due to complex wound of head,Condition,SNOMED,Disorder,S,723141009,2017-01-31,2099-12-31,NA
+36716909,Complex through and through perforation wound of head,Condition,SNOMED,Disorder,S,723142002,2017-01-31,2099-12-31,NA
+36716910,Complex wound of head with avulsive loss of part of skull and cranial contents,Condition,SNOMED,Disorder,S,723143007,2017-01-31,2099-12-31,NA
+36717222,Puncture wound without foreign body of head,Condition,SNOMED,Disorder,S,722610002,2017-01-31,2099-12-31,NA
+36717252,Complex wound of head with retained external material,Condition,SNOMED,Disorder,S,723140005,2017-01-31,2099-12-31,NA
+36717464,Complete traumatic amputation of nose,Condition,SNOMED,Disorder,S,721336000,2017-01-31,2099-12-31,NA
+36717577,Laceration of head without foreign body,Condition,SNOMED,Disorder,S,722662000,2017-01-31,2099-12-31,NA
+37108682,Abrasion of left cornea,Condition,SNOMED,Disorder,S,10900231000119107,2017-07-31,2099-12-31,NA
+37160048,Open wound of scalp due to dog bite,Condition,SNOMED,Disorder,S,10861771000119101,2021-09-30,2099-12-31,NA
+37160051,Laceration of nasal septum,Condition,SNOMED,Disorder,S,10872691000119105,2022-09-30,2099-12-31,NA
+37160065,Penetrating wound of right orbit,Condition,SNOMED,Disorder,S,10900671000119107,2023-02-28,2099-12-31,NA
+37160066,Penetrating wound of left orbit,Condition,SNOMED,Disorder,S,10900711000119106,2023-02-28,2099-12-31,NA
+37160112,Penetrating wound of right eye proper,Condition,SNOMED,Disorder,S,10976171000119106,2021-09-30,2099-12-31,NA
+37160113,Penetrating wound of left eye proper,Condition,SNOMED,Disorder,S,10976211000119108,2021-09-30,2099-12-31,NA
+37161927,Traumatic amputation of right ear,Condition,SNOMED,Disorder,S,11843791000119102,2023-03-31,2099-12-31,NA
+37161928,Traumatic amputation of left ear,Condition,SNOMED,Disorder,S,11843831000119108,2023-03-31,2099-12-31,NA
+37161929,Traumatic partial amputation of right ear,Condition,SNOMED,Disorder,S,11843871000119106,2023-03-31,2099-12-31,NA
+37161930,Traumatic partial amputation of left ear,Condition,SNOMED,Disorder,S,11843911000119109,2023-03-31,2099-12-31,NA
+37161957,Infected abrasion of cheek,Condition,SNOMED,Disorder,S,11848021000119106,2022-09-30,2099-12-31,NA
+37167493,Open fracture of superior wall of orbit,Condition,SNOMED,Disorder,S,1268298007,2023-03-31,2099-12-31,NA
+37167494,Open fracture of lateral wall of orbit,Condition,SNOMED,Disorder,S,1268299004,2023-03-31,2099-12-31,NA
+37168233,Cut of skin of ear,Condition,SNOMED,Disorder,S,1279621008,2023-04-30,2099-12-31,NA
+37168251,Abrasion of ocular adnexa,Condition,SNOMED,Disorder,S,1279648009,2023-04-30,2099-12-31,NA
+37168259,Puncture wound of eyelid,Condition,SNOMED,Disorder,S,1279657003,2023-04-30,2099-12-31,NA
+37168260,Puncture wound of upper eyelid,Condition,SNOMED,Disorder,S,1279658008,2023-04-30,2099-12-31,NA
+37169621,Open fracture of left zygoma,Condition,SNOMED,Disorder,S,16561321000119107,2023-06-30,2099-12-31,NA
+37169622,Open fracture of right zygoma,Condition,SNOMED,Disorder,S,16561361000119102,2023-06-30,2099-12-31,NA
+37169623,Open traumatic bilateral jaw dislocation,Condition,SNOMED,Disorder,S,16561481000119103,2021-09-30,2099-12-31,NA
+37169671,Open fracture of ramus of right half of mandible,Condition,SNOMED,Disorder,S,16667231000119101,2023-06-30,2099-12-31,NA
+37169672,Open fracture of ramus of left half of mandible,Condition,SNOMED,Disorder,S,16667271000119103,2023-06-30,2099-12-31,NA
+37170537,Abrasion of skin of periorbital region of right eye,Condition,SNOMED,Disorder,S,38931000087101,2023-04-30,2099-12-31,NA
+37171412,Open fracture of right orbital roof,Condition,SNOMED,Disorder,S,348126401000119103,2023-03-31,2099-12-31,NA
+37171572,Abrasion of skin of periorbital region of left eye,Condition,SNOMED,Disorder,S,38921000087103,2023-04-30,2099-12-31,NA
+37171615,Abrasion of skin of left upper eyelid,Condition,SNOMED,Disorder,S,39791000087107,2023-04-30,2099-12-31,NA
+37171618,Abrasion of skin of right upper eyelid,Condition,SNOMED,Disorder,S,39811000087108,2023-04-30,2099-12-31,NA
+37171709,Puncture wound of left ear with foreign body,Condition,SNOMED,Disorder,S,41191000087106,2023-05-31,2099-12-31,NA
+37171710,Puncture wound of right ear with foreign body,Condition,SNOMED,Disorder,S,41201000087108,2023-05-31,2099-12-31,NA
+37171744,Puncture wound of left upper eyelid,Condition,SNOMED,Disorder,S,41661000087109,2023-04-30,2099-12-31,NA
+37171745,Puncture wound of right upper eyelid,Condition,SNOMED,Disorder,S,41671000087100,2023-04-30,2099-12-31,NA
+37171949,Abrasion of ocular adnexa of left eye,Condition,SNOMED,Disorder,S,43281000087100,2023-04-30,2099-12-31,NA
+37172053,Cut of skin of left ear,Condition,SNOMED,Disorder,S,44041000087102,2023-04-30,2099-12-31,NA
+37172055,Cut of skin of right ear,Condition,SNOMED,Disorder,S,44051000087104,2023-04-30,2099-12-31,NA
+37172086,Abrasion of ocular adnexa of right eye,Condition,SNOMED,Disorder,S,44221000087104,2023-04-30,2099-12-31,NA
+37172192,Open fracture of left lateral orbital wall,Condition,SNOMED,Disorder,S,455367991000119108,2023-03-31,2099-12-31,NA
+37172515,Open fracture of left orbital roof,Condition,SNOMED,Disorder,S,52503801000119101,2023-03-31,2099-12-31,NA
+37172778,Open fracture of right lateral orbital wall,Condition,SNOMED,Disorder,S,547853841000119107,2023-03-31,2099-12-31,NA
+37204134,Gunshot wound of head,Condition,SNOMED,Disorder,S,23051000175105,2019-03-01,2099-12-31,NA
+37209567,Open fracture of body of right half of mandible,Condition,SNOMED,Disorder,S,16666591000119101,2019-07-31,2099-12-31,NA
+37209568,Open fracture of body of left half of mandible,Condition,SNOMED,Disorder,S,16666831000119102,2019-07-31,2099-12-31,NA
+37209569,Open fracture of left half of mandible,Condition,SNOMED,Disorder,S,16667311000119103,2019-07-31,2099-12-31,NA
+37209570,Open fracture of right half of mandible,Condition,SNOMED,Disorder,S,16667351000119102,2019-07-31,2099-12-31,NA
+37309647,Open fracture of right orbit,Condition,SNOMED,Disorder,S,16665991000119101,2020-01-31,2099-12-31,NA
+37309648,Open blow-out fracture of left orbital floor,Condition,SNOMED,Disorder,S,16665751000119108,2020-01-31,2099-12-31,NA
+37309649,Open blow-out fracture of right orbital floor,Condition,SNOMED,Disorder,S,16665511000119101,2020-01-31,2099-12-31,NA
+37309650,Open fracture of left orbit,Condition,SNOMED,Disorder,S,16665471000119105,2020-01-31,2099-12-31,NA
+37309651,Open fracture of medial wall of left orbit,Condition,SNOMED,Disorder,S,16665431000119107,2020-01-31,2099-12-31,NA
+37309652,Open fracture of medial wall of right orbit,Condition,SNOMED,Disorder,S,16665391000119102,2020-01-31,2099-12-31,NA
+37309653,Open fracture of right maxilla,Condition,SNOMED,Disorder,S,16665351000119107,2020-01-31,2099-12-31,NA
+37309654,Open fracture of left maxilla,Condition,SNOMED,Disorder,S,16665311000119106,2020-01-31,2099-12-31,NA
+37309655,Open fracture of right zygomatic arch,Condition,SNOMED,Disorder,S,16665071000119101,2020-01-31,2099-12-31,NA
+37309656,Open fracture of left zygomatic arch,Condition,SNOMED,Disorder,S,16664831000119108,2020-01-31,2099-12-31,NA
+37309669,Open fracture of left orbital floor,Condition,SNOMED,Disorder,S,16674931000119109,2020-01-31,2099-12-31,NA
+37309670,Open fracture of right orbital floor,Condition,SNOMED,Disorder,S,16674691000119100,2020-01-31,2099-12-31,NA
+37309714,Open fracture of alveolar ridge of right maxilla,Condition,SNOMED,Disorder,S,15918341000119100,2020-01-31,2099-12-31,NA
+37309715,Open fracture of alveolar ridge of left maxilla,Condition,SNOMED,Disorder,S,15918301000119102,2020-01-31,2099-12-31,NA
+37310204,Open wound of mouth due to bite,Condition,SNOMED,Disorder,S,10899131000119104,2020-01-31,2099-12-31,NA
+37310205,Open wound of left cheek due to dog bite,Condition,SNOMED,Disorder,S,10898291000119101,2020-01-31,2099-12-31,NA
+37310206,Open wound of right cheek due to dog bite,Condition,SNOMED,Disorder,S,10898251000119106,2020-01-31,2099-12-31,NA
+37310217,Open wound of left eyelid,Condition,SNOMED,Disorder,S,10874671000119101,2020-01-31,2099-12-31,NA
+37310218,Open wound of right eyelid,Condition,SNOMED,Disorder,S,10874631000119104,2020-01-31,2099-12-31,NA
+37310219,Open wound of left cheek,Condition,SNOMED,Disorder,S,10874391000119107,2020-01-31,2099-12-31,NA
+37310220,Open wound of right cheek,Condition,SNOMED,Disorder,S,10874351000119102,2020-01-31,2099-12-31,NA
+37310221,Laceration of left cheek,Condition,SNOMED,Disorder,S,10874311000119103,2020-01-31,2099-12-31,NA
+37310222,Laceration of right cheek,Condition,SNOMED,Disorder,S,10874271000119103,2020-01-31,2099-12-31,NA
+37310223,Open wound of left ear,Condition,SNOMED,Disorder,S,10873571000119103,2020-01-31,2099-12-31,NA
+37310224,Open wound of right ear,Condition,SNOMED,Disorder,S,10873531000119101,2020-01-31,2099-12-31,NA
+37311964,Focal brain laceration,Condition,SNOMED,Disorder,S,788934008,2020-01-31,2099-12-31,NA
+40481145,Open fracture of vault of skull,Condition,SNOMED,Disorder,S,444867009,2010-07-31,2099-12-31,NA
+40486903,Open depressed fracture of skull,Condition,SNOMED,Disorder,S,446195009,2011-01-31,2099-12-31,NA
+40488806,Laceration of skin of eyelid,Condition,SNOMED,Disorder,S,446638007,2011-01-31,2099-12-31,NA
+40489893,Laceration of lower lip,Condition,SNOMED,Disorder,S,446896007,2011-01-31,2099-12-31,NA
+40489894,Laceration of skin of periocular area,Condition,SNOMED,Disorder,S,446897003,2011-01-31,2099-12-31,NA
+40490826,Open fracture of base of skull,Condition,SNOMED,Disorder,S,447016004,2011-01-31,2099-12-31,NA
+40492342,Laceration of eyebrow,Condition,SNOMED,Disorder,S,447350003,2011-01-31,2099-12-31,NA
+42534927,Abrasion of right cornea,Condition,SNOMED,Disorder,S,10900191000119103,2018-01-31,2099-12-31,NA
+42536701,Bilateral laceration of eyes co-occurrent with prolapse of intraocular tissue,Condition,SNOMED,Disorder,S,735652006,2018-01-31,2099-12-31,NA
+42536703,Bilateral laceration of eyes co-occurrent with loss of intraocular tissue,Condition,SNOMED,Disorder,S,735654007,2018-01-31,2099-12-31,NA
+42536706,Penetrating injury of both eyeballs,Condition,SNOMED,Disorder,S,735657000,2018-01-31,2099-12-31,NA
+42538623,Prolapse of left eye and laceration,Condition,SNOMED,Disorder,S,762366009,2018-01-31,2099-12-31,NA
+42538624,Prolapse of right eye and laceration,Condition,SNOMED,Disorder,S,762367000,2018-01-31,2099-12-31,NA
+42538627,Loss of tissue of left eye and laceration,Condition,SNOMED,Disorder,S,762370001,2018-01-31,2099-12-31,NA
+42538628,Loss of tissue of right eye and laceration,Condition,SNOMED,Disorder,S,762371002,2018-01-31,2099-12-31,NA
+42538801,Traumatic amputation of lip,Condition,SNOMED,Disorder,S,762608003,2018-01-31,2099-12-31,NA
+42599363,Laceration of third eyelid,Condition,SNOMED Veterinary,Clinical Finding,S,351041000009104,2014-01-31,2099-12-31,NA
+42599680,Laceration of palatal mucosa,Condition,SNOMED Veterinary,Clinical Finding,S,358241000009100,2017-03-01,2099-12-31,NA
+42599810,Chewing lesion,Condition,SNOMED Veterinary,Clinical Finding,S,359551000009107,2017-04-03,2099-12-31,NA
+42599811,Chewing lesion of buccal mucosa,Condition,SNOMED Veterinary,Clinical Finding,S,359561000009105,2017-04-03,2099-12-31,NA
+42599812,Chewing lesion of labial mucosa,Condition,SNOMED Veterinary,Clinical Finding,S,359571000009101,2017-04-03,2099-12-31,NA
+42599813,Chewing lesion of tongue,Condition,SNOMED Veterinary,Clinical Finding,S,359581000009104,2017-04-03,2099-12-31,NA
+43531686,Conjunctival abrasion,Condition,SNOMED,Disorder,S,609362004,2013-07-31,2099-12-31,NA
+44784382,Abrasion of tooth extending into dentine,Condition,SNOMED,Disorder,S,698518004,2014-01-31,2099-12-31,NA
+44784386,Abrasion of tooth extending into pulp,Condition,SNOMED,Disorder,S,698522009,2014-01-31,2099-12-31,NA
+44784387,Abrasion of tooth limited to enamel,Condition,SNOMED,Disorder,S,698523004,2014-01-31,2099-12-31,NA
+44784388,Generalized abrasion of tooth,Condition,SNOMED,Disorder,S,698524005,2014-01-31,2099-12-31,NA
+44784389,Localized abrasion of tooth,Condition,SNOMED,Disorder,S,698525006,2014-01-31,2099-12-31,NA
+44784466,Open fracture of vault of skull with loss of consciousness,Condition,SNOMED,Disorder,S,698618009,2014-01-31,2099-12-31,NA
+44784467,Open fracture of vault of skull with concussion,Condition,SNOMED,Disorder,S,698619001,2014-01-31,2099-12-31,NA
+44806517,Degloving injury of face,Condition,SNOMED,Disorder,S,812791000000107,2012-04-01,2099-12-31,NA
+44806634,Traumatic amputation of tongue,Condition,SNOMED,Disorder,S,813131000000104,2012-04-01,2099-12-31,NA
+45757293,Open fracture of frontal sinus,Condition,SNOMED,Disorder,S,11304481000119100,2015-01-31,2099-12-31,NA
+45757294,Open fracture of naso orbital ethmoid,Condition,SNOMED,Disorder,S,11304561000119105,2015-01-31,2099-12-31,NA
+45757295,Open fracture of medial wall of orbit,Condition,SNOMED,Disorder,S,11304601000119105,2015-01-31,2099-12-31,NA
+45757296,Open fracture of orbit,Condition,SNOMED,Disorder,S,11304641000119107,2015-01-31,2099-12-31,NA
+45757332,Open fracture of occipital bone,Condition,SNOMED,Disorder,S,11313641000119107,2015-01-31,2099-12-31,NA
+45757333,Open fracture of temporal bone,Condition,SNOMED,Disorder,S,11313681000119102,2015-01-31,2099-12-31,NA
+45757336,Open fracture of tooth,Condition,SNOMED,Disorder,S,11315361000119100,2015-01-31,2099-12-31,NA
+46270817,Laceration of mouth,Condition,SNOMED,Disorder,S,708791005,2015-07-31,2099-12-31,NA
+46273347,Eyeball wound due to penetrating foreign body,Condition,SNOMED,Disorder,S,712702008,2015-07-31,2099-12-31,NA
