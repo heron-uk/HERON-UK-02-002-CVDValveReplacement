@@ -29,7 +29,7 @@ for (cohort_name in cohort_names) {
       "trans"
     )) 
   ses_levels <- data$ses |> unique() |> as.numeric()
-  ref <- min(ses_levels)|> as.character()
+  ref <- max(ses_levels)|> as.character()
   data <- data |>
     dplyr::mutate(
       ses = factor(ses),
