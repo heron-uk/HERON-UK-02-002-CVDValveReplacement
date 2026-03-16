@@ -32,11 +32,11 @@ addSES <- function(cohort, date_name = "cohort_start_date") {
       ) |>
       dplyr::mutate(
         ses = dplyr::case_when(
-          ses %in% c(1, 2)  ~ 5L,
-          ses %in% c(3, 4)  ~ 4L,
+          ses %in% c(1, 2)  ~ 1L,
+          ses %in% c(3, 4)  ~ 2L,
           ses %in% c(5, 6)  ~ 3L,
-          ses %in% c(7, 8)  ~ 2L,
-          ses %in% c(9, 10) ~ 1L,
+          ses %in% c(7, 8)  ~ 4L,
+          ses %in% c(9, 10) ~ 5L,
           TRUE ~ NA_real_
         ),
         ses = as.character(.data$ses),
@@ -173,19 +173,17 @@ hr_summary <- function(model, transition, model_name, age_limit) {
       model_name = model_name,
       age_limit = age_limit,
       result_type = "hr_summary",
-      package_name = "HERON-UK-02-002-CVDValveReplacement"
+      package_name = "HERON-UK-02-002-CVDValveReplacement", 
+      package_version = "2.0"
+      
     ) |>
     dplyr::mutate(cdm_name = cdmName(cdm)) |>
     dplyr::select(!any_of(c("rel_age", "variable"))) |>
     omopgenerics::transformToSummarisedResult(
       group = "transition",
       estimates = c("hazard_ratio", "se_coef", "lower_hr", "upper_hr", "p_value"),
-<<<<<<< HEAD
       additional = c("model_name"),
-=======
-      additional = "model_name",
->>>>>>> 1d88492c1e35386fbc7c4f7f1c2652009eb26979
-      settings = c("result_type", "package_name", "age_limit")
+      settings = c("result_type", "package_name","package_version", "age_limit")
     )
 }
 
@@ -254,11 +252,7 @@ clean_variables <- function(df, var_col = "variable_name") {
 hr_summary_age_model <- function(model,
                                  transition,
                                  model_name,
-<<<<<<< HEAD
                                  age_limit,
-=======
-                                 age_limit, 
->>>>>>> 1d88492c1e35386fbc7c4f7f1c2652009eb26979
                                  reference_age = 70, # reference age
                                  comparison_age = seq(20, 100, 1)) { # comparison ages
   res <- list()
@@ -295,7 +289,7 @@ hr_summary_age_model <- function(model,
       age_limit = age_limit,
       result_type = "hr_summary",
       package_name = "HERON-UK-02-002-CVDValveReplacement",
-      package_version = "1.0"
+      package_version = "2.0"
     ) |>
     dplyr::mutate(cdm_name = cdmName(cdm)) |>
     dplyr::select(!any_of(c("rel_age", "variable"))) |>
