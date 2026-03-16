@@ -33,7 +33,7 @@ for (cohort_name in cohort_names) {
       sex = factor(sex)
     ) |>
    dplyr:: mutate(
-      ses  = relevel(ses, ref = "1"),        
+      ses  = relevel(ses, ref = "5"),        
       sex  = relevel(sex, ref = "Female"),   
     )
   cli::cli_inform(glue::glue(" -- dataset rows: {nrow(data)}"))
