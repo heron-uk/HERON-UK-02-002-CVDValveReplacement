@@ -8,7 +8,8 @@ resultList <- list(
   summarise_characteristics = list(result_type = "summarise_characteristics"),
   summarise_large_scale_characteristics = list(result_type = "summarise_large_scale_characteristics"),
   survival = list(result_type = c("survival_summary", "survival_estimates", "survival_events", "survival_attrition")),
-  summarise_log_file = list(result_type = "summarise_log_file")
+  summarise_log_file = list(result_type = "summarise_log_file"),
+  summarise_table = list(result_type = "summarise_table")
 )
 
 source(file.path(getwd(), "functions.R"))

@@ -779,6 +779,38 @@ ui <- bslib::page_navbar(
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
           ),
           shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_mi_type",
+            label = "Mi type",
+            choices = choices$summarise_characteristics_mi_type,
+            selected = selected$summarise_characteristics_mi_type,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_age_range",
+            label = "Age range",
+            choices = choices$summarise_characteristics_age_range,
+            selected = selected$summarise_characteristics_age_range,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_sex",
+            label = "Sex",
+            choices = choices$summarise_characteristics_sex,
+            selected = selected$summarise_characteristics_sex,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_ses",
+            label = "Ses",
+            choices = choices$summarise_characteristics_ses,
+            selected = selected$summarise_characteristics_ses,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
             inputId = "summarise_characteristics_variable_name",
             label = "Variable name",
             choices = choices$summarise_characteristics_variable_name,
@@ -822,7 +854,7 @@ ui <- bslib::page_navbar(
                     header = NULL,
                     sortable::add_rank_list(
                       text = "None",
-                      labels = c("variable_name", "variable_level", "estimate_name"),
+                      labels = c("mi_type", "age_range", "sex", "ses", "variable_name", "variable_level", "estimate_name"),
                       input_id = "summarise_characteristics_table_none"
                     ),
                     sortable::add_rank_list(
@@ -900,7 +932,7 @@ ui <- bslib::page_navbar(
                   shinyWidgets::pickerInput(
                     inputId = "summarise_characteristics_plot_facet",
                     label = "Facet",
-                    choices = c("cdm_name", "cohort_name"),
+                    choices = c("cdm_name", "cohort_name", "mi_type", "age_range", "sex", "ses"),
                     selected = "cdm_name",
                     multiple = TRUE,
                     options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
@@ -908,7 +940,7 @@ ui <- bslib::page_navbar(
                   shinyWidgets::pickerInput(
                     inputId = "summarise_characteristics_plot_colour",
                     label = "Colour",
-                    choices = c("cdm_name", "cohort_name"),
+                    choices = c("cdm_name", "cohort_name", "mi_type", "age_range", "sex", "ses"),
                     selected = "cohort_name",
                     multiple = TRUE,
                     options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
@@ -1526,6 +1558,152 @@ ui <- bslib::page_navbar(
                 position = "right"
               ),
               shiny::uiOutput("summarise_log_file_plot") |>
+                shinycssloaders::withSpinner()
+            )
+          )
+        )
+      )
+    )
+  ),
+  bslib::nav_panel(
+    title = "Summarise table",
+    icon = shiny::icon("folder"),
+    bslib::layout_sidebar(
+      sidebar = bslib::sidebar(
+        bslib::card(
+          class = "sticky-top-btn",
+          bslib::card_body(
+            shiny::actionButton(
+              inputId = "update_summarise_table",
+              label = "Update content",
+              width = "100%"
+            ),
+            uiOutput(outputId = "update_message_summarise_table")
+          )
+        ),
+        shinyWidgets::pickerInput(
+          inputId = "summarise_table_cdm_name",
+          label = "CDM name",
+          choices = choices$summarise_table_cdm_name,
+          selected = selected$summarise_table_cdm_name,
+          multiple = TRUE,
+          options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+        ),
+        shinyWidgets::pickerInput(
+          inputId = "summarise_table_cohort_name",
+          label = "Cohort name",
+          choices = choices$summarise_table_cohort_name,
+          selected = selected$summarise_table_cohort_name,
+          multiple = TRUE,
+          options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+        ),
+        shinyWidgets::pickerInput(
+          inputId = "summarise_table_mi_type",
+          label = "Mi type",
+          choices = choices$summarise_table_mi_type,
+          selected = selected$summarise_table_mi_type,
+          multiple = TRUE,
+          options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+        ),
+        shinyWidgets::pickerInput(
+          inputId = "summarise_table_variable_name",
+          label = "Variable name",
+          choices = choices$summarise_table_variable_name,
+          selected = selected$summarise_table_variable_name,
+          multiple = TRUE,
+          options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+        ),
+        shinyWidgets::pickerInput(
+          inputId = "summarise_table_estimate_name",
+          label = "Estimate name",
+          choices = choices$summarise_table_estimate_name,
+          selected = selected$summarise_table_estimate_name,
+          multiple = TRUE,
+          options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+        ),
+        position = "left"
+      ),
+      bslib::navset_card_tab(
+        bslib::nav_panel(
+          title = "Tidy",
+          bslib::card(
+            full_screen = TRUE,
+            bslib::card_header(
+              bslib::popover(
+                shiny::icon("download"),
+                shiny::downloadButton(outputId = "summarise_table_tidy_download", label = "Download csv")
+              ),
+              class = "text-end"
+            ),
+            bslib::layout_sidebar(
+              sidebar = bslib::sidebar(
+                shinyWidgets::pickerInput(
+                  inputId = "summarise_table_tidy_columns",
+                  label = "Columns",
+                  choices = c("cdm_name", "cohort_name", "mi_type", "variable_name", "variable_level"),
+                  selected = c("cdm_name", "cohort_name", "mi_type", "variable_name", "variable_level"),
+                  multiple = TRUE,
+                  options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+                ),
+                shiny::checkboxInput(
+                  inputId = "summarise_table_tidy_pivot_estimates",
+                  label = "Pivot estimates",
+                  value = TRUE
+                ),
+                position = "right"
+              ),
+              DT::DTOutput("summarise_table_tidy") |>
+                shinycssloaders::withSpinner()
+            )
+          )
+        ),
+        bslib::nav_panel(
+          title = "Table",
+          bslib::card(
+            full_screen = TRUE,
+            bslib::card_header(
+              bslib::popover(
+                shiny::icon("download"),
+                shinyWidgets::pickerInput(
+                  inputId = "summarise_table_table_format",
+                  label = "Format",
+                  choices = c("docx", "png", "pdf", "html"),
+                  selected = "docx",
+                  multiple = FALSE,
+                  options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+                ),
+                shiny::downloadButton(outputId = "summarise_table_table_download", label = "Download table")
+              ),
+              class = "text-end"
+            ),
+            bslib::layout_sidebar(
+              sidebar = bslib::sidebar(
+                sortable::bucket_list(
+                  header = NULL,
+                  sortable::add_rank_list(
+                    text = "None",
+                    labels = c("cdm_name", "cohort_name", "mi_type", "variable_name", "variable_level", "estimate_name"),
+                    input_id = "summarise_table_table_none"
+                  ),
+                  sortable::add_rank_list(
+                    text = "Header",
+                    labels = character(),
+                    input_id = "summarise_table_table_header"
+                  ),
+                  sortable::add_rank_list(
+                    text = "Group columns",
+                    labels = character(),
+                    input_id = "summarise_table_table_group_column"
+                  ),
+                  sortable::add_rank_list(
+                    text = "Hide",
+                    labels = character(),
+                    input_id = "summarise_table_table_hide"
+                  )
+                ),
+                position = "right"
+              ),
+              gt::gt_output("summarise_table_table") |>
                 shinycssloaders::withSpinner()
             )
           )

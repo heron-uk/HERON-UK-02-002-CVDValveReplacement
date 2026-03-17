@@ -12,3 +12,8 @@ code_to_run_local.R
 quarto_files/
 congenital_study_shiny/quarto/data/*.csv
 congenital_study_shiny/quarto/quarto_files
+congenital_study_shiny/results/*.csv
+congenital_study_shiny/rawData/*.csv
+congenital_study_shiny/shiny/rawData/*.csv
+rsconnect/
+

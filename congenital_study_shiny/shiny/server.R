@@ -28,7 +28,8 @@ server <- function(input, output, session) {
     summarise_characteristics = FALSE,
     summarise_large_scale_characteristics = FALSE,
     survival = FALSE,
-    summarise_log_file = FALSE
+    summarise_log_file = FALSE,
+    summarise_table = FALSE
   )
 
 
@@ -370,6 +371,10 @@ server <- function(input, output, session) {
     shiny::bindEvent(
       input$summarise_characteristics_cdm_name,
       input$summarise_characteristics_cohort_name,
+      input$summarise_characteristics_mi_type,
+      input$summarise_characteristics_age_range,
+      input$summarise_characteristics_sex,
+      input$summarise_characteristics_ses,
       input$summarise_characteristics_variable_name,
       input$summarise_characteristics_estimate_name,
       ignoreInit = TRUE
@@ -393,7 +398,13 @@ server <- function(input, output, session) {
         .data$variable_name %in% input$summarise_characteristics_variable_name,
         .data$estimate_name %in% input$summarise_characteristics_estimate_name
       ) |>
-      omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_cohort_name)
+      omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_cohort_name) |>
+      omopgenerics::filterStrata(
+        .data$mi_type %in% input$summarise_characteristics_mi_type,
+        .data$age_range %in% input$summarise_characteristics_age_range,
+        .data$sex %in% input$summarise_characteristics_sex,
+        .data$ses %in% input$summarise_characteristics_ses
+      )
   })
   getSummariseCharacteristicsTable <- shiny::reactive({
     getSummariseCharacteristicsData() |>
@@ -762,6 +773,73 @@ server <- function(input, output, session) {
         units = input$summarise_log_file_plot_units,
         dpi = as.numeric(input$summarise_log_file_plot_dpi)
       )
+    }
+  )
+
+  # summarise_table -----
+  ## update message if filter is changed
+  shiny::observe({
+    updateButtons$summarise_table <- TRUE
+  }) |>
+    shiny::bindEvent(
+      input$summarise_table_cdm_name,
+      input$summarise_table_cohort_name,
+      input$summarise_table_mi_type,
+      input$summarise_table_variable_name,
+      input$summarise_table_estimate_name,
+      ignoreInit = TRUE
+    )
+  shiny::observeEvent(updateButtons$summarise_table, {
+    if (updateButtons$summarise_table == TRUE) {
+      output$update_message_summarise_table <- shiny::renderUI(updateMessage) # defined in functions.R
+    } else {
+      output$update_message_summarise_table <- shiny::renderUI(NULL)
+    }
+  })
+  shiny::observeEvent(input$update_summarise_table, {
+    updateButtons$summarise_table <- FALSE
+  })
+
+  ## get summarise_table data
+  getSummariseTableData <- shiny::eventReactive(input$update_summarise_table, {
+    data[["summarise_table"]] |>
+      dplyr::filter(
+        .data$cdm_name %in% input$summarise_table_cdm_name,
+        .data$variable_name %in% input$summarise_table_variable_name,
+        .data$estimate_name %in% input$summarise_table_estimate_name
+      ) |>
+      omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_table_cohort_name) |>
+      omopgenerics::filterStrata(.data$mi_type %in% input$summarise_table_mi_type)
+  })
+  getSummariseTableTidy <- shiny::reactive({
+    tidyDT(getSummariseTableData(), input$summarise_table_tidy_columns, input$summarise_table_tidy_pivot_estimates)
+  })
+  output$summarise_table_tidy <- DT::renderDT({
+    getSummariseTableTidy()
+  })
+  output$summarise_table_tidy_download <- shiny::downloadHandler(
+    filename = "tidy_results.csv",
+    content = function(file) {
+      getSummariseTableData() |>
+        omopgenerics::tidy() |>
+        readr::write_csv(file = file)
+    }
+  )
+  getSummariseTableTable <- shiny::reactive({
+    getSummariseTableData() |>
+      simpleTable(
+        header = input$summarise_table_table_header,
+        group = input$summarise_table_table_group_column,
+        hide = input$summarise_table_table_hide
+      )
+  })
+  output$summarise_table_table <- gt::render_gt({
+    getSummariseTableTable()
+  })
+  output$summarise_table_table_download <- shiny::downloadHandler(
+    filename = paste0("table.", input$summarise_table_table_format),
+    content = function(file) {
+      gt::gtsave(getSummariseTableTable(), file)
     }
   )
 }

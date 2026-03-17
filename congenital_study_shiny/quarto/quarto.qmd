@@ -25,7 +25,7 @@ library(gt)
 library(ggplot2)
 
 # Load all CSV results
-all_results <- list.files("data", pattern = "\\.csv$", full.names = TRUE) |>
+all_results <- list.files("../results", pattern = "\\.csv$", full.names = TRUE) |>
   lapply(read.csv) |>
   bind_rows()
 
@@ -44,6 +44,11 @@ process_survival_curves <- function(data, strata_filter = "overall") {
            estimate_value = as.numeric(estimate_value)) |>
     pivot_wider(names_from = estimate_name, values_from = estimate_value, values_fn = first)
   
+  # Return empty dataframe if no data
+  if(nrow(raw_data) == 0) {
+    return(data.frame())
+  }
+  
   # Dynamic column renaming - build named vector for rename
   cols <- names(raw_data)
   result <- raw_data |> rename(target_cohort = group_level, outcome = variable_level)
@@ -51,25 +56,31 @@ process_survival_curves <- function(data, strata_filter = "overall") {
   # Rename survival probability column
   if("estimate" %in% cols) {
     result <- result |> rename(survival_prob = estimate)
-  } else if(any(grepl("^estimate$|survival.*estimate", cols, ignore.case = TRUE))) {
-    est_col <- cols[grepl("^estimate$|survival.*estimate", cols, ignore.case = TRUE)][1]
-    result <- result |> rename(survival_prob = !!est_col)
+  } else {
+    est_match <- cols[grepl("^estimate$|survival.*estimate", cols, ignore.case = TRUE)]
+    if(length(est_match) > 0 && !is.na(est_match[1])) {
+      result <- result |> rename(survival_prob = !!est_match[1])
+    }
   }
   
   # Rename CI lower column
   if("estimate_95CI_lower" %in% cols) {
     result <- result |> rename(ci_lower = estimate_95CI_lower)
-  } else if(any(grepl("lower|min", cols, ignore.case = TRUE))) {
-    ci_col <- cols[grepl("lower|min", cols, ignore.case = TRUE)][1]
-    result <- result |> rename(ci_lower = !!ci_col)
+  } else {
+    ci_match <- cols[grepl("lower|min", cols, ignore.case = TRUE)]
+    if(length(ci_match) > 0 && !is.na(ci_match[1])) {
+      result <- result |> rename(ci_lower = !!ci_match[1])
+    }
   }
   
   # Rename CI upper column
   if("estimate_95CI_upper" %in% cols) {
     result <- result |> rename(ci_upper = estimate_95CI_upper)
-  } else if(any(grepl("upper|max", cols, ignore.case = TRUE))) {
-    ci_col <- cols[grepl("upper|max", cols, ignore.case = TRUE)][1]
-    result <- result |> rename(ci_upper = !!ci_col)
+  } else {
+    ci_match <- cols[grepl("upper|max", cols, ignore.case = TRUE)]
+    if(length(ci_match) > 0 && !is.na(ci_match[1])) {
+      result <- result |> rename(ci_upper = !!ci_match[1])
+    }
   }
   
   result
@@ -78,7 +89,7 @@ process_survival_curves <- function(data, strata_filter = "overall") {
 # Helper function to format cohort labels
 format_cohort_labels <- function(cohort) {
   case_when(
-    cohort == "aortic_insufficiency_congenital" ~ "Aortic Insufficiency",
+    cohort == "aortic_insufficiency_congenital" ~ "Aortic Insufficiency Congenital",
     cohort == "aortic_stenosis_congenital" ~ "Aortic Stenosis",
     cohort == "congenital_aortic_stenosis" ~ "Congenital Aortic Stenosis",
     cohort == "congenital_aortic_valve_disease" ~ "Congenital Aortic Valve Disease",
@@ -116,6 +127,261 @@ survival_table <- survival_table_raw |>
 survival_curves <- process_survival_curves(all_results, "overall")
 survival_by_age <- process_survival_curves(all_results, "age_group") |> rename(age_group = strata_level)
 survival_by_sex <- process_survival_curves(all_results, "sex") |> rename(sex = strata_level)
+
+# Get total subjects per cohort for percentage calculation
+total_subjects <- all_results |>
+  filter(result_id == 8, variable_name == "Number subjects", estimate_name == "count") |>
+  select(cdm_name, group_level, n_total = estimate_value) |>
+  mutate(n_total = as.numeric(n_total))
+
+# Prepare comorbidities (Result ID 9 - pre-index conditions) - Top 10
+comorbidities_pre <- all_results |>
+  filter(result_id == 9, 
+         estimate_name == "count",
+         variable_level == "any_time_prior_to_day_prior") |>
+  select(cdm_name, group_level, variable_name, estimate_value) |>
+  mutate(estimate_value = as.numeric(estimate_value)) |>
+  left_join(total_subjects, by = c("cdm_name", "group_level")) |>
+  mutate(percentage = (estimate_value / n_total) * 100,
+         formatted = sprintf("%d (%.1f%%)", estimate_value, percentage)) |>
+  group_by(group_level, variable_name) |>
+  summarise(
+    across(c(cdm_name, formatted), ~paste(., collapse = " | ")),
+    total_count = sum(estimate_value),
+    .groups = "drop"
+  ) |>
+  group_by(group_level) |>
+  arrange(desc(total_count)) |>
+  slice_head(n = 10) |>
+  ungroup() |>
+  select(`Target Cohort` = group_level, Condition = variable_name, `N (%) by Database` = formatted)
+
+# Prepare index date admissions (Result ID 10)
+admissions_index <- all_results |>
+  filter(result_id == 10, 
+         estimate_name == "count",
+         variable_level == "on_index_date") |>
+  select(cdm_name, group_level, variable_name, estimate_value) |>
+  mutate(estimate_value = as.numeric(estimate_value)) |>
+  left_join(total_subjects, by = c("cdm_name", "group_level")) |>
+  mutate(percentage = (estimate_value / n_total) * 100,
+         formatted = sprintf("%d (%.1f%%)", estimate_value, percentage)) |>
+  select(group_level, variable_name, cdm_name, formatted) |>
+  pivot_wider(names_from = cdm_name, values_from = formatted) |>
+  select(`Target Cohort` = group_level, `Admission Type` = variable_name, everything())
+
+# Prepare index date procedures (Result ID 11) - Top 10
+procedures_index <- all_results |>
+  filter(result_id == 11, 
+         estimate_name == "count",
+         variable_level == "on_index_date") |>
+  select(cdm_name, group_level, variable_name, estimate_value) |>
+  mutate(estimate_value = as.numeric(estimate_value)) |>
+  left_join(total_subjects, by = c("cdm_name", "group_level")) |>
+  mutate(percentage = (estimate_value / n_total) * 100,
+         formatted = sprintf("%d (%.1f%%)", estimate_value, percentage)) |>
+  group_by(group_level, variable_name) |>
+  summarise(
+    across(c(cdm_name, formatted), ~paste(., collapse = " | ")),
+    total_count = sum(estimate_value),
+    .groups = "drop"
+  ) |>
+  group_by(group_level) |>
+  arrange(desc(total_count)) |>
+  slice_head(n = 10) |>
+  ungroup() |>
+  select(`Target Cohort` = group_level, Procedure = variable_name, `N (%) by Database` = formatted)
+
+# Prepare index date medications (Result ID 12) - Top 10
+medications_index <- all_results |>
+  filter(result_id == 12, 
+         estimate_name == "count",
+         variable_level == "on_index_date") |>
+  select(cdm_name, group_level, variable_name, estimate_value) |>
+  mutate(estimate_value = as.numeric(estimate_value)) |>
+  left_join(total_subjects, by = c("cdm_name", "group_level")) |>
+  mutate(percentage = (estimate_value / n_total) * 100,
+         formatted = sprintf("%d (%.1f%%)", estimate_value, percentage)) |>
+  group_by(group_level, variable_name) |>
+  summarise(
+    across(c(cdm_name, formatted), ~paste(., collapse = " | ")),
+    total_count = sum(estimate_value),
+    .groups = "drop"
+  ) |>
+  group_by(group_level) |>
+  arrange(desc(total_count)) |>
+  slice_head(n = 10) |>
+  ungroup() |>
+  select(`Target Cohort` = group_level, Medication = variable_name, `N (%) by Database` = formatted)
+
+# Prepare follow-up period events - Top 10
+followup_conditions <- all_results |>
+  filter(result_id == 9, 
+         estimate_name == "count",
+         grepl("day_post", variable_level)) |>
+  select(cdm_name, group_level, variable_name, estimate_value) |>
+  mutate(estimate_value = as.numeric(estimate_value)) |>
+  left_join(total_subjects, by = c("cdm_name", "group_level")) |>
+  mutate(percentage = (estimate_value / n_total) * 100,
+         formatted = sprintf("%d (%.1f%%)", estimate_value, percentage)) |>
+  group_by(group_level, variable_name) |>
+  summarise(
+    across(c(cdm_name, formatted), ~paste(., collapse = " | ")),
+    total_count = sum(estimate_value),
+    .groups = "drop"
+  ) |>
+  group_by(group_level) |>
+  arrange(desc(total_count)) |>
+  slice_head(n = 10) |>
+  ungroup() |>
+  mutate(event_type = "Condition")
+
+followup_procedures <- all_results |>
+  filter(result_id == 11, 
+         estimate_name == "count",
+         grepl("day_post", variable_level)) |>
+  select(cdm_name, group_level, variable_name, estimate_value) |>
+  mutate(estimate_value = as.numeric(estimate_value)) |>
+  left_join(total_subjects, by = c("cdm_name", "group_level")) |>
+  mutate(percentage = (estimate_value / n_total) * 100,
+         formatted = sprintf("%d (%.1f%%)", estimate_value, percentage)) |>
+  group_by(group_level, variable_name) |>
+  summarise(
+    across(c(cdm_name, formatted), ~paste(., collapse = " | ")),
+    total_count = sum(estimate_value),
+    .groups = "drop"
+  ) |>
+  group_by(group_level) |>
+  arrange(desc(total_count)) |>
+  slice_head(n = 10) |>
+  ungroup() |>
+  mutate(event_type = "Procedure")
+
+# Baseline characteristics summary
+baseline_summary <- all_results |>
+  filter(result_id == 8, strata_name == "overall",
+         variable_name %in% c("Number subjects", "Age", "Sex", "Days in cohort")) |>
+  select(cdm_name, group_level, variable_name, variable_level, estimate_name, estimate_value) |>
+  mutate(estimate_value = as.numeric(estimate_value)) |>
+  pivot_wider(names_from = estimate_name, values_from = estimate_value, values_fn = first) |>
+  mutate(
+    display_value = case_when(
+      variable_name == "Number subjects" ~ as.character(round(count)),
+      variable_name == "Age" ~ sprintf("%.1f (%.1f-%.1f)", median, q25, q75),
+      variable_name == "Sex" ~ sprintf("%d (%.1f%%)", round(count), percentage),
+      variable_name == "Days in cohort" ~ sprintf("%.0f (%.0f-%.0f)", median, q25, q75),
+      TRUE ~ as.character(round(count))
+    )
+  ) |>
+  unite(var_display, variable_name, variable_level, sep = ": ", na.rm = TRUE) |>
+  select(cdm_name, group_level, var_display, display_value) |>
+  pivot_wider(names_from = cdm_name, values_from = display_value)
+
+```
+
+## Baseline Characteristics
+
+### Table 1: Demographics and Clinical Characteristics
+
+```{r baseline-table, echo=FALSE, warning=FALSE, message=FALSE}
+baseline_summary |>
+  gt(groupname_col = "group_level") |>
+  tab_header(title = "Table 1: Baseline Demographics and Clinical Characteristics") |>
+  cols_label(var_display = "Characteristic") |>
+  tab_style(style = cell_borders(sides = "all", color = "#D3D3D3", weight = px(1)), 
+            locations = cells_body()) |>
+  tab_style(style = cell_fill(color = "#F0F0F0"), locations = cells_column_labels()) |>
+  tab_style(style = cell_fill(color = "#E8E8E8"), locations = cells_row_groups()) |>
+  cols_align(align = "left", columns = "var_display") |>
+  cols_align(align = "center", columns = -var_display) |>
+  tab_options(table.font.size = px(10), heading.align = "left", row_group.font.weight = "bold")
+```
+
+### Table 2: Pre-Index Comorbidities (Top 10)
+
+```{r comorbidities-table, echo=FALSE, warning=FALSE, message=FALSE}
+comorbidities_pre |>
+  mutate(`Target Cohort` = format_cohort_labels(`Target Cohort`)) |>
+  gt(groupname_col = "Target Cohort") |>
+  tab_header(title = "Table 2: Most Common Comorbidities Prior to Index Date",
+             subtitle = "Top 10 conditions per cohort. Format: Database1 | Database2") |>
+  tab_style(style = cell_borders(sides = "all", color = "#D3D3D3", weight = px(1)), 
+            locations = cells_body()) |>
+  tab_style(style = cell_fill(color = "#F0F0F0"), locations = cells_column_labels()) |>
+  tab_style(style = cell_fill(color = "#E8E8E8"), locations = cells_row_groups()) |>
+  cols_align(align = "left", columns = "Condition") |>
+  cols_align(align = "center", columns = "N (%) by Database") |>
+  tab_options(table.font.size = px(10), heading.align = "left", row_group.font.weight = "bold")
+```
+
+### Table 3: Index Date Admission Types
+
+```{r admissions-table, echo=FALSE, warning=FALSE, message=FALSE}
+admissions_index |>
+  mutate(`Target Cohort` = format_cohort_labels(`Target Cohort`)) |>
+  gt(groupname_col = "Target Cohort") |>
+  tab_header(title = "Table 3: Admission Types on Index Date") |>
+  tab_style(style = cell_borders(sides = "all", color = "#D3D3D3", weight = px(1)), 
+            locations = cells_body()) |>
+  tab_style(style = cell_fill(color = "#F0F0F0"), locations = cells_column_labels()) |>
+  tab_style(style = cell_fill(color = "#E8E8E8"), locations = cells_row_groups()) |>
+  cols_align(align = "left", columns = "Admission Type") |>
+  cols_align(align = "center", columns = -c("Target Cohort", "Admission Type")) |>
+  tab_options(table.font.size = px(10), heading.align = "left", row_group.font.weight = "bold")
+```
+
+### Table 4: Index Date Procedures (Top 10)
+
+```{r procedures-table, echo=FALSE, warning=FALSE, message=FALSE}
+procedures_index |>
+  mutate(`Target Cohort` = format_cohort_labels(`Target Cohort`)) |>
+  gt(groupname_col = "Target Cohort") |>
+  tab_header(title = "Table 4: Most Common Procedures on Index Date",
+             subtitle = "Top 10 procedures per cohort. Format: Database1 | Database2") |>
+  tab_style(style = cell_borders(sides = "all", color = "#D3D3D3", weight = px(1)), 
+            locations = cells_body()) |>
+  tab_style(style = cell_fill(color = "#F0F0F0"), locations = cells_column_labels()) |>
+  tab_style(style = cell_fill(color = "#E8E8E8"), locations = cells_row_groups()) |>
+  cols_align(align = "left", columns = "Procedure") |>
+  cols_align(align = "center", columns = "N (%) by Database") |>
+  tab_options(table.font.size = px(10), heading.align = "left", row_group.font.weight = "bold")
+```
+
+### Table 5: Index Date Medications (Top 10)
+
+```{r medications-table, echo=FALSE, warning=FALSE, message=FALSE}
+medications_index |>
+  mutate(`Target Cohort` = format_cohort_labels(`Target Cohort`)) |>
+  gt(groupname_col = "Target Cohort") |>
+  tab_header(title = "Table 5: Most Common Medications on Index Date",
+             subtitle = "Top 10 medications per cohort. Format: Database1 | Database2") |>
+  tab_style(style = cell_borders(sides = "all", color = "#D3D3D3", weight = px(1)), 
+            locations = cells_body()) |>
+  tab_style(style = cell_fill(color = "#F0F0F0"), locations = cells_column_labels()) |>
+  tab_style(style = cell_fill(color = "#E8E8E8"), locations = cells_row_groups()) |>
+  cols_align(align = "left", columns = "Medication") |>
+  cols_align(align = "center", columns = "N (%) by Database") |>
+  tab_options(table.font.size = px(10), heading.align = "left", row_group.font.weight = "bold")
+```
+
+### Table 6: Follow-up Period Events (Top 10)
+
+```{r followup-table, echo=FALSE, warning=FALSE, message=FALSE}
+bind_rows(followup_conditions, followup_procedures) |>
+  select(`Target Cohort` = group_level, `Event Type` = event_type, 
+         Event = variable_name, `N (%) by Database` = formatted) |>
+  mutate(`Target Cohort` = format_cohort_labels(`Target Cohort`)) |>
+  gt(groupname_col = "Target Cohort") |>
+  tab_header(title = "Table 6: Most Common Events During Follow-up Period",
+             subtitle = "Top 10 conditions and procedures per cohort. Format: Database1 | Database2") |>
+  tab_style(style = cell_borders(sides = "all", color = "#D3D3D3", weight = px(1)), 
+            locations = cells_body()) |>
+  tab_style(style = cell_fill(color = "#F0F0F0"), locations = cells_column_labels()) |>
+  tab_style(style = cell_fill(color = "#E8E8E8"), locations = cells_row_groups()) |>
+  cols_align(align = "left", columns = c("Event Type", "Event")) |>
+  cols_align(align = "center", columns = "N (%) by Database") |>
+  tab_options(table.font.size = px(10), heading.align = "left", row_group.font.weight = "bold")
+```
 
 ```
 
@@ -158,6 +424,7 @@ survival_curves |>
   labs(x = "Time in days", y = "Survival probability", title = "Survival Analysis by CDM and Target Cohort") +
   theme_minimal() +
   theme(strip.background = element_rect(fill = "#E0E0E0", color = NA), strip.text = element_text(size = 12, face = "bold"),
+        plot.title = element_text(hjust = 0.5),
         legend.position = "right", panel.grid.minor = element_blank(),
         axis.title = element_text(size = 11), axis.text = element_text(size = 10))
 ```
@@ -171,14 +438,16 @@ if(nrow(survival_by_age) > 0) {
     ggplot(aes(x = time, y = survival_prob, color = age_group, fill = age_group, linetype = outcome)) +
     geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.2, color = NA) +
     geom_line(linewidth = 0.6) +
-    facet_grid(cohort_label ~ cdm_name, scales = "free") +
+    facet_grid(cohort_label ~ cdm_name, scales = "free", switch = "y") +
     scale_linetype_manual(values = c("avr" = "solid", "death_cohort" = "dashed"),
                          labels = c("avr" = "AVR", "death_cohort" = "Death"), name = "Outcome") +
     labs(x = "Time in days", y = "Survival probability", title = "Survival Analysis by Age Group",
          color = "Age Group", fill = "Age Group") +
     theme_minimal() +
     theme(strip.background = element_rect(fill = "#E0E0E0", color = NA),
-          strip.text = element_text(size = 11, face = "bold"), strip.text.y = element_text(angle = 0),
+          strip.text = element_text(size = 11, face = "bold"),
+          strip.placement = "outside",
+          plot.title = element_text(hjust = 0.5),
           legend.position = "right", panel.grid.minor = element_blank(),
           axis.title = element_text(size = 11), axis.text = element_text(size = 9))
 } else cat("No age-stratified survival data available.")
@@ -193,7 +462,7 @@ if(nrow(survival_by_sex) > 0) {
     ggplot(aes(x = time, y = survival_prob, color = sex, fill = sex, linetype = outcome)) +
     geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.2, color = NA) +
     geom_line(linewidth = 0.6) +
-    facet_grid(cohort_label ~ cdm_name, scales = "free") +
+    facet_grid(cohort_label ~ cdm_name, scales = "free", switch = "y") +
     scale_color_manual(values = c("Female" = "#FF6B9D", "Male" = "#4A90E2"), name = "Sex") +
     scale_fill_manual(values = c("Female" = "#FF6B9D", "Male" = "#4A90E2"), name = "Sex") +
     scale_linetype_manual(values = c("avr" = "solid", "death_cohort" = "dashed"),
@@ -201,8 +470,12 @@ if(nrow(survival_by_sex) > 0) {
     labs(x = "Time in days", y = "Survival probability", title = "Survival Analysis by Sex") +
     theme_minimal() +
     theme(strip.background = element_rect(fill = "#E0E0E0", color = NA),
-          strip.text = element_text(size = 11, face = "bold"), strip.text.y = element_text(angle = 0),
+          strip.text = element_text(size = 11, face = "bold"),
+          strip.placement = "outside",
+          plot.title = element_text(hjust = 0.5),
           legend.position = "right", panel.grid.minor = element_blank(),
           axis.title = element_text(size = 11), axis.text = element_text(size = 10))
 } else cat("No sex-stratified survival data available.")
 ```
+
+
