@@ -174,7 +174,7 @@ hr_summary <- function(model, transition, model_name, age_limit) {
       age_limit = age_limit,
       result_type = "hr_summary",
       package_name = "HERON-UK-02-002-CVDValveReplacement",
-      package_version = "1.0"
+      package_version = "2.0"
     ) |>
     dplyr::mutate(cdm_name = cdmName(cdm)) |>
     dplyr::select(!any_of(c("rel_age", "variable"))) |>
@@ -205,7 +205,7 @@ bshaz_summarised_result <- function(bshaz, transition, age_limit) {
       age_limit = age_limit,
       result_type = "smoothed_hazard",
       package_name = "HERON-UK-02-002-CVDValveReplacement",
-      package_version = as.character("1.0")
+      package_version = "2.0"
     ) |>
     dplyr::mutate(cdm_name = cdmName(cdm)) |>
     dplyr::select(!c("time")) |> 
@@ -319,7 +319,7 @@ hr_summary_age_model <- function(model,
       age_limit = age_limit,
       result_type = "hr_summary",
       package_name = "HERON-UK-02-002-CVDValveReplacement",
-      package_version = "1.0"
+      package_version = "2.0"
     ) |>
     dplyr::mutate(cdm_name = cdmName(cdm)) |>
     dplyr::select(!any_of(c("rel_age", "variable"))) |>
