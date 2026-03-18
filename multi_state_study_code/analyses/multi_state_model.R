@@ -28,7 +28,7 @@ for (cohort_name in cohort_names) {
       "to",
       "trans"
     )) 
-  ses_levels <- data$ses |> unique() |> as.numeric()
+  ses_levels <- data$ses |> unique() |> (\(x) x[!is.na(as.numeric(x))])() |> as.numeric() |> suppressWarnings()
   ref <- max(ses_levels)|> as.character()
   data <- data |>
     dplyr::mutate(
