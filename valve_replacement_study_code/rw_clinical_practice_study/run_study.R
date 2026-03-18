@@ -5,7 +5,7 @@ omopgenerics::validateCdmArgument(cdm,
                                                      "condition_occurrence",
                                                      "drug_exposure",
                                                      "concept"))
-omopgenerics::assertNumeric(minCellCount)
+omopgenerics::assertNumeric(min_cell_count)
 
 source(here("analyses", "functions.R"))
 

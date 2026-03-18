@@ -1,0 +1,336 @@
+@ -0,0 +1,32 @@
+---
+title: "Temporal Trends in the Real-World Use of SAVR and TAVI in the UK Clinical Practice: A Population-Base Cohort Study from 2012 to 2025"
+author:
+  - name: Marta Alcalde Herraiz
+format:
+  docx:
+    number-sections: true
+    colorlinks: true
+    keeptex: true
+
+date: 'last-modified'
+date-format: '[This version:] March, 2026'
+csl: american-sociological-association.csl
+tbl-cap-location: top
+number-sections: true
+execute:
+  echo: false
+  warning: false
+  message: false
+  cache: false
+editor:
+  mode: source
+filters:
+  - docx-landscape.lua
+---
+
+```{r}
+library(dplyr)
+library(omopgenerics)
+library(here)
+library(CodelistGenerator)
+library(readr)
+library(visOmopResults)
+library(stringr)
+library(CohortCharacteristics)
+library(tidyr)
+library(ggplot2)
+library(patchwork)
+library(IncidencePrevalence)
+source(here("Report", "functions.R"))
+
+result <- importSummarisedResult(path = here("Results")) |>
+  mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD Aurum", cdm_name)) 
+codelists_indications <- read_csv(here("Report", "codelists_indications.csv"))
+codelists_avr <- read_csv(here("Report", "codelists_avr.csv"))
+```
+\newpage
+
+```{r}
+codelists_indications |>
+  inner_join(
+    result |>
+      filterSettings(result_type == "cohort_code_use") |>
+      filterGroup(cohort_name == codelist_name) |>
+      splitAll() |>
+      select(-"domain_id") ,
+    by = c("codelist_name")) |>
+  select("cohort_name" = "codelist_name", "concept_id", "concept_name", 
+         "domain" = "domain_id", "vocabulary" = "vocabulary_id") |>
+  distinct() |>
+  mutate("cohort_name" = str_to_sentence(gsub("_", " ", gsub("_avr","",cohort_name)))) |>
+  mutate("cohort_name" = factor(cohort_name, levels = c("Aortic stenosis", "Aortic insufficiency", "Aortic endocarditis"))) |>
+  arrange(cohort_name, concept_name) |>
+  visTable(type = "flextable", 
+           groupColumn = "cohort_name", 
+           rename = c("Concept ID" = "concept_id"))
+```
+
+\newpage
+```{r}
+codelists_avr |>
+  inner_join(
+    result |>
+      filterSettings(result_type == "cohort_code_use") |>
+      filterGroup(cohort_name == codelist_name) |>
+      splitAll() |>
+      select(-c("domain_id", "codelist_name")) ,
+    by = c("cohort_name")) |>
+  select("codelist_name", "concept_id", "concept_name", 
+         "domain" = "domain_id", "vocabulary" = "vocabulary_id") |>
+  distinct() |>
+  mutate("codelist_name" = str_to_sentence(gsub("_", " ", gsub("_avr","",codelist_name)))) |>
+  mutate("codelist_name" = case_when(
+    codelist_name == "Aortic valve replacement potential tavi" ~ "Aortic valve replacement (potential TAVI)",
+    codelist_name == "Tavi" ~ "TAVI",
+    codelist_name == "Tavi additional" ~ "TAVI (used in combination with an aortic valve replacement -potential TAVI- code)",
+    .default = codelist_name
+  )) |>
+  arrange(codelist_name, concept_name) |>
+  visTable(type = "flextable", 
+           groupColumn = "codelist_name", 
+           rename = c("Concept ID" = "concept_id"))
+```
+
+
+
+
+\newpage
+Indications by age group (0 to 64)
+```{r, fig.width=8, fig.height=12}
+p1 <- getStackedPlot(result, 
+               cohort_name = "aortic_valve_replacement",
+               age_group = "0 to 64", 
+               sex = "overall", 
+               title = "A) Aortic valve replacement")
+
+p2 <- getStackedPlot(result, 
+               cohort_name = "tavi",
+               age_group = "0 to 64", 
+               sex = "overall", 
+               title = "B) Transcatheter aortic valve replacement (TAVI)")
+
+p3 <- getStackedPlot(result, 
+               cohort_name = "savr",
+               age_group = "0 to 64", 
+               sex = "overall", 
+               title = "C) Surgical aortic valve replacement (SAVR)")
+
+(p1 / p2 / p3) +
+  plot_layout(guides = "collect") &
+  theme(legend.position = "bottom")
+```
+
+\newpage
+Indications by age group (65 to 150)
+```{r, fig.width=8, fig.height=12}
+p1 <- getStackedPlot(result, 
+               cohort_name = "aortic_valve_replacement",
+               age_group = "65 to 150", 
+               sex = "overall", 
+               title = "A) Aortic valve replacement")
+
+p2 <- getStackedPlot(result, 
+               cohort_name = "tavi",
+               age_group = "65 to 150", 
+               sex = "overall", 
+               title = "B) Transcatheter aortic valve replacement (TAVI)")
+
+p3 <- getStackedPlot(result, 
+               cohort_name = "savr",
+               age_group = "65 to 150", 
+               sex = "overall", 
+               title = "C) Surgical aortic valve replacement (SAVR)")
+
+(p1 / p2 / p3) +
+  plot_layout(guides = "collect") &
+  theme(legend.position = "bottom")
+```
+
+\newpage
+Indications by sex (Females)
+```{r, fig.width=8, fig.height=12}
+p1 <- getStackedPlot(result, 
+               cohort_name = "aortic_valve_replacement",
+               age_group = "overall", 
+               sex = "Female", 
+               title = "A) Aortic valve replacement")
+
+p2 <- getStackedPlot(result, 
+               cohort_name = "tavi",
+               age_group = "overall", 
+               sex = "Female", 
+               title = "B) Transcatheter aortic valve replacement (TAVI)")
+
+p3 <- getStackedPlot(result, 
+               cohort_name = "savr",
+               age_group = "overall", 
+               sex = "Female", 
+               title = "C) Surgical aortic valve replacement (SAVR)")
+
+(p1 / p2 / p3) +
+  plot_layout(guides = "collect") &
+  theme(legend.position = "bottom")
+```
+
+\newpage
+Indications by sex (Males)
+```{r, fig.width=8, fig.height=12}
+p1 <- getStackedPlot(result, 
+               cohort_name = "aortic_valve_replacement",
+               age_group = "overall", 
+               sex = "Male", 
+               title = "A) Aortic valve replacement")
+
+p2 <- getStackedPlot(result, 
+               cohort_name = "tavi",
+               age_group = "overall", 
+               sex = "Male", 
+               title = "B) Transcatheter aortic valve replacement (TAVI)")
+
+p3 <- getStackedPlot(result, 
+               cohort_name = "savr",
+               age_group = "overall", 
+               sex = "Male", 
+               title = "C) Surgical aortic valve replacement (SAVR)")
+
+(p1 / p2 / p3) +
+  plot_layout(guides = "collect") &
+  theme(legend.position = "bottom")
+```
+
+\newpage
+Incidence stratified by sex (Female)
+```{r, fig.width=8, fig.height=12}
+# Incidence
+# p1 <- getIncidencePlot(result, age_group = c("40 to 64", "65 to 69"), sex = "Female")
+# p2 <- getIncidencePlot(result, age_group = c("70 to 74", "75 to 79"), sex = "Female")
+# p3 <- getIncidencePlot(result, age_group = c("80 to 84", "85 to 150"), sex = "Female")
+# 
+# p <- (p1/p2/p3) + 
+#   plot_layout(guides = "collect") &
+#   theme(legend.position = "top") 
+```
+
+\newpage
+Incidence stratified by sex (Male)
+```{r, fig.width=8, fig.height=12}
+# Incidence
+# p1 <- getIncidencePlot(result, age_group = c("40 to 64", "65 to 69"), sex = "Male")
+# p2 <- getIncidencePlot(result, age_group = c("70 to 74", "75 to 79"), sex = "Male")
+# p3 <- getIncidencePlot(result, age_group = c("80 to 84", "85 to 150"), sex = "Male")
+# 
+# p <- (p1/p2/p3) + 
+#   plot_layout(guides = "collect") &
+#   theme(legend.position = "top") 
+```
+
+\newpage
+Table incidence (Aortic valve replacement) - Overall
+```{r}
+getIncidenceTable(result,
+                  outcome_cohort_name = "aortic_valve_replacement", 
+                  age_group = c("0 to 150"), 
+                  sex = "Both") 
+```
+
+\newpage
+Table incidence (TAVI) - Overall
+```{r}
+getIncidenceTable(result,
+                  outcome_cohort_name = "tavi", 
+                  age_group = c("0 to 150"), 
+                  sex = "Both") 
+```
+
+\newpage
+Table incidence (SAVR) - Overall
+```{r}
+getIncidenceTable(result,
+                  outcome_cohort_name = "savr", 
+                  age_group = c("0 to 150"), 
+                  sex = "Both") 
+```
+
+\newpage
+Table incidence (Aortic valve replacement) - By age
+```{r}
+getIncidenceTable(result,
+                  outcome_cohort_name = "aortic_valve_replacement", 
+                  age_group = c("0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150"), 
+                  sex = "Both") 
+```
+
+\newpage
+Table incidence (Tavi) - By age
+```{r}
+getIncidenceTable(result,
+                  outcome_cohort_name = "tavi", 
+                  age_group = c("0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150"), 
+                  sex = "Both") 
+```
+
+\newpage
+Table incidence (savr) - By age
+```{r}
+getIncidenceTable(result,
+                  outcome_cohort_name = "savr", 
+                  age_group = c("0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150"), 
+                  sex = "Both") 
+```
+
+\newpage
+Table incidence (aortic valve replacement) - By sex 
+```{r}
+getIncidenceTable(result,
+                  outcome_cohort_name = "aortic_valve_replacement", 
+                  age_group = c("0 to 150"),
+                  sex = c("Female", "Male")) 
+```
+
+\newpage
+Table incidence (tavi) - By sex 
+```{r}
+getIncidenceTable(result,
+                  outcome_cohort_name = "tavi", 
+                  age_group = c("0 to 150"),
+                  sex = c("Female", "Male")) 
+```
+
+\newpage
+Table incidence (savi) - By sex 
+```{r}
+getIncidenceTable(result,
+                  outcome_cohort_name = "savr", 
+                  age_group = c("0 to 150"),
+                  sex = c("Female", "Male")) 
+```
+
+\newpage
+Table incidence (aortic valve replacement) - By age and sex 
+```{r}
+# getIncidenceTable(result,
+#                   outcome_cohort_name = "aortic_valve_replacement", 
+#                   age_group = c("0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150"), 
+#                   sex = c("Female", "Male")) 
+```
+
+\newpage
+Table incidence (tavi) - By age and sex 
+```{r}
+# getIncidenceTable(result,
+#                   outcome_cohort_name = "tavi", 
+#                   age_group = c("0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150"), 
+#                   sex = c("Female", "Male")) 
+```
+
+\newpage
+Table incidence (savr) - By age and sex 
+```{r}
+# getIncidenceTable(result,
+#                   outcome_cohort_name = "savr", 
+#                   age_group = c("0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150"), 
+#                   sex = c("Female", "Male")) 
+```
+

@@ -5,33 +5,15 @@ codelist <- importCodelist(here::here("cohorts", "study_codelists"), type = "csv
 
 # Create  no restrictions codelists (objective 2) ----
 omopgenerics::logMessage(message = "Instantiate aortic valve replacement (no restrictions)")
-cdm[["aortic_valve_replacement_nr"]] <- conceptCohort(cdm = cdm, 
-                                                      conceptSet = c(codelist["aortic_valve_replacement"]), 
-                                                      name = "aortic_valve_replacement_nr", 
-                                                      exit = "event_start_date")
-
-omopgenerics::logMessage(message = "Instantiate tavi & savi (no restrictions)")
-cdm <- createProceduresCohorts(cdm, 
-                               avrCohortName = "aortic_valve_replacement_nr", 
-                               taviCohortName = "tavi_nr", 
-                               saviCohortName = "savr_nr",
-                               proceduresCohortName = "procedures_nr",
-                               restrictions = FALSE) 
-
-cdm[["aortic_valve_replacement"]] <- cdm[["aortic_valve_replacement_nr"]] |>
-  copyCohorts(name = "aortic_valve_replacement") |>
-  newCohortTable(cohortSetRef = settings(cdm[["aortic_valve_replacement_nr"]]),
-                 cohortAttritionRef = attrition(cdm[["aortic_valve_replacement_nr"]]),
-                 cohortCodelistRef = attr(cdm[["aortic_valve_replacement_nr"]], "cohort_codelist"))
-
-omopgenerics::logMessage(message = "Anchor AVR to an aortic stenosis diagnosis")
-cdm[["aortic_valve_replacement_nr"]] <- cdm[["aortic_valve_replacement_nr"]] |>
+cdm[["aortic_valve_replacement"]] <- conceptCohort(cdm = cdm, 
+                                                   conceptSet = c(codelist["aortic_valve_replacement"]), 
+                                                   name = "aortic_valve_replacement", 
+                                                   exit = "event_start_date") |>
   requireConceptIntersect(conceptSet = codelist["aortic_stenosis_avr"], 
                           window = c(-365, 0), 
                           intersections = c(1,Inf), 
-                          name = "aortic_valve_replacement_nr")
+                          name = "aortic_valve_replacement")
 
-# Create procedures objective one cohorts ----
 omopgenerics::logMessage(message = "Add requirements to avr cohort")
 cdm[["aortic_valve_replacement"]] <- cdm[["aortic_valve_replacement"]] |>
   requireIsFirstEntry() |>
@@ -45,45 +27,37 @@ cdm <- createProceduresCohorts(cdm,
                                proceduresCohortName = "procedures",
                                restrictions = TRUE)
 
-# Creating indications cohorts ----
-omopgenerics::logMessage(message = "Instantiating aortic stenosis")
-cdm[["aortic_stenosis"]] <- conceptCohort(cdm = cdm, 
-                                          conceptSet = c(codelist["aortic_stenosis_avr"]), 
-                                          name = "aortic_stenosis", 
-                                          exit = "event_start_date") |>
-  requireInDateRange(dateRange = study_period) |>
-  requirePriorObservation(minPriorObservation = 365) |>
-  requireCohortIntersect(targetCohortTable = "aortic_valve_replacement", 
-                         window = c(0, 365), 
-                         intersections = c(1,Inf)) |>
-  requireIsLastEntry()
+omopgenerics::logMessage(message = "Instantiate comorbidities")
+cdm[["comorbidities"]] <- conceptCohort(cdm,
+                                        conceptSet = importCodelist(here("cohorts", "comorbidity_codelists"), type = "csv"), 
+                                        name = "comorbidities",
+                                        exit = "event_start_date")
 
-omopgenerics::logMessage(message = "Instantiating aortic insufficiency") 
-cdm[["aortic_insufficiency"]] <- conceptCohort(cdm = cdm, 
-                                               conceptSet = c(codelist["aortic_insufficiency_avr"]), 
-                                               name = "aortic_insufficiency", 
-                                               exit = "event_start_date") |>
-  requireInDateRange(dateRange = study_period) |>
-  requirePriorObservation(minPriorObservation = 365)  |>
-  requireCohortIntersect(targetCohortTable = "aortic_valve_replacement", 
-                         window = c(0, 365), 
-                         intersections = c(1,Inf)) |>
-  requireIsLastEntry()
+omopgenerics::logMessage(message = "Define chronic comorbidities")
+cdm[["comorbidities"]] <- cdm[["comorbidities"]] |>
+  exitAtObservationEnd(cohortId = c("aortic_calcification", "bicuspid_aortic_valve", "concomitant_valve_disorders_excluding_endocarditis",
+                                     "dialysis", "left_bundle_branch_block", "mitral_regurgitation", "peripheral_arterial_disease", 
+                                     "pre_existing_pacemaker_or_defibrillator", "right_bundle_branch_block", "unicuspid_aortic_valve",
+                                     "atrial_fibrillation", "chronic_liver_disease", "copd", "coronary_artery_disease", "dementia", "disorders_of_lipid_metabolism", 
+                                     "hypertension", "hypertrophic_cardiomyopathy", "left_bundle_branch_block", "type_2_diabetes", "heart_failure"))
 
-omopgenerics::logMessage(message = "Instantiating aortic endocarditis")
-cdm[["aortic_endocarditis"]] <- conceptCohort(cdm = cdm, 
-                                              conceptSet = c(codelist["aortic_endocarditis_avr"]), 
-                                              name = "aortic_endocarditis", 
-                                              exit = "event_start_date") |>
-  requireInDateRange(dateRange = study_period) |>
-  requirePriorObservation(minPriorObservation = 365) |>
-  requireCohortIntersect(targetCohortTable = "aortic_valve_replacement", 
-                         window = c(0, 365), 
-                         intersections = c(1,Inf)) |>
-  requireIsLastEntry()
+omopgenerics::logMessage(message = "Instantiate hfrs")
+cdm[["hospital_frailty_risk_score"]] <- conceptCohort(cdm,
+                                        conceptSet = importCodelist(here("cohorts", "hospital_frailty_risk_score"), type = "csv"), 
+                                        name = "hospital_frailty_risk_score",
+                                        exit = "event_start_date")
 
-cdm <- bind(cdm[["aortic_stenosis"]], cdm[["aortic_insufficiency"]], cdm[["aortic_endocarditis"]],
-            name = "indications")
+omopgenerics::logMessage(message = "Define chronic")
+def <- read_csv(here("cohorts", "hospital_frailty_risk_score", "icd_mapping", "hospital_frailty_score.csv")) |>
+  inner_join(read_csv(here("cohorts", "hospital_frailty_risk_score", "icd_mapping", "hfrs.csv"))) |>
+  filter(chronic) |> 
+  select(cohort_name_1, chronic) |>
+  distinct() |>
+  pull("cohort_name_1")
+
+cdm[["hospital_frailty_risk_score"]] <- cdm[["hospital_frailty_risk_score"]] |>
+  exitAtObservationEnd(cohortId = def)
+
 omopgenerics::logMessage(message = "FINISH INSTANTIATING COHORTS")
 
 

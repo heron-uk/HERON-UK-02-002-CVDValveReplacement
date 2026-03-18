@@ -19,6 +19,7 @@ library(readr)
 library(clock)
 library(rlang)
 library(stringr)
+library(purrr)
 
 # database metadata and connection details
 # The name/ acronym for the database
@@ -58,7 +59,7 @@ writeSchema <- ""
 achillesSchema <- ""
 
 # minimum counts that can be displayed according to data governance
-minCellCount <- 5
+min_cell_count <- 5
 
 # Create cdm object ----
 cdm <- cdmFromCon(

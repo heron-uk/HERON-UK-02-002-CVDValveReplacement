@@ -59,7 +59,48 @@ data_inc <- data_inc |>
     "aortic_valve_replacement", "Aortic valve replacement"))
 ```
 
-### Figure 1. Incidence by age and socioeconomic status 
+### Age-standardised incidence by socioeconomic status 
+
+```{r, echo = FALSE}
+sesStandarisedPlot <- function() {
+  working_plot <- data_inc |>
+    omopgenerics::filterSettings(standardised_incidence == "TRUE") |>
+    omopgenerics::filterAdditional(analysis_interval == "overall") |>
+    omopgenerics::filterSettings(denominator_sex == "Both") |>
+    omopgenerics::filterStrata(ses != "Missing") |>
+    dplyr::filter(strata_level != "overall") |> 
+    IncidencePrevalence::plotIncidence(colour = "ses", 
+                                       x = "ses",
+                                       facet = outcome_cohort_name~cdm_name, 
+                                       line = TRUE, ribbon = TRUE) +
+    theme_bw() +
+    theme(
+      axis.text.x = element_text(angle = 0, vjust = 0.5),
+        strip.background = element_rect(
+          fill = "gray94"
+    )) +
+    facet_grid(outcome_cohort_name~cdm_name, scales = "free_y")+
+    labs(colour = "Socioeconomic status",
+         fill = "Socioeconomic status") +
+    theme(legend.position = "top")+
+    xlab("Socioeconomic status") 
+  
+  working_plot@data <- working_plot@data |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "1",
+      "1 (least deprived)", ses)) |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "5",
+      "5 (most deprived)", ses))
+  
+  working_plot
+  
+  working_plot
+}
+sesStandarisedPlot()
+```
+
+### Incidence by age and socioeconomic status 
 
 ```{r, echo = FALSE}
 sesIncPlotAge <- function() {
@@ -84,17 +125,15 @@ sesIncPlotAge <- function() {
     labs(colour = "Socioeconomic status",
          fill = "Socioeconomic status") +
     theme(legend.position = "top")+
-    xlab("Age") +
-    scale_y_sqrt(limits = c(0, NA),                   
-                 expand = expansion(mult = c(0, 0.05)))
+    xlab("Age") 
   
   working_plot@data <- working_plot@data |> 
     dplyr::mutate(ses = dplyr::if_else(
       ses == "1",
-      "1 (most deprived)", ses)) |> 
+      "1 (least deprived)", ses)) |> 
     dplyr::mutate(ses = dplyr::if_else(
       ses == "5",
-      "5 (least deprived)", ses))
+      "5 (most deprived)", ses))
   
   working_plot
   
@@ -103,7 +142,7 @@ sesIncPlotAge <- function() {
 sesIncPlotAge()
 ```
 
-### Figure 2. Incidence by year and socioeconomic status 
+### Incidence by year and socioeconomic status 
 
 ```{r, echo = FALSE}
 sesIncPlot <- function(outcome) {
@@ -117,11 +156,12 @@ working_plot <- data_inc |>
   IncidencePrevalence::plotIncidence(colour = "ses", 
                                      facet = denominator_age_group~cdm_name, 
                                      line = TRUE, ribbon = TRUE) +
-  theme(
-    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
-    strip.background = element_rect(
-      fill = "gray94"
-    )) +
+    theme_bw() +
+    theme(
+      axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        strip.background = element_rect(
+          fill = "gray94"
+    ))+
   facet_grid(outcome_cohort_name~cdm_name, scales = "free_y") +
   ylim(c(0, NA)) + 
   labs(colour = "Socioeconomic status",
@@ -134,10 +174,10 @@ working_plot@data <- working_plot@data |>
     "Overall", denominator_age_group))|> 
   dplyr::mutate(ses = dplyr::if_else(
     ses == "1",
-    "1 (most deprived)", ses)) |> 
+    "1 (least deprived)", ses)) |> 
   dplyr::mutate(ses = dplyr::if_else(
     ses == "5",
-    "5 (least deprived)", ses))
+    "5 (most deprived)", ses))
 
 
 working_plot
@@ -156,8 +196,6 @@ data_inc |>
   IncidencePrevalence::plotIncidence(x = "ses", colour = "denominator_sex", facet = cdm_name~outcome_cohort_name) +
   facet_grid(cdm_name ~ outcome_cohort_name, scales = "free", space = "free") +
   coord_cartesian(ylim = c(20, 160)) 
-
-
 
 ```
 
