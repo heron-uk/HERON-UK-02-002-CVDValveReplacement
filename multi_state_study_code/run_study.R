@@ -30,8 +30,8 @@ results <- list()
 
 # CDM modifications -----
 # CDM summary -----
-#results[["snapshot"]] <- OmopSketch::summariseOmopSnapshot(cdm)
-#results[["obs_period"]] <- OmopSketch::summariseObservationPeriod(cdm)
+results[["snapshot"]] <- OmopSketch::summariseOmopSnapshot(cdm)
+results[["obs_period"]] <- OmopSketch::summariseObservationPeriod(cdm)
 
 # Instantiate study cohorts ----
 omopgenerics::logMessage(message = "Instantiating study cohorts")
@@ -43,13 +43,13 @@ omopgenerics::logMessage(message = "Run study analyses")
 
 omopgenerics::logMessage(message = "Get cohort code use")
 
-#results[["code_use"]] <- CodelistGenerator::summariseCohortCodeUse(cdm, "study_cohorts_inc")
+results[["code_use"]] <- CodelistGenerator::summariseCohortCodeUse(cdm, "study_cohorts_inc")
 
 omopgenerics::logMessage(message = "Get cohort attrition")
 
-#results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$study_cohorts)
+results[["attrition"]] <- CohortCharacteristics::summariseCohortAttrition(cdm$study_cohorts)
 
-#source(here::here("analyses", "incidence_prevalence.R"))
+source(here::here("analyses", "incidence_prevalence.R"))
 
 source(here::here("analyses", "multi_state_data_preparation.R"))
 
