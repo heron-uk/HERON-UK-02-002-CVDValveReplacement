@@ -55,7 +55,7 @@ addEthnicity <- function(cohort) {
   if (grepl("dataloch", tolower(cdmName(cdm)))) {
     cohort |>
       dplyr::left_join(
-        cdm$observation |>
+        cdm$person |>
           dplyr::select("person_id", "race_source_value"),
         by = c("subject_id" = "person_id")
       ) |>
