@@ -140,7 +140,7 @@ for (cohort_name in cohort_names) {
     } else { 
     bs_hazards <- data_age |> 
       group_by(ses) |> 
-      do(as.data.frame(bshazard::bshazard(Surv(t_start, t_stop, status)~1, 
+      do(as.data.frame(bshazard::bshazard(rms::Surv(t_start, t_stop, status)~1, 
                                 data=., 
                                 verbose=FALSE))) |>
       ungroup()
