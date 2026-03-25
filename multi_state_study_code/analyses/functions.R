@@ -32,11 +32,11 @@ addSES <- function(cohort, date_name = "cohort_start_date") {
       ) |>
       dplyr::mutate(
         ses = dplyr::case_when(
-          ses %in% c(1, 2)  ~ 5L,
-          ses %in% c(3, 4)  ~ 4L,
+          ses %in% c(1, 2)  ~ 1L,
+          ses %in% c(3, 4)  ~ 2L,
           ses %in% c(5, 6)  ~ 3L,
-          ses %in% c(7, 8)  ~ 2L,
-          ses %in% c(9, 10) ~ 1L,
+          ses %in% c(7, 8)  ~ 4L,
+          ses %in% c(9, 10) ~ 5L,
           TRUE ~ NA_real_
         ),
         ses = as.character(.data$ses),
@@ -147,7 +147,7 @@ addCKDStage <- function(cohort) {
     compute(name = name, temporary = FALSE)
 }
 
-hr_summary <- function(model, transition, model_name) {
+hr_summary <- function(model, transition, model_name, age_limit) {
   
   p_res <- as.data.frame(stats::anova(model)) |>
     tibble::as_tibble(rownames = "variable") |>
@@ -171,8 +171,10 @@ hr_summary <- function(model, transition, model_name) {
     dplyr::mutate(
       transition = transition,
       model_name = model_name,
+      age_limit = age_limit,
       result_type = "hr_summary",
-      package_name = "HERON-UK-02-002-CVDValveReplacement"
+      package_name = "HERON-UK-02-002-CVDValveReplacement",
+      package_version = "2.0"
     ) |>
     dplyr::mutate(cdm_name = cdmName(cdm)) |>
     dplyr::select(!any_of(c("rel_age", "variable"))) |>
@@ -180,10 +182,41 @@ hr_summary <- function(model, transition, model_name) {
       group = "transition",
       estimates = c("hazard_ratio", "se_coef", "lower_hr", "upper_hr", "p_value"),
       additional = "model_name",
-      settings = c("result_type", "package_name")
+      settings = c("result_type", "package_name", "package_version", "age_limit")
     )
 }
 
+as.data.frame.bshazard <- function(x, ...){
+  with(x, data.frame(time,
+                     hazard,
+                     lower_ci = lower.ci,
+                     upper_ci = upper.ci))}
+
+bshaz_summarised_result <- function(bshaz, transition, age_limit) {
+  
+  bshaz |>
+    dplyr::mutate(
+      ses = as.character(ses),
+      variable_name = "time", 
+      variable_level = as.character(time)
+    )  |>
+    dplyr::mutate(
+      transition = transition,
+      age_limit = age_limit,
+      result_type = "smoothed_hazard",
+      package_name = "HERON-UK-02-002-CVDValveReplacement",
+      package_version = "2.0"
+    ) |>
+    dplyr::mutate(cdm_name = cdmName(cdm)) |>
+    dplyr::select(!c("time")) |> 
+    omopgenerics::transformToSummarisedResult(
+      group = "transition",
+      strata = "ses",
+      estimates = c("hazard", "lower_ci", "upper_ci"),
+      settings = c("result_type", "package_name", "package_version","age_limit")
+    )
+  
+}
 
 # improved clean_variables
 clean_variables <- function(df, var_col = "variable_name") {
@@ -249,6 +282,7 @@ clean_variables <- function(df, var_col = "variable_name") {
 hr_summary_age_model <- function(model,
                                  transition,
                                  model_name,
+                                 age_limit, 
                                  reference_age = 70, # reference age
                                  comparison_age = seq(20, 100, 1)) { # comparison ages
   res <- list()
@@ -282,19 +316,20 @@ hr_summary_age_model <- function(model,
     dplyr::mutate(
       transition = transition,
       model_name = model_name,
+      age_limit = age_limit,
       result_type = "hr_summary",
       package_name = "HERON-UK-02-002-CVDValveReplacement",
-      package_version = "1.0"
+      package_version = "2.0"
     ) |>
     dplyr::mutate(cdm_name = cdmName(cdm)) |>
     dplyr::select(!any_of(c("rel_age", "variable"))) |>
     omopgenerics::transformToSummarisedResult(
       group = "transition",
       estimates = c("hazard_ratio", "lower_hr", "upper_hr", "aic", "bic", "se_coef"),
-      additional = "model_name", "ref_age",
+      additional = c("model_name", "ref_age"),
       settings = c(
         "result_type", "package_name",
-        "package_version"
+        "package_version", "age_limit"
       )
     )
 }
