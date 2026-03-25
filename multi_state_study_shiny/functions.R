@@ -246,7 +246,7 @@ simpleTable <- function(result,
   )
   result <- result |>
     visOmopResults::formatEstimateValue(
-      decimals = c(integer = 0, numeric = 1, percentage = 0)
+      decimals = c(integer = 0, numeric = 3, percentage = 0)
     ) |>
     visOmopResults::formatEstimateName(estimateName = formatEstimates) |>
     suppressMessages() |>
