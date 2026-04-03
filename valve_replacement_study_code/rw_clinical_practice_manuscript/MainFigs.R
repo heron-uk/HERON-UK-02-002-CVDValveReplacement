@@ -20,8 +20,8 @@ result <- importSummarisedResult(path = here("Results")) |>
 # Attrition ----
 x <- result |>
   filterSettings(result_type == "summarise_cohort_attrition") |> 
-  filterGroup(cohort_name %in% c("aortic_stenosis", "aortic_insufficiency", "aortic_endocarditis")) |>
-  mutate("group_level" = str_to_sentence(gsub("_", " ", group_level))) |>
+  filterGroup(cohort_name %in% c("aortic_stenosis_avr", "aortic_insufficiency_avr", "aortic_endocarditis_avr")) |>
+  mutate("group_level" = str_to_sentence(gsub("_", " ", gsub("_avr","",group_level)))) |>
   mutate("group_level" = factor(group_level, levels = c("Aortic stenosis", "Aortic insufficiency", "Aortic endocarditis"))) |> 
   arrange(group_level)
 
@@ -39,6 +39,13 @@ rsvg_png(
   width = 6000,
   height = 3000
 )
+
+x <- result |>
+  filterSettings(result_type == "summarise_cohort_attrition")  |>
+  filterGroup(cohort_name %in% c("aortic_valve_replacement", "tavi", "savr"))
+
+x <- combineReasons(x, res_id = c(2,3,4))
+x <- combineReasons(x, res_id = c(2,3,4))
 
 # Indications ----
 p1 <- getStackedPlot(result, 

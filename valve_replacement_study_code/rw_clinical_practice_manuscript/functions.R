@@ -8,6 +8,7 @@ getStackedPlot <- function(result, cohort_name, age_group, sex, title) {
     filter(strata_name != "overall") |>
     filterStrata(calendar_year != "overall") |>
     mutate("variable_level" = gsub("Aortic valve replacement", "No indication identified", variable_level)) |>
+    mutate("variable_level" = gsub(" avr", "", variable_level)) |>
     mutate("variable_level" = factor(variable_level, 
                                      levels = c("Aortic stenosis", "Aortic insufficiency", "Aortic endocarditis",
                                                 "Aortic stenosis insufficiency", "Aortic stenosis endocarditis",
@@ -105,10 +106,9 @@ combineReasons <- function(x, res_id, new_reason = NULL){
   merge <- x |>
     splitAll() |>
     filter(reason_id %in% !!res_id) 
-  
   rid <- max(res_id, na.rm = TRUE)
   
-  if(is.null(new_reason)){
+    if(is.null(new_reason)){
     reason <- merge |>
       select("result_id", "cdm_name", "cohort_name", "reason") |>
       distinct() |>

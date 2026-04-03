@@ -8,8 +8,7 @@ format:
     number-sections: true
     colorlinks: true
     keeptex: true
-
-date: 'last-modified'
+    
 date-format: '[This version:] March, 2026'
 csl: american-sociological-association.csl
 tbl-cap-location: top

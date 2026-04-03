@@ -10,6 +10,12 @@ cdm[["aortic_valve_replacement_nr"]] <- conceptCohort(cdm = cdm,
                                               name = "aortic_valve_replacement_nr", 
                                               exit = "event_start_date")
 
+
+
+
+
+
+
 omopgenerics::logMessage(message = "Instantiate tavi & savi (no restrictions)")
 cdm <- createProceduresCohorts(cdm, 
                                avrCohortName = "aortic_valve_replacement_nr", 
@@ -26,6 +32,7 @@ cdm[["aortic_valve_replacement"]] <- cdm[["aortic_valve_replacement_nr"]] |>
 
 omopgenerics::logMessage(message = "Anchor AVR to an aortic stenosis diagnosis")
 cdm[["aortic_valve_replacement_nr"]] <- cdm[["aortic_valve_replacement_nr"]] |>
+  requirePriorObservation(minPriorObservation = 365) |>
   requireConceptIntersect(conceptSet = codelist["aortic_stenosis_avr"], 
                           window = c(-365, 0), 
                           intersections = c(1,Inf), 
@@ -35,6 +42,7 @@ cdm[["aortic_valve_replacement_nr"]] <- cdm[["aortic_valve_replacement_nr"]] |>
 omopgenerics::logMessage(message = "Add requirements to avr cohort")
 cdm[["aortic_valve_replacement"]] <- cdm[["aortic_valve_replacement"]] |>
   requireIsFirstEntry() |>
+  requirePriorObservation(minPriorObservation = 365) |>
   requireInDateRange(dateRange = study_period)
 
 omopgenerics::logMessage(message = "Add requirements to savr and tavi cohorts")
