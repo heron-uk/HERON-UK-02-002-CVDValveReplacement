@@ -50,6 +50,6 @@ results <- results |>
 omopgenerics::exportSummarisedResult(results,
                                      minCellCount = min_cell_count,
                                      fileName = "results_{cdm_name}_{date}.csv",
-                                     path = here("results"))
+                                     path = here("Results"))
 
 cli::cli_alert_success("Study finished")
