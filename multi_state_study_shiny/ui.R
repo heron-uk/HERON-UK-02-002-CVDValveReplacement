@@ -1331,6 +1331,14 @@ ui <- bslib::page_navbar(
           options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
         ),
         shinyWidgets::pickerInput(
+          inputId = "hr_summary_age_limit",
+          label = "Age limit",
+          choices = choices$hr_summary_age_limit,
+          selected = selected$hr_summary_age_limit,
+          multiple = TRUE,
+          options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+        ),
+        shinyWidgets::pickerInput(
           inputId = "hr_summary_variable_name",
           label = "Variable name",
           choices = choices$hr_summary_variable_name,
@@ -1390,7 +1398,7 @@ ui <- bslib::page_navbar(
                   header = NULL,
                   sortable::add_rank_list(
                     text = "None",
-                    labels = c( "ref_age","variable_name", "variable_level", "estimate_name"),
+                    labels = c( "ref_age","variable_name", "variable_level", "estimate_name", "age_limit"),
                     input_id = "hr_summary_table_none"
                   ),
                   sortable::add_rank_list(
@@ -1460,15 +1468,15 @@ ui <- bslib::page_navbar(
                 shinyWidgets::pickerInput(
                   inputId = "hr_summary_age_model_plot_facet",
                   label = "Facet",
-                  choices = c("transition", "cdm_name", "model_name"),
-                  selected = "transition",
+                  choices = c("transition", "cdm_name", "model_name", "age_limit"),
+                  selected = c("transition", "age_limit"),
                   multiple = TRUE,
                   options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
                 ),
                 shinyWidgets::pickerInput(
                   inputId = "hr_summary_age_model_plot_colour",
                   label = "Colour",
-                  choices = c("cdm_name", "transition", "model_name"),
+                  choices = c("cdm_name", "transition", "model_name", "age_limit"),
                   selected = c("cdm_name", "model_name"),
                   multiple = TRUE,
                   options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
@@ -1524,15 +1532,15 @@ ui <- bslib::page_navbar(
                 shinyWidgets::pickerInput(
                   inputId = "hr_summary_plot_facet",
                   label = "Facet",
-                  choices = c("transition", "cdm_name", "model_name"),
-                  selected = "transition",
+                  choices = c("transition", "cdm_name", "model_name", "age_limit"),
+                  selected = c("transition", "age_limit"),
                   multiple = TRUE,
                   options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
                 ),
                 shinyWidgets::pickerInput(
                   inputId = "hr_summary_plot_colour",
                   label = "Colour",
-                  choices = c("cdm_name", "transition", "model_name"),
+                  choices = c("cdm_name", "transition", "model_name", "age_limit"),
                   selected = c("model_name"),
                   multiple = TRUE,
                   options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
