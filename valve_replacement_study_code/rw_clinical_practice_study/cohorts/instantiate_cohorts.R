@@ -36,7 +36,10 @@ cdm[["tavi_direct"]] <- conceptCohort(cdm = cdm,
                                       name = "tavi_direct",
                                       conceptSet = codelist["tavi"],
                                       exit = "event_start_date") |>
-  renameCohort(newCohortName = "tavi_direct")
+  renameCohort(newCohortName = "tavi_direct") |>
+  requireIsFirstEntry() |>
+  requirePriorObservation(minPriorObservation = 365) |>
+  requireInDateRange(dateRange = study_period) 
 
 omopgenerics::logMessage(message = "Instantiate TAVI cohorts")
 cdm <- bind(cdm[["tavi_additional"]], cdm[["tavi_direct"]], name = "tavi")
@@ -53,7 +56,7 @@ cdm[["savr"]] <- cdm[["aortic_valve_replacement"]] |>
                          intersections = 0, 
                          name = "savr") |>
   renameCohort(newCohortName = "savr") |>
-  requireIsFirstEntry() 
+  requireIsFirstEntry()
 
 cdm <- bind(cdm[["aortic_valve_replacement"]], cdm[["tavi"]], cdm[["savr"]], name = "procedures")
 
@@ -101,14 +104,12 @@ cdm[["savr"]] <- cdm[["procedures_nr"]] |>
 
 cdm <- bind(cdm[["procedures_nr"]], cdm[["tavi"]], cdm[["savr"]], name = "procedures_nr")
 
-
 omopgenerics::logMessage(message = "Anchor to AS diagnosis during the previous year")
 cdm[["procedures_nr"]] <- cdm[["procedures_nr"]] |>
   requireConceptIntersect(conceptSet = codelist["aortic_stenosis_avr"], 
                           window = c(-365, 0), 
                           intersections = c(1,Inf), 
                           name = "procedures_nr")
-
 
 # Create Procedure Cohorts (Objective 1) ----
 omopgenerics::logMessage(message = "Instantiating aortic stenosis")
