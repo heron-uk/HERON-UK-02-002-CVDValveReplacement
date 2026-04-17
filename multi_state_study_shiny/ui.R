@@ -1188,7 +1188,7 @@ ui <- bslib::page_navbar(
                     header = NULL,
                     sortable::add_rank_list(
                       text = "None",
-                      labels = c("variable_name", "variable_level", "estimate_name"),
+                      labels = c("variable_name", "variable_level", "estimate_name", "ses"),
                       input_id = "summarise_characteristics_table_none"
                     ),
                     sortable::add_rank_list(

@@ -5,7 +5,7 @@ omopgenerics::validateCdmArgument(cdm,
                                                      "condition_occurrence",
                                                      "drug_exposure",
                                                      "concept"))
-omopgenerics::assertNumeric(minCellCount)
+omopgenerics::assertNumeric(min_cell_count)
 
 source(here("analyses", "functions.R"))
 
@@ -50,6 +50,6 @@ results <- results |>
 omopgenerics::exportSummarisedResult(results,
                                      minCellCount = min_cell_count,
                                      fileName = "results_{cdm_name}_{date}.csv",
-                                     path = here("results"))
+                                     path = here("Results"))
 
 cli::cli_alert_success("Study finished")

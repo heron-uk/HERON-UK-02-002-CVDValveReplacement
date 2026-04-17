@@ -3,53 +3,112 @@ omopgenerics::logMessage(message = "INSTANTIATING COHORTS")
 omopgenerics::logMessage(message = "Import codelists")
 codelist <- importCodelist(here::here("cohorts", "study_codelists"), type = "csv")
 
-# Create  no restrictions codelists (objective 2) ----
-omopgenerics::logMessage(message = "Instantiate aortic valve replacement (no restrictions)")
-cdm[["aortic_valve_replacement_nr"]] <- conceptCohort(cdm = cdm, 
-                                              conceptSet = c(codelist["aortic_valve_replacement"]), 
-                                              name = "aortic_valve_replacement_nr", 
-                                              exit = "event_start_date")
+# Create restrictions code lists ----
+omopgenerics::logMessage(message = "Instantiate aortic valve replacement")
+cdm[["aortic_valve_replacement"]] <- conceptCohort(cdm = cdm, 
+                                                   conceptSet = c(codelist["aortic_valve_replacement"]), 
+                                                   name = "aortic_valve_replacement", 
+                                                   exit = "event_start_date") 
+cdm <- bind(cdm[["aortic_valve_replacement"]], name = "procedures_nr")
 
-
-
-omopgenerics::logMessage(message = "Instantiate tavi & savi (no restrictions)")
-cdm <- createProceduresCohorts(cdm, 
-                               avrCohortName = "aortic_valve_replacement_nr", 
-                               taviCohortName = "tavi_nr", 
-                               saviCohortName = "savr_nr",
-                               proceduresCohortName = "procedures_nr",
-                               restrictions = FALSE) 
-
-cdm[["aortic_valve_replacement"]] <- cdm[["aortic_valve_replacement_nr"]] |>
-  copyCohorts(name = "aortic_valve_replacement") |>
-  newCohortTable(cohortSetRef = settings(cdm[["aortic_valve_replacement_nr"]]),
-                 cohortAttritionRef = attrition(cdm[["aortic_valve_replacement_nr"]]),
-                 cohortCodelistRef = attr(cdm[["aortic_valve_replacement_nr"]], "cohort_codelist"))
-
-omopgenerics::logMessage(message = "Anchor AVR to an aortic stenosis diagnosis")
-cdm[["aortic_valve_replacement_nr"]] <- cdm[["aortic_valve_replacement_nr"]] |>
-  requirePriorObservation(minPriorObservation = 365) |>
-  requireConceptIntersect(conceptSet = codelist["aortic_stenosis_avr"], 
-                          window = c(-365, 0), 
-                          intersections = c(1,Inf), 
-                          name = "aortic_valve_replacement_nr")
-
-# Create procedures objective one cohorts ----
-omopgenerics::logMessage(message = "Add requirements to avr cohort")
+# Procedures with restrictions ----
+omopgenerics::logMessage(message = "Instantiate aortic valve replacement - add inclusion criteria")
 cdm[["aortic_valve_replacement"]] <- cdm[["aortic_valve_replacement"]] |>
   requireIsFirstEntry() |>
   requirePriorObservation(minPriorObservation = 365) |>
-  requireInDateRange(dateRange = study_period)
+  requireInDateRange(dateRange = study_period) 
 
-omopgenerics::logMessage(message = "Add requirements to savr and tavi cohorts")
-cdm <- createProceduresCohorts(cdm,
-                               avrCohortName = "aortic_valve_replacement",
-                               taviCohortName = "tavi", 
-                               saviCohortName = "savr",
-                               proceduresCohortName = "procedures",
-                               restrictions = TRUE)
+# Create tavi additional ----
+omopgenerics::logMessage(message = "Instantiating TAVI (additional) cohort")
+cdm[["tavi_additional"]] <- cdm[["aortic_valve_replacement"]] |>
+  requireConceptIntersect(conceptSet = codelist["aortic_valve_replacement_potential_tavi"],
+                          intersections = c(1,Inf), 
+                          window = c(0,0), 
+                          name = "tavi_additional") |>
+  renameCohort(newCohortName = "tavi_additional") |>
+  requireConceptIntersect(conceptSet = codelist["tavi_additional"],
+                          intersections = c(1,Inf), 
+                          window = c(0,0), 
+                          name = "tavi_additional")
 
-# Creating indications cohorts ----
+omopgenerics::logMessage(message = "Instantiating TAVI (direct) cohort")
+cdm[["tavi_direct"]] <- conceptCohort(cdm = cdm,
+                                      name = "tavi_direct",
+                                      conceptSet = codelist["tavi"],
+                                      exit = "event_start_date") |>
+  renameCohort(newCohortName = "tavi_direct")
+
+omopgenerics::logMessage(message = "Instantiate TAVI cohorts")
+cdm <- bind(cdm[["tavi_additional"]], cdm[["tavi_direct"]], name = "tavi")
+cdm[["tavi"]] <- cdm[["tavi"]] |>
+  unionCohorts(cohortId = c("tavi_additional", "tavi_direct"), 
+               cohortName = "tavi",
+               keepOriginalCohorts = FALSE)
+
+omopgenerics::logMessage(message = "Instantiate SAVR cohort")
+cdm[["savr"]] <- cdm[["aortic_valve_replacement"]] |>
+  requireCohortIntersect(targetCohortTable = "tavi",
+                         window = c(0,0), 
+                         intersections = 0, 
+                         name = "savr") |>
+  renameCohort(newCohortName = "savr")
+
+cdm <- bind(cdm[["aortic_valve_replacement"]], cdm[["tavi"]], cdm[["savr"]], name = "procedures")
+
+omopgenerics::logMessage(message = "Get cohort attritions")
+results[["attrition_tavi_additional"]] <- summariseCohortAttrition(cdm[["tavi_additional"]])
+results[["attrition_tavi_direct"]] <- summariseCohortAttrition(cdm[["tavi_direct"]])
+
+# Create no restrictions code lists (Objective 2)----
+# Procedures with restrictions ----
+omopgenerics::logMessage(message = "Instantiate aortic valve replacement - add inclusion criteria")
+# Create tavi additional ----
+omopgenerics::logMessage(message = "Instantiating TAVI (additional) cohort")
+cdm[["tavi_additional"]] <- cdm[["procedures_nr"]] |>
+  requireConceptIntersect(conceptSet = codelist["aortic_valve_replacement_potential_tavi"],
+                          intersections = c(1,Inf), 
+                          window = c(0,0), 
+                          name = "tavi_additional") |>
+  renameCohort(newCohortName = "tavi_additional") |>
+  requireConceptIntersect(conceptSet = codelist["tavi_additional"],
+                          intersections = c(1,Inf), 
+                          window = c(0,0), 
+                          name = "tavi_additional")
+
+omopgenerics::logMessage(message = "Instantiating TAVI (direct) cohort")
+cdm[["tavi_direct"]] <- conceptCohort(cdm = cdm,
+                                      name = "tavi_direct",
+                                      conceptSet = codelist["tavi"],
+                                      exit = "event_start_date") |>
+  renameCohort(newCohortName = "tavi_direct")
+
+omopgenerics::logMessage(message = "Instantiate TAVI cohorts")
+cdm <- bind(cdm[["tavi_additional"]], cdm[["tavi_direct"]], name = "tavi")
+cdm[["tavi"]] <- cdm[["tavi"]] |>
+  unionCohorts(cohortId = c("tavi_additional", "tavi_direct"), 
+               cohortName = "tavi",
+               keepOriginalCohorts = FALSE)
+
+omopgenerics::logMessage(message = "Instantiate SAVR cohort")
+cdm[["savr"]] <- cdm[["procedures_nr"]] |>
+  requireCohortIntersect(targetCohortTable = "tavi",
+                         window = c(0,0), 
+                         intersections = 0, 
+                         name = "savr") |>
+  renameCohort(newCohortName = "savr")
+
+cdm <- bind(cdm[["procedures_nr"]], cdm[["tavi"]], cdm[["savr"]], name = "procedures_nr")
+
+
+omopgenerics::logMessage(message = "Anchor to AS diagnosis during the previous year")
+cdm[["procedures_nr"]] <- cdm[["procedures_nr"]] |>
+  requireConceptIntersect(conceptSet = codelist["aortic_stenosis_avr"], 
+                          window = c(-365, 0), 
+                          intersections = c(1,Inf), 
+                          name = "procedures_nr")
+
+
+# Create Procedure Cohorts (Objective 1) ----
 omopgenerics::logMessage(message = "Instantiating aortic stenosis")
 cdm[["aortic_stenosis"]] <- conceptCohort(cdm = cdm, 
                                           conceptSet = c(codelist["aortic_stenosis_avr"]), 
