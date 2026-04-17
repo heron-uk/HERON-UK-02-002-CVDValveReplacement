@@ -12,3 +12,7 @@ code_to_run_local.R
 quarto_files/
 congenital_study_shiny/quarto/data/*.csv
 congenital_study_shiny/quarto/quarto_files
+valve_replacement_study_code/rw_clinical_practice_study/Results/results_HERON_CDM_202509_2026_03_16.csv
+valve_replacement_study_code/rw_clinical_practice_manuscript/Results/results_HERON_CDM_202509_2026_04_10.csv
+valve_replacement_study_code/rw_clinical_practice_manuscript/Report/Figures/incidence.png
+valve_replacement_study_code/rw_clinical_practice_manuscript/Report/Figures/incidence.png

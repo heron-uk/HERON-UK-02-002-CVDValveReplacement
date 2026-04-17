@@ -92,8 +92,22 @@ codelists_avr |>
            rename = c("Concept ID" = "concept_id"))
 ```
 
-
-
+# Table 1 
+```{r}
+result |>
+  filterSettings(result_type == "summarise_characteristics") |>
+  filter(strata_level == "overall") |>
+  filter(!variable_name %in% c("Number records", "Cohort start date", "Cohort end date",
+                               "Prior observation", "Future observation", "Days in cohort",
+                               "Days to next record")) |>
+  filter(!(variable_name == "Age" & estimate_name %in% c("mean", "sd", "min", "max"))) |>
+  mutate("group_level" = gsub("tavi", "TAVI", group_level),
+         "group_level" = gsub("savr", "SAVR", group_level),
+         "group_level" = gsub("aortic_valve_replacement", "AVR", group_level)) |>
+  mutate("variable_level" = gsub(" avr", "", variable_level)) |>
+  tableCharacteristics(type = "flextable", 
+                       hide = c("calendar_year", "age_group", "sex", "table_name"))
+```
 
 \newpage
 Indications by age group (0 to 64)

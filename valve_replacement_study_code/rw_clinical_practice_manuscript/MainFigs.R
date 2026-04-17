@@ -12,40 +12,19 @@ library(patchwork)
 library(rsvg)
 library(DiagrammeRsvg)
 library(IncidencePrevalence)
-source(here("Report", "functions.R"))
+source(here("functions.R"))
 
 result <- importSummarisedResult(path = here("Results")) |>
-  mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD Aurum", cdm_name)) 
+  mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD Aurum", cdm_name)) |>
+  filter(!(cdm_name == "CPRD Aurum" & strata_level == "2025"))
 
 # Attrition ----
 x <- result |>
-  filterSettings(result_type == "summarise_cohort_attrition") |> 
-  filterGroup(cohort_name %in% c("aortic_stenosis_avr", "aortic_insufficiency_avr", "aortic_endocarditis_avr")) |>
-  mutate("group_level" = str_to_sentence(gsub("_", " ", gsub("_avr","",group_level)))) |>
-  mutate("group_level" = factor(group_level, levels = c("Aortic stenosis", "Aortic insufficiency", "Aortic endocarditis"))) |> 
+  filterSettings(result_type == "summarise_cohort_attrition") |>
+  filter(group_level %in% c("aortic_valve_replacement", "tavi", "tavi_additional", "tavi_direct", "savr")) |>
   arrange(group_level)
 
-x <- combineReasons(x, res_id = c(2,3,4))
-x <- combineReasons(x, res_id = c(5), new_reason = "Restrict to study period (2012-01-01 onwards)")
-x <- combineReasons(x, res_id = c(7,8), new_reason = "Require an aortic valve replacement within 0-365 days following the diagnosis and restrict to the most recent diagnosis before the replacement")
-x <- combineReasons(x, res_id = c(9,10,11), new_reason = "Restrict to diagnosis with no other indication diagnosis recorded on the same day")
-
-g <- plotCohortAttrition(x) 
-svg <- export_svg(g)
-
-rsvg_png(
-  charToRaw(svg),
-  file = here("Report", "Figures", "cohort_attrition.png"),
-  width = 6000,
-  height = 3000
-)
-
-x <- result |>
-  filterSettings(result_type == "summarise_cohort_attrition")  |>
-  filterGroup(cohort_name %in% c("aortic_valve_replacement", "tavi", "savr"))
-
-x <- combineReasons(x, res_id = c(2,3,4))
-x <- combineReasons(x, res_id = c(2,3,4))
+x |> plotCohortAttrition()
 
 # Indications ----
 p1 <- getStackedPlot(result, 
@@ -66,11 +45,11 @@ p3 <- getStackedPlot(result,
                      sex = "overall", 
                      title = "C) Surgical aortic valve replacement (SAVR)")
 
-p <- (p1 / p2 / p3) +
+p <- (p1 + p2 + p3) +
   plot_layout(guides = "collect") &
   theme(legend.position = "bottom") 
 
-ggsave(filename = "indications.png", plot = p, path = here("Report", "Figures"))
+ggsave(filename = "indications.png", plot = p, path = here("Figures"), height = 12, width = 18)
 
 # Incidence
 p1 <- getIncidencePlot(result, age_group = c("40 to 64", "65 to 69"), sex = "Both")

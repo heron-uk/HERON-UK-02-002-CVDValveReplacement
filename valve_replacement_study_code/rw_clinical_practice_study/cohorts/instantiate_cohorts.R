@@ -12,10 +12,6 @@ cdm[["aortic_valve_replacement_nr"]] <- conceptCohort(cdm = cdm,
 
 
 
-
-
-
-
 omopgenerics::logMessage(message = "Instantiate tavi & savi (no restrictions)")
 cdm <- createProceduresCohorts(cdm, 
                                avrCohortName = "aortic_valve_replacement_nr", 
