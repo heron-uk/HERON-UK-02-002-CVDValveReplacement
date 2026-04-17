@@ -1,10 +1,15 @@
 createProceduresCohorts <- function(cdm, avrCohortName, taviCohortName, saviCohortName, proceduresCohortName, restrictions) {
   
+  # 1. TAVI based on AVR (potential tavr) + transcatheter procedure
   cdm[[paste0(taviCohortName, "_from_additional")]] <- cdm[[avrCohortName]] |>
+    requireConceptIntersect(conceptSet = codelist["aortic_valve_replacement_potential_tavi"],
+                            window = c(0,0),
+                            name = paste0(taviCohortName, "_from_additional")) |>
     requireConceptIntersect(conceptSet = codelist["tavi_additional"],
                             window = c(0, 0),
                             name = paste0(taviCohortName, "_from_additional"))
   
+  # 2. TAVI based on TAVI SNOMED code
   cdm[[paste0(taviCohortName, "_direct")]] <- conceptCohort(cdm = cdm,
                                                             name = paste0(taviCohortName, "_direct"),
                                                             conceptSet = codelist["tavi"],

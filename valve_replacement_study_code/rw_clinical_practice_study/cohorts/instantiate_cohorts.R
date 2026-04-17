@@ -107,6 +107,7 @@ cdm[["procedures_nr"]] <- cdm[["procedures_nr"]] |>
                           intersections = c(1,Inf), 
                           name = "procedures_nr")
 
+
 # Create Procedure Cohorts (Objective 1) ----
 omopgenerics::logMessage(message = "Instantiating aortic stenosis")
 cdm[["aortic_stenosis"]] <- conceptCohort(cdm = cdm, 
