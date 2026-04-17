@@ -39,7 +39,7 @@ cdm[["tavi_direct"]] <- conceptCohort(cdm = cdm,
   renameCohort(newCohortName = "tavi_direct") |>
   requireIsFirstEntry() |>
   requirePriorObservation(minPriorObservation = 365) |>
-  requireInDateRange(dateRange = study_period) 
+  requireInDateRange(dateRange = study_period)
 
 omopgenerics::logMessage(message = "Instantiate TAVI cohorts")
 cdm <- bind(cdm[["tavi_additional"]], cdm[["tavi_direct"]], name = "tavi")
@@ -55,8 +55,7 @@ cdm[["savr"]] <- cdm[["aortic_valve_replacement"]] |>
                          window = c(0,0), 
                          intersections = 0, 
                          name = "savr") |>
-  renameCohort(newCohortName = "savr") |>
-  requireIsFirstEntry()
+  renameCohort(newCohortName = "savr")
 
 cdm <- bind(cdm[["aortic_valve_replacement"]], cdm[["tavi"]], cdm[["savr"]], name = "procedures")
 
