@@ -1,28 +1,4 @@
-@ -0,0 +1,32 @@
----
-title: "Temporal Trends in the Real-World Use of SAVR and TAVI in the UK Clinical Practice: A Population-Base Cohort Study from 2012 to 2025"
-author:
-  - name: Marta Alcalde Herraiz
-format:
-  docx:
-    number-sections: true
-    colorlinks: true
-    keeptex: true
-    
-date-format: '[This version:] March, 2026'
-csl: american-sociological-association.csl
-tbl-cap-location: top
-number-sections: true
-execute:
-  echo: false
-  warning: false
-  message: false
-  cache: false
-editor:
-  mode: source
-filters:
-  - docx-landscape.lua
----
+\@ -0,0 +1,32 \@\@ 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AFoAUQBBAHgAQQBEAGcAQQBNAFEAQQA1AEEARABZAEEATQBBAEEAMQBBAEMAMABBAE0AQQBCAGgAQQBHAE0AQQBaAEEAQQB0AEEARABRAEEAWgBnAEIAaABBAEcAVQBBAEwAUQBBADQAQQBHAEkAQQBPAFEAQQA1AEEAQwAwAEEATwBRAEIAagBBAEQARQBBAFkAZwBBADMAQQBHAEkAQQBaAEEAQQAzAEEARwBNAEEATQBBAEIAbQBBAEQARQBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAMgBBAEEAPQA9AAoAcAByAGUAZgBpAHgAOgAKAHMAbwB1AHIAYwBlADoATABRAEEAdABBAEMAMABBAEMAZwBCADAAQQBHAGsAQQBkAEEAQgBzAEEARwBVAEEATwBnAEEAZwBBAEMASQBBAFYAQQBCAGwAQQBHADAAQQBjAEEAQgB2AEEASABJAEEAWQBRAEIAcwBBAEMAQQBBAFYAQQBCAHkAQQBHAFUAQQBiAGcAQgBrAEEASABNAEEASQBBAEIAcABBAEcANABBAEkAQQBCADAAQQBHAGcAQQBaAFEAQQBnAEEARgBJAEEAWgBRAEIAaABBAEcAdwBBAEwAUQBCAFgAQQBHADgAQQBjAGcAQgBzAEEARwBRAEEASQBBAEIAVgBBAEgATQBBAFoAUQBBAGcAQQBHADgAQQBaAGcAQQBnAEEARgBNAEEAUQBRAEIAVwBBAEYASQBBAEkAQQBCAGgAQQBHADQAQQBaAEEAQQBnAEEARgBRAEEAUQBRAEIAVwBBAEUAawBBAEkAQQBCAHAAQQBHADQAQQBJAEEAQgAwAEEARwBnAEEAWgBRAEEAZwBBAEYAVQBBAFMAdwBBAGcAQQBFAE0AQQBiAEEAQgBwAEEARwA0AEEAYQBRAEIAagBBAEcARQBBAGIAQQBBAGcAQQBGAEEAQQBjAGcAQgBoAEEARwBNAEEAZABBAEIAcABBAEcATQBBAFoAUQBBADYAQQBDAEEAQQBRAFEAQQBnAEEARgBBAEEAYgB3AEIAdwBBAEgAVQBBAGIAQQBCAGgAQQBIAFEAQQBhAFEAQgB2AEEARwA0AEEATABRAEIAQwBBAEcARQBBAGMAdwBCAGwAQQBDAEEAQQBRAHcAQgB2AEEARwBnAEEAYgB3AEIAeQBBAEgAUQBBAEkAQQBCAFQAQQBIAFEAQQBkAFEAQgBrAEEASABrAEEASQBBAEIAbQBBAEgASQBBAGIAdwBCAHQAQQBDAEEAQQBNAGcAQQB3AEEARABFAEEATQBnAEEAZwBBAEgAUQBBAGIAdwBBAGcAQQBEAEkAQQBNAEEAQQB5AEEARABVAEEASQBnAEEASwBBAEcARQBBAGQAUQBCADAAQQBHAGcAQQBiAHcAQgB5AEEARABvAEEAQwBnAEEAZwBBAEMAQQBBAEwAUQBBAGcAQQBHADQAQQBZAFEAQgB0AEEARwBVAEEATwBnAEEAZwBBAEUAMABBAFkAUQBCAHkAQQBIAFEAQQBZAFEAQQBnAEEARQBFAEEAYgBBAEIAagBBAEcARQBBAGIAQQBCAGsAQQBHAFUAQQBJAEEAQgBJAEEARwBVAEEAYwBnAEIAeQBBAEcARQBBAGEAUQBCADYAQQBBAG8AQQBaAGcAQgB2AEEASABJAEEAYgBRAEIAaABBAEgAUQBBAE8AZwBBAEsAQQBDAEEAQQBJAEEAQgBrAEEARwA4AEEAWQB3AEIANABBAEQAbwBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEARwA0AEEAZABRAEIAdABBAEcASQBBAFoAUQBCAHkAQQBDADAAQQBjAHcAQgBsAEEARwBNAEEAZABBAEIAcABBAEcAOABBAGIAZwBCAHoAQQBEAG8AQQBJAEEAQgAwAEEASABJAEEAZABRAEIAbABBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQgBqAEEARwA4AEEAYgBBAEIAdgBBAEgASQBBAGIAQQBCAHAAQQBHADQAQQBhAHcAQgB6AEEARABvAEEASQBBAEIAMABBAEgASQBBAGQAUQBCAGwAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEIAcgBBAEcAVQBBAFoAUQBCAHcAQQBIAFEAQQBaAFEAQgA0AEEARABvAEEASQBBAEIAMABBAEgASQBBAGQAUQBCAGwAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEASwBBAEcAUQBBAFkAUQBCADAAQQBHAFUAQQBMAFEAQgBtAEEARwA4AEEAYwBnAEIAdABBAEcARQBBAGQAQQBBADYAQQBDAEEAQQBKAHcAQgBiAEEARgBRAEEAYQBBAEIAcABBAEgATQBBAEkAQQBCADIAQQBHAFUAQQBjAGcAQgB6AEEARwBrAEEAYgB3AEIAdQBBAEQAbwBBAFgAUQBBAGcAQQBFADAAQQBZAFEAQgB5AEEARwBNAEEAYQBBAEEAcwBBAEMAQQBBAE0AZwBBAHcAQQBEAEkAQQBOAGcAQQBuAEEAQQBvAEEAWQB3AEIAegBBAEcAdwBBAE8AZwBBAGcAQQBHAEUAQQBiAFEAQgBsAEEASABJAEEAYQBRAEIAagBBAEcARQBBAGIAZwBBAHQAQQBIAE0AQQBiAHcAQgBqAEEARwBrAEEAYgB3AEIAcwBBAEcAOABBAFoAdwBCAHAAQQBHAE0AQQBZAFEAQgBzAEEAQwAwAEEAWQBRAEIAegBBAEgATQBBAGIAdwBCAGoAQQBHAGsAQQBZAFEAQgAwAEEARwBrAEEAYgB3AEIAdQBBAEMANABBAFkAdwBCAHoAQQBHAHcAQQBDAGcAQgAwAEEARwBJAEEAYgBBAEEAdABBAEcATQBBAFkAUQBCAHcAQQBDADAAQQBiAEEAQgB2AEEARwBNAEEAWQBRAEIAMABBAEcAawBBAGIAdwBCAHUAQQBEAG8AQQBJAEEAQgAwAEEARwA4AEEAYwBBAEEASwBBAEcANABBAGQAUQBCAHQAQQBHAEkAQQBaAFEAQgB5AEEAQwAwAEEAYwB3AEIAbABBAEcATQBBAGQAQQBCAHAAQQBHADgAQQBiAGcAQgB6AEEARABvAEEASQBBAEIAMABBAEgASQBBAGQAUQBCAGwAQQBBAG8AQQBaAFEAQgA0AEEARwBVAEEAWQB3AEIAMQBBAEgAUQBBAFoAUQBBADYAQQBBAG8AQQBJAEEAQQBnAEEARwBVAEEAWQB3AEIAbwBBAEcAOABBAE8AZwBBAGcAQQBHAFkAQQBZAFEAQgBzAEEASABNAEEAWgBRAEEASwBBAEMAQQBBAEkAQQBCADMAQQBHAEUAQQBjAGcAQgB1AEEARwBrAEEAYgBnAEIAbgBBAEQAbwBBAEkAQQBCAG0AQQBHAEUAQQBiAEEAQgB6AEEARwBVAEEAQwBnAEEAZwBBAEMAQQBBAGIAUQBCAGwAQQBIAE0AQQBjAHcAQgBoAEEARwBjAEEAWgBRAEEANgBBAEMAQQBBAFoAZwBCAGgAQQBHAHcAQQBjAHcAQgBsAEEAQQBvAEEASQBBAEEAZwBBAEcATQBBAFkAUQBCAGoAQQBHAGcAQQBaAFEAQQA2AEEAQwBBAEEAWgBnAEIAaABBAEcAdwBBAGMAdwBCAGwAQQBBAG8AQQBaAFEAQgBrAEEARwBrAEEAZABBAEIAdgBBAEgASQBBAE8AZwBBAEsAQQBDAEEAQQBJAEEAQgB0AEEARwA4AEEAWgBBAEIAbABBAEQAbwBBAEkAQQBCAHoAQQBHADgAQQBkAFEAQgB5AEEARwBNAEEAWgBRAEEASwBBAEcAWQBBAGEAUQBCAHMAQQBIAFEAQQBaAFEAQgB5AEEASABNAEEATwBnAEEASwBBAEMAQQBBAEkAQQBBAHQAQQBDAEEAQQBaAEEAQgB2AEEARwBNAEEAZQBBAEEAdABBAEcAdwBBAFkAUQBCAHUAQQBHAFEAQQBjAHcAQgBqAEEARwBFAEEAYwBBAEIAbABBAEMANABBAGIAQQBCADEAQQBHAEUAQQBDAGcAQQB0AEEAQwAwAEEATABRAEEAPQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602
 
 ```{r}
 library(dplyr)
@@ -44,6 +20,7 @@ result <- importSummarisedResult(path = here("Results")) |>
 codelists_indications <- read_csv(here("Report", "codelists_indications.csv"))
 codelists_avr <- read_csv(here("Report", "codelists_avr.csv"))
 ```
+
 \newpage
 
 ```{r}
@@ -67,6 +44,7 @@ codelists_indications |>
 ```
 
 \newpage
+
 ```{r}
 codelists_avr |>
   inner_join(
@@ -92,7 +70,8 @@ codelists_avr |>
            rename = c("Concept ID" = "concept_id"))
 ```
 
-# Table 1 
+# Table 1
+
 ```{r}
 result |>
   filterSettings(result_type == "summarise_characteristics") |>
@@ -110,7 +89,9 @@ result |>
 ```
 
 \newpage
+
 Indications by age group (0 to 64)
+
 ```{r, fig.width=8, fig.height=12}
 p1 <- getStackedPlot(result, 
                cohort_name = "aortic_valve_replacement",
@@ -136,7 +117,9 @@ p3 <- getStackedPlot(result,
 ```
 
 \newpage
+
 Indications by age group (65 to 150)
+
 ```{r, fig.width=8, fig.height=12}
 p1 <- getStackedPlot(result, 
                cohort_name = "aortic_valve_replacement",
@@ -162,7 +145,9 @@ p3 <- getStackedPlot(result,
 ```
 
 \newpage
+
 Indications by sex (Females)
+
 ```{r, fig.width=8, fig.height=12}
 p1 <- getStackedPlot(result, 
                cohort_name = "aortic_valve_replacement",
@@ -188,7 +173,9 @@ p3 <- getStackedPlot(result,
 ```
 
 \newpage
+
 Indications by sex (Males)
+
 ```{r, fig.width=8, fig.height=12}
 p1 <- getStackedPlot(result, 
                cohort_name = "aortic_valve_replacement",
@@ -214,7 +201,9 @@ p3 <- getStackedPlot(result,
 ```
 
 \newpage
+
 Incidence stratified by sex (Female)
+
 ```{r, fig.width=8, fig.height=12}
 # Incidence
 # p1 <- getIncidencePlot(result, age_group = c("40 to 64", "65 to 69"), sex = "Female")
@@ -227,7 +216,9 @@ Incidence stratified by sex (Female)
 ```
 
 \newpage
+
 Incidence stratified by sex (Male)
+
 ```{r, fig.width=8, fig.height=12}
 # Incidence
 # p1 <- getIncidencePlot(result, age_group = c("40 to 64", "65 to 69"), sex = "Male")
@@ -240,7 +231,9 @@ Incidence stratified by sex (Male)
 ```
 
 \newpage
+
 Table incidence (Aortic valve replacement) - Overall
+
 ```{r}
 getIncidenceTable(result,
                   outcome_cohort_name = "aortic_valve_replacement", 
@@ -249,7 +242,9 @@ getIncidenceTable(result,
 ```
 
 \newpage
+
 Table incidence (TAVI) - Overall
+
 ```{r}
 getIncidenceTable(result,
                   outcome_cohort_name = "tavi", 
@@ -258,7 +253,9 @@ getIncidenceTable(result,
 ```
 
 \newpage
+
 Table incidence (SAVR) - Overall
+
 ```{r}
 getIncidenceTable(result,
                   outcome_cohort_name = "savr", 
@@ -267,7 +264,9 @@ getIncidenceTable(result,
 ```
 
 \newpage
+
 Table incidence (Aortic valve replacement) - By age
+
 ```{r}
 getIncidenceTable(result,
                   outcome_cohort_name = "aortic_valve_replacement", 
@@ -276,7 +275,9 @@ getIncidenceTable(result,
 ```
 
 \newpage
+
 Table incidence (Tavi) - By age
+
 ```{r}
 getIncidenceTable(result,
                   outcome_cohort_name = "tavi", 
@@ -285,7 +286,9 @@ getIncidenceTable(result,
 ```
 
 \newpage
+
 Table incidence (savr) - By age
+
 ```{r}
 getIncidenceTable(result,
                   outcome_cohort_name = "savr", 
@@ -294,7 +297,9 @@ getIncidenceTable(result,
 ```
 
 \newpage
-Table incidence (aortic valve replacement) - By sex 
+
+Table incidence (aortic valve replacement) - By sex
+
 ```{r}
 getIncidenceTable(result,
                   outcome_cohort_name = "aortic_valve_replacement", 
@@ -303,7 +308,9 @@ getIncidenceTable(result,
 ```
 
 \newpage
-Table incidence (tavi) - By sex 
+
+Table incidence (tavi) - By sex
+
 ```{r}
 getIncidenceTable(result,
                   outcome_cohort_name = "tavi", 
@@ -312,7 +319,9 @@ getIncidenceTable(result,
 ```
 
 \newpage
-Table incidence (savi) - By sex 
+
+Table incidence (savi) - By sex
+
 ```{r}
 getIncidenceTable(result,
                   outcome_cohort_name = "savr", 
@@ -321,7 +330,9 @@ getIncidenceTable(result,
 ```
 
 \newpage
-Table incidence (aortic valve replacement) - By age and sex 
+
+Table incidence (aortic valve replacement) - By age and sex
+
 ```{r}
 # getIncidenceTable(result,
 #                   outcome_cohort_name = "aortic_valve_replacement", 
@@ -330,7 +341,9 @@ Table incidence (aortic valve replacement) - By age and sex
 ```
 
 \newpage
-Table incidence (tavi) - By age and sex 
+
+Table incidence (tavi) - By age and sex
+
 ```{r}
 # getIncidenceTable(result,
 #                   outcome_cohort_name = "tavi", 
@@ -339,11 +352,12 @@ Table incidence (tavi) - By age and sex
 ```
 
 \newpage
-Table incidence (savr) - By age and sex 
+
+Table incidence (savr) - By age and sex
+
 ```{r}
 # getIncidenceTable(result,
 #                   outcome_cohort_name = "savr", 
 #                   age_group = c("0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150"), 
 #                   sex = c("Female", "Male")) 
 ```
-

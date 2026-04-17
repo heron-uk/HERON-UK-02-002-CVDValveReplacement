@@ -43,7 +43,8 @@ cdm <- bind(cdm[["tavi_additional"]], cdm[["tavi_direct"]], name = "tavi")
 cdm[["tavi"]] <- cdm[["tavi"]] |>
   unionCohorts(cohortId = c("tavi_additional", "tavi_direct"), 
                cohortName = "tavi",
-               keepOriginalCohorts = FALSE)
+               keepOriginalCohorts = FALSE) |>
+  requireIsFirstEntry()
 
 omopgenerics::logMessage(message = "Instantiate SAVR cohort")
 cdm[["savr"]] <- cdm[["aortic_valve_replacement"]] |>
@@ -51,7 +52,8 @@ cdm[["savr"]] <- cdm[["aortic_valve_replacement"]] |>
                          window = c(0,0), 
                          intersections = 0, 
                          name = "savr") |>
-  renameCohort(newCohortName = "savr")
+  renameCohort(newCohortName = "savr") |>
+  requireIsFirstEntry() 
 
 cdm <- bind(cdm[["aortic_valve_replacement"]], cdm[["tavi"]], cdm[["savr"]], name = "procedures")
 
