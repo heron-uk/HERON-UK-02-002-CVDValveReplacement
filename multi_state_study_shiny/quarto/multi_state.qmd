@@ -193,9 +193,8 @@ data_inc |>
   omopgenerics::filterAdditional(analysis_interval == "overall") |>
   #omopgenerics::filterSettings(denominator_sex == "Both") |>
   omopgenerics::filterStrata(ses != "Missing") |>
-  IncidencePrevalence::plotIncidence(x = "ses", colour = "denominator_sex", facet = cdm_name~outcome_cohort_name) +
-  facet_grid(cdm_name ~ outcome_cohort_name, scales = "free", space = "free") +
-  coord_cartesian(ylim = c(20, 160)) 
+  IncidencePrevalence::plotIncidence(x = "ses", colour = "denominator_sex", facet = outcome_cohort_name ~ cdm_name) +
+  facet_wrap(outcome_cohort_name ~ cdm_name, scales = "free_y") 
 
 ```
 
@@ -242,7 +241,7 @@ data_char <- results |>
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "healthy") |>
-  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record", "Ses"))) |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record", "Ses", "Cohort end date","Future observation", "Days in cohort", "Ses", "Ethnicity" ))) |>
   CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
 
 ```
@@ -252,7 +251,7 @@ data_char |>
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "healthy_to_as") |>
-  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses"  ))) |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses", "Ethnicity"  ))) |>
   CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
 
 ```
@@ -262,7 +261,8 @@ data_char |>
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "healthy_to_death") |>
-  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses"))) |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses", "Ethnicity"))) |>
+  
   CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
 
 ```
@@ -272,7 +272,7 @@ data_char |>
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "as_to_avr") |>
-  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses"))) |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses", "Ethnicity"))) |>
   CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
 
 ```
@@ -282,7 +282,7 @@ data_char |>
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "as_to_death") |>
-  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses"))) |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses", "Ethnicity"))) |>
   CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
 
 ```
@@ -292,7 +292,7 @@ data_char |>
 ```{r, echo = FALSE}
 data_char |>
   omopgenerics::filterGroup(cohort_name == "avr_to_death") |>
-  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort","Ses"))) |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort","Ses", "Ethncity"))) |>
   CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
 
 ```
@@ -317,7 +317,12 @@ data_hr <- results |>
                       age_limit == "over_80" ~ "Over 80"
                       
                       
-                    )) 
+                    ), 
+                  transition = factor(transition, levels = c(
+      "General Pop", "General Pop to AS", "General Pop to Death",
+      "AS to AVR", "AS to Death", "AVR to Death"
+    ))
+  ) 
 ```
 
 ### only age model
@@ -341,8 +346,28 @@ data_hr |> dplyr::filter(.data$ref_age == "70") |>
       ) +
   facet_grid(transition~age_limit, scales = "free_y")
 ```
+```{r}
 
-### Other models
+data_hr |> dplyr::filter(.data$ref_age != "70", variable_name != "age",model_name == "age_sex" ) |>
+  visOmopResults::scatterPlot(x = "transition", 
+                              y = "hazard_ratio", 
+                              line = FALSE,
+                              point = TRUE, 
+                              ribbon = FALSE,
+                              facet = age_limit~cdm_name, 
+                              colour = "variable_level",
+                              ymin = "lower_hr", 
+                              ymax = "upper_hr") +
+  facet_grid(age_limit~cdm_name, scales = "free_y") +
+  geom_hline(yintercept = 1, linetype = "dashed", linewidth = 0.6, color = "black") +
+  scale_colour_manual(values = c( "darkblue"))+
+  labs(title = "Hazard Ratios: Males vs Females (Adjusted for age)") +
+  theme(legend.position = "none")
+
+
+```
+
+### ses models
 
 ```{r}
 data_hr2 <- data_hr |> 
@@ -401,8 +426,8 @@ estimates <- c("Hazard Ratio [95% CI]" = "<hazard_ratio> [<lower_hr>, <upper_hr>
                "Standard Error" = "<se_coef>"
                ) 
 data_hr |> 
-  omopgenerics::filter(.data$ref_age != "70") |>
-  dplyr::filter(variable_name != "age") |>
+  dplyr::filter(.data$ref_age != "70") |>
+  dplyr::filter(variable_name != "age", model_name %in% c("ses", "ses_age_sex" )) |>
   tidyr::pivot_longer(cols = c("hazard_ratio","lower_hr", "upper_hr","p_value", "se_coef"),
                       names_to = "estimate_name", 
                       values_to = "estimate_value") |>
@@ -411,12 +436,87 @@ data_hr |>
   stringr::str_to_sentence(.data$variable_name),
   ": ",
   .data$variable_level
-)) |>
+), 
+model = dplyr::if_else(.data$model_name == "ses", "Unadjusted", "Adjusted for age and sex")) |>
   dplyr::arrange(.data$model_name) |>
-  dplyr::select(cdm_name, model_name, variable, estimate_name, estimate_value, estimate_type, transition, age_limit) |>
+  dplyr::select(cdm_name, model, variable, estimate_name, estimate_value, estimate_type, transition, age_limit) |>
   visOmopResults::visTable(header = c("cdm_name", "age_limit"), groupColumn = "transition", hide = c("ref_age","estimate_type"),
                                
                                estimateName = estimates, 
                                .options = list(decimals = c("numeric" = 3))
                                )
 ```
+# Comorbidities
+
+```{r}
+grid_lines <- data_char |>
+  dplyr::filter(variable_name %in% c("Comorbidities", "Ckd stage")) |>
+  omopgenerics::tidy() |>
+  dplyr::filter(ses == "overall") |>
+  dplyr::mutate(
+    transition = dplyr::case_when(
+      .data$cohort_name == "healthy"          ~ "General Pop",
+      .data$cohort_name == "healthy_to_as"    ~ "General Pop to AS",
+      .data$cohort_name == "healthy_to_death" ~ "General Pop to Death",
+      .data$cohort_name == "as_to_avr"        ~ "AS to AVR",
+      .data$cohort_name == "as_to_death"      ~ "AS to Death",
+      .data$cohort_name == "avr_to_death"     ~ "AVR to Death"
+    ),
+    transition = factor(transition, levels = c(
+      "General Pop", "General Pop to AS", "General Pop to Death",
+      "AS to AVR", "AS to Death", "AVR to Death"
+    ))
+  ) |>
+  dplyr::distinct(transition) |>
+  tidyr::crossing(yintercept = c(20, 40, 60, 80)) |>
+  dplyr::mutate(label = paste0(yintercept, "%"))
+
+data_char |>
+  dplyr::filter(variable_name %in% c("Comorbidities", "Ckd stage") & .data$variable_level != "Missing" & !(.data$variable_level %in% c("Stage 1", "Stage 2", "Stage 3"))) |>
+  dplyr::mutate(variable_level = dplyr::if_else(.data$variable_name == "Ckd stage", paste0("CKD ", .data$variable_level), .data$variable_level)) |>
+  omopgenerics::tidy() |>
+  dplyr::filter(ses == "overall") |>
+  dplyr::mutate(
+    transition = dplyr::case_when(
+      .data$cohort_name == "healthy"          ~ "General Pop",
+      .data$cohort_name == "healthy_to_as"    ~ "General Pop to AS",
+      .data$cohort_name == "healthy_to_death" ~ "General Pop to Death",
+      .data$cohort_name == "as_to_avr"        ~ "AS to AVR",
+      .data$cohort_name == "as_to_death"      ~ "AS to Death",
+      .data$cohort_name == "avr_to_death"     ~ "AVR to Death"
+    ),
+    transition = factor(transition, levels = c(
+      "General Pop", "General Pop to AS", "General Pop to Death",
+      "AS to AVR", "AS to Death", "AVR to Death"
+    ))
+  ) |>
+  ggplot2::ggplot(ggplot2::aes(x = variable_level, y = percentage, fill = variable_level)) +
+  ggplot2::geom_col(width = 1, colour = "white", linewidth = 0.3) +
+  ggplot2::geom_hline(
+    data = grid_lines,
+    ggplot2::aes(yintercept = yintercept, group = transition),
+    colour = "grey60", linewidth = 0.3, linetype = "dashed", inherit.aes = FALSE
+  ) +
+  
+  ggplot2::geom_text(
+  data = dplyr::filter(grid_lines, yintercept != 20),
+  ggplot2::aes(x = 2, y = yintercept, label = label),
+  colour = "grey40", size = 2.5, inherit.aes = FALSE
+)+
+  ggplot2::coord_polar() +
+  ggplot2::scale_y_continuous(limits = c(0, 100)) +
+  ggplot2::facet_wrap(~ transition) +
+  ggplot2::scale_fill_viridis_d(option = "turbo") +
+  ggplot2::labs(
+    x = NULL, y = NULL, fill = "Comorbidity",
+    title = "Comorbidities"
+  ) +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(
+    axis.text.x     = ggplot2::element_blank(),
+    axis.text.y     = ggplot2::element_blank(),
+    panel.grid      = ggplot2::element_blank(),
+    legend.position = "right"
+  ) 
+```
+
