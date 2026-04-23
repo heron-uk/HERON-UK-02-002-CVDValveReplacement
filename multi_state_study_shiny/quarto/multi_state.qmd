@@ -1,0 +1,422 @@
+---
+title: "multi_state_quarto"
+format: docx
+editor: visual
+---
+
+```{r, setup, include=FALSE}
+# hide messages/warnings and set default figure size & resolution
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  # size in inches (use sensible values for Word)
+  fig.width = 9,
+  fig.height = 6,
+  dpi = 300,
+  # for Word: control rendered image size (inches); change if you prefer
+  out.width = "6in"
+)
+
+```
+
+## HERON-UK-02-002-CVDValveReplacement
+
+## Import Results
+
+```{r, echo = FALSE}
+library(ggplot2)
+library(dplyr)
+library(stringr)
+results <- omopgenerics::importSummarisedResult(here::here("rawData"))
+
+
+renameCdm <- function(res){
+  res |>
+    mutate(cdm_name =
+             case_when(str_detect(tolower(cdm_name), "aurum|heron_cdm")  ~ "CPRD Aurum",
+                       str_detect(tolower(cdm_name), "dataloch") ~ "DataLoch Lothian",
+                       .default = cdm_name
+             )
+    )
+}
+results <- results |>
+  renameCdm()
+
+```
+
+## Incidence
+
+```{r, echo = FALSE}
+data_inc <- results |>
+  omopgenerics::filterSettings(result_type == "incidence")
+data_inc <- data_inc |> 
+  mutate(group_level = str_replace(
+    group_level, 
+    "aortic_stenosis", "Aortic stenosis")) |> 
+  mutate(group_level = str_replace(
+    group_level, 
+    "aortic_valve_replacement", "Aortic valve replacement"))
+```
+
+### Age-standardised incidence by socioeconomic status
+
+```{r, echo = FALSE}
+sesStandarisedPlot <- function() {
+  working_plot <- data_inc |>
+    omopgenerics::filterSettings(standardised_incidence == "TRUE") |>
+    omopgenerics::filterAdditional(analysis_interval == "overall") |>
+    omopgenerics::filterSettings(denominator_sex == "Both") |>
+    omopgenerics::filterStrata(ses != "Missing") |>
+    dplyr::filter(strata_level != "overall") |> 
+    IncidencePrevalence::plotIncidence(colour = "ses", 
+                                       x = "ses",
+                                       facet = outcome_cohort_name~cdm_name, 
+                                       line = TRUE, ribbon = TRUE) +
+    theme_bw() +
+    theme(
+      axis.text.x = element_text(angle = 0, vjust = 0.5),
+        strip.background = element_rect(
+          fill = "gray94"
+    )) +
+    facet_grid(outcome_cohort_name~cdm_name, scales = "free_y")+
+    labs(colour = "Socioeconomic status",
+         fill = "Socioeconomic status") +
+    theme(legend.position = "top")+
+    xlab("Socioeconomic status") 
+  
+  working_plot@data <- working_plot@data |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "1",
+      "1 (least deprived)", ses)) |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "5",
+      "5 (most deprived)", ses))
+  
+  working_plot
+  
+  working_plot
+}
+sesStandarisedPlot()
+```
+
+### Incidence by age and socioeconomic status
+
+```{r, echo = FALSE}
+sesIncPlotAge <- function() {
+  working_plot <- data_inc |>
+    omopgenerics::filterSettings(standardised_incidence == "FALSE") |>
+    omopgenerics::filterAdditional(analysis_interval == "overall") |>
+    omopgenerics::filterSettings(denominator_sex == "Both") |>
+    omopgenerics::filterSettings(denominator_age_group != "20 to 150") |>
+    omopgenerics::filterStrata(ses != "Missing") |>
+    dplyr::filter(strata_level != "overall") |> 
+    IncidencePrevalence::plotIncidence(colour = "ses", 
+                                       x = "denominator_age_group",
+                                       facet = ses~cdm_name, 
+                                       line = TRUE, ribbon = TRUE) +
+    theme_bw() +
+    theme(
+      axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        strip.background = element_rect(
+          fill = "gray94"
+    )) +
+    facet_grid(outcome_cohort_name~cdm_name, scales = "free_y")+
+    labs(colour = "Socioeconomic status",
+         fill = "Socioeconomic status") +
+    theme(legend.position = "top")+
+    xlab("Age") 
+  
+  working_plot@data <- working_plot@data |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "1",
+      "1 (least deprived)", ses)) |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "5",
+      "5 (most deprived)", ses))
+  
+  working_plot
+  
+  working_plot
+}
+sesIncPlotAge()
+```
+
+### Incidence by year and socioeconomic status
+
+```{r, echo = FALSE}
+sesIncPlot <- function(outcome) {
+working_plot <- data_inc |>
+  omopgenerics::filterSettings(standardised_incidence == "FALSE") |>
+  omopgenerics::filterAdditional(analysis_interval != "overall") |>
+  omopgenerics::filterSettings(denominator_sex == "Both") |>
+  omopgenerics::filterStrata(ses != "Missing") |>
+  dplyr::filter(strata_level != "overall") |> 
+  omopgenerics::filterSettings(denominator_age_group == "20 to 150") |> 
+  IncidencePrevalence::plotIncidence(colour = "ses", 
+                                     facet = denominator_age_group~cdm_name, 
+                                     line = TRUE, ribbon = TRUE) +
+    theme_bw() +
+    theme(
+      axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        strip.background = element_rect(
+          fill = "gray94"
+    ))+
+  facet_grid(outcome_cohort_name~cdm_name, scales = "free_y") +
+  ylim(c(0, NA)) + 
+  labs(colour = "Socioeconomic status",
+       fill = "Socioeconomic status") +
+  theme(legend.position = "top")
+
+working_plot@data <- working_plot@data |> 
+  dplyr::mutate(denominator_age_group = dplyr::if_else(
+    denominator_age_group == "20 to 150",
+    "Overall", denominator_age_group))|> 
+  dplyr::mutate(ses = dplyr::if_else(
+    ses == "1",
+    "1 (least deprived)", ses)) |> 
+  dplyr::mutate(ses = dplyr::if_else(
+    ses == "5",
+    "5 (most deprived)", ses))
+
+
+working_plot
+}
+sesIncPlot()
+```
+
+Age-standardised incidence by socioeconomic status and sex
+
+```{r, echo = FALSE}
+data_inc |>
+  omopgenerics::filterSettings(standardised_incidence == "TRUE") |>
+  omopgenerics::filterAdditional(analysis_interval == "overall") |>
+  #omopgenerics::filterSettings(denominator_sex == "Both") |>
+  omopgenerics::filterStrata(ses != "Missing") |>
+  IncidencePrevalence::plotIncidence(x = "ses", colour = "denominator_sex", facet = cdm_name~outcome_cohort_name) +
+  facet_grid(cdm_name ~ outcome_cohort_name, scales = "free", space = "free") +
+  coord_cartesian(ylim = c(20, 160)) 
+
+```
+
+Incidence of Aortic Stenosis by age group and socioeconomic status
+
+```{r, echo = FALSE}
+data_inc |>
+  omopgenerics::filterSettings(standardised_incidence == "FALSE") |>
+  omopgenerics::filterAdditional(analysis_interval != "overall") |>
+  omopgenerics::filterSettings(denominator_sex == "Both") |>
+  omopgenerics::filterStrata(ses != "Missing") |>
+  omopgenerics::filterGroup(outcome_cohort_name == "Aortic stenosis") |>
+  IncidencePrevalence::plotIncidence(colour = "denominator_age_group", facet = ses~cdm_name, line = TRUE, ribbon = TRUE) +
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)
+  )
+  
+```
+
+Incidence of Aortic Valve Replacement by age group and socioeconomic status
+
+```{r, echo = FALSE}
+data_inc |>
+  omopgenerics::filterSettings(standardised_incidence == "FALSE") |>
+  omopgenerics::filterAdditional(analysis_interval != "overall") |>
+  omopgenerics::filterSettings(denominator_sex == "Both") |>
+  omopgenerics::filterStrata(ses != "Missing") |>
+  omopgenerics::filterGroup(outcome_cohort_name == "Aortic valve replacement") |>
+  IncidencePrevalence::plotIncidence(colour = "denominator_age_group", facet = ses~cdm_name, line = TRUE, ribbon = TRUE) +
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)
+  )
+```
+
+## Characteristics
+
+```{r, echo = FALSE}
+data_char <- results |>
+  omopgenerics::filterSettings(result_type == "summarise_characteristics")
+```
+
+### Characteristics of healthy population
+
+```{r, echo = FALSE}
+data_char |>
+  omopgenerics::filterGroup(cohort_name == "healthy") |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record", "Ses"))) |>
+  CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
+
+```
+
+### Characteristics of aortic stenosis patients
+
+```{r, echo = FALSE}
+data_char |>
+  omopgenerics::filterGroup(cohort_name == "healthy_to_as") |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses"  ))) |>
+  CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
+
+```
+
+### Characteristics of patients dying after AVR
+
+```{r, echo = FALSE}
+data_char |>
+  omopgenerics::filterGroup(cohort_name == "healthy_to_death") |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses"))) |>
+  CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
+
+```
+
+### Characteristics of patients receiving AVR after AS diagnosis
+
+```{r, echo = FALSE}
+data_char |>
+  omopgenerics::filterGroup(cohort_name == "as_to_avr") |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses"))) |>
+  CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
+
+```
+
+### Characteristics of patients dying after AS diagnosis without receiving AVR
+
+```{r, echo = FALSE}
+data_char |>
+  omopgenerics::filterGroup(cohort_name == "as_to_death") |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort", "Ses"))) |>
+  CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
+
+```
+
+### Characteristics of patients dying after AVR
+
+```{r, echo = FALSE}
+data_char |>
+  omopgenerics::filterGroup(cohort_name == "avr_to_death") |>
+  dplyr::filter(!(variable_name %in% c("Number records", "Days to next record","Cohort end date","Future observation", "Days in cohort","Ses"))) |>
+  CohortCharacteristics::tableCharacteristics(header = c("cdm_name", "cohort_name", "ses"))
+
+```
+
+## Multi state model
+
+```{r, echo = FALSE}
+data_hr <- results |>
+  omopgenerics::filterSettings(result_type == "hr_summary") |>
+  omopgenerics::tidy()|>
+  dplyr::mutate(transition = dplyr::case_when(
+                      .data$transition == "healthy_to_as" ~ "General Pop to AS",
+                      .data$transition == "healthy_to_death" ~ "General Pop to Death",
+                      .data$transition == "as_to_avr" ~ "AS to AVR",
+                      .data$transition == "as_to_death" ~ "AS to Death",
+                      .data$transition == "avr_to_death" ~ "AVR to Death"
+                      
+                    )) |>
+    dplyr::mutate(age_limit = dplyr::case_when(
+                      age_limit == "overall" ~ "Overall", 
+                      age_limit == "below_80" ~ "Below 80", 
+                      age_limit == "over_80" ~ "Over 80"
+                      
+                      
+                    )) 
+```
+
+### only age model
+
+```{r, echo = FALSE}
+data_hr |> dplyr::filter(.data$ref_age == "70") |>
+      dplyr::mutate(rel_age = as.numeric(.data$variable_level) )|> 
+      visOmopResults::scatterPlot(x = "rel_age", 
+                                  y = "hazard_ratio", 
+                                  line = TRUE, 
+                                  point = FALSE, 
+                                  ribbon = FALSE,
+                                  facet =  transition~age_limit,
+                                  colour = "cdm_name") +
+      geom_line(aes(y = lower_hr), linetype = "dashed", linewidth = 0.6) +
+      geom_line(aes(y = upper_hr), linetype = "dashed", linewidth = 0.6) +
+  xlab("Relative age") +
+      labs(
+        title = "Relative hazard ratios: age only model",
+        subtitle = "Reference age: 70"
+      ) +
+  facet_grid(transition~age_limit, scales = "free_y")
+```
+
+### Other models
+
+```{r}
+data_hr2 <- data_hr |> 
+  dplyr::filter(.data$ref_age != "70") |>
+  dplyr::filter(variable_name != "age") 
+```
+
+```{r, echo = FALSE}
+data_hr2 |> 
+
+  dplyr::filter(model_name == "ses_age_sex", 
+                !(variable_level %in% c("Male", "Missing")) ) |>
+  
+  visOmopResults::scatterPlot(x = "variable_level", 
+                              y = "hazard_ratio", 
+                              line = FALSE,
+                              point = TRUE, 
+                              ribbon = FALSE,
+                              facet = transition~age_limit, 
+                              colour = "variable_level",
+                              ymin = "lower_hr", 
+                              ymax = "upper_hr") +
+  geom_hline(yintercept = 1, linetype = "dashed", linewidth = 0.6, color = "black") +
+  xlab("Socioeconomic status") +
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)
+  )+
+facet_grid(transition~age_limit, scales = "free_y")+
+scale_colour_discrete(
+name = "Socioeconomic status",
+labels = c(
+"1" = "1 (Least deprived)",
+"2" = "2",
+"3" = "3",
+"4" = "4"
+)
+) +
+scale_fill_discrete(
+name = "Socioeconomic status",
+labels = c(
+"1" = "1 (Least deprived)",
+"2" = "2",
+"3" = "3",
+"4" = "4"
+)
+) +
+labs(
+title = "Hazard ratios by socioeconomic status, adjusted for age and sex.",
+subtitle = "Reference is socioeconomic status 5 (Most deprived)."
+)
+```
+
+```{r, echo = FALSE}
+estimates <- c("Hazard Ratio [95% CI]" = "<hazard_ratio> [<lower_hr>, <upper_hr>]", 
+               "P Value" = "<p_value>", 
+               "Standard Error" = "<se_coef>"
+               ) 
+data_hr |> 
+  omopgenerics::filter(.data$ref_age != "70") |>
+  dplyr::filter(variable_name != "age") |>
+  tidyr::pivot_longer(cols = c("hazard_ratio","lower_hr", "upper_hr","p_value", "se_coef"),
+                      names_to = "estimate_name", 
+                      values_to = "estimate_value") |>
+  dplyr::mutate(estimate_type = "numeric", 
+                variable = paste0(
+  stringr::str_to_sentence(.data$variable_name),
+  ": ",
+  .data$variable_level
+)) |>
+  dplyr::arrange(.data$model_name) |>
+  dplyr::select(cdm_name, model_name, variable, estimate_name, estimate_value, estimate_type, transition, age_limit) |>
+  visOmopResults::visTable(header = c("cdm_name", "age_limit"), groupColumn = "transition", hide = c("ref_age","estimate_type"),
+                               
+                               estimateName = estimates, 
+                               .options = list(decimals = c("numeric" = 3))
+                               )
+```

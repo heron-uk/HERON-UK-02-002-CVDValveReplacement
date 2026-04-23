@@ -599,12 +599,14 @@ server <- function(input, output, session) {
         .data$estimate_name %in% input$hr_summary_estimate_name
       ) |>
       omopgenerics::filterGroup(.data$transition %in% input$hr_summary_transition) |>
-      omopgenerics::filterAdditional(.data$model_name %in% input$hr_summary_model_name)
+      omopgenerics::filterAdditional(.data$model_name %in% input$hr_summary_model_name) |>
+      omopgenerics::filterSettings(.data$age_limit %in% input$hr_summary_age_limit)
   })
   getHrSummaryAgeModelTable <- shiny::reactive({
     getHrSummaryData() |> 
-      omopgenerics::filterStrata(.data$ref_age == "70") |>
+      
       omopgenerics::tidy() |>
+      dplyr::filter(.data$ref_age == "70") |>
       visOmopResults::visTable(type = "reactable", 
                                    hide = "variable_name",
                                    rename = c("Relative age" = "variable_level", "Reference age" = "ref_age")
@@ -624,7 +626,7 @@ server <- function(input, output, session) {
   )
   getHrSummaryTable <- shiny::reactive({
     getHrSummaryData() |>
-      omopgenerics::filterStrata(.data$ref_age != "70") |>
+      omopgenerics::filterAdditional(.data$ref_age != "70") |>
       simpleTable(
         header = input$hr_summary_table_header,
         group = input$hr_summary_table_group_column,
@@ -642,7 +644,7 @@ server <- function(input, output, session) {
   )
   getHrAgeModelPlot<- shiny::reactive({
     getHrSummaryData() |>
-      omopgenerics::filterStrata(.data$ref_age == "70") |>
+      omopgenerics::filterAdditional(.data$ref_age == "70") |>
       omopgenerics::tidy()|>
       dplyr::mutate(rel_age = as.numeric(.data$variable_level) ) |>
       visOmopResults::scatterPlot(x = "rel_age", 
@@ -680,7 +682,7 @@ server <- function(input, output, session) {
   
   getHrPlot<- shiny::reactive({
     getHrSummaryData() |>
-      omopgenerics::filterStrata(.data$ref_age != "70") |>
+      omopgenerics::filterAdditional(.data$ref_age != "70") |>
       dplyr::filter(variable_name != "age") |>
       visOmopResults::scatterPlot(x = "variable_level", 
                                   y = "hazard_ratio", 
