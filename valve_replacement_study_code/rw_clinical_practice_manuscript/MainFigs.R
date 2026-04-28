@@ -26,6 +26,20 @@ x <- result |>
 
 x |> plotCohortAttrition()
 
+# Table 1 ----
+result |>
+  filterStrata(calendar_year == "overall",
+               age_group == "overall",
+               sex == "overall") |>
+  filter(variable_name %in% c("Number subjects", "Cohort start date", 
+                              "Age", "Age group", "Sex")) |>
+  mutate(group_level = gsub("aortic_valve_replacement", "Aortic valve replacement", group_level)) |>
+  mutate(group_level = gsub("tavi", "TAVI", group_level)) |>
+  mutate(group_level = gsub("savr", "SAVR", group_level)) |>
+  mutate(variable_name = gsub("Cohort start date", "Index date", variable_name)) |>
+  filter(!estimate_name %in% c("mean", "sd", "min", "max")) |>
+  tableCharacteristics(hide = c("calendar_year", "age_group", "sex", "table_name"))
+
 # Indications ----
 p1 <- getStackedPlot(result, 
                      cohort_name = "aortic_valve_replacement",
