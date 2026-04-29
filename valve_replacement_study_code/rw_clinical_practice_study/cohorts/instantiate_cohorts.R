@@ -33,7 +33,7 @@ cdm[["tavi_additional"]] <- cdm[["aortic_valve_replacement"]] |>
 
 omopgenerics::logMessage(message = "Instantiating TAVI (direct) cohort")
 cdm[["tavi_direct"]] <- cdm[["aortic_valve_replacement"]] |>
-  requireConceptIntersect(conceptSet = codelist["tavi_direct"],
+  requireConceptIntersect(conceptSet = codelist["tavi"],
                           intersections = c(1,Inf), 
                           window = c(0,0), 
                           name = "tavi_direct") |>
