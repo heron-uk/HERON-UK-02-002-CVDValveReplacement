@@ -32,14 +32,12 @@ cdm[["tavi_additional"]] <- cdm[["aortic_valve_replacement"]] |>
                           name = "tavi_additional")
 
 omopgenerics::logMessage(message = "Instantiating TAVI (direct) cohort")
-cdm[["tavi_direct"]] <- conceptCohort(cdm = cdm,
-                                      name = "tavi_direct",
-                                      conceptSet = codelist["tavi"],
-                                      exit = "event_start_date") |>
+cdm[["tavi_direct"]] <- cdm[["aortic_valve_replacement"]] |>
+  requireConceptIntersect(conceptSet = codelist["tavi_direct"],
+                          intersections = c(1,Inf), 
+                          window = c(0,0), 
+                          name = "tavi_direct") |>
   renameCohort(newCohortName = "tavi_direct") |>
-  requireIsFirstEntry() |>
-  requirePriorObservation(minPriorObservation = 365) |>
-  requireInDateRange(dateRange = study_period)
 
 omopgenerics::logMessage(message = "Instantiate TAVI cohorts")
 cdm <- bind(cdm[["tavi_additional"]], cdm[["tavi_direct"]], name = "tavi")
