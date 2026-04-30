@@ -37,7 +37,7 @@ cdm[["tavi_direct"]] <- cdm[["aortic_valve_replacement"]] |>
                           intersections = c(1,Inf), 
                           window = c(0,0), 
                           name = "tavi_direct") |>
-  renameCohort(newCohortName = "tavi_direct") |>
+  renameCohort(newCohortName = "tavi_direct") 
 
 omopgenerics::logMessage(message = "Instantiate TAVI cohorts")
 cdm <- bind(cdm[["tavi_additional"]], cdm[["tavi_direct"]], name = "tavi")
