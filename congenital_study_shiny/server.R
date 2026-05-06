@@ -22,6 +22,7 @@ server <- function(input, output, session) {
   updateButtons <- shiny::reactiveValues(
     summarise_omop_snapshot = FALSE,
     summarise_observation_period = FALSE,
+    cohort_code_use = FALSE,
     summarise_cohort_count = FALSE,
     summarise_cohort_attrition = FALSE,
     summarise_characteristics = FALSE,
@@ -152,6 +153,72 @@ server <- function(input, output, session) {
         units = input$summarise_observation_period_plot_units,
         dpi = as.numeric(input$summarise_observation_period_plot_dpi)
       )
+    }
+  )
+
+  # cohort_code_use -----
+  ## update message if filter is changed
+  shiny::observe({
+    updateButtons$cohort_code_use <- TRUE
+  }) |>
+    shiny::bindEvent(
+      input$cohort_code_use_cdm_name,
+      input$cohort_code_use_cohort_name,
+      input$cohort_code_use_codelist_name,
+      input$cohort_code_use_variable_name,
+      input$cohort_code_use_estimate_name,
+      ignoreInit = TRUE
+    )
+  shiny::observeEvent(updateButtons$cohort_code_use, {
+    if (updateButtons$cohort_code_use == TRUE) {
+      output$update_message_cohort_code_use <- shiny::renderUI(updateMessage) # defined in functions.R
+    } else {
+      output$update_message_cohort_code_use <- shiny::renderUI(NULL)
+    }
+  })
+  shiny::observeEvent(input$update_cohort_code_use, {
+    updateButtons$cohort_code_use <- FALSE
+  })
+
+  ## get cohort_code_use data
+  getCohortCodeUseData <- shiny::eventReactive(input$update_cohort_code_use, {
+    data[["cohort_code_use"]] |>
+      dplyr::filter(
+        .data$cdm_name %in% input$cohort_code_use_cdm_name,
+        .data$variable_name %in% input$cohort_code_use_variable_name,
+        .data$estimate_name %in% input$cohort_code_use_estimate_name
+      ) |>
+      omopgenerics::filterGroup(
+        .data$cohort_name %in% input$cohort_code_use_cohort_name,
+        .data$codelist_name %in% input$cohort_code_use_codelist_name
+      )
+  })
+  getCohortCodeUseTableReact <- shiny::reactive({
+    getCohortCodeUseData() |>
+      CodelistGenerator::tableCohortCodeUse(
+        type = "reactable",
+        header = "cdm_name"
+      )
+  })
+  output$cohort_code_use_table_react <- reactable::renderReactable({
+    getCohortCodeUseTableReact()
+  })
+  getCohortCodeUseTableGt <- shiny::reactive({
+    getCohortCodeUseData() |>
+      CodelistGenerator::tableCohortCodeUse(
+        timing = TRUE,
+        header = input$cohort_code_use_table_gt_header,
+        groupColumn = input$cohort_code_use_table_gt_group_column,
+        hide = input$cohort_code_use_table_gt_hide
+      )
+  })
+  output$cohort_code_use_table_gt <- gt::render_gt({
+    getCohortCodeUseTableGt()
+  })
+  output$cohort_code_use_table_gt_download <- shiny::downloadHandler(
+    filename = paste0("table_cohort_code_use.", input$cohort_code_use_table_gt_format),
+    content = function(file) {
+      gt::gtsave(getCohortCodeUseTableGt(), file)
     }
   )
 
@@ -303,6 +370,8 @@ server <- function(input, output, session) {
     shiny::bindEvent(
       input$summarise_characteristics_cdm_name,
       input$summarise_characteristics_cohort_name,
+      input$summarise_characteristics_age_group,
+      input$summarise_characteristics_sex,
       input$summarise_characteristics_variable_name,
       input$summarise_characteristics_estimate_name,
       ignoreInit = TRUE
@@ -326,7 +395,11 @@ server <- function(input, output, session) {
         .data$variable_name %in% input$summarise_characteristics_variable_name,
         .data$estimate_name %in% input$summarise_characteristics_estimate_name
       ) |>
-      omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_cohort_name)
+      omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_cohort_name) |>
+      omopgenerics::filterStrata(
+        .data$age_group %in% input$summarise_characteristics_age_group,
+        .data$sex %in% input$summarise_characteristics_sex
+      )
   })
   getSummariseCharacteristicsTable <- shiny::reactive({
     getSummariseCharacteristicsData() |>

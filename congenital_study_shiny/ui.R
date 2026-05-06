@@ -320,6 +320,131 @@ ui <- bslib::page_navbar(
     )
   ),
   bslib::nav_menu(
+    title = "CodelistGenerator",
+    icon = shiny::icon("list"),
+    bslib::nav_panel(
+      title = "Cohort code use",
+      icon = shiny::icon("chart-column"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn",
+            bslib::card_body(
+              shiny::actionButton(
+                inputId = "update_cohort_code_use",
+                label = "Update content",
+                width = "100%"
+              ),
+              uiOutput(outputId = "update_message_cohort_code_use")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_cdm_name",
+            label = "CDM name",
+            choices = choices$cohort_code_use_cdm_name,
+            selected = selected$cohort_code_use_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_cohort_name",
+            label = "Cohort name",
+            choices = choices$cohort_code_use_cohort_name,
+            selected = selected$cohort_code_use_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_codelist_name",
+            label = "Codelist name",
+            choices = choices$cohort_code_use_codelist_name,
+            selected = selected$cohort_code_use_codelist_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_variable_name",
+            label = "Variable name",
+            choices = choices$cohort_code_use_variable_name,
+            selected = selected$cohort_code_use_variable_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_estimate_name",
+            label = "Estimate name",
+            choices = choices$cohort_code_use_estimate_name,
+            selected = selected$cohort_code_use_estimate_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Cohort code use (reactable)",
+            bslib::card(
+              full_screen = TRUE,
+              reactable::reactableOutput("cohort_code_use_table_react") |>
+                shinycssloaders::withSpinner()
+            )
+          ),
+          bslib::nav_panel(
+            title = "Table Cohort code use (gt)",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shinyWidgets::pickerInput(
+                    inputId = "cohort_code_use_table_gt_format",
+                    label = "Format",
+                    choices = c("docx", "png", "pdf", "html"),
+                    selected = "docx",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+                  ),
+                  shiny::downloadButton(outputId = "cohort_code_use_table_gt_download", label = "Download table")
+                ),
+                class = "text-end"
+              ),
+              bslib::layout_sidebar(
+                sidebar = bslib::sidebar(
+                  sortable::bucket_list(
+                    header = NULL,
+                    sortable::add_rank_list(
+                      text = "None",
+                      labels = c("cohort_name", "codelist_name", "source_concept_name", "source_concept_id", "source_concept_value", "type_concept_id", "type_concept_name", "domain_id", "table", "variable_name", "variable_level"),
+                      input_id = "cohort_code_use_table_gt_none"
+                    ),
+                    sortable::add_rank_list(
+                      text = "Header",
+                      labels = c("cdm_name", "estimate_name"),
+                      input_id = "cohort_code_use_table_gt_header"
+                    ),
+                    sortable::add_rank_list(
+                      text = "Group columns",
+                      labels = character(),
+                      input_id = "cohort_code_use_table_gt_group_column"
+                    ),
+                    sortable::add_rank_list(
+                      text = "Hide",
+                      labels = character(),
+                      input_id = "cohort_code_use_table_gt_hide"
+                    )
+                  ),
+                  position = "right"
+                ),
+                gt::gt_output("cohort_code_use_table_gt") |>
+                  shinycssloaders::withSpinner()
+              )
+            )
+          )
+        )
+      )
+    )
+  ),
+  bslib::nav_menu(
     title = "CohortCharacteristics",
     icon = shiny::icon("list"),
     bslib::nav_panel(
@@ -574,7 +699,7 @@ ui <- bslib::page_navbar(
                     ),
                     sortable::add_rank_list(
                       text = "Hide",
-                      labels = c("variable_level", "reason_id", "estimate_name", "age_range", "cdm_version", "cohort_definition_id", "table_name", "vocabulary_version"),
+                      labels = c("variable_level", "reason_id", "estimate_name", "age_range", "cdm_version", "cohort_definition_id", "vocabulary_version"),
                       input_id = "summarise_cohort_attrition_table_hide"
                     )
                   ),
@@ -654,6 +779,22 @@ ui <- bslib::page_navbar(
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
           ),
           shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_age_group",
+            label = "Age group",
+            choices = choices$summarise_characteristics_age_group,
+            selected = selected$summarise_characteristics_age_group,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_sex",
+            label = "Sex",
+            choices = choices$summarise_characteristics_sex,
+            selected = selected$summarise_characteristics_sex,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
             inputId = "summarise_characteristics_variable_name",
             label = "Variable name",
             choices = choices$summarise_characteristics_variable_name,
@@ -697,7 +838,7 @@ ui <- bslib::page_navbar(
                     header = NULL,
                     sortable::add_rank_list(
                       text = "None",
-                      labels = c("variable_name", "variable_level", "estimate_name"),
+                      labels = c("age_group", "sex", "variable_name", "variable_level", "estimate_name"),
                       input_id = "summarise_characteristics_table_none"
                     ),
                     sortable::add_rank_list(
@@ -775,7 +916,7 @@ ui <- bslib::page_navbar(
                   shinyWidgets::pickerInput(
                     inputId = "summarise_characteristics_plot_facet",
                     label = "Facet",
-                    choices = c("cdm_name", "cohort_name"),
+                    choices = c("cdm_name", "cohort_name", "age_group", "sex"),
                     selected = "cdm_name",
                     multiple = TRUE,
                     options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
@@ -783,7 +924,7 @@ ui <- bslib::page_navbar(
                   shinyWidgets::pickerInput(
                     inputId = "summarise_characteristics_plot_colour",
                     label = "Colour",
-                    choices = c("cdm_name", "cohort_name"),
+                    choices = c("cdm_name", "cohort_name", "age_group", "sex"),
                     selected = "cohort_name",
                     multiple = TRUE,
                     options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")

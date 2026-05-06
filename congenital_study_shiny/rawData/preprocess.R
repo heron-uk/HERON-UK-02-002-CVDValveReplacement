@@ -2,6 +2,7 @@
 resultList <- list(
   summarise_omop_snapshot = list(result_type = "summarise_omop_snapshot"),
   summarise_observation_period = list(result_type = "summarise_observation_period"),
+  cohort_code_use = list(result_type = "cohort_code_use"),
   summarise_cohort_count = list(result_type = "summarise_cohort_count"),
   summarise_cohort_attrition = list(result_type = "summarise_cohort_attrition"),
   summarise_characteristics = list(result_type = "summarise_characteristics"),
