@@ -1,18 +1,15 @@
-omopgenerics::logMessage("Running baseline characteristics analysis of congenital AS/AVD ")
-
+omopgenerics::logMessage("Running baseline characteristics analysis of congenital")
 results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharacteristics(
   cdm$study_cohorts,
-  ageGroup = list(
-    c(0, 4),
-    c(5, 9),
-    c(10, 14),
-    c(15, 17)
-  )
+  strata = c("age_group", "sex"),
+  ageGroup = study_age_groups, 
+  cohortIntersectFlag = list(targetCohortTable = "comorbidity_cohorts",
+                             window = list(c(-Inf, 0)))
 )
-
 omopgenerics::logMessage("Baseline characteristics analysis complete")
 
-omopgenerics::logMessage("Running large scale characteristics analysis of congenital AS/AVD ")
+
+omopgenerics::logMessage("Running large scale characteristics analysis")
 nameFollowUp <- glue::glue("day_post_to_{followUpDays}_days_after")
 results[["large_scale_characteristics"]] <- CohortCharacteristics::summariseLargeScaleCharacteristics(
   cdm$study_cohorts,
@@ -25,11 +22,7 @@ results[["large_scale_characteristics"]] <- CohortCharacteristics::summariseLarg
   ),
   eventInWindow = c(
     "condition_occurrence",
-    "observation", 
     "procedure_occurrence",
-    "device_exposure"
-  ),
-  episodeInWindow = "drug_exposure"
+  )
 )
-
 omopgenerics::logMessage("Large scale characteristics analysis complete")

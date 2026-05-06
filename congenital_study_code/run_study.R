@@ -1,11 +1,5 @@
 
-if(stringr::str_detect(tolower(cdmName(cdm)), c("ltht|leeds"))){
-  useSourceCodes <- TRUE  
-} else {
-  useSourceCodes <- FALSE
-}
-
-followUpDays <- 1096
+followUpDays <- 1826
 
 
 # Check codeToRun inputs ----
@@ -23,6 +17,11 @@ omopgenerics::logMessage("LOG CREATED")
 
 # Define analysis settings -----
 study_period <- c(as.Date("2019-01-01"), NA)
+study_age_groups <- list(
+  c(0, 1),
+  c(2, 12),
+  c(13, 17)
+)
 
 # Initialise list to store results as we go -----
 results <- list()
@@ -46,14 +45,12 @@ omopgenerics::logMessage("Summarising cohort code use")
 
 results[["cohort_code_use_study_cohorts"]] <- CodelistGenerator::summariseCohortCodeUse(
   cdm = cdm, 
-  cohortTable = "study_cohorts",
-  useSourceCodes = TRUE
+  cohortTable = "study_cohorts"
 )
 
 results[["cohort_code_use_intervention_cohorts"]] <- CodelistGenerator::summariseCohortCodeUse(
   cdm = cdm, 
-  cohortTable = "intervention_cohorts", 
-  useSourceCodes = TRUE
+  cohortTable = "intervention_cohorts"
 )
 
 omopgenerics::logMessage("Cohort code use summarised")
