@@ -45,9 +45,12 @@ omopgenerics::logMessage("Summarising cohort code use")
 
 results[["cohort_code_use_study_cohorts"]] <- CodelistGenerator::summariseCohortCodeUse(
   cdm = cdm, 
-  cohortTable = "study_cohorts"
+  cohortTable = "study_cohorts", 
 )
-
+results[["cohort_code_use_comorbidities"]] <- CodelistGenerator::summariseCohortCodeUse(
+  cdm = cdm, 
+  cohortTable = "comorbidity_cohorts"
+)
 results[["cohort_code_use_intervention_cohorts"]] <- CodelistGenerator::summariseCohortCodeUse(
   cdm = cdm, 
   cohortTable = "intervention_cohorts"
