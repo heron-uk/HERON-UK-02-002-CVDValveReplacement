@@ -22,7 +22,7 @@ results[["large_scale_characteristics"]] <- CohortCharacteristics::summariseLarg
   ),
   eventInWindow = c(
     "condition_occurrence",
-    "procedure_occurrence",
+    "procedure_occurrence"
   )
 )
 omopgenerics::logMessage("Large scale characteristics analysis complete")
