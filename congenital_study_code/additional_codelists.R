@@ -69,3 +69,10 @@
 #   newCodelist() |> 
 #   exportCodelist(here::here("cohorts", "comorbidity_codelists"), "csv")
 # 
+# list(aortic_valve_repair = c(CodelistGenerator::getDescendants(cdm = cdm_vocab_2025_08,
+#                                                                           conceptId = c(4019027)) |>
+#                                dplyr::filter(!is.na(concept_name)) |> 
+#        dplyr::pull("concept_id"),
+#        44511059)) |>
+#   newCodelist() |>
+#   exportCodelist(here::here("cohorts", "procedure_codelists"), "csv")

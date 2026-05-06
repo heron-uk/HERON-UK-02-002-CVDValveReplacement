@@ -27,7 +27,8 @@ cdm$intervention_cohorts <- CohortConstructor::conceptCohort(
   cdm = cdm,
   name = "intervention_cohorts",
   conceptSet = procedure_codes,
-  exit = "event_start_date"
+  exit = "event_start_date", 
+  useSourceFields = TRUE
 )
 
 # Death cohort
