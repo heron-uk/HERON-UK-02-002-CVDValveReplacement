@@ -16,7 +16,7 @@ createLogFile(logFile = tempfile(pattern = "log_{date}_{time}"))
 omopgenerics::logMessage("LOG CREATED")
 
 # Define analysis settings -----
-study_period <- c(as.Date("2019-01-01"), NA)
+study_period <- c(as.Date("2019-04-19"), NA)
 study_age_groups <- list(
   c(0, 1),
   c(2, 12),
