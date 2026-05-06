@@ -6,6 +6,8 @@ results[["survival_avr_intervention"]] <- CohortSurvival::estimateSingleEventSur
   outcomeCohortTable = "outcome_cohorts",
   outcomeWashout = Inf,  
   followUpDays = followUpDays, 
-  strata = list(c("age_group", "sex"))
+  strata = list(c("age_group"),
+                c("sex"),
+                c("age_group", "sex"))
 )
 omopgenerics::logMessage("Survival analysis complete")
