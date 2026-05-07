@@ -10,7 +10,7 @@ fig-width: 12
 
 ::::: {style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2em; margin-top: 1em;"}
 ::: {style="flex-grow: 1;"}
-# Profiles of children with congenital aortic stenosis
+# Profiles of children with Congenital Aortic Stenosis
 :::
 
 ::: {style="display: flex; gap: 1em; align-items: center;"}
