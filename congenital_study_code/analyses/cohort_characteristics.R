@@ -1,13 +1,19 @@
-omopgenerics::logMessage("Running baseline characteristics analysis of congenital")
+omopgenerics::logMessage("Running baseline characteristics analysis")
 results[["baseline_characteristics"]] <- CohortCharacteristics::summariseCharacteristics(
-  cdm$study_cohorts,
-  strata = c("age_group", "sex"),
+  cdm$characterisation_cohorts,
+  strata = list(c("age_group"),
+                c("sex"),
+                c("age_group", "sex")),
   ageGroup = study_age_groups, 
   cohortIntersectFlag = list(targetCohortTable = "comorbidity_cohorts",
                              window = list(c(-Inf, 0)))
 )
 omopgenerics::logMessage("Baseline characteristics analysis complete")
 
+omopgenerics::logMessage("Running outcome characteristics analysis")
+results[["outcome_overlap"]] <- CohortCharacteristics::summariseCohortOverlap(cdm$characterisation_cohorts)
+results[["outcome_timing"]] <- CohortCharacteristics::summariseCohortTiming(cdm$characterisation_cohorts)
+omopgenerics::logMessage("Outcome characteristics analysis complete")
 
 omopgenerics::logMessage("Running large scale characteristics analysis")
 nameFollowUp <- glue::glue("day_post_to_{followUpDays}_days_after")
