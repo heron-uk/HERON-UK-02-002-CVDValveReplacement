@@ -8,15 +8,15 @@ editor: visual
 fig-width: 12  
 ---
 
-::: {style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2em; margin-top: 1em;"}
+::::: {style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2em; margin-top: 1em;"}
 ::: {style="flex-grow: 1;"}
-# Congenital Aortic Stenosis
+# Profiles of children with congenital aortic stenosis
 :::
+
 ::: {style="display: flex; gap: 1em; align-items: center;"}
 ![](hds_logo.svg){width="80px"} ![](ohdsi_logo.svg){width="80px"}
 :::
-:::
-
+:::::
 
 ```{r loading results, echo=FALSE, warning=FALSE, message=FALSE}
 library(dplyr)
@@ -24,16 +24,57 @@ library(tidyr)
 library(gt)
 library(ggplot2)
 
-# Load all CSV results
-all_results <- list.files("data", pattern = "\\.csv$", full.names = TRUE) |>
-  lapply(read.csv) |>
+study_data_path <- c("../data/studyData.RData", "data/studyData.RData")
+study_data_path <- study_data_path[file.exists(study_data_path)][1]
+
+if (is.na(study_data_path)) {
+  stop("Could not find `studyData.RData` in `../data/` or `data/`.")
+}
+
+load(study_data_path)
+
+all_results <- data |>
+  purrr::keep(~ inherits(.x, "data.frame")) |>
   bind_rows()
+
+missing_columns <- setdiff(
+  c(
+    "result_id", "cdm_name", "group_level", "variable_name",
+    "variable_level", "estimate_name", "estimate_value", "strata_name"
+  ),
+  names(all_results)
+)
+
+if (length(missing_columns)) {
+  stop(
+    "Loaded study data is missing required columns: ",
+    paste(missing_columns, collapse = ", ")
+  )
+}
+
+survival_curve_result_ids <- all_results |>
+  filter(variable_name == "outcome", estimate_name == "estimate") |>
+  distinct(result_id) |>
+  pull(result_id)
+
+survival_summary_result_ids <- all_results |>
+  filter(
+    variable_name == "outcome",
+    estimate_name %in% c(
+      "median_survival",
+      "restricted_mean_survival",
+      "number_records_count",
+      "n_events_count"
+    )
+  ) |>
+  distinct(result_id) |>
+  pull(result_id)
 
 # Helper function to process survival curves with dynamic column renaming
 process_survival_curves <- function(data, strata_filter = "overall") {
   raw_data <- data |>
     filter(
-      result_id %in% c(12, 16),
+      result_id %in% survival_curve_result_ids,
       variable_name == "outcome",
       grepl("estimate", estimate_name, ignore.case = TRUE),
       if(strata_filter == "overall") strata_name == "overall" else grepl(strata_filter, strata_name)
@@ -53,7 +94,7 @@ process_survival_curves <- function(data, strata_filter = "overall") {
     result <- result |> rename(survival_prob = estimate)
   } else if(any(grepl("^estimate$|survival.*estimate", cols, ignore.case = TRUE))) {
     est_col <- cols[grepl("^estimate$|survival.*estimate", cols, ignore.case = TRUE)][1]
-    result <- result |> rename(survival_prob = !!est_col)
+    result <- result |> rename(survival_prob = all_of(est_col))
   }
   
   # Rename CI lower column
@@ -61,7 +102,7 @@ process_survival_curves <- function(data, strata_filter = "overall") {
     result <- result |> rename(ci_lower = estimate_95CI_lower)
   } else if(any(grepl("lower|min", cols, ignore.case = TRUE))) {
     ci_col <- cols[grepl("lower|min", cols, ignore.case = TRUE)][1]
-    result <- result |> rename(ci_lower = !!ci_col)
+    result <- result |> rename(ci_lower = all_of(ci_col))
   }
   
   # Rename CI upper column
@@ -69,7 +110,7 @@ process_survival_curves <- function(data, strata_filter = "overall") {
     result <- result |> rename(ci_upper = estimate_95CI_upper)
   } else if(any(grepl("upper|max", cols, ignore.case = TRUE))) {
     ci_col <- cols[grepl("upper|max", cols, ignore.case = TRUE)][1]
-    result <- result |> rename(ci_upper = !!ci_col)
+    result <- result |> rename(ci_upper = all_of(ci_col))
   }
   
   result
@@ -86,9 +127,20 @@ format_cohort_labels <- function(cohort) {
   )
 }
 
+format_outcome_labels <- function(outcome) {
+  case_when(
+    outcome == "ross_procedure" ~ "Ross procedure",
+    outcome == "surgical_valvotomy" ~ "Surgical valvotomy",
+    outcome == "percutaneous_valvotomy" ~ "Percutaneous valvotomy",
+    outcome == "aortic_valve_replacement" ~ "Aortic valve replacement",
+    outcome == "death" ~ "Death",
+    TRUE ~ gsub("_", " ", outcome) |> tools::toTitleCase()
+  )
+}
+
 # Prepare survival summary table
 survival_table_raw <- all_results |>
-  filter(result_id %in% c(14, 18), variable_name == "outcome", strata_name == "overall") |>
+  filter(result_id %in% survival_summary_result_ids, variable_name == "outcome", strata_name == "overall") |>
   select(cdm_name, group_level, variable_level, estimate_name, estimate_value) |>
   mutate(estimate_value = as.numeric(estimate_value)) |>
   pivot_wider(names_from = estimate_name, values_from = estimate_value, values_fn = first)
@@ -112,14 +164,126 @@ survival_table <- survival_table_raw |>
          `Restricted mean survival (95% CI)` = restricted_mean_survival_formatted) |>
   arrange(`CDM name`, `Target cohort`, `Outcome name`)
 
+baseline_age_distribution <- all_results |>
+  filter(
+    result_id == 6,
+    variable_name == "Number subjects",
+    strata_name == "age_group &&& sex",
+    estimate_name == "count"
+  ) |>
+  transmute(
+    cdm_name,
+    target_cohort = group_level,
+    strata_level,
+    n = as.numeric(estimate_value),
+    age_group = trimws(sub(" &&&.*$", "", strata_level)),
+    sex = trimws(sub("^.*&&&\\s*", "", strata_level))
+  ) |>
+  group_by(cdm_name, target_cohort) |>
+  mutate(total_n = sum(n)) |>
+  ungroup() |>
+  mutate(
+    cohort_label = format_cohort_labels(target_cohort),
+    age_group = factor(age_group, levels = c("0 to 1", "2 to 12", "13 to 17", "0 to 4", "5 to 9", "10 to 14", "15 to 17")),
+    sex = factor(sex, levels = c("Female", "Male"))
+  )
+
 # Prepare survival curves for different stratifications
-survival_curves <- process_survival_curves(all_results, "overall")
-survival_by_age <- process_survival_curves(all_results, "age_group") |> rename(age_group = strata_level)
-survival_by_sex <- process_survival_curves(all_results, "sex") |> rename(sex = strata_level)
+survival_curves <- process_survival_curves(all_results, "overall") |>
+  mutate(
+    cohort_label = format_cohort_labels(target_cohort),
+    outcome_label = factor(
+      format_outcome_labels(outcome),
+      levels = c(
+        "Ross procedure",
+        "Surgical valvotomy",
+        "Percutaneous valvotomy",
+        "Aortic valve replacement",
+        "Death"
+      )
+    )
+  )
+
+survival_by_strata <- process_survival_curves(all_results, "age_group") |>
+  mutate(
+    combined_strata = coalesce(strata_level, "Overall"),
+    cohort_label = format_cohort_labels(target_cohort),
+    age_group = if_else(
+      grepl("&&&", combined_strata),
+      trimws(sub(" &&&.*$", "", combined_strata)),
+      combined_strata
+    ),
+    sex = if_else(
+      grepl("&&&", combined_strata),
+      trimws(sub("^.*&&&\\s*", "", combined_strata)),
+      "All"
+    ),
+    age_group = factor(
+      age_group,
+      levels = c("0 to 1", "2 to 12", "13 to 17", "0 to 4", "5 to 9", "10 to 14", "15 to 17")
+    ),
+    sex = factor(sex, levels = c("Female", "Male", "All")),
+    outcome_label = factor(
+      format_outcome_labels(outcome),
+      levels = c(
+        "Ross procedure",
+        "Surgical valvotomy",
+        "Percutaneous valvotomy",
+        "Aortic valve replacement",
+        "Death"
+      )
+    )
+  )
+
+stratified_risk_summary <- survival_by_strata |>
+  group_by(cdm_name, cohort_label, outcome_label, age_group, sex) |>
+  slice_max(order_by = time, n = 1, with_ties = FALSE) |>
+  ungroup() |>
+  mutate(
+    event_risk = pmax(0, pmin(1, 1 - survival_prob)),
+    risk_label = sprintf("%.1f%%", 100 * event_risk)
+  )
+
+cohort_palette <- c(
+  "Congenital Aortic Stenosis" = "#F8766D",
+  "Congenital Aortic Valve Disease" = "#00BFC4",
+  "Aortic Insufficiency" = "#7CAE00",
+  "Aortic Stenosis" = "#C77CFF"
+)
 
 ```
 
+## Baseline Profile
+
+### Baseline Age Distribution
+
+```{r baseline-age-distribution, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=6}
+if(nrow(baseline_age_distribution) > 0) {
+  baseline_age_distribution |>
+    ggplot(aes(x = age_group, y = n, fill = sex)) +
+    geom_col(position = position_dodge(width = 0.75), width = 0.65, color = "white") +
+    facet_grid(. ~ cohort_label + cdm_name) +
+    scale_fill_manual(values = c("Female" = "#FF6B9D", "Male" = "#4A90E2"), name = "Sex") +
+    labs(
+      x = "Age group",
+      y = "Number of children",
+      title = "Baseline Age Distribution",
+      subtitle = paste0("Total cohort size: n = ", unique(baseline_age_distribution$total_n))
+    ) +
+    theme_minimal() +
+    theme(
+      strip.background = element_rect(fill = "#E0E0E0", color = NA),
+      strip.text = element_text(size = 11, face = "bold"),
+      legend.position = "right",
+      panel.grid.minor = element_blank(),
+      axis.title = element_text(size = 11),
+      axis.text = element_text(size = 10)
+    )
+} else cat("No baseline age distribution data available.")
+```
+
 ## Survival Analysis Results
+
 ### Summary Table
 
 ```{r survival-table, echo=FALSE, warning=FALSE, message=FALSE}
@@ -141,68 +305,81 @@ if(length(left_cols) > 0) gt_table <- gt_table |> cols_align(align = "left", col
 gt_table
 ```
 
-### Survival Curves
+### Overall Outcome Panels
 
 ```{r survival-plots, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=6}
 survival_curves |>
-  ggplot(aes(x = time, y = survival_prob, color = target_cohort, fill = target_cohort, linetype = outcome)) +
+  ggplot(aes(x = time, y = survival_prob, color = cohort_label, fill = cohort_label)) +
   geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.3, color = NA) +
   geom_line(linewidth = 0.6) +
-  facet_wrap(~ cdm_name, scales = "free_x") +
-  scale_color_manual(values = c("congenital_aortic_stenosis" = "#F8766D", "congenital_aortic_valve_disease" = "#00BFC4"),
-                     name = "Target cohort") +
-  scale_fill_manual(values = c("congenital_aortic_stenosis" = "#F8766D", "congenital_aortic_valve_disease" = "#00BFC4"),
-                    name = "Target cohort") +
-  scale_linetype_manual(values = c("avr" = "solid", "death_cohort" = "dashed"),
-                       labels = c("avr" = "AVR", "death_cohort" = "Death"), name = "Outcome") +
-  labs(x = "Time in days", y = "Survival probability", title = "Survival Analysis by CDM and Target Cohort") +
+  facet_grid(outcome_label ~ cdm_name, scales = "free_x", switch = "y") +
+  scale_color_manual(values = cohort_palette, name = "Target cohort", drop = FALSE) +
+  scale_fill_manual(values = cohort_palette, name = "Target cohort", drop = FALSE) +
+  labs(
+    x = "Time in days",
+    y = "Survival probability",
+    title = "Overall Survival by Outcome"
+  ) +
   theme_minimal() +
-  theme(strip.background = element_rect(fill = "#E0E0E0", color = NA), strip.text = element_text(size = 12, face = "bold"),
+  theme(strip.background = element_rect(fill = "#E0E0E0", color = NA),
+        strip.text.x = element_text(size = 12, face = "bold"),
+        strip.text.y.left = element_text(size = 11, face = "bold", angle = 0),
+        strip.placement = "outside",
         legend.position = "right", panel.grid.minor = element_blank(),
         axis.title = element_text(size = 11), axis.text = element_text(size = 10))
 ```
 
-## Survival Analysis by Age Group
+## Stratified Outcomes
 
-```{r survival-by-age, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8}
-if(nrow(survival_by_age) > 0) {
-  survival_by_age |>
-    mutate(cohort_label = format_cohort_labels(target_cohort)) |>
-    ggplot(aes(x = time, y = survival_prob, color = age_group, fill = age_group, linetype = outcome)) +
-    geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.2, color = NA) +
-    geom_line(linewidth = 0.6) +
-    facet_grid(cohort_label ~ cdm_name, scales = "free") +
-    scale_linetype_manual(values = c("avr" = "solid", "death_cohort" = "dashed"),
-                         labels = c("avr" = "AVR", "death_cohort" = "Death"), name = "Outcome") +
-    labs(x = "Time in days", y = "Survival probability", title = "Survival Analysis by Age Group",
-         color = "Age Group", fill = "Age Group") +
+### Age-by-Sex Summary
+
+```{r age-sex-summary, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8}
+if(nrow(stratified_risk_summary) > 0) {
+  stratified_risk_summary |>
+    ggplot(aes(x = sex, y = age_group, fill = event_risk)) +
+    geom_tile(color = "white") +
+    geom_text(aes(label = risk_label), size = 3.2) +
+    facet_grid(cohort_label + cdm_name ~ outcome_label) +
+    scale_fill_gradient(low = "#E8F1FA", high = "#0B6AA2", name = "Event risk") +
+    labs(
+      x = "Sex",
+      y = "Age group",
+      title = "Outcome Risk by Age Group and Sex"
+    ) +
+    theme_minimal() +
+    theme(
+      strip.background = element_rect(fill = "#E0E0E0", color = NA),
+      strip.text = element_text(size = 11, face = "bold"),
+      panel.grid = element_blank(),
+      axis.title = element_text(size = 11),
+      axis.text = element_text(size = 10),
+      legend.position = "right"
+    )
+} else cat("No joint age-and-sex survival data available.")
+```
+
+### Survival by Age Group Within Sex
+
+```{r survival-by-age, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=9}
+if(nrow(survival_by_strata) > 0) {
+  survival_by_strata |>
+    ggplot(aes(x = time, y = survival_prob, color = age_group, fill = age_group)) +
+    geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.12, color = NA) +
+    geom_line(linewidth = 0.7) +
+    facet_grid(outcome_label ~ sex, scales = "free_x", switch = "y") +
+    labs(
+      x = "Time in days",
+      y = "Survival probability",
+      title = "Survival by Age Group Within Sex",
+      color = "Age Group",
+      fill = "Age Group"
+    ) +
     theme_minimal() +
     theme(strip.background = element_rect(fill = "#E0E0E0", color = NA),
-          strip.text = element_text(size = 11, face = "bold"), strip.text.y = element_text(angle = 0),
+          strip.text.x = element_text(size = 11, face = "bold"),
+          strip.text.y.left = element_text(size = 11, face = "bold", angle = 0),
+          strip.placement = "outside",
           legend.position = "right", panel.grid.minor = element_blank(),
           axis.title = element_text(size = 11), axis.text = element_text(size = 9))
 } else cat("No age-stratified survival data available.")
-```
-
-## Survival Analysis by Sex
-
-```{r survival-by-sex, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=6}
-if(nrow(survival_by_sex) > 0) {
-  survival_by_sex |>
-    mutate(cohort_label = format_cohort_labels(target_cohort)) |>
-    ggplot(aes(x = time, y = survival_prob, color = sex, fill = sex, linetype = outcome)) +
-    geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.2, color = NA) +
-    geom_line(linewidth = 0.6) +
-    facet_grid(cohort_label ~ cdm_name, scales = "free") +
-    scale_color_manual(values = c("Female" = "#FF6B9D", "Male" = "#4A90E2"), name = "Sex") +
-    scale_fill_manual(values = c("Female" = "#FF6B9D", "Male" = "#4A90E2"), name = "Sex") +
-    scale_linetype_manual(values = c("avr" = "solid", "death_cohort" = "dashed"),
-                         labels = c("avr" = "AVR", "death_cohort" = "Death"), name = "Outcome") +
-    labs(x = "Time in days", y = "Survival probability", title = "Survival Analysis by Sex") +
-    theme_minimal() +
-    theme(strip.background = element_rect(fill = "#E0E0E0", color = NA),
-          strip.text = element_text(size = 11, face = "bold"), strip.text.y = element_text(angle = 0),
-          legend.position = "right", panel.grid.minor = element_blank(),
-          axis.title = element_text(size = 11), axis.text = element_text(size = 10))
-} else cat("No sex-stratified survival data available.")
 ```
