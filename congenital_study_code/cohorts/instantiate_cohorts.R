@@ -34,7 +34,6 @@ cdm$intervention_cohorts <- CohortConstructor::conceptCohort(
 # Death cohort
 omopgenerics::logMessage("Creating death cohort")
 cdm$death_cohort <- CohortConstructor::deathCohort(cdm, name = "death_cohort")
-cdm$death_cohort <- cdm$death_cohort |> renameCohort("death")
 
 cdm <- bind(cdm$intervention_cohorts, 
             cdm$death_cohort, name = "outcome_cohorts")
