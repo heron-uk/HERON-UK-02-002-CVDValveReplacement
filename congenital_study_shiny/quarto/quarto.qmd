@@ -18,11 +18,12 @@ fig-width: 12
 :::
 :::::
 
-```{r loading results, echo=FALSE, warning=FALSE, message=FALSE}
+```{r setup_libraries, echo=FALSE, warning=FALSE, message=FALSE}
 library(dplyr)
-library(tidyr)
-library(gt)
 library(ggplot2)
+library(omopgenerics)
+library(CohortSurvival)
+library(CohortCharacteristics)
 
 study_data_path <- c("../data/studyData.RData", "data/studyData.RData")
 study_data_path <- study_data_path[file.exists(study_data_path)][1]
@@ -33,292 +34,175 @@ if (is.na(study_data_path)) {
 
 load(study_data_path)
 
-all_results <- data |>
-  purrr::keep(~ inherits(.x, "data.frame")) |>
-  bind_rows()
-
-missing_columns <- setdiff(
-  c(
-    "result_id", "cdm_name", "group_level", "variable_name",
-    "variable_level", "estimate_name", "estimate_value", "strata_name"
-  ),
-  names(all_results)
-)
-
-if (length(missing_columns)) {
-  stop(
-    "Loaded study data is missing required columns: ",
-    paste(missing_columns, collapse = ", ")
-  )
+if (!all(c("summarise_characteristics", "survival") %in% names(data))) {
+  stop("Could not find `summarise_characteristics` and `survival` in `studyData.RData`.")
 }
+```
 
-survival_curve_result_ids <- all_results |>
-  filter(variable_name == "outcome", estimate_name == "estimate") |>
-  distinct(result_id) |>
-  pull(result_id)
+```{r prepare_results, echo=FALSE, warning=FALSE, message=FALSE}
+label_cohort <- function(x) tools::toTitleCase(gsub("_congenital$", "", gsub("_", " ", x)))
+label_outcome <- function(x) tools::toTitleCase(gsub("_", " ", sub("_cohort$", "", x)))
 
-survival_summary_result_ids <- all_results |>
+baseline_result <- data[["summarise_characteristics"]]
+survival_result <- data[["survival"]]
+
+index_cohort <- baseline_result |>
   filter(
-    variable_name == "outcome",
-    estimate_name %in% c(
-      "median_survival",
-      "restricted_mean_survival",
-      "number_records_count",
-      "n_events_count"
-    )
-  ) |>
-  distinct(result_id) |>
-  pull(result_id)
-
-# Helper function to process survival curves with dynamic column renaming
-process_survival_curves <- function(data, strata_filter = "overall") {
-  raw_data <- data |>
-    filter(
-      result_id %in% survival_curve_result_ids,
-      variable_name == "outcome",
-      grepl("estimate", estimate_name, ignore.case = TRUE),
-      if(strata_filter == "overall") strata_name == "overall" else grepl(strata_filter, strata_name)
-    ) |>
-    select(cdm_name, group_level, variable_level, any_of("strata_level"), 
-           estimate_name, estimate_value, additional_level) |>
-    mutate(time = as.numeric(additional_level),
-           estimate_value = as.numeric(estimate_value)) |>
-    pivot_wider(names_from = estimate_name, values_from = estimate_value, values_fn = first)
-  
-  # Dynamic column renaming - build named vector for rename
-  cols <- names(raw_data)
-  result <- raw_data |> rename(target_cohort = group_level, outcome = variable_level)
-  
-  # Rename survival probability column
-  if("estimate" %in% cols) {
-    result <- result |> rename(survival_prob = estimate)
-  } else if(any(grepl("^estimate$|survival.*estimate", cols, ignore.case = TRUE))) {
-    est_col <- cols[grepl("^estimate$|survival.*estimate", cols, ignore.case = TRUE)][1]
-    result <- result |> rename(survival_prob = all_of(est_col))
-  }
-  
-  # Rename CI lower column
-  if("estimate_95CI_lower" %in% cols) {
-    result <- result |> rename(ci_lower = estimate_95CI_lower)
-  } else if(any(grepl("lower|min", cols, ignore.case = TRUE))) {
-    ci_col <- cols[grepl("lower|min", cols, ignore.case = TRUE)][1]
-    result <- result |> rename(ci_lower = all_of(ci_col))
-  }
-  
-  # Rename CI upper column
-  if("estimate_95CI_upper" %in% cols) {
-    result <- result |> rename(ci_upper = estimate_95CI_upper)
-  } else if(any(grepl("upper|max", cols, ignore.case = TRUE))) {
-    ci_col <- cols[grepl("upper|max", cols, ignore.case = TRUE)][1]
-    result <- result |> rename(ci_upper = all_of(ci_col))
-  }
-  
-  result
-}
-
-# Helper function to format cohort labels
-format_cohort_labels <- function(cohort) {
-  case_when(
-    cohort == "aortic_insufficiency_congenital" ~ "Aortic Insufficiency",
-    cohort == "aortic_stenosis_congenital" ~ "Aortic Stenosis",
-    cohort == "congenital_aortic_stenosis" ~ "Congenital Aortic Stenosis",
-    cohort == "congenital_aortic_valve_disease" ~ "Congenital Aortic Valve Disease",
-    TRUE ~ gsub("_", " ", cohort) |> tools::toTitleCase()
-  )
-}
-
-format_outcome_labels <- function(outcome) {
-  case_when(
-    outcome == "ross_procedure" ~ "Ross procedure",
-    outcome == "surgical_valvotomy" ~ "Surgical valvotomy",
-    outcome == "percutaneous_valvotomy" ~ "Percutaneous valvotomy",
-    outcome == "aortic_valve_replacement" ~ "Aortic valve replacement",
-    outcome == "death" ~ "Death",
-    TRUE ~ gsub("_", " ", outcome) |> tools::toTitleCase()
-  )
-}
-
-# Prepare survival summary table
-survival_table_raw <- all_results |>
-  filter(result_id %in% survival_summary_result_ids, variable_name == "outcome", strata_name == "overall") |>
-  select(cdm_name, group_level, variable_level, estimate_name, estimate_value) |>
-  mutate(estimate_value = as.numeric(estimate_value)) |>
-  pivot_wider(names_from = estimate_name, values_from = estimate_value, values_fn = first)
-
-table_cols <- names(survival_table_raw)
-survival_table <- survival_table_raw |>
-  mutate(
-    median_survival_formatted = if("median_survival" %in% table_cols && 
-                                     all(c("median_survival_95CI_lower", "median_survival_95CI_higher") %in% table_cols)) {
-      ifelse(is.na(median_survival), "–", 
-             sprintf("%.2f (%.2f, %.2f)", median_survival, median_survival_95CI_lower, median_survival_95CI_higher))
-    } else "–",
-    restricted_mean_survival_formatted = if(all(c("restricted_mean_survival", "restricted_mean_survival_95CI_lower", 
-                                                   "restricted_mean_survival_95CI_upper") %in% table_cols)) {
-      sprintf("%.2f (%.2f, %.2f)", restricted_mean_survival, restricted_mean_survival_95CI_lower, restricted_mean_survival_95CI_upper)
-    } else NA_character_
-  ) |>
-  select(`CDM name` = cdm_name, `Target cohort` = group_level, `Outcome name` = variable_level,
-         any_of(c("Number records" = "number_records_count", "Number events" = "n_events_count")),
-         `Median survival (95% CI)` = median_survival_formatted,
-         `Restricted mean survival (95% CI)` = restricted_mean_survival_formatted) |>
-  arrange(`CDM name`, `Target cohort`, `Outcome name`)
-
-baseline_age_distribution <- all_results |>
-  filter(
-    result_id == 6,
     variable_name == "Number subjects",
-    strata_name == "age_group &&& sex",
+    estimate_name == "count",
+    strata_name == "overall"
+  ) |>
+  mutate(n = suppressWarnings(as.numeric(estimate_value))) |>
+  filter(!is.na(n)) |>
+  slice_max(order_by = n, n = 1, with_ties = FALSE) |>
+  pull(group_level)
+
+if (length(index_cohort) == 0 || is.na(index_cohort)) {
+  stop("Could not infer the baseline index cohort from `studyData.RData`.")
+}
+
+baseline_characteristics_result <- baseline_result |>
+  filterGroup(group_level == index_cohort)
+
+preindex_conditions <- baseline_characteristics_result |>
+  filter(
+    strata_name == "overall",
+    grepl("Comorbidity cohorts", variable_name),
+    estimate_name == "percentage",
+    estimate_value != "-"
+  ) |>
+  transmute(
+    condition = variable_level,
+    percentage = as.numeric(estimate_value)
+  )
+
+top_preindex_condition_levels <- preindex_conditions |>
+  slice_max(order_by = percentage, n = 6, with_ties = FALSE) |>
+  pull(condition)
+
+compact_baseline_summary_gt <- baseline_characteristics_result |>
+  filter(
+    strata_name == "overall",
+    variable_name %in% c("Number subjects", "Age", "Age group", "Sex") |
+      (variable_name == "Comorbidity cohorts flag -inf to 0" & variable_level %in% top_preindex_condition_levels)
+  ) |>
+  mutate(group_level = label_cohort(group_level)) |>
+  tableCharacteristics(type = "gt", header = c("cdm_name", "group_level"))
+
+age_group_levels <- baseline_characteristics_result |>
+  filter(
+    strata_name == "overall",
+    variable_name == "Age group",
+    estimate_name == "count"
+  ) |>
+  pull(variable_level)
+
+age_group_levels <- age_group_levels[order(as.numeric(sub(" .*", "", age_group_levels)))]
+
+baseline_age_sex_data <- baseline_characteristics_result |>
+  filter(
+    strata_name == "age_group",
+    variable_name == "Sex",
     estimate_name == "count"
   ) |>
   transmute(
-    cdm_name,
-    target_cohort = group_level,
-    strata_level,
-    n = as.numeric(estimate_value),
-    age_group = trimws(sub(" &&&.*$", "", strata_level)),
-    sex = trimws(sub("^.*&&&\\s*", "", strata_level))
-  ) |>
-  group_by(cdm_name, target_cohort) |>
-  mutate(total_n = sum(n)) |>
-  ungroup() |>
-  mutate(
-    cohort_label = format_cohort_labels(target_cohort),
-    age_group = factor(age_group, levels = c("0 to 1", "2 to 12", "13 to 17", "0 to 4", "5 to 9", "10 to 14", "15 to 17")),
-    sex = factor(sex, levels = c("Female", "Male"))
+    age_group = factor(strata_level, levels = age_group_levels),
+    sex = variable_level,
+    count = as.numeric(estimate_value)
   )
 
-# Prepare survival curves for different stratifications
-survival_curves <- process_survival_curves(all_results, "overall") |>
+top_preindex_conditions <- preindex_conditions |>
+  slice_max(order_by = percentage, n = 10, with_ties = FALSE) |>
+  arrange(percentage)
+
+survival_overall_result <- survival_result |>
+  filterStrata(strata_name == "overall") |>
   mutate(
-    cohort_label = format_cohort_labels(target_cohort),
-    outcome_label = factor(
-      format_outcome_labels(outcome),
-      levels = c(
-        "Ross procedure",
-        "Surgical valvotomy",
-        "Percutaneous valvotomy",
-        "Aortic valve replacement",
-        "Death"
-      )
-    )
+    group_level = label_cohort(group_level),
+    variable_level = label_outcome(variable_level)
   )
 
-survival_by_strata <- process_survival_curves(all_results, "age_group") |>
+survival_age_result <- survival_result |>
+  filterStrata(strata_name == "age_group") |>
   mutate(
-    combined_strata = coalesce(strata_level, "Overall"),
-    cohort_label = format_cohort_labels(target_cohort),
-    age_group = if_else(
-      grepl("&&&", combined_strata),
-      trimws(sub(" &&&.*$", "", combined_strata)),
-      combined_strata
-    ),
-    sex = if_else(
-      grepl("&&&", combined_strata),
-      trimws(sub("^.*&&&\\s*", "", combined_strata)),
-      "All"
-    ),
-    age_group = factor(
-      age_group,
-      levels = c("0 to 1", "2 to 12", "13 to 17", "0 to 4", "5 to 9", "10 to 14", "15 to 17")
-    ),
-    sex = factor(sex, levels = c("Female", "Male", "All")),
-    outcome_label = factor(
-      format_outcome_labels(outcome),
-      levels = c(
-        "Ross procedure",
-        "Surgical valvotomy",
-        "Percutaneous valvotomy",
-        "Aortic valve replacement",
-        "Death"
-      )
-    )
+    group_level = label_cohort(group_level),
+    variable_level = label_outcome(variable_level),
+    strata_level = factor(strata_level, levels = age_group_levels)
   )
 
-stratified_risk_summary <- survival_by_strata |>
-  group_by(cdm_name, cohort_label, outcome_label, age_group, sex) |>
-  slice_max(order_by = time, n = 1, with_ties = FALSE) |>
-  ungroup() |>
+survival_age_sex_result <- survival_result |>
+  filterStrata(strata_name == "age_group &&& sex") |>
   mutate(
-    event_risk = pmax(0, pmin(1, 1 - survival_prob)),
-    risk_label = sprintf("%.1f%%", 100 * event_risk)
+    group_level = label_cohort(group_level),
+    variable_level = label_outcome(variable_level)
   )
-
-cohort_palette <- c(
-  "Congenital Aortic Stenosis" = "#F8766D",
-  "Congenital Aortic Valve Disease" = "#00BFC4",
-  "Aortic Insufficiency" = "#7CAE00",
-  "Aortic Stenosis" = "#C77CFF"
-)
 
 ```
 
-## Baseline Profile
+## Baseline Summary
 
-### Baseline Age Distribution
+### Baseline Summary Table
 
-```{r baseline-age-distribution, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=6}
-if(nrow(baseline_age_distribution) > 0) {
-  baseline_age_distribution |>
-    ggplot(aes(x = age_group, y = n, fill = sex)) +
-    geom_col(position = position_dodge(width = 0.75), width = 0.65, color = "white") +
-    facet_grid(. ~ cohort_label + cdm_name) +
-    scale_fill_manual(values = c("Female" = "#FF6B9D", "Male" = "#4A90E2"), name = "Sex") +
-    labs(
-      x = "Age group",
-      y = "Number of children",
-      title = "Baseline Age Distribution",
-      subtitle = paste0("Total cohort size: n = ", unique(baseline_age_distribution$total_n))
-    ) +
-    theme_minimal() +
-    theme(
-      strip.background = element_rect(fill = "#E0E0E0", color = NA),
-      strip.text = element_text(size = 11, face = "bold"),
-      legend.position = "right",
-      panel.grid.minor = element_blank(),
-      axis.title = element_text(size = 11),
-      axis.text = element_text(size = 10)
-    )
-} else cat("No baseline age distribution data available.")
+```{r baseline_summary_table, echo=FALSE, warning=FALSE, message=FALSE}
+compact_baseline_summary_gt
 ```
 
-## Survival Analysis Results
+### Age Group by Sex
 
-### Summary Table
-
-```{r survival-table, echo=FALSE, warning=FALSE, message=FALSE}
-# Build gt table with conditional column alignment
-table_col_names <- names(survival_table)
-center_cols <- intersect(c("Number records", "Number events", "Median survival (95% CI)", 
-                           "Restricted mean survival (95% CI)"), table_col_names)
-left_cols <- intersect(c("CDM name", "Target cohort", "Outcome name"), table_col_names)
-
-gt_table <- survival_table |> gt() |>
-  tab_header(title = "Survival Analysis Results") |>
-  tab_style(style = cell_borders(sides = "all", color = "#D3D3D3", weight = px(1)), locations = cells_body()) |>
-  tab_style(style = cell_fill(color = "#F0F0F0"), locations = cells_column_labels()) |>
-  tab_options(table.font.size = px(12), heading.align = "left")
-
-if(length(center_cols) > 0) gt_table <- gt_table |> cols_align(align = "center", columns = all_of(center_cols))
-if(length(left_cols) > 0) gt_table <- gt_table |> cols_align(align = "left", columns = all_of(left_cols))
-
-gt_table
+```{r baseline_age_by_sex, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=6, fig.cap="Distribution of children with congenital aortic stenosis across age groups and sex in the index cohort at Great Ormond Street Hospital."}
+ggplot(baseline_age_sex_data, aes(x = age_group, y = count, fill = sex)) +
+  geom_col(position = "stack", width = 0.75) +
+  labs(
+    x = "Age group",
+    y = "Children",
+    title = "Age and Sex Distribution at Diagnosis",
+    fill = "Sex"
+  ) +
+  theme_minimal() +
+  theme(
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(size = 11),
+    axis.text = element_text(size = 10),
+    legend.position = "right"
+  )
 ```
 
-### Overall Outcome Panels
+### Top Pre-Index Conditions
 
-```{r survival-plots, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=6}
-survival_curves |>
-  ggplot(aes(x = time, y = survival_prob, color = cohort_label, fill = cohort_label)) +
-  geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.3, color = NA) +
-  geom_line(linewidth = 0.6) +
-  facet_grid(outcome_label ~ cdm_name, scales = "free_x", switch = "y") +
-  scale_color_manual(values = cohort_palette, name = "Target cohort", drop = FALSE) +
-  scale_fill_manual(values = cohort_palette, name = "Target cohort", drop = FALSE) +
+```{r top_preindex_conditions, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=7, fig.cap="Most common pre-index comorbid conditions in the congenital aortic stenosis cohort, ranked by the percentage of children with each condition."}
+ggplot(top_preindex_conditions, aes(x = reorder(condition, percentage), y = percentage)) +
+  geom_col(fill = "#2C7FB8", width = 0.75) +
+  coord_flip() +
+  labs(
+    x = NULL,
+    y = "Children (%)",
+    title = "Most Common Pre-Index Conditions"
+  ) +
+  theme_minimal() +
+  theme(
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(size = 11),
+    axis.text = element_text(size = 10)
+  )
+```
+
+## Outcome Risk
+
+### Overall Cumulative Failure by Outcome
+
+```{r overall_cumulative_failure, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.cap="Kaplan-Meier cumulative failure curves for the main study outcomes in the congenital aortic stenosis cohort, shown overall for each outcome across follow-up."}
+survival_overall_result |>
+  plotSurvival(facet = c("outcome", "cdm_name"), cumulativeFailure = TRUE) +
   labs(
     x = "Time in days",
-    y = "Survival probability",
-    title = "Overall Survival by Outcome"
+    y = "Cumulative failure",
+    title = "Overall Cumulative Failure by Outcome"
+  ) +
+  facet_grid(
+    outcome ~ cdm_name,
+    scales = "free_x",
+    switch = "y",
+    labeller = labeller(outcome = as_labeller(label_outcome))
   ) +
   theme_minimal() +
   theme(strip.background = element_rect(fill = "#E0E0E0", color = NA),
@@ -329,57 +213,70 @@ survival_curves |>
         axis.title = element_text(size = 11), axis.text = element_text(size = 10))
 ```
 
-## Stratified Outcomes
+### Age-Stratified Cumulative Failure by Outcome
 
-### Age-by-Sex Summary
-
-```{r age-sex-summary, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8}
-if(nrow(stratified_risk_summary) > 0) {
-  stratified_risk_summary |>
-    ggplot(aes(x = sex, y = age_group, fill = event_risk)) +
-    geom_tile(color = "white") +
-    geom_text(aes(label = risk_label), size = 3.2) +
-    facet_grid(cohort_label + cdm_name ~ outcome_label) +
-    scale_fill_gradient(low = "#E8F1FA", high = "#0B6AA2", name = "Event risk") +
+```{r age_stratified_cumulative_failure, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.cap="Kaplan-Meier cumulative failure curves for each study outcome stratified by age group in the congenital aortic stenosis cohort."}
+if (nrow(survival_age_result) > 0) {
+  survival_age_result |>
+    plotSurvival(facet = c("outcome", "cdm_name"), colour = "age_group", cumulativeFailure = TRUE) +
     labs(
-      x = "Sex",
-      y = "Age group",
-      title = "Outcome Risk by Age Group and Sex"
+      x = "Time in days",
+      y = "Cumulative failure",
+      title = "Age-Stratified Cumulative Failure by Outcome",
+      color = "Age Group",
+      fill = "Age Group"
+    ) +
+    facet_grid(
+      outcome ~ cdm_name,
+      scales = "free_x",
+      switch = "y",
+      labeller = labeller(outcome = as_labeller(label_outcome))
     ) +
     theme_minimal() +
     theme(
       strip.background = element_rect(fill = "#E0E0E0", color = NA),
-      strip.text = element_text(size = 11, face = "bold"),
-      panel.grid = element_blank(),
+      strip.text.x = element_text(size = 11, face = "bold"),
+      strip.text.y.left = element_text(size = 11, face = "bold", angle = 0),
+      strip.placement = "outside",
+      panel.grid.minor = element_blank(),
       axis.title = element_text(size = 11),
       axis.text = element_text(size = 10),
       legend.position = "right"
     )
-} else cat("No joint age-and-sex survival data available.")
+} else cat("No age-stratified cumulative failure data available.")
 ```
 
-### Survival by Age Group Within Sex
+## Supplementary Figures
 
-```{r survival-by-age, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=9}
-if(nrow(survival_by_strata) > 0) {
-  survival_by_strata |>
-    ggplot(aes(x = time, y = survival_prob, color = age_group, fill = age_group)) +
-    geom_ribbon(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.12, color = NA) +
-    geom_line(linewidth = 0.7) +
-    facet_grid(outcome_label ~ sex, scales = "free_x", switch = "y") +
+### Age-Sex Cumulative Failure
+
+```{r age_sex_cumulative_failure, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.cap="Kaplan-Meier cumulative failure curves for each study outcome stratified jointly by age group and sex. This figure is presented as supplementary because the panel layout is more detailed."}
+if(nrow(survival_age_sex_result) > 0) {
+  survival_age_sex_result |>
+    plotSurvival(facet = c("outcome", "sex"), colour = "age_group", cumulativeFailure = TRUE) +
     labs(
       x = "Time in days",
-      y = "Survival probability",
-      title = "Survival by Age Group Within Sex",
+      y = "Cumulative failure",
+      title = "Age- and Sex-Stratified Cumulative Failure",
       color = "Age Group",
       fill = "Age Group"
     ) +
+    facet_grid(
+      outcome ~ sex,
+      scales = "free_x",
+      switch = "y",
+      labeller = labeller(outcome = as_labeller(label_outcome))
+    ) +
     theme_minimal() +
-    theme(strip.background = element_rect(fill = "#E0E0E0", color = NA),
-          strip.text.x = element_text(size = 11, face = "bold"),
-          strip.text.y.left = element_text(size = 11, face = "bold", angle = 0),
-          strip.placement = "outside",
-          legend.position = "right", panel.grid.minor = element_blank(),
-          axis.title = element_text(size = 11), axis.text = element_text(size = 9))
-} else cat("No age-stratified survival data available.")
+    theme(
+      strip.background = element_rect(fill = "#E0E0E0", color = NA),
+      strip.text.x = element_text(size = 11, face = "bold"),
+      strip.text.y.left = element_text(size = 11, face = "bold", angle = 0),
+      strip.placement = "outside",
+      panel.grid.minor = element_blank(),
+      axis.title = element_text(size = 11),
+      axis.text = element_text(size = 10),
+      legend.position = "right"
+    )
+} else cat("No age-sex cumulative failure data available.")
 ```
