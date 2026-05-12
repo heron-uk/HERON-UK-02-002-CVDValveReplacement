@@ -1,0 +1,349 @@
+---
+title: ""
+format:
+  html:
+    page-layout: full
+    css: styles.css
+editor: visual
+fig-width: 12  
+---
+
+::::: {style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2em; margin-top: 1em;"}
+::: {style="flex-grow: 1;"}
+# Congenital Aortic Stenosis
+:::
+
+::: {style="display: flex; gap: 1em; align-items: center;"}
+![](www/hds_logo.svg){width="80px"} ![](www/ohdsi_logo.svg){width="80px"}
+:::
+:::::
+
+```{r setup_libraries, echo=FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+library(omopgenerics)
+library(CohortSurvival)
+library(CohortCharacteristics)
+
+study_data_path <- c("data/studyData.RData", "../data/studyData.RData")
+study_data_path <- study_data_path[file.exists(study_data_path)][1]
+
+if (is.na(study_data_path)) {
+  stop("Could not find `studyData.RData` in `data/` or `../data/`.")
+}
+
+load(study_data_path)
+
+if (!all(c("summarise_characteristics", "survival") %in% names(data))) {
+  stop("Could not find `summarise_characteristics` and `survival` in `studyData.RData`.")
+}
+```
+
+```{r prepare_results, echo=FALSE, warning=FALSE, message=FALSE}
+label_cohort <- function(x) tools::toTitleCase(gsub("_congenital$", "", gsub("_", " ", x)))
+label_outcome <- function(x) tools::toTitleCase(gsub("_", " ", sub("_cohort$", "", x)))
+
+baseline_result <- data[["summarise_characteristics"]]
+survival_result <- data[["survival"]]
+
+index_cohort <- baseline_result |>
+  filter(
+    variable_name == "Number subjects",
+    estimate_name == "count",
+    strata_name == "overall"
+  ) |>
+  mutate(n = suppressWarnings(as.numeric(estimate_value))) |>
+  filter(!is.na(n)) |>
+  slice_max(order_by = n, n = 1, with_ties = FALSE) |>
+  pull(group_level)
+
+if (length(index_cohort) == 0 || is.na(index_cohort)) {
+  stop("Could not infer the baseline index cohort from `studyData.RData`.")
+}
+
+baseline_characteristics_result <- baseline_result |>
+  omopgenerics::filterGroup(group_level == index_cohort)
+
+preindex_conditions <- baseline_characteristics_result |>
+  filter(
+    strata_name == "overall",
+    grepl("Comorbidity cohorts", variable_name),
+    estimate_name == "percentage",
+    estimate_value != "-"
+  ) |>
+  transmute(
+    condition = variable_level,
+    percentage = as.numeric(estimate_value)
+  )
+
+top_preindex_condition_levels <- preindex_conditions |>
+  slice_max(order_by = percentage, n = 6, with_ties = FALSE) |>
+  pull(condition)
+
+top_preindex_condition_order <- preindex_conditions |>
+  slice_max(order_by = percentage, n = 6, with_ties = FALSE) |>
+  arrange(percentage) |>
+  pull(condition)
+
+all_preindex_condition_order <- preindex_conditions |>
+  arrange(percentage) |>
+  pull(condition)
+
+compact_baseline_summary_gt <- baseline_characteristics_result |>
+  filter(
+    strata_name == "overall",
+    variable_name %in% c("Number subjects", "Age", "Age group", "Sex") |
+      (variable_name == "Comorbidity cohorts flag -inf to 0" & variable_level %in% top_preindex_condition_levels)
+  ) |>
+  mutate(group_level = label_cohort(group_level)) |>
+  CohortCharacteristics::tableCharacteristics(type = "gt", header = c("cdm_name", "group_level"))
+
+age_group_levels <- baseline_characteristics_result |>
+  filter(
+    strata_name == "overall",
+    variable_name == "Age group",
+    estimate_name == "count"
+  ) |>
+  pull(variable_level)
+
+age_group_levels <- age_group_levels[order(as.numeric(sub(" .*", "", age_group_levels)))]
+
+baseline_age_sex_data <- baseline_characteristics_result |>
+  filter(
+    strata_name == "age_group",
+    variable_name == "Sex",
+    estimate_name == "count"
+  ) |>
+  transmute(
+    age_group = factor(strata_level, levels = age_group_levels),
+    sex = variable_level,
+    count = as.numeric(estimate_value)
+  )
+
+top_preindex_conditions <- preindex_conditions |>
+  slice_max(order_by = percentage, n = 10, with_ties = FALSE) |>
+  arrange(percentage)
+
+all_preindex_characteristics_by_age <- baseline_characteristics_result |>
+  filter(
+    strata_name == "age_group",
+    grepl("Comorbidity cohorts", variable_name),
+    estimate_name == "percentage"
+  ) |>
+  transmute(
+    condition = factor(variable_level, levels = all_preindex_condition_order),
+    age_group = factor(strata_level, levels = age_group_levels),
+    percentage = dplyr::if_else(estimate_value == "-", 0, as.numeric(estimate_value))
+  )
+
+preindex_condition_ranges <- all_preindex_characteristics_by_age |>
+  group_by(condition) |>
+  summarise(
+    min_percentage = min(percentage, na.rm = TRUE),
+    max_percentage = max(percentage, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+survival_overall_result <- survival_result |>
+  omopgenerics::filterStrata(strata_name == "overall") |>
+  mutate(
+    group_level = label_cohort(group_level),
+    variable_level = label_outcome(variable_level)
+  )
+
+survival_age_result <- survival_result |>
+  omopgenerics::filterStrata(strata_name == "age_group") |>
+  mutate(
+    group_level = label_cohort(group_level),
+    variable_level = label_outcome(variable_level),
+    strata_level = factor(strata_level, levels = age_group_levels)
+  )
+
+survival_age_sex_result <- survival_result |>
+  omopgenerics::filterStrata(strata_name == "age_group &&& sex") |>
+  mutate(
+    group_level = label_cohort(group_level),
+    variable_level = label_outcome(variable_level)
+  )
+
+```
+
+## Baseline Summary
+
+### Baseline Summary Table
+
+```{r baseline_summary_table, echo=FALSE, warning=FALSE, message=FALSE}
+compact_baseline_summary_gt
+```
+
+### Age Group by Sex
+
+```{r baseline_age_by_sex, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=6, fig.cap="Distribution of children with congenital aortic stenosis across age groups and sex in the index cohort at Great Ormond Street Hospital."}
+ggplot(baseline_age_sex_data, aes(x = age_group, y = count, fill = sex)) +
+  geom_col(position = "stack", width = 0.75) +
+  labs(
+    x = "Age group",
+    y = "Children",
+    title = "Age and Sex Distribution at Diagnosis",
+    fill = "Sex"
+  ) +
+  theme_minimal() +
+  theme(
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(size = 11),
+    axis.text = element_text(size = 10),
+    legend.position = "right"
+  )
+```
+
+### Top Pre-Index Conditions
+
+```{r top_preindex_conditions, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=7, fig.cap="Most common pre-index comorbid conditions in the congenital aortic stenosis cohort, ranked by the percentage of children with each condition."}
+ggplot(top_preindex_conditions, aes(x = reorder(condition, percentage), y = percentage)) +
+  geom_col(fill = "#2C7FB8", width = 0.75) +
+  coord_flip() +
+  labs(
+    x = NULL,
+    y = "Children (%)",
+    title = "Most Common Pre-Index Conditions"
+  ) +
+  theme_minimal() +
+  theme(
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(size = 11),
+    axis.text = element_text(size = 10)
+  )
+```
+
+### Baseline Comorbidities by Age Group
+
+```{r baseline_comorbidities_by_age, echo=FALSE, warning=FALSE, message=FALSE, fig.width=13, fig.height=7.5, fig.cap="Pre-index comorbidities by age group in the congenital aortic stenosis cohort, with each line showing the range across age groups for a given condition. Suppressed estimates based on counts under 5 are shown as 0%."}
+ggplot(all_preindex_characteristics_by_age, aes(x = percentage, y = condition, color = age_group)) +
+  geom_segment(
+    data = preindex_condition_ranges,
+    aes(x = min_percentage, xend = max_percentage, y = condition, yend = condition),
+    inherit.aes = FALSE,
+    linewidth = 0.55,
+    color = "#D8E0E8"
+  ) +
+  geom_point(size = 3) +
+  labs(
+    x = "Percentage with diagnosis prior to or on index date (%)",
+    y = NULL,
+    title = "Baseline Comorbidities by Age Group",
+    color = NULL,
+    caption = "Suppressed estimates based on counts under 5 are displayed as 0% in this figure."
+  ) +
+  scale_color_manual(values = c("0 to 1" = "#1F5A91", "2 to 12" = "#2A9D8F", "13 to 17" = "#E07A5F")) +
+  theme_minimal() +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.major.x = element_line(color = "#E6EAF0", linewidth = 0.35),
+    axis.title = element_text(size = 12),
+    axis.text.x = element_text(size = 10.5),
+    axis.text.y = element_text(size = 9),
+    plot.title = element_text(size = 13, face = "bold"),
+    plot.caption = element_text(size = 9, hjust = 0, color = "#4D4D4D"),
+    plot.caption.position = "plot",
+    plot.margin = margin(t = 8, r = 14, b = 8, l = 10),
+    legend.position = "right",
+    legend.title = element_blank(),
+    legend.text = element_text(size = 10)
+  )
+```
+
+## Outcome Risk
+
+### Overall Cumulative Failure by Outcome
+
+```{r overall_cumulative_failure, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.cap="Kaplan-Meier cumulative failure curves for the main study outcomes in the congenital aortic stenosis cohort, shown overall for each outcome across follow-up."}
+survival_overall_result |>
+  CohortSurvival::plotSurvival(facet = c("outcome", "cdm_name"), cumulativeFailure = TRUE) +
+  labs(
+    x = "Time in days",
+    y = "Cumulative failure",
+    title = "Overall Cumulative Failure by Outcome"
+  ) +
+  facet_grid(
+    outcome ~ cdm_name,
+    scales = "free_x",
+    switch = "y",
+    labeller = labeller(outcome = as_labeller(label_outcome))
+  ) +
+  theme_minimal() +
+  theme(strip.background = element_rect(fill = "#E0E0E0", color = NA),
+        strip.text.x = element_text(size = 12, face = "bold"),
+        strip.text.y.left = element_text(size = 11, face = "bold", angle = 0),
+        strip.placement = "outside",
+        legend.position = "right", panel.grid.minor = element_blank(),
+        axis.title = element_text(size = 11), axis.text = element_text(size = 10))
+```
+
+### Age-Stratified Cumulative Failure by Outcome
+
+```{r age_stratified_cumulative_failure, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.cap="Kaplan-Meier cumulative failure curves for each study outcome stratified by age group in the congenital aortic stenosis cohort."}
+if (nrow(survival_age_result) > 0) {
+  survival_age_result |>
+    CohortSurvival::plotSurvival(facet = c("outcome", "cdm_name"), colour = "age_group", cumulativeFailure = TRUE) +
+    labs(
+      x = "Time in days",
+      y = "Cumulative failure",
+      title = "Age-Stratified Cumulative Failure by Outcome",
+      color = "Age Group",
+      fill = "Age Group"
+    ) +
+    facet_grid(
+      outcome ~ cdm_name,
+      scales = "free_x",
+      switch = "y",
+      labeller = labeller(outcome = as_labeller(label_outcome))
+    ) +
+    theme_minimal() +
+    theme(
+      strip.background = element_rect(fill = "#E0E0E0", color = NA),
+      strip.text.x = element_text(size = 11, face = "bold"),
+      strip.text.y.left = element_text(size = 11, face = "bold", angle = 0),
+      strip.placement = "outside",
+      panel.grid.minor = element_blank(),
+      axis.title = element_text(size = 11),
+      axis.text = element_text(size = 10),
+      legend.position = "right"
+    )
+} else cat("No age-stratified cumulative failure data available.")
+```
+
+## Supplementary Figures
+
+### Age-Sex Cumulative Failure
+
+```{r age_sex_cumulative_failure, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.cap="Kaplan-Meier cumulative failure curves for each study outcome stratified jointly by age group and sex. This figure is presented as supplementary because the panel layout is more detailed."}
+if(nrow(survival_age_sex_result) > 0) {
+  survival_age_sex_result |>
+    CohortSurvival::plotSurvival(facet = c("outcome", "sex"), colour = "age_group", cumulativeFailure = TRUE) +
+    labs(
+      x = "Time in days",
+      y = "Cumulative failure",
+      title = "Age- and Sex-Stratified Cumulative Failure",
+      color = "Age Group",
+      fill = "Age Group"
+    ) +
+    facet_grid(
+      outcome ~ sex,
+      scales = "free_x",
+      switch = "y",
+      labeller = labeller(outcome = as_labeller(label_outcome))
+    ) +
+    theme_minimal() +
+    theme(
+      strip.background = element_rect(fill = "#E0E0E0", color = NA),
+      strip.text.x = element_text(size = 11, face = "bold"),
+      strip.text.y.left = element_text(size = 11, face = "bold", angle = 0),
+      strip.placement = "outside",
+      panel.grid.minor = element_blank(),
+      axis.title = element_text(size = 11),
+      axis.text = element_text(size = 10),
+      legend.position = "right"
+    )
+} else cat("No age-sex cumulative failure data available.")
+```

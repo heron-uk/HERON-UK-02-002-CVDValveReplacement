@@ -23,8 +23,10 @@ server <- function(input, output, session) {
     summarise_omop_snapshot = FALSE,
     summarise_observation_period = FALSE,
     cohort_code_use = FALSE,
+    summarise_cohort_overlap = FALSE,
     summarise_cohort_count = FALSE,
     summarise_cohort_attrition = FALSE,
+    summarise_cohort_timing = FALSE,
     summarise_characteristics = FALSE,
     summarise_large_scale_characteristics = FALSE,
     survival = FALSE,
@@ -222,6 +224,87 @@ server <- function(input, output, session) {
     }
   )
 
+  # summarise_cohort_overlap -----
+  ## update message if filter is changed
+  shiny::observe({
+    updateButtons$summarise_cohort_overlap <- TRUE
+  }) |>
+    shiny::bindEvent(
+      input$summarise_cohort_overlap_cdm_name,
+      input$summarise_cohort_overlap_cohort_name_reference,
+      input$summarise_cohort_overlap_cohort_name_comparator,
+      input$summarise_cohort_overlap_variable_name,
+      input$summarise_cohort_overlap_estimate_name,
+      input$summarise_cohort_overlap_overlap_by,
+      ignoreInit = TRUE
+    )
+  shiny::observeEvent(updateButtons$summarise_cohort_overlap, {
+    if (updateButtons$summarise_cohort_overlap == TRUE) {
+      output$update_message_summarise_cohort_overlap <- shiny::renderUI(updateMessage) # defined in functions.R
+    } else {
+      output$update_message_summarise_cohort_overlap <- shiny::renderUI(NULL)
+    }
+  })
+  shiny::observeEvent(input$update_summarise_cohort_overlap, {
+    updateButtons$summarise_cohort_overlap <- FALSE
+  })
+
+  ## get summarise_cohort_overlap data
+  getSummariseCohortOverlapData <- shiny::eventReactive(input$update_summarise_cohort_overlap, {
+    data[["summarise_cohort_overlap"]] |>
+      dplyr::filter(
+        .data$cdm_name %in% input$summarise_cohort_overlap_cdm_name,
+        .data$variable_name %in% input$summarise_cohort_overlap_variable_name,
+        .data$estimate_name %in% input$summarise_cohort_overlap_estimate_name
+      ) |>
+      omopgenerics::filterGroup(
+        .data$cohort_name_reference %in% input$summarise_cohort_overlap_cohort_name_reference,
+        .data$cohort_name_comparator %in% input$summarise_cohort_overlap_cohort_name_comparator
+      ) |>
+      omopgenerics::filterSettings(.data$overlap_by %in% input$summarise_cohort_overlap_overlap_by)
+  })
+  getSummariseCohortOverlapTable <- shiny::reactive({
+    getSummariseCohortOverlapData() |>
+      CohortCharacteristics::tableCohortOverlap(
+        uniqueCombinations = input$summarise_cohort_overlap_table_unique_combinations,
+        header = input$summarise_cohort_overlap_table_header,
+        groupColumn = input$summarise_cohort_overlap_table_group_column,
+        hide = input$summarise_cohort_overlap_table_hide
+      )
+  })
+  output$summarise_cohort_overlap_table <- gt::render_gt({
+    getSummariseCohortOverlapTable()
+  })
+  output$summarise_cohort_overlap_table_download <- shiny::downloadHandler(
+    filename = paste0("table_overlap.", input$summarise_cohort_overlap_table_format),
+    content = function(file) {
+      gt::gtsave(getSummariseCohortOverlapTable(), file)
+    }
+  )
+  getSummariseCohortOverlapPlot <- shiny::reactive({
+    getSummariseCohortOverlapData() |>
+      CohortCharacteristics::plotCohortOverlap(
+        facet = input$summarise_cohort_overlap_plot_facet
+      )
+  })
+  output$summarise_cohort_overlap_plot <- shiny::renderUI({
+    x <- getSummariseCohortOverlapPlot()
+    renderInteractivePlot(x, input$summarise_cohort_overlap_plot_interactive)
+  })
+  output$summarise_cohort_overlap_plot_download <- shiny::downloadHandler(
+    filename = "plot_overlap.png",
+    content = function(file) {
+      ggplot2::ggsave(
+        filename = file,
+        plot = getSummariseCohortOverlapPlot(),
+        width = as.numeric(input$summarise_cohort_overlap_plot_width),
+        height = as.numeric(input$summarise_cohort_overlap_plot_height),
+        units = input$summarise_cohort_overlap_plot_units,
+        dpi = as.numeric(input$summarise_cohort_overlap_plot_dpi)
+      )
+    }
+  )
+
   # summarise_cohort_count -----
   ## update message if filter is changed
   shiny::observe({
@@ -359,6 +442,83 @@ server <- function(input, output, session) {
     content = function(file) {
       svg <- DiagrammeRsvg::export_svg(getSummariseCohortAttritionDiagram())
       rsvg::rsvg_png(charToRaw(svg), file, width = input$summarise_cohort_attrition_diagram_width)
+    }
+  )
+
+  # summarise_cohort_timing -----
+  ## update message if filter is changed
+  shiny::observe({
+    updateButtons$summarise_cohort_timing <- TRUE
+  }) |>
+    shiny::bindEvent(
+      input$summarise_cohort_timing_cdm_name,
+      input$summarise_cohort_timing_cohort_name_reference,
+      input$summarise_cohort_timing_cohort_name_comparator,
+      ignoreInit = TRUE
+    )
+  shiny::observeEvent(updateButtons$summarise_cohort_timing, {
+    if (updateButtons$summarise_cohort_timing == TRUE) {
+      output$update_message_summarise_cohort_timing <- shiny::renderUI(updateMessage) # defined in functions.R
+    } else {
+      output$update_message_summarise_cohort_timing <- shiny::renderUI(NULL)
+    }
+  })
+  shiny::observeEvent(input$update_summarise_cohort_timing, {
+    updateButtons$summarise_cohort_timing <- FALSE
+  })
+
+  ## get summarise_cohort_timing data
+  getSummariseCohortTimingData <- shiny::eventReactive(input$update_summarise_cohort_timing, {
+    data[["summarise_cohort_timing"]] |>
+      dplyr::filter(.data$cdm_name %in% input$summarise_cohort_timing_cdm_name) |>
+      omopgenerics::filterGroup(
+        .data$cohort_name_reference %in% input$summarise_cohort_timing_cohort_name_reference,
+        .data$cohort_name_comparator %in% input$summarise_cohort_timing_cohort_name_comparator
+      )
+  })
+  getSummariseCohortTimingTable <- shiny::reactive({
+    getSummariseCohortTimingData() |>
+      CohortCharacteristics::tableCohortTiming(
+        timeScale = input$summarise_cohort_timing_table_time_scale,
+        header = input$summarise_cohort_timing_table_header,
+        groupColumn = input$summarise_cohort_timing_table_group_column,
+        hide = input$summarise_cohort_timing_table_hide
+      )
+  })
+  output$summarise_cohort_timing_table <- gt::render_gt({
+    getSummariseCohortTimingTable()
+  })
+  output$summarise_cohort_timing_table_download <- shiny::downloadHandler(
+    filename = paste0("table_timing.", input$summarise_cohort_timing_table_format),
+    content = function(file) {
+      gt::gtsave(getSummariseCohortTimingTable(), file)
+    }
+  )
+  getSummariseCohortTimingPlot <- shiny::reactive({
+    getSummariseCohortTimingData() |>
+      CohortCharacteristics::plotCohortTiming(
+        plotType = input$summarise_cohort_timing_plot_plot_type,
+        timeScale = input$summarise_cohort_timing_plot_time_scale,
+        uniqueCombinations = input$summarise_cohort_timing_plot_unique_combinations,
+        facet = input$summarise_cohort_timing_plot_facet,
+        colour = input$summarise_cohort_timing_plot_colour
+      )
+  })
+  output$summarise_cohort_timing_plot <- shiny::renderUI({
+    x <- getSummariseCohortTimingPlot()
+    renderInteractivePlot(x, input$summarise_cohort_timing_plot_interactive)
+  })
+  output$summarise_cohort_timing_plot_download <- shiny::downloadHandler(
+    filename = "plot_timing.png",
+    content = function(file) {
+      ggplot2::ggsave(
+        filename = file,
+        plot = getSummariseCohortTimingPlot(),
+        width = as.numeric(input$summarise_cohort_timing_plot_width),
+        height = as.numeric(input$summarise_cohort_timing_plot_height),
+        units = input$summarise_cohort_timing_plot_units,
+        dpi = as.numeric(input$summarise_cohort_timing_plot_dpi)
+      )
     }
   )
 
