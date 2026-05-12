@@ -62,7 +62,7 @@ if (length(index_cohort) == 0 || is.na(index_cohort)) {
 }
 
 baseline_characteristics_result <- baseline_result |>
-  filterGroup(group_level == index_cohort)
+  omopgenerics::filterGroup(group_level == index_cohort)
 
 preindex_conditions <- baseline_characteristics_result |>
   filter(
@@ -87,7 +87,7 @@ compact_baseline_summary_gt <- baseline_characteristics_result |>
       (variable_name == "Comorbidity cohorts flag -inf to 0" & variable_level %in% top_preindex_condition_levels)
   ) |>
   mutate(group_level = label_cohort(group_level)) |>
-  tableCharacteristics(type = "gt", header = c("cdm_name", "group_level"))
+  CohortCharacteristics::tableCharacteristics(type = "gt", header = c("cdm_name", "group_level"))
 
 age_group_levels <- baseline_characteristics_result |>
   filter(
@@ -115,15 +115,28 @@ top_preindex_conditions <- preindex_conditions |>
   slice_max(order_by = percentage, n = 10, with_ties = FALSE) |>
   arrange(percentage)
 
+top_preindex_characteristics_by_age <- baseline_characteristics_result |>
+  filter(
+    strata_name == "age_group",
+    grepl("Comorbidity cohorts", variable_name),
+    estimate_name == "percentage",
+    estimate_value != "-",
+    variable_level %in% top_preindex_condition_levels
+  ) |>
+  mutate(
+    strata_level = factor(strata_level, levels = age_group_levels),
+    group_level = label_cohort(group_level)
+  )
+
 survival_overall_result <- survival_result |>
-  filterStrata(strata_name == "overall") |>
+  omopgenerics::filterStrata(strata_name == "overall") |>
   mutate(
     group_level = label_cohort(group_level),
     variable_level = label_outcome(variable_level)
   )
 
 survival_age_result <- survival_result |>
-  filterStrata(strata_name == "age_group") |>
+  omopgenerics::filterStrata(strata_name == "age_group") |>
   mutate(
     group_level = label_cohort(group_level),
     variable_level = label_outcome(variable_level),
@@ -131,7 +144,7 @@ survival_age_result <- survival_result |>
   )
 
 survival_age_sex_result <- survival_result |>
-  filterStrata(strata_name == "age_group &&& sex") |>
+  omopgenerics::filterStrata(strata_name == "age_group &&& sex") |>
   mutate(
     group_level = label_cohort(group_level),
     variable_level = label_outcome(variable_level)
@@ -186,13 +199,37 @@ ggplot(top_preindex_conditions, aes(x = reorder(condition, percentage), y = perc
   )
 ```
 
+### Baseline Comorbidities by Age Group
+
+```{r baseline_comorbidities_by_age, echo=FALSE, warning=FALSE, message=FALSE, fig.width=11, fig.height=7, fig.cap="Most common pre-index comorbid conditions in the congenital aortic stenosis cohort, stratified by age group and limited to the six most common conditions overall."}
+CohortCharacteristics::plotCharacteristics(
+  top_preindex_characteristics_by_age,
+  plotType = "barplot",
+  colour = "age_group"
+) +
+  coord_flip() +
+  labs(
+    x = "Children (%)",
+    y = NULL,
+    title = "Baseline Comorbidities by Age Group",
+    fill = "Age Group"
+  ) +
+  theme_minimal() +
+  theme(
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(size = 11),
+    axis.text = element_text(size = 10),
+    legend.position = "right"
+  )
+```
+
 ## Outcome Risk
 
 ### Overall Cumulative Failure by Outcome
 
 ```{r overall_cumulative_failure, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.cap="Kaplan-Meier cumulative failure curves for the main study outcomes in the congenital aortic stenosis cohort, shown overall for each outcome across follow-up."}
 survival_overall_result |>
-  plotSurvival(facet = c("outcome", "cdm_name"), cumulativeFailure = TRUE) +
+  CohortSurvival::plotSurvival(facet = c("outcome", "cdm_name"), cumulativeFailure = TRUE) +
   labs(
     x = "Time in days",
     y = "Cumulative failure",
@@ -218,7 +255,7 @@ survival_overall_result |>
 ```{r age_stratified_cumulative_failure, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.cap="Kaplan-Meier cumulative failure curves for each study outcome stratified by age group in the congenital aortic stenosis cohort."}
 if (nrow(survival_age_result) > 0) {
   survival_age_result |>
-    plotSurvival(facet = c("outcome", "cdm_name"), colour = "age_group", cumulativeFailure = TRUE) +
+    CohortSurvival::plotSurvival(facet = c("outcome", "cdm_name"), colour = "age_group", cumulativeFailure = TRUE) +
     labs(
       x = "Time in days",
       y = "Cumulative failure",
@@ -253,7 +290,7 @@ if (nrow(survival_age_result) > 0) {
 ```{r age_sex_cumulative_failure, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.cap="Kaplan-Meier cumulative failure curves for each study outcome stratified jointly by age group and sex. This figure is presented as supplementary because the panel layout is more detailed."}
 if(nrow(survival_age_sex_result) > 0) {
   survival_age_sex_result |>
-    plotSurvival(facet = c("outcome", "sex"), colour = "age_group", cumulativeFailure = TRUE) +
+    CohortSurvival::plotSurvival(facet = c("outcome", "sex"), colour = "age_group", cumulativeFailure = TRUE) +
     labs(
       x = "Time in days",
       y = "Cumulative failure",
