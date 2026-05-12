@@ -14,7 +14,7 @@ fig-width: 12
 :::
 
 ::: {style="display: flex; gap: 1em; align-items: center;"}
-![](hds_logo.svg){width="80px"} ![](ohdsi_logo.svg){width="80px"}
+![](www/hds_logo.svg){width="80px"} ![](www/ohdsi_logo.svg){width="80px"}
 :::
 :::::
 
@@ -25,11 +25,11 @@ library(omopgenerics)
 library(CohortSurvival)
 library(CohortCharacteristics)
 
-study_data_path <- c("../data/studyData.RData", "data/studyData.RData")
+study_data_path <- c("data/studyData.RData", "../data/studyData.RData")
 study_data_path <- study_data_path[file.exists(study_data_path)][1]
 
 if (is.na(study_data_path)) {
-  stop("Could not find `studyData.RData` in `../data/` or `data/`.")
+  stop("Could not find `studyData.RData` in `data/` or `../data/`.")
 }
 
 load(study_data_path)
@@ -80,6 +80,15 @@ top_preindex_condition_levels <- preindex_conditions |>
   slice_max(order_by = percentage, n = 6, with_ties = FALSE) |>
   pull(condition)
 
+top_preindex_condition_order <- preindex_conditions |>
+  slice_max(order_by = percentage, n = 6, with_ties = FALSE) |>
+  arrange(percentage) |>
+  pull(condition)
+
+all_preindex_condition_order <- preindex_conditions |>
+  arrange(percentage) |>
+  pull(condition)
+
 compact_baseline_summary_gt <- baseline_characteristics_result |>
   filter(
     strata_name == "overall",
@@ -115,17 +124,25 @@ top_preindex_conditions <- preindex_conditions |>
   slice_max(order_by = percentage, n = 10, with_ties = FALSE) |>
   arrange(percentage)
 
-top_preindex_characteristics_by_age <- baseline_characteristics_result |>
+all_preindex_characteristics_by_age <- baseline_characteristics_result |>
   filter(
     strata_name == "age_group",
     grepl("Comorbidity cohorts", variable_name),
     estimate_name == "percentage",
-    estimate_value != "-",
-    variable_level %in% top_preindex_condition_levels
+    estimate_value != "-"
   ) |>
-  mutate(
-    strata_level = factor(strata_level, levels = age_group_levels),
-    group_level = label_cohort(group_level)
+  transmute(
+    condition = factor(variable_level, levels = all_preindex_condition_order),
+    age_group = factor(strata_level, levels = age_group_levels),
+    percentage = as.numeric(estimate_value)
+  )
+
+preindex_condition_ranges <- all_preindex_characteristics_by_age |>
+  group_by(condition) |>
+  summarise(
+    min_percentage = min(percentage, na.rm = TRUE),
+    max_percentage = max(percentage, na.rm = TRUE),
+    .groups = "drop"
   )
 
 survival_overall_result <- survival_result |>
@@ -201,25 +218,36 @@ ggplot(top_preindex_conditions, aes(x = reorder(condition, percentage), y = perc
 
 ### Baseline Comorbidities by Age Group
 
-```{r baseline_comorbidities_by_age, echo=FALSE, warning=FALSE, message=FALSE, fig.width=11, fig.height=7, fig.cap="Most common pre-index comorbid conditions in the congenital aortic stenosis cohort, stratified by age group and limited to the six most common conditions overall."}
-CohortCharacteristics::plotCharacteristics(
-  top_preindex_characteristics_by_age,
-  plotType = "barplot",
-  colour = "age_group"
-) +
-  coord_flip() +
+```{r baseline_comorbidities_by_age, echo=FALSE, warning=FALSE, message=FALSE, fig.width=13, fig.height=7.5, fig.cap="Pre-index comorbidities by age group in the congenital aortic stenosis cohort, with each line showing the range across age groups for a given condition."}
+ggplot(all_preindex_characteristics_by_age, aes(x = percentage, y = condition, color = age_group)) +
+  geom_segment(
+    data = preindex_condition_ranges,
+    aes(x = min_percentage, xend = max_percentage, y = condition, yend = condition),
+    inherit.aes = FALSE,
+    linewidth = 0.55,
+    color = "#D8E0E8"
+  ) +
+  geom_point(size = 3) +
   labs(
     x = "Children (%)",
     y = NULL,
     title = "Baseline Comorbidities by Age Group",
-    fill = "Age Group"
+    color = NULL
   ) +
+  scale_color_manual(values = c("0 to 1" = "#1F5A91", "2 to 12" = "#2A9D8F", "13 to 17" = "#E07A5F")) +
   theme_minimal() +
   theme(
     panel.grid.minor = element_blank(),
-    axis.title = element_text(size = 11),
-    axis.text = element_text(size = 10),
-    legend.position = "right"
+    panel.grid.major.y = element_blank(),
+    panel.grid.major.x = element_line(color = "#E6EAF0", linewidth = 0.35),
+    axis.title = element_text(size = 12),
+    axis.text.x = element_text(size = 10.5),
+    axis.text.y = element_text(size = 9),
+    plot.title = element_text(size = 13, face = "bold"),
+    plot.margin = margin(t = 8, r = 14, b = 8, l = 10),
+    legend.position = "right",
+    legend.title = element_blank(),
+    legend.text = element_text(size = 10)
   )
 ```
 
