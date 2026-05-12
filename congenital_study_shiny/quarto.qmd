@@ -128,13 +128,12 @@ all_preindex_characteristics_by_age <- baseline_characteristics_result |>
   filter(
     strata_name == "age_group",
     grepl("Comorbidity cohorts", variable_name),
-    estimate_name == "percentage",
-    estimate_value != "-"
+    estimate_name == "percentage"
   ) |>
   transmute(
     condition = factor(variable_level, levels = all_preindex_condition_order),
     age_group = factor(strata_level, levels = age_group_levels),
-    percentage = as.numeric(estimate_value)
+    percentage = dplyr::if_else(estimate_value == "-", 0, as.numeric(estimate_value))
   )
 
 preindex_condition_ranges <- all_preindex_characteristics_by_age |>
@@ -218,7 +217,7 @@ ggplot(top_preindex_conditions, aes(x = reorder(condition, percentage), y = perc
 
 ### Baseline Comorbidities by Age Group
 
-```{r baseline_comorbidities_by_age, echo=FALSE, warning=FALSE, message=FALSE, fig.width=13, fig.height=7.5, fig.cap="Pre-index comorbidities by age group in the congenital aortic stenosis cohort, with each line showing the range across age groups for a given condition."}
+```{r baseline_comorbidities_by_age, echo=FALSE, warning=FALSE, message=FALSE, fig.width=13, fig.height=7.5, fig.cap="Pre-index comorbidities by age group in the congenital aortic stenosis cohort, with each line showing the range across age groups for a given condition. Suppressed estimates based on counts under 5 are shown as 0%."}
 ggplot(all_preindex_characteristics_by_age, aes(x = percentage, y = condition, color = age_group)) +
   geom_segment(
     data = preindex_condition_ranges,
@@ -229,10 +228,11 @@ ggplot(all_preindex_characteristics_by_age, aes(x = percentage, y = condition, c
   ) +
   geom_point(size = 3) +
   labs(
-    x = "Children (%)",
+    x = "Percentage with diagnosis prior to or on index date (%)",
     y = NULL,
     title = "Baseline Comorbidities by Age Group",
-    color = NULL
+    color = NULL,
+    caption = "Suppressed estimates based on counts under 5 are displayed as 0% in this figure."
   ) +
   scale_color_manual(values = c("0 to 1" = "#1F5A91", "2 to 12" = "#2A9D8F", "13 to 17" = "#E07A5F")) +
   theme_minimal() +
@@ -244,6 +244,8 @@ ggplot(all_preindex_characteristics_by_age, aes(x = percentage, y = condition, c
     axis.text.x = element_text(size = 10.5),
     axis.text.y = element_text(size = 9),
     plot.title = element_text(size = 13, face = "bold"),
+    plot.caption = element_text(size = 9, hjust = 0, color = "#4D4D4D"),
+    plot.caption.position = "plot",
     plot.margin = margin(t = 8, r = 14, b = 8, l = 10),
     legend.position = "right",
     legend.title = element_blank(),
