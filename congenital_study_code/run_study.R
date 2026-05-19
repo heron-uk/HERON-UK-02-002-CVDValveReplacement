@@ -1,5 +1,4 @@
 
-followUpDays <- 1826
 
 
 # Check codeToRun inputs ----
@@ -18,10 +17,12 @@ omopgenerics::logMessage("LOG CREATED")
 # Define analysis settings -----
 study_period <- c(as.Date("2019-04-19"), NA)
 study_age_groups <- list(
-  c(0, 1),
-  c(2, 12),
+  c(0, 0),
+  c(1, 3),
+  c(4, 12),
   c(13, 17)
 )
+followUpDays <- 1826
 
 # Initialise list to store results as we go -----
 results <- list()

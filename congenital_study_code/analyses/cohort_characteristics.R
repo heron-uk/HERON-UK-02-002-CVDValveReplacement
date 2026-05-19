@@ -13,7 +13,18 @@ omopgenerics::logMessage("Baseline characteristics analysis complete")
 omopgenerics::logMessage("Running outcome characteristics analysis")
 results[["outcome_overlap"]] <- CohortCharacteristics::summariseCohortOverlap(cdm$characterisation_cohorts)
 results[["outcome_timing"]] <- CohortCharacteristics::summariseCohortTiming(cdm$characterisation_cohorts)
+results[["outcome_upset"]] <- cdm$study_cohorts |> 
+  PatientProfiles::addCohortIntersectFlag("outcome_cohorts", 
+                                          nameStyle = "{cohort_name}") |> 
+  CohortCharacteristics::summariseCohortCount(
+    strata = list(c("aortic_valve_repair",
+                    "surgical_valvotomy",
+                    "percutaneous_valvotomy",
+                    "ross_procedure",
+                    "aortic_valve_replacement")))
 omopgenerics::logMessage("Outcome characteristics analysis complete")
+
+
 
 omopgenerics::logMessage("Running large scale characteristics analysis")
 nameFollowUp <- glue::glue("day_post_to_{followUpDays}_days_after")
