@@ -347,3 +347,192 @@ if(nrow(survival_age_sex_result) > 0) {
     )
 } else cat("No age-sex cumulative failure data available.")
 ```
+
+## Cohort Count
+
+### Cohort distribution
+
+```{r cohort_distribution, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=6, fig.cap="Procedure combinations among children with congenital aortic stenosis across study cohorts."}
+library(tidyr)
+library(stringr)
+library(patchwork)
+
+procedure_columns <- c(
+  "aortic_valve_repair",
+  "surgical_valvotomy",
+  "percutaneous_valvotomy",
+  "ross_procedure",
+  "aortic_valve_replacement"
+)
+
+res <- data[["summarise_cohort_count"]] |>
+  filter(
+    strata_level != "overall",
+    variable_name == "Number subjects"
+  ) |>
+  tidy()
+
+missing_procedure_columns <- setdiff(procedure_columns, names(res))
+
+if (length(missing_procedure_columns) > 0) {
+  stop(
+    paste0(
+      "The cohort count result is missing required procedure columns: ",
+      paste(missing_procedure_columns, collapse = ", ")
+    )
+  )
+}
+
+res <- res |>
+  mutate(across(all_of(procedure_columns), as.integer))
+ 
+ 
+upsetProc <- function(data, working_cohort){
+
+plot_data <- data |>
+
+  filter(cohort_name == working_cohort)
+
+if (nrow(plot_data) == 0) {
+  return(ggplot() + theme_void() + labs(title = paste("No cohort count data for", working_cohort)))
+}
+
+proc_cols <- procedure_columns
+ 
+df_sorted <- plot_data |>
+
+  # filter(if_any(all_of(proc_cols), ~ .x == 1)) |>
+
+  mutate(
+
+    plot_count = if_else(is.na(count), 1, count),
+
+    count_label = if_else(is.na(count), "<5", as.character(count))
+
+  ) |>
+
+  arrange(desc(plot_count)) |>
+
+  mutate(combo_id = factor(row_number()))
+ 
+p_top <- df_sorted |>
+
+  ggplot(aes(x = combo_id, y = plot_count)) +
+
+  geom_col(fill = "#2C3E50", width = 0.6) +
+
+  geom_text(aes(label = count_label), vjust = -0.5, size = 3.5) +
+
+  theme_minimal() +
+
+  labs(y = "N subjects") +
+
+  theme(
+
+    axis.text.x = element_blank(),
+
+    axis.title.x = element_blank(),
+
+    axis.ticks.x = element_blank(),
+
+    panel.grid.major.x = element_blank(),
+
+    panel.grid.minor.x = element_blank(),
+
+    plot.margin = margin(b = 0) 
+
+  )
+ 
+df_matrix <- df_sorted |>
+
+  select(combo_id, all_of(proc_cols)) |>
+
+  pivot_longer(
+
+    cols = all_of(proc_cols),
+
+    names_to = "procedure",
+
+    values_to = "is_active"
+
+  ) |>
+
+  mutate(
+
+    procedure = str_replace_all(procedure, "_", " ") |> str_to_title(),
+
+    procedure = factor(procedure, levels = rev(str_replace_all(proc_cols, "_", " ") |> str_to_title()))
+
+  )
+ 
+p_bottom <- df_matrix |>
+
+  ggplot(aes(x = combo_id, y = procedure)) +
+
+  geom_line(
+
+    data = df_matrix , 
+
+    aes(group = combo_id), 
+
+    color = "black", 
+
+    linewidth = 1
+
+  ) +
+
+  geom_point(aes(color = factor(is_active)), size = 4) +
+
+  scale_color_manual(values = c("0" = "grey85", "1" = "black")) +
+
+  theme_minimal() +
+
+  theme(
+
+    legend.position = "none",
+
+    axis.text.x = element_blank(),
+
+    axis.title.x = element_blank(),
+
+    axis.title.y = element_blank(),
+
+    panel.grid.major.x = element_blank(),
+
+    panel.grid.minor = element_blank(),
+
+    plot.margin = margin(t = 0) 
+
+  )
+ 
+upset_plot <- p_top / p_bottom + 
+
+  plot_layout(heights = c(3, 1.5))+
+
+  plot_annotation(
+
+    title = paste0("Procedure Combinations for ", working_cohort),
+
+    theme = theme(
+
+      plot.title = element_text(hjust = 0.5, face = "bold", size = 14)
+
+    )
+
+  )
+ 
+upset_plot
+ 
+}
+
+upsetProc(res, "aortic_stenosis_congenital")
+
+upsetProc(res, "as_no_complex_chd")
+
+upsetProc(res, "isolated_as")
+
+upsetProc(res, "multi_level_as")
+
+ 
+ 
+```

@@ -21,3 +21,6 @@ header: "Profiles of children with congenital aortic stenosis"
 
 Congenital aortic valve stenosis involves a narrow opening in the aortic valve, restricting blood flow from the left ventricle to the aorta.
 
+
+![](ohdsi_logo.svg){width=100px}
+

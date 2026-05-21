@@ -662,6 +662,46 @@ ui <- bslib::page_navbar(
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
           ),
           shinyWidgets::pickerInput(
+            inputId = "summarise_cohort_count_aortic_valve_repair",
+            label = "Aortic valve repair",
+            choices = choices$summarise_cohort_count_aortic_valve_repair,
+            selected = selected$summarise_cohort_count_aortic_valve_repair,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_cohort_count_surgical_valvotomy",
+            label = "Surgical valvotomy",
+            choices = choices$summarise_cohort_count_surgical_valvotomy,
+            selected = selected$summarise_cohort_count_surgical_valvotomy,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_cohort_count_percutaneous_valvotomy",
+            label = "Percutaneous valvotomy",
+            choices = choices$summarise_cohort_count_percutaneous_valvotomy,
+            selected = selected$summarise_cohort_count_percutaneous_valvotomy,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_cohort_count_ross_procedure",
+            label = "Ross procedure",
+            choices = choices$summarise_cohort_count_ross_procedure,
+            selected = selected$summarise_cohort_count_ross_procedure,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_cohort_count_aortic_valve_replacement",
+            label = "Aortic valve replacement",
+            choices = choices$summarise_cohort_count_aortic_valve_replacement,
+            selected = selected$summarise_cohort_count_aortic_valve_replacement,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
             inputId = "summarise_cohort_count_variable_name",
             label = "Variable name",
             choices = choices$summarise_cohort_count_variable_name,
@@ -705,7 +745,7 @@ ui <- bslib::page_navbar(
                     header = NULL,
                     sortable::add_rank_list(
                       text = "None",
-                      labels = c("variable_name", "estimate_name"),
+                      labels = c("aortic_valve_repair", "surgical_valvotomy", "percutaneous_valvotomy", "ross_procedure", "aortic_valve_replacement", "variable_name", "estimate_name"),
                       input_id = "summarise_cohort_count_table_none"
                     ),
                     sortable::add_rank_list(
@@ -775,15 +815,15 @@ ui <- bslib::page_navbar(
                   shinyWidgets::pickerInput(
                     inputId = "summarise_cohort_count_plot_facet",
                     label = "Facet",
-                    choices = c("cdm_name", "cohort_name", "table_name"),
-                    selected = "cdm_name",
+                    choices = c("cdm_name", "cohort_name", "aortic_valve_repair", "surgical_valvotomy", "percutaneous_valvotomy", "ross_procedure", "aortic_valve_replacement", "table_name"),
+                    selected = c("cdm_name", "aortic_valve_repair", "surgical_valvotomy", "percutaneous_valvotomy", "ross_procedure", "aortic_valve_replacement"),
                     multiple = TRUE,
                     options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
                   ),
                   shinyWidgets::pickerInput(
                     inputId = "summarise_cohort_count_plot_colour",
                     label = "Colour",
-                    choices = c("cdm_name", "cohort_name", "table_name"),
+                    choices = c("cdm_name", "cohort_name", "aortic_valve_repair", "surgical_valvotomy", "percutaneous_valvotomy", "ross_procedure", "aortic_valve_replacement", "table_name"),
                     selected = "cohort_name",
                     multiple = TRUE,
                     options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")

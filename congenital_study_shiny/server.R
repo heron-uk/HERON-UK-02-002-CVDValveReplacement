@@ -313,6 +313,11 @@ server <- function(input, output, session) {
     shiny::bindEvent(
       input$summarise_cohort_count_cdm_name,
       input$summarise_cohort_count_cohort_name,
+      input$summarise_cohort_count_aortic_valve_repair,
+      input$summarise_cohort_count_surgical_valvotomy,
+      input$summarise_cohort_count_percutaneous_valvotomy,
+      input$summarise_cohort_count_ross_procedure,
+      input$summarise_cohort_count_aortic_valve_replacement,
       input$summarise_cohort_count_variable_name,
       input$summarise_cohort_count_table_name,
       ignoreInit = TRUE
@@ -336,6 +341,13 @@ server <- function(input, output, session) {
         .data$variable_name %in% input$summarise_cohort_count_variable_name
       ) |>
       omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_cohort_count_cohort_name) |>
+      omopgenerics::filterStrata(
+        .data$aortic_valve_repair %in% input$summarise_cohort_count_aortic_valve_repair,
+        .data$surgical_valvotomy %in% input$summarise_cohort_count_surgical_valvotomy,
+        .data$percutaneous_valvotomy %in% input$summarise_cohort_count_percutaneous_valvotomy,
+        .data$ross_procedure %in% input$summarise_cohort_count_ross_procedure,
+        .data$aortic_valve_replacement %in% input$summarise_cohort_count_aortic_valve_replacement
+      ) |>
       omopgenerics::filterSettings(.data$table_name %in% input$summarise_cohort_count_table_name)
   })
   getSummariseCohortCountTable <- shiny::reactive({
