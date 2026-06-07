@@ -1,5 +1,12 @@
 omopgenerics::logMessage(message = "STARTING OBJECTIVE 2")
 
+omopgenerics::logMessage(message = "Anchor to AS diagnosis during the previous year")
+cdm[["procedures_nr"]] <- cdm[["procedures_nr"]] |>
+  requireCohortIntersect(targetCohortTable = "aortic_stenosis_indication", 
+                         window = c(-365, 0),
+                         intersections = c(1,Inf),
+                         name = "procedures_nr")
+
 omopgenerics::logMessage(message = "Get denominator cohort")
 cdm <- IncidencePrevalence::generateDenominatorCohortSet(
   cdm = cdm, 
@@ -15,7 +22,7 @@ results[["incidence"]] <- IncidencePrevalence::estimateIncidence(
   cdm = cdm,
   denominatorTable = "denominator",
   outcomeTable = "procedures_nr",
-  interval = c("years"),
+  interval = c("years", "overall"),
   repeatedEvents = FALSE,
   completeDatabaseIntervals = TRUE
 )

@@ -1,0 +1,14 @@
+results[["code_use_indications"]] <- summariseCohortCodeUse(cdm,
+                                                            cohortTable = "indications")
+results[["code_use_procedures"]]  <- summariseCohortCodeUse(cdm, 
+                                                            cohortTable = "procedures")
+results[["code_use_comorbidities"]]  <- summariseCohortCodeUse(cdm, 
+                                                               cohortTable = "hospital_frailty_risk_score")
+results[["code_use_comorbidities"]]  <- summariseCohortCodeUse(cdm, 
+                                                               cohortTable = "comorbidities")
+results[["code_use_aortic_valve_disease_phenotype"]]  <- summariseCohortCodeUse(cdm, 
+                                                                                cohortTable = "aortic_valve_disease_phenotype")
+results[["code_use_cardiovascular_disease"]]  <- summariseCohortCodeUse(cdm, 
+                                                                        cohortTable = "cardiovascular_disease")
+results[["code_use_cardiovascular_risk_factors"]]  <- summariseCohortCodeUse(cdm, 
+                                                                             cohortTable = "cardiovascular_risk_factors")

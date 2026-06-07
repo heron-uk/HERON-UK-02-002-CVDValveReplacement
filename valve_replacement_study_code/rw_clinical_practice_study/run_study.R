@@ -35,13 +35,10 @@ omopgenerics::logMessage(message = "Study cohorts instantiated")
 
 # Run analyses ----
 omopgenerics::logMessage(message = "Run study analyses")
-results[["code_use_indications"]] <- summariseCohortCodeUse(cdm,
-                                                            cohortTable = "indications")
-results[["code_use_procedures"]]  <- summariseCohortCodeUse(cdm, 
-                                                            cohortTable = "procedures")
-
+source(here::here("analyses", "0-SummariseCodeUse.R"))
 source(here::here("analyses", "1-ObjectiveOne.R"))
 source(here::here("analyses", "2-ObjectiveTwo.R"))
+source(here::here("analyses", "3-ObjectiveThree.R"))
 omopgenerics::logMessage("Analyses finished")
 
 # Finish ----

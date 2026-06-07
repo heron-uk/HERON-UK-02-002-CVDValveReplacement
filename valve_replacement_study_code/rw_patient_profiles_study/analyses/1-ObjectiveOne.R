@@ -44,7 +44,7 @@ cdm[["procedures"]] <- cdm[["procedures"]] |>
 omopgenerics::logMessage(message = "Add demographics")
 cdm[["procedures"]] <- cdm[["procedures"]] |>
   addSex() |>
-  addAge(ageGroup = age_groups) 
+  addAge(ageGroup = age_groups_extended) 
 
 omopgenerics::logMessage(message = "Add calendar year")
 cdm[["procedures"]] <- cdm[["procedures"]] |>

@@ -1,0 +1,1990 @@
+source_concept_id,concept_code,cohort_name,concept_id,cohort_name_1,icd_description,points
+45533052,F00,Dementia in Alzheimer disease,378419,cohort_19,Dementia in Alzheimer's disease,7.1
+45571827,G81,Hemiplegia,374022,cohort_36,Hemiplegia,4.4
+45538101,G30,Alzheimer disease,378419,cohort_6,Alzheimer's disease,4
+45543192,I69,Sequelae of cerebrovascular disease,434056,cohort_87,Sequelae of cerebrovascular disease,3.7
+45755636,R29,Other symptoms and signs involving the nervous and musculoskeletal systems,441840,cohort_72,"Other symptoms and signs involving the
+nervous and musculoskeletal systems (R29·6
+Tendency to fall)",3.6
+45567841,N39,Other disorders of urinary system,75865,cohort_57,"Other disorders of urinary system (includes
+urinary tract infection and urinary
+incontinence)",3.2
+45581397,F05,"Delirium, not induced by alcohol and other psychoactive substances",373995,cohort_18,"Delirium, not induced by alcohol and other
+psychoactive substances",3.2
+45756257,W19,Unspecified fall,436583,cohort_102,Unspecified fall,3.2
+45553757,S00,Superficial injury of head,4086195,cohort_91,Superficial injury of head,3.2
+45553726,R31,Unspecified haematuria,437038,cohort_103,Unspecified haematuria,3
+45755312,B96,Other specified bacterial agents as the cause of diseases classified to other chapters,432545,cohort_68,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9
+45544146,R41,Other symptoms and signs involving cognitive functions and awareness,4293175,cohort_70,Other symptoms and signs involving cognitive functions and awareness,2.7
+45606801,R26,Abnormalities of gait and mobility,437643,cohort_2,Abnormalities of gait and mobility,2.6
+45581786,I67,Other cerebrovascular diseases,381591,cohort_51,Other cerebrovascular diseases,2.6
+45592425,R56,"Convulsions, not elsewhere classified",377091,cohort_15,"Convulsions, not elsewhere classified",2.6
+45755637,R40,"Somnolence, stupor and coma",376961,cohort_88,"Somnolence, stupor and coma",2.5
+45756008,T83,"Complications of genitourinary prosthetic devices, implants and grafts",43021248,cohort_14,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4
+45544245,S06,Intracranial injury,437409,cohort_38,Intracranial injury,2.4
+45597678,S42,Fracture of shoulder and upper arm,4050747,cohort_34,Fracture of shoulder and upper arm,2.3
+45755369,E87,"Other disorders of fluid, electrolyte and acid-base balance",436670,cohort_54,"Other disorders of fluid, electrolyte and acid-
+base balance",2.3
+45538734,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45581386,E86,Volume depletion,37311320,cohort_109,Volume depletion,2.3
+45568140,R54,Senility,4090207,cohort_86,Senility,2.2
+45590736,Z50,Care involving use of rehabilitation procedures,4180248,cohort_9,"Care involving use of rehabilitation
+procedures",2.1
+45566772,F03,Unspecified dementia,4182210,cohort_101,Unspecified dementia,2.1
+45756256,W18,Other fall on same level,4140830,cohort_58,Other fall on same level,2.1
+45756340,Z75,Problems related to medical facilities and other health care,4031369,cohort_81,"Problems related to medical facilities and
+other health care",2
+45557147,F01,Vascular dementia,443605,cohort_106,Vascular dementia,2
+45603531,S80,Superficial injury of lower leg,4106355,cohort_92,Superficial injury of lower leg,2
+45591621,L03,Cellulitis,435613,cohort_11,Cellulitis,2
+45755414,H54,Visual impairment including blindness (binocular or monocular),4023310,cohort_107,Blindness and low vision,1.9
+45566745,E53,Deficiency of other B group vitamins,437246,cohort_17,Deficiency of other B group vitamins,1.9
+45547330,Z60,Problems related to social environment,4028922,cohort_82,Problems related to social environment,1.8
+45532809,A04,Other bacterial intestinal infections,193402,cohort_50,Other bacterial intestinal infections,1.1
+45532831,A41,Other sepsis,132797,cohort_66,Other septicaemia,1.6
+45533007,E05,Thyrotoxicosis [hyperthyroidism],4142479,cohort_96,Thyrotoxicosis [hyperthyroidism],0.9
+45534421,R02,"Gangrene, not elsewhere classified",439928,cohort_35,"Gangrene, not elsewhere classified",1
+45538098,G20,Parkinson disease,381270,cohort_73,Parkinson's disease,1.8
+45538102,G31,"Other degenerative diseases of nervous system, not elsewhere classified",4179873,cohort_52,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2
+45538102,G31,"Other degenerative diseases of nervous system, not elsewhere classified",376337,cohort_52,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2
+45542488,Z91,"Personal history of risk-factors, not elsewhere classified",1340204,cohort_75,"Personal history of risk-factors, not elsewhere
+classified",0.5
+45543186,I63,Cerebral infarction,443454,cohort_12,Cerebral Infarction,0.8
+45543326,K59,Other functional intestinal disorders,196151,cohort_59,Other functional intestinal disorders,1.8
+45548107,J18,"Pneumonia, organism unspecified",255848,cohort_76,"Pneumonia, organism unspecified",1.1
+45552919,K26,Duodenal ulcer,4198381,cohort_23,Duodenal ulcer,1.6
+45558480,R69,Unknown and unspecified causes of morbidity,4192174,cohort_99,"Unknown and unspecified causes of
+morbidity",1.3
+45562092,G45,Transient cerebral ischaemic attacks and related syndromes,373503,cohort_97,"Transient cerebral ischaemic attacks and
+related syndromes",1.2
+45562714,M41,Scoliosis,72418,cohort_85,Scoliosis,0.9
+45562836,M79,"Other soft tissue disorders, not elsewhere classified",4244662,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+45567332,K92,Other diseases of digestive system,4201745,cohort_53,Other diseases of digestive system,0.8
+45568141,R55,Syncope and collapse,4206148,cohort_95,Syncope and collapse,1.8
+45569417,S72,Fracture of femur,442560,cohort_31,Fracture of femur,1.4
+45571665,E16,Other disorders of pancreatic internal secretion,193983,cohort_56,"Other disorders of pancreatic internal
+secretion",1.4
+45573013,R13,Dysphagia,31317,cohort_24,Dysphagia,0.8
+45575895,W06,Fall involving bed,436882,cohort_27,Fall involving bed,1.1
+45577360,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+45577775,R00,Abnormalities of heart beat,4262562,cohort_3,Abnormalities of heart beat,0.7
+45581066,Z73,Problems related to life-management difficulty,43020485,cohort_80,"Problems related to life-management
+difficulty",0.6
+45581091,Z93,Artificial opening status,1340204,cohort_7,Artificial opening status,1
+45581401,F10,Mental and behavioural disorders due to use of alcohol,37164793,cohort_39,"Mental and behavioural disorders due to use
+of alcohol",0.7
+45581753,H91,Other hearing loss,377889,cohort_61,Other hearing loss,0.9
+45582391,N18,Chronic kidney disease,46271022,cohort_13,Chronic renal failure,1.4
+45582756,S01,Open wound of head,4243161,cohort_43,Open wound of head,1.1
+45585853,Z74,Problems related to care-provider dependency,4022076,cohort_79,Problems related to care-provider dependency,1.1
+45586653,I95,Hypotension,317002,cohort_37,Hypotension,1.6
+45586665,J22,Unspecified acute lower respiratory infection,4307774,cohort_100,Unspecified acute lower respiratory infection,0.7
+45586686,J96,"Respiratory failure, not elsewhere classified",4256228,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+45587093,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+45587237,N20,Calculus of kidney and ureter,4148260,cohort_8,Calculus of kidney and ureter,0.7
+45587239,N28,"Other disorders of kidney and ureter, not elsewhere classified",40483287,cohort_55,"Other disorders of kidney and ureter, not
+elsewhere classified",1.3
+45587507,R33,Retention of urine,192450,cohort_84,Retention of urine,1.3
+45587527,R79,Other abnormal findings of blood chemistry,436230,cohort_46,Other abnormal findings of blood chemistry,0.6
+45591049,E55,Vitamin D deficiency,436070,cohort_108,Vitamin D deficiency,1
+45591659,L97,"Ulcer of lower limb, not elsewhere classified",197304,cohort_98,"Ulcer of lower limb, not elsewhere classified",1.6
+45592553,S09,Other and unspecified injuries of head,375415,cohort_48,Other and unspecified injuries of head,1.2
+45592752,S32,Fracture of lumbar spine and pelvis,4013613,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45595474,Y95,Nosocomial condition,440005,cohort_41,Nosocomial condition,1.2
+45595490,Z22,Carrier of infectious disease,4280828,cohort_10,Carrier of infectious disease,1.7
+45595904,F32,Depressive episode,3656234,cohort_21,Depressive episode,0.5
+45595935,G40,Epilepsy,380378,cohort_25,Epilepsy,1.5
+45601235,L89,Decubitus ulcer and pressure area,37159532,cohort_16,Decubitus ulcer,1.7
+45601352,M19,Other arthrosis,80180,cohort_49,Other arthrosis,1.5
+45601718,N19,Unspecified kidney failure,192359,cohort_104,Unspecified renal failure,1.6
+45605063,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",442019,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45605189,A09,Other gastroenteritis and colitis of infectious and unspecified origin,201618,cohort_60,"Diarrhoea and gastroenteritis of presumed
+infectious origin",1.1
+45606484,N17,Acute renal failure,197320,cohort_4,Acute renal failure,1.8
+45606803,R32,Unspecified urinary incontinence,197672,cohort_105,Unspecified urinary incontinence,1.2
+45607470,S51,Open wound of forearm,4053599,cohort_42,Open wound of forearm,0.5
+45755311,B95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,4248801,cohort_90,"Streptococcus and staphylococcus as the
+cause of diseases classified to other chapters",1.7
+45755429,J69,Pneumonitis due to solids and liquids,4187218,cohort_77,Pneumonitis due to solids and liquids,1
+45755630,R63,Symptoms and signs concerning food and fluid intake,4022569,cohort_93,"Symptoms and signs concerning food and
+fluid intake",0.9
+45755638,R44,Other symptoms and signs involving general sensations and perceptions,4024707,cohort_71,"Other symptoms and signs involving general
+sensations and perceptions",1.6
+45755639,R45,Symptoms and signs involving emotional state,4025215,cohort_94,"Symptoms and signs involving emotional
+state",1.2
+45755640,R47,"Speech disturbances, not elsewhere classified",435642,cohort_89,"Speech disturbances, not elsewhere classified",1
+45755749,R94,Abnormal results of function studies,40484102,cohort_1,Abnormal results of function studies,1.4
+45755806,S22,"Fracture of rib(s), sternum and thoracic spine",4279139,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45756102,U80,Agent resistant to penicillin and related antibiotics,4249827,cohort_5,"Agent resistant to penicillin and related
+antibiotics",0.8
+45756243,W01,"Fall on same level from slipping, tripping and stumbling",437175,cohort_29,"Fall on same level from slipping, tripping and
+stumbling",0.9
+45756250,W10,Fall on and from stairs and steps,441749,cohort_28,Fall on and from stairs and steps,0.9
+45756412,X59,Exposure to unspecified factor,4156363,cohort_26,Exposure to unspecified factor,1.5
+45756483,Z87,Personal history of other diseases and conditions,1340204,cohort_74,"Personal history of other diseases and
+conditions",1.5
+45756557,Z99,"Dependence on enabling machines and devices, not elsewhere classified",437758,cohort_20,"Dependence on enabling machines and
+devices",0.8
+45537924,D64,Other anaemias,439777,cohort_47,Other anaemias,0.4
+45537988,E83,Disorders of mineral metabolism,438721,cohort_22,Disorders of mineral metabolism,0.4
+45539317,R11,Nausea and vomiting,27674,cohort_40,Nausea and vomiting,0.3
+45562734,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+45568138,R50,Fever of other and unknown origin,437663,cohort_30,Fever of unknown origin,0.1
+45586724,K52,Other noninfective gastroenteritis and colitis,4297887,cohort_65,Other noninfective gastroenteritis and colitis,0.3
+45596365,L08,Other local infections of skin and subcutaneous tissue,443600,cohort_63,"Other local infections of skin and
+subcutaneous tissue",0.4
+45596490,M15,Polyarthrosis,75897,cohort_78,Polyarthrosis,0.4
+45557146,F00,Dementia in Alzheimer disease,378419,cohort_19,Dementia in Alzheimer's disease,7.1
+45561994,F00,Dementia in Alzheimer disease,378419,cohort_19,Dementia in Alzheimer's disease,7.1
+45755371,F00,Dementia in Alzheimer disease,4220313,cohort_19,Dementia in Alzheimer's disease,7.1
+45591070,F00,Dementia in Alzheimer disease,4218017,cohort_19,Dementia in Alzheimer's disease,7.1
+45591195,G81,Hemiplegia,372613,cohort_36,Hemiplegia,4.4
+45591196,G81,Hemiplegia,375528,cohort_36,Hemiplegia,4.4
+45562106,G81,Hemiplegia,374022,cohort_36,Hemiplegia,4.4
+45552521,G30,Alzheimer disease,4220313,cohort_6,Alzheimer's disease,4
+45605532,G30,Alzheimer disease,378419,cohort_6,Alzheimer's disease,4
+45591165,G30,Alzheimer disease,378419,cohort_6,Alzheimer's disease,4
+45566868,G30,Alzheimer disease,4218017,cohort_6,Alzheimer's disease,4
+45533476,I69,Sequelae of cerebrovascular disease,4112026,cohort_87,Sequelae of cerebrovascular disease,3.7
+45538414,I69,Sequelae of cerebrovascular disease,434056,cohort_87,Sequelae of cerebrovascular disease,3.7
+45586606,I69,Sequelae of cerebrovascular disease,434056,cohort_87,Sequelae of cerebrovascular disease,3.7
+45591490,I69,Sequelae of cerebrovascular disease,43530623,cohort_87,Sequelae of cerebrovascular disease,3.7
+45543193,I69,Sequelae of cerebrovascular disease,4111720,cohort_87,Sequelae of cerebrovascular disease,3.7
+45538404,I69,Sequelae of cerebrovascular disease,4111721,cohort_87,Sequelae of cerebrovascular disease,3.7
+45544139,R29,Other symptoms and signs involving the nervous and musculoskeletal systems,4066505,cohort_72,"Other symptoms and signs involving the
+nervous and musculoskeletal systems (R29·6
+Tendency to fall)",3.6
+45597177,R29,Other symptoms and signs involving the nervous and musculoskeletal systems,441130,cohort_72,"Other symptoms and signs involving the
+nervous and musculoskeletal systems (R29·6
+Tendency to fall)",3.6
+45563297,R29,Other symptoms and signs involving the nervous and musculoskeletal systems,380534,cohort_72,"Other symptoms and signs involving the
+nervous and musculoskeletal systems (R29·6
+Tendency to fall)",3.6
+45582699,R29,Other symptoms and signs involving the nervous and musculoskeletal systems,439935,cohort_72,"Other symptoms and signs involving the
+nervous and musculoskeletal systems (R29·6
+Tendency to fall)",3.6
+45587505,R29,Other symptoms and signs involving the nervous and musculoskeletal systems,441840,cohort_72,"Other symptoms and signs involving the
+nervous and musculoskeletal systems (R29·6
+Tendency to fall)",3.6
+45587504,R29,Other symptoms and signs involving the nervous and musculoskeletal systems,4059015,cohort_72,"Other symptoms and signs involving the
+nervous and musculoskeletal systems (R29·6
+Tendency to fall)",3.6
+45606802,R29,Other symptoms and signs involving the nervous and musculoskeletal systems,378256,cohort_72,"Other symptoms and signs involving the
+nervous and musculoskeletal systems (R29·6
+Tendency to fall)",3.6
+45548665,N39,Other disorders of urinary system,81902,cohort_57,"Other disorders of urinary system (includes
+urinary tract infection and urinary
+incontinence)",3.2
+45606491,N39,Other disorders of urinary system,36712846,cohort_57,"Other disorders of urinary system (includes
+urinary tract infection and urinary
+incontinence)",3.2
+45563014,N39,Other disorders of urinary system,75865,cohort_57,"Other disorders of urinary system (includes
+urinary tract infection and urinary
+incontinence)",3.2
+45539046,N39,Other disorders of urinary system,193871,cohort_57,"Other disorders of urinary system (includes
+urinary tract infection and urinary
+incontinence)",3.2
+45577525,N39,Other disorders of urinary system,197672,cohort_57,"Other disorders of urinary system (includes
+urinary tract infection and urinary
+incontinence)",3.2
+45572709,N39,Other disorders of urinary system,74080,cohort_57,"Other disorders of urinary system (includes
+urinary tract infection and urinary
+incontinence)",3.2
+45577526,N39,Other disorders of urinary system,75865,cohort_57,"Other disorders of urinary system (includes
+urinary tract infection and urinary
+incontinence)",3.2
+45605447,F05,"Delirium, not induced by alcohol and other psychoactive substances",373995,cohort_18,"Delirium, not induced by alcohol and other
+psychoactive substances",3.2
+45557150,F05,"Delirium, not induced by alcohol and other psychoactive substances",37111242,cohort_18,"Delirium, not induced by alcohol and other
+psychoactive substances",3.2
+45571703,F05,"Delirium, not induced by alcohol and other psychoactive substances",373995,cohort_18,"Delirium, not induced by alcohol and other
+psychoactive substances",3.2
+45591078,F05,"Delirium, not induced by alcohol and other psychoactive substances",373995,cohort_18,"Delirium, not induced by alcohol and other
+psychoactive substances",3.2
+45544173,S00,Superficial injury of head,373648,cohort_91,Superficial injury of head,3.2
+45548998,S00,Superficial injury of head,4167105,cohort_91,Superficial injury of head,3.2
+45549004,S00,Superficial injury of head,4106678,cohort_91,Superficial injury of head,3.2
+45553759,S00,Superficial injury of head,4219836,cohort_91,Superficial injury of head,3.2
+45563349,S00,Superficial injury of head,4086195,cohort_91,Superficial injury of head,3.2
+45577835,S00,Superficial injury of head,4108637,cohort_91,Superficial injury of head,3.2
+45587557,S00,Superficial injury of head,4086195,cohort_91,Superficial injury of head,3.2
+45563348,S00,Superficial injury of head,4050699,cohort_91,Superficial injury of head,3.2
+45582750,S00,Superficial injury of head,4002661,cohort_91,Superficial injury of head,3.2
+45561775,B96,Other specified bacterial agents as the cause of diseases classified to other chapters,436339,cohort_68,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9
+45590871,B96,Other specified bacterial agents as the cause of diseases classified to other chapters,432545,cohort_68,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9
+45537782,B96,Other specified bacterial agents as the cause of diseases classified to other chapters,4008261,cohort_68,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9
+45547477,B96,Other specified bacterial agents as the cause of diseases classified to other chapters,40478938,cohort_68,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9
+45556957,B96,Other specified bacterial agents as the cause of diseases classified to other chapters,441215,cohort_68,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9
+45576291,B96,Other specified bacterial agents as the cause of diseases classified to other chapters,433405,cohort_68,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9
+45590870,B96,Other specified bacterial agents as the cause of diseases classified to other chapters,434277,cohort_68,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9
+45542577,B96,Other specified bacterial agents as the cause of diseases classified to other chapters,4231983,cohort_68,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9
+45566566,B96,Other specified bacterial agents as the cause of diseases classified to other chapters,440320,cohort_68,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9
+45558469,R41,Other symptoms and signs involving cognitive functions and awareness,4268911,cohort_70,Other symptoms and signs involving cognitive functions and awareness,2.7
+45534452,R41,Other symptoms and signs involving cognitive functions and awareness,4293175,cohort_70,Other symptoms and signs involving cognitive functions and awareness,2.7
+45553735,R41,Other symptoms and signs involving cognitive functions and awareness,4198081,cohort_70,Other symptoms and signs involving cognitive functions and awareness,2.7
+45606812,R41,Other symptoms and signs involving cognitive functions and awareness,4229448,cohort_70,Other symptoms and signs involving cognitive functions and awareness,2.7
+45539342,R41,Other symptoms and signs involving cognitive functions and awareness,439147,cohort_70,Other symptoms and signs involving cognitive functions and awareness,2.7
+45602016,R26,Abnormalities of gait and mobility,36714126,cohort_2,Abnormalities of gait and mobility,2.6
+45563296,R26,Abnormalities of gait and mobility,4248196,cohort_2,Abnormalities of gait and mobility,2.6
+45582698,R26,Abnormalities of gait and mobility,4021489,cohort_2,Abnormalities of gait and mobility,2.6
+45534437,R26,Abnormalities of gait and mobility,4096848,cohort_2,Abnormalities of gait and mobility,2.6
+45597174,R26,Abnormalities of gait and mobility,437643,cohort_2,Abnormalities of gait and mobility,2.6
+45543191,I67,Other cerebrovascular diseases,381591,cohort_51,Other cerebrovascular diseases,2.6
+45572103,I67,Other cerebrovascular diseases,314667,cohort_51,Other cerebrovascular diseases,2.6
+1529212,S42,Fracture of shoulder and upper arm,73609,cohort_34,Fracture of shoulder and upper arm,2.3
+1529319,S06,Intracranial injury,4001336,cohort_38,Intracranial injury,2.4
+1529320,S06,Intracranial injury,4001336,cohort_38,Intracranial injury,2.4
+1529320,S06,Intracranial injury,4243161,cohort_38,Intracranial injury,2.4
+1529327,S42,Fracture of shoulder and upper arm,4237458,cohort_34,Fracture of shoulder and upper arm,2.3
+42617202,M25,"Other joint disorders, not elsewhere classified",76784,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617203,M25,"Other joint disorders, not elsewhere classified",75345,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617204,M25,"Other joint disorders, not elsewhere classified",78833,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617205,M25,"Other joint disorders, not elsewhere classified",441940,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617206,M25,"Other joint disorders, not elsewhere classified",79915,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617207,M25,"Other joint disorders, not elsewhere classified",77640,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617208,M25,"Other joint disorders, not elsewhere classified",75043,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617209,M25,"Other joint disorders, not elsewhere classified",72403,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617210,M25,"Other joint disorders, not elsewhere classified",76784,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617212,M25,"Other joint disorders, not elsewhere classified",4239337,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617213,M25,"Other joint disorders, not elsewhere classified",77630,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617213,M25,"Other joint disorders, not elsewhere classified",4239337,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617214,M25,"Other joint disorders, not elsewhere classified",4139063,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617215,M25,"Other joint disorders, not elsewhere classified",4181302,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617216,M25,"Other joint disorders, not elsewhere classified",4177361,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617217,M25,"Other joint disorders, not elsewhere classified",4177362,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617218,M25,"Other joint disorders, not elsewhere classified",4322711,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617220,M25,"Other joint disorders, not elsewhere classified",4239337,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617221,M25,"Other joint disorders, not elsewhere classified",4239337,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617222,M25,"Other joint disorders, not elsewhere classified",4343913,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617223,M25,"Other joint disorders, not elsewhere classified",4343913,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617223,M25,"Other joint disorders, not elsewhere classified",77630,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617224,M25,"Other joint disorders, not elsewhere classified",1076877,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617227,M25,"Other joint disorders, not elsewhere classified",4166838,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617228,M25,"Other joint disorders, not elsewhere classified",40482662,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617228,M25,"Other joint disorders, not elsewhere classified",4343913,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617231,M25,"Other joint disorders, not elsewhere classified",4285734,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617232,M25,"Other joint disorders, not elsewhere classified",4198492,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617233,M25,"Other joint disorders, not elsewhere classified",4185800,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617234,M25,"Other joint disorders, not elsewhere classified",4182522,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617235,M25,"Other joint disorders, not elsewhere classified",40482478,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617236,M25,"Other joint disorders, not elsewhere classified",4172835,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617241,M25,"Other joint disorders, not elsewhere classified",73851,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617242,M25,"Other joint disorders, not elsewhere classified",4117881,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617243,M25,"Other joint disorders, not elsewhere classified",1244938,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617244,M25,"Other joint disorders, not elsewhere classified",78834,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617245,M25,"Other joint disorders, not elsewhere classified",4117712,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617247,M25,"Other joint disorders, not elsewhere classified",77072,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617248,M25,"Other joint disorders, not elsewhere classified",79903,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617252,M25,"Other joint disorders, not elsewhere classified",76191,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617252,M25,"Other joint disorders, not elsewhere classified",77074,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617254,M25,"Other joint disorders, not elsewhere classified",78234,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617255,M25,"Other joint disorders, not elsewhere classified",4170554,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617257,M25,"Other joint disorders, not elsewhere classified",78508,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617259,M25,"Other joint disorders, not elsewhere classified",73841,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617264,M25,"Other joint disorders, not elsewhere classified",4097159,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617265,M25,"Other joint disorders, not elsewhere classified",4093672,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617267,M25,"Other joint disorders, not elsewhere classified",72404,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617271,M25,"Other joint disorders, not elsewhere classified",45757591,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617271,M25,"Other joint disorders, not elsewhere classified",136779,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617272,M25,"Other joint disorders, not elsewhere classified",77635,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617272,M25,"Other joint disorders, not elsewhere classified",45757591,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617273,M25,"Other joint disorders, not elsewhere classified",45757591,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617273,M25,"Other joint disorders, not elsewhere classified",43531053,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617274,M25,"Other joint disorders, not elsewhere classified",45757591,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617274,M25,"Other joint disorders, not elsewhere classified",72986,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617278,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617281,M25,"Other joint disorders, not elsewhere classified",136779,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617281,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617283,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617283,M25,"Other joint disorders, not elsewhere classified",43531053,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617284,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617284,M25,"Other joint disorders, not elsewhere classified",72986,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617285,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617290,M25,"Other joint disorders, not elsewhere classified",443582,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617291,M25,"Other joint disorders, not elsewhere classified",43531053,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617292,M25,"Other joint disorders, not elsewhere classified",72986,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617292,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617295,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42619347,M25,"Other joint disorders, not elsewhere classified",72407,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45533050,E87,"Other disorders of fluid, electrolyte and acid-base balance",438730,cohort_54,"Other disorders of fluid, electrolyte and acid-
+base balance",2.3
+45537990,E87,"Other disorders of fluid, electrolyte and acid-base balance",434610,cohort_54,"Other disorders of fluid, electrolyte and acid-
+base balance",2.3
+45537991,E87,"Other disorders of fluid, electrolyte and acid-base balance",437833,cohort_54,"Other disorders of fluid, electrolyte and acid-
+base balance",2.3
+45538401,I67,Other cerebrovascular diseases,4029497,cohort_51,Other cerebrovascular diseases,2.6
+45538402,I67,Other cerebrovascular diseases,4027461,cohort_51,Other cerebrovascular diseases,2.6
+45538741,M25,"Other joint disorders, not elsewhere classified",72404,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45542779,E87,"Other disorders of fluid, electrolyte and acid-base balance",435515,cohort_54,"Other disorders of fluid, electrolyte and acid-
+base balance",2.3
+45542782,E87,"Other disorders of fluid, electrolyte and acid-base balance",441830,cohort_54,"Other disorders of fluid, electrolyte and acid-
+base balance",2.3
+45543559,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45544677,S42,Fracture of shoulder and upper arm,4133610,cohort_34,Fracture of shoulder and upper arm,2.3
+45546724,T83,"Complications of genitourinary prosthetic devices, implants and grafts",43021248,cohort_14,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4
+45547666,E87,"Other disorders of fluid, electrolyte and acid-base balance",441536,cohort_54,"Other disorders of fluid, electrolyte and acid-
+base balance",2.3
+45548391,M25,"Other joint disorders, not elsewhere classified",4285734,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45549096,S06,Intracranial injury,437409,cohort_38,Intracranial injury,2.4
+45552811,I67,Other cerebrovascular diseases,316437,cohort_51,Other cerebrovascular diseases,2.6
+45553729,R40,"Somnolence, stupor and coma",4158978,cohort_88,"Somnolence, stupor and coma",2.5
+45553730,R40,"Somnolence, stupor and coma",4229897,cohort_88,"Somnolence, stupor and coma",2.5
+45556263,T83,"Complications of genitourinary prosthetic devices, implants and grafts",43021248,cohort_14,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4
+45556266,T83,"Complications of genitourinary prosthetic devices, implants and grafts",4308394,cohort_14,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4
+45558463,R40,"Somnolence, stupor and coma",380834,cohort_88,"Somnolence, stupor and coma",2.5
+45559050,S42,Fracture of shoulder and upper arm,75053,cohort_34,Fracture of shoulder and upper arm,2.3
+45562695,M25,"Other joint disorders, not elsewhere classified",79903,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45563417,S06,Intracranial injury,4306943,cohort_38,Intracranial injury,2.4
+45563422,S06,Intracranial injury,4017107,cohort_38,Intracranial injury,2.4
+45568226,S06,Intracranial injury,4048796,cohort_38,Intracranial injury,2.4
+45570728,T83,"Complications of genitourinary prosthetic devices, implants and grafts",43021248,cohort_14,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4
+45570733,T83,"Complications of genitourinary prosthetic devices, implants and grafts",4309318,cohort_14,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4
+45571696,E87,"Other disorders of fluid, electrolyte and acid-base balance",441829,cohort_54,"Other disorders of fluid, electrolyte and acid-
+base balance",2.3
+45571697,E87,"Other disorders of fluid, electrolyte and acid-base balance",435517,cohort_54,"Other disorders of fluid, electrolyte and acid-
+base balance",2.3
+45573538,S42,Fracture of shoulder and upper arm,4319889,cohort_34,Fracture of shoulder and upper arm,2.3
+45575581,T83,"Complications of genitourinary prosthetic devices, implants and grafts",43021248,cohort_14,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4
+45577915,S06,Intracranial injury,4016541,cohort_38,Intracranial injury,2.4
+45578284,S42,Fracture of shoulder and upper arm,4237458,cohort_34,Fracture of shoulder and upper arm,2.3
+45582119,M25,"Other joint disorders, not elsewhere classified",45757591,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45582805,S06,Intracranial injury,4001336,cohort_38,Intracranial injury,2.4
+45582835,S06,Intracranial injury,437409,cohort_38,Intracranial injury,2.4
+45583278,S42,Fracture of shoulder and upper arm,4015970,cohort_34,Fracture of shoulder and upper arm,2.3
+45585276,T83,"Complications of genitourinary prosthetic devices, implants and grafts",43021248,cohort_14,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4
+45586600,I67,Other cerebrovascular diseases,381591,cohort_51,Other cerebrovascular diseases,2.6
+45587622,S06,Intracranial injury,4134162,cohort_38,Intracranial injury,2.4
+45590078,T83,"Complications of genitourinary prosthetic devices, implants and grafts",4155079,cohort_14,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4
+45591479,I67,Other cerebrovascular diseases,312938,cohort_51,Other cerebrovascular diseases,2.6
+45591480,I67,Other cerebrovascular diseases,378774,cohort_51,Other cerebrovascular diseases,2.6
+45591481,I67,Other cerebrovascular diseases,380747,cohort_51,Other cerebrovascular diseases,2.6
+45591798,M25,"Other joint disorders, not elsewhere classified",76784,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45592516,S06,Intracranial injury,4096616,cohort_38,Intracranial injury,2.4
+45592956,S42,Fracture of shoulder and upper arm,4138299,cohort_34,Fracture of shoulder and upper arm,2.3
+45595838,E87,"Other disorders of fluid, electrolyte and acid-base balance",434004,cohort_54,"Other disorders of fluid, electrolyte and acid-
+base balance",2.3
+45597729,S42,Fracture of shoulder and upper arm,4175616,cohort_34,Fracture of shoulder and upper arm,2.3
+45599778,T83,"Complications of genitourinary prosthetic devices, implants and grafts",4158481,cohort_14,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4
+45602033,R56,"Convulsions, not elsewhere classified",377091,cohort_15,"Convulsions, not elsewhere classified",2.6
+45602569,S42,Fracture of shoulder and upper arm,37168846,cohort_34,Fracture of shoulder and upper arm,2.3
+45605812,I67,Other cerebrovascular diseases,37016924,cohort_51,Other cerebrovascular diseases,2.6
+45606819,R56,"Convulsions, not elsewhere classified",444413,cohort_15,"Convulsions, not elsewhere classified",2.6
+45606905,S06,Intracranial injury,4016540,cohort_38,Intracranial injury,2.4
+45755733,S42,Fracture of shoulder and upper arm,79938,cohort_34,Fracture of shoulder and upper arm,2.3
+45755734,S42,Fracture of shoulder and upper arm,77112,cohort_34,Fracture of shoulder and upper arm,2.3
+45755735,S42,Fracture of shoulder and upper arm,434494,cohort_34,Fracture of shoulder and upper arm,2.3
+45755736,S42,Fracture of shoulder and upper arm,436250,cohort_34,Fracture of shoulder and upper arm,2.3
+45755737,S42,Fracture of shoulder and upper arm,435940,cohort_34,Fracture of shoulder and upper arm,2.3
+45755738,S42,Fracture of shoulder and upper arm,434497,cohort_34,Fracture of shoulder and upper arm,2.3
+45755739,S42,Fracture of shoulder and upper arm,440228,cohort_34,Fracture of shoulder and upper arm,2.3
+45755740,S42,Fracture of shoulder and upper arm,437121,cohort_34,Fracture of shoulder and upper arm,2.3
+45755741,S42,Fracture of shoulder and upper arm,4210438,cohort_34,Fracture of shoulder and upper arm,2.3
+45755742,S42,Fracture of shoulder and upper arm,4206871,cohort_34,Fracture of shoulder and upper arm,2.3
+45755743,S42,Fracture of shoulder and upper arm,4042503,cohort_34,Fracture of shoulder and upper arm,2.3
+45755743,S42,Fracture of shoulder and upper arm,4307254,cohort_34,Fracture of shoulder and upper arm,2.3
+45755744,S42,Fracture of shoulder and upper arm,75053,cohort_34,Fracture of shoulder and upper arm,2.3
+45755744,S42,Fracture of shoulder and upper arm,4042503,cohort_34,Fracture of shoulder and upper arm,2.3
+45755744,S42,Fracture of shoulder and upper arm,4264281,cohort_34,Fracture of shoulder and upper arm,2.3
+45755745,S42,Fracture of shoulder and upper arm,4218146,cohort_34,Fracture of shoulder and upper arm,2.3
+45755746,S42,Fracture of shoulder and upper arm,4215380,cohort_34,Fracture of shoulder and upper arm,2.3
+45755773,S06,Intracranial injury,4048796,cohort_38,Intracranial injury,2.4
+45755774,S06,Intracranial injury,4208505,cohort_38,Intracranial injury,2.4
+45755775,S06,Intracranial injury,4096616,cohort_38,Intracranial injury,2.4
+45755776,S06,Intracranial injury,4096616,cohort_38,Intracranial injury,2.4
+45755776,S06,Intracranial injury,438590,cohort_38,Intracranial injury,2.4
+45755777,S06,Intracranial injury,4016540,cohort_38,Intracranial injury,2.4
+45755778,S06,Intracranial injury,4016540,cohort_38,Intracranial injury,2.4
+45755778,S06,Intracranial injury,438590,cohort_38,Intracranial injury,2.4
+45755779,S06,Intracranial injury,4306943,cohort_38,Intracranial injury,2.4
+45755779,S06,Intracranial injury,4132546,cohort_38,Intracranial injury,2.4
+45755780,S06,Intracranial injury,435960,cohort_38,Intracranial injury,2.4
+45755781,S06,Intracranial injury,4014781,cohort_38,Intracranial injury,2.4
+45755782,S06,Intracranial injury,4017105,cohort_38,Intracranial injury,2.4
+45755783,S06,Intracranial injury,4134162,cohort_38,Intracranial injury,2.4
+45755784,S06,Intracranial injury,441709,cohort_38,Intracranial injury,2.4
+45755785,S06,Intracranial injury,4206874,cohort_38,Intracranial injury,2.4
+45755786,S06,Intracranial injury,4210440,cohort_38,Intracranial injury,2.4
+45755787,S06,Intracranial injury,437409,cohort_38,Intracranial injury,2.4
+45755788,S06,Intracranial injury,437409,cohort_38,Intracranial injury,2.4
+45755789,S06,Intracranial injury,437409,cohort_38,Intracranial injury,2.4
+45755790,S06,Intracranial injury,437409,cohort_38,Intracranial injury,2.4
+42617211,M25,"Other joint disorders, not elsewhere classified",76784,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617219,M25,"Other joint disorders, not elsewhere classified",40482662,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617219,M25,"Other joint disorders, not elsewhere classified",4239337,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617225,M25,"Other joint disorders, not elsewhere classified",136779,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617225,M25,"Other joint disorders, not elsewhere classified",4343913,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617226,M25,"Other joint disorders, not elsewhere classified",4343913,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617226,M25,"Other joint disorders, not elsewhere classified",77635,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617229,M25,"Other joint disorders, not elsewhere classified",4343913,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617230,M25,"Other joint disorders, not elsewhere classified",4343913,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617237,M25,"Other joint disorders, not elsewhere classified",72986,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617237,M25,"Other joint disorders, not elsewhere classified",4285734,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617238,M25,"Other joint disorders, not elsewhere classified",4218552,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617238,M25,"Other joint disorders, not elsewhere classified",40482440,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617239,M25,"Other joint disorders, not elsewhere classified",4285734,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617240,M25,"Other joint disorders, not elsewhere classified",4285734,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617246,M25,"Other joint disorders, not elsewhere classified",4115991,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617249,M25,"Other joint disorders, not elsewhere classified",79903,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617250,M25,"Other joint disorders, not elsewhere classified",78517,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617251,M25,"Other joint disorders, not elsewhere classified",78232,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617253,M25,"Other joint disorders, not elsewhere classified",77074,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617253,M25,"Other joint disorders, not elsewhere classified",136779,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617256,M25,"Other joint disorders, not elsewhere classified",72986,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617256,M25,"Other joint disorders, not elsewhere classified",77074,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617258,M25,"Other joint disorders, not elsewhere classified",77074,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617260,M25,"Other joint disorders, not elsewhere classified",72711,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617261,M25,"Other joint disorders, not elsewhere classified",4093193,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617262,M25,"Other joint disorders, not elsewhere classified",4093673,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617263,M25,"Other joint disorders, not elsewhere classified",442980,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617266,M25,"Other joint disorders, not elsewhere classified",72404,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617266,M25,"Other joint disorders, not elsewhere classified",4305027,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617268,M25,"Other joint disorders, not elsewhere classified",72404,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617269,M25,"Other joint disorders, not elsewhere classified",45757591,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617270,M25,"Other joint disorders, not elsewhere classified",45757591,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617270,M25,"Other joint disorders, not elsewhere classified",77630,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617275,M25,"Other joint disorders, not elsewhere classified",45757591,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617275,M25,"Other joint disorders, not elsewhere classified",40482662,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617276,M25,"Other joint disorders, not elsewhere classified",45757591,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617277,M25,"Other joint disorders, not elsewhere classified",45757591,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617279,M25,"Other joint disorders, not elsewhere classified",40484571,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617280,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617280,M25,"Other joint disorders, not elsewhere classified",76191,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617282,M25,"Other joint disorders, not elsewhere classified",443582,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617286,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617287,M25,"Other joint disorders, not elsewhere classified",75897,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617288,M25,"Other joint disorders, not elsewhere classified",40484571,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617289,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617289,M25,"Other joint disorders, not elsewhere classified",76191,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617293,M25,"Other joint disorders, not elsewhere classified",40482662,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617294,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42617353,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617354,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617354,M41,Scoliosis,80497,cohort_85,Scoliosis,0.9
+42617355,M41,Scoliosis,45757669,cohort_85,Scoliosis,0.9
+42617356,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617356,M41,Scoliosis,443795,cohort_85,Scoliosis,0.9
+42617356,M41,Scoliosis,80497,cohort_85,Scoliosis,0.9
+42617357,M41,Scoliosis,46273238,cohort_85,Scoliosis,0.9
+42617358,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617359,M41,Scoliosis,46273239,cohort_85,Scoliosis,0.9
+42617360,M41,Scoliosis,195906,cohort_85,Scoliosis,0.9
+42617360,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617360,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617361,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617361,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617362,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617363,M41,Scoliosis,4067872,cohort_85,Scoliosis,0.9
+42617364,M41,Scoliosis,4067872,cohort_85,Scoliosis,0.9
+42617365,M41,Scoliosis,4067872,cohort_85,Scoliosis,0.9
+42617366,M41,Scoliosis,4067872,cohort_85,Scoliosis,0.9
+42617366,M41,Scoliosis,46273238,cohort_85,Scoliosis,0.9
+42617367,M41,Scoliosis,4067872,cohort_85,Scoliosis,0.9
+42617367,M41,Scoliosis,37017436,cohort_85,Scoliosis,0.9
+42617368,M41,Scoliosis,4067872,cohort_85,Scoliosis,0.9
+42617368,M41,Scoliosis,46273239,cohort_85,Scoliosis,0.9
+42617369,M41,Scoliosis,4067872,cohort_85,Scoliosis,0.9
+42617369,M41,Scoliosis,46273239,cohort_85,Scoliosis,0.9
+42617370,M41,Scoliosis,4067872,cohort_85,Scoliosis,0.9
+42617371,M41,Scoliosis,4067872,cohort_85,Scoliosis,0.9
+42617372,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617373,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617373,M41,Scoliosis,80497,cohort_85,Scoliosis,0.9
+42617374,M41,Scoliosis,80497,cohort_85,Scoliosis,0.9
+42617374,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617375,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617376,M41,Scoliosis,46273238,cohort_85,Scoliosis,0.9
+42617377,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617378,M41,Scoliosis,46273239,cohort_85,Scoliosis,0.9
+42617379,M41,Scoliosis,46273239,cohort_85,Scoliosis,0.9
+42617379,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617380,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617380,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617381,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+42617382,M41,Scoliosis,253009,cohort_85,Scoliosis,0.9
+42617383,M41,Scoliosis,253009,cohort_85,Scoliosis,0.9
+42617383,M41,Scoliosis,80497,cohort_85,Scoliosis,0.9
+42617384,M41,Scoliosis,80497,cohort_85,Scoliosis,0.9
+42617384,M41,Scoliosis,253009,cohort_85,Scoliosis,0.9
+42617385,M41,Scoliosis,253009,cohort_85,Scoliosis,0.9
+42617385,M41,Scoliosis,4184403,cohort_85,Scoliosis,0.9
+42617385,M41,Scoliosis,80497,cohort_85,Scoliosis,0.9
+42617386,M41,Scoliosis,37171182,cohort_85,Scoliosis,0.9
+42617387,M41,Scoliosis,37171183,cohort_85,Scoliosis,0.9
+42617388,M41,Scoliosis,253009,cohort_85,Scoliosis,0.9
+42617388,M41,Scoliosis,195906,cohort_85,Scoliosis,0.9
+42617389,M41,Scoliosis,195906,cohort_85,Scoliosis,0.9
+42617389,M41,Scoliosis,253009,cohort_85,Scoliosis,0.9
+42617389,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617390,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617390,M41,Scoliosis,253009,cohort_85,Scoliosis,0.9
+42617391,M41,Scoliosis,253009,cohort_85,Scoliosis,0.9
+42617392,M41,Scoliosis,4069943,cohort_85,Scoliosis,0.9
+42617393,M41,Scoliosis,37207796,cohort_85,Scoliosis,0.9
+42617394,M41,Scoliosis,37207796,cohort_85,Scoliosis,0.9
+42617395,M41,Scoliosis,37171057,cohort_85,Scoliosis,0.9
+42617396,M41,Scoliosis,37171059,cohort_85,Scoliosis,0.9
+42617397,M41,Scoliosis,37171060,cohort_85,Scoliosis,0.9
+42617398,M41,Scoliosis,37171058,cohort_85,Scoliosis,0.9
+42617399,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617399,M41,Scoliosis,4069943,cohort_85,Scoliosis,0.9
+42617399,M41,Scoliosis,4184423,cohort_85,Scoliosis,0.9
+42617400,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617400,M41,Scoliosis,4069943,cohort_85,Scoliosis,0.9
+42617401,M41,Scoliosis,4069943,cohort_85,Scoliosis,0.9
+42617402,M41,Scoliosis,4006163,cohort_85,Scoliosis,0.9
+42617403,M41,Scoliosis,4006163,cohort_85,Scoliosis,0.9
+42617403,M41,Scoliosis,4179319,cohort_85,Scoliosis,0.9
+42617404,M41,Scoliosis,4006163,cohort_85,Scoliosis,0.9
+42617404,M41,Scoliosis,4179319,cohort_85,Scoliosis,0.9
+42617405,M41,Scoliosis,4006163,cohort_85,Scoliosis,0.9
+42617405,M41,Scoliosis,4179319,cohort_85,Scoliosis,0.9
+42617405,M41,Scoliosis,4184403,cohort_85,Scoliosis,0.9
+42617406,M41,Scoliosis,4006163,cohort_85,Scoliosis,0.9
+42617406,M41,Scoliosis,4184403,cohort_85,Scoliosis,0.9
+42617407,M41,Scoliosis,4006163,cohort_85,Scoliosis,0.9
+42617407,M41,Scoliosis,4184403,cohort_85,Scoliosis,0.9
+42617407,M41,Scoliosis,4184423,cohort_85,Scoliosis,0.9
+42617408,M41,Scoliosis,4006163,cohort_85,Scoliosis,0.9
+42617408,M41,Scoliosis,4184423,cohort_85,Scoliosis,0.9
+42617409,M41,Scoliosis,4006163,cohort_85,Scoliosis,0.9
+42617409,M41,Scoliosis,4184423,cohort_85,Scoliosis,0.9
+42617410,M41,Scoliosis,4006163,cohort_85,Scoliosis,0.9
+42617411,M41,Scoliosis,72418,cohort_85,Scoliosis,0.9
+42617412,M41,Scoliosis,4179319,cohort_85,Scoliosis,0.9
+42617413,M41,Scoliosis,4179319,cohort_85,Scoliosis,0.9
+42617414,M41,Scoliosis,4179319,cohort_85,Scoliosis,0.9
+42617414,M41,Scoliosis,4184403,cohort_85,Scoliosis,0.9
+42617415,M41,Scoliosis,4184403,cohort_85,Scoliosis,0.9
+42617416,M41,Scoliosis,4184403,cohort_85,Scoliosis,0.9
+42617416,M41,Scoliosis,4184423,cohort_85,Scoliosis,0.9
+42617417,M41,Scoliosis,4184423,cohort_85,Scoliosis,0.9
+42617418,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617418,M41,Scoliosis,4184423,cohort_85,Scoliosis,0.9
+42617419,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617419,M41,Scoliosis,72418,cohort_85,Scoliosis,0.9
+42617420,M41,Scoliosis,72418,cohort_85,Scoliosis,0.9
+42617421,M41,Scoliosis,72418,cohort_85,Scoliosis,0.9
+42617422,M41,Scoliosis,4179319,cohort_85,Scoliosis,0.9
+42617423,M41,Scoliosis,4179319,cohort_85,Scoliosis,0.9
+42617424,M41,Scoliosis,4179319,cohort_85,Scoliosis,0.9
+42617424,M41,Scoliosis,4184403,cohort_85,Scoliosis,0.9
+42617425,M41,Scoliosis,4184403,cohort_85,Scoliosis,0.9
+42617426,M41,Scoliosis,4184403,cohort_85,Scoliosis,0.9
+42617426,M41,Scoliosis,4184423,cohort_85,Scoliosis,0.9
+42617427,M41,Scoliosis,4184423,cohort_85,Scoliosis,0.9
+42617428,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617428,M41,Scoliosis,4184423,cohort_85,Scoliosis,0.9
+42617429,M41,Scoliosis,72418,cohort_85,Scoliosis,0.9
+42617429,M41,Scoliosis,138841,cohort_85,Scoliosis,0.9
+42617430,M41,Scoliosis,72418,cohort_85,Scoliosis,0.9
+42618434,M79,"Other soft tissue disorders, not elsewhere classified",136779,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618434,M79,"Other soft tissue disorders, not elsewhere classified",138845,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618445,M79,"Other soft tissue disorders, not elsewhere classified",37167226,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618451,M79,"Other soft tissue disorders, not elsewhere classified",4117779,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618455,M79,"Other soft tissue disorders, not elsewhere classified",77635,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618455,M79,"Other soft tissue disorders, not elsewhere classified",4117779,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618456,M79,"Other soft tissue disorders, not elsewhere classified",4117779,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618461,M79,"Other soft tissue disorders, not elsewhere classified",432719,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618464,M79,"Other soft tissue disorders, not elsewhere classified",432719,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618464,M79,"Other soft tissue disorders, not elsewhere classified",136779,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618473,M79,"Other soft tissue disorders, not elsewhere classified",76191,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618473,M79,"Other soft tissue disorders, not elsewhere classified",378523,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618474,M79,"Other soft tissue disorders, not elsewhere classified",378523,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618474,M79,"Other soft tissue disorders, not elsewhere classified",136779,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618477,M79,"Other soft tissue disorders, not elsewhere classified",378523,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618477,M79,"Other soft tissue disorders, not elsewhere classified",72986,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618478,M79,"Other soft tissue disorders, not elsewhere classified",40488823,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618478,M79,"Other soft tissue disorders, not elsewhere classified",378523,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618480,M79,"Other soft tissue disorders, not elsewhere classified",378523,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618489,M79,"Other soft tissue disorders, not elsewhere classified",138525,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618492,M79,"Other soft tissue disorders, not elsewhere classified",77630,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618492,M79,"Other soft tissue disorders, not elsewhere classified",40405599,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618495,M79,"Other soft tissue disorders, not elsewhere classified",40405599,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618495,M79,"Other soft tissue disorders, not elsewhere classified",77635,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618496,M79,"Other soft tissue disorders, not elsewhere classified",40405599,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618500,M79,"Other soft tissue disorders, not elsewhere classified",40405599,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618501,M79,"Other soft tissue disorders, not elsewhere classified",376208,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618518,M79,"Other soft tissue disorders, not elsewhere classified",4093228,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42619337,Z91,"Personal history of risk-factors, not elsewhere classified",1340204,cohort_75,"Personal history of risk-factors, not elsewhere
+classified",0.5
+42619346,M25,"Other joint disorders, not elsewhere classified",4343913,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42619346,M25,"Other joint disorders, not elsewhere classified",72986,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42619348,M25,"Other joint disorders, not elsewhere classified",77074,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42619349,M25,"Other joint disorders, not elsewhere classified",76191,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42619349,M25,"Other joint disorders, not elsewhere classified",45757591,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42619355,M25,"Other joint disorders, not elsewhere classified",40482662,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42619356,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42619356,M25,"Other joint disorders, not elsewhere classified",76191,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+42619363,M41,Scoliosis,4067872,cohort_85,Scoliosis,0.9
+42619368,M41,Scoliosis,4006163,cohort_85,Scoliosis,0.9
+45532810,A04,Other bacterial intestinal infections,4345206,cohort_50,Other bacterial intestinal infections,1.1
+45532811,A04,Other bacterial intestinal infections,4345355,cohort_50,Other bacterial intestinal infections,1.1
+45532832,A41,Other sepsis,40489907,cohort_66,Other septicaemia,1.6
+45533035,E53,Deficiency of other B group vitamins,437246,cohort_17,Deficiency of other B group vitamins,1.9
+45533058,F01,Vascular dementia,443605,cohort_106,Vascular dementia,2
+45533583,K26,Duodenal ulcer,4232181,cohort_23,Duodenal ulcer,1.6
+45537650,Z50,Care involving use of rehabilitation procedures,4300520,cohort_9,"Care involving use of rehabilitation
+procedures",2.1
+45537651,Z50,Care involving use of rehabilitation procedures,4309371,cohort_9,"Care involving use of rehabilitation
+procedures",2.1
+45537660,Z60,Problems related to social environment,4028922,cohort_82,Problems related to social environment,1.8
+45537673,Z75,Problems related to medical facilities and other health care,4082086,cohort_81,"Problems related to medical facilities and
+other health care",2
+45537710,A04,Other bacterial intestinal infections,192815,cohort_50,Other bacterial intestinal infections,1.1
+45537950,E05,Thyrotoxicosis [hyperthyroidism],138387,cohort_96,Thyrotoxicosis [hyperthyroidism],0.9
+45537996,F01,Vascular dementia,4046090,cohort_106,Vascular dementia,2
+45538120,G45,Transient cerebral ischaemic attacks and related syndromes,374055,cohort_97,"Transient cerebral ischaemic attacks and
+related syndromes",1.2
+45538120,G45,Transient cerebral ischaemic attacks and related syndromes,376714,cohort_97,"Transient cerebral ischaemic attacks and
+related syndromes",1.2
+45538321,H54,Visual impairment including blindness (binocular or monocular),44806788,cohort_107,Blindness and low vision,1.9
+45538393,I63,Cerebral infarction,4110189,cohort_12,Cerebral Infarction,0.8
+45542444,Z60,Problems related to social environment,4217086,cohort_82,Problems related to social environment,1.8
+45542491,Z91,"Personal history of risk-factors, not elsewhere classified",1340204,cohort_75,"Personal history of risk-factors, not elsewhere
+classified",0.5
+45542879,G31,"Other degenerative diseases of nervous system, not elsewhere classified",4213310,cohort_52,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2
+45542892,G45,Transient cerebral ischaemic attacks and related syndromes,373503,cohort_97,"Transient cerebral ischaemic attacks and
+related syndromes",1.2
+45543087,H54,Visual impairment including blindness (binocular or monocular),372906,cohort_107,Blindness and low vision,1.9
+45543327,K59,Other functional intestinal disorders,80141,cohort_59,Other functional intestinal disorders,1.8
+45543361,L03,Cellulitis,4065997,cohort_11,Cellulitis,2
+45543362,L03,Cellulitis,435613,cohort_11,Cellulitis,2
+45543562,M25,"Other joint disorders, not elsewhere classified",73553,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45545631,S80,Superficial injury of lower leg,4106355,cohort_92,Superficial injury of lower leg,2
+45547321,Z50,Care involving use of rehabilitation procedures,4201412,cohort_9,"Care involving use of rehabilitation
+procedures",2.1
+45547322,Z50,Care involving use of rehabilitation procedures,4225863,cohort_9,"Care involving use of rehabilitation
+procedures",2.1
+45547342,Z75,Problems related to medical facilities and other health care,4019827,cohort_81,"Problems related to medical facilities and
+other health care",2
+45548031,I63,Cerebral infarction,4111714,cohort_12,Cerebral Infarction,0.8
+45548151,K26,Duodenal ulcer,4265479,cohort_23,Duodenal ulcer,1.6
+45548408,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+45548411,M41,Scoliosis,4069943,cohort_85,Scoliosis,0.9
+45550389,S80,Superficial injury of lower leg,77734,cohort_92,Superficial injury of lower leg,2
+45552106,Z75,Problems related to medical facilities and other health care,4145781,cohort_81,"Problems related to medical facilities and
+other health care",2
+45552153,A04,Other bacterial intestinal infections,193688,cohort_50,Other bacterial intestinal infections,1.1
+45552178,A41,Other sepsis,40486631,cohort_66,Other septicaemia,1.6
+45552425,F01,Vascular dementia,4046089,cohort_106,Vascular dementia,2
+45552920,K26,Duodenal ulcer,4173408,cohort_23,Duodenal ulcer,1.6
+45552921,K26,Duodenal ulcer,4222896,cohort_23,Duodenal ulcer,1.6
+45552942,K59,Other functional intestinal disorders,198465,cohort_59,Other functional intestinal disorders,1.8
+45552943,K59,Other functional intestinal disorders,196151,cohort_59,Other functional intestinal disorders,1.8
+45556842,Z50,Care involving use of rehabilitation procedures,4180248,cohort_9,"Care involving use of rehabilitation
+procedures",2.1
+45556902,A41,Other sepsis,40493038,cohort_66,Other septicaemia,1.6
+45557104,E05,Thyrotoxicosis [hyperthyroidism],140976,cohort_96,Thyrotoxicosis [hyperthyroidism],0.9
+45557226,G31,"Other degenerative diseases of nervous system, not elsewhere classified",373179,cohort_52,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2
+45557239,G45,Transient cerebral ischaemic attacks and related syndromes,381036,cohort_97,"Transient cerebral ischaemic attacks and
+related syndromes",1.2
+45557476,H54,Visual impairment including blindness (binocular or monocular),44806985,cohort_107,Blindness and low vision,1.9
+45557550,I63,Cerebral infarction,4110190,cohort_12,Cerebral Infarction,0.8
+45557663,K59,Other functional intestinal disorders,75860,cohort_59,Other functional intestinal disorders,1.8
+45557691,L03,Cellulitis,76492,cohort_11,Cellulitis,2
+45561641,Z60,Problems related to social environment,4022639,cohort_82,Problems related to social environment,1.8
+45561651,Z75,Problems related to medical facilities and other health care,4145781,cohort_81,"Problems related to medical facilities and
+other health care",2
+45561679,A04,Other bacterial intestinal infections,193402,cohort_50,Other bacterial intestinal infections,1.1
+45561702,A41,Other sepsis,40487059,cohort_66,Other septicaemia,1.6
+45561703,A41,Other sepsis,40486059,cohort_66,Other septicaemia,1.6
+45562285,H54,Visual impairment including blindness (binocular or monocular),44806791,cohort_107,Blindness and low vision,1.9
+45562366,I63,Cerebral infarction,4110192,cohort_12,Cerebral Infarction,0.8
+45562442,J18,"Pneumonia, organism unspecified",4133224,cohort_76,"Pneumonia, organism unspecified",1.1
+45562443,J18,"Pneumonia, organism unspecified",4310964,cohort_76,"Pneumonia, organism unspecified",1.1
+45564799,S80,Superficial injury of lower leg,4106355,cohort_92,Superficial injury of lower leg,2
+45566475,Z91,"Personal history of risk-factors, not elsewhere classified",1340204,cohort_75,"Personal history of risk-factors, not elsewhere
+classified",0.5
+45566719,E05,Thyrotoxicosis [hyperthyroidism],4337834,cohort_96,Thyrotoxicosis [hyperthyroidism],0.9
+45566720,E05,Thyrotoxicosis [hyperthyroidism],133436,cohort_96,Thyrotoxicosis [hyperthyroidism],0.9
+45566883,G45,Transient cerebral ischaemic attacks and related syndromes,437306,cohort_97,"Transient cerebral ischaemic attacks and
+related syndromes",1.2
+45567102,H54,Visual impairment including blindness (binocular or monocular),44806790,cohort_107,Blindness and low vision,1.9
+45567527,M25,"Other joint disorders, not elsewhere classified",4343913,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45569633,S80,Superficial injury of lower leg,78619,cohort_92,Superficial injury of lower leg,2
+45571372,Z60,Problems related to social environment,4154624,cohort_82,Problems related to social environment,1.8
+45571387,Z75,Problems related to medical facilities and other health care,4148887,cohort_81,"Problems related to medical facilities and
+other health care",2
+45572164,J18,"Pneumonia, organism unspecified",256722,cohort_76,"Pneumonia, organism unspecified",1.1
+45576166,Z60,Problems related to social environment,4023168,cohort_82,Problems related to social environment,1.8
+45576215,Z91,"Personal history of risk-factors, not elsewhere classified",1340204,cohort_75,"Personal history of risk-factors, not elsewhere
+classified",0.5
+45576429,E05,Thyrotoxicosis [hyperthyroidism],4177975,cohort_96,Thyrotoxicosis [hyperthyroidism],0.9
+45576458,E53,Deficiency of other B group vitamins,437246,cohort_17,Deficiency of other B group vitamins,1.9
+45576485,F01,Vascular dementia,443605,cohort_106,Vascular dementia,2
+45576586,G45,Transient cerebral ischaemic attacks and related syndromes,4112020,cohort_97,"Transient cerebral ischaemic attacks and
+related syndromes",1.2
+45576587,G45,Transient cerebral ischaemic attacks and related syndromes,373503,cohort_97,"Transient cerebral ischaemic attacks and
+related syndromes",1.2
+45576983,K26,Duodenal ulcer,4209746,cohort_23,Duodenal ulcer,1.6
+45577023,L03,Cellulitis,4263898,cohort_11,Cellulitis,2
+45577220,M25,"Other joint disorders, not elsewhere classified",4239337,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45577253,M41,Scoliosis,253009,cohort_85,Scoliosis,0.9
+45581039,Z50,Care involving use of rehabilitation procedures,4209116,cohort_9,"Care involving use of rehabilitation
+procedures",2.1
+45581040,Z50,Care involving use of rehabilitation procedures,4327941,cohort_9,"Care involving use of rehabilitation
+procedures",2.1
+45581051,Z60,Problems related to social environment,4309238,cohort_82,Problems related to social environment,1.8
+45581070,Z75,Problems related to medical facilities and other health care,4145781,cohort_81,"Problems related to medical facilities and
+other health care",2
+45581393,F01,Vascular dementia,4047747,cohort_106,Vascular dementia,2
+45581905,K59,Other functional intestinal disorders,134404,cohort_59,Other functional intestinal disorders,1.8
+45581931,L03,Cellulitis,435613,cohort_11,Cellulitis,2
+45585836,Z50,Care involving use of rehabilitation procedures,4261832,cohort_9,"Care involving use of rehabilitation
+procedures",2.1
+45585842,Z60,Problems related to social environment,4028922,cohort_82,Problems related to social environment,1.8
+45585876,Z91,"Personal history of risk-factors, not elsewhere classified",43530807,cohort_75,"Personal history of risk-factors, not elsewhere
+classified",0.5
+45585893,A04,Other bacterial intestinal infections,4345354,cohort_50,Other bacterial intestinal infections,1.1
+45585894,A04,Other bacterial intestinal infections,4345207,cohort_50,Other bacterial intestinal infections,1.1
+45585911,A41,Other sepsis,132797,cohort_66,Other septicaemia,1.6
+45586131,E05,Thyrotoxicosis [hyperthyroidism],138387,cohort_96,Thyrotoxicosis [hyperthyroidism],0.9
+45586592,I63,Cerebral infarction,4043731,cohort_12,Cerebral Infarction,0.8
+45586760,L03,Cellulitis,435613,cohort_11,Cellulitis,2
+45586760,L03,Cellulitis,4181064,cohort_11,Cellulitis,2
+45586941,M25,"Other joint disorders, not elsewhere classified",77074,cohort_62,"Other joint disorders, not elsewhere classified",2.3
+45586964,M41,Scoliosis,4006163,cohort_85,Scoliosis,0.9
+45586965,M41,Scoliosis,72418,cohort_85,Scoliosis,0.9
+45590770,Z91,"Personal history of risk-factors, not elsewhere classified",1340204,cohort_75,"Personal history of risk-factors, not elsewhere
+classified",0.5
+45590771,Z91,"Personal history of risk-factors, not elsewhere classified",1340204,cohort_75,"Personal history of risk-factors, not elsewhere
+classified",0.5
+45590792,A04,Other bacterial intestinal infections,198334,cohort_50,Other bacterial intestinal infections,1.1
+45591048,E53,Deficiency of other B group vitamins,432580,cohort_17,Deficiency of other B group vitamins,1.9
+45591166,G31,"Other degenerative diseases of nervous system, not elsewhere classified",4007951,cohort_52,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2
+45591167,G31,"Other degenerative diseases of nervous system, not elsewhere classified",37164783,cohort_52,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2
+45591475,I63,Cerebral infarction,4108356,cohort_12,Cerebral Infarction,0.8
+45591600,K59,Other functional intestinal disorders,196151,cohort_59,Other functional intestinal disorders,1.8
+45591832,M41,Scoliosis,72418,cohort_85,Scoliosis,0.9
+45593874,S80,Superficial injury of lower leg,4052655,cohort_92,Superficial injury of lower leg,2
+45595525,Z50,Care involving use of rehabilitation procedures,4180248,cohort_9,"Care involving use of rehabilitation
+procedures",2.1
+45595532,Z60,Problems related to social environment,4235702,cohort_82,Problems related to social environment,1.8
+45595542,Z75,Problems related to medical facilities and other health care,4148887,cohort_81,"Problems related to medical facilities and
+other health care",2
+45595561,Z91,"Personal history of risk-factors, not elsewhere classified",37158897,cohort_75,"Personal history of risk-factors, not elsewhere
+classified",0.5
+45595587,A41,Other sepsis,132797,cohort_66,Other septicaemia,1.6
+45595819,E53,Deficiency of other B group vitamins,435787,cohort_17,Deficiency of other B group vitamins,1.9
+45596138,H54,Visual impairment including blindness (binocular or monocular),44806789,cohort_107,Blindness and low vision,1.9
+45596216,I63,Cerebral infarction,443454,cohort_12,Cerebral Infarction,0.8
+45596310,K26,Duodenal ulcer,4336230,cohort_23,Duodenal ulcer,1.6
+45596337,K59,Other functional intestinal disorders,201900,cohort_59,Other functional intestinal disorders,1.8
+45596571,M41,Scoliosis,4069935,cohort_85,Scoliosis,0.9
+45600331,Z50,Care involving use of rehabilitation procedures,4238738,cohort_9,"Care involving use of rehabilitation
+procedures",2.1
+45600396,A04,Other bacterial intestinal infections,46273592,cohort_50,Other bacterial intestinal infections,1.1
+45600628,E05,Thyrotoxicosis [hyperthyroidism],138717,cohort_96,Thyrotoxicosis [hyperthyroidism],0.9
+45600629,E05,Thyrotoxicosis [hyperthyroidism],135778,cohort_96,Thyrotoxicosis [hyperthyroidism],0.9
+45600776,G31,"Other degenerative diseases of nervous system, not elsewhere classified",376337,cohort_52,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2
+45600776,G31,"Other degenerative diseases of nervous system, not elsewhere classified",4179873,cohort_52,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2
+45600791,G45,Transient cerebral ischaemic attacks and related syndromes,4338523,cohort_97,"Transient cerebral ischaemic attacks and
+related syndromes",1.2
+45601123,J18,"Pneumonia, organism unspecified",255848,cohort_76,"Pneumonia, organism unspecified",1.1
+45601159,K26,Duodenal ulcer,4027729,cohort_23,Duodenal ulcer,1.6
+45601160,K26,Duodenal ulcer,4289830,cohort_23,Duodenal ulcer,1.6
+45601442,M41,Scoliosis,4067872,cohort_85,Scoliosis,0.9
+45605146,Z75,Problems related to medical facilities and other health care,4145781,cohort_81,"Problems related to medical facilities and
+other health care",2
+45605173,Z91,"Personal history of risk-factors, not elsewhere classified",1340204,cohort_75,"Personal history of risk-factors, not elsewhere
+classified",0.5
+45605186,A04,Other bacterial intestinal infections,193402,cohort_50,Other bacterial intestinal infections,1.1
+45605202,A41,Other sepsis,40487059,cohort_66,Other septicaemia,1.6
+45605443,F01,Vascular dementia,379778,cohort_106,Vascular dementia,2
+45605715,H54,Visual impairment including blindness (binocular or monocular),4023310,cohort_107,Blindness and low vision,1.9
+45605808,I63,Cerebral infarction,443454,cohort_12,Cerebral Infarction,0.8
+45605810,I63,Cerebral infarction,443454,cohort_12,Cerebral Infarction,0.8
+45605883,J18,"Pneumonia, organism unspecified",255848,cohort_76,"Pneumonia, organism unspecified",1.1
+45605926,K26,Duodenal ulcer,4138962,cohort_23,Duodenal ulcer,1.6
+45755415,H54,Visual impairment including blindness (binocular or monocular),45757571,cohort_107,Blindness and low vision,1.9
+710667,R00,Abnormalities of heart beat,4145848,cohort_3,Abnormalities of heart beat,0.7
+710699,Z22,Carrier of infectious disease,4003404,cohort_10,Carrier of infectious disease,1.7
+1529218,J96,"Respiratory failure, not elsewhere classified",46271075,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+1529219,J96,"Respiratory failure, not elsewhere classified",46273719,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+1529220,J96,"Respiratory failure, not elsewhere classified",319049,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+1529221,J96,"Respiratory failure, not elsewhere classified",4177862,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+1529222,J96,"Respiratory failure, not elsewhere classified",4140438,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+1529223,J96,"Respiratory failure, not elsewhere classified",314971,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+1529224,J96,"Respiratory failure, not elsewhere classified",37395564,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+1529225,J96,"Respiratory failure, not elsewhere classified",46271074,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+1529226,J96,"Respiratory failure, not elsewhere classified",4256228,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+1529272,S72,Fracture of femur,434500,cohort_31,Fracture of femur,1.4
+1529328,S72,Fracture of femur,436248,cohort_31,Fracture of femur,1.4
+42617036,M19,Other arthrosis,73840,cohort_49,Other arthrosis,1.5
+42617037,M19,Other arthrosis,4197477,cohort_49,Other arthrosis,1.5
+42617038,M19,Other arthrosis,4197476,cohort_49,Other arthrosis,1.5
+42617039,M19,Other arthrosis,75036,cohort_49,Other arthrosis,1.5
+42617040,M19,Other arthrosis,444206,cohort_49,Other arthrosis,1.5
+42617041,M19,Other arthrosis,72986,cohort_49,Other arthrosis,1.5
+42617041,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42617042,M19,Other arthrosis,78505,cohort_49,Other arthrosis,1.5
+42617043,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42617044,M19,Other arthrosis,72993,cohort_49,Other arthrosis,1.5
+42617045,M19,Other arthrosis,75897,cohort_49,Other arthrosis,1.5
+42617045,M19,Other arthrosis,44783205,cohort_49,Other arthrosis,1.5
+42617046,M19,Other arthrosis,40484571,cohort_49,Other arthrosis,1.5
+42617046,M19,Other arthrosis,44783205,cohort_49,Other arthrosis,1.5
+42617047,M19,Other arthrosis,76191,cohort_49,Other arthrosis,1.5
+42617047,M19,Other arthrosis,44783205,cohort_49,Other arthrosis,1.5
+42617048,M19,Other arthrosis,136779,cohort_49,Other arthrosis,1.5
+42617048,M19,Other arthrosis,44783205,cohort_49,Other arthrosis,1.5
+42617049,M19,Other arthrosis,44783205,cohort_49,Other arthrosis,1.5
+42617049,M19,Other arthrosis,79904,cohort_49,Other arthrosis,1.5
+42617050,M19,Other arthrosis,44783205,cohort_49,Other arthrosis,1.5
+42617050,M19,Other arthrosis,444206,cohort_49,Other arthrosis,1.5
+42617051,M19,Other arthrosis,72986,cohort_49,Other arthrosis,1.5
+42617051,M19,Other arthrosis,44783205,cohort_49,Other arthrosis,1.5
+42617052,M19,Other arthrosis,44783205,cohort_49,Other arthrosis,1.5
+42617052,M19,Other arthrosis,40482662,cohort_49,Other arthrosis,1.5
+42617053,M19,Other arthrosis,44783205,cohort_49,Other arthrosis,1.5
+42617054,M19,Other arthrosis,44783205,cohort_49,Other arthrosis,1.5
+42617055,M19,Other arthrosis,4116450,cohort_49,Other arthrosis,1.5
+42617056,M19,Other arthrosis,76191,cohort_49,Other arthrosis,1.5
+42617056,M19,Other arthrosis,80494,cohort_49,Other arthrosis,1.5
+42617057,M19,Other arthrosis,80494,cohort_49,Other arthrosis,1.5
+42617057,M19,Other arthrosis,136779,cohort_49,Other arthrosis,1.5
+42617058,M19,Other arthrosis,79904,cohort_49,Other arthrosis,1.5
+42617059,M19,Other arthrosis,80494,cohort_49,Other arthrosis,1.5
+42617059,M19,Other arthrosis,444206,cohort_49,Other arthrosis,1.5
+42617060,M19,Other arthrosis,72986,cohort_49,Other arthrosis,1.5
+42617060,M19,Other arthrosis,80494,cohort_49,Other arthrosis,1.5
+42617061,M19,Other arthrosis,80494,cohort_49,Other arthrosis,1.5
+42617061,M19,Other arthrosis,40482662,cohort_49,Other arthrosis,1.5
+42617062,M19,Other arthrosis,80494,cohort_49,Other arthrosis,1.5
+42617063,M19,Other arthrosis,40481943,cohort_49,Other arthrosis,1.5
+42617064,M19,Other arthrosis,75897,cohort_49,Other arthrosis,1.5
+42617065,M19,Other arthrosis,40484571,cohort_49,Other arthrosis,1.5
+42617066,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42617066,M19,Other arthrosis,4042503,cohort_49,Other arthrosis,1.5
+42617067,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42617067,M19,Other arthrosis,4042503,cohort_49,Other arthrosis,1.5
+42617068,M19,Other arthrosis,443582,cohort_49,Other arthrosis,1.5
+42617069,M19,Other arthrosis,444206,cohort_49,Other arthrosis,1.5
+42617070,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42617070,M19,Other arthrosis,193460,cohort_49,Other arthrosis,1.5
+42617071,M19,Other arthrosis,40482662,cohort_49,Other arthrosis,1.5
+42617072,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42617073,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42617074,M19,Other arthrosis,75897,cohort_49,Other arthrosis,1.5
+42617075,M19,Other arthrosis,40484571,cohort_49,Other arthrosis,1.5
+42617076,M19,Other arthrosis,4042503,cohort_49,Other arthrosis,1.5
+42617076,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42617077,M19,Other arthrosis,4042503,cohort_49,Other arthrosis,1.5
+42617077,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42617078,M19,Other arthrosis,444206,cohort_49,Other arthrosis,1.5
+42617079,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42617079,M19,Other arthrosis,193460,cohort_49,Other arthrosis,1.5
+42617080,M19,Other arthrosis,40482662,cohort_49,Other arthrosis,1.5
+42617081,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42617082,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+42618431,M79,"Other soft tissue disorders, not elsewhere classified",138845,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618432,M79,"Other soft tissue disorders, not elsewhere classified",138845,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618432,M79,"Other soft tissue disorders, not elsewhere classified",77630,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618433,M79,"Other soft tissue disorders, not elsewhere classified",138845,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618433,M79,"Other soft tissue disorders, not elsewhere classified",76191,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618435,M79,"Other soft tissue disorders, not elsewhere classified",4002820,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618436,M79,"Other soft tissue disorders, not elsewhere classified",138845,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618437,M79,"Other soft tissue disorders, not elsewhere classified",138845,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618437,M79,"Other soft tissue disorders, not elsewhere classified",72986,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618438,M79,"Other soft tissue disorders, not elsewhere classified",44782620,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618438,M79,"Other soft tissue disorders, not elsewhere classified",138845,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618439,M79,"Other soft tissue disorders, not elsewhere classified",138845,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618440,M79,"Other soft tissue disorders, not elsewhere classified",138845,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618441,M79,"Other soft tissue disorders, not elsewhere classified",37167234,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618442,M79,"Other soft tissue disorders, not elsewhere classified",37167227,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618443,M79,"Other soft tissue disorders, not elsewhere classified",37167237,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618444,M79,"Other soft tissue disorders, not elsewhere classified",37167229,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618446,M79,"Other soft tissue disorders, not elsewhere classified",37167244,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618447,M79,"Other soft tissue disorders, not elsewhere classified",37167238,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618448,M79,"Other soft tissue disorders, not elsewhere classified",37167242,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618449,M79,"Other soft tissue disorders, not elsewhere classified",442752,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618450,M79,"Other soft tissue disorders, not elsewhere classified",442752,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618452,M79,"Other soft tissue disorders, not elsewhere classified",77630,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618452,M79,"Other soft tissue disorders, not elsewhere classified",373852,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618453,M79,"Other soft tissue disorders, not elsewhere classified",373852,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618453,M79,"Other soft tissue disorders, not elsewhere classified",76191,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618454,M79,"Other soft tissue disorders, not elsewhere classified",4117779,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618454,M79,"Other soft tissue disorders, not elsewhere classified",136779,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618457,M79,"Other soft tissue disorders, not elsewhere classified",373852,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618457,M79,"Other soft tissue disorders, not elsewhere classified",72986,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618458,M79,"Other soft tissue disorders, not elsewhere classified",44782620,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618458,M79,"Other soft tissue disorders, not elsewhere classified",373852,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618459,M79,"Other soft tissue disorders, not elsewhere classified",373852,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618460,M79,"Other soft tissue disorders, not elsewhere classified",373852,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618462,M79,"Other soft tissue disorders, not elsewhere classified",77630,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618462,M79,"Other soft tissue disorders, not elsewhere classified",432719,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618463,M79,"Other soft tissue disorders, not elsewhere classified",76191,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618463,M79,"Other soft tissue disorders, not elsewhere classified",432719,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618465,M79,"Other soft tissue disorders, not elsewhere classified",77635,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618465,M79,"Other soft tissue disorders, not elsewhere classified",432719,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618466,M79,"Other soft tissue disorders, not elsewhere classified",432719,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618467,M79,"Other soft tissue disorders, not elsewhere classified",432719,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618467,M79,"Other soft tissue disorders, not elsewhere classified",72986,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618468,M79,"Other soft tissue disorders, not elsewhere classified",432719,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618468,M79,"Other soft tissue disorders, not elsewhere classified",44782620,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618469,M79,"Other soft tissue disorders, not elsewhere classified",432719,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618470,M79,"Other soft tissue disorders, not elsewhere classified",432719,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618471,M79,"Other soft tissue disorders, not elsewhere classified",37168870,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618472,M79,"Other soft tissue disorders, not elsewhere classified",378523,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618472,M79,"Other soft tissue disorders, not elsewhere classified",77630,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618475,M79,"Other soft tissue disorders, not elsewhere classified",77635,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618475,M79,"Other soft tissue disorders, not elsewhere classified",378523,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618476,M79,"Other soft tissue disorders, not elsewhere classified",378523,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618479,M79,"Other soft tissue disorders, not elsewhere classified",378523,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618481,M79,"Other soft tissue disorders, not elsewhere classified",138525,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618482,M79,"Other soft tissue disorders, not elsewhere classified",4166666,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618483,M79,"Other soft tissue disorders, not elsewhere classified",36674979,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618484,M79,"Other soft tissue disorders, not elsewhere classified",40481180,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618485,M79,"Other soft tissue disorders, not elsewhere classified",4009890,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618486,M79,"Other soft tissue disorders, not elsewhere classified",4302739,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618487,M79,"Other soft tissue disorders, not elsewhere classified",4024561,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618488,M79,"Other soft tissue disorders, not elsewhere classified",4024561,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618490,M79,"Other soft tissue disorders, not elsewhere classified",138525,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618491,M79,"Other soft tissue disorders, not elsewhere classified",40405599,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618493,M79,"Other soft tissue disorders, not elsewhere classified",40405599,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618493,M79,"Other soft tissue disorders, not elsewhere classified",76191,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618494,M79,"Other soft tissue disorders, not elsewhere classified",136779,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618494,M79,"Other soft tissue disorders, not elsewhere classified",40405599,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618497,M79,"Other soft tissue disorders, not elsewhere classified",40405599,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618497,M79,"Other soft tissue disorders, not elsewhere classified",72986,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618498,M79,"Other soft tissue disorders, not elsewhere classified",44782620,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618498,M79,"Other soft tissue disorders, not elsewhere classified",40405599,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618499,M79,"Other soft tissue disorders, not elsewhere classified",40405599,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618502,M79,"Other soft tissue disorders, not elsewhere classified",4090616,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618503,M79,"Other soft tissue disorders, not elsewhere classified",4090616,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618504,M79,"Other soft tissue disorders, not elsewhere classified",4090616,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618505,M79,"Other soft tissue disorders, not elsewhere classified",4090616,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618506,M79,"Other soft tissue disorders, not elsewhere classified",376208,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618507,M79,"Other soft tissue disorders, not elsewhere classified",4093228,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618508,M79,"Other soft tissue disorders, not elsewhere classified",4093228,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618509,M79,"Other soft tissue disorders, not elsewhere classified",376208,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618510,M79,"Other soft tissue disorders, not elsewhere classified",376208,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618511,M79,"Other soft tissue disorders, not elsewhere classified",376208,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618512,M79,"Other soft tissue disorders, not elsewhere classified",4090616,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618513,M79,"Other soft tissue disorders, not elsewhere classified",4090616,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618514,M79,"Other soft tissue disorders, not elsewhere classified",4090616,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618515,M79,"Other soft tissue disorders, not elsewhere classified",4090616,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618516,M79,"Other soft tissue disorders, not elsewhere classified",376208,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618517,M79,"Other soft tissue disorders, not elsewhere classified",4093228,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618519,M79,"Other soft tissue disorders, not elsewhere classified",376208,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618520,M79,"Other soft tissue disorders, not elsewhere classified",376208,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+42618521,M80,Osteoporosis with pathological fracture,1245005,cohort_44,Osteoporosis with pathological fracture,0.8
+42618522,M80,Osteoporosis with pathological fracture,1245005,cohort_44,Osteoporosis with pathological fracture,0.8
+42618522,M80,Osteoporosis with pathological fracture,4117701,cohort_44,Osteoporosis with pathological fracture,0.8
+42618523,M80,Osteoporosis with pathological fracture,1245005,cohort_44,Osteoporosis with pathological fracture,0.8
+42618523,M80,Osteoporosis with pathological fracture,436206,cohort_44,Osteoporosis with pathological fracture,0.8
+42618524,M80,Osteoporosis with pathological fracture,1245005,cohort_44,Osteoporosis with pathological fracture,0.8
+42618524,M80,Osteoporosis with pathological fracture,440511,cohort_44,Osteoporosis with pathological fracture,0.8
+42618525,M80,Osteoporosis with pathological fracture,4118017,cohort_44,Osteoporosis with pathological fracture,0.8
+42618525,M80,Osteoporosis with pathological fracture,1245005,cohort_44,Osteoporosis with pathological fracture,0.8
+42618526,M80,Osteoporosis with pathological fracture,1245005,cohort_44,Osteoporosis with pathological fracture,0.8
+42618527,M80,Osteoporosis with pathological fracture,440812,cohort_44,Osteoporosis with pathological fracture,0.8
+42618527,M80,Osteoporosis with pathological fracture,1245005,cohort_44,Osteoporosis with pathological fracture,0.8
+42618528,M80,Osteoporosis with pathological fracture,1245005,cohort_44,Osteoporosis with pathological fracture,0.8
+42618528,M80,Osteoporosis with pathological fracture,4115176,cohort_44,Osteoporosis with pathological fracture,0.8
+42618529,M80,Osteoporosis with pathological fracture,1245005,cohort_44,Osteoporosis with pathological fracture,0.8
+42618530,M80,Osteoporosis with pathological fracture,1245005,cohort_44,Osteoporosis with pathological fracture,0.8
+42618531,M80,Osteoporosis with pathological fracture,4003482,cohort_44,Osteoporosis with pathological fracture,0.8
+42618532,M80,Osteoporosis with pathological fracture,4003482,cohort_44,Osteoporosis with pathological fracture,0.8
+42618532,M80,Osteoporosis with pathological fracture,4117701,cohort_44,Osteoporosis with pathological fracture,0.8
+42618533,M80,Osteoporosis with pathological fracture,4003482,cohort_44,Osteoporosis with pathological fracture,0.8
+42618533,M80,Osteoporosis with pathological fracture,436206,cohort_44,Osteoporosis with pathological fracture,0.8
+42618534,M80,Osteoporosis with pathological fracture,4003482,cohort_44,Osteoporosis with pathological fracture,0.8
+42618534,M80,Osteoporosis with pathological fracture,440511,cohort_44,Osteoporosis with pathological fracture,0.8
+42618535,M80,Osteoporosis with pathological fracture,4118017,cohort_44,Osteoporosis with pathological fracture,0.8
+42618535,M80,Osteoporosis with pathological fracture,4003482,cohort_44,Osteoporosis with pathological fracture,0.8
+42618536,M80,Osteoporosis with pathological fracture,4003482,cohort_44,Osteoporosis with pathological fracture,0.8
+42618537,M80,Osteoporosis with pathological fracture,4003482,cohort_44,Osteoporosis with pathological fracture,0.8
+42618537,M80,Osteoporosis with pathological fracture,440812,cohort_44,Osteoporosis with pathological fracture,0.8
+42618538,M80,Osteoporosis with pathological fracture,4003482,cohort_44,Osteoporosis with pathological fracture,0.8
+42618538,M80,Osteoporosis with pathological fracture,4115176,cohort_44,Osteoporosis with pathological fracture,0.8
+42618539,M80,Osteoporosis with pathological fracture,4003482,cohort_44,Osteoporosis with pathological fracture,0.8
+42618540,M80,Osteoporosis with pathological fracture,4003482,cohort_44,Osteoporosis with pathological fracture,0.8
+42618541,M80,Osteoporosis with pathological fracture,1245006,cohort_44,Osteoporosis with pathological fracture,0.8
+42618542,M80,Osteoporosis with pathological fracture,4117701,cohort_44,Osteoporosis with pathological fracture,0.8
+42618542,M80,Osteoporosis with pathological fracture,1245006,cohort_44,Osteoporosis with pathological fracture,0.8
+42618543,M80,Osteoporosis with pathological fracture,436206,cohort_44,Osteoporosis with pathological fracture,0.8
+42618543,M80,Osteoporosis with pathological fracture,1245006,cohort_44,Osteoporosis with pathological fracture,0.8
+42618544,M80,Osteoporosis with pathological fracture,1245006,cohort_44,Osteoporosis with pathological fracture,0.8
+42618544,M80,Osteoporosis with pathological fracture,440511,cohort_44,Osteoporosis with pathological fracture,0.8
+42618545,M80,Osteoporosis with pathological fracture,4118017,cohort_44,Osteoporosis with pathological fracture,0.8
+42618545,M80,Osteoporosis with pathological fracture,1245006,cohort_44,Osteoporosis with pathological fracture,0.8
+42618546,M80,Osteoporosis with pathological fracture,1245006,cohort_44,Osteoporosis with pathological fracture,0.8
+42618547,M80,Osteoporosis with pathological fracture,1245006,cohort_44,Osteoporosis with pathological fracture,0.8
+42618547,M80,Osteoporosis with pathological fracture,4115176,cohort_44,Osteoporosis with pathological fracture,0.8
+42618548,M80,Osteoporosis with pathological fracture,1245006,cohort_44,Osteoporosis with pathological fracture,0.8
+42618549,M80,Osteoporosis with pathological fracture,1245006,cohort_44,Osteoporosis with pathological fracture,0.8
+42618550,M80,Osteoporosis with pathological fracture,4004624,cohort_44,Osteoporosis with pathological fracture,0.8
+42618551,M80,Osteoporosis with pathological fracture,4004624,cohort_44,Osteoporosis with pathological fracture,0.8
+42618551,M80,Osteoporosis with pathological fracture,4117701,cohort_44,Osteoporosis with pathological fracture,0.8
+42618552,M80,Osteoporosis with pathological fracture,4004624,cohort_44,Osteoporosis with pathological fracture,0.8
+42618552,M80,Osteoporosis with pathological fracture,436206,cohort_44,Osteoporosis with pathological fracture,0.8
+42618553,M80,Osteoporosis with pathological fracture,440511,cohort_44,Osteoporosis with pathological fracture,0.8
+42618553,M80,Osteoporosis with pathological fracture,4004624,cohort_44,Osteoporosis with pathological fracture,0.8
+42618554,M80,Osteoporosis with pathological fracture,4004624,cohort_44,Osteoporosis with pathological fracture,0.8
+42618554,M80,Osteoporosis with pathological fracture,4118017,cohort_44,Osteoporosis with pathological fracture,0.8
+42618555,M80,Osteoporosis with pathological fracture,4004624,cohort_44,Osteoporosis with pathological fracture,0.8
+42618556,M80,Osteoporosis with pathological fracture,440812,cohort_44,Osteoporosis with pathological fracture,0.8
+42618556,M80,Osteoporosis with pathological fracture,4004624,cohort_44,Osteoporosis with pathological fracture,0.8
+42618557,M80,Osteoporosis with pathological fracture,4004624,cohort_44,Osteoporosis with pathological fracture,0.8
+42618557,M80,Osteoporosis with pathological fracture,4115176,cohort_44,Osteoporosis with pathological fracture,0.8
+42618558,M80,Osteoporosis with pathological fracture,4004624,cohort_44,Osteoporosis with pathological fracture,0.8
+42618559,M80,Osteoporosis with pathological fracture,4004624,cohort_44,Osteoporosis with pathological fracture,0.8
+42618560,M80,Osteoporosis with pathological fracture,4067765,cohort_44,Osteoporosis with pathological fracture,0.8
+42618561,M80,Osteoporosis with pathological fracture,4067765,cohort_44,Osteoporosis with pathological fracture,0.8
+42618561,M80,Osteoporosis with pathological fracture,4117701,cohort_44,Osteoporosis with pathological fracture,0.8
+42618562,M80,Osteoporosis with pathological fracture,4067765,cohort_44,Osteoporosis with pathological fracture,0.8
+42618562,M80,Osteoporosis with pathological fracture,436206,cohort_44,Osteoporosis with pathological fracture,0.8
+42618563,M80,Osteoporosis with pathological fracture,440511,cohort_44,Osteoporosis with pathological fracture,0.8
+42618563,M80,Osteoporosis with pathological fracture,4067765,cohort_44,Osteoporosis with pathological fracture,0.8
+42618564,M80,Osteoporosis with pathological fracture,4067765,cohort_44,Osteoporosis with pathological fracture,0.8
+42618564,M80,Osteoporosis with pathological fracture,4118017,cohort_44,Osteoporosis with pathological fracture,0.8
+42618565,M80,Osteoporosis with pathological fracture,4067765,cohort_44,Osteoporosis with pathological fracture,0.8
+42618566,M80,Osteoporosis with pathological fracture,4067765,cohort_44,Osteoporosis with pathological fracture,0.8
+42618566,M80,Osteoporosis with pathological fracture,440812,cohort_44,Osteoporosis with pathological fracture,0.8
+42618567,M80,Osteoporosis with pathological fracture,4067765,cohort_44,Osteoporosis with pathological fracture,0.8
+42618567,M80,Osteoporosis with pathological fracture,4115176,cohort_44,Osteoporosis with pathological fracture,0.8
+42618568,M80,Osteoporosis with pathological fracture,4067765,cohort_44,Osteoporosis with pathological fracture,0.8
+42618569,M80,Osteoporosis with pathological fracture,4067765,cohort_44,Osteoporosis with pathological fracture,0.8
+42618570,M80,Osteoporosis with pathological fracture,1245002,cohort_44,Osteoporosis with pathological fracture,0.8
+42618571,M80,Osteoporosis with pathological fracture,1245002,cohort_44,Osteoporosis with pathological fracture,0.8
+42618571,M80,Osteoporosis with pathological fracture,4117701,cohort_44,Osteoporosis with pathological fracture,0.8
+42618572,M80,Osteoporosis with pathological fracture,1245002,cohort_44,Osteoporosis with pathological fracture,0.8
+42618572,M80,Osteoporosis with pathological fracture,436206,cohort_44,Osteoporosis with pathological fracture,0.8
+42618573,M80,Osteoporosis with pathological fracture,440511,cohort_44,Osteoporosis with pathological fracture,0.8
+42618573,M80,Osteoporosis with pathological fracture,1245002,cohort_44,Osteoporosis with pathological fracture,0.8
+42618574,M80,Osteoporosis with pathological fracture,1245002,cohort_44,Osteoporosis with pathological fracture,0.8
+42618574,M80,Osteoporosis with pathological fracture,4118017,cohort_44,Osteoporosis with pathological fracture,0.8
+42618575,M80,Osteoporosis with pathological fracture,1245002,cohort_44,Osteoporosis with pathological fracture,0.8
+42618576,M80,Osteoporosis with pathological fracture,1245002,cohort_44,Osteoporosis with pathological fracture,0.8
+42618576,M80,Osteoporosis with pathological fracture,440812,cohort_44,Osteoporosis with pathological fracture,0.8
+42618577,M80,Osteoporosis with pathological fracture,1245002,cohort_44,Osteoporosis with pathological fracture,0.8
+42618577,M80,Osteoporosis with pathological fracture,4115176,cohort_44,Osteoporosis with pathological fracture,0.8
+42618578,M80,Osteoporosis with pathological fracture,1245002,cohort_44,Osteoporosis with pathological fracture,0.8
+42618579,M80,Osteoporosis with pathological fracture,1245002,cohort_44,Osteoporosis with pathological fracture,0.8
+42618580,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618581,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618581,M80,Osteoporosis with pathological fracture,4117701,cohort_44,Osteoporosis with pathological fracture,0.8
+42618582,M80,Osteoporosis with pathological fracture,45767042,cohort_44,Osteoporosis with pathological fracture,0.8
+42618583,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618583,M80,Osteoporosis with pathological fracture,440511,cohort_44,Osteoporosis with pathological fracture,0.8
+42618584,M80,Osteoporosis with pathological fracture,45767040,cohort_44,Osteoporosis with pathological fracture,0.8
+42618585,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618586,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618586,M80,Osteoporosis with pathological fracture,440812,cohort_44,Osteoporosis with pathological fracture,0.8
+42618587,M80,Osteoporosis with pathological fracture,4115176,cohort_44,Osteoporosis with pathological fracture,0.8
+42618587,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618588,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618589,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618590,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618591,M80,Osteoporosis with pathological fracture,4117701,cohort_44,Osteoporosis with pathological fracture,0.8
+42618591,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618592,M80,Osteoporosis with pathological fracture,45767042,cohort_44,Osteoporosis with pathological fracture,0.8
+42618593,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618593,M80,Osteoporosis with pathological fracture,440511,cohort_44,Osteoporosis with pathological fracture,0.8
+42618594,M80,Osteoporosis with pathological fracture,45767040,cohort_44,Osteoporosis with pathological fracture,0.8
+42618595,M80,Osteoporosis with pathological fracture,440812,cohort_44,Osteoporosis with pathological fracture,0.8
+42618595,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618596,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618596,M80,Osteoporosis with pathological fracture,4115176,cohort_44,Osteoporosis with pathological fracture,0.8
+42618597,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618598,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42618599,M81,Osteoporosis without pathological fracture,4010333,cohort_45,Osteoporosis without pathological fracture,1.4
+42618600,M81,Osteoporosis without pathological fracture,77630,cohort_45,Osteoporosis without pathological fracture,1.4
+42618600,M81,Osteoporosis without pathological fracture,4010333,cohort_45,Osteoporosis without pathological fracture,1.4
+42618601,M81,Osteoporosis without pathological fracture,4010333,cohort_45,Osteoporosis without pathological fracture,1.4
+42618601,M81,Osteoporosis without pathological fracture,76191,cohort_45,Osteoporosis without pathological fracture,1.4
+42618602,M81,Osteoporosis without pathological fracture,4010333,cohort_45,Osteoporosis without pathological fracture,1.4
+42618602,M81,Osteoporosis without pathological fracture,136779,cohort_45,Osteoporosis without pathological fracture,1.4
+42618603,M81,Osteoporosis without pathological fracture,77635,cohort_45,Osteoporosis without pathological fracture,1.4
+42618603,M81,Osteoporosis without pathological fracture,4010333,cohort_45,Osteoporosis without pathological fracture,1.4
+42618604,M81,Osteoporosis without pathological fracture,4010333,cohort_45,Osteoporosis without pathological fracture,1.4
+42618605,M81,Osteoporosis without pathological fracture,4010333,cohort_45,Osteoporosis without pathological fracture,1.4
+42618605,M81,Osteoporosis without pathological fracture,72986,cohort_45,Osteoporosis without pathological fracture,1.4
+42618606,M81,Osteoporosis without pathological fracture,44782620,cohort_45,Osteoporosis without pathological fracture,1.4
+42618606,M81,Osteoporosis without pathological fracture,4010333,cohort_45,Osteoporosis without pathological fracture,1.4
+42618607,M81,Osteoporosis without pathological fracture,4010333,cohort_45,Osteoporosis without pathological fracture,1.4
+42618608,M81,Osteoporosis without pathological fracture,4010333,cohort_45,Osteoporosis without pathological fracture,1.4
+42618609,M81,Osteoporosis without pathological fracture,4002133,cohort_45,Osteoporosis without pathological fracture,1.4
+42618610,M81,Osteoporosis without pathological fracture,4002133,cohort_45,Osteoporosis without pathological fracture,1.4
+42618610,M81,Osteoporosis without pathological fracture,77630,cohort_45,Osteoporosis without pathological fracture,1.4
+42618611,M81,Osteoporosis without pathological fracture,76191,cohort_45,Osteoporosis without pathological fracture,1.4
+42618611,M81,Osteoporosis without pathological fracture,4002133,cohort_45,Osteoporosis without pathological fracture,1.4
+42618612,M81,Osteoporosis without pathological fracture,4002133,cohort_45,Osteoporosis without pathological fracture,1.4
+42618612,M81,Osteoporosis without pathological fracture,136779,cohort_45,Osteoporosis without pathological fracture,1.4
+42618613,M81,Osteoporosis without pathological fracture,77635,cohort_45,Osteoporosis without pathological fracture,1.4
+42618613,M81,Osteoporosis without pathological fracture,4002133,cohort_45,Osteoporosis without pathological fracture,1.4
+42618614,M81,Osteoporosis without pathological fracture,4002133,cohort_45,Osteoporosis without pathological fracture,1.4
+42618615,M81,Osteoporosis without pathological fracture,4002133,cohort_45,Osteoporosis without pathological fracture,1.4
+42618615,M81,Osteoporosis without pathological fracture,72986,cohort_45,Osteoporosis without pathological fracture,1.4
+42618616,M81,Osteoporosis without pathological fracture,4002133,cohort_45,Osteoporosis without pathological fracture,1.4
+42618616,M81,Osteoporosis without pathological fracture,44782620,cohort_45,Osteoporosis without pathological fracture,1.4
+42618617,M81,Osteoporosis without pathological fracture,4002133,cohort_45,Osteoporosis without pathological fracture,1.4
+42618618,M81,Osteoporosis without pathological fracture,4002133,cohort_45,Osteoporosis without pathological fracture,1.4
+42618619,M81,Osteoporosis without pathological fracture,77365,cohort_45,Osteoporosis without pathological fracture,1.4
+42618620,M81,Osteoporosis without pathological fracture,77365,cohort_45,Osteoporosis without pathological fracture,1.4
+42618620,M81,Osteoporosis without pathological fracture,76191,cohort_45,Osteoporosis without pathological fracture,1.4
+42618621,M81,Osteoporosis without pathological fracture,77365,cohort_45,Osteoporosis without pathological fracture,1.4
+42618621,M81,Osteoporosis without pathological fracture,136779,cohort_45,Osteoporosis without pathological fracture,1.4
+42618622,M81,Osteoporosis without pathological fracture,77635,cohort_45,Osteoporosis without pathological fracture,1.4
+42618622,M81,Osteoporosis without pathological fracture,77365,cohort_45,Osteoporosis without pathological fracture,1.4
+42618623,M81,Osteoporosis without pathological fracture,77365,cohort_45,Osteoporosis without pathological fracture,1.4
+42618624,M81,Osteoporosis without pathological fracture,72986,cohort_45,Osteoporosis without pathological fracture,1.4
+42618624,M81,Osteoporosis without pathological fracture,77365,cohort_45,Osteoporosis without pathological fracture,1.4
+42618625,M81,Osteoporosis without pathological fracture,77365,cohort_45,Osteoporosis without pathological fracture,1.4
+42618625,M81,Osteoporosis without pathological fracture,44782620,cohort_45,Osteoporosis without pathological fracture,1.4
+42618626,M81,Osteoporosis without pathological fracture,77365,cohort_45,Osteoporosis without pathological fracture,1.4
+42618627,M81,Osteoporosis without pathological fracture,77365,cohort_45,Osteoporosis without pathological fracture,1.4
+42618628,M81,Osteoporosis without pathological fracture,4003479,cohort_45,Osteoporosis without pathological fracture,1.4
+42618629,M81,Osteoporosis without pathological fracture,4003479,cohort_45,Osteoporosis without pathological fracture,1.4
+42618629,M81,Osteoporosis without pathological fracture,77630,cohort_45,Osteoporosis without pathological fracture,1.4
+42618630,M81,Osteoporosis without pathological fracture,4003479,cohort_45,Osteoporosis without pathological fracture,1.4
+42618630,M81,Osteoporosis without pathological fracture,76191,cohort_45,Osteoporosis without pathological fracture,1.4
+42618631,M81,Osteoporosis without pathological fracture,136779,cohort_45,Osteoporosis without pathological fracture,1.4
+42618631,M81,Osteoporosis without pathological fracture,4003479,cohort_45,Osteoporosis without pathological fracture,1.4
+42618632,M81,Osteoporosis without pathological fracture,4003479,cohort_45,Osteoporosis without pathological fracture,1.4
+42618632,M81,Osteoporosis without pathological fracture,77635,cohort_45,Osteoporosis without pathological fracture,1.4
+42618633,M81,Osteoporosis without pathological fracture,4003479,cohort_45,Osteoporosis without pathological fracture,1.4
+42618634,M81,Osteoporosis without pathological fracture,4003479,cohort_45,Osteoporosis without pathological fracture,1.4
+42618634,M81,Osteoporosis without pathological fracture,72986,cohort_45,Osteoporosis without pathological fracture,1.4
+42618635,M81,Osteoporosis without pathological fracture,44782620,cohort_45,Osteoporosis without pathological fracture,1.4
+42618635,M81,Osteoporosis without pathological fracture,4003479,cohort_45,Osteoporosis without pathological fracture,1.4
+42618636,M81,Osteoporosis without pathological fracture,4003479,cohort_45,Osteoporosis without pathological fracture,1.4
+42618637,M81,Osteoporosis without pathological fracture,4003479,cohort_45,Osteoporosis without pathological fracture,1.4
+42618638,M81,Osteoporosis without pathological fracture,4033089,cohort_45,Osteoporosis without pathological fracture,1.4
+42618639,M81,Osteoporosis without pathological fracture,77630,cohort_45,Osteoporosis without pathological fracture,1.4
+42618639,M81,Osteoporosis without pathological fracture,4033089,cohort_45,Osteoporosis without pathological fracture,1.4
+42618640,M81,Osteoporosis without pathological fracture,76191,cohort_45,Osteoporosis without pathological fracture,1.4
+42618640,M81,Osteoporosis without pathological fracture,4033089,cohort_45,Osteoporosis without pathological fracture,1.4
+42618641,M81,Osteoporosis without pathological fracture,4033089,cohort_45,Osteoporosis without pathological fracture,1.4
+42618641,M81,Osteoporosis without pathological fracture,136779,cohort_45,Osteoporosis without pathological fracture,1.4
+42618642,M81,Osteoporosis without pathological fracture,4033089,cohort_45,Osteoporosis without pathological fracture,1.4
+42618642,M81,Osteoporosis without pathological fracture,77635,cohort_45,Osteoporosis without pathological fracture,1.4
+42618643,M81,Osteoporosis without pathological fracture,4033089,cohort_45,Osteoporosis without pathological fracture,1.4
+42618644,M81,Osteoporosis without pathological fracture,4033089,cohort_45,Osteoporosis without pathological fracture,1.4
+42618644,M81,Osteoporosis without pathological fracture,72986,cohort_45,Osteoporosis without pathological fracture,1.4
+42618645,M81,Osteoporosis without pathological fracture,44782620,cohort_45,Osteoporosis without pathological fracture,1.4
+42618645,M81,Osteoporosis without pathological fracture,4033089,cohort_45,Osteoporosis without pathological fracture,1.4
+42618646,M81,Osteoporosis without pathological fracture,4033089,cohort_45,Osteoporosis without pathological fracture,1.4
+42618647,M81,Osteoporosis without pathological fracture,4033089,cohort_45,Osteoporosis without pathological fracture,1.4
+42618648,M81,Osteoporosis without pathological fracture,81390,cohort_45,Osteoporosis without pathological fracture,1.4
+42618649,M81,Osteoporosis without pathological fracture,81390,cohort_45,Osteoporosis without pathological fracture,1.4
+42618649,M81,Osteoporosis without pathological fracture,77630,cohort_45,Osteoporosis without pathological fracture,1.4
+42618650,M81,Osteoporosis without pathological fracture,81390,cohort_45,Osteoporosis without pathological fracture,1.4
+42618650,M81,Osteoporosis without pathological fracture,76191,cohort_45,Osteoporosis without pathological fracture,1.4
+42618651,M81,Osteoporosis without pathological fracture,77635,cohort_45,Osteoporosis without pathological fracture,1.4
+42618651,M81,Osteoporosis without pathological fracture,81390,cohort_45,Osteoporosis without pathological fracture,1.4
+42618652,M81,Osteoporosis without pathological fracture,81390,cohort_45,Osteoporosis without pathological fracture,1.4
+42618653,M81,Osteoporosis without pathological fracture,72986,cohort_45,Osteoporosis without pathological fracture,1.4
+42618653,M81,Osteoporosis without pathological fracture,81390,cohort_45,Osteoporosis without pathological fracture,1.4
+42618654,M81,Osteoporosis without pathological fracture,81390,cohort_45,Osteoporosis without pathological fracture,1.4
+42618654,M81,Osteoporosis without pathological fracture,44782620,cohort_45,Osteoporosis without pathological fracture,1.4
+42618655,M81,Osteoporosis without pathological fracture,81390,cohort_45,Osteoporosis without pathological fracture,1.4
+42618656,M81,Osteoporosis without pathological fracture,81390,cohort_45,Osteoporosis without pathological fracture,1.4
+42618657,M81,Osteoporosis without pathological fracture,4004623,cohort_45,Osteoporosis without pathological fracture,1.4
+42618658,M81,Osteoporosis without pathological fracture,4004623,cohort_45,Osteoporosis without pathological fracture,1.4
+42618658,M81,Osteoporosis without pathological fracture,77630,cohort_45,Osteoporosis without pathological fracture,1.4
+42618659,M81,Osteoporosis without pathological fracture,4004623,cohort_45,Osteoporosis without pathological fracture,1.4
+42618659,M81,Osteoporosis without pathological fracture,76191,cohort_45,Osteoporosis without pathological fracture,1.4
+42618660,M81,Osteoporosis without pathological fracture,4004623,cohort_45,Osteoporosis without pathological fracture,1.4
+42618660,M81,Osteoporosis without pathological fracture,136779,cohort_45,Osteoporosis without pathological fracture,1.4
+42618661,M81,Osteoporosis without pathological fracture,77635,cohort_45,Osteoporosis without pathological fracture,1.4
+42618661,M81,Osteoporosis without pathological fracture,4004623,cohort_45,Osteoporosis without pathological fracture,1.4
+42618662,M81,Osteoporosis without pathological fracture,4004623,cohort_45,Osteoporosis without pathological fracture,1.4
+42618663,M81,Osteoporosis without pathological fracture,4004623,cohort_45,Osteoporosis without pathological fracture,1.4
+42618663,M81,Osteoporosis without pathological fracture,72986,cohort_45,Osteoporosis without pathological fracture,1.4
+42618664,M81,Osteoporosis without pathological fracture,44782620,cohort_45,Osteoporosis without pathological fracture,1.4
+42618664,M81,Osteoporosis without pathological fracture,4004623,cohort_45,Osteoporosis without pathological fracture,1.4
+42618665,M81,Osteoporosis without pathological fracture,4004623,cohort_45,Osteoporosis without pathological fracture,1.4
+42618666,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618667,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618667,M81,Osteoporosis without pathological fracture,77630,cohort_45,Osteoporosis without pathological fracture,1.4
+42618668,M81,Osteoporosis without pathological fracture,76191,cohort_45,Osteoporosis without pathological fracture,1.4
+42618668,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618669,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618669,M81,Osteoporosis without pathological fracture,136779,cohort_45,Osteoporosis without pathological fracture,1.4
+42618670,M81,Osteoporosis without pathological fracture,77635,cohort_45,Osteoporosis without pathological fracture,1.4
+42618670,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618671,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618672,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618672,M81,Osteoporosis without pathological fracture,72986,cohort_45,Osteoporosis without pathological fracture,1.4
+42618673,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618673,M81,Osteoporosis without pathological fracture,44782620,cohort_45,Osteoporosis without pathological fracture,1.4
+42618674,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618675,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618676,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618677,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618677,M81,Osteoporosis without pathological fracture,77630,cohort_45,Osteoporosis without pathological fracture,1.4
+42618678,M81,Osteoporosis without pathological fracture,76191,cohort_45,Osteoporosis without pathological fracture,1.4
+42618678,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618679,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618679,M81,Osteoporosis without pathological fracture,136779,cohort_45,Osteoporosis without pathological fracture,1.4
+42618680,M81,Osteoporosis without pathological fracture,77635,cohort_45,Osteoporosis without pathological fracture,1.4
+42618680,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618681,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618682,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618682,M81,Osteoporosis without pathological fracture,72986,cohort_45,Osteoporosis without pathological fracture,1.4
+42618683,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618683,M81,Osteoporosis without pathological fracture,44782620,cohort_45,Osteoporosis without pathological fracture,1.4
+42618684,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42618685,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+42619339,M19,Other arthrosis,443582,cohort_49,Other arthrosis,1.5
+42619382,M80,Osteoporosis with pathological fracture,440812,cohort_44,Osteoporosis with pathological fracture,0.8
+42619382,M80,Osteoporosis with pathological fracture,1245006,cohort_44,Osteoporosis with pathological fracture,0.8
+42619383,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+42619390,M81,Osteoporosis without pathological fracture,77630,cohort_45,Osteoporosis without pathological fracture,1.4
+42619390,M81,Osteoporosis without pathological fracture,77365,cohort_45,Osteoporosis without pathological fracture,1.4
+42619391,M81,Osteoporosis without pathological fracture,81390,cohort_45,Osteoporosis without pathological fracture,1.4
+42619391,M81,Osteoporosis without pathological fracture,136779,cohort_45,Osteoporosis without pathological fracture,1.4
+42619397,M81,Osteoporosis without pathological fracture,4004623,cohort_45,Osteoporosis without pathological fracture,1.4
+42619420,M19,Other arthrosis,75897,cohort_49,Other arthrosis,1.5
+42619421,M19,Other arthrosis,80494,cohort_49,Other arthrosis,1.5
+42619421,M19,Other arthrosis,40484571,cohort_49,Other arthrosis,1.5
+45533421,H91,Other hearing loss,377889,cohort_61,Other hearing loss,0.9
+45533624,K92,Other diseases of digestive system,4103703,cohort_53,Other diseases of digestive system,0.8
+45533625,K92,Other diseases of digestive system,192671,cohort_53,Other diseases of digestive system,0.8
+45533938,M79,"Other soft tissue disorders, not elsewhere classified",378523,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+45533961,M81,Osteoporosis without pathological fracture,4003479,cohort_45,Osteoporosis without pathological fracture,1.4
+45534122,N17,Acute renal failure,432961,cohort_4,Acute renal failure,1.8
+45534124,N20,Calculus of kidney and ureter,4148260,cohort_8,Calculus of kidney and ureter,0.7
+45534420,R00,Abnormalities of heart beat,4262562,cohort_3,Abnormalities of heart beat,0.7
+45534515,S01,Open wound of head,4052826,cohort_43,Open wound of head,1.1
+45535111,S51,Open wound of forearm,4053599,cohort_42,Open wound of forearm,0.5
+45535827,S72,Fracture of femur,4135748,cohort_31,Fracture of femur,1.4
+45537587,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",442019,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45537671,Z74,Problems related to care-provider dependency,42535090,cohort_79,Problems related to care-provider dependency,1.1
+45537672,Z74,Problems related to care-provider dependency,43020485,cohort_79,Problems related to care-provider dependency,1.1
+45537701,Z93,Artificial opening status,1340204,cohort_7,Artificial opening status,1
+45537702,Z93,Artificial opening status,1340204,cohort_7,Artificial opening status,1
+45537778,B95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,4143698,cohort_90,"Streptococcus and staphylococcus as the
+cause of diseases classified to other chapters",1.7
+45537780,B95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,435459,cohort_90,"Streptococcus and staphylococcus as the
+cause of diseases classified to other chapters",1.7
+45538490,J96,"Respiratory failure, not elsewhere classified",4256228,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+45538592,L89,Decubitus ulcer and pressure area,37160749,cohort_16,Decubitus ulcer,1.7
+45538882,M81,Osteoporosis without pathological fracture,4010333,cohort_45,Osteoporosis without pathological fracture,1.4
+45539313,R00,Abnormalities of heart beat,4169095,cohort_3,Abnormalities of heart beat,0.7
+45539353,R63,Symptoms and signs concerning food and fluid intake,4022569,cohort_93,"Symptoms and signs concerning food and
+fluid intake",0.9
+45539370,R94,Abnormal results of function studies,432451,cohort_1,Abnormal results of function studies,1.4
+45539372,R94,Abnormal results of function studies,137989,cohort_1,Abnormal results of function studies,1.4
+45542455,Z73,Problems related to life-management difficulty,4251306,cohort_80,"Problems related to life-management
+difficulty",0.6
+45542492,Z93,Artificial opening status,4201717,cohort_7,Artificial opening status,1
+45542493,Z93,Artificial opening status,1340204,cohort_7,Artificial opening status,1
+45542744,E16,Other disorders of pancreatic internal secretion,193983,cohort_56,"Other disorders of pancreatic internal
+secretion",1.4
+45542789,F10,Mental and behavioural disorders due to use of alcohol,375519,cohort_39,"Mental and behavioural disorders due to use
+of alcohol",0.7
+45543247,I95,Hypotension,4120275,cohort_37,Hypotension,1.6
+45543248,I95,Hypotension,317002,cohort_37,Hypotension,1.6
+45543488,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+45543688,M79,"Other soft tissue disorders, not elsewhere classified",4029277,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+45543707,M81,Osteoporosis without pathological fracture,4002133,cohort_45,Osteoporosis without pathological fracture,1.4
+45543708,M81,Osteoporosis without pathological fracture,4004623,cohort_45,Osteoporosis without pathological fracture,1.4
+45543858,N18,Chronic kidney disease,443597,cohort_13,Chronic renal failure,1.4
+45544148,R45,Symptoms and signs involving emotional state,4025215,cohort_94,"Symptoms and signs involving emotional
+state",1.2
+45544155,R63,Symptoms and signs concerning food and fluid intake,439141,cohort_93,"Symptoms and signs concerning food and
+fluid intake",0.9
+45544170,R94,Abnormal results of function studies,45770748,cohort_1,Abnormal results of function studies,1.4
+45544814,S51,Open wound of forearm,4053599,cohort_42,Open wound of forearm,0.5
+45547253,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",4027133,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45547341,Z74,Problems related to care-provider dependency,42535090,cohort_79,Problems related to care-provider dependency,1.1
+45547476,B95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,4120302,cohort_90,"Streptococcus and staphylococcus as the
+cause of diseases classified to other chapters",1.7
+45547673,F10,Mental and behavioural disorders due to use of alcohol,374623,cohort_39,"Mental and behavioural disorders due to use
+of alcohol",0.7
+45547674,F10,Mental and behavioural disorders due to use of alcohol,37164773,cohort_39,"Mental and behavioural disorders due to use
+of alcohol",0.7
+45547996,H91,Other hearing loss,377889,cohort_61,Other hearing loss,0.9
+45548120,J69,Pneumonitis due to solids and liquids,442297,cohort_77,Pneumonitis due to solids and liquids,1
+45548120,J69,Pneumonitis due to solids and liquids,256721,cohort_77,Pneumonitis due to solids and liquids,1
+45548327,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+45548502,M79,"Other soft tissue disorders, not elsewhere classified",373852,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+45548652,N17,Acute renal failure,197320,cohort_4,Acute renal failure,1.8
+45548969,R45,Symptoms and signs involving emotional state,436817,cohort_94,"Symptoms and signs involving emotional
+state",1.2
+45548970,R45,Symptoms and signs involving emotional state,4195585,cohort_94,"Symptoms and signs involving emotional
+state",1.2
+45552069,Z22,Carrier of infectious disease,42535080,cohort_10,Carrier of infectious disease,1.7
+45552143,Z93,Artificial opening status,1340204,cohort_7,Artificial opening status,1
+45552397,E55,Vitamin D deficiency,438719,cohort_108,Vitamin D deficiency,1
+45552478,F32,Depressive episode,4049623,cohort_21,Depressive episode,0.5
+45552523,G40,Epilepsy,374915,cohort_25,Epilepsy,1.5
+45552760,H91,Other hearing loss,37110393,cohort_61,Other hearing loss,0.9
+45553272,M79,"Other soft tissue disorders, not elsewhere classified",40405599,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+45553292,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+45553293,M81,Osteoporosis without pathological fracture,81390,cohort_45,Osteoporosis without pathological fracture,1.4
+45553437,N18,Chronic kidney disease,443601,cohort_13,Chronic renal failure,1.4
+45553438,N18,Chronic kidney disease,46271022,cohort_13,Chronic renal failure,1.4
+45553743,R63,Symptoms and signs concerning food and fluid intake,438872,cohort_93,"Symptoms and signs concerning food and
+fluid intake",0.9
+45553747,R79,Other abnormal findings of blood chemistry,436230,cohort_46,Other abnormal findings of blood chemistry,0.6
+45553788,S01,Open wound of head,4051005,cohort_43,Open wound of head,1.1
+45553789,S01,Open wound of head,4034214,cohort_43,Open wound of head,1.1
+45553793,S01,Open wound of head,4243161,cohort_43,Open wound of head,1.1
+45555141,S72,Fracture of femur,4016132,cohort_31,Fracture of femur,1.4
+45556820,Z22,Carrier of infectious disease,4280828,cohort_10,Carrier of infectious disease,1.7
+45556956,B95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,437779,cohort_90,"Streptococcus and staphylococcus as the
+cause of diseases classified to other chapters",1.7
+45557158,F10,Mental and behavioural disorders due to use of alcohol,37164793,cohort_39,"Mental and behavioural disorders due to use
+of alcohol",0.7
+45557202,F32,Depressive episode,441534,cohort_21,Depressive episode,0.5
+45557231,G40,Epilepsy,4055361,cohort_25,Epilepsy,1.5
+45557632,J96,"Respiratory failure, not elsewhere classified",314971,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+45558139,N17,Acute renal failure,45757466,cohort_4,Acute renal failure,1.8
+45558140,N17,Acute renal failure,197329,cohort_4,Acute renal failure,1.8
+45558141,N20,Calculus of kidney and ureter,4319447,cohort_8,Calculus of kidney and ureter,0.7
+45558144,N28,"Other disorders of kidney and ureter, not elsewhere classified",36716270,cohort_55,"Other disorders of kidney and ureter, not
+elsewhere classified",1.3
+45558446,R00,Abnormalities of heart beat,315078,cohort_3,Abnormalities of heart beat,0.7
+45558471,R47,"Speech disturbances, not elsewhere classified",4196636,cohort_89,"Speech disturbances, not elsewhere classified",1
+45558482,R79,Other abnormal findings of blood chemistry,4166144,cohort_46,Other abnormal findings of blood chemistry,0.6
+45558837,S32,Fracture of lumbar spine and pelvis,4053654,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45559880,S72,Fracture of femur,442560,cohort_31,Fracture of femur,1.4
+45561584,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",442019,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45561774,B95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,4248801,cohort_90,"Streptococcus and staphylococcus as the
+cause of diseases classified to other chapters",1.7
+45562041,F32,Depressive episode,4195572,cohort_21,Depressive episode,0.5
+45562082,G40,Epilepsy,374023,cohort_25,Epilepsy,1.5
+45562083,G40,Epilepsy,380378,cohort_25,Epilepsy,1.5
+45562424,I95,Hypotension,4112334,cohort_37,Hypotension,1.6
+45562850,M80,Osteoporosis with pathological fracture,1245002,cohort_44,Osteoporosis with pathological fracture,0.8
+45562859,M81,Osteoporosis without pathological fracture,4033089,cohort_45,Osteoporosis without pathological fracture,1.4
+45563307,R44,Other symptoms and signs involving general sensations and perceptions,433031,cohort_71,"Other symptoms and signs involving general
+sensations and perceptions",1.6
+45563320,R63,Symptoms and signs concerning food and fluid intake,432454,cohort_93,"Symptoms and signs concerning food and
+fluid intake",0.9
+45563321,R63,Symptoms and signs concerning food and fluid intake,434750,cohort_93,"Symptoms and signs concerning food and
+fluid intake",0.9
+45563335,R94,Abnormal results of function studies,4194160,cohort_1,Abnormal results of function studies,1.4
+45566408,Z22,Carrier of infectious disease,4015718,cohort_10,Carrier of infectious disease,1.7
+45567152,H91,Other hearing loss,4150172,cohort_61,Other hearing loss,0.9
+45567272,J69,Pneumonitis due to solids and liquids,253506,cohort_77,Pneumonitis due to solids and liquids,1
+45567371,L89,Decubitus ulcer and pressure area,37160748,cohort_16,Decubitus ulcer,1.7
+45567658,M79,"Other soft tissue disorders, not elsewhere classified",138845,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+45567669,M80,Osteoporosis with pathological fracture,4067765,cohort_44,Osteoporosis with pathological fracture,0.8
+45567679,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+45567829,N17,Acute renal failure,197320,cohort_4,Acute renal failure,1.8
+45567830,N20,Calculus of kidney and ureter,201620,cohort_8,Calculus of kidney and ureter,0.7
+45568133,R44,Other symptoms and signs involving general sensations and perceptions,4164151,cohort_71,"Other symptoms and signs involving general
+sensations and perceptions",1.6
+45568134,R45,Symptoms and signs involving emotional state,4025215,cohort_94,"Symptoms and signs involving emotional
+state",1.2
+45568144,R63,Symptoms and signs concerning food and fluid intake,435928,cohort_93,"Symptoms and signs concerning food and
+fluid intake",0.9
+45568158,R94,Abnormal results of function studies,437992,cohort_1,Abnormal results of function studies,1.4
+45568159,R94,Abnormal results of function studies,40484102,cohort_1,Abnormal results of function studies,1.4
+45569475,S72,Fracture of femur,440825,cohort_31,Fracture of femur,1.4
+45569513,S72,Fracture of femur,4135749,cohort_31,Fracture of femur,1.4
+45571285,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",442019,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45571285,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",1076111,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45571330,Z22,Carrier of infectious disease,4016356,cohort_10,Carrier of infectious disease,1.7
+45571331,Z22,Carrier of infectious disease,1243842,cohort_10,Carrier of infectious disease,1.7
+45571666,E16,Other disorders of pancreatic internal secretion,4096804,cohort_56,"Other disorders of pancreatic internal
+secretion",1.4
+45571759,F32,Depressive episode,440383,cohort_21,Depressive episode,0.5
+45571760,F32,Depressive episode,3656234,cohort_21,Depressive episode,0.5
+45572153,I95,Hypotension,317002,cohort_37,Hypotension,1.6
+45572239,K92,Other diseases of digestive system,4201745,cohort_53,Other diseases of digestive system,0.8
+45572288,L89,Decubitus ulcer and pressure area,37160750,cohort_16,Decubitus ulcer,1.7
+45572553,M80,Osteoporosis with pathological fracture,1245005,cohort_44,Osteoporosis with pathological fracture,0.8
+45573026,R44,Other symptoms and signs involving general sensations and perceptions,4024707,cohort_71,"Other symptoms and signs involving general
+sensations and perceptions",1.6
+45573423,S32,Fracture of lumbar spine and pelvis,4013613,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45573714,S51,Open wound of forearm,4062394,cohort_42,Open wound of forearm,0.5
+45574361,S72,Fracture of femur,4015503,cohort_31,Fracture of femur,1.4
+45574482,S72,Fracture of femur,442560,cohort_31,Fracture of femur,1.4
+45576101,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",442019,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45576102,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",442019,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45576142,Z22,Carrier of infectious disease,4280828,cohort_10,Carrier of infectious disease,1.7
+45576177,Z73,Problems related to life-management difficulty,4238682,cohort_80,"Problems related to life-management
+difficulty",0.6
+45576178,Z73,Problems related to life-management difficulty,4137049,cohort_80,"Problems related to life-management
+difficulty",0.6
+45576496,F10,Mental and behavioural disorders due to use of alcohol,435243,cohort_39,"Mental and behavioural disorders due to use
+of alcohol",0.7
+45576852,H91,Other hearing loss,381306,cohort_61,Other hearing loss,0.9
+45577066,L89,Decubitus ulcer and pressure area,37159532,cohort_16,Decubitus ulcer,1.7
+45577357,M79,"Other soft tissue disorders, not elsewhere classified",432719,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+45577377,M81,Osteoporosis without pathological fracture,77365,cohort_45,Osteoporosis without pathological fracture,1.4
+45577795,R45,Symptoms and signs involving emotional state,4085332,cohort_94,"Symptoms and signs involving emotional
+state",1.2
+45577802,R63,Symptoms and signs concerning food and fluid intake,42536911,cohort_93,"Symptoms and signs concerning food and
+fluid intake",0.9
+45577814,R79,Other abnormal findings of blood chemistry,436230,cohort_46,Other abnormal findings of blood chemistry,0.6
+45577830,R94,Abnormal results of function studies,438878,cohort_1,Abnormal results of function studies,1.4
+45577864,S01,Open wound of head,4243161,cohort_43,Open wound of head,1.1
+45577926,S09,Other and unspecified injuries of head,195398,cohort_48,Other and unspecified injuries of head,1.2
+45577931,S09,Other and unspecified injuries of head,375415,cohort_48,Other and unspecified injuries of head,1.2
+45578449,S51,Open wound of forearm,4053600,cohort_42,Open wound of forearm,0.5
+45581014,Z22,Carrier of infectious disease,4280828,cohort_10,Carrier of infectious disease,1.7
+45581067,Z73,Problems related to life-management difficulty,43020481,cohort_80,"Problems related to life-management
+difficulty",0.6
+45581068,Z73,Problems related to life-management difficulty,43020479,cohort_80,"Problems related to life-management
+difficulty",0.6
+45581069,Z74,Problems related to care-provider dependency,42535090,cohort_79,Problems related to care-provider dependency,1.1
+45581193,B95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,437779,cohort_90,"Streptococcus and staphylococcus as the
+cause of diseases classified to other chapters",1.7
+45581407,F10,Mental and behavioural disorders due to use of alcohol,36714559,cohort_39,"Mental and behavioural disorders due to use
+of alcohol",0.7
+45581488,G40,Epilepsy,4179936,cohort_25,Epilepsy,1.5
+45582252,M79,"Other soft tissue disorders, not elsewhere classified",376208,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+45582259,M80,Osteoporosis with pathological fracture,4004624,cohort_44,Osteoporosis with pathological fracture,0.8
+45582392,N18,Chronic kidney disease,443614,cohort_13,Chronic renal failure,1.4
+45582393,N18,Chronic kidney disease,443612,cohort_13,Chronic renal failure,1.4
+45582394,N18,Chronic kidney disease,443611,cohort_13,Chronic renal failure,1.4
+45582395,N20,Calculus of kidney and ureter,201916,cohort_8,Calculus of kidney and ureter,0.7
+45582398,N28,"Other disorders of kidney and ureter, not elsewhere classified",42536547,cohort_55,"Other disorders of kidney and ureter, not
+elsewhere classified",1.3
+45582712,R45,Symptoms and signs involving emotional state,4168681,cohort_94,"Symptoms and signs involving emotional
+state",1.2
+45582733,R94,Abnormal results of function studies,434486,cohort_1,Abnormal results of function studies,1.4
+45583057,S32,Fracture of lumbar spine and pelvis,4129394,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45585762,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",43022062,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45585810,Z22,Carrier of infectious disease,4280828,cohort_10,Carrier of infectious disease,1.7
+45585852,Z73,Problems related to life-management difficulty,43020485,cohort_80,"Problems related to life-management
+difficulty",0.6
+45585854,Z74,Problems related to care-provider dependency,43020485,cohort_79,Problems related to care-provider dependency,1.1
+45585883,Z93,Artificial opening status,4201387,cohort_7,Artificial opening status,1
+45585884,Z93,Artificial opening status,4201388,cohort_7,Artificial opening status,1
+45586147,E16,Other disorders of pancreatic internal secretion,24609,cohort_56,"Other disorders of pancreatic internal
+secretion",1.4
+45586148,E16,Other disorders of pancreatic internal secretion,4099656,cohort_56,"Other disorders of pancreatic internal
+secretion",1.4
+45586149,E16,Other disorders of pancreatic internal secretion,193983,cohort_56,"Other disorders of pancreatic internal
+secretion",1.4
+45586161,E55,Vitamin D deficiency,436070,cohort_108,Vitamin D deficiency,1
+45586191,F10,Mental and behavioural disorders due to use of alcohol,377830,cohort_39,"Mental and behavioural disorders due to use
+of alcohol",0.7
+45586284,G40,Epilepsy,4047897,cohort_25,Epilepsy,1.5
+45586285,G40,Epilepsy,380378,cohort_25,Epilepsy,1.5
+45586783,L89,Decubitus ulcer and pressure area,37160747,cohort_16,Decubitus ulcer,1.7
+45587062,M79,"Other soft tissue disorders, not elsewhere classified",442752,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+45587063,M79,"Other soft tissue disorders, not elsewhere classified",138525,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+45587240,N28,"Other disorders of kidney and ureter, not elsewhere classified",40483287,cohort_55,"Other disorders of kidney and ureter, not
+elsewhere classified",1.3
+45587636,S09,Other and unspecified injuries of head,4145094,cohort_48,Other and unspecified injuries of head,1.2
+45590667,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",437173,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45590754,Z73,Problems related to life-management difficulty,43020485,cohort_80,"Problems related to life-management
+difficulty",0.6
+45590775,Z93,Artificial opening status,4201390,cohort_7,Artificial opening status,1
+45590776,Z93,Artificial opening status,42537740,cohort_7,Artificial opening status,1
+45590869,B95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,433125,cohort_90,"Streptococcus and staphylococcus as the
+cause of diseases classified to other chapters",1.7
+45591038,E16,Other disorders of pancreatic internal secretion,24609,cohort_56,"Other disorders of pancreatic internal
+secretion",1.4
+45591170,G40,Epilepsy,374915,cohort_25,Epilepsy,1.5
+45591172,G40,Epilepsy,374915,cohort_25,Epilepsy,1.5
+45591444,H91,Other hearing loss,377574,cohort_61,Other hearing loss,0.9
+45591562,J69,Pneumonitis due to solids and liquids,4112839,cohort_77,Pneumonitis due to solids and liquids,1
+45591562,J69,Pneumonitis due to solids and liquids,4110180,cohort_77,Pneumonitis due to solids and liquids,1
+45591937,M79,"Other soft tissue disorders, not elsewhere classified",376208,cohort_67,"Other soft tissue disorders, not elsewhere
+classified",1.1
+45591946,M80,Osteoporosis with pathological fracture,1245006,cohort_44,Osteoporosis with pathological fracture,0.8
+45591963,M81,Osteoporosis without pathological fracture,80502,cohort_45,Osteoporosis without pathological fracture,1.4
+45592421,R47,"Speech disturbances, not elsewhere classified",4024716,cohort_89,"Speech disturbances, not elsewhere classified",1
+45592422,R47,"Speech disturbances, not elsewhere classified",435642,cohort_89,"Speech disturbances, not elsewhere classified",1
+45592443,R94,Abnormal results of function studies,4064989,cohort_1,Abnormal results of function studies,1.4
+45592468,S01,Open wound of head,4051004,cohort_43,Open wound of head,1.1
+45592478,S01,Open wound of head,36716565,cohort_43,Open wound of head,1.1
+45592764,S32,Fracture of lumbar spine and pelvis,4129420,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45592772,S32,Fracture of lumbar spine and pelvis,4296627,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45593656,S72,Fracture of femur,433856,cohort_31,Fracture of femur,1.4
+45595448,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",4023568,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45595448,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",442019,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45595541,Z73,Problems related to life-management difficulty,42537791,cohort_80,"Problems related to life-management
+difficulty",0.6
+45595628,B95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,440328,cohort_90,"Streptococcus and staphylococcus as the
+cause of diseases classified to other chapters",1.7
+45595629,B95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,435459,cohort_90,"Streptococcus and staphylococcus as the
+cause of diseases classified to other chapters",1.7
+45595844,F10,Mental and behavioural disorders due to use of alcohol,433753,cohort_39,"Mental and behavioural disorders due to use
+of alcohol",0.7
+45596496,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+45597185,R45,Symptoms and signs involving emotional state,4168212,cohort_94,"Symptoms and signs involving emotional
+state",1.2
+45597558,S32,Fracture of lumbar spine and pelvis,4276036,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45600284,Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",4176898,cohort_64,"Other medical procedures as the cause of
+abnormal reaction of the patient",0.7
+45600353,Z73,Problems related to life-management difficulty,43020485,cohort_80,"Problems related to life-management
+difficulty",0.6
+45600355,Z74,Problems related to care-provider dependency,42535090,cohort_79,Problems related to care-provider dependency,1.1
+45600648,E16,Other disorders of pancreatic internal secretion,45757754,cohort_56,"Other disorders of pancreatic internal
+secretion",1.4
+45600739,F32,Depressive episode,438406,cohort_21,Depressive episode,0.5
+45600777,G40,Epilepsy,4274575,cohort_25,Epilepsy,1.5
+45601353,M19,Other arthrosis,73553,cohort_49,Other arthrosis,1.5
+45601355,M19,Other arthrosis,80494,cohort_49,Other arthrosis,1.5
+45601560,M80,Osteoporosis with pathological fracture,4003482,cohort_44,Osteoporosis with pathological fracture,0.8
+45601561,M80,Osteoporosis with pathological fracture,40480160,cohort_44,Osteoporosis with pathological fracture,0.8
+45601723,N28,"Other disorders of kidney and ureter, not elsewhere classified",40483287,cohort_55,"Other disorders of kidney and ureter, not
+elsewhere classified",1.3
+45602029,R44,Other symptoms and signs involving general sensations and perceptions,4275889,cohort_71,"Other symptoms and signs involving general
+sensations and perceptions",1.6
+45602030,R44,Other symptoms and signs involving general sensations and perceptions,433031,cohort_71,"Other symptoms and signs involving general
+sensations and perceptions",1.6
+45602036,R63,Symptoms and signs concerning food and fluid intake,436675,cohort_93,"Symptoms and signs concerning food and
+fluid intake",0.9
+45602056,S01,Open wound of head,441712,cohort_43,Open wound of head,1.1
+45602132,S09,Other and unspecified injuries of head,4059253,cohort_48,Other and unspecified injuries of head,1.2
+45602139,S09,Other and unspecified injuries of head,4057179,cohort_48,Other and unspecified injuries of head,1.2
+45602140,S09,Other and unspecified injuries of head,375415,cohort_48,Other and unspecified injuries of head,1.2
+45602408,S32,Fracture of lumbar spine and pelvis,4008356,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45605872,I95,Hypotension,319041,cohort_37,Hypotension,1.6
+45605905,J96,"Respiratory failure, not elsewhere classified",319049,cohort_83,"Respiratory failure, not elsewhere classified",1.5
+45605964,K92,Other diseases of digestive system,26727,cohort_53,Other diseases of digestive system,0.8
+45605965,K92,Other diseases of digestive system,4201745,cohort_53,Other diseases of digestive system,0.8
+45606790,R00,Abnormalities of heart beat,444070,cohort_3,Abnormalities of heart beat,0.7
+45606813,R45,Symptoms and signs involving emotional state,4169106,cohort_94,"Symptoms and signs involving emotional
+state",1.2
+45606814,R45,Symptoms and signs involving emotional state,40483106,cohort_94,"Symptoms and signs involving emotional
+state",1.2
+45606863,S01,Open wound of head,4243161,cohort_43,Open wound of head,1.1
+45607211,S32,Fracture of lumbar spine and pelvis,4263360,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755297,A09,Other gastroenteritis and colitis of infectious and unspecified origin,4043371,cohort_60,"Diarrhoea and gastroenteritis of presumed
+infectious origin",1.1
+45755298,A09,Other gastroenteritis and colitis of infectious and unspecified origin,4043371,cohort_60,"Diarrhoea and gastroenteritis of presumed
+infectious origin",1.1
+45755372,F10,Mental and behavioural disorders due to use of alcohol,607208,cohort_39,"Mental and behavioural disorders due to use
+of alcohol",0.7
+45755373,F10,Mental and behavioural disorders due to use of alcohol,37164773,cohort_39,"Mental and behavioural disorders due to use
+of alcohol",0.7
+45755675,S32,Fracture of lumbar spine and pelvis,4013604,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755676,S32,Fracture of lumbar spine and pelvis,4008222,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755677,S32,Fracture of lumbar spine and pelvis,4013160,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755678,S32,Fracture of lumbar spine and pelvis,4013161,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755679,S32,Fracture of lumbar spine and pelvis,35624169,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755680,S32,Fracture of lumbar spine and pelvis,35624484,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755681,S32,Fracture of lumbar spine and pelvis,81141,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755682,S32,Fracture of lumbar spine and pelvis,78276,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755683,S32,Fracture of lumbar spine and pelvis,81696,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755684,S32,Fracture of lumbar spine and pelvis,77405,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755685,S32,Fracture of lumbar spine and pelvis,4263360,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755686,S32,Fracture of lumbar spine and pelvis,75943,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755687,S32,Fracture of lumbar spine and pelvis,4008356,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755687,S32,Fracture of lumbar spine and pelvis,4307254,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755688,S32,Fracture of lumbar spine and pelvis,4008356,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755688,S32,Fracture of lumbar spine and pelvis,4264281,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755689,S32,Fracture of lumbar spine and pelvis,4013613,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755689,S32,Fracture of lumbar spine and pelvis,4307254,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755690,S32,Fracture of lumbar spine and pelvis,4013613,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755690,S32,Fracture of lumbar spine and pelvis,4264281,cohort_32,Fracture of lumbar spine and pelvis,1.4
+45755821,S22,"Fracture of rib(s), sternum and thoracic spine",434770,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755957,S72,Fracture of femur,4027460,cohort_31,Fracture of femur,1.4
+45755958,S72,Fracture of femur,4281541,cohort_31,Fracture of femur,1.4
+45755959,S72,Fracture of femur,4009610,cohort_31,Fracture of femur,1.4
+45755960,S72,Fracture of femur,4015981,cohort_31,Fracture of femur,1.4
+45755961,S72,Fracture of femur,438887,cohort_31,Fracture of femur,1.4
+45755962,S72,Fracture of femur,440856,cohort_31,Fracture of femur,1.4
+45755963,S72,Fracture of femur,440548,cohort_31,Fracture of femur,1.4
+45755964,S72,Fracture of femur,435094,cohort_31,Fracture of femur,1.4
+45755965,S72,Fracture of femur,4289013,cohort_31,Fracture of femur,1.4
+45755966,S72,Fracture of femur,4164752,cohort_31,Fracture of femur,1.4
+45755967,S72,Fracture of femur,435093,cohort_31,Fracture of femur,1.4
+45755968,S72,Fracture of femur,438583,cohort_31,Fracture of femur,1.4
+45755969,S72,Fracture of femur,435093,cohort_31,Fracture of femur,1.4
+45755970,S72,Fracture of femur,438583,cohort_31,Fracture of femur,1.4
+42617674,M48,Other spondylopathies,77079,cohort_69,Spinal stenosis (secondary code only),0.5
+42617675,M48,Other spondylopathies,436785,cohort_69,Spinal stenosis (secondary code only),0.5
+42617676,M48,Other spondylopathies,37171158,cohort_69,Spinal stenosis (secondary code only),0.5
+42617677,M48,Other spondylopathies,321661,cohort_69,Spinal stenosis (secondary code only),0.5
+42617678,M48,Other spondylopathies,37171161,cohort_69,Spinal stenosis (secondary code only),0.5
+42617679,M48,Other spondylopathies,136788,cohort_69,Spinal stenosis (secondary code only),0.5
+42617680,M48,Other spondylopathies,4152592,cohort_69,Spinal stenosis (secondary code only),0.5
+42617681,M48,Other spondylopathies,77079,cohort_69,Spinal stenosis (secondary code only),0.5
+42617681,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617682,M48,Other spondylopathies,77079,cohort_69,Spinal stenosis (secondary code only),0.5
+42617683,M48,Other spondylopathies,77961,cohort_69,Spinal stenosis (secondary code only),0.5
+42617684,M48,Other spondylopathies,77961,cohort_69,Spinal stenosis (secondary code only),0.5
+42617684,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617685,M48,Other spondylopathies,37207744,cohort_69,Spinal stenosis (secondary code only),0.5
+42617686,M48,Other spondylopathies,37207745,cohort_69,Spinal stenosis (secondary code only),0.5
+42617687,M48,Other spondylopathies,37207748,cohort_69,Spinal stenosis (secondary code only),0.5
+42617688,M48,Other spondylopathies,37207749,cohort_69,Spinal stenosis (secondary code only),0.5
+42617689,M48,Other spondylopathies,37207746,cohort_69,Spinal stenosis (secondary code only),0.5
+42617690,M48,Other spondylopathies,37207747,cohort_69,Spinal stenosis (secondary code only),0.5
+42617691,M48,Other spondylopathies,77961,cohort_69,Spinal stenosis (secondary code only),0.5
+42617691,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617692,M48,Other spondylopathies,77961,cohort_69,Spinal stenosis (secondary code only),0.5
+42617693,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617693,M48,Other spondylopathies,75908,cohort_69,Spinal stenosis (secondary code only),0.5
+42617694,M48,Other spondylopathies,75908,cohort_69,Spinal stenosis (secondary code only),0.5
+42617694,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617695,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617695,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+42617695,M48,Other spondylopathies,75908,cohort_69,Spinal stenosis (secondary code only),0.5
+42617696,M48,Other spondylopathies,75908,cohort_69,Spinal stenosis (secondary code only),0.5
+42617696,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+42617697,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617697,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+42617697,M48,Other spondylopathies,75908,cohort_69,Spinal stenosis (secondary code only),0.5
+42617698,M48,Other spondylopathies,75908,cohort_69,Spinal stenosis (secondary code only),0.5
+42617698,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617699,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617699,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617699,M48,Other spondylopathies,75908,cohort_69,Spinal stenosis (secondary code only),0.5
+42617700,M48,Other spondylopathies,75908,cohort_69,Spinal stenosis (secondary code only),0.5
+42617700,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617701,M48,Other spondylopathies,75908,cohort_69,Spinal stenosis (secondary code only),0.5
+42617702,M48,Other spondylopathies,81665,cohort_69,Spinal stenosis (secondary code only),0.5
+42617703,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617703,M48,Other spondylopathies,81665,cohort_69,Spinal stenosis (secondary code only),0.5
+42617704,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617704,M48,Other spondylopathies,81665,cohort_69,Spinal stenosis (secondary code only),0.5
+42617705,M48,Other spondylopathies,81665,cohort_69,Spinal stenosis (secondary code only),0.5
+42617705,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617705,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+42617706,M48,Other spondylopathies,81665,cohort_69,Spinal stenosis (secondary code only),0.5
+42617706,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+42617707,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617707,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+42617707,M48,Other spondylopathies,81665,cohort_69,Spinal stenosis (secondary code only),0.5
+42617708,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617708,M48,Other spondylopathies,81665,cohort_69,Spinal stenosis (secondary code only),0.5
+42617709,M48,Other spondylopathies,81665,cohort_69,Spinal stenosis (secondary code only),0.5
+42617709,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617709,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617710,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617710,M48,Other spondylopathies,81665,cohort_69,Spinal stenosis (secondary code only),0.5
+42617711,M48,Other spondylopathies,81665,cohort_69,Spinal stenosis (secondary code only),0.5
+42617712,M48,Other spondylopathies,4001458,cohort_69,Spinal stenosis (secondary code only),0.5
+42617713,M48,Other spondylopathies,45772068,cohort_69,Spinal stenosis (secondary code only),0.5
+42617714,M48,Other spondylopathies,45770877,cohort_69,Spinal stenosis (secondary code only),0.5
+42617715,M48,Other spondylopathies,45770877,cohort_69,Spinal stenosis (secondary code only),0.5
+42617715,M48,Other spondylopathies,45757329,cohort_69,Spinal stenosis (secondary code only),0.5
+42617716,M48,Other spondylopathies,45757329,cohort_69,Spinal stenosis (secondary code only),0.5
+42617716,M48,Other spondylopathies,45757330,cohort_69,Spinal stenosis (secondary code only),0.5
+42617717,M48,Other spondylopathies,45757330,cohort_69,Spinal stenosis (secondary code only),0.5
+42617718,M48,Other spondylopathies,45757330,cohort_69,Spinal stenosis (secondary code only),0.5
+42617718,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617719,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617719,M48,Other spondylopathies,4001458,cohort_69,Spinal stenosis (secondary code only),0.5
+42617720,M48,Other spondylopathies,4001458,cohort_69,Spinal stenosis (secondary code only),0.5
+42617721,M48,Other spondylopathies,4222001,cohort_69,Spinal stenosis (secondary code only),0.5
+42617722,M48,Other spondylopathies,4222001,cohort_69,Spinal stenosis (secondary code only),0.5
+42617723,M48,Other spondylopathies,4203556,cohort_69,Spinal stenosis (secondary code only),0.5
+42617724,M48,Other spondylopathies,4203556,cohort_69,Spinal stenosis (secondary code only),0.5
+42617724,M48,Other spondylopathies,4203555,cohort_69,Spinal stenosis (secondary code only),0.5
+42617725,M48,Other spondylopathies,4203555,cohort_69,Spinal stenosis (secondary code only),0.5
+42617726,M48,Other spondylopathies,4203555,cohort_69,Spinal stenosis (secondary code only),0.5
+42617726,M48,Other spondylopathies,4204781,cohort_69,Spinal stenosis (secondary code only),0.5
+42617727,M48,Other spondylopathies,4204781,cohort_69,Spinal stenosis (secondary code only),0.5
+42617728,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617728,M48,Other spondylopathies,4204781,cohort_69,Spinal stenosis (secondary code only),0.5
+42617729,M48,Other spondylopathies,4222001,cohort_69,Spinal stenosis (secondary code only),0.5
+42617729,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617730,M48,Other spondylopathies,4222001,cohort_69,Spinal stenosis (secondary code only),0.5
+42617731,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42617732,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617733,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617734,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617734,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+42617735,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617735,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+42617736,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617737,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617737,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617738,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617738,M48,Other spondylopathies,44782549,cohort_69,Spinal stenosis (secondary code only),0.5
+42617739,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42617740,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42617741,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617741,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42617742,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617742,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42617743,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+42617743,M48,Other spondylopathies,80497,cohort_69,Spinal stenosis (secondary code only),0.5
+42617743,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42617744,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42617744,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+42617745,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617745,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+42617745,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42617746,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42617746,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617747,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617747,M48,Other spondylopathies,195906,cohort_69,Spinal stenosis (secondary code only),0.5
+42617747,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42617748,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42617748,M48,Other spondylopathies,138841,cohort_69,Spinal stenosis (secondary code only),0.5
+42617749,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+42619388,M48,Other spondylopathies,436785,cohort_69,Spinal stenosis (secondary code only),0.5
+42619389,M48,Other spondylopathies,75908,cohort_69,Spinal stenosis (secondary code only),0.5
+42619394,M48,Other spondylopathies,45757329,cohort_69,Spinal stenosis (secondary code only),0.5
+42619395,M48,Other spondylopathies,443795,cohort_69,Spinal stenosis (secondary code only),0.5
+45542474,Z87,Personal history of other diseases and conditions,1340204,cohort_74,"Personal history of other diseases and
+conditions",1.5
+45542508,Z99,"Dependence on enabling machines and devices, not elsewhere classified",437758,cohort_20,"Dependence on enabling machines and
+devices",0.8
+45542776,E83,Disorders of mineral metabolism,4263312,cohort_22,Disorders of mineral metabolism,0.4
+45542777,E83,Disorders of mineral metabolism,435788,cohort_22,Disorders of mineral metabolism,0.4
+45543319,K52,Other noninfective gastroenteritis and colitis,1076111,cohort_65,Other noninfective gastroenteritis and colitis,0.3
+45543319,K52,Other noninfective gastroenteritis and colitis,4043371,cohort_65,Other noninfective gastroenteritis and colitis,0.3
+45543479,M15,Polyarthrosis,75617,cohort_78,Polyarthrosis,0.4
+45543480,M15,Polyarthrosis,4155797,cohort_78,Polyarthrosis,0.4
+45543481,M15,Polyarthrosis,75897,cohort_78,Polyarthrosis,0.4
+45544426,S22,"Fracture of rib(s), sternum and thoracic spine",4279139,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45547361,Z87,Personal history of other diseases and conditions,1340204,cohort_74,"Personal history of other diseases and
+conditions",1.5
+45547382,Z99,"Dependence on enabling machines and devices, not elsewhere classified",4022073,cohort_20,"Dependence on enabling machines and
+devices",0.8
+45547608,D64,Other anaemias,4231887,cohort_47,Other anaemias,0.4
+45548162,K52,Other noninfective gastroenteritis and colitis,201618,cohort_65,Other noninfective gastroenteritis and colitis,0.3
+45548320,M15,Polyarthrosis,4116450,cohort_78,Polyarthrosis,0.4
+45548428,M48,Other spondylopathies,75908,cohort_69,Spinal stenosis (secondary code only),0.5
+45548973,R50,Fever of other and unknown origin,437663,cohort_30,Fever of unknown origin,0.1
+45552125,Z87,Personal history of other diseases and conditions,1340204,cohort_74,"Personal history of other diseases and
+conditions",1.5
+45552148,Z99,"Dependence on enabling machines and devices, not elsewhere classified",46273390,cohort_20,"Dependence on enabling machines and
+devices",0.8
+45552418,E83,Disorders of mineral metabolism,434614,cohort_22,Disorders of mineral metabolism,0.4
+45553994,S22,"Fracture of rib(s), sternum and thoracic spine",4009296,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45553995,S22,"Fracture of rib(s), sternum and thoracic spine",4302740,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45556869,Z87,Personal history of other diseases and conditions,1340204,cohort_74,"Personal history of other diseases and
+conditions",1.5
+45557141,E83,Disorders of mineral metabolism,436672,cohort_22,Disorders of mineral metabolism,0.4
+45557888,M48,Other spondylopathies,77079,cohort_69,Spinal stenosis (secondary code only),0.5
+45562495,K52,Other noninfective gastroenteritis and colitis,197596,cohort_65,Other noninfective gastroenteritis and colitis,0.3
+45562646,M15,Polyarthrosis,75897,cohort_78,Polyarthrosis,0.4
+45562742,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+45566485,Z99,"Dependence on enabling machines and devices, not elsewhere classified",437758,cohort_20,"Dependence on enabling machines and
+devices",0.8
+45566763,E83,Disorders of mineral metabolism,437828,cohort_22,Disorders of mineral metabolism,0.4
+45571398,Z87,Personal history of other diseases and conditions,1340204,cohort_74,"Personal history of other diseases and
+conditions",1.5
+45572215,K52,Other noninfective gastroenteritis and colitis,201618,cohort_65,Other noninfective gastroenteritis and colitis,0.3
+45572260,L08,Other local infections of skin and subcutaneous tissue,133547,cohort_63,"Other local infections of skin and
+subcutaneous tissue",0.4
+45572464,M48,Other spondylopathies,4001458,cohort_69,Spinal stenosis (secondary code only),0.5
+45573285,S22,"Fracture of rib(s), sternum and thoracic spine",4142905,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45575993,X59,Exposure to unspecified factor,440279,cohort_26,Exposure to unspecified factor,1.5
+45576409,D64,Other anaemias,40599994,cohort_47,Other anaemias,0.4
+45577027,L08,Other local infections of skin and subcutaneous tissue,443600,cohort_63,"Other local infections of skin and
+subcutaneous tissue",0.4
+45577798,R50,Fever of other and unknown origin,4226022,cohort_30,Fever of unknown origin,0.1
+45581084,Z87,Personal history of other diseases and conditions,1340204,cohort_74,"Personal history of other diseases and
+conditions",1.5
+45581097,Z99,"Dependence on enabling machines and devices, not elsewhere classified",4019967,cohort_20,"Dependence on enabling machines and
+devices",0.8
+45582162,M48,Other spondylopathies,4222001,cohort_69,Spinal stenosis (secondary code only),0.5
+45582716,R50,Fever of other and unknown origin,437663,cohort_30,Fever of unknown origin,0.1
+45582958,S22,"Fracture of rib(s), sternum and thoracic spine",4128914,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45586175,E83,Disorders of mineral metabolism,438721,cohort_22,Disorders of mineral metabolism,0.4
+45586176,E83,Disorders of mineral metabolism,438721,cohort_22,Disorders of mineral metabolism,0.4
+45590787,Z99,"Dependence on enabling machines and devices, not elsewhere classified",46273389,cohort_20,"Dependence on enabling machines and
+devices",0.8
+45591015,D64,Other anaemias,4204062,cohort_47,Other anaemias,0.4
+45591595,K52,Other noninfective gastroenteritis and colitis,192674,cohort_65,Other noninfective gastroenteritis and colitis,0.3
+45591854,M48,Other spondylopathies,77961,cohort_69,Spinal stenosis (secondary code only),0.5
+45591862,M48,Other spondylopathies,4157453,cohort_69,Spinal stenosis (secondary code only),0.5
+45592654,S22,"Fracture of rib(s), sternum and thoracic spine",4053828,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45595771,D64,Other anaemias,439777,cohort_47,Other anaemias,0.4
+45595835,E83,Disorders of mineral metabolism,438725,cohort_22,Disorders of mineral metabolism,0.4
+45596491,M15,Polyarthrosis,4116451,cohort_78,Polyarthrosis,0.4
+45596583,M48,Other spondylopathies,81665,cohort_69,Spinal stenosis (secondary code only),0.5
+45600198,X59,Exposure to unspecified factor,440279,cohort_26,Exposure to unspecified factor,1.5
+45600364,Z87,Personal history of other diseases and conditions,1340204,cohort_74,"Personal history of other diseases and
+conditions",1.5
+45600366,Z87,Personal history of other diseases and conditions,1340204,cohort_74,"Personal history of other diseases and
+conditions",1.5
+45600607,D64,Other anaemias,4101584,cohort_47,Other anaemias,0.4
+45600608,D64,Other anaemias,432282,cohort_47,Other anaemias,0.4
+45600610,D64,Other anaemias,439777,cohort_47,Other anaemias,0.4
+45601179,K52,Other noninfective gastroenteritis and colitis,4341633,cohort_65,Other noninfective gastroenteritis and colitis,0.3
+45601210,L08,Other local infections of skin and subcutaneous tissue,4032277,cohort_63,"Other local infections of skin and
+subcutaneous tissue",0.4
+45601211,L08,Other local infections of skin and subcutaneous tissue,443600,cohort_63,"Other local infections of skin and
+subcutaneous tissue",0.4
+45601348,M15,Polyarthrosis,4066493,cohort_78,Polyarthrosis,0.4
+45602268,S22,"Fracture of rib(s), sternum and thoracic spine",434769,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45605166,Z87,Personal history of other diseases and conditions,1340204,cohort_74,"Personal history of other diseases and
+conditions",1.5
+45607076,S22,"Fracture of rib(s), sternum and thoracic spine",1076428,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755807,S22,"Fracture of rib(s), sternum and thoracic spine",4013596,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755808,S22,"Fracture of rib(s), sternum and thoracic spine",4013156,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755809,S22,"Fracture of rib(s), sternum and thoracic spine",4209549,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755810,S22,"Fracture of rib(s), sternum and thoracic spine",4210437,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755811,S22,"Fracture of rib(s), sternum and thoracic spine",436832,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755812,S22,"Fracture of rib(s), sternum and thoracic spine",434499,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755813,S22,"Fracture of rib(s), sternum and thoracic spine",74188,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755814,S22,"Fracture of rib(s), sternum and thoracic spine",75942,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755815,S22,"Fracture of rib(s), sternum and thoracic spine",78273,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755816,S22,"Fracture of rib(s), sternum and thoracic spine",78574,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755817,S22,"Fracture of rib(s), sternum and thoracic spine",4148331,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755818,S22,"Fracture of rib(s), sternum and thoracic spine",4151955,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755819,S22,"Fracture of rib(s), sternum and thoracic spine",434770,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755820,S22,"Fracture of rib(s), sternum and thoracic spine",440545,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45755822,S22,"Fracture of rib(s), sternum and thoracic spine",440545,cohort_33,"Fracture of rib(s), sternum and thoracic spine",1.8
+45756558,Z99,"Dependence on enabling machines and devices, not elsewhere classified",37311997,cohort_20,"Dependence on enabling machines and
+devices",0.8
