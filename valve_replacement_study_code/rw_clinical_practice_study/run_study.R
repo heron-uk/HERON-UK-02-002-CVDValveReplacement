@@ -49,4 +49,7 @@ omopgenerics::exportSummarisedResult(results,
                                      fileName = "results_{cdm_name}_{date}.csv",
                                      path = here("Results"))
 
+# Create shiny app ----
+exportStaticApp(results)
+
 cli::cli_alert_success("Study finished")
