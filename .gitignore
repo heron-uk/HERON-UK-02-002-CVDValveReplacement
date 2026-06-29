@@ -13,9 +13,12 @@ code_to_run_local.R
 quarto_files/
 congenital_study_shiny/quarto/data/*.csv
 congenital_study_shiny/quarto/quarto_files
-valve_replacement_study_code/rw_clinical_practice_manuscript/Report/Figures/*.png
+valve_replacement_study_code/rw_clinical_practice_study/Results/*.csv
+valve_replacement_study_code/rw_patient_profiles_study/Results/*.csv
+valve_replacement_study_code/rw_clinical_practice_study/Results/*.txt
+valve_replacement_study_code/rw_patient_profiles_study/Results/*.txt
 valve_replacement_study_code/rw_clinical_practice_manuscript/Results/*.csv
-
+valve_replacement_study_code/rw_clinical_practice_manuscript/Report/Figures/*.png
 studyData.RData
 rsconnect/
 valve_replacement_study_code/rw_clinical_practice_manuscript/Figures/*.png

@@ -19,6 +19,7 @@ library(readr)
 library(clock)
 library(rlang)
 library(stringr)
+library(purrr)
 
 # database metadata and connection details
 # The name/ acronym for the database

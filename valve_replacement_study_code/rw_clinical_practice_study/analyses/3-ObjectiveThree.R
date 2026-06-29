@@ -11,7 +11,7 @@ cdm[["procedures"]] <- cdm[["procedures"]] |>
   addCohortIntersectFlag(targetCohortTable = "hospital_frailty_risk_score",
                          window = c(-365,0), 
                          nameStyle = "{cohort_name}")
-scores <- read_csv(here("cohorts", "hospital_frailty_risk_score", "icd_mapping", "hfrs.csv")) |>
+scores <- read_csv(here("cohorts", "study_codelists", "hospital_frailty_risk_score", "icd_mapping", "hfrs.csv")) |>
   select("cohort_name_1", "points") |>
   distinct()
 points_map <- setNames(scores$points, scores$cohort_name_1)
