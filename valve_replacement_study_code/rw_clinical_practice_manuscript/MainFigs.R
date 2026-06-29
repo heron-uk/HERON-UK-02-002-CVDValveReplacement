@@ -17,6 +17,7 @@ source(here("functions.R"))
 result <- importSummarisedResult(path = here("Results")) |>
   mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD Aurum", cdm_name)) |>
   filter(!(cdm_name == "CPRD Aurum" & strata_level == "2025"))
+source(here("preprocessing.R"))
 
 # Attrition ----
 x <- result |>
@@ -63,7 +64,7 @@ p <- (p1 + p2 + p3) +
   plot_layout(guides = "collect") &
   theme(legend.position = "bottom") 
 
-ggsave(filename = "indications.png", plot = p, path = here("Figures"), height = 12, width = 18)
+ggsave(filename = "indications.png", plot = p, path = here("Figures"), height = 7, width = 20)
 
 # Incidence
 p1 <- getIncidencePlot(result, age_group = c("40 to 64", "65 to 69"), sex = "Both")
@@ -74,7 +75,7 @@ p <- (p1/p2/p3) +
   plot_layout(guides = "collect") &
   theme(legend.position = "top") 
 
-ggsave(filename = "incidence.png", plot = p, path = here("Report", "Figures"))
+ggsave(filename = "incidence.png", plot = p, path = here("Figures"), height = 10, width = 14)
 
 
 

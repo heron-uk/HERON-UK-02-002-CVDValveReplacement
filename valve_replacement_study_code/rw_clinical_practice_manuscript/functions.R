@@ -12,9 +12,14 @@ getStackedPlot <- function(result, cohort_name, age_group, sex, title) {
     mutate("variable_level" = gsub(" avr", "", variable_level)) |>
     mutate("variable_level" = factor(variable_level, 
                                      levels = c("Aortic stenosis", "Aortic insufficiency", "Aortic endocarditis",
-                                                "Aortic stenosis insufficiency", "Aortic stenosis endocarditis",
-                                                "Aortic insufficiency endocarditis", "Aortic stenosis insufficiency endocarditis",
-                                                "No indication identified"))) |>
+                                                "Aortic stenosis insufficiency",
+                                                "No indication identified", "Other mixed aortic valve disease"))) |>
+    filter(!is.na(variable_level)) |>
+    # mutate("variable_level" = factor(variable_level, 
+    #                                  levels = c("Aortic stenosis", "Aortic insufficiency", "Aortic endocarditis",
+    #                                             "Aortic stenosis insufficiency", "Aortic stenosis endocarditis",
+    #                                             "Aortic insufficiency endocarditis", "Aortic stenosis insufficiency endocarditis",
+    #                                             "No indication identified"))) |>
     arrange(variable_level) |>
     visOmopResults::barPlot(x = "calendar_year", 
                             y = "percentage", 
@@ -29,9 +34,9 @@ getStackedPlot <- function(result, cohort_name, age_group, sex, title) {
           panel.border = element_rect(color = "black", fill = NA, linewidth = 1),
           legend.position = "bottom") +
     scale_color_manual(values = c(
-      "#B01513",  "#FFAD0AFF", "#EA6312", "#859B6CFF", "#2A9D8F", "#264653", "#6C6FB5", "grey")) +
+      "#B01513",  "#FFAD0AFF", "#EA6312", "#2A9D8F", "#264653",  "grey")) +
     scale_fill_manual(values = c(
-      "#B01513",  "#FFAD0AFF", "#EA6312", "#859B6CFF", "#2A9D8F", "#264653", "#6C6FB5", "grey")) +
+      "#B01513",  "#FFAD0AFF", "#EA6312", "#2A9D8F", "#264653", "grey")) +
     ggtitle(title) 
   
  
@@ -40,32 +45,32 @@ getStackedPlot <- function(result, cohort_name, age_group, sex, title) {
     filterGroup(cohort_name == !!cohort_name) |>
     filterStrata(age_group == !!age_group,
                  sex == !!sex) |>
-    filter(strata_name != "overall", 
+    filter(strata_name != "overall",
            variable_name == "Number subjects") |>
-    filterStrata(calendar_year != "overall") 
-  
+    filterStrata(calendar_year != "overall")
+
   scale_factor <- max(as.integer(data2$estimate_value), na.rm = TRUE) / 100
   
   x1 +
-    geom_line(
-      data = data2,
-      aes(x = strata_level, y = as.numeric(estimate_value) / scale_factor, group = cdm_name),
-      inherit.aes = FALSE,
-      colour = "black",
-      linewidth = 0.8
-    ) +
-    geom_point(
-      data = data2,
-      aes(x = strata_level, y = as.numeric(estimate_value) / scale_factor, group = cdm_name),
-      inherit.aes = FALSE,
-      colour = "black",
-      size = 2
-    ) +
-    scale_y_continuous(
-      expand = expansion(mult = c(0,0.1)),
-      name = "Percentage",
-      sec.axis = sec_axis(~ . * scale_factor, name = "Counts")
-    )
+  geom_line(
+    data = data2,
+    aes(x = strata_level, y = as.numeric(estimate_value) / scale_factor, group = cdm_name),
+    inherit.aes = FALSE,
+    colour = "black",
+    linewidth = 0.8
+  ) +
+  geom_point(
+    data = data2,
+    aes(x = strata_level, y = as.numeric(estimate_value) / scale_factor, group = cdm_name),
+    inherit.aes = FALSE,
+    colour = "black",
+    size = 2
+  ) +
+  scale_y_continuous(
+    expand = expansion(mult = c(0,0.1)),
+    name = "Percentage",
+    sec.axis = sec_axis(~ . * scale_factor, name = "Counts")
+  )
 }
 
 getIncidenceTable <- function(result, outcome_cohort_name, age_group, sex) {
@@ -127,8 +132,8 @@ getIncidencePlot <- function(result, age_group, sex) {
       linetype = "dashed",
       size = 0.8
     ) +
-    scale_colour_manual(values = c("#FFAD0AFF", "#2A9D8F", "#8DA0CBFF")) +
-    scale_fill_manual(values = c("#FFAD0AFF", "#2A9D8F", "#8DA0CBFF")) +
+    scale_colour_manual(values = c("#264653",  "#FFAD0AFF", "#EA6312")) +
+    scale_fill_manual(values = c("#264653",  "#FFAD0AFF", "#EA6312")) +
     theme(
       axis.text.x = element_text(angle = 45, hjust = 1)
     )
