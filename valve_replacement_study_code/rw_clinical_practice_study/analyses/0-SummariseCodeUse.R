@@ -1,20 +1,17 @@
-results[["code_use_indications"]] <- summariseCohortCodeUse(cdm,
-                                                            cohortTable = "indications")
-results[["code_use_procedures"]]  <- summariseCohortCodeUse(cdm, 
-                                                            cohortTable = "procedures")
-results[["code_use_hfrs_snomed"]]  <- summariseCohortCodeUse(cdm, 
-                                                      cohortTable = "hfrs_snomed")
-results[["code_use_hfrs_icd"]]  <- summariseCohortCodeUse(cdm, 
-                                                      cohortTable = "hfrs_icd")
-results[["code_use_cci_snomed"]]  <- summariseCohortCodeUse(cdm, 
-                                                             cohortTable = "cci_snomed")
-results[["code_use_cci_icd"]]  <- summariseCohortCodeUse(cdm, 
-                                                          cohortTable = "cci_icd")
-results[["code_use_comorbidities"]]  <- summariseCohortCodeUse(cdm, 
-                                                               cohortTable = "comorbidities")
-results[["code_use_aortic_valve_disease_phenotype"]]  <- summariseCohortCodeUse(cdm, 
-                                                                                cohortTable = "aortic_valve_disease_phenotype")
-results[["code_use_cardiovascular_disease"]]  <- summariseCohortCodeUse(cdm, 
-                                                                        cohortTable = "cardiovascular_disease")
-results[["code_use_cardiovascular_risk_factors"]]  <- summariseCohortCodeUse(cdm, 
-                                                                             cohortTable = "cardiovascular_risk_factors")
+
+cdm <- bind(cdm[["indications"]], cdm[["procedures"]], cdm[["hfrs_snomed"]],cdm[["hfrs_icd"]], cdm[["cci_snomed"]], cdm[["cci_icd"]], name = "code_use")
+
+results[["code_use"]] <- codelistDiagnostics(cohortTable = "code_use", 
+                                             achillesCodeUse = FALSE, 
+                                             cohortCodeUse = TRUE, 
+                                             orphanCodeUse = FALSE, 
+                                             drugDiagnostics = FALSE, 
+                                             measurementDiagnostics = FALSE)
+
+cdm <- bind(cdm[["comorbidities"]], cdm[["aortic_valve_disease_phenotype"]], cdm[["cardiovascular_disease"]],cdm[["cardiovascular_risk_factors"]], name = "tab_one")
+results[["code_use"]] <- codelistDiagnostics(cohortTable = "code_use", 
+                                             achillesCodeUse = FALSE, 
+                                             cohortCodeUse = TRUE, 
+                                             orphanCodeUse = TRUE, 
+                                             drugDiagnostics = FALSE, 
+                                             measurementDiagnostics = FALSE)
