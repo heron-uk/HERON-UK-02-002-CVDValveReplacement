@@ -6,49 +6,40 @@ cdm[["procedures_as"]] <- cdm[["procedures"]] |>
                          intersections = c(1,Inf), 
                          name = "procedures_as")
 
-omopgenerics::logMessage(message = "Add hospital frailty risk score")
-cdm[["procedures"]] <- cdm[["procedures"]] |>
-  addCohortIntersectFlag(targetCohortTable = "hospital_frailty_risk_score",
-                         window = c(-365,0), 
-                         nameStyle = "{cohort_name}")
-scores <- read_csv(here("cohorts", "study_codelists", "hospital_frailty_risk_score", "icd_mapping", "hfrs.csv")) |>
-  select("cohort_name_1", "points") |>
-  distinct()
-points_map <- setNames(scores$points, scores$cohort_name_1)
-exprs <- imap(points_map, ~ expr(!!sym(.y) := !!sym(.y) * !!.x))
+# Add scores ---
+omopgenerics::logMessage(message = "Add HFRS - snomed")
+cdm[["procedures_as"]] <- cdm[["procedures_as"]] |>
+  addScores(mapping = "snomed", score = "hfrs") |>
+  addScoresGrouping(mapping = "snomed", score = "hfrs")
 
-exprs <- imap(points_map, function(mult, col) {
-  expr(!!sym(col) * !!mult)
-})
-names(exprs) <- names(points_map)
+omopgenerics::logMessage(message = "Add HFRS - icd10")
+cdm[["procedures_as"]] <- cdm[["procedures_as"]] |>
+  addScores(mapping = "icd", score = "hfrs") |>
+  addScoresGrouping(mapping = "icd", score = "hfrs")
 
-cdm[["procedures"]] <- cdm[["procedures"]] |>
-  mutate(!!!exprs) |>
-  compute(temporary = FALSE, name = "procedures")
+omopgenerics::logMessage(message = "Add CCI - snomed")
+cdm[["procedures_as"]] <- cdm[["procedures_as"]] |>
+  addScores(mapping = "snomed", score = "cci") |>
+  addScoresGrouping(mapping = "snomed", score = "cci")
 
-omopgenerics::logMessage(message = "Create HFRS")
-cols_to_exclude <- c("cohort_definition_id", "subject_id", "cohort_start_date", "cohort_end_date")
-cols_to_sum <- setdiff(colnames(cdm[["procedures"]] ), cols_to_exclude)
-quoted <- DBI::dbQuoteIdentifier(db, cols_to_sum)
-quoted_chr <- as.character(quoted)
-expr_str <- paste0("(", paste0("COALESCE(", quoted_chr, ", 0)", collapse = " + "), ")")
+omopgenerics::logMessage(message = "Add CCI - icd10")
+cdm[["procedures_as"]] <- cdm[["procedures_as"]] |>
+  addScores(mapping = "icd", score = "cci") |>
+  addScoresGrouping(mapping = "icd", score = "cci")
 
-cdm[["procedures"]] <- cdm[["procedures"]] |>
-  mutate("hospital_frailty_risk_score" = !!dbplyr::sql(expr_str)) |>
-  select(all_of(cols_to_exclude), "hospital_frailty_risk_score") |>
-  compute(temporary = FALSE, name = "procedures")
+omopgenerics::logMessage(message = "Add age group extended")
+cdm[["procedures_as"]] <- cdm[["procedures_as"]] |>
+  addAge(ageGroup = age_groups_extended) 
 
-omopgenerics::logMessage(message = "Create hfrs groups")
-cdm[["procedures"]] <- cdm[["procedures"]] |>
-  mutate("hfrs_group" = case_when(
-    hospital_frailty_risk_score  < 5 ~ "Low risk",
-    hospital_frailty_risk_score  >= 5 & hospital_frailty_risk_score  < 15 ~ "Intermediate risk",
-    hospital_frailty_risk_score  >= 15 ~ "High risk"
-  )) |>
-  compute(temporary = FALSE, name = "procedures")
-
-omopgenerics::logMessage(message = "Table one")
+omopgenerics::logMessage(message = "Population characteristics")
 results[["table_one"]] <- summariseCharacteristics(cdm[["procedures_as"]], 
+                                                   strata = list("calendar_year", 
+                                                                 c("calendar_year", "sex"),
+                                                                 c("calendar_year", "age_group"),
+                                                                 c("calendar_year", "hfrs_snomed_groups"),
+                                                                 c("calendar_year", "hfrs_icd_groups"),
+                                                                 c("calendar_year", "cci_snomed_groups"),
+                                                                 c("calendar_year", "cci_icd_groups")),
                                                    cohortIntersectFlag = list(
                                                      "Comorbidities" = list("targetCohortTable" = "comorbidities",
                                                                             "window" = c(-365, 0),
@@ -63,22 +54,14 @@ results[["table_one"]] <- summariseCharacteristics(cdm[["procedures_as"]],
                                                                                           "window" = c(-365, 0),
                                                                                           "nameStyle" = "{cohort_name}")),
                                                    conceptIntersectFlag = list(
-                                                     "Previous medications" = list("conceptSet" = importCodelist(here("cohorts", "treatments_codelists"), type = "csv"),
+                                                     "Previous medications" = list("conceptSet" = importCodelist(here("cohorts", "study_codelists", "treatments"), type = "csv"),
                                                                                    "window" = c(-365, 0),
                                                                                    "nameStyle" = "{cohort_name}")),
-                                                   otherVariables = c("hfrs_group", "hospital_frailty_risk_score"))
-
-
-omopgenerics::logMessage(message = "Temporal")
-omopgenerics::logMessage(message = "Add calendar year")
-cdm[["procedures"]] <- cdm[["procedures"]] |>
-  mutate("calendar_year" = get_year(cohort_start_date)) |>
-  compute(temporary = FALSE, name = "procedures")
-
-results[["temporal"]] <- summariseCharacteristics(cdm[["procedures_as"]], 
-                                                  ageGroup = age_group_extended,
-                                                  strata = list(c("calendar_year"), c("calendar_year", "hfrs_group")),
-                                                  otherVariables = "age",
-                                                  estimates = list("age" = c("q25", "q75", "density", "median")))
+                                                   otherVariables = c("hfrs_snomed", "hfrs_icd", "cci_snomed", "cci_icd", "hfrs_snomed_groups", "hfrs_icd_groups", "cci_snomed_groups", "cci_icd_groups"),
+                                                   estimates = list("age" = c("density", 'min', 'q25', 'median', 'q75', 'max'),
+                                                                    "hfrs_snomed" = c("density", 'min', 'q25', 'median', 'q75', 'max'),
+                                                                    "hfrs_icd" = c("density", 'min', 'q25', 'median', 'q75', 'max'),
+                                                                    "cci_snomed" = c("density", 'min', 'q25', 'median', 'q75', 'max'),
+                                                                    "cci_icd" = c("density", 'min', 'q25', 'median', 'q75', 'max')))
 
 omopgenerics::logMessage(message = "FINISH OBJECTIVE 3")

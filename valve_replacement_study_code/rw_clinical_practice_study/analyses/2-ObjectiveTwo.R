@@ -8,7 +8,7 @@ cdm[["procedures_nr"]] <- cdm[["procedures_nr"]] |>
                          name = "procedures_nr")
 
 omopgenerics::logMessage(message = "Get denominator cohort")
-cdm <- IncidencePrevalence::generateDenominatorCohortSet(
+cdm <- generateDenominatorCohortSet(
   cdm = cdm, 
   name = "denominator",
   cohortDateRange = study_period,
@@ -18,13 +18,44 @@ cdm <- IncidencePrevalence::generateDenominatorCohortSet(
   sex = c("Both", "Male", "Female")) 
 
 omopgenerics::logMessage(message = "Estimate incidence")
-results[["incidence"]] <- IncidencePrevalence::estimateIncidence(
+results[["incidence"]] <- estimateIncidence(
   cdm = cdm,
   denominatorTable = "denominator",
   outcomeTable = "procedures_nr",
   interval = c("years", "overall"),
   repeatedEvents = FALSE,
-  completeDatabaseIntervals = TRUE
-)
+  completeDatabaseIntervals = TRUE)
+
+
+omopgenerics::logMessage(message = "Estimate incidence - stratified by risk scores")
+omopgenerics::logMessage(message = "Add HFRS - snomed")
+cdm[["denominator"]] <- cdm[["denominator"]] |>
+  addScores(mapping = "snomed", score = "hfrs") |>
+  addScoresGrouping(mapping = "snomed", score = "hfrs")
+
+omopgenerics::logMessage(message = "Add HFRS - icd10")
+cdm[["denominator"]] <- cdm[["denominator"]] |>
+  addScores(mapping = "icd", score = "hfrs") |>
+  addScoresGrouping(mapping = "icd", score = "hfrs")
+
+omopgenerics::logMessage(message = "Add CCI - snomed")
+cdm[["denominator"]] <- cdm[["denominator"]] |>
+  addScores(mapping = "snomed", score = "cci") |>
+  addScoresGrouping(mapping = "snomed", score = "cci")
+
+omopgenerics::logMessage(message = "Add CCI - icd10")
+cdm[["denominator"]] <- cdm[["denominator"]] |>
+  addScores(mapping = "icd", score = "cci") |>
+  addScoresGrouping(mapping = "icd", score = "cci")
+
+omopgenerics::logMessage(message = "Estimate incidence")
+results[["incidence_per_groups"]] <- estimateIncidence(
+  cdm = cdm,
+  denominatorTable = "denominator",
+  outcomeTable = "procedures_nr",
+  interval = c("years", "overall"),
+  repeatedEvents = FALSE, 
+  strata = list("hfrs_snomed_groups", "hfrs_icd_groups", "cci_snomed_groups", "cci_icd_groups"),
+  completeDatabaseIntervals = TRUE)
 
 omopgenerics::logMessage(message = "OBJECTIVE 2 FINISHED")

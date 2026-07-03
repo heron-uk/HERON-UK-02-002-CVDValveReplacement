@@ -1,57 +1,65 @@
 # Instantiate HFRS (objective three) ----
-omopgenerics::logMessage(message = "Instantiate HFRS - SNOMED")
-cdm[["hospital_frailty_risk_score"]] <- conceptCohort(cdm,
-                                                      conceptSet = importCodelist(here("cohorts", "study_codelists", 
-                                                                                       "hospital_frailty_risk_score", "snomed_codelists"), 
-                                                                                  type = "csv"), 
-                                                      name = "hospital_frailty_risk_score",
-                                                      exit = "event_start_date")
-
 omopgenerics::logMessage(message = "Define chronic")
-def <- read_csv(here("cohorts", "study_codelists", "hospital_frailty_risk_score", 
-                     "icd_mapping", "hospital_frailty_score.csv")) |>
-  inner_join(read_csv(here("cohorts",  "study_codelists", "hospital_frailty_risk_score", 
-                           "icd_mapping", "hfrs.csv"))) |>
-  filter(chronic) |> 
-  select(cohort_name_1, chronic) |>
-  distinct() |>
-  pull("cohort_name_1")
+x <- read_csv(here("cohorts", "study_codelists", "hospital_frailty_risk_score", "hfrs.csv")) |>
+  mutate("cohort_name" = paste0("hfrs_", str_to_lower(cohort_name), "_snomed")) |>
+  filter(chronic) |>
+  distinct(cohort_name) |>
+  pull("cohort_name")
 
-cdm[["hospital_frailty_risk_score"]] <- cdm[["hospital_frailty_risk_score"]] |>
-  exitAtObservationEnd(cohortId = def)
+omopgenerics::logMessage(message = "Instantiate HFRS - SNOMED")
+cdm[["hfrs_snomed"]] <- conceptCohort(cdm,
+                                      conceptSet = importCodelist(here("cohorts", "study_codelists", 
+                                                                       "hospital_frailty_risk_score", "snomed_codelists"), 
+                                                                  type = "csv"), 
+                                      name = "hfrs_snomed",
+                                      exit = "event_start_date")
+
+
+cdm[["hfrs_snomed"]] <- cdm[["hfrs_snomed"]] |>
+  exitAtObservationEnd(cohortId = x)
 
 omopgenerics::logMessage(message = "Instantiate HFRS - Based on ICD10")
-x <- read_csv(here("cohorts", "study_codelists", "hospital_frailty_risk_score", 
-                   "icd_mapping", "hospital_frailty_score.csv"))
-x$icd10_code 
+x <- read_csv(here("cohorts", "study_codelists", "hospital_frailty_risk_score", "hfrs.csv")) |>
+  mutate("cohort_name" = paste0("hfrs_", str_to_lower(cohort_name), "_icd")) |>
+  filter(chronic) |>
+  distinct(cohort_name) |>
+  pull("cohort_name")
+cdm[["hfrs_icd"]] <- conceptCohort(cdm,
+                                   conceptSet = importCodelist(here("cohorts", "study_codelists", 
+                                                                    "hospital_frailty_risk_score", "icd10_codelists"), 
+                                                               type = "csv"), 
+                                   name = "hfrs_icd",
+                                   useSourceFields = TRUE, 
+                                   exit = "event_start_date")
 
 
+cdm[["hfrs_icd"]] <- cdm[["hfrs_icd"]] |>
+  exitAtObservationEnd(cohortId = x)
+
+# Instantiate CCI (objective three) ----
+omopgenerics::logMessage(message = "Instantiate CCI - SNOMED")
+cdm[["cci_snomed"]] <- conceptCohort(cdm,
+                                      conceptSet = importCodelist(here("cohorts", "study_codelists", 
+                                                                       "charlson_comorbidity_index", "snomed_codelists"), 
+                                                                  type = "csv"), 
+                                      name = "cci_snomed",
+                                      exit = "event_start_date")
 
 
+cdm[["cci_snomed"]] <- cdm[["cci_snomed"]] |>
+  exitAtObservationEnd()
+
+omopgenerics::logMessage(message = "Instantiate CCI - Based on ICD10")
+cdm[["cci_icd"]] <- conceptCohort(cdm,
+                                   conceptSet = importCodelist(here("cohorts", "study_codelists", 
+                                                                    "charlson_comorbidity_index", 
+                                                                    "icd10_codelists"),
+                                                                    type = "csv"), 
+                                   name = "cci_icd",
+                                   useSourceFields = TRUE, 
+                                   exit = "event_start_date")
 
 
+cdm[["cci_icd"]] <- cdm[["cci_icd"]] |>
+  exitAtObservationEnd()
 
-
-
-
-
-
-
-
-
-
-cdm[["hospital_frailty_risk_score"]] <- conceptCohort(cdm,
-                                                      conceptSet = importCodelist(here("cohorts", "study_codelists", "hospital_frailty_risk_score"), type = "csv"), 
-                                                      name = "hospital_frailty_risk_score",
-                                                      exit = "event_start_date")
-
-omopgenerics::logMessage(message = "Define chronic")
-def <- read_csv(here("cohorts", "study_codelists", "hospital_frailty_risk_score", "icd_mapping", "hospital_frailty_score.csv")) |>
-  inner_join(read_csv(here("cohorts",  "study_codelists", "hospital_frailty_risk_score", "icd_mapping", "hfrs.csv"))) |>
-  filter(chronic) |> 
-  select(cohort_name_1, chronic) |>
-  distinct() |>
-  pull("cohort_name_1")
-
-cdm[["hospital_frailty_risk_score"]] <- cdm[["hospital_frailty_risk_score"]] |>
-  exitAtObservationEnd(cohortId = def)

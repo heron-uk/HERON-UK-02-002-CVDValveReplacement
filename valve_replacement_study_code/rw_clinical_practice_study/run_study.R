@@ -31,6 +31,7 @@ results[["obs_period"]] <- OmopSketch::summariseObservationPeriod(cdm)
 # Instantiate study cohorts ----
 omopgenerics::logMessage(message = "Instantiating study cohorts")
 source(here::here("cohorts", "instantiate_cohorts.R"))
+source(here::here("cohorts", "instantiate_scores.R"))
 omopgenerics::logMessage(message = "Study cohorts instantiated")
 
 # Run analyses ----
@@ -39,17 +40,14 @@ source(here::here("analyses", "0-SummariseCodeUse.R"))
 source(here::here("analyses", "1-ObjectiveOne.R"))
 source(here::here("analyses", "2-ObjectiveTwo.R"))
 source(here::here("analyses", "3-ObjectiveThree.R"))
+source(here::here("analyses", "4-RiskScores.R"))
 omopgenerics::logMessage("Analyses finished")
 
 # Finish ----
-results <- results |>
-  omopgenerics::bind()
-omopgenerics::exportSummarisedResult(results,
+result <- bind(results)
+omopgenerics::exportSummarisedResult(result,
                                      minCellCount = min_cell_count,
                                      fileName = "results_{cdm_name}_{date}.csv",
                                      path = here("Results"))
-
-# Create shiny app ----
-exportStaticApp(results)
 
 cli::cli_alert_success("Study finished")
