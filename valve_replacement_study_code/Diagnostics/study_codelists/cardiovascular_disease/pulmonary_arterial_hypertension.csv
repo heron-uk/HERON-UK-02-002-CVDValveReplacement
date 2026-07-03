@@ -1,0 +1,534 @@
+﻿concept_id,found_from,concept_name,domain_id,vocabulary_id,standard_concept,PAD (broad),dani_PAD_broad
+316795,From initial search,Congenital anomaly of peripheral blood vessel,Condition,SNOMED,S,,F
+761896,From initial search,Late effect of injury to peripheral blood vessel,Condition,SNOMED,S,x,F
+40761363,From initial search,Ever told by doctor that you had claudication or peripheral arterial disease,Observation,LOINC,S,x,T
+43021861,From initial search,Congenital peripheral pulmonary artery stenosis,Condition,SNOMED,S,,F
+4076794,From initial search,Peripheral arteriovenous malformation,Condition,SNOMED,S,x,F
+40761364,From initial search,Ever had angiography for claudication or peripheral arterial disease,Observation,LOINC,S,x,T
+40761366,From initial search,Ever had surgery to improve blood flow in legs for claudication or peripheral arterial disease,Observation,LOINC,S,x,T
+43021846,From initial search,Peripheral arterial insufficiency,Condition,SNOMED,S,x,T
+4111847,From initial search,Peripheral artery spasm,Condition,SNOMED,S,,F
+4117679,From initial search,Peripheral arterial embolism,Condition,SNOMED,S,x,T
+21491680,From initial search,Peripheral vessels fluoroscopic angiogram performed,Observation,LOINC,S,x,F
+3001048,From initial search,Peripheral artery measurement site,Observation,LOINC,S,,F
+4354083,From initial search,Peripheral pulmonary artery disease,Condition,SNOMED,S,,F
+43021868,From initial search,Aneurysm of peripheral artery,Condition,SNOMED,S,x,T
+44806699,From initial search,Excepted from peripheral arterial disease quality indicators - patient unsuitable,Observation,SNOMED,S,?,F
+44813087,From initial search,Referred for peripheral artery disease assessment,Observation,SNOMED,S,x,F
+4108610,From initial search,Peripheral pulmonary artery A/V aneurysm,Condition,SNOMED,S,,F
+37168346,From initial search,Acute occlusion of peripheral artery due to thrombosis,Condition,SNOMED,S,x,T
+4354085,From initial search,Multiple peripheral pulmonary artery stenoses,Condition,SNOMED,S,,F
+44806801,From initial search,Excepted from peripheral arterial disease quality indicators - informed dissent,Observation,SNOMED,S,x,F
+44811093,From initial search,Education about peripheral arterial embolism care,Observation,SNOMED,S,x,F
+4108739,From initial search,Peripheral pulmonary artery stenosis,Condition,SNOMED,S,,F
+44806697,From initial search,Exception reporting - peripheral arterial disease quality indicators,Observation,SNOMED,S,x,F
+317309,From initial search,Peripheral arterial occlusive disease,Condition,SNOMED,S,x,T
+4270620,From initial search,Peripheral congenital arteriovenous aneurysm,Condition,SNOMED,S,,F
+40761365,From initial search,Ever had angioplasty for claudication or peripheral arterial disease,Observation,LOINC,S,x,T
+3654996,From initial search,Peripheral arterial disease,Condition,SNOMED,S,x,T
+4354084,From initial search,Peripheral pulmonary artery pruning,Condition,SNOMED,S,,F
+4108609,From initial search,Peripheral pulmonary artery sparseness,Condition,SNOMED,S,,F
+1340431,From initial search,Exacerbation of peripheral arterial occlusive disease,Condition,OMOP Extension,S,x,T
+4131950,From initial search,Peripheral artery graft,Observation,SNOMED,S,x,T
+194385,From descendants,Aneurysm of renal artery,Condition,SNOMED,S,x,T
+432335,From descendants,Aneurysm of subclavian artery,Condition,SNOMED,S,x,T
+436996,From descendants,Thoracoabdominal aortic aneurysm,Condition,SNOMED,S,,F
+438778,From descendants,Aneurysm of artery of upper extremity,Condition,SNOMED,S,x,T
+439037,From descendants,Aneurysm of artery of neck,Condition,SNOMED,S,x,T
+443408,From descendants,Upper limb arterial embolus,Condition,SNOMED,S,x,T
+444264,From descendants,Thrombosis of iliac artery,Condition,SNOMED,S,x,T
+603303,From descendants,Bilateral atherosclerosis of nonautologous biological bypass graft of lower limbs,Condition,SNOMED,S,x,T
+609086,From descendants,Congenital anomaly of left renal artery,Condition,SNOMED,S,,F
+761128,From descendants,Aneurysm of left iliac artery,Condition,SNOMED,S,x,T
+761201,From descendants,Aneurysm of right iliac artery,Condition,SNOMED,S,x,T
+761207,From descendants,Aneurysm of right external iliac artery,Condition,SNOMED,S,x,T
+761428,From descendants,Stenosis of left renal artery,Condition,SNOMED,S,x,T
+761437,From descendants,Macroaneurysm of retina of bilateral eyes,Condition,SNOMED,S,,F
+761843,From descendants,Congenital arteriovenous malformation of right upper limb,Condition,SNOMED,S,,F
+761854,From descendants,Gangrene of right lower limb co-occurrent and due to atherosclerosis of bypass graft,Condition,SNOMED,S,x,T
+764100,From descendants,Abdominal aortic aneurysm 3.0 to 5.5 centimeters in male,Condition,SNOMED,S,,F
+765284,From descendants,Thrombosis of right ulnar artery,Condition,SNOMED,S,x,T
+35611567,From descendants,Aneurysm of artery of left lower limb,Condition,SNOMED,S,x,T
+35615021,From descendants,Atherosclerosis of left renal artery,Condition,SNOMED,S,x,T
+35615027,From descendants,Aneurysm of artery of left upper limb,Condition,SNOMED,S,x,T
+35615096,From descendants,Thrombosis of right popliteal artery,Condition,SNOMED,S,x,T
+4137550,From descendants,Occlusion of femoropopliteal bypass graft,Condition,SNOMED,S,x,T
+4151859,From descendants,Congenital peripheral aneurysm,Condition,SNOMED,S,,F
+4153293,From descendants,Congenital renal artery stenosis,Condition,SNOMED,S,,F
+4174012,From descendants,Subclavian artery embolus,Condition,SNOMED,S,x,T
+4175570,From descendants,Subclavian artery thrombosis,Condition,SNOMED,S,x,T
+4179908,From descendants,Internal iliac artery thrombosis,Condition,SNOMED,S,x,T
+4180025,From descendants,Profunda femoris aneurysm,Condition,SNOMED,S,x,T
+4193057,From descendants,Popliteal artery occlusion,Condition,SNOMED,S,x,T
+4226026,From descendants,Stenosis of lower limb artery,Condition,SNOMED,S,x,T
+4237912,From descendants,"Aneurysm of artery, other than aorta",Condition,SNOMED,S,x,T
+4245436,From descendants,Congenital dilatation of subclavian artery,Condition,SNOMED,S,,F
+36685005,From descendants,Bilateral microaneurysm of retinal arteries,Condition,SNOMED,S,,F
+36712953,From descendants,Aneurysm of left internal carotid artery,Condition,SNOMED,S,,F
+36713012,From descendants,Occlusion of left femoral artery,Condition,SNOMED,S,x,T
+36713014,From descendants,Atherosclerosis of bilateral iliac arteries,Condition,SNOMED,S,x,T
+36713015,From descendants,Atherosclerosis of right iliac artery,Condition,SNOMED,S,x,T
+36717278,From descendants,Aneurysm of right carotid artery,Condition,SNOMED,S,x,T
+42536193,From descendants,Ruptured aneurysm of left posterior communicating artery,Condition,SNOMED,S,,F
+42536634,From descendants,Acute occlusion of artery of upper limb,Condition,SNOMED,S,x,T
+42539410,From descendants,Thromboembolus of internal iliac artery,Condition,SNOMED,S,x,T
+42709998,From descendants,Congenital anomaly of blood vessel of limb,Condition,SNOMED,S,,F
+37016147,From descendants,Occlusion of renal artery due to embolism,Condition,SNOMED,S,x,T
+4299965,From descendants,Port-wine stain associated with spinal dysraphism,Condition,SNOMED,S,,F
+4337367,From descendants,Popliteal artery thrombosis,Condition,SNOMED,S,x,T
+4348039,From descendants,Thrombosis of mesenteric artery,Condition,SNOMED,S,x,T
+40483538,From descendants,Atherosclerosis of bypass graft of limb,Condition,SNOMED,S,x,T
+44813802,From descendants,Thrombosis of stent of renal artery,Condition,SNOMED,S,x,T
+4033404,From descendants,Anomalous origin of right subclavian artery,Condition,SNOMED,S,,F
+4108367,From descendants,Brachial artery aneurysm,Condition,SNOMED,S,x,T
+4110200,From descendants,Radial artery aneurysm,Condition,SNOMED,S,x,T
+4111848,From descendants,Embolism and thrombosis of the posterior tibial artery,Condition,SNOMED,S,x,T
+4117933,From descendants,Femoral popliteal occlusion,Condition,SNOMED,S,x,T
+4119614,From descendants,Femoral artery embolus,Condition,SNOMED,S,x,T
+4121629,From descendants,Carotid artery aneurysm,Condition,SNOMED,S,x,T
+4128218,From descendants,Acquired renal artery aneurysm,Condition,SNOMED,S,x,T
+37109923,From descendants,Acute occlusion of artery of lower limb due to thrombosis,Condition,SNOMED,S,x,T
+37110250,From descendants,Atherosclerosis of artery of lower limb,Condition,SNOMED,S,x,T
+37163052,From descendants,Acute thrombotic common femoral artery occlusion,Condition,SNOMED,S,x,T
+37163058,From descendants,Aortic aneurysm due to congenital heart disease,Condition,SNOMED,S,,F
+37204744,From descendants,Congenital aneurysm of cerebral artery,Condition,SNOMED,S,,F
+37204803,From descendants,"Port-wine nevi, mega cisterna magna, hydrocephalus syndrome",Condition,SNOMED,S,,F
+37209563,From descendants,Aneurysm of right vertebral artery,Condition,SNOMED,S,,F
+193793,From descendants,Aneurysm of visceral artery,Condition,SNOMED,S,x,T
+312343,From descendants,Ruptured aortic aneurysm,Condition,SNOMED,S,,F
+315558,From descendants,Atherosclerosis of arteries of the extremities,Condition,SNOMED,S,x,T
+317585,From descendants,Aortic aneurysm,Condition,SNOMED,S,,F
+321314,From descendants,Abdominal aortic aneurysm without rupture,Condition,SNOMED,S,,F
+441044,From descendants,Atheromatous embolus of lower limb,Condition,SNOMED,S,x,T
+443407,From descendants,Lower limb arterial embolus,Condition,SNOMED,S,x,T
+603316,From descendants,Congenital anomaly of right renal artery,Condition,SNOMED,S,,F
+609013,From descendants,Atherosclerosis of bypass graft of left upper limb,Condition,SNOMED,S,x,T
+761208,From descendants,Aneurysm of left external iliac artery,Condition,SNOMED,S,x,T
+761432,From descendants,Atherosclerosis of autologous bypass graft of left lower limb,Condition,SNOMED,S,x,T
+761742,From descendants,Atheroembolism of right renal artery,Condition,SNOMED,S,x,T
+762584,From descendants,Dissecting aneurysm of posterior cerebral artery,Condition,SNOMED,S,,F
+764099,From descendants,Abdominal aortic aneurysm 3.0 to 5.0 centimeters in female,Condition,SNOMED,S,,F
+765081,From descendants,Macroaneurysm of retina of left eye,Condition,SNOMED,S,,F
+765301,From descendants,Claudication of right upper limb co-occurrent and due to atherosclerosis,Condition,SNOMED,S,x,T
+35615086,From descendants,Stenosis of artery of left lower limb,Condition,SNOMED,S,x,T
+35615016,From descendants,Aneurysm of right common carotid artery,Condition,SNOMED,S,x,T
+35615018,From descendants,Atherosclerosis of artery of right upper limb,Condition,SNOMED,S,x,T
+35615023,From descendants,Aneurysm of left subclavian artery,Condition,SNOMED,S,x,T
+35615061,From descendants,Thrombosis of left iliac artery,Condition,SNOMED,S,x,T
+35615091,From descendants,Embolism of right popliteal artery,Condition,SNOMED,S,x,T
+35615094,From descendants,Thrombosis of artery of left lower extremity,Condition,SNOMED,S,x,T
+35615095,From descendants,Thrombosis of left popliteal artery,Condition,SNOMED,S,x,T
+35615106,From descendants,Occlusion of right popliteal artery,Condition,SNOMED,S,x,T
+1244908,From descendants,Aneurysm of intracranial artery,Condition,SNOMED,S,,F
+46271462,From descendants,Atherosclerosis of autologous bypass graft of lower limb,Condition,SNOMED,S,x,T
+4137551,From descendants,Occlusion of femorofemoral crossover bypass graft,Condition,SNOMED,S,x,T
+4143989,From descendants,Ruptured aneurysm of common iliac artery,Condition,SNOMED,S,x,T
+4174013,From descendants,Axillary artery embolus,Condition,SNOMED,S,x,T
+4195973,From descendants,Common femoral artery occlusion,Condition,SNOMED,S,x,T
+4210025,From descendants,Vascular compression of esophagus by aberrant right subclavian artery arising from descending aorta,Condition,SNOMED,S,,F
+4210434,From descendants,Ruptured popliteal artery aneurysm,Condition,SNOMED,S,x,T
+4213638,From descendants,Aneurysm of axillary artery,Condition,SNOMED,S,x,T
+36674753,From descendants,Microaneurysm of left retinal artery due to diabetes mellitus,Condition,SNOMED,S,,F
+36685006,From descendants,Microaneurysm of left retinal artery,Condition,SNOMED,S,,F
+36685007,From descendants,Microaneurysm of right retinal artery,Condition,SNOMED,S,,F
+36712952,From descendants,Aneurysm of right internal carotid artery,Condition,SNOMED,S,,F
+36712958,From descendants,Aneurysm of right internal iliac artery,Condition,SNOMED,S,x,T
+36715431,From descendants,Klippel Trenaunay syndrome,Condition,SNOMED,S,,F
+42535335,From descendants,Stenosis of left subclavian artery,Condition,SNOMED,S,x,T
+42536639,From descendants,Perforation of thoracoabdominal aorta co-occurrent and due to aneurysm of thoracoabdominal aorta,Condition,SNOMED,S,,F
+4316065,From descendants,Retroesophageal subclavian artery,Condition,SNOMED,S,,F
+4348319,From descendants,Acute mesenteric arterial occlusion,Condition,SNOMED,S,x,T
+40482910,From descendants,Aortic sinus of Valsalva aneurysm from noncoronary sinus,Condition,SNOMED,S,,F
+40482912,From descendants,Aortic sinus of Valsalva aneurysm from right coronary sinus,Condition,SNOMED,S,,F
+40483311,From descendants,Isolation of left subclavian artery,Condition,SNOMED,S,,F
+40491457,From descendants,Aneurysm of aortic sinus of Valsalva with rupture to left ventricle,Condition,SNOMED,S,,F
+40492975,From descendants,Vascular ring with left aortic arch and right arterial duct ligament arising from retroesophageal aortic diverticulum with aberrant right subclavian artery,Condition,SNOMED,S,,F
+44808746,From descendants,Occlusion of ulnar artery,Condition,SNOMED,S,x,T
+4030663,From descendants,Renal artery occlusion,Condition,SNOMED,S,x,T
+4079430,From descendants,Ruptured aneurysm of anterior cerebral artery,Condition,SNOMED,S,,F
+4110201,From descendants,Ulnar artery aneurysm,Condition,SNOMED,S,x,T
+4110333,From descendants,Embolism and thrombosis of the popliteal artery,Condition,SNOMED,S,x,T
+4121625,From descendants,Common iliac artery stenosis,Condition,SNOMED,S,x,T
+4126111,From descendants,Congenital renal artery aneurysm,Condition,SNOMED,S,,F
+37109920,From descendants,Acute occlusion of aortoiliac artery co-occurrent and due to thromboembolus,Condition,SNOMED,S,,F
+37109989,From descendants,Angio-osteohypertrophic syndrome,Condition,SNOMED,S,,F
+37110120,From descendants,Keutel syndrome,Condition,SNOMED,S,,F
+37160845,From descendants,Aspergillus mycotic cerebral aneurysm,Condition,SNOMED,S,,F
+37162999,From descendants,Cholesterol atheromatous embolism of digital artery,Condition,SNOMED,S,x,T
+37163042,From descendants,Atherosclerosis of iliac artery,Condition,SNOMED,S,x,T
+37163047,From descendants,Acute thrombotic popliteal artery occlusion,Condition,SNOMED,S,x,T
+37163074,From descendants,Acute occlusion of brachial artery due to thrombosis,Condition,SNOMED,S,x,T
+37163076,From descendants,Acute occlusion of brachial artery due to thromboembolus,Condition,SNOMED,S,x,T
+37204661,From descendants,Multiple aneurysms of cerebral artery,Condition,SNOMED,S,,F
+37204668,From descendants,Aneurysm of middle cerebral artery,Condition,SNOMED,S,,F
+194964,From descendants,Aneurysm of splenic artery,Condition,SNOMED,S,x,T
+195559,From descendants,Ruptured abdominal aortic aneurysm,Condition,SNOMED,S,,F
+195834,From descendants,Atherosclerosis of renal artery,Condition,SNOMED,S,x,T
+198177,From descendants,Abdominal aortic aneurysm,Condition,SNOMED,S,,F
+441051,From descendants,Thoracic aortic aneurysm without rupture,Condition,SNOMED,S,,F
+761055,From descendants,Aneurysm of bilateral subclavian arteries,Condition,SNOMED,S,x,T
+761210,From descendants,Aneurysm of left superficial temporal artery,Condition,SNOMED,S,,F
+761814,From descendants,Atheroembolism of artery of left upper limb,Condition,SNOMED,S,x,T
+761815,From descendants,Atheroembolism of artery of right upper limb,Condition,SNOMED,S,x,T
+761825,From descendants,Claudication of bilateral upper limbs co-occurrent and due to atherosclerosis,Condition,SNOMED,S,x,T
+761842,From descendants,Congenital arteriovenous malformation of left upper limb,Condition,SNOMED,S,,F
+35607996,From descendants,Retinal arterial macroaneurysm with supravalvular pulmonic stenosis,Condition,SNOMED,S,,F
+35615083,From descendants,Embolism of artery of left upper limb,Condition,SNOMED,S,x,T
+35615017,From descendants,Aneurysm of left common carotid artery,Condition,SNOMED,S,,F
+35615019,From descendants,Atherosclerosis of artery of left upper limb,Condition,SNOMED,S,x,T
+35615022,From descendants,Aneurysm of right subclavian artery,Condition,SNOMED,S,x,T
+35615025,From descendants,Aneurysm of left brachial artery,Condition,SNOMED,S,x,T
+35615062,From descendants,Thrombosis of right iliac artery,Condition,SNOMED,S,x,T
+35615088,From descendants,Embolism of artery of left lower limb,Condition,SNOMED,S,x,T
+35615098,From descendants,Thrombosis of right femoral artery,Condition,SNOMED,S,x,T
+1245707,From descendants,Bilateral congenital anomaly of blood vessels of lower limbs,Condition,SNOMED,S,,F
+4141975,From descendants,Occlusion of superior mesenteric artery,Condition,SNOMED,S,x,T
+4151848,From descendants,Renal artery stenosis of unknown cause,Condition,SNOMED,S,x,T
+4167993,From descendants,Aneurysm of popliteal artery,Condition,SNOMED,S,x,T
+4173167,From descendants,Mesenteric embolus,Condition,SNOMED,S,x,T
+4174015,From descendants,Popliteal artery embolus,Condition,SNOMED,S,x,T
+4199183,From descendants,Iliac artery occlusion,Condition,SNOMED,S,x,T
+4244196,From descendants,Congenital malposition of subclavian artery,Condition,SNOMED,S,,F
+4246643,From descendants,Congenital stenosis of subclavian artery,Condition,SNOMED,S,,F
+36712954,From descendants,Aneurysm of left carotid artery,Condition,SNOMED,S,x,T
+36712955,From descendants,Atherosclerosis of bilateral renal arteries,Condition,SNOMED,S,x,T
+36712959,From descendants,Aneurysm of left internal iliac artery,Condition,SNOMED,S,x,T
+36712962,From descendants,Aneurysm of left femoral artery,Condition,SNOMED,S,x,T
+42536192,From descendants,Ruptured aneurysm of right posterior communicating artery,Condition,SNOMED,S,,F
+43021972,From descendants,Systemic to pulmonary collateral artery from left renal artery,Condition,SNOMED,S,,F
+45766128,From descendants,Familial cerebral saccular aneurysm,Condition,SNOMED,S,,F
+45766216,From descendants,Arteriovenous malformation of limb,Condition,SNOMED,S,,F
+4276505,From descendants,Aneurysm of superior mesenteric artery,Condition,SNOMED,S,x,T
+4301417,From descendants,Port-wine stain in proteus syndrome,Condition,SNOMED,S,,F
+4323058,From descendants,Aneurysm of superficial temporal artery,Condition,SNOMED,S,,F
+40491481,From descendants,Aneurysm of aortic sinus of Valsalva with rupture to right ventricle,Condition,SNOMED,S,,F
+44807043,From descendants,Leaking thoracic aortic aneurysm,Condition,SNOMED,S,,F
+4079021,From descendants,Ruptured internal carotid-anterior communicating artery zone aneurysm,Condition,SNOMED,S,,F
+4079120,From descendants,Ruptured internal carotid bifurcation aneurysm,Condition,SNOMED,S,,F
+4090244,From descendants,Retinal macroaneurysm,Condition,SNOMED,S,,F
+4108381,From descendants,Embolism and thrombosis of the axillary artery,Condition,SNOMED,S,x,T
+4112768,From descendants,Cobb's syndrome,Condition,SNOMED,S,,F
+4115229,From descendants,Digital arterial thrombosis,Condition,SNOMED,S,x,T
+37110562,From descendants,Congenital venous malformation of skin,Condition,SNOMED,S,,F
+37116422,From descendants,Acute occlusion of artery of upper limb caused by thrombus,Condition,SNOMED,S,x,T
+37163050,From descendants,Acute thrombotic crural artery occlusion,Condition,SNOMED,S,x,T
+37163051,From descendants,Acute thromboembolic iliac artery occlusion,Condition,SNOMED,S,x,T
+37163053,From descendants,Acute thromboembolic crural artery occlusion,Condition,SNOMED,S,x,T
+37163063,From descendants,Acute occlusion of superficial femoral artery due to thrombosis,Condition,SNOMED,S,x,T
+37163075,From descendants,Acute occlusion of common femoral artery due to thromboembolus,Condition,SNOMED,S,x,T
+37169469,From descendants,Bilateral atheroembolism of upper limbs,Condition,SNOMED,S,x,T
+37204664,From descendants,Aneurysm of anterior cerebral artery,Condition,SNOMED,S,,F
+439836,From descendants,Atheromatous embolus of upper limb,Condition,SNOMED,S,x,T
+441875,From descendants,Thoracic aortic aneurysm which has ruptured,Condition,SNOMED,S,,F
+605282,From descendants,Thromboembolus of artery of upper limb,Condition,SNOMED,S,x,T
+609012,From descendants,Left lower limb atherosclerosis of nonbiological bypass graft,Condition,SNOMED,S,x,T
+761212,From descendants,Aneurysm of left radial artery,Condition,SNOMED,S,x,T
+761434,From descendants,Atherosclerosis of bypass graft of bilateral lower limbs,Condition,SNOMED,S,x,T
+761740,From descendants,Congenital stenosis of right renal artery,Condition,SNOMED,S,,F
+761744,From descendants,Atheroembolism of left renal artery,Condition,SNOMED,S,x,T
+761748,From descendants,Embolism of left iliac artery,Condition,SNOMED,S,x,T
+761749,From descendants,Embolism of right iliac artery,Condition,SNOMED,S,x,T
+761811,From descendants,Congenital anomaly of blood vessel of right upper limb,Condition,SNOMED,S,,F
+761823,From descendants,Thrombosis of artery of bilateral lower limbs,Condition,SNOMED,S,x,T
+762351,From descendants,Ruptured acquired aneurysm of cerebral artery,Condition,SNOMED,S,,F
+764102,From descendants,Abdominal aortic aneurysm greater than 5.5 centimeters in male,Condition,SNOMED,S,,F
+765226,From descendants,Atherosclerosis of autologous bypass graft of right lower limb,Condition,SNOMED,S,x,T
+35615082,From descendants,Embolism of artery of right upper limb,Condition,SNOMED,S,x,T
+35615024,From descendants,Aneurysm of right brachial artery,Condition,SNOMED,S,x,T
+35615092,From descendants,Bilateral atheroembolism of lower limbs,Condition,SNOMED,S,x,T
+46273237,From descendants,Aneurysm of aortic arch,Condition,SNOMED,S,,F
+4136335,From descendants,Thrombosis of arteries of upper extremity,Condition,SNOMED,S,x,T
+4138183,From descendants,Aneurysm of ascending aorta,Condition,SNOMED,S,,F
+4178400,From descendants,External iliac artery thrombosis,Condition,SNOMED,S,x,T
+4179910,From descendants,Superficial femoral artery thrombosis,Condition,SNOMED,S,x,T
+4193056,From descendants,Femoral artery occlusion,Condition,SNOMED,S,x,T
+4195971,From descendants,Common iliac artery occlusion,Condition,SNOMED,S,x,T
+4198274,From descendants,Juxtarenal aortic aneurysm,Condition,SNOMED,S,,F
+4212101,From descendants,Aneurysm of pancreaticoduodenal artery,Condition,SNOMED,S,x,T
+4219552,From descendants,Port-wine stain of skin,Condition,SNOMED,S,,F
+4236905,From descendants,Thrombosis of arteries of lower extremity,Condition,SNOMED,S,x,T
+4245812,From descendants,Congenital absence of subclavian artery,Condition,SNOMED,S,,F
+36712808,From descendants,Aneurysm of left renal artery,Condition,SNOMED,S,x,T
+36712950,From descendants,Aneurysm of intracranial portion of right internal carotid artery,Condition,SNOMED,S,,F
+36712956,From descendants,Aneurysm of right common iliac artery,Condition,SNOMED,S,x,T
+36712961,From descendants,Aneurysm of left popliteal artery,Condition,SNOMED,S,x,T
+36717012,From descendants,Aneurysm of right femoral artery,Condition,SNOMED,S,x,T
+42535143,From descendants,Atherosclerosis of left iliac artery,Condition,SNOMED,S,x,T
+42536637,From descendants,Perforation of thoracic aorta co-occurrent and due to aneurysm of thoracic aorta,Condition,SNOMED,S,,F
+43021751,From descendants,Congenital occlusion of femoral vein,Condition,SNOMED,S,,F
+45766387,From descendants,Capillary malformation-arteriovenous malformation syndrome,Condition,SNOMED,S,,F
+4316367,From descendants,Thrombosis of renal artery,Condition,SNOMED,S,x,T
+40483313,From descendants,Isolation of right subclavian artery,Condition,SNOMED,S,,F
+40488395,From descendants,Aneurysm of aortic sinus of Valsalva with protrusion into pericardial cavity,Condition,SNOMED,S,,F
+40492532,From descendants,Aortico-left ventricular tunnel with extracardiac aneurysm of aortic wall,Condition,SNOMED,S,,F
+44782819,From descendants,Chronic occlusion of artery of extremity,Condition,SNOMED,S,x,T
+44808747,From descendants,Occlusion of dorsalis pedis artery,Condition,SNOMED,S,x,T
+44808832,From descendants,Occlusion of anterior tibial artery,Condition,SNOMED,S,x,T
+44808833,From descendants,Occlusion of posterior tibial artery,Condition,SNOMED,S,x,T
+4025854,From descendants,Superior mesenteric artery thrombosis,Condition,SNOMED,S,x,T
+4079432,From descendants,Ruptured aneurysm of posterior cerebral artery,Condition,SNOMED,S,,F
+4108376,From descendants,Embolism and thrombosis of the femoral artery,Condition,SNOMED,S,x,T
+4108380,From descendants,Embolism and thrombosis of the subclavian artery,Condition,SNOMED,S,x,T
+4109474,From descendants,Isolation of subclavian artery,Condition,SNOMED,S,,F
+4110112,From descendants,Congenital vascular nevus,Condition,SNOMED,S,,F
+4110205,From descendants,Inferior mesenteric aneurysm,Condition,SNOMED,S,x,T
+4110331,From descendants,Embolism and thrombosis of the ulnar artery,Condition,SNOMED,S,x,T
+4111470,From descendants,Salmon patch nevus,Condition,SNOMED,S,,F
+4119141,From descendants,Atherosclerotic renal artery stenosis,Condition,SNOMED,S,x,T
+4120098,From descendants,Superficial femoral artery stenosis,Condition,SNOMED,S,x,T
+4124843,From descendants,Common femoral aneurysm,Condition,SNOMED,S,x,T
+4127997,From descendants,Acquired renal artery stenosis,Condition,SNOMED,S,x,T
+37109921,From descendants,Acute occlusion of artery of lower limb co-occurrent and due to thromboembolus,Condition,SNOMED,S,x,T
+37109922,From descendants,Acute occlusion of aortoiliac artery due to thrombosis,Condition,SNOMED,S,x,T
+37111328,From descendants,CAMOS syndrome,Condition,SNOMED,S,,F
+37163044,From descendants,Acute thrombotic subclavian artery occlusion,Condition,SNOMED,S,x,T
+37163046,From descendants,Acute thrombotic renal artery occlusion,Condition,SNOMED,S,x,T
+37163049,From descendants,Acute occlusion of popliteal artery due to thromboembolus,Condition,SNOMED,S,x,T
+37204663,From descendants,Aneurysm of internal carotid bifurcation,Condition,SNOMED,S,,F
+37204666,From descendants,Aneurysm of anterior communicating artery,Condition,SNOMED,S,,F
+37204667,From descendants,Aneurysm of posterior cerebral artery,Condition,SNOMED,S,,F
+37204670,From descendants,Aneurysm of internal carotid-anterior communicating artery zone,Condition,SNOMED,S,,F
+37209564,From descendants,Aneurysm of left vertebral artery,Condition,SNOMED,S,,F
+37399712,From descendants,Glomuvenous malformation,Condition,SNOMED,S,,F
+320646,From descendants,Syphilitic aneurysm of aorta,Condition,SNOMED,S,,F
+609011,From descendants,Atherosclerosis of autologous vein bypass graft of right upper limb,Condition,SNOMED,S,,F
+609015,From descendants,Atherosclerosis of bypass graft of right upper limb,Condition,SNOMED,S,x,T
+761211,From descendants,Aneurysm of right radial artery,Condition,SNOMED,S,x,T
+761429,From descendants,Atherosclerosis of nonautologous biological bypass graft of left lower limb,Condition,SNOMED,S,x,T
+761430,From descendants,Atherosclerosis of bypass graft of right lower limb,Condition,SNOMED,S,x,T
+761431,From descendants,Atherosclerosis of nonautologous biological bypass graft of right lower limb,Condition,SNOMED,S,x,T
+761743,From descendants,Atheroembolism of bilateral renal arteries,Condition,SNOMED,S,x,T
+761752,From descendants,Congenital anomaly of blood vessel of right lower limb,Condition,SNOMED,S,,F
+761804,From descendants,Stenosis of artery of right upper limb,Condition,SNOMED,S,x,T
+761810,From descendants,Congenital anomaly of blood vessel of left upper limb,Condition,SNOMED,S,,F
+762585,From descendants,Dissecting aneurysm of anterior cerebral artery,Condition,SNOMED,S,,F
+765300,From descendants,Atheroembolism of left lower limb,Condition,SNOMED,S,x,T
+35615015,From descendants,Aneurysm of extracranial portion of left internal carotid artery,Condition,SNOMED,S,,F
+35615063,From descendants,Thrombosis of bilateral iliac arteries,Condition,SNOMED,S,x,T
+35615075,From descendants,Occlusion of distal artery of right upper limb,Condition,SNOMED,S,x,T
+35615099,From descendants,Thrombosis of right common femoral artery,Condition,SNOMED,S,x,T
+1245705,From descendants,Bilateral congenital stenosis of renal arteries,Condition,SNOMED,S,,F
+1245784,From descendants,Bilateral congenital arteriovenous malformation of renal arteries and renal veins,Condition,SNOMED,S,,F
+4140448,From descendants,Aneurysm of descending aorta,Condition,SNOMED,S,,F
+4140616,From descendants,Thrombosis of ulnar artery,Condition,SNOMED,S,x,T
+4143389,From descendants,Enlarging abdominal aortic aneurysm,Condition,SNOMED,S,,F
+4174014,From descendants,Inferior mesenteric artery embolus,Condition,SNOMED,S,x,T
+4175579,From descendants,Suprarenal artery aneurysm,Condition,SNOMED,S,x,T
+4178399,From descendants,Common iliac artery thrombosis,Condition,SNOMED,S,x,T
+4183844,From descendants,Congenital aneurysm of sinus of Valsalva,Condition,SNOMED,S,,F
+4194886,From descendants,External iliac artery occlusion,Condition,SNOMED,S,x,T
+4195972,From descendants,Superficial femoral artery occlusion,Condition,SNOMED,S,x,T
+4209546,From descendants,Aberrant retro-esophageal subclavian artery causing dysphagia,Condition,SNOMED,S,,F
+4231826,From descendants,Upper limb artery stenosis,Condition,SNOMED,S,x,T
+4264734,From descendants,Thromboembolism of renal arteries,Condition,SNOMED,S,x,T
+36712807,From descendants,Pain at rest of right lower limb due to atherosclerosis,Condition,SNOMED,S,x,T
+36712951,From descendants,Aneurysm of intracranial portion of left internal carotid artery,Condition,SNOMED,S,,F
+42535829,From descendants,Thromboembolus of external iliac artery,Condition,SNOMED,S,x,T
+42536636,From descendants,Acute occlusion of artery of lower limb,Condition,SNOMED,S,x,T
+42709999,From descendants,Congenital anomaly of blood vessel of lower limb,Condition,SNOMED,S,,F
+3654671,From descendants,Aortic aneurysm due to Loeys-Dietz syndrome,Condition,SNOMED,S,,F
+43020500,From descendants,Aneurysm of descending thoracic aorta,Condition,SNOMED,S,,F
+45766085,From descendants,Ruptured aneurysm of vertebral artery,Condition,SNOMED,S,,F
+4322809,From descendants,Aneurysm of gastroepiploic artery,Condition,SNOMED,S,x,T
+4329498,From descendants,Occlusion of artery of upper extremity,Condition,SNOMED,S,x,T
+40488006,From descendants,Aneurysm of aortic sinus of Valsalva with protrusion into pulmonary artery,Condition,SNOMED,S,,F
+40489419,From descendants,Aneurysm of aortic sinus of Valsalva without rupture,Condition,SNOMED,S,,F
+4029497,From descendants,Cerebral arterial aneurysm,Condition,SNOMED,S,,F
+4031930,From descendants,Aneurysm of common carotid artery,Condition,SNOMED,S,,F
+4110202,From descendants,Internal iliac aneurysm,Condition,SNOMED,S,x,T
+4110204,From descendants,Dorsalis pedis aneurysm,Condition,SNOMED,S,x,T
+4110253,From descendants,Nevus sanguineous,Condition,SNOMED,S,,F
+4111727,From descendants,External iliac aneurysm,Condition,SNOMED,S,x,T
+4120804,From descendants,Parkes Weber syndrome,Condition,SNOMED,S,,F
+37110251,From descendants,Non-atherosclerotic chronic arterial occlusive disease,Condition,SNOMED,S,x,T
+37163013,From descendants,Atherosclerosis of axillary artery,Condition,SNOMED,S,x,T
+37163014,From descendants,Atherosclerosis of brachial artery,Condition,SNOMED,S,x,T
+37163048,From descendants,Acute thrombotic iliac artery occlusion,Condition,SNOMED,S,x,T
+37204669,From descendants,Aneurysm of posterior communicating artery,Condition,SNOMED,S,,F
+37310906,From descendants,Vascular birthmark,Condition,SNOMED,S,,F
+432890,From descendants,Microaneurysm of retinal artery,Condition,SNOMED,S,,F
+432933,From descendants,Aneurysm of artery of lower extremity,Condition,SNOMED,S,x,T
+433222,From descendants,"Thoracoabdominal aortic aneurysm, ruptured",Condition,SNOMED,S,,F
+434961,From descendants,Occlusion of lower limb artery,Condition,SNOMED,S,x,T
+443622,From descendants,Aneurysm of thoracic aorta,Condition,SNOMED,S,x,T
+609008,From descendants,Bilateral thrombosis of femoral arteries,Condition,SNOMED,S,x,T
+761209,From descendants,Aneurysm of right superficial temporal artery,Condition,SNOMED,S,,F
+761438,From descendants,Macroaneurysm of retina of right eye,Condition,SNOMED,S,,F
+761751,From descendants,Congenital anomaly of blood vessel of left lower limb,Condition,SNOMED,S,,F
+762583,From descendants,Dissecting aneurysm of middle cerebral artery,Condition,SNOMED,S,,F
+764101,From descendants,Abdominal aortic aneurysm greater than 5.0 centimeters in female,Condition,SNOMED,S,,F
+765080,From descendants,Atherosclerosis of bypass graft of left lower limb,Condition,SNOMED,S,x,T
+35615080,From descendants,Thrombosis of artery of right upper extremity,Condition,SNOMED,S,x,T
+35615087,From descendants,Stenosis of artery of right lower limb,Condition,SNOMED,S,x,T
+35615093,From descendants,Thrombosis of artery of right lower extremity,Condition,SNOMED,S,x,T
+35615100,From descendants,Thrombosis of left common femoral artery,Condition,SNOMED,S,x,T
+35615116,From descendants,Bilateral lower limb atherosclerosis of non-biological bypass graft,Condition,SNOMED,S,x,T
+35622307,From descendants,Familial multiple nevi flammei,Condition,SNOMED,S,,F
+1245767,From descendants,Bilateral congenital anomaly of blood vessels of upper limbs,Condition,SNOMED,S,,F
+1245783,From descendants,Bilateral congenital arteriovenous malformation of upper limbs,Condition,SNOMED,S,,F
+4141106,From descendants,Thrombosis of arteries of the extremities,Condition,SNOMED,S,x,T
+4142261,From descendants,Aneurysm of suprarenal aorta,Condition,SNOMED,S,,F
+4142981,From descendants,Aneurysm of supraceliac aorta,Condition,SNOMED,S,,F
+4143225,From descendants,Ruptured aneurysm of internal iliac artery,Condition,SNOMED,S,,F
+4143588,From descendants,Occlusion of renal artery bypass graft,Condition,SNOMED,S,x,T
+4193302,From descendants,Post-radiological embolism of upper limb artery,Condition,SNOMED,S,x,T
+4201941,From descendants,Recurrent abdominal aortic aneurysm,Condition,SNOMED,S,,F
+4208944,From descendants,Iliac artery stenosis,Condition,SNOMED,S,x,T
+4239400,From descendants,Aneurysm of femoral artery,Condition,SNOMED,S,x,T
+4247959,From descendants,Congenital retinal aneurysm,Condition,SNOMED,S,,F
+36712809,From descendants,Aneurysm of right renal artery,Condition,SNOMED,S,x,T
+36717256,From descendants,Occlusion of aortoiliac artery,Condition,SNOMED,S,,F
+42536638,From descendants,Perforation of abdominal aorta co-occurrent and due to aneurysm of abdominal aorta,Condition,SNOMED,S,,F
+37017075,From descendants,Nontraumatic ruptured cerebral aneurysm,Condition,SNOMED,S,,F
+37017533,From descendants,Transplant renal artery stenosis,Condition,SNOMED,S,x,T
+3656045,From descendants,Aneurysm of pararenal aorta,Condition,SNOMED,S,,F
+43020490,From descendants,Aneurysm of extracranial portion of internal carotid artery,Condition,SNOMED,S,,F
+43020491,From descendants,Aneurysm of intracranial portion of internal carotid artery,Condition,SNOMED,S,,F
+43022064,From descendants,Atherosclerosis of aortoiliac bypass graft,Condition,SNOMED,S,,F
+4308138,From descendants,Aneurysm of spinal artery,Condition,SNOMED,S,x,T
+40482911,From descendants,Aortic sinus of Valsalva aneurysm from left coronary sinus,Condition,SNOMED,S,,F
+40484541,From descendants,Atherosclerosis of autologous vein bypass graft of limb,Condition,SNOMED,S,,F
+40488008,From descendants,Aneurysm of aortic sinus of Valsalva with protrusion into right ventricle,Condition,SNOMED,S,,F
+40488394,From descendants,Aneurysm of aortic sinus of Valsalva with protrusion into left ventricle,Condition,SNOMED,S,,F
+44783241,From descendants,Multiple venous malformation of skin and mucous membrane,Condition,SNOMED,S,,F
+44813823,From descendants,Occlusion of radial artery,Condition,SNOMED,S,x,T
+4055025,From descendants,Superior mesenteric artery embolus,Condition,SNOMED,S,x,T
+4101478,From descendants,Microaneurysm of retinal artery due to diabetes mellitus,Condition,SNOMED,S,,F
+4108375,From descendants,Embolism and thrombosis of the radial artery,Condition,SNOMED,S,x,T
+4111944,From descendants,Arteriovenous malformation of skin,Condition,SNOMED,S,,F
+4112843,From descendants,Blue rubber bleb nevus,Condition,SNOMED,S,,F
+4117771,From descendants,Aneurysm of head and neck artery,Condition,SNOMED,S,,F
+4118795,From descendants,Renal artery stenosis,Condition,SNOMED,S,x,T
+4121627,From descendants,Brachial artery embolus,Condition,SNOMED,S,x,T
+37116421,From descendants,Acute occlusion of artery of upper limb caused by thromboembolus,Condition,SNOMED,S,x,T
+37163043,From descendants,Acute thromboembolic subclavian artery occlusion,Condition,SNOMED,S,x,T
+37166012,From descendants,Atherosclerosis of femoral artery,Condition,SNOMED,S,x,T
+37169464,From descendants,Bilateral thrombosis of ulnar arteries,Condition,SNOMED,S,x,T
+37171211,From descendants,Rupture of congenital aneurysm of cerebral artery,Condition,SNOMED,S,,F
+37204671,From descendants,Aneurysm of internal carotid-posterior communicating artery zone,Condition,SNOMED,S,,F
+37204809,From descendants,Cerebral aneurysm due to dissection of cerebral artery,Condition,SNOMED,S,,F
+37204812,From descendants,Acquired aneurysm of cerebral artery,Condition,SNOMED,S,,F
+196433,From descendants,Aneurysm of iliac artery,Condition,SNOMED,S,x,T
+200132,From descendants,Atheroembolism of renal arteries,Condition,SNOMED,S,x,T
+380943,From descendants,Rupture of syphilitic cerebral aneurysm,Condition,SNOMED,S,,F
+439133,From descendants,Congenital anomaly of blood vessel of upper limb,Condition,SNOMED,S,,F
+605283,From descendants,Thromboembolus of artery of lower limb,Condition,SNOMED,S,x,T
+609007,From descendants,Bilateral thrombosis of common femoral arteries,Condition,SNOMED,S,x,T
+609014,From descendants,Right lower limb atherosclerosis of nonbiological bypass graft,Condition,SNOMED,S,x,T
+760869,From descendants,Bilateral atherosclerosis of arteries of lower limbs,Condition,SNOMED,S,x,T
+761433,From descendants,Atherosclerosis of autologous bypass graft of bilateral lower limbs,Condition,SNOMED,S,x,T
+761741,From descendants,Congenital stenosis of left renal artery,Condition,SNOMED,S,,F
+761812,From descendants,Thrombosis of artery of bilateral upper limbs,Condition,SNOMED,S,x,T
+761813,From descendants,Thrombosis of left ulnar artery,Condition,SNOMED,S,x,T
+761816,From descendants,Stenosis of artery of bilateral lower limbs,Condition,SNOMED,S,x,T
+761822,From descendants,Atheroembolism of right lower limb,Condition,SNOMED,S,x,T
+761824,From descendants,Thrombosis of bilateral popliteal arteries,Condition,SNOMED,S,x,T
+761829,From descendants,Claudication of left upper limb co-occurrent and due to atherosclerosis,Condition,SNOMED,S,x,T
+765079,From descendants,Stenosis of right renal artery,Condition,SNOMED,S,x,T
+35611566,From descendants,Bilateral lower limb pain at rest due to atherosclerosis,Condition,SNOMED,S,x,T
+35611568,From descendants,Aneurysm of artery of right lower limb,Condition,SNOMED,S,x,T
+35615081,From descendants,Thrombosis of artery of left upper extremity,Condition,SNOMED,S,x,T
+35615014,From descendants,Aneurysm of extracranial portion of right internal carotid artery,Condition,SNOMED,S,,F
+35615026,From descendants,Aneurysm of artery of right upper limb,Condition,SNOMED,S,x,T
+35615054,From descendants,Bilateral subclavian artery stenosis,Condition,SNOMED,S,x,T
+35615090,From descendants,Embolism of left popliteal artery,Condition,SNOMED,S,x,T
+35615097,From descendants,Thrombosis of left femoral artery,Condition,SNOMED,S,x,T
+35615107,From descendants,Occlusion of left popliteal artery,Condition,SNOMED,S,x,T
+1244884,From descendants,Diffuse capillary malformation with overgrowth,Condition,SNOMED,S,,F
+4139534,From descendants,Bilateral renal artery stenosis,Condition,SNOMED,S,x,T
+4178609,From descendants,Femoral artery thrombosis,Condition,SNOMED,S,x,T
+4179909,From descendants,Profunda femoris artery thrombosis,Condition,SNOMED,S,x,T
+4182191,From descendants,Crural artery thrombosis,Condition,SNOMED,S,x,T
+4187938,From descendants,Multiple renal arteries,Condition,SNOMED,S,,F
+4193054,From descendants,Ruptured suprarenal aortic aneurysm,Condition,SNOMED,S,,F
+4193055,From descendants,Inflammatory abdominal aortic aneurysm,Condition,SNOMED,S,,F
+4231816,From descendants,Mesenteric artery stenosis,Condition,SNOMED,S,x,T
+4243358,From descendants,Congenital aneurysm of anterior communicating artery,Condition,SNOMED,S,,F
+4246316,From descendants,Aneurysm of external carotid artery,Condition,SNOMED,S,,F
+36674752,From descendants,Microaneurysm of right retinal artery due to diabetes mellitus,Condition,SNOMED,S,,F
+36712805,From descendants,Pain at rest of left lower limb due to atherosclerosis,Condition,SNOMED,S,x,T
+36712960,From descendants,Aneurysm of right popliteal artery,Condition,SNOMED,S,x,T
+36712987,From descendants,Stenosis of right subclavian artery,Condition,SNOMED,S,x,T
+36713013,From descendants,Occlusion of right femoral artery,Condition,SNOMED,S,x,T
+42537641,From descendants,Post-procedural aortic aneurysm,Condition,SNOMED,S,,F
+4006293,From descendants,Aneurysm of celiac artery,Condition,SNOMED,S,x,T
+43021188,From descendants,Systemic to pulmonary collateral artery from right renal artery,Condition,SNOMED,S,,F
+45766188,From descendants,Cutaneous capillary malformation,Condition,SNOMED,S,,F
+4341646,From descendants,Occlusive mesenteric ischemia,Condition,SNOMED,S,x,T
+40484912,From descendants,Atherosclerosis of nonautologous bypass graft of limb,Condition,SNOMED,S,x,T
+40488007,From descendants,Aneurysm of aortic sinus of Valsalva with protrusion into right atrium,Condition,SNOMED,S,,F
+40491456,From descendants,Aneurysm of aortic sinus of Valsalva with rupture to left atrium,Condition,SNOMED,S,,F
+40491479,From descendants,Aneurysm of aortic sinus of Valsalva with rupture to pulmonary artery,Condition,SNOMED,S,,F
+40491994,From descendants,Aortico-left ventricular tunnel with aneurysm of intracardiac septal wall and aneurysm of extracardiac aortic wall,Condition,SNOMED,S,,F
+44808745,From descendants,Occlusion of brachial artery,Condition,SNOMED,S,x,T
+4079431,From descendants,Ruptured aneurysm of middle cerebral artery,Condition,SNOMED,S,,F
+4079433,From descendants,Ruptured aneurysm of anterior communicating artery,Condition,SNOMED,S,,F
+4082161,From descendants,Ruptured aneurysm of basilar artery,Condition,SNOMED,S,,F
+4082163,From descendants,Ruptured internal carotid-posterior communicating artery zone aneurysm,Condition,SNOMED,S,,F
+4093607,From descendants,Aneurysm of hepatic artery,Condition,SNOMED,S,x,T
+4108369,From descendants,Common iliac aneurysm,Condition,SNOMED,S,x,T
+4108377,From descendants,Embolism and thrombosis of the dorsalis pedis artery,Condition,SNOMED,S,x,T
+4111469,From descendants,Reticulate vascular nevus,Condition,SNOMED,S,,F
+4111707,From descendants,Ruptured berry aneurysm,Condition,SNOMED,S,,F
+4111850,From descendants,Embolism and/or thrombosis of the common iliac artery,Condition,SNOMED,S,x,T
+4112154,From descendants,Leaking abdominal aortic aneurysm,Condition,SNOMED,S,,F
+4114011,From descendants,Subclavian artery stenosis,Condition,SNOMED,S,x,T
+37163041,From descendants,Atherosclerosis of crural artery,Condition,SNOMED,S,x,T
+37163062,From descendants,Acute occlusion of superficial femoral artery due to thromboembolus,Condition,SNOMED,S,x,T
+37163078,From descendants,Acute occlusion of axillary artery due to thrombosis,Condition,SNOMED,S,x,T
+37164957,From descendants,Left lower limb arteriosclerosis,Condition,SNOMED,S,x,T
+37168561,From descendants,Bilateral atherosclerosis of artery of upper limbs,Condition,SNOMED,S,x,T
+37204665,From descendants,Aneurysm of posterior inferior cerebellar artery,Condition,SNOMED,S,,F
+37209668,From descendants,Atherosclerosis of superior mesenteric artery,Condition,SNOMED,S,x,T
+192657,From descendants,Embolism of iliac artery,Condition,SNOMED,S,x,T
+609010,From descendants,Atherosclerosis of autologous vein bypass graft of left upper limb,Condition,SNOMED,S,,F
+609088,From descendants,Bilateral congenital anomaly of renal arteries,Condition,SNOMED,S,,F
+761805,From descendants,Stenosis of artery of left upper limb,Condition,SNOMED,S,x,T
+762053,From descendants,Stenosis of right iliac artery,Condition,SNOMED,S,x,T
+35615028,From descendants,Bilateral atherosclerosis of lower limbs with gangrene,Condition,SNOMED,S,x,T
+35615020,From descendants,Atherosclerosis of right renal artery,Condition,SNOMED,S,x,T
+35615076,From descendants,Occlusion of distal artery of left upper limb,Condition,SNOMED,S,x,T
+35615089,From descendants,Embolism of artery of right lower limb,Condition,SNOMED,S,x,T
+46271459,From descendants,Atherosclerosis of bypass graft of lower limb,Condition,SNOMED,S,x,T
+46271460,From descendants,Atherosclerosis of nonautologous biological bypass graft of lower limb,Condition,SNOMED,S,x,T
+4144981,From descendants,Aneurysm of gastroduodenal artery,Condition,SNOMED,S,x,T
+4164635,From descendants,Nevus anemicus,Condition,SNOMED,S,,F
+4174223,From descendants,Angioma serpiginosum,Condition,SNOMED,S,,F
+4175205,From descendants,Berry aneurysm,Condition,SNOMED,S,,F
+4175569,From descendants,Common femoral artery thrombosis,Condition,SNOMED,S,x,T
+4179907,From descendants,Brachial artery thrombosis,Condition,SNOMED,S,x,T
+4180026,From descendants,Vertebral artery aneurysm,Condition,SNOMED,S,,F
+4208072,From descendants,Common femoral artery stenosis,Condition,SNOMED,S,x,T
+4208809,From descendants,Post-radiological embolism of lower limb artery,Condition,SNOMED,S,x,T
+4266200,From descendants,Cutaneous vascular malformation,Condition,SNOMED,S,,F
+36712957,From descendants,Aneurysm of left common iliac artery,Condition,SNOMED,S,x,T
+42537642,From descendants,Aneurysm of basilar artery,Condition,SNOMED,S,,F
+3656133,From descendants,Aneurysm of aorta at coarctation site following procedure,Condition,SNOMED,S,,F
+4318843,From descendants,Renal artery embolism,Condition,SNOMED,S,x,T
+40479862,From descendants,Aneurysm of infrarenal abdominal aorta,Condition,SNOMED,S,,F
+40484551,From descendants,Atherosclerosis of nonautologous biological bypass graft of limb,Condition,SNOMED,S,x,T
+40488004,From descendants,Aberrant origin of left subclavian artery,Condition,SNOMED,S,,F
+40488026,From descendants,Aneurysm of aortic sinus of Valsalva with protrusion into left atrium,Condition,SNOMED,S,,F
+40490430,From descendants,Aneurysm of aortic sinus of Valsalva with rupture to pericardial cavity,Condition,SNOMED,S,,F
+40491480,From descendants,Aneurysm of aortic sinus of Valsalva with rupture to right atrium,Condition,SNOMED,S,,F
+4061539,From descendants,Congenital aneurysm of aorta,Condition,SNOMED,S,,F
+4078016,From descendants,Aneurysm of internal carotid artery,Condition,SNOMED,S,,F
+4079434,From descendants,Ruptured aneurysm of posterior communicating artery,Condition,SNOMED,S,,F
+4082162,From descendants,Ruptured aneurysm of posterior inferior cerebellar artery,Condition,SNOMED,S,,F
+4108370,From descendants,Posterior tibial aneurysm,Condition,SNOMED,S,x,T
+4112155,From descendants,Anterior tibial aneurysm,Condition,SNOMED,S,x,T
+4112161,From descendants,Embolism and thrombosis of the brachial artery,Condition,SNOMED,S,x,T
+4112162,From descendants,Embolism and thrombosis of the anterior tibial artery,Condition,SNOMED,S,x,T
+4113290,From descendants,Congenital aneurysm of ascending aorta,Condition,SNOMED,S,,F
+4120105,From descendants,Superficial femoral aneurysm,Condition,SNOMED,S,x,T
+4121626,From descendants,External iliac artery stenosis,Condition,SNOMED,S,x,T
+37152377,From descendants,Axillofemoral graft,Observation,SNOMED,S,,F
+37163038,From descendants,Atherosclerosis of superficial femoral artery,Condition,SNOMED,S,x,T
+37163039,From descendants,Atherosclerosis of popliteal artery,Condition,SNOMED,S,x,T
+37163040,From descendants,Atherosclerosis of subclavian artery,Condition,SNOMED,S,x,T
+37163045,From descendants,Acute thromboembolic renal artery occlusion,Condition,SNOMED,S,x,T
+37163077,From descendants,Acute occlusion of axillary artery due to thromboembolus,Condition,SNOMED,S,x,T
+37163292,From descendants,Renal artery stenosis due to fibromuscular hyperplasia,Condition,SNOMED,S,,F
+37164958,From descendants,Right lower limb atherosclerosis,Condition,SNOMED,S,x,T
+37204745,From descendants,Congenital aneurysm of precerebral artery,Condition,SNOMED,S,,F
+37398919,From descendants,Familial abdominal aortic aneurysm,Condition,SNOMED,S,,F
