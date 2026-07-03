@@ -1,0 +1,125 @@
+concept_id,concept_name,codelist,to_remove
+255573,Chronic obstructive pulmonary disease,Both,FALSE
+255841,Chronic bronchitis,Both,FALSE
+256448,Chronic asthmatic bronchitis,Only in codelist x_ours,FALSE
+257004,Acute exacerbation of chronic obstructive pulmonary disease,Both,FALSE
+257905,Mucopurulent chronic bronchitis,Both,FALSE
+258780,Emphysematous bronchitis,Both,FALSE
+261325,Pulmonary emphysema,Both,FALSE
+261889,Simple chronic bronchitis,Both,FALSE
+605066,Emphysema of left lung,Both,FALSE
+605067,Emphysema of right lung,Both,FALSE
+762862,Documentation of chronic obstructive pulmonary disorder medication action plan,Both,FALSE
+2101868,NA,Both,FALSE
+2101887,NA,Both,FALSE
+2101890,NA,Both,FALSE
+2101891,NA,Both,FALSE
+2101895,NA,Both,FALSE
+2101897,NA,Both,FALSE
+2106190,NA,Both,FALSE
+2106191,NA,Both,FALSE
+2106213,NA,Both,FALSE
+2106217,NA,Both,FALSE
+2106218,NA,Both,FALSE
+2106220,NA,Both,FALSE
+2106233,NA,Both,FALSE
+2108526,NA,Both,FALSE
+2108541,NA,Both,FALSE
+2108542,NA,Both,FALSE
+2108543,NA,Both,FALSE
+2108544,NA,Both,FALSE
+2108545,NA,Both,FALSE
+2108546,NA,Both,FALSE
+3654571,Chronic emphysema caused by vapor,Both,FALSE
+3661635,Consultation for chronic obstructive pulmonary disease,Both,FALSE
+4046986,End stage chronic obstructive pulmonary disease,Both,FALSE
+4050732,Pulmonary emphysema in alpha-1 PI deficiency,Both,FALSE
+4050733,Toxic emphysema,Both,FALSE
+4050961,Giant bullous emphysema,Both,FALSE
+4051985,Chronic emphysema,Both,FALSE
+4056405,Obstructive emphysema,Both,FALSE
+4083395,Vanishing lung,Both,FALSE
+4110048,Chronic bullous emphysema,Both,FALSE
+4110056,Chronic obstructive pulmonary disease with acute lower respiratory infection,Both,FALSE
+4110635,Segmental bullous emphysema,Both,FALSE
+4112826,Mixed simple and mucopurulent chronic bronchitis,Both,FALSE
+4112828,Zonal bullous emphysema,Both,FALSE
+4112836,Chronic emphysema caused by chemical fumes,Both,FALSE
+4115044,Acute infective exacerbation of chronic obstructive pulmonary disease,Both,FALSE
+4136683,Paraseptal emphysema,Both,FALSE
+4137525,Acute exacerbation of chronic bronchitis,Both,FALSE
+4145496,Bullous emphysema with collapse,Both,FALSE
+4148124,Atrophic (senile) emphysema,Both,FALSE
+4169883,Emphysema,Both,FALSE
+4177944,Panacinar emphysema,Both,FALSE
+4189168,Emergency chronic obstructive pulmonary disease admission since last appointment,Both,FALSE
+4190882,Chronic obstructive pulmonary disease monitoring,Both,FALSE
+4193588,Moderate chronic obstructive pulmonary disease,Both,FALSE
+4196712,Mild chronic obstructive pulmonary disease,Both,FALSE
+4209097,Severe chronic obstructive pulmonary disease,Both,FALSE
+4211648,Chronic obstructive pulmonary disease accident and emergency attendance since last visit,Both,FALSE
+4215256,Chronic obstructive pulmonary disease follow-up,Both,FALSE
+4215257,Chronic obstructive pulmonary disease annual review,Both,FALSE
+4230358,Chronic allergic bronchitis,Both,FALSE
+4235401,Emergency hospital admission for chronic obstructive pulmonary disease,Both,FALSE
+4269178,Chronic obstructive pulmonary disease monitoring by nurse,Both,FALSE
+4286497,Centriacinar emphysema,Both,FALSE
+4295034,Chronic obstructive pulmonary disease monitoring by doctor,Both,FALSE
+4307038,Chronic obstructive pulmonary disease monitoring due,Both,FALSE
+4309350,Fetid chronic bronchitis,Both,FALSE
+36685476,Registration for online access to myCOPD application offered,Both,FALSE
+36685477,Registration for online access to myCOPD application,Both,FALSE
+36716970,Number of chronic obstructive pulmonary disease exacerbations in past year,Both,FALSE
+37206130,Chronic bronchitis co-occurrent with wheeze,Both,FALSE
+37310423,Does use digital self-management support tool for COPD (chronic obstructive pulmonary disease),Both,FALSE
+37310425,Use of digital self-management tool for COPD (chronic obstructive pulmonary disease),Both,FALSE
+37396521,Telehealth chronic obstructive pulmonary disease monitoring,Both,FALSE
+40481763,Acute exacerbation of chronic asthmatic bronchitis,Both,FALSE
+40766902,At what age did chronic bronchitis start [PhenX],Both,FALSE
+42539771,Education about chronic obstructive pulmonary disease,Only in codelist x_anna,TRUE
+42689618,Chronic obstructive pulmonary disease monitoring email invitation,Both,FALSE
+42689663,COPD (chronic obstructive pulmonary disease) monitoring SMS (short message service) text message first invitation,Both,FALSE
+42689665,COPD (chronic obstructive pulmonary disease) monitoring SMS (short message service) text message third invitation,Both,FALSE
+42690682,COPD (chronic obstructive pulmonary disease) monitoring SMS (short message service) text message invitation,Both,FALSE
+42690688,COPD (chronic obstructive pulmonary disease) monitoring SMS (short message service) text message second invitation,Both,FALSE
+43530693,Acute exacerbation of chronic obstructive pulmonary disease with asthma,Both,FALSE
+44782563,Pulmonary hypertension due to chronic obstructive pulmonary disease,Both,FALSE
+44788723,Chronic obstructive pulmonary disease disturbs sleep,Both,FALSE
+44788724,Chronic obstructive pulmonary disease does not disturb sleep,Both,FALSE
+44788819,Multiple chronic obstructive pulmonary disease emergency hospital admissions,Both,FALSE
+44791725,Very severe chronic obstructive pulmonary disease,Both,FALSE
+44793048,Chronic obstructive pulmonary disease enhanced services administration,Both,FALSE
+44793074,Chronic obstructive pulmonary disease patient unsuitable for pulmonary rehabilitation,Both,FALSE
+44793128,Referred for chronic obstructive pulmonary disease structured smoking assessment,Both,FALSE
+44793424,At risk of chronic obstructive pulmonary disease exacerbation,Both,FALSE
+44803708,Chronic obstructive pulmonary disease monitoring first letter,Both,FALSE
+44803711,Chronic obstructive pulmonary disease monitoring verbal invite,Both,FALSE
+44803835,Chronic obstructive pulmonary disease monitoring telephone invitation,Both,FALSE
+44803846,Chronic obstructive pulmonary disease monitoring second letter,Both,FALSE
+44803920,Chronic obstructive pulmonary disease monitoring third letter,Both,FALSE
+44804338,Chronic obstructive pulmonary disease monitoring invitation,Both,FALSE
+44804958,Chronic obstructive pulmonary disease 3 monthly review,Both,FALSE
+44804959,Chronic obstructive pulmonary disease 6 monthly review,Both,FALSE
+44805004,General practitioner out of hours service notified of chronic obstructive pulmonary disease care plan,Both,FALSE
+44805920,Preferred place of care for next exacerbation of chronic obstructive pulmonary disease,Both,FALSE
+44806050,Referral to chronic obstructive pulmonary disease community nursing team,Both,FALSE
+44806369,Chronic obstructive pulmonary disease self-management plan agreed,Both,FALSE
+44807085,Chronic obstructive pulmonary disease monitoring due date,Both,FALSE
+44807895,Acute non-infective exacerbation of chronic obstructive pulmonary disease,Both,FALSE
+44807940,Has chronic obstructive pulmonary disease care plan,Both,FALSE
+44808238,Chronic obstructive pulmonary disease care pathway,Both,FALSE
+44808261,Seen in chronic obstructive pulmonary disease clinic,Both,FALSE
+44808266,Chronic obstructive pulmonary disease rescue pack declined,Both,FALSE
+44808267,Chronic obstructive pulmonary disease written self management plan declined,Both,FALSE
+44808268,Chronic obstructive pulmonary disease self management plan not appropriate,Both,FALSE
+44809514,On chronic obstructive pulmonary disease supportive care pathway,Both,FALSE
+44810352,Shared care chronic obstructive pulmonary disease monitoring,Both,FALSE
+44811197,Chronic obstructive pulmonary disease management plan declined,Both,FALSE
+45766865,Change in chronic obstructive pulmonary disease management plan,Both,FALSE
+45766866,Step up change in chronic obstructive pulmonary disease management plan,Both,FALSE
+45766868,Step down change in chronic obstructive pulmonary disease management plan,Both,FALSE
+45769389,Pulmonary emphysema co-occurrent with fibrosis of lung,Both,FALSE
+46269701,Chronic obstructive pulmonary disease with acute bronchitis,Both,FALSE
+46270376,Acute exacerbation of chronic obstructive bronchitis,Both,FALSE
+46274062,Asthma-chronic obstructive pulmonary disease overlap syndrome,Both,FALSE
+46284163,Chronic obstructive pulmonary disease resolved,Both,FALSE
