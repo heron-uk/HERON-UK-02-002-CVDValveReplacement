@@ -1,0 +1,203 @@
+concept_id,concept_name,codelist,to_remove
+312927,Acute cor pulmonale,Both,FALSE
+314378,Hypertensive heart disease with congestive heart failure,Both,FALSE
+315295,Congestive rheumatic heart failure,Both,FALSE
+316139,Heart failure,Both,FALSE
+316994,Malignant hypertensive heart disease with congestive heart failure,Both,FALSE
+319835,Congestive heart failure,Both,FALSE
+321319,Cardiomyopathy,Only in codelist hf_elin,TRUE
+439694,Hypertensive heart and renal disease with both (congestive) heart failure and renal failure,Both,FALSE
+439695,Hypertensive heart and renal disease with renal failure,Only in codelist hf_anna,FALSE
+439696,Hypertensive heart and renal disease with (congestive) heart failure,Both,FALSE
+439698,Benign hypertensive heart disease with congestive cardiac failure,Both,FALSE
+439846,Left heart failure,Both,FALSE
+442310,Acute heart failure,Both,FALSE
+443580,Systolic heart failure,Both,FALSE
+443587,Diastolic heart failure,Both,FALSE
+444031,Chronic heart failure,Both,FALSE
+444101,Hypertensive heart failure,Both,FALSE
+600781,Heart failure management program,Only in codelist hf_anna,FALSE
+608954,Acute cor pulmonale due to septic pulmonary embolism,Only in codelist hf_anna,FALSE
+618899,Telehealth monitoring for chronic heart failure,Only in codelist hf_anna,FALSE
+619797,Heart failure due to thyrotoxicosis,Only in codelist hf_anna,FALSE
+762002,Congestive heart failure as post-operative complication of cardiac surgery,Both,FALSE
+762003,Congestive heart failure as post-operative complication of non-cardiac surgery,Both,FALSE
+762865,Documentation of heart failure medication action plan,Only in codelist hf_anna,FALSE
+764871,Reduced ejection fraction co-occurrent and due to acute on chronic heart failure,Both,FALSE
+764872,Reduced ejection fraction co-occurrent and due to chronic heart failure,Both,FALSE
+764873,Reduced ejection fraction co-occurrent and due to acute heart failure,Both,FALSE
+764874,Acute on chronic heart failure co-occurrent with normal ejection fraction,Both,FALSE
+764876,Chronic heart failure co-occurrent with normal ejection fraction,Both,FALSE
+764877,Acute heart failure co-occurrent with normal ejection fraction,Both,FALSE
+1245073,Acute exacerbation of chronic heart failure,Only in codelist hf_anna,FALSE
+1340281,Exacerbation of chronic heart failure,Only in codelist hf_anna,FALSE
+1340289,Exacerbation of congestive heart failure,Only in codelist hf_anna,FALSE
+1340348,Exacerbation of heart failure,Only in codelist hf_anna,FALSE
+2108528,NA,Only in codelist hf_anna,TRUE
+2108535,NA,Only in codelist hf_anna,TRUE
+3656094,Low output heart failure due to and following Fontan operation,Only in codelist hf_anna,FALSE
+4004279,High output heart failure,Both,FALSE
+4009047,Chronic left-sided heart failure,Both,FALSE
+4014159,Chronic right-sided heart failure,Both,FALSE
+4023479,Acute congestive heart failure,Both,FALSE
+4046878,Congestive heart failure monitoring,Only in codelist hf_anna,FALSE
+4071869,Congenital cardiac failure,Both,FALSE
+4079296,Sepsis-associated right ventricular failure,Only in codelist hf_elin,FALSE
+4079695,Sepsis-associated left ventricular failure,Only in codelist hf_elin,FALSE
+4103448,Low output heart failure,Both,FALSE
+4108244,Compensated cardiac failure,Both,FALSE
+4108245,Acute left ventricular failure,Both,FALSE
+4110961,Generalized ischemic myocardial dysfunction,Only in codelist hf_elin,TRUE
+4111554,Decompensated cardiac failure,Both,FALSE
+4124705,Heart failure as a complication of care,Both,FALSE
+4138307,Right heart failure due to pulmonary hypertension,Only in codelist hf_elin,FALSE
+4139864,Congestive heart failure due to left ventricular systolic dysfunction,Both,FALSE
+4142561,Congestive heart failure due to valvular disease,Both,FALSE
+4146456,Cardiac failure therapy,Only in codelist hf_elin,FALSE
+4163710,Dilated cardiomyopathy,Only in codelist hf_elin,TRUE
+4172864,Neonatal cardiac failure,Only in codelist hf_anna,FALSE
+4175137,Miscarriage with cardiac arrest and/or cardiac failure,Only in codelist hf_anna,FALSE
+4184497,Rheumatic left ventricular failure,Both,FALSE
+4185565,Low cardiac output syndrome,Only in codelist hf_anna,FALSE
+4190773,Restrictive cardiomyopathy,Only in codelist hf_elin,TRUE
+4193010,Heart failure annual review,Both,FALSE
+4195785,Right heart failure secondary to left heart failure,Both,FALSE
+4195892,Chronic cor pulmonale,Both,FALSE
+4199500,Refractory heart failure,Both,FALSE
+4205558,Heart failure following obstetric procedure,Both,FALSE
+4206009,Chronic left-sided congestive heart failure,Both,FALSE
+4215446,Acute right-sided congestive heart failure,Both,FALSE
+4215511,Emergency hospital admission for heart failure,Both,FALSE
+4215689,Heart failure confirmed,Both,FALSE
+4215802,Cardiac asthma,Only in codelist hf_anna,FALSE
+4229440,Chronic congestive heart failure,Both,FALSE
+4233224,Cardiac insufficiency during AND/OR resulting from a procedure,Both,FALSE
+4233424,Acute right-sided heart failure,Both,FALSE
+4236658,Pleural effusion due to congestive heart failure,Both,FALSE
+4242669,Biventricular congestive heart failure,Both,FALSE
+4249449,Failed attempted termination of pregnancy with cardiac arrest and/or failure,Only in codelist hf_anna,FALSE
+4259490,Cardiorespiratory failure,Both,FALSE
+4264636,Cardiac insufficiency following cardiac surgery,Both,FALSE
+4267800,Acute left-sided heart failure,Both,FALSE
+4269927,Cardiac arrest AND/OR failure following anesthesia AND/OR sedation in labor AND/OR delivery,Only in codelist hf_anna,FALSE
+4273632,Right ventricular failure,Both,FALSE
+4284562,Chronic right-sided congestive heart failure,Both,FALSE
+4293582,Red half-moon nail in congestive heart failure,Both,FALSE
+4305741,Heart failure follow-up,Only in codelist hf_anna,FALSE
+4307356,Cor pulmonale,Both,FALSE
+4311437,Decompensated chronic heart failure,Both,FALSE
+4327205,Acute left-sided congestive heart failure,Both,FALSE
+35615055,Saddle embolus of pulmonary artery with acute cor pulmonale,Both,FALSE
+36203211,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by causing swelling in your ankles or legs [MLHFQ],Only in codelist hf_anna,FALSE
+36203212,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making your walking about or climbing stairs difficult [MLHFQ],Only in codelist hf_anna,FALSE
+36203213,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making your working around the house or yard difficult [MLHFQ],Only in codelist hf_anna,FALSE
+36203214,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making your going places away from home difficult [MLHFQ],Only in codelist hf_anna,FALSE
+36203215,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making your sleeping well at night difficult [MLHFQ],Only in codelist hf_anna,FALSE
+36203216,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making your relating to or doing things with your friends or family difficult [MLHFQ],Only in codelist hf_anna,FALSE
+36203437,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making your working to earn a living difficult [MLHFQ],Only in codelist hf_anna,FALSE
+36203438,"Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making your recreational pastimes, sports or hobbies difficult [MLHFQ]",Only in codelist hf_anna,FALSE
+36203439,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making your sexual activities difficult [MLHFQ],Only in codelist hf_anna,FALSE
+36203440,Did your heart failure prevent you from living as you wanted during the past month (4weeks) by making you eat less of the foods you like [MLHFQ],Only in codelist hf_anna,FALSE
+36203441,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making you short of breath [MLHFQ],Only in codelist hf_anna,FALSE
+36203443,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making you stay in a hospital [MLHFQ],Only in codelist hf_anna,FALSE
+36203444,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making you worry [MLHFQ],Only in codelist hf_anna,FALSE
+36203445,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making it difficult for you to concentrate or remember things [MLHFQ],Only in codelist hf_anna,FALSE
+36203446,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making you feel depressed [MLHFQ],Only in codelist hf_anna,FALSE
+36203448,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making you sit or lie down to rest during the day [MLHFQ],Only in codelist hf_anna,FALSE
+36203449,"Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making you tired, fatigued or low on energy [MLHFQ]",Only in codelist hf_anna,FALSE
+36203836,Dressing yourself was limited by heart failure over the past 2 weeks [KCCQ],Only in codelist hf_anna,FALSE
+36203837,Walking 1 block on level ground was limited by heart failure over the past 2 weeks [KCCQ],Only in codelist hf_anna,FALSE
+36203838,"Doing yardwork, housework or carrying groceries was limited by heart failure over the past 2 weeks [KCCQ]",Only in codelist hf_anna,FALSE
+36204158,Climbing a flight of stairs without stopping was limited by heart failure over the past 2 weeks [KCCQ],Only in codelist hf_anna,FALSE
+36204159,Hurrying or jogging (as if to catch a bus) was limited by heart failure over the past 2 weeks [KCCQ],Both,FALSE
+36204160,Change in symptoms of heart failure compared with 2 weeks ago [KCCQ],Only in codelist hf_anna,FALSE
+36204165,Showering or bathing was limited by heart failure over the past 2 weeks [KCCQ],Only in codelist hf_anna,FALSE
+36204168,"You know what to do, or whom to call, if your heart failure gets worse [KCCQ]",Only in codelist hf_anna,FALSE
+36204169,Understand what things you are able to do to keep your heart failure symptoms from getting worse [KCCQ],Only in codelist hf_anna,FALSE
+36204170,Enjoyment of life limited by heart failure over the past 2 weeks [KCCQ],Only in codelist hf_anna,FALSE
+36204171,How would you feel if you had to spend the rest of your life with your heart failure the way it is right now [KCCQ],Both,FALSE
+36204172,Felt discouraged or down in the dumps because of heart failure over the past 2 weeks [KCCQ],Both,FALSE
+36204173,"Participation in hobbies, recreational activities limited by heart failure over the past 2 weeks [KCCQ]",Both,FALSE
+36204174,Participation in working or doing household chores limited by heart failure over the past 2 weeks [KCCQ],Both,FALSE
+36204175,Participation in visiting family or friends out of your home limited by heart failure over the past 2 weeks [KCCQ],Both,FALSE
+36204176,Participation in intimate relationships with loved ones limited by heart failure over the past 2 weeks [KCCQ],Both,FALSE
+36204456,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by costing you money for medical care [MLHFQ],Only in codelist hf_anna,FALSE
+36204457,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by giving you side effects from treatments [MLHFQ],Only in codelist hf_anna,FALSE
+36204458,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making you feel you are a burden to your family or friends [MLHFQ],Only in codelist hf_anna,FALSE
+36204459,Did your heart failure prevent you from living as you wanted during the past month (4 weeks) by making you feel a loss of self-control in your life [MLHFQ],Only in codelist hf_anna,FALSE
+36305423,History of Acute heart failure within 24 hours prior to procedure,Only in codelist hf_elin,FALSE
+36676642,"X-linked intellectual disability, cardiomegaly, congestive heart failure syndrome",Both,FALSE
+36712927,Congestive heart failure stage C due to ischemic cardiomyopathy,Both,FALSE
+36712928,Congestive heart failure stage B due to ischemic cardiomyopathy,Only in codelist hf_elin,FALSE
+36712929,Systolic heart failure stage C due to ischemic cardiomyopathy,Both,FALSE
+37163065,Left ventricular failure with normal ejection fraction due to valvular heart disease,Only in codelist hf_anna,FALSE
+37163068,Left ventricular failure with normal ejection fraction due to coronary artery disease,Only in codelist hf_anna,FALSE
+37163069,Left ventricular failure with normal ejection fraction due to myocarditis,Only in codelist hf_anna,FALSE
+37163071,Left ventricular failure with normal ejection fraction due to cardiomyopathy,Only in codelist hf_anna,FALSE
+37163130,Left ventricular failure with sepsis,Only in codelist hf_anna,FALSE
+37163135,Right ventricular failure with sepsis,Only in codelist hf_anna,FALSE
+37163261,Right ventricular failure due to valvular heart disease,Only in codelist hf_anna,FALSE
+37163264,Right ventricular failure due to pulmonary disease,Only in codelist hf_anna,FALSE
+37163266,Right ventricular failure due to pulmonary vascular disease,Only in codelist hf_anna,FALSE
+37163268,Right ventricular failure due to right ventricular infarction,Only in codelist hf_anna,FALSE
+37167218,Postcardiotomy acute right ventricular failure,Only in codelist hf_anna,FALSE
+37309625,Acute on chronic right-sided congestive heart failure,Both,FALSE
+37311948,Heart failure with mid range ejection fraction,Both,FALSE
+40479192,Chronic systolic heart failure,Both,FALSE
+40479576,Chronic diastolic heart failure,Both,FALSE
+40480602,Acute on chronic systolic heart failure,Both,FALSE
+40480603,Acute systolic heart failure,Both,FALSE
+40481042,Acute diastolic heart failure,Both,FALSE
+40481043,Acute on chronic diastolic heart failure,Both,FALSE
+40482857,Cardiorenal syndrome,Only in codelist hf_elin,TRUE
+40486933,Heart failure with normal ejection fraction,Both,FALSE
+40760358,Symptoms in heart failure patients during assessment period [CMS Assessment],Both,FALSE
+40760359,Heart failure follow-up during assessment period [CMS Assessment],Only in codelist hf_anna,FALSE
+43020421,Systolic heart failure stage C,Both,FALSE
+43020657,Heart failure due to end stage congenital heart disease,Both,FALSE
+43020910,Pulmonary hypertension due to left heart disease,Only in codelist hf_elin,FALSE
+43021825,Congestive heart failure stage D,Both,FALSE
+43021826,Congestive heart failure stage C,Both,FALSE
+43021840,Systolic heart failure stage D,Both,FALSE
+43021841,Diastolic heart failure stage D,Both,FALSE
+43021842,Diastolic heart failure stage C,Both,FALSE
+43022068,Exacerbation of congestive heart failure,Both,FALSE
+43530961,Induced termination of pregnancy complicated by cardiac failure,Both,FALSE
+44782428,Congestive heart failure due to cardiomyopathy,Both,FALSE
+44782439,Nutrition therapy for congestive heart failure,Only in codelist hf_elin,FALSE
+44782655,Acute exacerbation of chronic congestive heart failure,Both,FALSE
+44782713,Congestive heart failure with right heart failure,Both,FALSE
+44782718,Acute combined systolic and diastolic heart failure,Both,FALSE
+44782719,Chronic combined systolic and diastolic heart failure,Both,FALSE
+44782728,Hypertensive heart AND chronic kidney disease with congestive heart failure,Both,FALSE
+44782733,Acute on chronic combined systolic and diastolic heart failure,Both,FALSE
+44784345,Congestive heart failure as early postoperative complication,Both,FALSE
+44784442,Symptomatic congestive heart failure,Both,FALSE
+44784621,Hypertensive heart and chronic kidney disease,Only in codelist hf_elin,TRUE
+44789102,Heart failure review completed,Both,FALSE
+44790972,Heart failure 6 month review,Both,FALSE
+44801905,Heart failure resolved,Only in codelist hf_anna,FALSE
+44803777,Heart failure monitoring third letter,Only in codelist hf_anna,FALSE
+44803841,Heart failure monitoring first letter,Only in codelist hf_anna,FALSE
+44803861,Heart failure monitoring second letter,Only in codelist hf_anna,FALSE
+44803918,Heart failure monitoring verbal invitation,Only in codelist hf_anna,FALSE
+44803921,Heart failure monitoring telephone invitation,Only in codelist hf_anna,FALSE
+44804341,Heart failure monitoring invitation,Only in codelist hf_anna,FALSE
+44805683,Discharge from heart failure nurse service,Only in codelist hf_elin,FALSE
+44805918,Preferred place of care for next exacerbation of heart failure,Only in codelist hf_anna,FALSE
+44806125,Heart failure self-management plan review,Only in codelist hf_elin,FALSE
+44806371,Heart failure self-management plan agreed,Both,FALSE
+44808862,Heart failure initial assessment,Both,FALSE
+44808957,Heart failure clinical pathway,Only in codelist hf_elin,FALSE
+44809279,Rehabilitation for heart failure,Both,FALSE
+44810932,Heart failure monitoring,Only in codelist hf_anna,FALSE
+44811840,On optimal heart failure therapy,Both,FALSE
+44813162,Has heart failure management plan,Only in codelist hf_elin,FALSE
+44813293,Fast track heart failure referral for transthoracic two dimensional echocardiogram,Only in codelist hf_anna,FALSE
+45478437,H/O: heart failure,Only in codelist hf_anna,FALSE
+45766164,Heart failure with reduced ejection fraction,Both,FALSE
+45766165,Heart failure with reduced ejection fraction due to coronary artery disease,Both,FALSE
+45766166,Heart failure with reduced ejection fraction due to myocarditis,Both,FALSE
+45766167,Heart failure with reduced ejection fraction due to cardiomyopathy,Both,FALSE
+45773075,Heart failure with reduced ejection fraction due to heart valve disease,Both,FALSE
+46269995,Nutritional therapy for congestive heart failure done,Only in codelist hf_elin,FALSE
