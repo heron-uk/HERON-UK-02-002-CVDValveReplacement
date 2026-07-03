@@ -1,0 +1,91 @@
+concept_id,concept_name,codelist,to_remove
+435088,Senility,Only in codelist dementia,TRUE
+436803,Fragile X syndrome,Only in codelist dementia,TRUE
+443432,Impaired cognition,Only in codelist dementia,TRUE
+600632,Impaired concentration,Only in codelist dementia,TRUE
+609090,Memory deficit due to and following spontaneous intracerebral hemorrhage,Only in codelist dementia,TRUE
+609091,Memory deficit due to and following spontaneous subarachnoid hemorrhage,Only in codelist dementia,TRUE
+609092,Memory deficit due to and following embolic cerebrovascular accident,Only in codelist dementia,TRUE
+761978,Cognitive impairment due to multiple sclerosis,Only in codelist dementia,TRUE
+764374,Noncompliance with medication regimen due to cognitive impairment,Only in codelist dementia,TRUE
+1340245,Exacerbation of amnesia,Only in codelist dementia,TRUE
+1340358,Exacerbation of Huntington's chorea,Only in codelist dementia,TRUE
+1988434,Aggression factor score [CBS-8],Only in codelist dementia,TRUE
+3034709,Memory loss [HIV-SSC],Only in codelist dementia,TRUE
+4005009,Lack of thinking ability,Only in codelist dementia,TRUE
+4036509,Impaired environmental interpretation syndrome,Only in codelist dementia,TRUE
+4046084,Progressive aphasia,Only in codelist dementia,TRUE
+4046095,Akinetic-rigid form of Huntington's disease,Only in codelist dementia,TRUE
+4047110,Language-related cognitive disorder,Only in codelist dementia,TRUE
+4047745,Traumatic encephalopathy,Only in codelist dementia,TRUE
+4047752,Late onset Huntington's disease,Only in codelist dementia,TRUE
+4076654,Memory lapses,Only in codelist dementia,TRUE
+4076655,Mixes past with present,Only in codelist dementia,TRUE
+4083451,Forgets what was going to say,Only in codelist dementia,TRUE
+4083452,Forgets what has just said,Only in codelist dementia,TRUE
+4083453,Forgets what has just seen,Only in codelist dementia,TRUE
+4083454,Forgets what has just heard,Only in codelist dementia,TRUE
+4083456,Amnesia for important personal information,Only in codelist dementia,TRUE
+4084412,Poor short-term memory,Only in codelist dementia,TRUE
+4085496,Poor long-term memory,Only in codelist dementia,TRUE
+4085497,Forgets what was going to do,Only in codelist dementia,TRUE
+4091976,Forgets recent activities,Only in codelist dementia,TRUE
+4091977,Forgets what has just done,Only in codelist dementia,TRUE
+4092084,Forgets what has just read,Only in codelist dementia,TRUE
+4092086,Amnesia for day to day facts,Only in codelist dementia,TRUE
+4103534,Progressive supranuclear ophthalmoplegia,Only in codelist dementia,FALSE
+4103572,Organic memory impairment,Only in codelist dementia,TRUE
+4132117,Retrospective falsification,Only in codelist dementia,TRUE
+4138824,Paramnesia,Only in codelist dementia,TRUE
+4139102,Senility,Only in codelist dementia,TRUE
+4144146,Chronic organic mental disorder,Only in codelist dementia,TRUE
+4152048,Senile and presenile organic psychotic conditions,Only in codelist dementia,FALSE
+4152488,Impairment of registration,Only in codelist dementia,TRUE
+4153978,Momentary confabulation,Only in codelist dementia,TRUE
+4155500,Fantastical confabulation,Only in codelist dementia,TRUE
+4162498,Organic amnesia of language,Only in codelist dementia,TRUE
+4166262,Disturbance of memory for order of events,Only in codelist dementia,TRUE
+4171718,Amnesia for recent events,Only in codelist dementia,TRUE
+4173661,Post-traumatic amnesia,Only in codelist dementia,TRUE
+4198081,Retrograde amnesia,Only in codelist dementia,TRUE
+4206332,Forgetful,Only in codelist dementia,TRUE
+4227205,Organic brain syndrome with AIDS (acquired immunodeficiency syndrome),Only in codelist dementia,FALSE
+4229448,Anterograde amnesia,Only in codelist dementia,TRUE
+4264146,Amnesia for remote events,Only in codelist dementia,TRUE
+4296610,Information conversion problem,Only in codelist dementia,TRUE
+4304008,Memory impairment,Only in codelist dementia,TRUE
+4313895,Forgets to complete personal care,Only in codelist dementia,TRUE
+36687122,Human immunodeficiency virus infection with cognitive impairment,Only in codelist dementia,TRUE
+37016192,Cognitive deficit in attention,Only in codelist dementia,TRUE
+37017249,Organic brain syndrome co-occurrent with human immunodeficiency virus infection,Only in codelist dementia,TRUE
+37110498,Cognitive impairment co-occurrent and due to primary psychotic disorder,Only in codelist dementia,TRUE
+37162098,HTRA1-related autosomal dominant cerebral small vessel disease,Only in codelist dementia,TRUE
+37162140,Cognitive impairment due to lead toxicity,Only in codelist dementia,TRUE
+37162253,ITM2B-related amyloidosis,Only in codelist dementia,TRUE
+37163193,Progressive cerebello-cerebral atrophy,Only in codelist dementia,TRUE
+37164785,Cognitive impairment caused by ethanol,Only in codelist dementia,TRUE
+37166422,Cognitive impairment due to late-delayed irradiation of brain,Only in codelist dementia,TRUE
+37168522,Focal onset cognitive epileptic seizure with memory impairment,Only in codelist dementia,TRUE
+37309660,Memory deficit due to and following hemorrhagic cerebrovascular accident,Only in codelist dementia,TRUE
+37309661,Memory deficit due to and following ischemic cerebrovascular accident,Only in codelist dementia,TRUE
+37309662,Memory deficit due to and following cerebrovascular accident,Only in codelist dementia,TRUE
+37309663,Memory deficit due to and following cerebrovascular disease,Only in codelist dementia,TRUE
+37396465,Primary progressive non fluent aphasia,Only in codelist dementia,FALSE
+37396726,Cognitive communication disorder,Only in codelist dementia,TRUE
+37398799,Memory disorder co-occurrent and due to organic brain damage,Only in codelist dementia,TRUE
+40480615,Cognitive disorder,Only in codelist dementia,TRUE
+40482301,Residual cognitive deficit as late effect of cerebrovascular accident,Only in codelist dementia,TRUE
+40769270,Cognitive impairment [Reported],Only in codelist dementia,TRUE
+42535681,Cognitive deficit due to and following ischemic cerebrovascular accident,Only in codelist dementia,TRUE
+42535682,Cognitive deficit due to and following hemorrhagic cerebrovascular accident,Only in codelist dementia,TRUE
+42535706,Cognitive deficit due to and following embolic cerebrovascular accident,Only in codelist dementia,TRUE
+42537139,Dissociative neurological symptom disorder co-occurrent with cognitive impairment,Only in codelist dementia,TRUE
+42537141,Impaired executive functioning,Only in codelist dementia,TRUE
+42538566,Cognitive impairment due to toxicity of substance,Only in codelist dementia,TRUE
+42539256,Cognitive deficit due to and following cerebrovascular disease,Only in codelist dementia,TRUE
+42539270,Cognitive deficit due to and following nontraumatic subarachnoid hemorrhage,Only in codelist dementia,TRUE
+42539271,Cognitive deficit due to and following nontraumatic intracerebral hemorrhage,Only in codelist dementia,TRUE
+44782725,Cognitive changes due to organic disorder,Only in codelist dementia,TRUE
+44784524,Cognitive disorder in remission,Only in codelist dementia,TRUE
+44813843,Participates in Butterfly Scheme for dementia,Only in codelist dementia,FALSE
+46271045,Neurocognitive disorder,Only in codelist dementia,TRUE
