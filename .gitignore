@@ -25,3 +25,6 @@ valve_replacement_study_code/rw_clinical_practice_manuscript/Figures/*.png
 /valve_replacement_study_code/rw_patient_profiles_study/shiny
 valve_replacement_study_code/rw_patient_profiles_study/DiagnosticsShiny/global.R
 /valve_replacement_study_code/rw_patient_profiles_study/DiagnosticsShiny
+valve_replacement_study_code/Diagnostics/shiny/.Rprofile
+valve_replacement_study_code/Diagnostics/shiny/.rscignore
+valve_replacement_study_code/Diagnostics/shiny/rawData/results.csv
