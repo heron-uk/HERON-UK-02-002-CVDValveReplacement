@@ -1,0 +1,10 @@
+medcodeid	term	originalreadcode	cleansedreadcode	snomedctconceptid	snomedctdescriptionid	release	emiscodecategoryid	_merge
+299990018	Aortic stenosis alone, cause unspecified	G5413	G541300	60573004	100633013		32	master only (1)
+300012015	Pulmonary valve disorders NOS	G543z	G543z00	76267008	126662012		32	master only (1)
+300895015	[X]Other pulmonary valve disorders	Gyu58	Gyu5800	76267008	126662012		32	master only (1)
+424311000006118	[X]Pulmonary valve disorders in diseases CE	Gyu5C	Gyu5C00	76267008	126662012		32	master only (1)
+3483891000006117	Stenosed aortic valve	^ESCTST348389		60573004	1232102012		32	master only (1)
+3483911000006115	AS - Aortic stenosis	^ESCTAS348391		60573004	1232104013		32	master only (1)
+3740531000006110	Pulmonic valve disorder	^ESCTPU374053		76267008	126665014		32	master only (1)
+3740551000006115	PVD - Pulmonary valve disease	^ESCTPV374055		76267008	1233969011		32	master only (1)
+11927251000006117	Aortic stenosis	^ESCT1192725		60573004	1232103019		32	master only (1)

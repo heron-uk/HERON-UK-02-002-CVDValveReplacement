@@ -1,0 +1,22 @@
+MedCodeId	Term	OriginalReadCode	CleansedReadCode	SnomedCTConceptId	SnomedCTDescriptionId	Release	EmisCodeCategoryId
+81719014	Paralysis agitans	F120	F120.00	49049000	81717011		32
+317108017	[D]Tremor NOS	R0103	R010300	26079004	43694015		32
+81717011	Parkinson's disease	F12	F12..00	49049000	81717011		32
+745381000006119	Lewy body disease	F116	F116.00	80098002	132893017		32
+297043014	Parkinsonism with orthostatic hypotension	F1303	F130300	718685006	3313002011		32
+254935018	O/E - Parkinsonian tremor	297A	297A.00	163672003	254935018		27
+297037012	Parkinson's disease NOS	F12z	F12z.00	49049000	81717011		32
+151951000006115	Secondary parkinsonism due to other external agents	F12W	F12W.00	230292008	345117012		32
+151961000006118	Secondary parkinsonism, unspecified	F12X	F12X.00	230292008	345117012		32
+244311000006117	Parkinsonism secondary to drugs	F121	F121.00	4223005	8118011		5
+399394016	Other extrapyramidal disease and abnormal movement disorders	F13	F13..00	76349003	126793018		32
+64875013	Syphilitic parkinsonism	A94y1	A94y100	38523005	64875013		32
+254944017	O/E -Parkinson flexion posture	2987	2987.00	163681009	254944017		27
+402512016	O/E-festination-Parkinson gait	2994	2994.00	268964003	402512016		27
+465071000006115	Adverse reaction to antiparkinsonism drugs	TJ64	TJ64.00	430136001	2765075015		5
+363531000006115	[X]Antiparkinsonism drugs caus advers effects in therap use	U6067	U606700	430136001	2765075015		5
+299321016	[X]Secondary parkinsonism, unspecified	Fyu29	Fyu2900	230292008	345117012		32
+299314016	[X]Parkinsonism in diseases classified elsewhere	Fyu22	Fyu2200	49049000	81717011		32
+636681000000117	Cerebral degeneration in Parkinson's disease	F11x9	F11x900	341551000000108	636681000000117		32
+299313010	[X]Other secondary parkinsonism	Fyu21	Fyu2100	230292008	345117012		32
+299312017	[X]Other drug-induced secondary parkinsonism	Fyu20	Fyu2000	4223005	8118011		5

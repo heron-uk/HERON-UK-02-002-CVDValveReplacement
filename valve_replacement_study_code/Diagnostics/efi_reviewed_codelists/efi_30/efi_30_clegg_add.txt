@@ -1,0 +1,13 @@
+medcodeid	term	originalreadcode	cleansedreadcode	snomedctconceptid	snomedctdescriptionid	release	emiscodecategoryid	_merge
+295408017	Unspecified non-organic sleep disorder	E2740	E274000	270487001	405106013		32	master only (1)
+295435014	Non-organic sleep disorder NOS	E274z	E274z00	270487001	405106013		32	master only (1)
+296394016	[X]Other nonorganic sleep disorders	Eu51y	Eu51y00	270487001	405106013		32	master only (1)
+296396019	[X]Nonorganic sleep disorder, unspecified	Eu51z	Eu51z00	270487001	405106013		32	master only (1)
+345377013	Insomnia NOS	E2741-1	E274111	193462001	297924011		32	master only (1)
+401808017	Other non-organic sleep disorder	E274y	E274y00	270487001	405106013		32	master only (1)
+407067015	C/O - insomnia	1B1B-1	1B1B.11	272025006	2669520013		27	master only (1)
+1222474014	[D]Insomnia - symptom	R005-1	R005.11	193462001	297924011		32	master only (1)
+379691000006110	[X]Emotional sleep disorder NOS	Eu51z-1	Eu51z11	270487001	405106013		32	master only (1)
+3211741000006115	Dyssomnia	^ESCTDY321174		44186003	73688016		32	master only (1)
+3211751000006118	Sleep problem	^ESCTSL321175		44186003	493801017		32	master only (1)
+4771851000006111	Sleeplessness	^ESCTSL477185		193462001	297923017		32	master only (1)

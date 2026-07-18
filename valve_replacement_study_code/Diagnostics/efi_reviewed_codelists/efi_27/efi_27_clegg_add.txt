@@ -1,0 +1,1 @@
+medcodeid	term	originalreadcode	cleansedreadcode	snomedctconceptid	snomedctdescriptionid	release	emiscodecategoryid	_merge

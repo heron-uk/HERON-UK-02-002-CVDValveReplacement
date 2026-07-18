@@ -1,0 +1,50 @@
+MedCodeId	Term	OriginalReadCode	CleansedReadCode	SnomedCTConceptId	SnomedCTDescriptionId	Release	EmisCodeCategoryId
+395788015	Transient cerebral ischaemia	G65	G65..00	266257000	395788015		32
+145925010	Amaurosis fugax	F4236	F423600	88032003	145925010		32
+405339016	Stroke and cerebrovascular accident unspecified	G66	G66..00	230690007	345637012		32
+95931000006111	Transient cerebral ischaemia NOS	G65z	G65z.00	266257000	395788015		32
+104563015	Cerebrovascular disease	G6	G6...00	62914000	104563015		32
+107332010	Carotid artery stenosis	G634	G634.00	64586002	107332010		32
+320752018	Closed traumatic subdural haemorrhage	S622	S622.00	209947002	320752018		32
+395778016	Carotid artery occlusion	G631	G631.00	266254007	395778016		32
+300294013	Subdural haemorrhage - nontraumatic	G621	G621.00	195176009	300294013		32
+744901000006114	Intracerebral haemorrhage	G61	G61..00	274100004	2819959010		32
+505322013	Cerebral haemorrhage following injury	S62	S62..00	450418003	2916363013		32
+149571000006118	Sequelae of stroke,not specfd as h'morrhage or infarction	G68X	G68X.00	195239002	300403014		32
+300370010	Left sided CVA	G667	G667.00	195216008	300370010		32
+391035012	Traumatic subdural haematoma	S629	S629.00	262952002	2912898019		32
+320835014	Traumatic subdural haemorrhage	S628	S628.00	209987007	320835014		32
+524511000006116	Brain stem stroke syndrome	G663	G663.00	195212005	300365015		32
+1222398015	Cerebral arterial occlusion	G64	G64..00	20059004	1222398015		32
+264499015	Stroke monitoring	662M	662M.00	170600009	264499015		1
+139081000000117	Excepted from stroke quality indicators: Patient unsuitable	9h21	9h21.00	716581000000101	1569131000000118		37
+139091000000115	Excepted from stroke quality indicators: Informed dissent	9h22	9h22.00	716021000000109	1568581000000116		37
+92070010	Cerebral atherosclerosis	G670	G670.00	55382008	92070010		32
+251692018	H/O: TIA	14AB	14AB.00	161511000	251692018		32
+2469365010	Stroke / transient ischaemic attack referral	8HBJ	8HBJ.00	413124000	2469365010		40
+300349016	Transient cerebral ischaemia NOS	G65zz	G65zz00	266257000	395788015		32
+300353019	Intermittent cerebral ischaemia	G65z1	G65z100	195206000	300353019		32
+118689010	Cerebral thrombosis	G640	G640.00	71444005	118689010		32
+300366019	Cerebellar stroke syndrome	G664	G664.00	195213000	300366019		32
+2475119012	Subdural haematoma - nontraumatic	G622	G622.00	195176009	2469010019		32
+1780304018	Stroke/CVA annual review	662e	662e.00	699270006	2983515011		1
+162111000000112	DNA - Did not attend stroke clinic	9N4X	9N4X.00	88601000000107	137901000000116		37
+2474330011	Referral to stroke clinic	8HTQ	8HTQ.00	412773009	2474330011		40
+300348012	Other transient cerebral ischaemia	G65y	G65y.00	266257000	395788015		32
+360778011	Chronic cerebral ischaemia	G6711	G671100	111298007	360778011		32
+2548554013	Haemorrhagic stroke monitoring	662o	662o.00	417506008	2548554013		1
+306621000000116	Seen in stroke clinic	9N0p	9N0p.00	201501000000108	306621000000116		37
+809421000006116	H/O: CVA/stroke	14A7	14A7.00	275526006	2986886017		32
+2534212018	Stroke/transient ischaemic attack monitoring second letter	9Om1	9Om1.00	415629007	2534212018		37
+2534196010	Stroke/transient ischaemic attack monitoring third letter	9Om2	9Om2.00	415631003	2534196010		37
+402929011	Closed traumatic subarachnoid haemorrhage	S620	S620.00	28048009	483737017		32
+149551000006111	Sequelae of other nontraumatic intracranial haemorrhage	G682	G682.00	363302008	482447013		32
+986831000006115	Stroke/transient ischaemic attack monitoring verbal invitati	9Om3	9Om3.00	417059002	2549607012		37
+459511018	Traumatic subdural haematoma without open intracranial wound	S6290	S629000	315046005	459511018		32
+371641000000112	Delivery of rehabilitation for stroke	7P242	7P24200	231231000000107	371641000000112		32
+966981000006112	Ref to multidisciplinary stroke function improvement service	8HHM	8HHM.00	112901000000108	199461000000113		40
+391043019	Traumatic subarachnoid haemorrhage	S627	S627.00	450375008	2915656010		32
+451371010	H/O: Stroke in last year	14AK	14AK.00	308067002	451371010		32
+370711000006115	[X]Cerebrovascular diseases	Gyu6	Gyu6.00	62914000	104563015		32
+1562581000006114	Stroke/transient ischaemic attack monitoring telephone invte	9Om4	9Om4.00	717241000000108	1569781000000115		37
+426321000006116	[X]Sequelae of stroke,not specfd as h'morrhage or infarction	Gyu6C	Gyu6C00	195239002	300403014		32

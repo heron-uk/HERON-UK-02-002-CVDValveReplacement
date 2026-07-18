@@ -1,0 +1,5 @@
+MedCodeId	Term	OriginalReadCode	CleansedReadCode	SnomedCTConceptId	SnomedCTDescriptionId	Release	EmisCodeCategoryId
+81191015	Mitral valve incompetence	G540	G540.00	48724000	81193017		32
+1232103019	Aortic stenosis	G5415	G541500	60573004	100633013		32
+193991000006118	Pulmonary valve disorders	G543	G543.00	76267008	1233968015		32
+2471474013	Mitral valve prolapse	G5402	G540200	409712001	2471474013		32

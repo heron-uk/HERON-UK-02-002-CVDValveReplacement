@@ -1,0 +1,6 @@
+MedCodeId	Term	OriginalReadCode	CleansedReadCode	SnomedCTConceptId	SnomedCTDescriptionId	Release	EmisCodeCategoryId
+35523013	Disability	13VC	13VC.00	21134002	35523013		17
+251027018	Attendance allowance	13O5	13O5.00	160983005	251027018		17
+631591000006116	DS 1500 Disability living allowance completed	9EB5	9EB5.00	514591000000108	1144301000000113		37
+1221287015	Has disabled driver badge	13V8	13V8.00	161041005	1221287015		17
+133431000006116	Specific disability rehab.	8F6	8F6..00	266742006	397202016		32

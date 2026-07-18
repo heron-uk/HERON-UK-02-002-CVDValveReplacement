@@ -1,0 +1,39 @@
+MedCodeId	Term	OriginalReadCode	CleansedReadCode	SnomedCTConceptId	SnomedCTDescriptionId	Release	EmisCodeCategoryId
+64168014	Hypertensive disease	G2	G2...00	38341003	64168014		32
+99042012	Essential hypertension	G20	G20..00	59621000	99042012		32
+3135013	Benign essential hypertension	G201	G201.00	1201005	3135013		32
+251674014	H/O: hypertension	14A2	14A2.00	161501007	251674014		32
+443764015	On treatment for hypertension	662O	662O.00	302192008	443764015		1
+285265015	Seen in hypertension clinic	9N03	9N03.00	185264001	285265015		37
+93494011	Systolic hypertension	G202	G202.00	56218007	93494011		32
+284062018	Referral to hypertension clinic	8HT5	8HT5.00	183856001	284062018		40
+12496011	Hypertensive retinopathy	F4213	F421300	6962006	12496011		32
+299687010	Hypertensive disease NOS	G2z	G2z..00	38341003	1215744012		32
+53452019	Secondary hypertension	G24	G24..00	31992008	53452019		32
+413076015	White coat hypertension	246M	246M.00	697930002	2968360017		2
+395751018	Essential hypertension NOS	G20z	G20z.00	59621000	99042012		32
+931161000006119	Excepted from hypertension qual indicators: Patient unsuit	9h31	9h31.00	716821000000100	1569371000000118		37
+931171000006114	Excepted from hypertension qual indicators: Informed dissent	9h32	9h32.00	716771000000106	1569321000000117		37
+2474335018	Hypertension clinical management plan	8CR4	8CR4.00	736286003	3517026016		32
+395753015	Hypertensive renal disease NOS	G22z	G22z.00	38481006	64282015		32
+131046010	Malignant essential hypertension	G200	G200.00	78975002	131046010		32
+158241000006117	Secondary hypertension NOS	G24z	G24z.00	31992008	53452019		32
+264471012	Good hypertension control	6627	6627.00	170577003	264471012		1
+1780318013	Moderate hypertension control	662b	662b.00	401117004	1780318013		1
+264485019	Hypertension treatm. started	662F	662F.00	170586008	2694699015		1
+1780252014	Hypertension treatment refused	8I3N	8I3N.00	401047000	1780252014		32
+264472017	Poor hypertension control	6628	6628.00	170578008	264472017		1
+153941000006118	Seen in hypertension clinic	9N1y2	9N1y200	185264001	285265015		37
+299684015	Hypertension secondary to drug	G24z1	G24z100	194791005	299684015		5
+299683014	Secondary renovascular hypertension NOS	G24z0	G24z000	123799005	192288012		32
+151161000006115	Secondary malignant hypertension	G240	G240.00	89242004	147988014		32
+138991000000110	Exception reporting: hypertension quality indicators	9h3	9h3..00	717311000000102	1569851000000118		37
+299681011	Hypertension secondary to endocrine disorders	G244	G244.00	194788005	299681011		32
+497011000006117	Atherosclerotic retinopathy	F4211	F421100	95691008	158518015		32
+299682016	Secondary hypertension NOS	G24zz	G24zz00	31992008	53452019		32
+299680012	Secondary benign hypertension NOS	G241z	G241z00	194785008	2470031013		32
+299678018	Secondary benign hypertension	G241	G241.00	194785008	299678018		32
+299677011	Secondary malignant hypertension NOS	G240z	G240z00	89242004	147988014		32
+80224019	Diastolic hypertension	G203	G203.00	48146000	80224019		32
+300871017	[X]Hypertension secondary to other renal disorders	Gyu21	Gyu2100	31992008	53452019		32
+300870016	[X]Other secondary hypertension	Gyu20	Gyu2000	31992008	53452019		32

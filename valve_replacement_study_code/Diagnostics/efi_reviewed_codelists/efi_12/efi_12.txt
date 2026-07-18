@@ -1,0 +1,101 @@
+MedCodeId	Term	OriginalReadCode	CleansedReadCode	SnomedCTConceptId	SnomedCTDescriptionId	Release	EmisCodeCategoryId
+391354016	Fracture of lower end of radius	S23B	S23B.00	263199001	391354016		32
+402859019	Closed Colles' fracture	S2341	S234100	269083002	402859019		32
+319180015	Fracture of femur, NOS	S31z	S31z.00	71620000	118978017		32
+10843018	Fracture of neck of femur	S30	S30..00	5913000	10843018		32
+318454018	Closed fracture lumbar vertebra	S104	S104.00	207957008	318454018		32
+455536018	Collapse of vertebra due to osteoporosis NOS	N331L	N331L00	240198002	2920899019		32
+319118015	Closed fracture of proximal femur, pertrochanteric	S302	S302.00	208548007	319118015		32
+1220723013	Fracture of thoracic vertebra	S15	S15..00	125607007	1220723013		32
+400338014	Pathological fracture	N331	N331.00	268029009	400338014		32
+207611000006114	Prmy open red+int fxn prox femoral #+screw/nail+plate device	7K1D0	7K1D000	265132005	393775016		32
+455534015	Collapse of lumbar vertebra due to osteoporosis	N331J	N331J00	311890007	455534015		32
+133435011	Open Colles' fracture	S2351	S235100	80411001	133435011		32
+391366010	Fracture of lower end of both ulna and radius	S23C	S23C.00	263208005	391366010		32
+277185016	Closed reduction of fracture of hip	7K1L4	7K1L400	179159005	277185016		32
+125993015	Fracture of radius AND ulna	S23	S23..00	75857000	125993015		32
+277199017	Closed reduction of fracture of radius and or ulna	7K1LL	7K1LL00	179172006	1489754013		32
+391392015	Subtrochanteric fracture	S305	S305.00	263229001	391392015		32
+402832010	Fracture of spine without mention of spinal cord injury	S10	S10..00	269061001	402832010		32
+318456016	Closed fracture lumbar vertebra, wedge	S1041	S104100	207959006	318456016		32
+318492017	Multiple fractures of lumbar spine and pelvis	S10B6	S10B600	207993005	318492017		32
+562981000006117	Closed fracture of femur, intertrochanteric	S3024	S302400	89820008	148902010		32
+570621000006118	Cls red+int fxn proximal femoral #+screw/nail device alone	7K1J0	7K1J000	708898008	3037770015		32
+78112010	Fracture of lower limb	S3	S3...00	46866001	1230400018		32
+1220724019	Fracture of lumbar vertebra	S10B0	S10B000	125608002	1220724019		32
+318725011	Multiple fractures of thoracic spine	S150	S150.00	208215006	318725011		32
+216206018	Fragility fracture due to unspecified osteoporosis	N331M	N331M00	443165006	2837900019		32
+452081015	Collapse of lumbar vertebra	N331G	N331G00	308758008	452081015		32
+318443011	Other specified closed fracture thoracic vertebra	S102y	S102y00	207938004	318435018		32
+318485010	Fracture of lumbar spine and pelvis	S10B	S10B.00	207986006	318485010		32
+318353013	Closed fracture of unspecified cervical vertebra	S1000	S100000	269062008	402833017		32
+311305016	Fatigue fracture of vertebra	N1y1	N1y1.00	202831001	311305016		32
+570551000006114	Cls # prox femur, subcapital, Garden grade unspec.	S3005	S300500	275338001	411305015		32
+1485120014	H/O: hip fracture	14G7	14G7.00	391093004	1485120014		32
+402863014	Closed fracture of radius (alone), unspecified	S23x1	S23x100	111640008	178867012		32
+402874017	Closed fracture of neck of femur NOS	S30y	S30y.00	359820003	475220015		32
+485443016	Closed fracture of radius and ulna, lower end	S234	S234.00	33192001	485443016		32
+1485119015	H/O: fragility fracture	14G6	14G6.00	391092009	1485119015		32
+455535019	Collapse of thoracic vertebra due to osteoporosis	N331K	N331K00	311891006	455535019		32
+570571000006116	Cls # proximal femur, trochanteric section, unspecified	S3020	S302000	208548007	319118015		32
+1485121013	H/O: vertebral fracture	14G8	14G8.00	391094005	1485121013		32
+793901000006115	Fracture-dislocation or subluxation hip	S4E	S4E..00	209334003	320032013		32
+402840016	Closed fracture of seventh cervical vertebra	S1007	S100700	269069004	402840016		32
+318435018	Closed fracture thoracic vertebra	S102	S102.00	207938004	318435018		32
+402838014	Closed fracture of fifth cervical vertebra	S1005	S100500	269067002	402838014		32
+402839018	Closed fracture of sixth cervical vertebra	S1006	S100600	269068007	402839018		32
+318482013	Fracture of first cervical vertebra	S10A0	S10A000	207983003	318482013		32
+167991000006110	Revsn to opn red+int fxtn prox fem #+screw/nail device alone	7K1H6	7K1H600	311426001	454997014		32
+318437014	Closed fracture thoracic vertebra, wedge	S1021	S102100	207940009	318437014		32
+1490703015	Closed fracture radius and ulna, distal	S2346	S234600	33192001	1490703015		32
+319138019	Pertrochanteric fracture	S304	S304.00	208562000	319138019		32
+319124014	Closed fracture proximal femur, subtrochanteric	S3022	S302200	208551000	319124014		32
+405144016	Pathological fracture of lumbar vertebra	N3311	N331100	270508006	405144016		32
+207601000006111	Prmy open red+int fxn prox femoral #+screw/nail device alone	7K1D6	7K1D600	57470004	95576017		32
+319533018	Closed traumatic dislocation of hip, unspecified	S4500	S450000	208892001	319532011		32
+319093010	Closed fracture proximal femur, subcapital, Garden grade II	S3007	S300700	208529008	319093010		32
+319095015	Closed fracture proximal femur, subcapital, Garden grade IV	S3009	S300900	208531004	319095015		32
+319092017	Closed fracture proximal femur, subcapital, Garden grade I	S3006	S300600	208528000	319092017		32
+455444016	Closed multiple fractures of thoracic spine	S1500	S150000	311814002	455444016		32
+318528011	Closed fracture of thoracic spine with spinal cord lesion	S112	S112.00	208026008	318528011		32
+319090013	Closed fracture head of femur	S3004	S300400	208526001	319090013		32
+319145019	Open fracture of neck of femur NOS	S30z	S30z.00	361119006	477343011		32
+319084014	Closed fracture proximal femur, transcervical	S300	S300.00	208521006	319084014		32
+451464018	Collapsed vertebra NOS	N331D	N331D00	84138006	139537010		32
+319108013	Open fracture proximal femur,subcapital, Garden grade unspec	S3015	S301500	208540000	319108013		32
+567461000006115	Closed reduction of intracapsular # NOF internal fixat DHS	7K1Jd	7K1Jd00	313330006	457218015		32
+258471000006114	Open fracture of femur, intertrochanteric	S3034	S303400	26938002	45058017		32
+318436017	Closed fracture thoracic vertebra, burst	S1020	S102000	207939007	318436017		32
+570541000006112	Cls # prox femur, intracapsular section, unspecified	S3000	S300000	20100009	33823015		32
+565451000006113	Closed fracture-dislocation, hip joint	S4E0	S4E0.00	209335002	320033015		32
+318445016	Closed fracture thoracic vertebra not otherwise specified	S102z	S102z00	207938004	318435018		32
+318455017	Closed fracture lumbar vertebra, burst	S1040	S104000	207958003	318455017		32
+167971000006114	Revisn to int fxn(no red) prox fem #+screw/nail device alone	7K1J8	7K1J800	179102005	277122016		32
+318556018	Closed fracture of lumbar spine with spinal cord lesion	S114	S114.00	208054001	318556018		32
+210941000006118	Primary int fxn(no red) prox fem #+scrw/nail+intramed device	7K1J6	7K1J600	179097007	277117016		32
+570531000006119	Cls # of proximal femur, pertrochanteric section, NOS	S302z	S302z00	208548007	319118015		32
+319123015	Closed fracture proximal femur, intertrochanteric, two part	S3021	S302100	208550004	319123015		32
+455433012	Collapse of cervical vertebra due to osteoporosis	N331H	N331H00	311806008	455433012		32
+210041000006119	Primary cls red+int fxn prox fem #+screw/nail+plate device	7K1JD	7K1JD00	179105007	277125019		32
+40871000006119	Osteoporosis + pathological fracture cervical vertebrae	N331A	N331A00	203452006	312164012		32
+402869013	Closed fracture proximal femur, other transcervical	S300y	S300y00	208521006	319084014		32
+44341000006111	Opn # proximal femur, intracapsular section, unspecified	S3010	S301000	5913000	10843018		32
+570561000006111	Cls # proximal femur, intertrochanteric, comminuted	S3023	S302300	208552007	319125010		32
+318384010	Closed fracture cervical vertebra, wedge	S100H	S100H00	207904007	318384010		32
+318386012	Closed fracture cervical vertebra, spinous process	S100K	S100K00	207906009	318386012		32
+318910019	Open fracture of radius and ulna, unspecified part	S23y	S23y.00	81966000	135964010		32
+210031000006112	Primary cls red+int fxn prox fem #+screw/nail device alone	7K1JB	7K1JB00	272300006	407419015		32
+312681016	[X]Other osteoporosis with pathological fracture	NyuB0	NyuB000	443165006	2837900019		32
+256101000006113	Open fracture-dislocation, hip joint	S4E1	S4E1.00	209336001	320034014		32
+318457013	Closed fracture lumbar vertebra, spondylolysis	S1042	S104200	207960001	318457013		32
+319128012	Open fracture of proximal femur, pertrochanteric	S303	S303.00	208555009	319128012		32
+318448019	Open fracture thoracic vertebra, wedge	S1031	S103100	207951009	318448019		32
+564491000006115	Closed fracture proximal femur, transcervical, NOS	S300z	S300z00	208521006	319084014		32
+159511000006113	Rvsn to opn red+int fxtn prox fem #+ scrw/nail+plate device	7K1H8	7K1H800	179067004	277080012		32
+265421000006113	Open # of proximal femur, trochanteric section, unspecified	S3030	S303000	5913000	10843018		32
+319086011	Closed fracture proximal femur, transepiphyseal	S3001	S300100	208523009	319086011		32
+319134017	Open fracture proximal femur, subtrochanteric	S3032	S303200	208558006	319134017		32
+318562011	Closed spinal fracture with cauda equina lesion	S1145	S114500	208060001	318562011		32
+565801000006112	Closed fracture-subluxation, hip joint	S4E2	S4E2.00	209337005	320035010		32
+545121000000114	Fragility fracture	N331N	N331N00	306171000000106	545121000000114		32
+1702401000006118	Remanip intracap fract neck fem and fix using nail or screw	7K1Y0	7K1Y000	179106008	277126018		32

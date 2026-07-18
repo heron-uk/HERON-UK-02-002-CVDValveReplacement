@@ -1,0 +1,9 @@
+MedCodeId	Term	OriginalReadCode	CleansedReadCode	SnomedCTConceptId	SnomedCTDescriptionId	Release	EmisCodeCategoryId
+317035012	[D]Insomnia NOS	R0052	R005200	193462001	297924011		32
+317032010	[D]Sleep disturbance, unspecified	R0050	R005000	44186003	493802012		32
+459355013	Poor sleep pattern	1B1Q	1B1Q.00	314938000	459355013		27
+223701000000114	Non-organic sleep disorders	E274	E274.00	270487001	405106013		32
+317031015	[D]Sleep disturbances	R005	R005.00	44186003	493802012		32
+406739012	Disorders of the sleep-wake schedule	Fy02	Fy02.00	271794005	406739012		32
+217721000000117	Cannot sleep - insomnia	1B1B	1B1B.00	193462001	297924011		27
+400141000006116	[X]Nonorganic sleep disorders	Eu51	Eu51.00	270487001	405106013		32

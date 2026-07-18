@@ -1,0 +1,4 @@
+MedCodeId	Term	OriginalReadCode	CleansedReadCode	SnomedCTConceptId	SnomedCTDescriptionId	Release	EmisCodeCategoryId
+215431000006110	Polypharmacy	8B36-1	8B36.11	182848008	282678016		32
+282678016	Patient on numerous drugs	8B36	8B36.00	182848008	282678016		32
+2159933016	Drug over usage checked	8BIm	8BIm.00	408369008	2159933016		32

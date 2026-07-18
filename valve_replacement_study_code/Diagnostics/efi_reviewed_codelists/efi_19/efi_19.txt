@@ -1,0 +1,55 @@
+MedCodeId	Term	OriginalReadCode	CleansedReadCode	SnomedCTConceptId	SnomedCTDescriptionId	Release	EmisCodeCategoryId
+2534664018	Ischaemic heart disease	G3	G3...00	414545008	2534664018		32
+94884017	Acute myocardial infarction	G30	G30..00	57054005	94884017		32
+49966017	Chest pain	182	182..00	29857009	49966017		27
+442204010	Angina on effort	G33z3	G33z300	300995000	442204010		32
+299757012	Angina pectoris	G33	G33..00	194828000	299757012		32
+299835014	Ischaemic heart disease NOS	G3z	G3z..00	414545008	2534664018		32
+299714019	Inferior myocardial infarction NOS	G308	G308.00	73795002	122557015		32
+89711000006118	Transluminal balloon angioplasty of coronary artery	7928	7928.00	11101003	19234014		32
+4031011	Old myocardial infarction	G32	G32..00	1755008	4031011		32
+595731000006114	Coronary atherosclerosis	G340	G340.00	443502000	2842265012		32
+220231000000118	Coronary artery operations	792	792..00	31413008	484868016		32
+251679016	H/O: angina pectoris	14A5	14A5.00	161504004	251679016		32
+7845011	Unstable angina	G3111	G311100	4557003	7845011		32
+634751000006116	ECG: myocardial ischaemia	322	322..00	164861001	1205556017		3
+350379019	Cardiac syndrome X	G37	G37..00	233845001	350379019		32
+2536354015	Insertion of coronary artery stent	79294	7929400	36969009	2536354015		32
+1484833014	Coronary heart disease review	6A4	6A4..00	390799004	1484833014		1
+397829016	H/O: cardiovascular disease	14A	14A..00	266995000	397829016		32
+1780501013	Acute non-ST segment elevation myocardial infarction	G3071	G307100	401314000	1780501013		32
+350348018	Stable angina	G33z7	G33z700	233819005	350348018		32
+299721019	Acute myocardial infarction NOS	G30z	G30z.00	57054005	94884017		32
+264494013	Angina control - poor	662K1	662K100	170595000	264494013		1
+299805019	Other chronic ischaemic heart disease NOS	G34z	G34z.00	413838009	2534672016		32
+460133017	Coronary heart disease annual review	6A2	6A2..00	315614006	460133017		1
+264493019	Angina control - good	662K0	662K000	170594001	264493019		1
+459488019	Transient myocardial ischaemia	G31y3	G31y300	315026000	459488019		32
+299834013	Other specified ischaemic heart disease	G3y	G3y..00	414545008	2534664018		32
+2534674015	Chronic myocardial ischaemia	G34y1	G34y100	413844008	2534674015		32
+498031000006112	Atrial septal defect/curr comp folow acut myocardal infarct	G361	G361.00	194863005	299818010		32
+2537483013	Chronic coronary insufficiency	G34y0	G34y000	413844008	2537483013		32
+482941000006119	Angina pectoris NOS	G33z	G33z.00	194828000	299757012		32
+635641000006111	ECG:shows myocardial ischaemia	3222	3222.00	164861001	1205556017		3
+39111000006114	Other acute and subacute ischaemic heart disease	G31	G31..00	414545008	2534663012		32
+299750014	Other acute and subacute ischaemic heart disease NOS	G31yz	G31yz00	414545008	2534663012		32
+299776014	Other chronic ischaemic heart disease	G34	G34..00	413838009	2534672016		32
+299765010	Angina pectoris NOS	G33zz	G33zz00	194828000	299757012		32
+264496010	Angina control - worsening	662K3	662K300	170597008	264496010		1
+350354017	Silent myocardial ischaemia	G344	G344.00	233823002	350354017		32
+338974012	Ischaemic chest pain	G33z4	G33z400	225566008	338974012		32
+299718016	Other acute myocardial infarction	G30y	G30y.00	57054005	94884017		32
+256451015	ECG: myocardial ischaemia NOS	322Z	322Z.00	164861001	1205556017		3
+299804015	Other specified chronic ischaemic heart disease NOS	G34yz	G34yz00	413838009	2534671011		32
+543291000006110	Certain current complication follow acute myocardial infarct	G36	G36..00	371068009	1209776017		32
+7844010	Preinfarction syndrome	G311	G311.00	4557003	494262012		32
+39773018	Coronary artery spasm	G332	G332.00	23687008	39773018		32
+67081000006119	Ventric septal defect/curr comp fol acut myocardal infarctn	G362	G362.00	233846000	350381017		32
+300874013	[X]Other forms of angina pectoris	Gyu30	Gyu3000	194828000	299757012		32
+494438016	Subendocardial ischaemia	G31y2	G31y200	46109009	494438016		32
+810821000006112	H/O: myocardial infarct >60	14A4	14A4.00	161503005	251678012		32
+299720018	Other acute myocardial infarction NOS	G30yz	G30yz00	57054005	94884017		32
+394541000006112	[X]Ischaemic heart diseases	Gyu3	Gyu3.00	414545008	2534664018		32
+616081000006113	Diab mellit insulin-glucose infus acute myocardial infarct	889A	889A.00	315287002	459791015		32
+537651000000118	Cardiovascular disease annual review declined	8I3z	8I3z.00	302881000000102	537651000000118		32
+585631000000113	Admit ischaemic heart disease emergency	8H2V	8H2V.00	699245006	3082941013		40
