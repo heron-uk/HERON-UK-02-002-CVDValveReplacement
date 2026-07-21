@@ -1,9 +1,0 @@
-medcodeid	term	originalreadcode	cleansedreadcode	snomedctconceptid	snomedctdescriptionid	release	emiscodecategoryid	_merge
-283939013	Other medical D.V. done	8HLF	8HLF.00	183737004	283923018		40	master only (1)
-283957014	Other surgical D.V. done	8HLS	8HLS.00	183737004	283923018		40	master only (1)
-283958016	Domiciliary visit done NOS	8HLZ	8HLZ.00	183737004	283923018		40	master only (1)
-339453014	Joint home visit	9NFT	9NFT.00	225929007	339453014		37	master only (1)
-15271000000110	Home visit admin NOS	9NFZ	9NFZ.00	714251000000104	1565491000000114		37	master only (1)
-827301000006116	Home visit	9N1C-1	9N1C.11	439708006	2792425010		37	master only (1)
-4735621000006118	Home visit for acute condition	^ESCTHO473562		185467006	2792181010		37	master only (1)
-4735641000006113	Home visit for chronic condition	^ESCTHO473564		185468001	2794388012		37	master only (1)

@@ -1,6 +1,0 @@
-medcodeid	term	originalreadcode	cleansedreadcode	snomedctconceptid	snomedctdescriptionid	release	emiscodecategoryid	_merge
-889361000006115	Corn/callosity	M20-99	M20..99	201037000	889361000006115		32	master only (1)
-3274011000006111	Heloma durum	^ESCTHE327401		47850008	79739018		32	master only (1)
-3274021000006115	HD - Heloma durum	^ESCTHD327402		47850008	494936014		32	master only (1)
-12717291000006114	Corns and callus	^ESCT1271729		201037000	308836016		32	master only (1)
-12758281000006117	Corns and callosities	^ESCT1275828		201037000	308837013		32	master only (1)

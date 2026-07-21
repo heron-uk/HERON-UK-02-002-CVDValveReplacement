@@ -1,0 +1,66 @@
+cohort_name,concept_id,concept_name
+acute_kidney_injury,36716182,Acute kidney injury due to circulatory failure
+acute_kidney_injury,36716183,Acute kidney injury due to hypovolemia
+acute_kidney_injury,36716312,Acute kidney injury due to sepsis
+acute_kidney_injury,37111531,Acute kidney injury due to trauma
+acute_kidney_injury,37116430,Acute kidney failure stage 1
+acute_kidney_injury,37116431,Acute kidney failure stage 2
+acute_kidney_injury,37116432,Acute kidney failure stage 3
+acute_kidney_injury,37395514,Acute kidney injury due to acute tubular necrosis due to hypovolaemia
+acute_kidney_injury,37395516,Acute kidney injury due to acute tubular necrosis due to circulatory failure
+acute_kidney_injury,37395517,Acute kidney injury due to acute tubular necrosis due to sepsis
+acute_kidney_injury,37395518,Acute kidney injury due to acute tubular necrosis with histological evidence
+acute_kidney_injury,37395519,Acute kidney injury due to acute tubular necrosis due to hypovolaemia with histological evidence
+acute_kidney_injury,37395520,Acute kidney injury due to acute tubular necrosis due to sepsis with histological evidence
+acute_kidney_injury,37395521,Acute kidney injury due to acute tubular necrosis due to circulatory failure with histological evidence
+acute_kidney_injury,45757442,Acute nontraumatic kidney injury
+acute_kidney_injury,36716946,Acute renal insufficiency
+acute_kidney_injury,37016366,Acute renal failure caused by contrast agent
+acute_kidney_injury,40481064,Acute renal cortical necrosis
+acute_kidney_injury,43530914,Induced termination of pregnancy complicated by acute renal failure
+acute_kidney_injury,43530928,Induced termination of pregnancy complicated by acute renal failure with oliguria
+acute_kidney_injury,44808128,Acute renal failure due to traumatic rhabdomyolysis
+acute_kidney_injury,44808338,Acute renal failure induced by aminoglycoside
+acute_kidney_injury,44808340,Acute renal failure induced by cyclosporin A
+acute_kidney_injury,44808744,Acute renal failure due to non-traumatic rhabdomyolysis
+acute_kidney_injury,44808821,Acute renal failure induced by animal toxin
+acute_kidney_injury,44808822,Acute renal failure induced by plant toxin
+acute_kidney_injury,44808823,Acute renal failure induced by heavy metal
+acute_kidney_injury,44809170,Acute renal failure induced by poison
+acute_kidney_injury,44809173,Acute renal failure induced by radiographic contrast media
+acute_kidney_injury,44809286,Acute renal failure induced by solvent
+acute_kidney_injury,44813789,Acute renal failure induced by cisplatin
+acute_kidney_injury,44813790,Acute renal failure induced by non-steroidal anti-inflammatory drug
+acute_kidney_injury,45757398,Acute renal failure on dialysis
+acute_kidney_injury,45757466,Acute renal failure due to tubular necrosis
+acute_kidney_injury,197320,Acute renal failure syndrome
+acute_kidney_injury,197329,Acute renal failure due to acute cortical necrosis
+acute_kidney_injury,432961,Acute renal papillary necrosis with renal failure
+acute_kidney_injury,4066005,Post-delivery acute renal failure with postnatal problem
+acute_kidney_injury,4066405,Failed attempted termination of pregnancy with acute renal failure
+acute_kidney_injury,4126305,Acute renal impairment
+acute_kidney_injury,4126424,Nephrotoxic acute renal failure
+acute_kidney_injury,4126439,Acute scleroderma renal crisis
+acute_kidney_injury,4128067,Acute-on-chronic renal failure
+acute_kidney_injury,4139414,Transient acute renal failure
+acute_kidney_injury,4151112,Acute renal failure due to crush syndrome
+acute_kidney_injury,4160274,Acute renal failure with oliguria
+acute_kidney_injury,4180453,Acute renal failure due to obstruction
+acute_kidney_injury,4211863,Miscarriage with acute renal failure
+acute_kidney_injury,4232873,Acute postoperative renal failure
+acute_kidney_injury,4264681,Acute renal failure due to procedure
+acute_kidney_injury,4311129,Acute renal failure due to ischemia
+acute_kidney_injury,444044,Acute tubular necrosis
+acute_kidney_injury,4128029,Crush syndrome
+acute_kidney_injury,4126426,Traumatic anuria - crush syndrome
+acute_kidney_injury,196455,Hepatorenal syndrome
+acute_kidney_injury,4119093,Hepatorenal syndrome following delivery
+acute_kidney_injury,4149888,Hepatorenal syndrome due to a procedure
+acute_kidney_injury,4265212,Familial arthrogryposis-cholestatic hepatorenal syndrome
+acute_kidney_injury,4308408,Hepatorenal syndrome as a complication of care
+acute_kidney_injury,4170452,Postoperative renal failure
+acute_kidney_injury,4126119,Toxic nephropathy
+acute_kidney_injury,435003,Acute nephritis with lesions of necrotizing glomerulitis
+acute_kidney_injury,435308,Acute glomerulonephritis
+acute_kidney_injury,4152839,Acute papillary necrosis
+acute_kidney_injury,4189531,Acute nephritis

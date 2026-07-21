@@ -1,5 +1,0 @@
-medcodeid	term	originalreadcode	cleansedreadcode	snomedctconceptid	snomedctdescriptionid	release	emiscodecategoryid	_merge
-251107017	Disability NOS	13VCZ	13VCZ00	21134002	35523013		17	master only (1)
-622411000006116	Disabled	13VC-1	13VC.11	21134002	35523013		17	master only (1)
-4537321000006116	AA - Attendance allowance	^ESCTAA453732		160983005	251026010		17	master only (1)
-4537881000006111	Has orange disabled driver badge	^ESCTHA453788		161041005	251099011		17	master only (1)
