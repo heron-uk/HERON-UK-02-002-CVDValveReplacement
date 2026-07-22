@@ -69,7 +69,6 @@ for(index in c("efi", "cci")) {
       mutate("result_id" = 2L,
              "group_name"  = "omop_table &&& index",
              "group_level" = paste0(omop_table, " &&& ", index), 
-             "variable_name" = "cohort_name &&& concept_name &&& concept_id",
              "variable_name" = "cohort_name",
              "variable_level" = cohort_name,
              "strata_name" = "codelist_name &&& concept_name &&& concept_id",
