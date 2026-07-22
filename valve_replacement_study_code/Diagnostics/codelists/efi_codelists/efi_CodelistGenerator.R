@@ -110,6 +110,12 @@ newCodelist(list("mobility_and_transfer_problems_not_reviewed" = pull(getDescend
   addConcepts(cdm = cdm_vocab_2025_08, concepts = c(4240470)) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
+# Parkinson
+newCodelist(list("parkinsonism_tremor_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08,
+                                                                conceptId = c(36716783,  37110549, 381270, 4140090, 
+                                                                              443782, 372604)), "concept_id"))) |>
+  exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
+
 # Peptic ulcer
 newCodelist(list("peptic_ulcer_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                    conceptId = c(4057060, 4134146, 4027663)), "concept_id"))) |>
