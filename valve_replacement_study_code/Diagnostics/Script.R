@@ -114,7 +114,7 @@ for(index in c("efi", "cci")) {
       select("cdm_name", "omop_table", "concept_name", "concept_id",  "source_concept_id", "source_concept_name", "relationship_id", "count_subjects") |>
       group_by(cdm_name, omop_table, concept_name, concept_id, count_subjects, source_concept_id, source_concept_name) |>
       summarise(
-        relationship_id = paste(relationship_id, collapse = ", "),
+        relationship_id = paste(unique(relationship_id), collapse = ", "),
         .groups = "drop"
       ) |>
       mutate("result_id" = 3L,
@@ -154,7 +154,7 @@ for(index in c("efi", "cci")) {
       select("cdm_name", "omop_table", "concept_name", "concept_id",  "relationship_id", "count_subjects") |>
       group_by(cdm_name, omop_table, concept_name, concept_id, count_subjects) |>
       summarise(
-        relationship_id = paste(relationship_id, collapse = ", "),
+        relationship_id = paste(unique(relationship_id), collapse = ", "),
         .groups = "drop"
       ) |>
       mutate("result_id" = 3L,
@@ -170,7 +170,8 @@ for(index in c("efi", "cci")) {
              "additional_name" = "type",
              "additional_level" = "orphan_code_counts_standard") |>
       select(-c("omop_table", "concept_name", "concept_id", "count_subjects",  "relationship_id")) |>
-      newSummarisedResult() |>
+      newSummarisedResult(settings = tibble("result_id" = 3L,
+                                            "result_type" = "orphan_code_use")) |>
       mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD AURUM", cdm_name))
   }
   
