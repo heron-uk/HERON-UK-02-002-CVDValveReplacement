@@ -24,21 +24,21 @@ for(index in c("efi", "cci")) {
   orphan_code_counts_standard <- list()
   
   for(i in c(1:length(names(x)))) {
-    
+
     cohort_name <- case_when(
       names(x)[[i]] %in% c("systemic_lupus_erythematosus", "systemic_sclerosis_not_reviewed", 
                            "polymyositis_not_reviewed", "rheumatoid_arthritis", 
-                           "rheumatoid_lung_disease_not_reviewed", "polymyalgia_rheumatica_not_reviewed") ~ "rheumatologic_disease",
-      names(x)[[i]] %in% c("cirrhosis_of_liver_not_reviewed", "disease_of_liver_not_reviewed", "chronic_liver_disease") ~ "mild_liver_disease",
-      names(x)[[i]] %in% c("eye_disorder_due_to_dm_not_reviewed", "complications_due_to_dm_not_reviewed") ~ "diabetes_with_chronic_complications",
-      names(x)[[i]] %in% c("hemiplegia_not_reviewed", "paraplegia_not_reviewed") ~ "hemiplegia_or_paraplegia",
-      names(x)[[i]] %in% c("acute_kidney_injury", "chronic_kidney_disease") ~ "renal_disease",
-      names(x)[[i]] %in% c("malignant_neoplastic_disease_not_reviewed") ~ "any_malignancy_including_leukemia_and_lymphoma",
-      names(x)[[i]] %in% c("hepatic_failure_not_reviewed", "hepatic_encephalopathy_not_reviewed", "portal_hypertension_not_reviewed", "esophageal_varices_not_reviewed") ~ "moderate_or_severe_liver_disease", 
-      names(x)[[i]] %in% c("malignant_neoplastic_disease_not_reviewed") ~ "metastatic_solid_tumor",
-      names(x)[[i]] %in% c("anemia_broad","anemia_nutritional") ~ "Anaemia and haematinic deficiency",
-      names(x)[[i]] %in% c("t1dm","t2dm") ~ "Diabetes",
-      names(x)[[i]] %in% c("copd","asthma") ~ "Respiratory disease",
+                           "rheumatoid_lung_disease_not_reviewed", "polymyalgia_rheumatica_not_reviewed") & index == "cci" ~ "rheumatologic_disease",
+      names(x)[[i]] %in% c("cirrhosis_of_liver_not_reviewed", "disease_of_liver_not_reviewed", "chronic_liver_disease") & index == "cci"~ "mild_liver_disease",
+      names(x)[[i]] %in% c("eye_disorder_due_to_dm_not_reviewed", "complications_due_to_dm_not_reviewed") & index == "cci"~ "diabetes_with_chronic_complications",
+      names(x)[[i]] %in% c("hemiplegia_not_reviewed", "paraplegia_not_reviewed") & index == "cci"~ "hemiplegia_or_paraplegia",
+      names(x)[[i]] %in% c("acute_kidney_injury", "chronic_kidney_disease") & index == "cci"~ "renal_disease",
+      names(x)[[i]] %in% c("malignant_neoplastic_disease_not_reviewed") & index == "cci"~ "any_malignancy_including_leukemia_and_lymphoma",
+      names(x)[[i]] %in% c("hepatic_failure_not_reviewed", "hepatic_encephalopathy_not_reviewed", "portal_hypertension_not_reviewed", "esophageal_varices_not_reviewed") & index == "cci" ~ "moderate_or_severe_liver_disease", 
+      names(x)[[i]] %in% c("malignant_neoplastic_disease_not_reviewed") & index == "cci"~ "metastatic_solid_tumor",
+      names(x)[[i]] %in% c("anemia_broad","anemia_nutritional") & index == "efi"~ "Anaemia and haematinic deficiency",
+      names(x)[[i]] %in% c("t1dm","t2dm") & index == "efi"~ "Diabetes",
+      names(x)[[i]] %in% c("copd","asthma") & index == "efi" ~ "Respiratory disease",
       .default = names(x)[[i]])
     
     cohort_code_counts[[i]] <- concept_counts |>

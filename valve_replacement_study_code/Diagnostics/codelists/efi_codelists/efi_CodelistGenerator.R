@@ -10,7 +10,7 @@ newCodelist(list("activity_limitation_not_reviewed" = pull(getDescendants(cdm_vo
 
 # Arthritis
 newCodelist(list("arthritis_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
-                                                                conceptId = c(429102)), "concept_id"))) |>
+                                                                conceptId = c(4291025)), "concept_id"))) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Cerebrovascular disease
@@ -176,6 +176,16 @@ newCodelist(list("urinary_incontinence_not_reviewed" = pull(getDescendants(cdm_v
                                                                                          42538537, 4126278,44808460,40481801, 42536555, 606955, 4032530, 4096552,197102,
                                                                                          42538538, 193326, 197672,37119132,45757352,4153667, 4172646, 4092642)), "concept_id"))) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
+
+# Urinary system disease
+newCodelist(list("urinary_system_disease_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+                                                                           conceptId = c()), "concept_id"))) |>
+  addConcepts(cdm = cdm_vocab_2025_08, concepts = c(40481109, 4128060, 4126285, 45770840, 4329572,
+                                                    4128401, 194081, 4127564, 4027117, 4137752, 
+                                                    4058837, 4239213,435308, 435320,193140,)) |>
+  exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
+
+
 
 
 # Visual impairment
