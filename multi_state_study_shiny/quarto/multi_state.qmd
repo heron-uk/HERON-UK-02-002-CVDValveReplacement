@@ -1,0 +1,833 @@
+---
+title: "multi_state_quarto"
+format: docx
+editor: visual
+---
+
+```{r, setup, include=FALSE}
+# hide messages/warnings and set default figure size & resolution
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  # size in inches (use sensible values for Word)
+  fig.width = 9,
+  fig.height = 6,
+  dpi = 300,
+  # for Word: control rendered image size (inches); change if you prefer
+  out.width = "6in"
+)
+
+```
+
+## HERON-UK-02-002-CVDValveReplacement
+
+
+```{r, echo = FALSE}
+library(ggplot2)
+library(dplyr)
+library(stringr)
+library(visOmopResults)
+library(omopgenerics)
+tableType <- "flextable"
+plotType <- "ggplot"
+setGlobalPlotOptions(type = plotType)
+setGlobalTableOptions(type = tableType)
+standard_estimate_names <- c(
+  `N (%)` = "<count> (<percentage>%)",
+  N = "<count>",
+  `Median [Q25 - Q75]` = "<median> [<q25> - <q75>]",
+  `Mean (SD)` = "<mean> (<sd>)",
+  Range = "<min> to <max>"
+)
+results <- omopgenerics::importSummarisedResult(here::here("rawData"))
+
+
+renameCdm <- function(res){
+  res |>
+    mutate(cdm_name =
+             case_when(str_detect(tolower(cdm_name), "aurum|heron_cdm")  ~ "CPRD Aurum",
+                       str_detect(tolower(cdm_name), "dataloch") ~ "DataLoch Lothian",
+                       .default = cdm_name
+             )
+    )
+}
+results <- results |>
+  renameCdm()
+
+```
+
+
+## Incidence
+
+```{r, echo = FALSE}
+data_inc <- results |>
+  omopgenerics::filterSettings(result_type == "incidence")
+data_inc <- data_inc |> 
+  mutate(group_level = str_replace(
+    group_level, 
+    "aortic_stenosis", "Aortic stenosis")) |> 
+  mutate(group_level = str_replace(
+    group_level, 
+    "aortic_valve_replacement", "Aortic valve replacement"))
+```
+
+### Age-standardised incidence by socioeconomic status
+
+```{r, echo = FALSE}
+sesStandarisedPlot <- function() {
+  working_plot <- data_inc |>
+    omopgenerics::filterSettings(standardised_incidence == "TRUE") |>
+    omopgenerics::filterAdditional(analysis_interval == "overall") |>
+    omopgenerics::filterSettings(denominator_sex == "Both") |>
+    omopgenerics::filterStrata(ses != "Missing") |>
+    dplyr::filter(strata_level != "overall") |> 
+    IncidencePrevalence::plotIncidence(colour = "ses", 
+                                       x = "ses",
+                                       facet = outcome_cohort_name~cdm_name, 
+                                       line = TRUE, ribbon = TRUE) +
+    theme_bw() +
+    theme(
+      axis.text.x = element_text(angle = 0, vjust = 0.5),
+        strip.background = element_rect(
+          fill = "gray94"
+    )) +
+    facet_grid(outcome_cohort_name~cdm_name, scales = "free_y")+
+    labs(colour = "Socioeconomic status",
+         fill = "Socioeconomic status") +
+    theme(legend.position = "top")+
+    xlab("Socioeconomic status") 
+  
+  working_plot@data <- working_plot@data |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "1",
+      "1 (least deprived)", ses)) |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "5",
+      "5 (most deprived)", ses))
+  
+  working_plot
+  
+  working_plot
+}
+sesStandarisedPlot()
+```
+
+### Incidence by age and socioeconomic status
+
+```{r, echo = FALSE}
+sesIncPlotAge <- function() {
+  working_plot <- data_inc |>
+    omopgenerics::filterSettings(standardised_incidence == "FALSE") |>
+    omopgenerics::filterAdditional(analysis_interval == "overall") |>
+    omopgenerics::filterSettings(denominator_sex == "Both") |>
+    omopgenerics::filterSettings(denominator_age_group != "20 to 150") |>
+    omopgenerics::filterStrata(ses != "Missing") |>
+    dplyr::filter(strata_level != "overall") |> 
+    IncidencePrevalence::plotIncidence(colour = "ses", 
+                                       x = "denominator_age_group",
+                                       facet = ses~cdm_name, 
+                                       line = TRUE, ribbon = TRUE) +
+    theme_bw() +
+    theme(
+      axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        strip.background = element_rect(
+          fill = "gray94"
+    )) +
+    facet_grid(outcome_cohort_name~cdm_name, scales = "free_y")+
+    labs(colour = "Socioeconomic status",
+         fill = "Socioeconomic status") +
+    theme(legend.position = "top")+
+    xlab("Age") 
+  
+  working_plot@data <- working_plot@data |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "1",
+      "1 (least deprived)", ses)) |> 
+    dplyr::mutate(ses = dplyr::if_else(
+      ses == "5",
+      "5 (most deprived)", ses))
+  
+  working_plot
+  
+  working_plot
+}
+sesIncPlotAge()
+```
+
+### Incidence by year and socioeconomic status
+
+```{r, echo = FALSE, fig.width = 8, fig.height = 10}
+sesIncPlot <- function(outcome) {
+  
+  build_one <- function(dat, site) {
+    working_plot <- dat |>
+      omopgenerics::filterAdditional(analysis_interval != "overall") |>
+      omopgenerics::filterSettings(denominator_sex == "Both") |>
+      omopgenerics::filterStrata(ses != "Missing") |>
+      dplyr::filter(strata_level != "overall") |>
+      omopgenerics::filterSettings(denominator_age_group == "20 to 150") |>
+      addSettings("standardised_incidence") |>
+      dplyr::mutate(
+        standardised_incidence = dplyr::if_else(
+          standardised_incidence == "TRUE", "Age standardised", "Crude"
+        ),
+        standardised_incidence = factor(
+          standardised_incidence,
+          levels = c("Crude", "Age standardised")
+        )
+      ) |>
+      IncidencePrevalence::plotIncidence(
+        colour = "ses",
+        facet = denominator_age_group ~ standardised_incidence,
+        line = TRUE,
+        ribbon = TRUE
+      ) +
+      theme_bw() +
+      theme(
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        strip.background = element_rect(fill = "gray94"),
+        plot.title = element_text(hjust = 0.5, face = "bold")
+      ) +
+      facet_grid(outcome_cohort_name ~ standardised_incidence, scales = "free_y") +
+      ylim(c(0, NA)) +
+      labs(
+        colour = "Socioeconomic status",
+        fill   = "Socioeconomic status",
+        title  = site
+      ) +
+      theme(legend.position = "top")
+    
+    working_plot@data <- working_plot@data |>
+      dplyr::mutate(
+        denominator_age_group = dplyr::if_else(
+          denominator_age_group == "20 to 150", "Overall", denominator_age_group
+        ),
+        ses = dplyr::case_when(
+          ses == "1" ~ "1 (least deprived)",
+          ses == "5" ~ "5 (most deprived)",
+          .default = ses
+        ),
+        standardised_incidence = factor(
+          standardised_incidence,
+          levels = c("Crude", "Age standardised")
+        )
+      )
+    working_plot
+  }
+  
+  cdm_names <- c("CPRD Aurum","DataLoch Lothian" )
+  plot_list <- lapply(cdm_names, function(site) {
+    dat_site <- data_inc |>
+      dplyr::filter(cdm_name == site)
+    build_one(dat_site, site)
+  })
+  names(plot_list) <- cdm_names
+  
+  patchwork::wrap_plots(plot_list, ncol = 1) +
+    patchwork::plot_layout(guides = "collect") &
+    theme(legend.position = "top")
+}
+sesIncPlot()
+
+```
+
+
+
+```{r, echo = FALSE}
+data_inc |>
+  omopgenerics::filterSettings(standardised_incidence == "TRUE", denominator_sex != "Both") |>
+  omopgenerics::filterAdditional(analysis_interval == "overall") |>
+  #omopgenerics::filterSettings(denominator_sex == "Both") |>
+  omopgenerics::filterStrata(ses != "Missing", ses !="overall") |>
+  IncidencePrevalence::plotIncidence(x = "ses", colour = "denominator_sex", facet = outcome_cohort_name ~ cdm_name) +
+  facet_grid(outcome_cohort_name ~ cdm_name, scales = "free_y") 
+
+```
+
+
+
+## Characteristics
+
+```{r, echo = FALSE}
+data_char <- results |>
+  omopgenerics::filterSettings(result_type == "summarise_characteristics") |>
+  filter(.data$estimate_name != "min", .data$estimate_name != "max") |>
+  arrange(cdm_name)
+
+```
+
+```{r}
+data_char |> 
+  omopgenerics::filterGroup(cohort_name %in% c("healthy", "healthy_to_as")) |>
+  filter(variable_name == "Number subjects") |>
+  filter(strata_level != "Missing" & strata_level != "overall" ) |>
+  tidy() |>
+  select(cdm_name, cohort_name, count, ses) |>
+  tidyr::pivot_wider(
+    names_from  = cohort_name,
+    values_from = count
+  ) |>
+  mutate(estimate_value = 100*healthy_to_as / healthy)|>
+  visTable( hide = c(
+    "variable_level", "table_name") )
+  
+```
+
+```{r}
+den <- data_char |> 
+  filterGroup(cohort_name == "healthy")|>
+  filterStrata(ses == "overall") |>
+  filter(variable_name == "Number subjects") |>
+  mutate(estimate_value = as.numeric(estimate_value))|>
+  select(cdm_name, den = estimate_value)
+data_char |> 
+  filterGroup(cohort_name == "healthy")|>
+  filter(variable_name == "Number subjects") |>
+  left_join(den, by = "cdm_name") |>
+  tidy() |>
+  mutate(percentage = 100* .data$count/.data$den ) |>
+  select("cdm_name" , "ses", "count", "percentage")|>
+  gt::gt()
+```
+
+
+
+
+
+
+
+## Multi state model
+
+```{r, echo = FALSE}
+data_hr <- results |>
+  omopgenerics::filterSettings(result_type == "hr_summary") |>
+  omopgenerics::tidy()|>
+  dplyr::filter(transition!= "healthy_to_death")|>
+  dplyr::mutate(transition = dplyr::case_when(
+                      .data$transition == "healthy_to_as" ~ "General Pop to AS",
+                      .data$transition == "healthy_to_death" ~ "General Pop to Death",
+                      .data$transition == "as_to_avr" ~ "AS to AVR",
+                      .data$transition == "as_to_death" ~ "AS to Death",
+                      .data$transition == "avr_to_death" ~ "AVR to Death"
+                      
+                    )) |>
+    dplyr::mutate(age_limit = dplyr::case_when(
+                      age_limit == "overall" ~ "Overall", 
+                      age_limit == "below_80" ~ "Below 80", 
+                      age_limit == "over_80" ~ "Over 80"
+                      
+                      
+                    ), 
+                  transition = factor(transition, levels = c(
+      "General Pop", "General Pop to AS", "General Pop to Death",
+      "AS to AVR", "AS to Death", "AVR to Death"
+    ))
+  ) 
+```
+
+### only age model
+
+```{r, echo = FALSE, fig.width = 8, fig.height = 10}
+build_one <- function(dat, site) {
+  dat |>
+    dplyr::filter(cdm_name == site) |>
+    visOmopResults::scatterPlot(
+      x      = "rel_age", 
+      y      = "hazard_ratio", 
+      line   = TRUE, 
+      point  = FALSE, 
+      ribbon = FALSE,
+      facet  = transition ~ age_limit,
+      colour = "cdm_name"
+    ) +
+    geom_line(aes(y = lower_hr), linetype = "dashed", linewidth = 0.6) +
+    geom_line(aes(y = upper_hr), linetype = "dashed", linewidth = 0.6) +
+    scale_colour_manual(values = cols[[site]]) +
+    xlab("Relative age") +
+    labs(
+      title = site,
+      subtitle = "Reference age: 70"
+    ) +
+    facet_grid(transition ~ age_limit, scales = "free_y") +
+    theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+}
+
+plot_data <- data_hr |> 
+  dplyr::filter(.data$ref_age == "70") |>
+  dplyr::mutate(rel_age = as.numeric(.data$variable_level)) |>
+  arrange(cdm_name)
+
+cdm_names <- c("CPRD Aurum", "DataLoch Lothian")
+cols <- list("CPRD Aurum" = "#5B3A8C", 
+             "DataLoch Lothian" = "#A98CC9"
+             )
+plot_list <- lapply(cdm_names, function(site) build_one(plot_data, site))
+names(plot_list) <- cdm_names
+
+patchwork::wrap_plots(plot_list, ncol = 1) +
+  patchwork::plot_layout(guides = "collect") +
+  patchwork::plot_annotation(
+    title = "Relative hazard ratios: age only model"
+  ) &
+  theme(legend.position = "none")
+```
+
+```{r, echo = FALSE,  fig.width = 8, fig.height = 10}
+
+data_hr |> dplyr::filter(.data$ref_age != "70", variable_name != "age",model_name == "age_sex" ) |>
+  visOmopResults::scatterPlot(x = "transition", 
+                              y = "hazard_ratio", 
+                              line = FALSE,
+                              point = TRUE, 
+                              ribbon = FALSE,
+                              facet = age_limit~cdm_name, 
+                              colour = "cdm_name",
+                              ymin = "lower_hr", 
+                              ymax = "upper_hr") +
+  facet_grid(age_limit~cdm_name, scales = "free_y") +
+  geom_hline(yintercept = 1, linetype = "dashed", linewidth = 0.6, color = "black") +
+  scale_colour_manual(values = c("#5B3A8C", "#A98CC9"))+
+  labs(title = "Hazard Ratios: Males vs Females (Adjusted for age)") +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)
+  )
+
+```
+```{r}
+results |>
+  omopgenerics::filterSettings(result_type == "hr_summary") |>
+  addSettings("age_limit") |>
+  omopgenerics::splitAll()|>
+  dplyr::filter(transition!= "healthy_to_death", estimate_name %in% c("hazard_ratio", "lower_hr", "upper_hr"))|>
+  dplyr::mutate(transition = dplyr::case_when(
+    .data$transition == "healthy_to_as" ~ "General Pop to AS",
+    .data$transition == "healthy_to_death" ~ "General Pop to Death",
+    .data$transition == "as_to_avr" ~ "AS to AVR",
+    .data$transition == "as_to_death" ~ "AS to Death",
+    .data$transition == "avr_to_death" ~ "AVR to Death"
+    
+  )) |>
+  dplyr::mutate(age_limit = dplyr::case_when(
+    age_limit == "overall" ~ "Overall", 
+    age_limit == "below_80" ~ "Below 80", 
+    age_limit == "over_80" ~ "Over 80"
+    
+    
+  ), 
+  transition = factor(transition, levels = c(
+    "General Pop", "General Pop to AS", "General Pop to Death",
+    "AS to AVR", "AS to Death", "AVR to Death"
+  ))
+  ) |>
+  select(-"result_id") |>
+  dplyr::filter(.data$ref_age != "70", variable_name != "age",model_name == "age_sex") |>
+  arrange(cdm_name, age_limit)|>
+  visTable(groupColumn = "cdm_name", header  = "age_limit", estimateName = c("HR [95% CI]" = "<hazard_ratio> [<lower_hr>, <upper_hr>]"), 
+           hide = c("variable_name", "variable_level", "model_name", "estimate_type", "ref_age")
+)
+
+
+```
+
+
+### ses models
+
+```{r}
+data_hr2 <- data_hr |> 
+  dplyr::filter(.data$ref_age != "70") |>
+  dplyr::filter(variable_name != "age") |>
+  arrange(cdm_name)
+```
+
+```{r, echo = FALSE, fig.width = 8, fig.height = 8}
+ses_colours <- c("1" = "#BCBDDC", "2" = "#9E9AC8", "3" = "#807DBA", "4" = "#54278F")
+build_one <- function(dat, site) {
+  dat |>
+    dplyr::filter(cdm_name == site) |>
+    visOmopResults::scatterPlot(
+      x      = "variable_level", 
+      y      = "hazard_ratio", 
+      line   = FALSE,
+      point  = TRUE, 
+      ribbon = FALSE,
+      facet  = transition ~ age_limit, 
+      colour = "variable_level",
+      ymin   = "lower_hr", 
+      ymax   = "upper_hr"
+    ) +
+    geom_hline(yintercept = 1, linetype = "dashed", linewidth = 0.6, color = "black") +
+    xlab("Socioeconomic status") +
+    theme(
+      axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+      plot.title  = element_text(hjust = 0.5, face = "bold")
+    ) +
+    facet_grid(transition ~ age_limit, scales = "free_y") +
+    scale_colour_manual(
+      name   = "Socioeconomic status",
+      values = ses_colours,
+      labels = c(
+        "1" = "1 (Least deprived)",
+        "2" = "2",
+        "3" = "3",
+        "4" = "4"
+      )
+    ) +
+    scale_fill_manual(
+      name   = "Socioeconomic status",
+      values = ses_colours,
+      labels = c(
+        "1" = "1 (Least deprived)",
+        "2" = "2",
+        "3" = "3",
+        "4" = "4"
+      )
+    )+
+    labs(title = site)
+}
+
+plot_data <- data_hr2 |> 
+  dplyr::filter(
+    model_name == "ses_age_sex", 
+    !(variable_level %in% c("Male", "Missing")), 
+    age_limit != "Overall", 
+    transition != "General Pop to Death"
+  )
+
+cdm_names <- plot_data |>
+  dplyr::distinct(cdm_name) |>
+  dplyr::pull(cdm_name)
+
+plot_list <- lapply(cdm_names, function(site) build_one(plot_data, site))
+names(plot_list) <- cdm_names
+
+patchwork::wrap_plots(plot_list, ncol = 1) +
+  patchwork::plot_layout(guides = "collect") +
+  patchwork::plot_annotation(
+    title    = "Hazard ratios by socioeconomic status, adjusted for age and sex.",
+    subtitle = "Reference is socioeconomic status 5 (Most deprived)."
+  )
+```
+::: {.landscape}
+
+```{r, echo = FALSE}
+estimates <- c(#"HR [95% CI]" = "<hazard_ratio> [<lower_hr>, <upper_hr>]", 
+               "HR [95% CI]" = "<hazard_ratio_adj> [<lower_hr_adj>, <upper_hr_adj>]", 
+               "P Value" = "<p_value>", 
+               "Standard Error" = "<se_coef>"
+               ) 
+data_hr |> 
+  dplyr::filter(.data$ref_age != "70") |>
+  dplyr::filter(variable_name != "age",!grepl("sex", .data$variable_name), model_name %in% c("ses_age_sex" )) |>
+  tidyr::pivot_longer(cols = c("hazard_ratio","lower_hr", "upper_hr"),
+                      names_to = "estimate_name", 
+                      values_to = "estimate_value") |>
+    dplyr::mutate(
+    estimate_name = dplyr::if_else(
+      .data$model_name == "ses_age_sex",
+      paste0(.data$estimate_name, "_adj"),
+      .data$estimate_name
+    ),
+    estimate_type = "numeric", 
+                variable = paste0(
+  stringr::str_to_sentence(.data$variable_name),
+": ", 
+  .data$variable_level
+), 
+model = dplyr::if_else(.data$model_name == "ses", "Unadjusted", "Adjusted for age and sex")) |>
+  dplyr::arrange(variable,.data$model_name, cdm_name, transition, age_limit) |>
+  dplyr::select(cdm_name, model, variable, estimate_name, estimate_value, estimate_type, transition, age_limit) |>
+  visOmopResults::visTable(header = c("transition", "age_limit"), groupColumn = "cdm_name", hide = c("ref_age","estimate_type", "model"),
+                               
+                               estimateName = estimates, 
+                               .options = list(decimals = c("numeric" = 3), 
+                                               groupAsColumn =FALSE, includeHeaderName = FALSE)
+                               )
+```
+:::
+
+# Comorbidities in CPRD Aurum
+
+```{r}
+grid_lines <- data_char |>
+  dplyr::filter(cdm_name == "CPRD Aurum",
+    variable_name %in% c("Comorbidities", "Ckd stage")) |>
+  omopgenerics::tidy() |>
+  dplyr::filter(ses == "overall") |>
+  dplyr::mutate(
+    transition = dplyr::case_when(
+      .data$cohort_name == "healthy"          ~ "General Pop",
+      .data$cohort_name == "healthy_to_as"    ~ "General Pop to AS",
+      .data$cohort_name == "healthy_to_death" ~ "General Pop to Death",
+      .data$cohort_name == "as_to_avr"        ~ "AS to AVR",
+      .data$cohort_name == "as_to_death"      ~ "AS to Death",
+      .data$cohort_name == "avr_to_death"     ~ "AVR to Death"
+    ),
+    transition = factor(transition, levels = c(
+      "General Pop", "General Pop to AS", "General Pop to Death",
+      "AS to AVR", "AS to Death", "AVR to Death"
+    ))
+  ) |>
+  dplyr::distinct(transition) |>
+  tidyr::crossing(yintercept = c(20, 40, 60, 80)) |>
+  dplyr::mutate(label = paste0(yintercept, "%"))
+
+data_char |>
+  dplyr::filter(variable_name %in% c("Comorbidities", "Ckd stage") & .data$variable_level != "Missing" & !(.data$variable_level %in% c("Stage 1", "Stage 2", "Stage 3"))) |>
+  dplyr::mutate(variable_level = dplyr::if_else(.data$variable_name == "Ckd stage", paste0("CKD ", .data$variable_level), .data$variable_level)) |>
+  omopgenerics::tidy() |>
+  dplyr::filter(ses == "overall", 
+                cohort_name != "healthy_to_death") |>
+  dplyr::mutate(
+    transition = dplyr::case_when(
+      .data$cohort_name == "healthy"          ~ "General Pop",
+      .data$cohort_name == "healthy_to_as"    ~ "General Pop to AS",
+      .data$cohort_name == "healthy_to_death" ~ "General Pop to Death",
+      .data$cohort_name == "as_to_avr"        ~ "AS to AVR",
+      .data$cohort_name == "as_to_death"      ~ "AS to Death",
+      .data$cohort_name == "avr_to_death"     ~ "AVR to Death"
+    ),
+    transition = factor(transition, levels = c(
+      "General Pop", "General Pop to AS", "General Pop to Death",
+      "AS to AVR", "AS to Death", "AVR to Death"
+    ))
+  ) |>
+  ggplot2::ggplot(ggplot2::aes(x = variable_level, y = percentage, fill = variable_level)) +
+  ggplot2::geom_col(width = 1, colour = "white", linewidth = 0.3) +
+  ggplot2::geom_hline(
+    data = grid_lines,
+    ggplot2::aes(yintercept = yintercept, group = transition),
+    colour = "grey60", linewidth = 0.3, linetype = "dashed", inherit.aes = FALSE
+  ) +
+  
+  ggplot2::geom_text(
+  data = dplyr::filter(grid_lines, yintercept != 20),
+  ggplot2::aes(x = 2, y = yintercept, label = label),
+  colour = "grey40", size = 2.5, inherit.aes = FALSE
+)+
+  ggplot2::coord_polar() +
+  ggplot2::scale_y_continuous(limits = c(0, 100)) +
+  ggplot2::facet_wrap(~ transition) +
+  ggplot2::scale_fill_viridis_d(option = "turbo") +
+  ggplot2::labs(
+    x = NULL, y = NULL, fill = "Comorbidity"
+  ) +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(
+    axis.text.x     = ggplot2::element_blank(),
+    axis.text.y     = ggplot2::element_blank(),
+    panel.grid      = ggplot2::element_blank(),
+    legend.position = "right"
+  ) 
+```
+
+::: {.landscape}
+
+```{r}
+vars <- c(
+  "Number subjects", "Sex", "Age", "Time to event", "Ses",
+  "Ethnicity group"
+)
+
+
+
+t<-data_char |>
+  omopgenerics::filterGroup(cohort_name != "healthy_to_death") |>
+  omopgenerics::splitAll() |>
+   filter(variable_name %in% vars, ses == "overall",(is.na(.data$variable_level) | variable_level != "Male")) |> 
+  mutate(variable_name = factor(.data$variable_name, levels = vars)) |>
+  dplyr::arrange(variable_name) |>
+  dplyr::mutate(
+    variable_name = dplyr::if_else(variable_name == "Sex", "Sex: Female", variable_name),
+    variable_name = dplyr::if_else(variable_name == "Ses", paste0("Ses: ", .data$variable_level), variable_name),
+    variable_name = dplyr::if_else(variable_name == "Ethnicity group", paste0("Ethnicity: ", .data$variable_level), variable_name),
+    
+  ) |>
+  dplyr::mutate(
+    cohort_name = dplyr::case_when(
+      .data$cohort_name == "healthy"          ~ "General Pop",
+      .data$cohort_name == "healthy_to_as"    ~ "General Pop to AS",
+      .data$cohort_name == "healthy_to_death" ~ "General Pop to Death",
+      .data$cohort_name == "as_to_avr"        ~ "AS to AVR",
+      .data$cohort_name == "as_to_death"      ~ "AS to Death",
+      .data$cohort_name == "avr_to_death"     ~ "AVR to Death"
+    ))|>
+  arrange(cdm_name) |>
+  visTable(
+    header = "cohort_name",
+    groupColumn = "cdm_name",
+    estimateName = standard_estimate_names,
+    hide = c( "ses", "result_id", "estimate_type", "variable_level"), 
+    rename = c(" " = "variable_name", "  " = "estimate_name"),
+    .options = list(groupAsColumn =FALSE, includeHeaderName = FALSE)
+  )
+```
+:::
+
+## Incidence rates aortic stenosis
+```{r}
+data_inc |>
+
+  omopgenerics::filterSettings( denominator_sex == "Both", 
+                               denominator_age_group == "20 to 150") |>
+  omopgenerics::filterAdditional( 
+    analysis_interval != "overall",
+                                ( grepl("2012", .data$incidence_start_date) | grepl("2024", .data$incidence_start_date))  ) |>
+  addSettings("standardised_incidence") |>
+  omopgenerics::filterStrata(ses %in% c("1","2", "3", "4", "5")) |>
+  filter(estimate_name %in% c("incidence_100000_pys", "incidence_100000_pys_95CI_lower", "incidence_100000_pys_95CI_upper")) |>
+  splitAll() |>
+  filter(outcome_cohort_name == "Aortic stenosis")|>
+  mutate(year = strtrim(.data$incidence_start_date, 4), 
+         standardised = if_else(standardised_incidence == TRUE, "Age-standardised", "Crude")) |>
+  select(starts_with("estimate"), outcome_cohort_name, cdm_name, year, ses, standardised) |>
+  arrange(.data$year)|>
+  rename ("SES" = "ses")|>
+  visTable(groupColumn = c("cdm_name"),header = c("estimate_name","standardised"), hide = c("estimate_type", "outcome_cohort_name"),.options = list(includeHeaderName = FALSE), estimateName = c( `Incidence 100,000 person-years [95% CI]` = "<incidence_100000_pys> (<incidence_100000_pys_95CI_lower> -\n      <incidence_100000_pys_95CI_upper>)"))
+
+```
+## Incidence rates AVR
+```{r}
+data_inc |>
+
+  omopgenerics::filterSettings( denominator_sex == "Both", 
+                               denominator_age_group == "20 to 150") |>
+  omopgenerics::filterAdditional( 
+    analysis_interval != "overall",
+                                ( grepl("2012", .data$incidence_start_date) | grepl("2024", .data$incidence_start_date))  ) |>
+  addSettings("standardised_incidence") |>
+  omopgenerics::filterStrata(ses %in% c("1","2", "3", "4", "5")) |>
+  filter(estimate_name %in% c("incidence_100000_pys", "incidence_100000_pys_95CI_lower", "incidence_100000_pys_95CI_upper")) |>
+  splitAll() |>
+  filter(outcome_cohort_name != "Aortic stenosis")|>
+  mutate(year = strtrim(.data$incidence_start_date, 4), 
+         standardised = if_else(standardised_incidence == TRUE, "Age-standardised", "Crude")) |>
+  select(starts_with("estimate"), outcome_cohort_name, cdm_name, year, ses, standardised) |>
+  arrange(.data$year)|>
+  rename ("SES" = "ses")|>
+  visTable(groupColumn = c("cdm_name"),header = c("estimate_name","standardised"), hide = c("estimate_type", "outcome_cohort_name"),.options = list(includeHeaderName = FALSE), estimateName = c( `Incidence 100,000 person-years [95% CI]` = "<incidence_100000_pys> (<incidence_100000_pys_95CI_lower> -\n      <incidence_100000_pys_95CI_upper>)"))
+
+```
+```{r, fig.width = 8, fig.height = 8}
+dat <- results |>
+  omopgenerics::filterSettings(result_type == "hr_summary") |>
+  addSettings("age_limit") |>
+  omopgenerics::tidy()|>
+  dplyr::filter(transition == "healthy_to_death", variable_level != "Missing")|>
+  dplyr::mutate(transition = dplyr::case_when(
+  
+    .data$transition == "healthy_to_death" ~ "General Pop to Death",
+
+    
+  )) |>
+  dplyr::mutate(age_limit = dplyr::case_when(
+    age_limit == "overall" ~ "Overall", 
+    age_limit == "below_80" ~ "Below 80", 
+    age_limit == "over_80" ~ "Over 80"
+    
+    
+  ))
+plot_1 <- dat |> 
+    dplyr::filter(.data$ref_age == "70") |>
+    dplyr::mutate(rel_age = as.numeric(.data$variable_level)) |>
+    visOmopResults::scatterPlot(
+      x      = "rel_age", 
+      y      = "hazard_ratio", 
+      line   = TRUE, 
+      point  = FALSE, 
+      ribbon = FALSE,
+      facet  = cdm_name~age_limit,
+      colour = "cdm_name"
+    ) +
+    geom_line(aes(y = lower_hr), linetype = "dashed", linewidth = 0.6) +
+    geom_line(aes(y = upper_hr), linetype = "dashed", linewidth = 0.6) +
+    scale_colour_manual(values = c("#5B3A8C", "#A98CC9")) +
+    xlab("Relative age") +
+    labs(
+      title = "Age model",
+      subtitle = "Reference age: 70"
+    ) +
+    facet_grid(cdm_name ~age_limit, scales = "free_y") +
+    theme(plot.title = element_text(hjust = 0.5, face = "bold"),
+          legend.position = "none")
+    
+
+plot_2 <- dat |>
+  dplyr::filter(.data$ref_age != "70", variable_name != "age",model_name == "age_sex" ) |>
+  visOmopResults::scatterPlot(x = "cdm_name", 
+                              y = "hazard_ratio", 
+                              line = FALSE,
+                              point = TRUE, 
+                              ribbon = FALSE,
+
+                              colour = c("age_limit"),
+                              ymin = "lower_hr", 
+                              ymax = "upper_hr") +
+  #facet_grid("age_limit", scales = "free_y") +
+  geom_hline(yintercept = 1, linetype = "dashed", linewidth = 0.6, color = "black") +
+  scale_colour_manual(values = c("#7FB069","#E9C46A", "#E76F51"))+
+  labs(title = "Hazard Ratios: Males vs Females (Adjusted for age)") +
+  xlab("")+
+  theme(
+   legend.position = "bottom", 
+   plot.title  = element_text(hjust = 0.5, face = "bold"), 
+  )
+  
+plot_3 <- dat |>
+    dplyr::filter(
+    model_name == "ses_age_sex", 
+    !(variable_level %in% c("Male", "Missing"))) |>
+    visOmopResults::scatterPlot(
+      x      = "variable_level", 
+      y      = "hazard_ratio", 
+      line   = FALSE,
+      point  = TRUE, 
+      ribbon = FALSE,
+      facet  = cdm_name ~ age_limit, 
+      colour = "variable_level",
+      ymin   = "lower_hr", 
+      ymax   = "upper_hr"
+    ) +
+    geom_hline(yintercept = 1, linetype = "dashed", linewidth = 0.6, color = "black") +
+    xlab("Socioeconomic status") +
+    theme(
+      axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+      plot.title  = element_text(hjust = 0.5, face = "bold"), 
+      legend.position = "bottom"
+    ) +
+    facet_grid(cdm_name ~ age_limit, scales = "free_y") +
+    scale_colour_manual(
+      name   = "Socioeconomic status",
+      values = ses_colours,
+      labels = c(
+        "1" = "1 (Least deprived)",
+        "2" = "2",
+        "3" = "3",
+        "4" = "4"
+      )
+    ) +
+    scale_fill_manual(
+      name   = "Socioeconomic status",
+      values = ses_colours,
+      labels = c(
+        "1" = "1 (Least deprived)",
+        "2" = "2",
+        "3" = "3",
+        "4" = "4"
+      )
+    )+
+    labs(title = "Hazard ratios by socioeconomic status, adjusted for age and sex")
+combined_plot <-
+  plot_1 /
+  plot_2 /
+  plot_3 +
+  patchwork::plot_layout(
+    ncol = 1,
+    heights = c(1.4, 1, 1)
+   
+  ) 
+
+combined_plot
+```
+
