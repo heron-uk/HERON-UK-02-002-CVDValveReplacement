@@ -4,6 +4,7 @@ library(omopgenerics)
 library(dplyr)
 library(here)
 library(CodelistGenerator)
+
 cprd_aurum <- importSummarisedResult(here("data", "summarise_concept_id_counts_CPRD AURUM.csv")) |>
   tidy() |>
   rename("concept_name" = "variable_name", "concept_id" = "variable_level")

@@ -2,11 +2,7 @@
 # Be careful editing this file
 
 server <- function(input, output, session) {
-  # summary ----
-  output$summary_cdm_name <- shinyTree::renderTree(summaryCdmName(data))
-  output$summary_packages <- shinyTree::renderTree(summaryPackages(data))
-  output$summary_min_cell_count <- shinyTree::renderTree(summaryMinCellCount(data))
-  output$summary_panels <- shinyTree::renderTree(summaryPanels(data))
+  
   # download raw data -----
   output$download_raw <- shiny::downloadHandler(
     filename = "results.csv",
@@ -20,39 +16,41 @@ server <- function(input, output, session) {
   )
   # update buttons ----
   updateButtons <- shiny::reactiveValues(
-    orphan_code_use = FALSE,
-    cohort_code_use = FALSE
+    orphan_code_use_cci = FALSE,
+    cohort_code_use_cci = FALSE,
+    orphan_code_use_efi = FALSE,
+    cohort_code_use_efi = FALSE
   )
 
-
-  # orphan_code_use -----
+  # orphan_code_use_efi -----
   ## update message if filter is changed
   shiny::observe({
-    updateButtons$orphan_code_use <- TRUE
+    updateButtons$orphan_code_use_efi <- TRUE
   }) |>
     shiny::bindEvent(
-      input$orphan_code_use_cdm_name,
+      input$orphan_code_use_cdm_name_efi,
       ignoreInit = TRUE
     )
-  shiny::observeEvent(updateButtons$orphan_code_use, {
-    if (updateButtons$orphan_code_use == TRUE) {
-      output$update_message_orphan_code_use <- shiny::renderUI(updateMessage) # defined in functions.R
+  shiny::observeEvent(updateButtons$orphan_code_use_efi, {
+    if (updateButtons$orphan_code_use_efi == TRUE) {
+      output$update_message_orphan_code_use_efi <- shiny::renderUI(updateMessage) # defined in functions.R
     } else {
-      output$update_message_orphan_code_use <- shiny::renderUI(NULL)
+      output$update_message_orphan_code_use_efi <- shiny::renderUI(NULL)
     }
   })
-  shiny::observeEvent(input$update_orphan_code_use, {
-    updateButtons$orphan_code_use <- FALSE
+  shiny::observeEvent(input$update_orphan_code_use_efi, {
+    updateButtons$orphan_code_use_efi <- FALSE
   })
-
+  
   ## get orphan_code_use data
-  getOrphanCodeUseData <- shiny::eventReactive(input$update_orphan_code_use, {
+  getOrphanCodeUseDataEFI <- shiny::eventReactive(input$update_orphan_code_use_efi, {
     t <- data[["orphan_code_use"]] |>
-      dplyr::filter(.data$cdm_name %in% input$orphan_code_use_cdm_name) |>
-      dplyr::filter(.data$variable_level %in% input$orphan_code_use_variable_level) |>
-      omopgenerics::filterGroup(.data$omop_table %in% input$orphan_code_use_omop_table)
+      dplyr::filter(.data$cdm_name %in% input$orphan_code_use_cdm_name_efi) |>
+      dplyr::filter(.data$variable_level %in% input$orphan_code_use_variable_level_efi) |>
+      omopgenerics::filterGroup(.data$omop_table %in% input$orphan_code_use_omop_table_efi,
+                                .data$index %in% "efi") 
     
-    if(isTRUE(input$orphan_code_use_type)) {
+    if(isTRUE(input$orphan_code_use_type_efi)) {
       t |>
         omopgenerics::filterAdditional(.data$type %in% "orphan_code_counts")
     } else {
@@ -61,70 +59,105 @@ server <- function(input, output, session) {
     }
     
   })
-  getOrphanCodeUseTableReact <- shiny::reactive({
-    getOrphanCodeUseData()  |>
+  getOrphanCodeUseTableReactEFI <- shiny::reactive({
+    getOrphanCodeUseDataEFI()  |>
       visOmopTable(type = "reactable",
                    rename = c("Standard Concept Name" = "concept_name",
-                              "Standard Concept ID" = "concept_id",
-                              "Codelist" = "variable_level"),
-                   hide = c("variable_name", "type", "estimate_name", "relationship_id"), 
+                              "Standard Concept ID" = "concept_id"),
+                   hide = c("variable_name", "type", "estimate_name", "relationship_id", "cohort_name"), 
                    header = "cdm_name", 
+                   groupColumn = "variable_level", 
                    columnOrder = c("variable_level")) 
   })
-  output$orphan_code_use_table_react <- reactable::renderReactable({
-    getOrphanCodeUseTableReact()
+  output$orphan_code_use_table_react_efi <- reactable::renderReactable({
+    getOrphanCodeUseTableReactEFI()
   })
-  getOrphanCodeUseTableGt <- shiny::reactive({
-    getOrphanCodeUseData() |>
-      CodelistGenerator::tableOrphanCodes(
-        header = input$orphan_code_use_table_gt_header,
-        groupColumn = input$orphan_code_use_table_gt_group_column,
-        hide = input$orphan_code_use_table_gt_hide
-      )
-  })
-  output$orphan_code_use_table_gt <- gt::render_gt({
-    getOrphanCodeUseTableGt()
-  })
-  output$orphan_code_use_table_gt_download <- shiny::downloadHandler(
-    filename = paste0("table_orphan_codes.", input$orphan_code_use_table_gt_format),
-    content = function(file) {
-      gt::gtsave(getOrphanCodeUseTableGt(), file)
-    }
-  )
-
-  # cohort_code_use -----
+  
+  # orphan_code_use_cci -----
   ## update message if filter is changed
   shiny::observe({
-    updateButtons$cohort_code_use <- TRUE
+    updateButtons$orphan_code_use_cci <- TRUE
   }) |>
     shiny::bindEvent(
-      input$cohort_code_use_cdm_name,
-      input$cohort_code_use_omop_table,
-      input$cohort_code_use_variable_name,
-      input$cohort_code_use_estimate_name,
+      input$orphan_code_use_cdm_name_cci,
       ignoreInit = TRUE
     )
-  shiny::observeEvent(updateButtons$cohort_code_use, {
-    if (updateButtons$cohort_code_use == TRUE) {
-      output$update_message_cohort_code_use <- shiny::renderUI(updateMessage) # defined in functions.R
+  shiny::observeEvent(updateButtons$orphan_code_use_cci, {
+    if (updateButtons$orphan_code_use_cci == TRUE) {
+      output$update_message_orphan_code_use_cci <- shiny::renderUI(updateMessage) # defined in functions.R
     } else {
-      output$update_message_cohort_code_use <- shiny::renderUI(NULL)
+      output$update_message_orphan_code_use_cci <- shiny::renderUI(NULL)
     }
   })
-  shiny::observeEvent(input$update_cohort_code_use, {
-    updateButtons$cohort_code_use <- FALSE
+  shiny::observeEvent(input$update_orphan_code_use_cci, {
+    updateButtons$orphan_code_use_cci <- FALSE
   })
 
-  ## get cohort_code_use data
-  getCohortCodeUseData <- shiny::eventReactive(input$update_cohort_code_use, {
+  ## get orphan_code_use data
+  getOrphanCodeUseDataCCI <- shiny::eventReactive(input$update_orphan_code_use_cci, {
+    t <- data[["orphan_code_use"]] |>
+      dplyr::filter(.data$cdm_name %in% input$orphan_code_use_cdm_name_cci) |>
+      dplyr::filter(.data$variable_level %in% input$orphan_code_use_variable_level_cci) |>
+      omopgenerics::filterGroup(.data$omop_table %in% input$orphan_code_use_omop_table_cci,
+                                .data$index %in% "cci") 
+
+    if(isTRUE(input$orphan_code_use_type_cci)) {
+      t |>
+        omopgenerics::filterAdditional(.data$type %in% "orphan_code_counts")
+    } else {
+      t |>
+        omopgenerics::filterAdditional(.data$type %in% "orphan_code_counts_standard")
+    }
+    
+  })
+  getOrphanCodeUseTableReactCCI <- shiny::reactive({
+    getOrphanCodeUseDataCCI()  |>
+      visOmopTable(type = "reactable",
+                   rename = c("Standard Concept Name" = "concept_name",
+                              "Standard Concept ID" = "concept_id"),
+                   hide = c("variable_name", "type", "estimate_name", "relationship_id", "cohort_name"), 
+                   header = "cdm_name", 
+                   groupColumn = "variable_level", 
+                   columnOrder = c("variable_level")) 
+  })
+  output$orphan_code_use_table_react_cci <- reactable::renderReactable({
+    getOrphanCodeUseTableReactCCI()
+  })
+
+  # cohort_code_use_cci -----
+  ## update message if filter is changed
+  shiny::observe({
+    updateButtons$cohort_code_use_cci <- TRUE
+  }) |>
+    shiny::bindEvent(
+      input$cohort_code_use_cdm_name_cci,
+      input$cohort_code_use_omop_table_cci,
+      input$cohort_code_use_variable_name_cci,
+      input$cohort_code_use_estimate_name_cci,
+      ignoreInit = TRUE
+    )
+  shiny::observeEvent(updateButtons$cohort_code_use_cci, {
+    if (updateButtons$cohort_code_use_cci == TRUE) {
+      output$update_message_cohort_code_use_cci <- shiny::renderUI(updateMessage)
+    } else {
+      output$update_message_cohort_code_use_cci <- shiny::renderUI(NULL)
+    }
+  })
+  shiny::observeEvent(input$update_cohort_code_use_cci, {
+    updateButtons$cohort_code_use_cci <- FALSE
+  })
+
+  ## get cohort_code_use data_cci
+  getCohortCodeUseDataCCI <- shiny::eventReactive(input$update_cohort_code_use_cci, {
     t <- data[["cohort_code_use"]] |>
       dplyr::filter(
-        .data$cdm_name %in% input$cohort_code_use_cdm_name,
-        .data$variable_level %in% input$cohort_code_use_variable_level
+        .data$cdm_name %in% input$cohort_code_use_cdm_name_cci,
+        .data$variable_level %in% input$cohort_code_use_variable_level_cci,
       ) |>
-      omopgenerics::filterGroup(.data$omop_table %in% input$cohort_code_use_omop_table) 
+      omopgenerics::filterGroup(.data$omop_table %in% input$cohort_code_use_omop_table_cci,
+                                .data$index %in% "cci") 
     
-    if(isTRUE(input$cohort_code_use_type)) {
+    if(isTRUE(input$cohort_code_use_type_cci)) {
       t |>
         omopgenerics::filterAdditional(.data$type %in% "cohort_code_use")
     } else {
@@ -133,35 +166,77 @@ server <- function(input, output, session) {
     }
     
   })
-  getCohortCodeUseTableReact <- shiny::reactive({
-    getCohortCodeUseData() |>
+  getCohortCodeUseTableReactCCI <- shiny::reactive({
+    getCohortCodeUseDataCCI() |>
       visOmopTable(type = "reactable",
                    rename = c("Standard Concept Name" = "concept_name",
                               "Standard Concept ID" = "concept_id",
-                              "Codelist" = "variable_level"),
-                   hide = c("variable_name", "type", "estimate_name"), 
-                   header = "cdm_name", 
+                              "Cohort name" = "variable_level"),
+                   hide = c("variable_name", "type", "estimate_name", "cohort_name", "efi"), 
+                   header = "cdm_name", groupColumn = "codelist_name",
                    columnOrder = c("variable_level")) 
   })
-  output$cohort_code_use_table_react <- reactable::renderReactable({
-    getCohortCodeUseTableReact()
+  output$cohort_code_use_table_react_cci <- reactable::renderReactable({
+    getCohortCodeUseTableReactCCI()
   })
-  getCohortCodeUseTableGt <- shiny::reactive({
-    getCohortCodeUseData() |>
-      CodelistGenerator::tableCohortCodeUse(
-        timing = TRUE,
-        header = input$cohort_code_use_table_gt_header,
-        groupColumn = input$cohort_code_use_table_gt_group_column,
-        hide = input$cohort_code_use_table_gt_hide
-      )
-  })
-  output$cohort_code_use_table_gt <- gt::render_gt({
-    getCohortCodeUseTableGt()
-  })
-  output$cohort_code_use_table_gt_download <- shiny::downloadHandler(
-    filename = paste0("table_cohort_code_use.", input$cohort_code_use_table_gt_format),
-    content = function(file) {
-      gt::gtsave(getCohortCodeUseTableGt(), file)
+  
+  # -----
+  # cohort_code_use_efi -----
+  ## update message if filter is changed
+  shiny::observe({
+    updateButtons$cohort_code_use_efi <- TRUE
+  }) |>
+    shiny::bindEvent(
+      input$cohort_code_use_cdm_name_efi,
+      input$cohort_code_use_omop_table_efi,
+      input$cohort_code_use_variable_name_efi,
+      input$cohort_code_use_estimate_name_efi,
+      ignoreInit = TRUE
+    )
+  shiny::observeEvent(updateButtons$cohort_code_use_efi, {
+    if (updateButtons$cohort_code_use_efi == TRUE) {
+      output$update_message_cohort_code_use_efi <- shiny::renderUI(updateMessage)
+    } else {
+      output$update_message_cohort_code_use_efi <- shiny::renderUI(NULL)
     }
-  )
+  })
+  shiny::observeEvent(input$update_cohort_code_use_efi, {
+    updateButtons$cohort_code_use_efi <- FALSE
+  })
+  
+  ## get cohort_code_use data_efi
+  getCohortCodeUseDataEFI <- shiny::eventReactive(input$update_cohort_code_use_efi, {
+    t <- data[["cohort_code_use"]] |>
+      dplyr::filter(
+        .data$cdm_name %in% input$cohort_code_use_cdm_name_efi,
+        .data$variable_level %in% input$cohort_code_use_variable_level_efi,
+      ) |>
+      omopgenerics::filterGroup(.data$omop_table %in% input$cohort_code_use_omop_table_efi,
+                                .data$index %in% "efi") 
+    
+    if(isTRUE(input$cohort_code_use_type_efi)) {
+      t |>
+        omopgenerics::filterAdditional(.data$type %in% "cohort_code_use")
+    } else {
+      t |>
+        omopgenerics::filterAdditional(.data$type %in% "cohort_code_use_standard")
+    }
+    
+  })
+  getCohortCodeUseTableReactEFI <- shiny::reactive({
+    getCohortCodeUseDataEFI() |>
+      visOmopTable(type = "reactable",
+                   rename = c("Standard Concept Name" = "concept_name",
+                              "Standard Concept ID" = "concept_id",
+                              "Cohort name" = "variable_level"),
+                   hide = c("variable_name", "type", "estimate_name", "cohort_name", "efi"), 
+                   header = "cdm_name", groupColumn = "codelist_name",
+                   columnOrder = c("variable_level")) 
+  })
+  output$cohort_code_use_table_react_efi <- reactable::renderReactable({
+    getCohortCodeUseTableReactEFI()
+  })
+  
+  # -----
+  
 }
