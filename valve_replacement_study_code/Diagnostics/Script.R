@@ -136,11 +136,14 @@ for(index in c("efi", "cci")) {
       mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD AURUM", cdm_name))
     
     orphan_code_counts[[i]] <- orphan_code_counts[[i]] |>
+      splitStrata() |>
       anti_join(
         cohort_code_counts[[i]] |>
-          select("strata_level"),
-        by = c("strata_level")
-      ) 
+          splitStrata() |>
+          select("codelist_name", "concept_id"),
+        by = c("codelist_name", "concept_id")
+      ) |>
+      uniteStrata(c("codelist_name", "concept_name", "concept_id", "source_concept_name", "source_concept_id", "relationship"))
       
     orphan_code_counts_standard[[i]] <- concept_counts |>
       select("cdm_name", "omop_table", "concept_name", "concept_id", "count_subjects") |>
@@ -181,14 +184,17 @@ for(index in c("efi", "cci")) {
       newSummarisedResult(settings = tibble("result_id" = 3L,
                                             "result_type" = "orphan_code_use")) |>
       mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD AURUM", cdm_name))
+    
+    orphan_code_counts_standard[[i]] <- orphan_code_counts_standard[[i]] |>
+      splitStrata() |>
+      anti_join(
+        cohort_code_counts[[i]] |>
+          splitStrata() |>
+          select("codelist_name", "concept_id"),
+        by = c("codelist_name", "concept_id")
+      ) |>
+      uniteStrata(c("codelist_name", "concept_name", "concept_id", "relationship"))
   }
-  
-  orphan_code_counts_standard[[i]] <- orphan_code_counts_standard[[i]] |>
-    anti_join(
-      cohort_code_counts_standard[[i]] |>
-        select("strata_level"),
-      by = c("strata_level")
-    ) 
   
   cohort_code_counts <- bind(cohort_code_counts) 
   cohort_code_counts_standard <-  bind(cohort_code_counts_standard)
