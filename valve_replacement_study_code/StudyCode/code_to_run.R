@@ -20,7 +20,7 @@ library(clock)
 library(rlang)
 library(stringr)
 library(purrr)
-library()
+library(OmopIndeces)
 
 # database metadata and connection details
 # The name/ acronym for the database
