@@ -30,64 +30,6 @@ ui <- bslib::page_navbar(
     title = "Charlson Comorbidity Index",
     icon = shiny::icon("list"),
     bslib::nav_panel(
-      title = "Orphan codes",
-      icon = shiny::icon("magnifying-glass-arrow-right"),
-      bslib::layout_sidebar(
-        sidebar = bslib::sidebar(
-          bslib::card(
-            class = "sticky-top-btn",
-            bslib::card_body(
-              shiny::actionButton(
-                inputId = "update_orphan_code_use_cci",
-                label = "Update content",
-                width = "100%"
-              ),
-              uiOutput(outputId = "update_message_orphan_code_use_cci")
-            )
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "orphan_code_use_cdm_name_cci",
-            label = "CDM name",
-            choices = choices$orphan_code_use_cdm_name_cci,
-            selected = selected$orphan_code_use_cdm_name_cci,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "orphan_code_use_variable_level_cci",
-            label = "Cohort name",
-            choices = choices$orphan_code_use_variable_level_cci,
-            selected = selected$orphan_code_use_variable_level_cci,
-            multiple = FALSE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "orphan_code_use_omop_table_cci",
-            label = "OMOP table",
-            choices = choices$orphan_code_use_omop_table_cci,
-            selected = selected$orphan_code_use_omop_table_cci,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
-          ),
-          shinyWidgets::prettySwitch(
-            inputId = "orphan_code_use_type_cci",
-            label = "Show source codes"
-          ),
-          position = "left"
-        ),
-        bslib::navset_card_tab(
-          bslib::nav_panel(
-            title = "Table Orphan codes (reactable)",
-            bslib::card(
-              full_screen = TRUE,
-              reactable::reactableOutput("orphan_code_use_table_react_cci") |>
-                shinycssloaders::withSpinner()
-            )
-          )
-        )
-      )
-    ),
-    bslib::nav_panel(
       title = "Cohort code use",
       icon = shiny::icon("chart-column"),
       bslib::layout_sidebar(
@@ -138,7 +80,73 @@ ui <- bslib::page_navbar(
             title = "Table Cohort code use (reactable)",
             bslib::card(
               full_screen = TRUE,
+              bslib::card_header(
+                shiny::downloadButton(outputId = "download_cohort_code_use_cci", label = ""),
+                class = "text-end"
+              ),
               reactable::reactableOutput("cohort_code_use_table_react_cci") |>
+                shinycssloaders::withSpinner()
+            )
+          )
+        )
+      )
+    ),
+    bslib::nav_panel(
+      title = "Orphan codes",
+      icon = shiny::icon("magnifying-glass-arrow-right"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn",
+            bslib::card_body(
+              shiny::actionButton(
+                inputId = "update_orphan_code_use_cci",
+                label = "Update content",
+                width = "100%"
+              ),
+              uiOutput(outputId = "update_message_orphan_code_use_cci")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_cdm_name_cci",
+            label = "CDM name",
+            choices = choices$orphan_code_use_cdm_name_cci,
+            selected = selected$orphan_code_use_cdm_name_cci,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_variable_level_cci",
+            label = "Cohort name",
+            choices = choices$orphan_code_use_variable_level_cci,
+            selected = selected$orphan_code_use_variable_level_cci,
+            multiple = FALSE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_omop_table_cci",
+            label = "OMOP table",
+            choices = choices$orphan_code_use_omop_table_cci,
+            selected = selected$orphan_code_use_omop_table_cci,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::prettySwitch(
+            inputId = "orphan_code_use_type_cci",
+            label = "Show source codes"
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Orphan codes (reactable)",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                shiny::downloadButton(outputId = "download_orphan_code_use_cci", label = ""),
+                class = "text-end"
+              ),
+              reactable::reactableOutput("orphan_code_use_table_react_cci") |>
                 shinycssloaders::withSpinner()
             )
           )
@@ -149,64 +157,6 @@ ui <- bslib::page_navbar(
   bslib::nav_menu(
     title = "Electronic Frailty Index",
     icon = shiny::icon("list"),
-    bslib::nav_panel(
-      title = "Orphan codes",
-      icon = shiny::icon("magnifying-glass-arrow-right"),
-      bslib::layout_sidebar(
-        sidebar = bslib::sidebar(
-          bslib::card(
-            class = "sticky-top-btn",
-            bslib::card_body(
-              shiny::actionButton(
-                inputId = "update_orphan_code_use_efi",
-                label = "Update content",
-                width = "100%"
-              ),
-              uiOutput(outputId = "update_message_orphan_code_use_efi")
-            )
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "orphan_code_use_cdm_name_efi",
-            label = "CDM name",
-            choices = choices$orphan_code_use_cdm_name_efi,
-            selected = selected$orphan_code_use_cdm_name_efi,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "orphan_code_use_variable_level_efi",
-            label = "Cohort name",
-            choices = choices$orphan_code_use_variable_level_efi,
-            selected = selected$orphan_code_use_variable_level_efi,
-            multiple = FALSE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "orphan_code_use_omop_table_efi",
-            label = "OMOP table",
-            choices = choices$orphan_code_use_omop_table_efi,
-            selected = selected$orphan_code_use_omop_table_efi,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
-          ),
-          shinyWidgets::prettySwitch(
-            inputId = "orphan_code_use_type_efi",
-            label = "Show source codes"
-          ),
-          position = "left"
-        ),
-        bslib::navset_card_tab(
-          bslib::nav_panel(
-            title = "Table Orphan codes (reactable)",
-            bslib::card(
-              full_screen = TRUE,
-              reactable::reactableOutput("orphan_code_use_table_react_efi") |>
-                shinycssloaders::withSpinner()
-            )
-          )
-        )
-      )
-    ),
     bslib::nav_panel(
       title = "Cohort code use",
       icon = shiny::icon("chart-column"),
@@ -258,7 +208,73 @@ ui <- bslib::page_navbar(
             title = "Table Cohort code use (reactable)",
             bslib::card(
               full_screen = TRUE,
+              bslib::card_header(
+                shiny::downloadButton(outputId = "download_cohort_code_use_efi", label = ""),
+                class = "text-end"
+              ),
               reactable::reactableOutput("cohort_code_use_table_react_efi") |>
+                shinycssloaders::withSpinner()
+            )
+          )
+        )
+      )
+    ),
+    bslib::nav_panel(
+      title = "Orphan codes",
+      icon = shiny::icon("magnifying-glass-arrow-right"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn",
+            bslib::card_body(
+              shiny::actionButton(
+                inputId = "update_orphan_code_use_efi",
+                label = "Update content",
+                width = "100%"
+              ),
+              uiOutput(outputId = "update_message_orphan_code_use_efi")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_cdm_name_efi",
+            label = "CDM name",
+            choices = choices$orphan_code_use_cdm_name_efi,
+            selected = selected$orphan_code_use_cdm_name_efi,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_variable_level_efi",
+            label = "Cohort name",
+            choices = choices$orphan_code_use_variable_level_efi,
+            selected = selected$orphan_code_use_variable_level_efi,
+            multiple = FALSE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_omop_table_efi",
+            label = "OMOP table",
+            choices = choices$orphan_code_use_omop_table_efi,
+            selected = selected$orphan_code_use_omop_table_efi,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3")
+          ),
+          shinyWidgets::prettySwitch(
+            inputId = "orphan_code_use_type_efi",
+            label = "Show source codes"
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Orphan codes (reactable)",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                shiny::downloadButton(outputId = "download_orphan_code_use_efi", label = ""),
+                class = "text-end"
+              ),
+              reactable::reactableOutput("orphan_code_use_table_react_efi") |>
                 shinycssloaders::withSpinner()
             )
           )

@@ -21,7 +21,7 @@ server <- function(input, output, session) {
     orphan_code_use_efi = FALSE,
     cohort_code_use_efi = FALSE
   )
-
+  
   # orphan_code_use_efi -----
   ## update message if filter is changed
   shiny::observe({
@@ -44,6 +44,7 @@ server <- function(input, output, session) {
   
   ## get orphan_code_use data
   getOrphanCodeUseDataEFI <- shiny::eventReactive(input$update_orphan_code_use_efi, {
+    
     t <- data[["orphan_code_use"]] |>
       dplyr::filter(.data$cdm_name %in% input$orphan_code_use_cdm_name_efi) |>
       dplyr::filter(.data$variable_level %in% input$orphan_code_use_variable_level_efi) |>
@@ -57,7 +58,6 @@ server <- function(input, output, session) {
       t |>
         omopgenerics::filterAdditional(.data$type %in% "orphan_code_counts_standard")
     }
-    
   })
   getOrphanCodeUseTableReactEFI <- shiny::reactive({
     getOrphanCodeUseDataEFI()  |>
@@ -72,6 +72,7 @@ server <- function(input, output, session) {
   output$orphan_code_use_table_react_efi <- reactable::renderReactable({
     getOrphanCodeUseTableReactEFI()
   })
+  
   
   # orphan_code_use_cci -----
   ## update message if filter is changed
@@ -92,7 +93,7 @@ server <- function(input, output, session) {
   shiny::observeEvent(input$update_orphan_code_use_cci, {
     updateButtons$orphan_code_use_cci <- FALSE
   })
-
+  
   ## get orphan_code_use data
   getOrphanCodeUseDataCCI <- shiny::eventReactive(input$update_orphan_code_use_cci, {
     t <- data[["orphan_code_use"]] |>
@@ -100,7 +101,7 @@ server <- function(input, output, session) {
       dplyr::filter(.data$variable_level %in% input$orphan_code_use_variable_level_cci) |>
       omopgenerics::filterGroup(.data$omop_table %in% input$orphan_code_use_omop_table_cci,
                                 .data$index %in% "cci") 
-
+    
     if(isTRUE(input$orphan_code_use_type_cci)) {
       t |>
         omopgenerics::filterAdditional(.data$type %in% "orphan_code_counts")
@@ -123,7 +124,7 @@ server <- function(input, output, session) {
   output$orphan_code_use_table_react_cci <- reactable::renderReactable({
     getOrphanCodeUseTableReactCCI()
   })
-
+  
   # cohort_code_use_cci -----
   ## update message if filter is changed
   shiny::observe({
@@ -146,7 +147,7 @@ server <- function(input, output, session) {
   shiny::observeEvent(input$update_cohort_code_use_cci, {
     updateButtons$cohort_code_use_cci <- FALSE
   })
-
+  
   ## get cohort_code_use data_cci
   getCohortCodeUseDataCCI <- shiny::eventReactive(input$update_cohort_code_use_cci, {
     t <- data[["cohort_code_use"]] |>
@@ -238,5 +239,48 @@ server <- function(input, output, session) {
   })
   
   # -----
+  
+  # download raw data -----
+  output$download_cohort_code_use_efi <- shiny::downloadHandler(
+    filename = "cohort_code_use_efi.csv",
+    content = function(file) {
+      getCohortCodeUseDataEFI() |>
+        tidy() |>
+        readr::write_csv(file = file)
+    }
+    
+  )
+  
+  # download raw data -----
+  output$download_orphan_code_use_efi <- shiny::downloadHandler(
+    filename = "orphan_code_use_efi.csv",
+    content = function(file) {
+      getOrphanCodeUseDataEFI() |>
+        tidy() |>
+        readr::write_csv(file = file)
+    }
+  )
+  
+  # download raw data -----
+  output$download_cohort_code_use_cci <- shiny::downloadHandler(
+    filename = "cohort_code_use_cci.csv",
+    content = function(file) {
+      getCohortCodeUseDataCCI() |>
+        tidy() |>
+        readr::write_csv(file = file)
+    }
+  )
+  
+  # download raw data -----
+  output$download_orphan_code_use_cci <- shiny::downloadHandler(
+    filename = "orphan_code_use_cci.csv",
+    content = function(file) {
+      getOrphanCodeUseDataCCI() |>
+        tidy() |>
+        readr::write_csv(file = file)
+    }
+  )
+  
+  
   
 }

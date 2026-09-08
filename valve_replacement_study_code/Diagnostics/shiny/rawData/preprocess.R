@@ -30,7 +30,7 @@ choices$cohort_code_use_variable_level_efi <- c("activity_limitation_not_reviewe
                                                 "heart_valve_disorder_not_reviewed", "housebound_not_reviewed", 
                                                 "hypertension", "hypotension_not_reviewed", "ischaemic_heart_disease",
                                                 "memory_and_cognitive_problems_not_reviewed", "mobility_and_transfer_problems_not_reviewed",
-                                                "osteoporosis", "parkinson_not_reviewed", "peptic_ulcer_not_reviewed", "peripheral_vascular_disease_not_reviewed",
+                                                "osteoporosis", "parkinsonism_tremor_not_reviewed", "peptic_ulcer_not_reviewed", "peripheral_vascular_disease_not_reviewed",
                                                 "requirement_for_care_not_reviewed", "Respiratory disease", "skin_ulcer_not_reviewed",
                                                 "sleep_disorder_not_reviewed", "social_vulnerability_not_reviewed", 
                                                 "thyroid_disease_not_reviewed", "urinary_incontinence_not_reviewed",
