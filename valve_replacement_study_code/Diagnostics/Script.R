@@ -88,7 +88,7 @@ for(index in c("efi", "cci")) {
     # orphan codes 
     cdm_vocab_2025_08 <- insertTable(cdm_vocab_2025_08,
                                      name = "concepts",
-                                     table = tibble("concept_id_1" = x[[1]]))
+                                     table = tibble("concept_id_1" = x[[i]]))
     
     cdm_vocab_2025_08[["relationships"]] <- cdm_vocab_2025_08$concept_relationship |>
       inner_join(cdm_vocab_2025_08$concepts, 
@@ -134,17 +134,20 @@ for(index in c("efi", "cci")) {
       newSummarisedResult(settings = tibble("result_id" = 3L,
                                             "result_type" = "orphan_code_use")) |>
       mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD AURUM", cdm_name))
+  
+
+    if(nrow(orphan_code_counts[[i]]) != 0){
+      orphan_code_counts[[i]] <- orphan_code_counts[[i]] |>
+        splitStrata() |>
+        anti_join(
+          cohort_code_counts[[i]] |>
+            splitStrata() |>
+            select("codelist_name", "concept_id"),
+          by = c("codelist_name", "concept_id")
+        ) |>
+        uniteStrata(c("codelist_name", "concept_name", "concept_id", "source_concept_name", "source_concept_id", "relationship"))
+    }
     
-    orphan_code_counts[[i]] <- orphan_code_counts[[i]] |>
-      splitStrata() |>
-      anti_join(
-        cohort_code_counts[[i]] |>
-          splitStrata() |>
-          select("codelist_name", "concept_id"),
-        by = c("codelist_name", "concept_id")
-      ) |>
-      uniteStrata(c("codelist_name", "concept_name", "concept_id", "source_concept_name", "source_concept_id", "relationship"))
-      
     orphan_code_counts_standard[[i]] <- concept_counts |>
       select("cdm_name", "omop_table", "concept_name", "concept_id", "count_subjects") |>
       distinct() |>
@@ -185,6 +188,7 @@ for(index in c("efi", "cci")) {
                                             "result_type" = "orphan_code_use")) |>
       mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD AURUM", cdm_name))
     
+    if(nrow(orphan_code_counts_standard[[i]]) != 0){
     orphan_code_counts_standard[[i]] <- orphan_code_counts_standard[[i]] |>
       splitStrata() |>
       anti_join(
@@ -194,6 +198,7 @@ for(index in c("efi", "cci")) {
         by = c("codelist_name", "concept_id")
       ) |>
       uniteStrata(c("codelist_name", "concept_name", "concept_id", "relationship"))
+    }
   }
   
   cohort_code_counts <- bind(cohort_code_counts) 
