@@ -2,7 +2,7 @@ logMessage(message = "STARTING OBJECTIVE 2")
 
 logMessage(message = "Anchor to AS diagnosis during the previous year")
 cdm[["procedures_nr"]] <- cdm[["procedures_nr"]] |>
-  requireCohortIntersect(targetCohortTable = "aortic_stenosis_indication", 
+  requireCohortIntersect(targetCohortTable = "aortic_stenosis_indication",
                          window = c(-365, 0),
                          intersections = c(1,Inf),
                          name = "procedures_nr")
@@ -33,7 +33,7 @@ cdm[["denominator"]] <- cdm[["denominator"]] |>
                          ageAdjusted = FALSE,
                          nameStyle = "cci",
                          window = c(-Inf, 0),
-                         categories = list("low_risk" = c(1,2),
+                         categories = list("low_risk" = c(0,2),
                                            "medium_risk" = c(3,4),
                                            "high_risk" = c(5, Inf)))
 
@@ -42,10 +42,10 @@ cdm[["denominator"]] <- cdm[["denominator"]] |>
   addElectronicFrailtyIndex(conceptSet = electronic_frailty_index_codelist,
                           nameStyle = "efi",
                           window = c(-Inf, 0),
-                          categories = list(fit = c(0, 0.12), 
-                                            mild = c(0.12, 0.24), 
-                                            moderate = c(0.24, 0.36),
-                                            severe = c(0.36, 1)))
+                          categories = list("fit" = c(0, 0.12), 
+                                            "mild" = c(0.12, 0.24), 
+                                            "moderate" = c(0.24, 0.36),
+                                            "severe" = c(0.36, 1)))
 
 logMessage(message = "> Estimate incidence")
 results[["incidence_per_groups"]] <- estimateIncidence(

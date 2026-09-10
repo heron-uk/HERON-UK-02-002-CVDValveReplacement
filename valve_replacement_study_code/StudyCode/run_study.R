@@ -10,7 +10,7 @@ assertNumeric(min_cell_count)
 source(here("analyses", "functions.R"))
 
 # Create a log file ----
-createLogFile(logFile = tempfile(pattern = "log_{date}_{time}"))
+createLogFile(logFile = here("Results", "log_{date}_{time}"))
 logMessage(message = "LOG CREATED")
 
 # Define analysis settings -----
