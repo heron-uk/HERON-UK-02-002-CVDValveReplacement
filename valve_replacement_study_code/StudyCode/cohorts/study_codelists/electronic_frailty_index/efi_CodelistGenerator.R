@@ -1,25 +1,45 @@
 # Activity limitation
-newCodelist(list("activity_limitation_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("activity_limitation" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                           conceptId = c(44811145, 45767124, 
                                                                                         36716238, 4110470, 
                                                                                         4109859, 4032520, 
                                                                                         4031882, 4137049, 
                                                                                         4030753, 36713755, 
                                                                                         4128088)), "concept_id"))) |>
+  addConcepts(cdm_vocab_2025_08, 
+              concepts = c(4052648, 4113164, 4044218, 4268888, 4108025, 4012668, 44805506,
+                           44805505, 4074609, 4105729, 4199868, 4125554, 4200382, 4199866,
+                           4159760, 4025024, 4215592, 4097156)) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Arthritis
-newCodelist(list("arthritis_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("arthritis" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                 conceptId = c(4291025)), "concept_id"))) |>
+  excludeConcepts(cdm = cdm_vocab_2025_08,
+                  concepts = c(77644, 74728, 4287548, 433000, 4046205,
+                               4067311, 201332, 4067312, 4271003,
+                               4068628, 81097, 4067539, 4301698, 4001987,
+                               435633, 4147654, 4001474, 4120327, 4118007, 
+                               45766909, 4344156, 4306357, 601058, 4347065,
+                               4344383, 4083342, 45763905, 4103516, 608807,
+                               4173164, 4344382, 608805, 4299308, 4145017,
+                               45763637, 601059, 601057, 608806,
+                               601054, 601053, 40481591, 4141507, 42534871, 42539217,
+                               605423,4243509,4296152,4184896, 4300202,4345590, 4325687,  4328796,
+                               45757777, 4030389, 4233223, 4345589, 4145018,
+                               4117700, 4344147, 4188214, 4032731, 4241576,
+                               4182394, 4289292, 762206, 762207)) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Cerebrovascular disease
-newCodelist(list("cerebrovascular_disease_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("cerebrovascular_disease" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                               conceptId = c(381591)), "concept_id"))) |>
+  addConcepts(cdm_vocab_2025_08, 
+              concepts = 4108356) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Dizziness
-newCodelist(list("dizziness_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("dizziness" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                 conceptId = c(4223938, 4297376)), "concept_id"))) |>
   excludeConcepts(cdm = cdm_vocab_2025_08,
                   concepts = c(4011939, 4012876)) |>
@@ -27,21 +47,25 @@ newCodelist(list("dizziness_not_reviewed" = pull(getDescendants(cdm_vocab_2025_0
 
 
 # Dyspnea
-newCodelist(list("dyspnea_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("dyspnea" = pull(getDescendants(cdm_vocab_2025_08, 
                                                               conceptId = c(4305080, 4041664)), "concept_id"))) |>
   excludeConcepts(cdm = cdm_vocab_2025_08,
                   concepts = c(45772947, 42539560, 4318857, 258866)) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Falls
-newCodelist(list("falls_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("falls" = pull(getDescendants(cdm_vocab_2025_08, 
                                                             conceptId = c(4329906, 4256754, 4087528, 4224116)), "concept_id"))) |>
-  addConcepts(cdm = cdm_vocab_2025_08, concepts = c(4323345, 435991, 436583, 4184243)) |>
+  addConcepts(cdm = cdm_vocab_2025_08, 
+              concepts = c(4323345, 435991, 436583, 4184243,
+                           4059015, 4074322, 441749, 432803, 
+                           4140830, 4222734, 4329261, 436299,
+                           4185198, 432787, 4053866)) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 
 # Foot problem
-newCodelist(list("foot_problem_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("foot_problem" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                    conceptId = c(4268887, 4053100, 4101512, 4136647, 
                                                                                  4138349, 4140790, 4140924, 42539590, 
                                                                                  4083436, 4139895, 4085778, 4139217,
@@ -49,33 +73,35 @@ newCodelist(list("foot_problem_not_reviewed" = pull(getDescendants(cdm_vocab_202
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Hearing impairment
-newCodelist(list("hearing_impairment_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("hearing_impairment" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                          conceptId = c(36715579, 439378, 42539697,
                                                                                        4246497, 378444, 377889, 379832,
                                                                                        444291, 44805060)), "concept_id"))) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Heart valve disorder
-newCodelist(list("heart_valve_disorder_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("heart_valve_disorder" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                            conceptId = c(4281749)), "concept_id"))) |>
+  addConcepts(cdm_vocab_2025_08,
+              concepts = c(45773075, 37171038)) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 
 # Housebound
-newCodelist(list("housebound_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("housebound" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                  conceptId = c(40299189, 4052962, 45877743)), "concept_id"))) |>
   addConcepts(cdm = cdm_vocab_2025_08, concepts = c(4022076, 4022523)) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Hypotension
-newCodelist(list("hypotension_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("hypotension" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                   conceptId = c(317002, 319041, 135360, 40316030, 
                                                                                 40350983, 40498271)), "concept_id"))) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 
 # Memory and cognitive problems
-newCodelist(list("memory_and_cognitive_problems_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("memory_and_cognitive_problems" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                                     conceptId = c(4333671, 4009705, 3654469,
                                                                                                   42539256, 42535706, 42535682,
                                                                                                   42535681, 42539271, 42539270,
@@ -94,7 +120,7 @@ newCodelist(list("memory_and_cognitive_problems_not_reviewed" = pull(getDescenda
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Mobility and transfer problems
-newCodelist(list("mobility_and_transfer_problems_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("mobility_and_transfer_problems" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                                      conceptId = c(4200353, 4199115,  4199721, 44790310, 45878557, 36716239,
                                                                                                    36716240, 4146424, 4136754, 46272933, 4200194,4199094, 4199114,
                                                                                                    4199116, 4199431, 4200817, 4107789, 4107851, 4199552, 4093668,
@@ -106,28 +132,32 @@ newCodelist(list("mobility_and_transfer_problems_not_reviewed" = pull(getDescend
                                                                                                    4012646, 4012944, 4199550, 4199093, 4199111, 4200355, 4200350,
                                                                                                    4105451, 4106332,  4023187, 4060223, 4118805, 4151066, 4086548,
                                                                                                    44792042, 4086874,4116707, 44789400, 4012945, 45878235, 4266144,
-                                                                                                   439405, 4023190, 4086557, 4200822)), "concept_id"))) |>
+                                                                                                   439405, 4023190, 4086557, 4200822, 372604, 4045112, 4079780,
+                                                                                                   4052558, 45767832, 437758, 4021489, 4119337, 4038881)), "concept_id"))) |>
   addConcepts(cdm = cdm_vocab_2025_08, concepts = c(4240470)) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
-# Parkinson
-newCodelist(list("parkinsonism_tremor_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08,
-                                                                conceptId = c(36716783,  37110549, 381270, 4140090, 
-                                                                              443782, 372604)), "concept_id"))) |>
+# Parkinson and tremor
+newCodelist(list("parkinsonism_tremor" = pull(getDescendants(cdm_vocab_2025_08,
+                                                                conceptId = c(36716783, 37110549, 381270, 4140090)), "concept_id"))) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Peptic ulcer
-newCodelist(list("peptic_ulcer_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("peptic_ulcer" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                    conceptId = c(4057060, 4134146, 4027663)), "concept_id"))) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Peripheral vascular disease
-newCodelist(list("peripheral_vascular_disease_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("peripheral_vascular_disease" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                                   conceptId = c(321052)), "concept_id"))) |>
+  addConcepts(cdm_vocab_2025_08,
+              concepts = c(37312529, 36717006, 36717286, 36712806, 609009, 44782426,
+                           36712963, 36717279, 4108371, 37312524, 37312519, 37312528,
+                           37159902, 37159903, 37159905, 37159899, 37159900)) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Requirement for health
-newCodelist(list("requirement_for_care_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("requirement_for_care" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                            conceptId = c(35609081, 4052486,  4192880, 44791364, 4074789, 4022081, 3661927, 44790305,
                                                                                          40486978, 44790706, 44791204, 44802299, 44788859, 4147552, 765265, 36713971,
                                                                                          44814152, 44814153, 4119866, 44804659, 4305680, 37310422, 4088536,37108723)), "concept_id"))) |>
@@ -140,19 +170,25 @@ newCodelist(list("requirement_for_care_not_reviewed" = pull(getDescendants(cdm_v
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Skin ulcer
-newCodelist(list("skin_ulcer_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("skin_ulcer" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                  conceptId = c(4262920,46269752, 46269755)), "concept_id"))) |>
+  addConcepts(cdm = cdm_vocab_2025_08, 
+              concepts = c(4171556, 4179675, 46270564, 4132314, 40480712, 4029926,
+                           4318377, 37016108, 4299972, 46270088, 44808049, 37159898,
+                           4080924, 74719, 45757507, 443358, 3654308, 197304, 45757277,
+                           46269765, 4094986, 4214726, 3654309, 443593, 4103165, 45757449,
+                           4096339, 4233476)) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Sleep disorder
-newCodelist(list("sleep_disorder_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("sleep_disorder" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                      conceptId = c(4086851,37110488,4115402,42689991,42689992,43530738,4204989,42690122,42690123,
                                                                                    42690715,435657,434172,436522,374905,4102985,443544,3173994,4200883,4215402,
                                                                                    4305303,435524,40482260,40480927,4132137,42690379,42690380)), "concept_id"))) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Social vulnerability
-newCodelist(list("social_vulnerability_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("social_vulnerability" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                            conceptId = c(42690410,44792191, 4147192, 44807727, 44805674,44805255, 44805672,37394063,44813864,
                                                                                          44806914, 44792192,4023168, 4052158, 4053087, 45879223,44789099, 44789487,44810043,
                                                                                          44790469,44789986,37208707,4052789, 4209159, 44788883,4221049, 44791055, 44791931,
@@ -171,12 +207,16 @@ newCodelist(list("social_vulnerability_not_reviewed" = pull(getDescendants(cdm_v
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Thyroid disease
-newCodelist(list("thyroid_disease_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("thyroid_disease" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                       conceptId = c(141253, 4194160, 141253)), "concept_id"))) |>
+  addConcepts(cdm = cdm_vocab_2025_08,
+              concepts = c(4059416, 4077943, 4029587, 440108, 4028943, 45757061,
+                           4248991, 4079355, 4031955, 604780, 619797, 4329462, 
+                           4101898, 4102498, 4099644)) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Urinary incontinence
-newCodelist(list("urinary_incontinence_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("urinary_incontinence" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                            conceptId = c(4032498,4030763, 37208161,4302457, 606405,193598,195007, 45770268, 195079, 444035,
                                                                                          4314023,40490423,4012368, 42872846, 40480232, 42538539,443524,193874, 197378,
                                                                                          42538537, 4126278,44808460,40481801, 42536555, 606955, 4032530, 4096552,197102,
@@ -184,29 +224,32 @@ newCodelist(list("urinary_incontinence_not_reviewed" = pull(getDescendants(cdm_v
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
 # Urinary system disease
-newCodelist(list("urinary_system_disease_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
-                                                                           conceptId = c()), "concept_id"))) |>
-  addConcepts(cdm = cdm_vocab_2025_08, concepts = c(40481109, 4128060, 4126285, 45770840, 4329572,
-                                                    4128401, 194081, 4127564, 4027117, 4137752, 
-                                                    4058837, 4239213,435308, 435320,193140,)) |>
+newCodelist(list("urinary_system_disease" = c(40481109, 4128060, 4126285, 45770840, 4329572,
+                                              4128401, 194081, 4127564, 4027117, 4137752, 
+                                              4058837, 4239213,435308, 435320,193140,
+                                              36716270, 198124, 45769862, 201620, 4242411,
+                                              4313582, 4161421, 45757752, 4125958, 40480859,
+                                              4263367, 4298809, 195314, 193253, 4177206,
+                                              4264718, 4208918, 45773214, 40480627, 4030518,
+                                              199870, 4220631))) |>
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
-
-
-
 # Visual impairment
-newCodelist(list("visual_impairment_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("visual_impairment" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                         conceptId = c(374034,375545,435262,437541, 4265433,4334259, 44797518, 40305578, 4023310,
                                                                                       375545,4265433,42872584)), "concept_id"))) |>
+  addConcepts(cdm = cdm_vocab_2025_08,
+              concepts = c(372897,
+                           4318982,
+                           373786)) |>
   excludeConcepts(cdm = cdm_vocab_2025_08,
                   concepts = c(44790749,
                                pull(getDescendants(cdm_vocab_2025_08,
                                                    c(379820, 4124127, 4081307, 4079185)), "concept_id"))) |> 
   exportCodelist(path = here("codelists", "efi_codelists"), type = "csv")
 
-
 # Weight loss and anorexia
-newCodelist(list("weight_loss_and_anorexia_not_reviewed" = pull(getDescendants(cdm_vocab_2025_08, 
+newCodelist(list("weight_loss_and_anorexia" = pull(getDescendants(cdm_vocab_2025_08, 
                                                                                conceptId = c(436675,44784528,4269485,4300305,4091029,4333683, 134765,4109384,763515,44788734,
                                                                                              37204325, 45773690,442165, 37312021, 4156515, 4216971, 4347292, 36676905,
                                                                                              4031170, 4078430, 4031171, 4123542, 4229881)), "concept_id"))) |>
