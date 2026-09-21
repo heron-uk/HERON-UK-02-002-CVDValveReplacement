@@ -23,10 +23,9 @@ source(here("analyses", "functions.R"))
 # Initialise list to store results as we go -----
 results <- list()
 
-# CDM modifications -----
 # CDM summary -----
-results[["snapshot"]] <- OmopSketch::summariseOmopSnapshot(cdm)
-results[["obs_period"]] <- OmopSketch::summariseObservationPeriod(cdm)
+results[["snapshot"]] <- summariseOmopSnapshot(cdm)
+results[["obs_period"]] <- summariseObservationPeriod(cdm)
 
 # Instantiate study cohorts ----
 logMessage(message = "Instantiating study cohorts")
