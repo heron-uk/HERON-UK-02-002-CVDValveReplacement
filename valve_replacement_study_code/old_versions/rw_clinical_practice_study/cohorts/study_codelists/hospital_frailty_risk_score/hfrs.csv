@@ -1,0 +1,1443 @@
+concept_code,source_concept_name,source_concept_id,cohort_name,icd_description,points,chronic
+R00.3,"Pulseless electrical activity, not elsewhere classified",710667,r00,Abnormalities of heart beat,0.7,FALSE
+Z22.7,Latent tuberculosis,710699,z22,Carrier of infectious disease,1.7,FALSE
+S42.01,"Fracture of clavicle, open",1529212,s42,Fracture of shoulder and upper arm,2.3,FALSE
+J96.00,"Acute respiratory failure, Type I [hypoxic]",1529218,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+J96.01,"Acute respiratory failure, Type II [hypercapnic]",1529219,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+J96.09,"Acute respiratory failure, Type unspecified",1529220,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+J96.10,"Chronic respiratory failure, Type I [hypoxic]",1529221,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+J96.11,"Chronic respiratory failure, Type II [hypercapnic]",1529222,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+J96.19,"Chronic respiratory failure, Type unspecified",1529223,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+J96.90,"Respiratory failure, unspecified, Type I [hypoxic]",1529224,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+J96.91,"Respiratory failure, unspecified, Type II [hypercapnic]",1529225,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+J96.99,"Respiratory failure, unspecified, Type unspecified",1529226,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+S72.00,"Fracture of neck of femur, closed",1529272,s72,Fracture of femur,1.4,FALSE
+S06.00,"Concussion, without open intracranial wound",1529319,s06,Intracranial injury,2.4,FALSE
+S06.01,"Concussion, with open intracranial wound",1529320,s06,Intracranial injury,2.4,FALSE
+S42.00,"Fracture of clavicle, closed",1529327,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S72.01,"Fracture of neck of femur, open",1529328,s72,Fracture of femur,1.4,FALSE
+M19.01,"Primary arthrosis of other joints, shoulder region",42617036,m19,Other arthrosis,1.5,TRUE
+M19.02,"Primary arthrosis of other joints, upper arm",42617037,m19,Other arthrosis,1.5,TRUE
+M19.03,"Primary arthrosis of other joints, forearm",42617038,m19,Other arthrosis,1.5,TRUE
+M19.04,"Primary arthrosis of other joints, hand",42617039,m19,Other arthrosis,1.5,TRUE
+M19.05,"Primary arthrosis of other joints, pelvic region and thigh",42617040,m19,Other arthrosis,1.5,TRUE
+M19.06,"Primary arthrosis of other joints, lower leg",42617041,m19,Other arthrosis,1.5,TRUE
+M19.07,"Primary arthrosis of other joints, ankle and foot",42617042,m19,Other arthrosis,1.5,TRUE
+M19.08,"Primary arthrosis of other joints, other",42617043,m19,Other arthrosis,1.5,TRUE
+M19.09,"Primary arthrosis of other joints, site unspecified",42617044,m19,Other arthrosis,1.5,TRUE
+M19.10,"Post-traumatic arthrosis of other joints, multiple sites",42617045,m19,Other arthrosis,1.5,TRUE
+M19.11,"Post-traumatic arthrosis of other joints, shoulder region",42617046,m19,Other arthrosis,1.5,TRUE
+M19.12,"Post-traumatic arthrosis of other joints, upper arm",42617047,m19,Other arthrosis,1.5,TRUE
+M19.13,"Post-traumatic arthrosis of other joints, forearm",42617048,m19,Other arthrosis,1.5,TRUE
+M19.14,"Post-traumatic arthrosis of other joints, hand",42617049,m19,Other arthrosis,1.5,TRUE
+M19.15,"Post-traumatic arthrosis of other joints, pelvic region and thigh",42617050,m19,Other arthrosis,1.5,TRUE
+M19.16,"Post-traumatic arthrosis of other joints, lower leg",42617051,m19,Other arthrosis,1.5,TRUE
+M19.17,"Post-traumatic arthrosis of other joints, ankle and foot",42617052,m19,Other arthrosis,1.5,TRUE
+M19.18,"Post-traumatic arthrosis of other joints, other",42617053,m19,Other arthrosis,1.5,TRUE
+M19.19,"Post-traumatic arthrosis of other joints, site unspecified",42617054,m19,Other arthrosis,1.5,TRUE
+M19.20,"Other secondary arthrosis, multiple sites",42617055,m19,Other arthrosis,1.5,TRUE
+M19.22,"Other secondary arthrosis, upper arm",42617056,m19,Other arthrosis,1.5,TRUE
+M19.23,"Other secondary arthrosis, forearm",42617057,m19,Other arthrosis,1.5,TRUE
+M19.24,"Other secondary arthrosis, hand",42617058,m19,Other arthrosis,1.5,TRUE
+M19.25,"Other secondary arthrosis, pelvic region and thigh",42617059,m19,Other arthrosis,1.5,TRUE
+M19.26,"Other secondary arthrosis, lower leg",42617060,m19,Other arthrosis,1.5,TRUE
+M19.27,"Other secondary arthrosis, ankle and foot",42617061,m19,Other arthrosis,1.5,TRUE
+M19.28,"Other secondary arthrosis, other",42617062,m19,Other arthrosis,1.5,TRUE
+M19.29,"Other secondary arthrosis, site unspecified",42617063,m19,Other arthrosis,1.5,TRUE
+M19.80,"Other specified arthrosis, multiple sites",42617064,m19,Other arthrosis,1.5,TRUE
+M19.81,"Other specified arthrosis, shoulder region",42617065,m19,Other arthrosis,1.5,TRUE
+M19.82,"Other specified arthrosis, upper arm",42617066,m19,Other arthrosis,1.5,TRUE
+M19.83,"Other specified arthrosis, forearm",42617067,m19,Other arthrosis,1.5,TRUE
+M19.84,"Other specified arthrosis, hand",42617068,m19,Other arthrosis,1.5,TRUE
+M19.85,"Other specified arthrosis, pelvic region and thigh",42617069,m19,Other arthrosis,1.5,TRUE
+M19.86,"Other specified arthrosis, lower leg",42617070,m19,Other arthrosis,1.5,TRUE
+M19.87,"Other specified arthrosis, ankle and foot",42617071,m19,Other arthrosis,1.5,TRUE
+M19.88,"Other specified arthrosis, other",42617072,m19,Other arthrosis,1.5,TRUE
+M19.89,"Other specified arthrosis, site unspecified",42617073,m19,Other arthrosis,1.5,TRUE
+M19.90,"Arthrosis, unspecified, multiple sites",42617074,m19,Other arthrosis,1.5,TRUE
+M19.91,"Arthrosis, unspecified, shoulder region",42617075,m19,Other arthrosis,1.5,TRUE
+M19.92,"Arthrosis, unspecified, upper arm",42617076,m19,Other arthrosis,1.5,TRUE
+M19.93,"Arthrosis, unspecified, forearm",42617077,m19,Other arthrosis,1.5,TRUE
+M19.95,"Arthrosis, unspecified, pelvic region and thigh",42617078,m19,Other arthrosis,1.5,TRUE
+M19.96,"Arthrosis, unspecified, lower leg",42617079,m19,Other arthrosis,1.5,TRUE
+M19.97,"Arthrosis, unspecified, ankle and foot",42617080,m19,Other arthrosis,1.5,TRUE
+M19.98,"Arthrosis, unspecified, other",42617081,m19,Other arthrosis,1.5,TRUE
+M19.99,"Arthrosis, unspecified, site unspecified",42617082,m19,Other arthrosis,1.5,TRUE
+M25.00,"Haemarthrosis, multiple sites",42617202,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.01,"Haemarthrosis, shoulder region",42617203,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.02,"Haemarthrosis, upper arm",42617204,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.03,"Haemarthrosis, forearm",42617205,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.04,"Haemarthrosis, hand",42617206,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.05,"Haemarthrosis, pelvic region and thigh",42617207,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.06,"Haemarthrosis, lower leg",42617208,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.07,"Haemarthrosis, ankle and foot",42617209,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.08,"Haemarthrosis, other",42617210,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.09,"Haemarthrosis, site unspecified",42617211,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.10,"Fistula of joint, multiple sites",42617212,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.11,"Fistula of joint, shoulder region",42617213,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.12,"Fistula of joint, upper arm",42617214,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.13,"Fistula of joint, forearm",42617215,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.14,"Fistula of joint, hand",42617216,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.15,"Fistula of joint, pelvic region and thigh",42617217,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.16,"Fistula of joint, lower leg",42617218,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.17,"Fistula of joint, ankle and foot",42617219,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.18,"Fistula of joint, other",42617220,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.19,"Fistula of joint, site unspecified",42617221,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.20,"Flail joint, multiple sites",42617222,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.21,"Flail joint, shoulder region",42617223,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.22,"Flail joint, upper arm",42617224,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.23,"Flail joint, forearm",42617225,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.24,"Flail joint, hand",42617226,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.25,"Flail joint, pelvic region and thigh",42617227,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.27,"Flail joint, ankle and foot",42617228,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.28,"Flail joint, other",42617229,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.29,"Flail joint, site unspecified",42617230,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.30,"Other instability of joint, multiple sites",42617231,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.31,"Other instability of joint, shoulder region",42617232,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.32,"Other instability of joint, upper arm",42617233,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.33,"Other instability of joint, forearm",42617234,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.34,"Other instability of joint, hand",42617235,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.35,"Other instability of joint, pelvic region and thigh",42617236,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.36,"Other instability of joint, lower leg",42617237,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.37,"Other instability of joint, ankle and foot",42617238,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.38,"Other instability of joint, other",42617239,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.39,"Other instability of joint, site unspecified",42617240,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.40,"Effusion of joint, multiple sites",42617241,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.42,"Effusion of joint, upper arm",42617242,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.43,"Effusion of joint, forearm",42617243,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.44,"Effusion of joint, hand",42617244,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.45,"Effusion of joint, pelvic region and thigh",42617245,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.46,"Effusion of joint, lower leg",42617246,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.47,"Effusion of joint, ankle and foot",42617247,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.48,"Effusion of joint, other",42617248,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.49,"Effusion of joint, site unspecified",42617249,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.50,"Pain in joint, multiple sites",42617250,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.51,"Pain in joint, shoulder region",42617251,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.52,"Pain in joint, upper arm",42617252,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.53,"Pain in joint, forearm",42617253,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.54,"Pain in joint, hand",42617254,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.55,"Pain in joint, pelvic region and thigh",42617255,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.56,"Pain in joint, lower leg",42617256,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.57,"Pain in joint, ankle and foot",42617257,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.59,"Pain in joint, site unspecified",42617258,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.60,"Stiffness of joint, not elsewhere classified, multiple sites",42617259,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.61,"Stiffness of joint, not elsewhere classified, shoulder region",42617260,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.62,"Stiffness of joint, not elsewhere classified, upper arm",42617261,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.63,"Stiffness of joint, not elsewhere classified, forearm",42617262,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.64,"Stiffness of joint, not elsewhere classified, hand",42617263,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.65,"Stiffness of joint, not elsewhere classified, pelvic region and thigh",42617264,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.66,"Stiffness of joint, not elsewhere classified, lower leg",42617265,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.67,"Stiffness of joint, not elsewhere classified, ankle and foot",42617266,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.68,"Stiffness of joint, not elsewhere classified, other",42617267,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.69,"Stiffness of joint, not elsewhere classified, site unspecified",42617268,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.70,"Osteophyte, multiple sites",42617269,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.71,"Osteophyte, shoulder region",42617270,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.73,"Osteophyte, forearm",42617271,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.74,"Osteophyte, hand",42617272,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.75,"Osteophyte, pelvic region and thigh",42617273,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.76,"Osteophyte, lower leg",42617274,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.77,"Osteophyte, ankle and foot",42617275,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.78,"Osteophyte, other",42617276,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.79,"Osteophyte, site unspecified",42617277,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.80,"Other specified joint disorders, multiple sites",42617278,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.81,"Other specified joint disorders, shoulder region",42617279,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.82,"Other specified joint disorders, upper arm",42617280,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.83,"Other specified joint disorders, forearm",42617281,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.84,"Other specified joint disorders, hand",42617282,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.85,"Other specified joint disorders, pelvic region and thigh",42617283,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.86,"Other specified joint disorders, lower leg",42617284,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.88,"Other specified joint disorders, other",42617285,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.89,"Other specified joint disorders, site unspecified",42617286,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.90,"Joint disorder, unspecified, multiple sites",42617287,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.91,"Joint disorder, unspecified, shoulder region",42617288,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.92,"Joint disorder, unspecified, upper arm",42617289,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.94,"Joint disorder, unspecified, hand",42617290,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.95,"Joint disorder, unspecified, pelvic region and thigh",42617291,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.96,"Joint disorder, unspecified, lower leg",42617292,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.97,"Joint disorder, unspecified, ankle and foot",42617293,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.98,"Joint disorder, unspecified, other",42617294,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.99,"Joint disorder, unspecified, site unspecified",42617295,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M41.00,"Infantile idiopathic scoliosis, multiple sites in spine",42617353,m41,Scoliosis,0.9,TRUE
+M41.01,"Infantile idiopathic scoliosis, occipito-atlanto-axial region",42617354,m41,Scoliosis,0.9,TRUE
+M41.02,"Infantile idiopathic scoliosis, cervical region",42617355,m41,Scoliosis,0.9,TRUE
+M41.03,"Infantile idiopathic scoliosis, cervicothoracic region",42617356,m41,Scoliosis,0.9,TRUE
+M41.04,"Infantile idiopathic scoliosis, thoracic region",42617357,m41,Scoliosis,0.9,TRUE
+M41.05,"Infantile idiopathic scoliosis, thoracolumbar region",42617358,m41,Scoliosis,0.9,TRUE
+M41.06,"Infantile idiopathic scoliosis, lumbar region",42617359,m41,Scoliosis,0.9,TRUE
+M41.07,"Infantile idiopathic scoliosis, lumbosacral region",42617360,m41,Scoliosis,0.9,TRUE
+M41.08,"Infantile idiopathic scoliosis, sacral and sacrococcygeal region",42617361,m41,Scoliosis,0.9,TRUE
+M41.09,"Infantile idiopathic scoliosis, site unspecified",42617362,m41,Scoliosis,0.9,TRUE
+M41.11,"Juvenile idiopathic scoliosis, occipito-atlanto-axial region",42617363,m41,Scoliosis,0.9,TRUE
+M41.12,"Juvenile idiopathic scoliosis, cervical region",42617364,m41,Scoliosis,0.9,TRUE
+M41.13,"Juvenile idiopathic scoliosis, cervicothoracic region",42617365,m41,Scoliosis,0.9,TRUE
+M41.14,"Juvenile idiopathic scoliosis, thoracic region",42617366,m41,Scoliosis,0.9,TRUE
+M41.15,"Juvenile idiopathic scoliosis, thoracolumbar region",42617367,m41,Scoliosis,0.9,TRUE
+M41.16,"Juvenile idiopathic scoliosis, lumbar region",42617368,m41,Scoliosis,0.9,TRUE
+M41.17,"Juvenile idiopathic scoliosis, lumbosacral region",42617369,m41,Scoliosis,0.9,TRUE
+M41.18,"Juvenile idiopathic scoliosis, sacral and sacrococcygeal region",42617370,m41,Scoliosis,0.9,TRUE
+M41.19,"Juvenile idiopathic scoliosis, site unspecified",42617371,m41,Scoliosis,0.9,TRUE
+M41.20,"Other idiopathic scoliosis, multiple sites in spine",42617372,m41,Scoliosis,0.9,TRUE
+M41.21,"Other idiopathic scoliosis, occipito-atlanto-axial region",42617373,m41,Scoliosis,0.9,TRUE
+M41.22,"Other idiopathic scoliosis, cervical region",42617374,m41,Scoliosis,0.9,TRUE
+M41.23,"Other idiopathic scoliosis, cervicothoracic region",42617375,m41,Scoliosis,0.9,TRUE
+M41.24,"Other idiopathic scoliosis, thoracic region",42617376,m41,Scoliosis,0.9,TRUE
+M41.25,"Other idiopathic scoliosis, thoracolumbar region",42617377,m41,Scoliosis,0.9,TRUE
+M41.26,"Other idiopathic scoliosis, lumbar region",42617378,m41,Scoliosis,0.9,TRUE
+M41.27,"Other idiopathic scoliosis, lumbosacral region",42617379,m41,Scoliosis,0.9,TRUE
+M41.28,"Other idiopathic scoliosis, sacral and sacrococcygeal region",42617380,m41,Scoliosis,0.9,TRUE
+M41.29,"Other idiopathic scoliosis, site unspecified",42617381,m41,Scoliosis,0.9,TRUE
+M41.30,"Thoracogenic scoliosis, multiple sites in spine",42617382,m41,Scoliosis,0.9,TRUE
+M41.31,"Thoracogenic scoliosis, occipito-atlanto-axial region",42617383,m41,Scoliosis,0.9,TRUE
+M41.32,"Thoracogenic scoliosis, cervical region",42617384,m41,Scoliosis,0.9,TRUE
+M41.33,"Thoracogenic scoliosis, cervicothoracic region",42617385,m41,Scoliosis,0.9,TRUE
+M41.34,"Thoracogenic scoliosis, thoracic region",42617386,m41,Scoliosis,0.9,TRUE
+M41.35,"Thoracogenic scoliosis, thoracolumbar region",42617387,m41,Scoliosis,0.9,TRUE
+M41.36,"Thoracogenic scoliosis, lumbar region",42617388,m41,Scoliosis,0.9,TRUE
+M41.37,"Thoracogenic scoliosis, lumbosacral region",42617389,m41,Scoliosis,0.9,TRUE
+M41.38,"Thoracogenic scoliosis, sacral and sacrococcygeal region",42617390,m41,Scoliosis,0.9,TRUE
+M41.39,"Thoracogenic scoliosis, site unspecified",42617391,m41,Scoliosis,0.9,TRUE
+M41.40,"Neuromuscular scoliosis, multiple sites in spine",42617392,m41,Scoliosis,0.9,TRUE
+M41.41,"Neuromuscular scoliosis, occipito-atlanto-axial region",42617393,m41,Scoliosis,0.9,TRUE
+M41.42,"Neuromuscular scoliosis, cervical region",42617394,m41,Scoliosis,0.9,TRUE
+M41.43,"Neuromuscular scoliosis, cervicothoracic region",42617395,m41,Scoliosis,0.9,TRUE
+M41.44,"Neuromuscular scoliosis, thoracic region",42617396,m41,Scoliosis,0.9,TRUE
+M41.45,"Neuromuscular scoliosis, thoracolumbar region",42617397,m41,Scoliosis,0.9,TRUE
+M41.46,"Neuromuscular scoliosis, lumbar region",42617398,m41,Scoliosis,0.9,TRUE
+M41.47,"Neuromuscular scoliosis, lumbosacral region",42617399,m41,Scoliosis,0.9,TRUE
+M41.48,"Neuromuscular scoliosis, sacral and sacrococcygeal region",42617400,m41,Scoliosis,0.9,TRUE
+M41.49,"Neuromuscular scoliosis, site unspecified",42617401,m41,Scoliosis,0.9,TRUE
+M41.50,"Other secondary scoliosis, multiple sites in spine",42617402,m41,Scoliosis,0.9,TRUE
+M41.51,"Other secondary scoliosis, occipito-atlanto-axial region",42617403,m41,Scoliosis,0.9,TRUE
+M41.52,"Other secondary scoliosis, cervical region",42617404,m41,Scoliosis,0.9,TRUE
+M41.53,"Other secondary scoliosis, cervicothoracic region",42617405,m41,Scoliosis,0.9,TRUE
+M41.54,"Other secondary scoliosis, thoracic region",42617406,m41,Scoliosis,0.9,TRUE
+M41.55,"Other secondary scoliosis, thoracolumbar region",42617407,m41,Scoliosis,0.9,TRUE
+M41.56,"Other secondary scoliosis, lumbar region",42617408,m41,Scoliosis,0.9,TRUE
+M41.57,"Other secondary scoliosis, lumbosacral region",42617409,m41,Scoliosis,0.9,TRUE
+M41.59,"Other secondary scoliosis, site unspecified",42617410,m41,Scoliosis,0.9,TRUE
+M41.80,"Other forms of scoliosis, multiple sites in spine",42617411,m41,Scoliosis,0.9,TRUE
+M41.81,"Other forms of scoliosis, occipito-atlanto-axial region",42617412,m41,Scoliosis,0.9,TRUE
+M41.82,"Other forms of scoliosis, cervical region",42617413,m41,Scoliosis,0.9,TRUE
+M41.83,"Other forms of scoliosis, cervicothoracic region",42617414,m41,Scoliosis,0.9,TRUE
+M41.84,"Other forms of scoliosis, thoracic region",42617415,m41,Scoliosis,0.9,TRUE
+M41.85,"Other forms of scoliosis, thoracolumbar region",42617416,m41,Scoliosis,0.9,TRUE
+M41.86,"Other forms of scoliosis, lumbar region",42617417,m41,Scoliosis,0.9,TRUE
+M41.87,"Other forms of scoliosis, lumbosacral region",42617418,m41,Scoliosis,0.9,TRUE
+M41.88,"Other forms of scoliosis, sacral and sacrococcygeal region",42617419,m41,Scoliosis,0.9,TRUE
+M41.89,"Other forms of scoliosis, site unspecified",42617420,m41,Scoliosis,0.9,TRUE
+M41.90,"Scoliosis, unspecified, multiple sites in spine",42617421,m41,Scoliosis,0.9,TRUE
+M41.91,"Scoliosis, unspecified, occipito-atlanto-axial region",42617422,m41,Scoliosis,0.9,TRUE
+M41.92,"Scoliosis, unspecified, cervical region",42617423,m41,Scoliosis,0.9,TRUE
+M41.93,"Scoliosis, unspecified, cervicothoracic region",42617424,m41,Scoliosis,0.9,TRUE
+M41.94,"Scoliosis, unspecified, thoracic region",42617425,m41,Scoliosis,0.9,TRUE
+M41.95,"Scoliosis, unspecified, thoracolumbar region",42617426,m41,Scoliosis,0.9,TRUE
+M41.96,"Scoliosis, unspecified, lumbar region",42617427,m41,Scoliosis,0.9,TRUE
+M41.97,"Scoliosis, unspecified, lumbosacral region",42617428,m41,Scoliosis,0.9,TRUE
+M41.98,"Scoliosis, unspecified, sacral and sacrococcygeal region",42617429,m41,Scoliosis,0.9,TRUE
+M41.99,"Scoliosis, unspecified, site unspecified",42617430,m41,Scoliosis,0.9,TRUE
+M79.00,"Rheumatism, unspecified, multiple sites",42618431,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.01,"Rheumatism, unspecified, shoulder region",42618432,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.02,"Rheumatism, unspecified, upper arm",42618433,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.03,"Rheumatism, unspecified, forearm",42618434,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.04,"Rheumatism, unspecified, hand",42618435,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.05,"Rheumatism, unspecified, pelvic region and thigh",42618436,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.06,"Rheumatism, unspecified, lower leg",42618437,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.07,"Rheumatism, unspecified, ankle and foot",42618438,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.08,"Rheumatism, unspecified, other",42618439,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.09,"Rheumatism, unspecified, site unspecified",42618440,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.10,"Myalgia, multiple sites",42618441,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.11,"Myalgia, shoulder region",42618442,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.12,"Myalgia, upper arm",42618443,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.13,"Myalgia, forearm",42618444,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.14,"Myalgia, hand",42618445,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.15,"Myalgia, pelvic region and thigh",42618446,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.16,"Myalgia, lower leg",42618447,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.17,"Myalgia, ankle and foot",42618448,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.18,"Myalgia, other",42618449,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.19,"Myalgia, site unspecified",42618450,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.20,"Neuralgia and neuritis, unspecified, multiple sites",42618451,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.21,"Neuralgia and neuritis, unspecified, shoulder region",42618452,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.22,"Neuralgia and neuritis, unspecified, upper arm",42618453,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.23,"Neuralgia and neuritis, unspecified, forearm",42618454,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.24,"Neuralgia and neuritis, unspecified, hand",42618455,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.25,"Neuralgia and neuritis, unspecified, pelvic region and thigh",42618456,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.26,"Neuralgia and neuritis, unspecified, lower leg",42618457,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.27,"Neuralgia and neuritis, unspecified, ankle and foot",42618458,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.28,"Neuralgia and neuritis, unspecified, other",42618459,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.29,"Neuralgia and neuritis, unspecified, site unspecified",42618460,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.30,"Panniculitis, unspecified, multiple sites",42618461,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.31,"Panniculitis, unspecified, shoulder region",42618462,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.32,"Panniculitis, unspecified, upper arm",42618463,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.33,"Panniculitis, unspecified, forearm",42618464,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.34,"Panniculitis, unspecified, hand",42618465,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.35,"Panniculitis, unspecified, pelvic region and thigh",42618466,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.36,"Panniculitis, unspecified, lower leg",42618467,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.37,"Panniculitis, unspecified, ankle and foot",42618468,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.38,"Panniculitis, unspecified, other",42618469,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.39,"Panniculitis, unspecified, site unspecified",42618470,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.50,"Residual foreign body in soft tissue, multiple sites",42618471,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.51,"Residual foreign body in soft tissue, shoulder region",42618472,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.52,"Residual foreign body in soft tissue, upper arm",42618473,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.53,"Residual foreign body in soft tissue, forearm",42618474,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.54,"Residual foreign body in soft tissue, hand",42618475,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.55,"Residual foreign body in soft tissue, pelvic region and thigh",42618476,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.56,"Residual foreign body in soft tissue, lower leg",42618477,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.57,"Residual foreign body in soft tissue, ankle and foot",42618478,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.58,"Residual foreign body in soft tissue, other",42618479,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.59,"Residual foreign body in soft tissue, site unspecified",42618480,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.60,"Pain in limb, multiple sites",42618481,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.61,"Pain in limb, shoulder region",42618482,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.62,"Pain in limb, upper arm",42618483,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.63,"Pain in limb, forearm",42618484,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.64,"Pain in limb, hand",42618485,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.65,"Pain in limb, pelvic region and thigh",42618486,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.66,"Pain in limb, lower leg",42618487,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.67,"Pain in limb, ankle and foot",42618488,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.68,"Pain in limb, other",42618489,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.69,"Pain in limb, site unspecified",42618490,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.70,"Fibromyalgia, multiple sites",42618491,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.71,"Fibromyalgia, shoulder region",42618492,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.72,"Fibromyalgia, upper arm",42618493,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.73,"Fibromyalgia, forearm",42618494,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.74,"Fibromyalgia, hand",42618495,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.75,"Fibromyalgia, pelvic region and thigh",42618496,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.76,"Fibromyalgia, lower leg",42618497,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.77,"Fibromyalgia, ankle and foot",42618498,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.78,"Fibromyalgia, other",42618499,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.79,"Fibromyalgia, site unspecified",42618500,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.80,"Other specified soft tissue disorders, multiple sites",42618501,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.81,"Other specified soft tissue disorders, shoulder region",42618502,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.82,"Other specified soft tissue disorders, upper arm",42618503,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.83,"Other specified soft tissue disorders, forearm",42618504,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.84,"Other specified soft tissue disorders, hand",42618505,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.85,"Other specified soft tissue disorders, pelvic region and thigh",42618506,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.86,"Other specified soft tissue disorders, lower leg",42618507,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.87,"Other specified soft tissue disorders, ankle and foot",42618508,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.88,"Other specified soft tissue disorders, other",42618509,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.89,"Other specified soft tissue disorders, site unspecified",42618510,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.90,"Soft tissue disorder, unspecified, multiple sites",42618511,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.91,"Soft tissue disorder, unspecified, shoulder region",42618512,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.92,"Soft tissue disorder, unspecified, upper arm",42618513,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.93,"Soft tissue disorder, unspecified, forearm",42618514,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.94,"Soft tissue disorder, unspecified, hand",42618515,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.95,"Soft tissue disorder, unspecified, pelvic region and thigh",42618516,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.96,"Soft tissue disorder, unspecified, lower leg",42618517,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.97,"Soft tissue disorder, unspecified, ankle and foot",42618518,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.98,"Soft tissue disorder, unspecified, other",42618519,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.99,"Soft tissue disorder, unspecified, site unspecified",42618520,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M80.00,"Postmenopausal osteoporosis with pathological fracture, multiple sites",42618521,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.01,"Postmenopausal osteoporosis with pathological fracture, shoulder region",42618522,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.02,"Postmenopausal osteoporosis with pathological fracture, upper arm",42618523,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.03,"Postmenopausal osteoporosis with pathological fracture, forearm",42618524,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.04,"Postmenopausal osteoporosis with pathological fracture, hand",42618525,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.05,"Postmenopausal osteoporosis with pathological fracture, pelvic region and thigh",42618526,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.06,"Postmenopausal osteoporosis with pathological fracture, lower leg",42618527,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.07,"Postmenopausal osteoporosis with pathological fracture, ankle and foot",42618528,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.08,"Postmenopausal osteoporosis with pathological fracture, other",42618529,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.09,"Postmenopausal osteoporosis with pathological fracture, site unspecified",42618530,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.10,"Postoophorectomy osteoporosis with pathological fracture, multiple sites",42618531,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.11,"Postoophorectomy osteoporosis with pathological fracture, shoulder region",42618532,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.12,"Postoophorectomy osteoporosis with pathological fracture, upper arm",42618533,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.13,"Postoophorectomy osteoporosis with pathological fracture, forearm",42618534,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.14,"Postoophorectomy osteoporosis with pathological fracture, hand",42618535,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.15,"Postoophorectomy osteoporosis with pathological fracture, pelvic region and thigh",42618536,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.16,"Postoophorectomy osteoporosis with pathological fracture, lower leg",42618537,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.17,"Postoophorectomy osteoporosis with pathological fracture, ankle and foot",42618538,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.18,"Postoophorectomy osteoporosis with pathological fracture, other",42618539,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.19,"Postoophorectomy osteoporosis with pathological fracture, site unspecified",42618540,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.20,"Osteoporosis of disuse with pathological fracture, multiple sites",42618541,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.21,"Osteoporosis of disuse with pathological fracture, shoulder region",42618542,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.22,"Osteoporosis of disuse with pathological fracture, upper arm",42618543,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.23,"Osteoporosis of disuse with pathological fracture, forearm",42618544,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.24,"Osteoporosis of disuse with pathological fracture, hand",42618545,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.25,"Osteoporosis of disuse with pathological fracture, pelvic region and thigh",42618546,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.27,"Osteoporosis of disuse with pathological fracture, ankle and foot",42618547,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.28,"Osteoporosis of disuse with pathological fracture, other",42618548,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.29,"Osteoporosis of disuse with pathological fracture, site unspecified",42618549,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.30,"Postsurgical malabsorption osteoporosis with pathological fracture, multiple sites",42618550,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.31,"Postsurgical malabsorption osteoporosis with pathological fracture, shoulder region",42618551,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.32,"Postsurgical malabsorption osteoporosis with pathological fracture, upper arm",42618552,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.33,"Postsurgical malabsorption osteoporosis with pathological fracture, forearm",42618553,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.34,"Postsurgical malabsorption osteoporosis with pathological fracture, hand",42618554,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.35,"Postsurgical malabsorption osteoporosis with pathological fracture, pelvic region and thigh",42618555,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.36,"Postsurgical malabsorption osteoporosis with pathological fracture, lower leg",42618556,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.37,"Postsurgical malabsorption osteoporosis with pathological fracture, ankle and foot",42618557,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.38,"Postsurgical malabsorption osteoporosis with pathological fracture, other",42618558,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.39,"Postsurgical malabsorption osteoporosis with pathological fracture, site unspecified",42618559,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.40,"Drug-induced osteoporosis with pathological fracture, multiple sites",42618560,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.41,"Drug-induced osteoporosis with pathological fracture, shoulder region",42618561,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.42,"Drug-induced osteoporosis with pathological fracture, upper arm",42618562,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.43,"Drug-induced osteoporosis with pathological fracture, forearm",42618563,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.44,"Drug-induced osteoporosis with pathological fracture, hand",42618564,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.45,"Drug-induced osteoporosis with pathological fracture, pelvic region and thigh",42618565,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.46,"Drug-induced osteoporosis with pathological fracture, lower leg",42618566,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.47,"Drug-induced osteoporosis with pathological fracture, ankle and foot",42618567,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.48,"Drug-induced osteoporosis with pathological fracture, other",42618568,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.49,"Drug-induced osteoporosis with pathological fracture, site unspecified",42618569,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.50,"Idiopathic osteoporosis with pathological fracture, multiple sites",42618570,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.51,"Idiopathic osteoporosis with pathological fracture, shoulder region",42618571,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.52,"Idiopathic osteoporosis with pathological fracture, upper arm",42618572,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.53,"Idiopathic osteoporosis with pathological fracture, forearm",42618573,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.54,"Idiopathic osteoporosis with pathological fracture, hand",42618574,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.55,"Idiopathic osteoporosis with pathological fracture, pelvic region and thigh",42618575,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.56,"Idiopathic osteoporosis with pathological fracture, lower leg",42618576,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.57,"Idiopathic osteoporosis with pathological fracture, ankle and foot",42618577,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.58,"Idiopathic osteoporosis with pathological fracture, other",42618578,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.59,"Idiopathic osteoporosis with pathological fracture, site unspecified",42618579,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.80,"Other osteoporosis with pathological fracture, multiple sites",42618580,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.81,"Other osteoporosis with pathological fracture, shoulder region",42618581,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.82,"Other osteoporosis with pathological fracture, upper arm",42618582,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.83,"Other osteoporosis with pathological fracture, forearm",42618583,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.84,"Other osteoporosis with pathological fracture, hand",42618584,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.85,"Other osteoporosis with pathological fracture, pelvic region and thigh",42618585,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.86,"Other osteoporosis with pathological fracture, lower leg",42618586,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.87,"Other osteoporosis with pathological fracture, ankle and foot",42618587,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.88,"Other osteoporosis with pathological fracture, other",42618588,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.89,"Other osteoporosis with pathological fracture, site unspecified",42618589,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.90,"Unspecified osteoporosis with pathological fracture, multiple sites",42618590,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.91,"Unspecified osteoporosis with pathological fracture, shoulder region",42618591,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.92,"Unspecified osteoporosis with pathological fracture, upper arm",42618592,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.93,"Unspecified osteoporosis with pathological fracture, forearm",42618593,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.94,"Unspecified osteoporosis with pathological fracture, hand",42618594,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.96,"Unspecified osteoporosis with pathological fracture, lower leg",42618595,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.97,"Unspecified osteoporosis with pathological fracture, ankle and foot",42618596,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.98,"Unspecified osteoporosis with pathological fracture, other",42618597,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.99,"Unspecified osteoporosis with pathological fracture, site unspecified",42618598,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M81.00,"Postmenopausal osteoporosis, multiple sites",42618599,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.01,"Postmenopausal osteoporosis, shoulder region",42618600,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.02,"Postmenopausal osteoporosis, upper arm",42618601,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.03,"Postmenopausal osteoporosis, forearm",42618602,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.04,"Postmenopausal osteoporosis, hand",42618603,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.05,"Postmenopausal osteoporosis, pelvic region and thigh",42618604,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.06,"Postmenopausal osteoporosis, lower leg",42618605,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.07,"Postmenopausal osteoporosis, ankle and foot",42618606,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.08,"Postmenopausal osteoporosis, other",42618607,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.09,"Postmenopausal osteoporosis, site unspecified",42618608,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.10,"Postoophorectomy osteoporosis, multiple sites",42618609,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.11,"Postoophorectomy osteoporosis, shoulder region",42618610,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.12,"Postoophorectomy osteoporosis, upper arm",42618611,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.13,"Postoophorectomy osteoporosis, forearm",42618612,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.14,"Postoophorectomy osteoporosis, hand",42618613,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.15,"Postoophorectomy osteoporosis, pelvic region and thigh",42618614,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.16,"Postoophorectomy osteoporosis, lower leg",42618615,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.17,"Postoophorectomy osteoporosis, ankle and foot",42618616,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.18,"Postoophorectomy osteoporosis, other",42618617,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.19,"Postoophorectomy osteoporosis, site unspecified",42618618,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.20,"Osteoporosis of disuse, multiple sites",42618619,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.22,"Osteoporosis of disuse, upper arm",42618620,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.23,"Osteoporosis of disuse, forearm",42618621,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.24,"Osteoporosis of disuse, hand",42618622,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.25,"Osteoporosis of disuse, pelvic region and thigh",42618623,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.26,"Osteoporosis of disuse, lower leg",42618624,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.27,"Osteoporosis of disuse, ankle and foot",42618625,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.28,"Osteoporosis of disuse, other",42618626,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.29,"Osteoporosis of disuse, site unspecified",42618627,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.30,"Postsurgical malabsorption osteoporosis, multiple sites",42618628,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.31,"Postsurgical malabsorption osteoporosis, shoulder region",42618629,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.32,"Postsurgical malabsorption osteoporosis, upper arm",42618630,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.33,"Postsurgical malabsorption osteoporosis, forearm",42618631,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.34,"Postsurgical malabsorption osteoporosis, hand",42618632,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.35,"Postsurgical malabsorption osteoporosis, pelvic region and thigh",42618633,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.36,"Postsurgical malabsorption osteoporosis, lower leg",42618634,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.37,"Postsurgical malabsorption osteoporosis, ankle and foot",42618635,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.38,"Postsurgical malabsorption osteoporosis, other",42618636,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.39,"Postsurgical malabsorption osteoporosis, site unspecified",42618637,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.40,"Drug-induced osteoporosis, multiple sites",42618638,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.41,"Drug-induced osteoporosis, shoulder region",42618639,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.42,"Drug-induced osteoporosis, upper arm",42618640,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.43,"Drug-induced osteoporosis, forearm",42618641,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.44,"Drug-induced osteoporosis, hand",42618642,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.45,"Drug-induced osteoporosis, pelvic region and thigh",42618643,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.46,"Drug-induced osteoporosis, lower leg",42618644,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.47,"Drug-induced osteoporosis, ankle and foot",42618645,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.48,"Drug-induced osteoporosis, other",42618646,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.49,"Drug-induced osteoporosis, site unspecified",42618647,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.50,"Idiopathic osteoporosis, multiple sites",42618648,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.51,"Idiopathic osteoporosis, shoulder region",42618649,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.52,"Idiopathic osteoporosis, upper arm",42618650,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.54,"Idiopathic osteoporosis, hand",42618651,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.55,"Idiopathic osteoporosis, pelvic region and thigh",42618652,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.56,"Idiopathic osteoporosis, lower leg",42618653,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.57,"Idiopathic osteoporosis, ankle and foot",42618654,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.58,"Idiopathic osteoporosis, other",42618655,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.59,"Idiopathic osteoporosis, site unspecified",42618656,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.60,"Localized osteoporosis [Lequesne], multiple sites",42618657,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.61,"Localized osteoporosis [Lequesne], shoulder region",42618658,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.62,"Localized osteoporosis [Lequesne], upper arm",42618659,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.63,"Localized osteoporosis [Lequesne], forearm",42618660,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.64,"Localized osteoporosis [Lequesne], hand",42618661,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.65,"Localized osteoporosis [Lequesne], pelvic region and thigh",42618662,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.66,"Localized osteoporosis [Lequesne], lower leg",42618663,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.67,"Localized osteoporosis [Lequesne], ankle and foot",42618664,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.68,"Localized osteoporosis [Lequesne], other",42618665,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.80,"Other osteoporosis, multiple sites",42618666,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.81,"Other osteoporosis, shoulder region",42618667,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.82,"Other osteoporosis, upper arm",42618668,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.83,"Other osteoporosis, forearm",42618669,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.84,"Other osteoporosis, hand",42618670,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.85,"Other osteoporosis, pelvic region and thigh",42618671,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.86,"Other osteoporosis, lower leg",42618672,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.87,"Other osteoporosis, ankle and foot",42618673,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.88,"Other osteoporosis, other",42618674,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.89,"Other osteoporosis, site unspecified",42618675,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.90,"Osteoporosis, unspecified, multiple sites",42618676,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.91,"Osteoporosis, unspecified, shoulder region",42618677,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.92,"Osteoporosis, unspecified, upper arm",42618678,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.93,"Osteoporosis, unspecified, forearm",42618679,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.94,"Osteoporosis, unspecified, hand",42618680,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.95,"Osteoporosis, unspecified, pelvic region and thigh",42618681,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.96,"Osteoporosis, unspecified, lower leg",42618682,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.97,"Osteoporosis, unspecified, ankle and foot",42618683,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.98,"Osteoporosis, unspecified, other",42618684,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.99,"Osteoporosis, unspecified, site unspecified",42618685,m81,Osteoporosis without pathological fracture,1.4,TRUE
+Z91.7,Personal history of female genital mutilation,42619337,z91,"Personal history of risk-factors, not elsewhere classified",0.5,TRUE
+M19.94,"Arthrosis, unspecified, hand",42619339,m19,Other arthrosis,1.5,TRUE
+M25.26,"Flail joint, lower leg",42619346,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.41,"Effusion of joint, shoulder region",42619347,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.58,"Pain in joint, other",42619348,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.72,"Osteophyte, upper arm",42619349,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.87,"Other specified joint disorders, ankle and foot",42619355,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.93,"Joint disorder, unspecified, forearm",42619356,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M41.10,"Juvenile idiopathic scoliosis, multiple sites in spine",42619363,m41,Scoliosis,0.9,TRUE
+M41.58,"Other secondary scoliosis, sacral and sacrococcygeal region",42619368,m41,Scoliosis,0.9,TRUE
+M80.26,"Osteoporosis of disuse with pathological fracture, lower leg",42619382,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.95,"Unspecified osteoporosis with pathological fracture, pelvic region and thigh",42619383,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M81.21,"Osteoporosis of disuse, shoulder region",42619390,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.53,"Idiopathic osteoporosis, forearm",42619391,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.69,"Localized osteoporosis [Lequesne], site unspecified",42619397,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M19.00,"Primary arthrosis of other joints, multiple sites",42619420,m19,Other arthrosis,1.5,TRUE
+M19.21,"Other secondary arthrosis, shoulder region",42619421,m19,Other arthrosis,1.5,TRUE
+A04,Other bacterial intestinal infections,45532809,a04,Other bacterial intestinal infections,1.1,FALSE
+A04.0,Enteropathogenic Escherichia coli infection,45532810,a04,Other bacterial intestinal infections,1.1,FALSE
+A04.2,Enteroinvasive Escherichia coli infection,45532811,a04,Other bacterial intestinal infections,1.1,FALSE
+A41,Other sepsis,45532831,a41,Other septicaemia,1.6,FALSE
+A41.0,Sepsis due to Staphylococcus aureus,45532832,a41,Other septicaemia,1.6,FALSE
+E05,Thyrotoxicosis [hyperthyroidism],45533007,e05,Thyrotoxicosis [hyperthyroidism],0.9,TRUE
+E53.8,Deficiency of other specified B group vitamins,45533035,e53,Deficiency of other B group vitamins,1.9,FALSE
+E87.3,Alkalosis,45533050,e87,"Other disorders of fluid, electrolyte and acid-base balance",2.3,FALSE
+F00,Dementia in Alzheimer disease,45533052,f00,Dementia in Alzheimer's disease,7.1,TRUE
+F01.9,"Vascular dementia, unspecified",45533058,f01,Vascular dementia,2,TRUE
+H91.8,Other specified hearing loss,45533421,h91,Other hearing loss,0.9,TRUE
+I69.3,Sequelae of cerebral infarction,45533476,i69,Sequelae of cerebrovascular disease,3.7,TRUE
+K26.4,"Duodenal ulcer, chronic or unspecified with haemorrhage",45533583,k26,Duodenal ulcer,1.6,FALSE
+K92.1,Melaena,45533624,k92,Other diseases of digestive system,0.8,FALSE
+K92.2,"Gastrointestinal haemorrhage, unspecified",45533625,k92,Other diseases of digestive system,0.8,FALSE
+M79.5,Residual foreign body in soft tissue,45533938,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M81.3,Postsurgical malabsorption osteoporosis,45533961,m81,Osteoporosis without pathological fracture,1.4,TRUE
+N17.2,Acute renal failure with medullary necrosis,45534122,n17,Acute renal failure,1.8,FALSE
+N18.8,Other chronic renal failure,45534123,n18,Chronic renal failure,1.4,TRUE
+N20.2,Calculus of kidney with calculus of ureter,45534124,n20,Calculus of kidney and ureter,0.7,TRUE
+R00.8,Other and unspecified abnormalities of heart beat,45534420,r00,Abnormalities of heart beat,0.7,FALSE
+R02,"Gangrene, not elsewhere classified",45534421,r02,"Gangrene, not elsewhere classified",1,FALSE
+R26.0,Ataxic gait,45534437,r26,Abnormalities of gait and mobility,2.6,TRUE
+R41.8,Other and unspecified symptoms and signs involving cognitive functions and awareness,45534452,r41,Other symptoms and signs involving cognitive functions and awareness,2.7,TRUE
+S01.5,Open wound of lip and oral cavity,45534515,s01,Open wound of head,1.1,FALSE
+S51.9,"Open wound of forearm, part unspecified",45535111,s51,Open wound of forearm,0.5,FALSE
+S72.2,Subtrochanteric fracture,45535827,s72,Fracture of femur,1.4,FALSE
+Y84.9,"Medical procedure, unspecified as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",45537587,y84,Other medical procedures as the cause of abnormal reaction of the patient,0.7,FALSE
+Z50.3,Drug rehabilitation,45537650,z50,"Care involving use of rehabilitation
+procedures",2.1,FALSE
+Z50.7,"Occupational therapy and vocational rehabilitation, not elsewhere classified",45537651,z50,"Care involving use of rehabilitation
+procedures",2.1,FALSE
+Z60.8,Other problems related to social environment,45537660,z60,Problems related to social environment,1.8,TRUE
+Z74.2,Need for assistance at home and no other household member able to render care,45537671,z74,Problems related to care-provider dependency,1.1,TRUE
+Z74.8,Other problems related to care-provider dependency,45537672,z74,Problems related to care-provider dependency,1.1,TRUE
+Z75.0,Medical services not available in home,45537673,z75,Problems related to medical facilities and other health care,2,FALSE
+Z93.8,Other artificial opening status,45537701,z93,Artificial opening status,1,FALSE
+Z93.9,"Artificial opening status, unspecified",45537702,z93,Artificial opening status,1,FALSE
+A04.4,Other intestinal Escherichia coli infections,45537710,a04,Other bacterial intestinal infections,1.1,FALSE
+B95.1,"Streptococcus, group B, as the cause of diseases classified to other chapters",45537778,b95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,1.7,FALSE
+B95.8,Unspecified staphylococcus as the cause of diseases classified to other chapters,45537780,b95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,1.7,FALSE
+B96.5,Pseudomonas (aeruginosa) as the cause of diseases classified to other chapters,45537782,b96,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9,FALSE
+D64,Other anaemias,45537924,d64,Other anaemias,0.4,FALSE
+E05.8,Other thyrotoxicosis,45537950,e05,Thyrotoxicosis [hyperthyroidism],0.9,TRUE
+E83,Disorders of mineral metabolism,45537988,e83,Disorders of mineral metabolism,0.4,FALSE
+E87.5,Hyperkalaemia,45537990,e87,"Other disorders of fluid, electrolyte and acid-base balance",2.3,FALSE
+E87.6,Hypokalaemia,45537991,e87,"Other disorders of fluid, electrolyte and acid-base balance",2.3,FALSE
+F01.3,Mixed cortical and subcortical vascular dementia,45537996,f01,Vascular dementia,2,TRUE
+G20,Parkinson disease,45538098,g20,Parkinson's disease,1.8,TRUE
+G30,Alzheimer disease,45538101,g30,Alzheimer's disease,4,TRUE
+G31,"Other degenerative diseases of nervous system, not elsewhere classified",45538102,g31,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2,TRUE
+G45.0,Vertebro-basilar artery syndrome,45538120,g45,Transient cerebral ischaemic attacks and related syndromes,1.2,FALSE
+H54.1,"Severe visual impairment, binocular",45538321,h54,Blindness and low vision,1.9,TRUE
+I63.0,Cerebral infarction due to thrombosis of precerebral arteries,45538393,i63,Cerebral Infarction,0.8,FALSE
+I67.1,"Cerebral aneurysm, nonruptured",45538401,i67,Other cerebrovascular diseases,2.6,TRUE
+I67.3,Progressive vascular leukoencephalopathy,45538402,i67,Other cerebrovascular diseases,2.6,TRUE
+I69.1,Sequelae of intracerebral haemorrhage,45538404,i69,Sequelae of cerebrovascular disease,3.7,TRUE
+I69.8,Sequelae of other and unspecified cerebrovascular diseases,45538414,i69,Sequelae of cerebrovascular disease,3.7,TRUE
+J96.9,"Respiratory failure, unspecified",45538490,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+L89.2,Stage III decubitus ulcer,45538592,l89,Decubitus ulcer,1.7,FALSE
+M25,"Other joint disorders, not elsewhere classified",45538734,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.6,"Stiffness of joint, not elsewhere classified",45538741,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M81.0,Postmenopausal osteoporosis,45538882,m81,Osteoporosis without pathological fracture,1.4,TRUE
+N39.3,Stress incontinence,45539046,n39,Other disorders of urinary system (includes urinary tract infection and urinary incontinence),3.2,FALSE
+R00.1,"Bradycardia, unspecified",45539313,r00,Abnormalities of heart beat,0.7,FALSE
+R11,Nausea and vomiting,45539317,r11,Nausea and vomiting,0.3,FALSE
+R41.3,Other amnesia,45539342,r41,Other symptoms and signs involving cognitive functions and awareness,2.7,TRUE
+R63.8,Other symptoms and signs concerning food and fluid intake,45539353,r63,Symptoms and signs concerning food and fluid intake,0.9,FALSE
+R94.0,Abnormal results of function studies of central nervous system,45539370,r94,Abnormal results of function studies,1.4,FALSE
+R94.3,Abnormal results of cardiovascular function studies,45539372,r94,Abnormal results of function studies,1.4,FALSE
+Z60.5,Target of perceived adverse discrimination and persecution,45542444,z60,Problems related to social environment,1.8,TRUE
+Z73.3,"Stress, not elsewhere classified",45542455,z73,"Problems related to life-management
+difficulty",0.6,FALSE
+Z87.1,Personal history of diseases of the digestive system,45542474,z87,Personal history of other diseases and conditions,1.5,TRUE
+Z91,"Personal history of risk-factors, not elsewhere classified",45542488,z91,"Personal history of risk-factors, not elsewhere classified",0.5,TRUE
+Z91.1,Personal history of noncompliance with medical treatment and regimen,45542491,z91,"Personal history of risk-factors, not elsewhere classified",0.5,TRUE
+Z93.2,Ileostomy status,45542492,z93,Artificial opening status,1,FALSE
+Z93.4,Other artificial openings of gastrointestinal tract status,45542493,z93,Artificial opening status,1,FALSE
+Z99.8,Dependence on other enabling machines and devices,45542508,z99,Dependence on enabling machines and devices,0.8,TRUE
+B96.0,Mycoplasma pneumoniae [M. pneumoniae] as the cause of diseases classified to other chapters,45542577,b96,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9,FALSE
+E16.8,Other specified disorders of pancreatic internal secretion,45542744,e16,"Other disorders of pancreatic internal
+secretion",1.4,FALSE
+E83.2,Disorders of zinc metabolism,45542776,e83,Disorders of mineral metabolism,0.4,FALSE
+E83.3,Disorders of phosphorus metabolism and phosphatases,45542777,e83,Disorders of mineral metabolism,0.4,FALSE
+E87.1,Hypo-osmolality and hyponatraemia,45542779,e87,"Other disorders of fluid, electrolyte and acid-base balance",2.3,FALSE
+E87.8,"Other disorders of electrolyte and fluid balance, not elsewhere classified",45542782,e87,"Other disorders of fluid, electrolyte and acid-base balance",2.3,FALSE
+F10.3,"Mental and behavioural disorders due to use of alcohol, Withdrawal state",45542789,f10,Mental and behavioural disorders due to use of alcohol,0.7,TRUE
+G31.8,Other specified degenerative diseases of nervous system,45542879,g31,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2,TRUE
+G45.9,"Transient cerebral ischaemic attack, unspecified",45542892,g45,Transient cerebral ischaemic attacks and related syndromes,1.2,FALSE
+H54.0,"Blindness, binocular",45543087,h54,Blindness and low vision,1.9,TRUE
+I63,Cerebral infarction,45543186,i63,Cerebral Infarction,0.8,FALSE
+I67.8,Other specified cerebrovascular diseases,45543191,i67,Other cerebrovascular diseases,2.6,TRUE
+I69,Sequelae of cerebrovascular disease,45543192,i69,Sequelae of cerebrovascular disease,3.7,TRUE
+I69.0,Sequelae of subarachnoid haemorrhage,45543193,i69,Sequelae of cerebrovascular disease,3.7,TRUE
+I95.2,Hypotension due to drugs,45543247,i95,Hypotension,1.6,FALSE
+I95.8,Other hypotension,45543248,i95,Hypotension,1.6,FALSE
+K52.0,Gastroenteritis and colitis due to radiation,45543319,k52,Other noninfective gastroenteritis and colitis,0.3,FALSE
+K59,Other functional intestinal disorders,45543326,k59,Other functional intestinal disorders,1.8,TRUE
+K59.1,Functional diarrhoea,45543327,k59,Other functional intestinal disorders,1.8,TRUE
+L03.2,Cellulitis of face,45543361,l03,Cellulitis,2,TRUE
+L03.8,Cellulitis of other sites,45543362,l03,Cellulitis,2,TRUE
+M15.0,Primary generalized (osteo)arthrosis,45543479,m15,Polyarthrosis,0.4,TRUE
+M15.1,Heberden nodes (with arthropathy),45543480,m15,Polyarthrosis,0.4,TRUE
+M15.9,"Polyarthrosis, unspecified",45543481,m15,Polyarthrosis,0.4,TRUE
+M19.9,"Arthrosis, unspecified",45543488,m19,Other arthrosis,1.5,TRUE
+M25.8,Other specified joint disorders,45543559,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M25.9,"Joint disorder, unspecified",45543562,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M79.4,Hypertrophy of (infrapatellar) fat pad,45543688,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M81.1,Postoophorectomy osteoporosis,45543707,m81,Osteoporosis without pathological fracture,1.4,TRUE
+M81.6,Localized osteoporosis [Lequesne],45543708,m81,Osteoporosis without pathological fracture,1.4,TRUE
+N18.3,"Chronic kidney disease, stage 3",45543858,n18,Chronic renal failure,1.4,TRUE
+R29.4,Clicking hip,45544139,r29,"Other symptoms and signs involving the nervous and musculoskeletal systems
+Tendency to fall)",3.6,FALSE
+R41,Other symptoms and signs involving cognitive functions and awareness,45544146,r41,Other symptoms and signs involving cognitive functions and awareness,2.7,TRUE
+R45.3,Demoralization and apathy,45544148,r45,Symptoms and signs involving emotional state,1.2,FALSE
+R63.5,Abnormal weight gain,45544155,r63,Symptoms and signs concerning food and fluid intake,0.9,FALSE
+R94.7,Abnormal results of other endocrine function studies,45544170,r94,Abnormal results of function studies,1.4,FALSE
+S00.2,Other superficial injuries of eyelid and periocular area,45544173,s00,Superficial injury of head,3.2,FALSE
+S06,Intracranial injury,45544245,s06,Intracranial injury,2.4,FALSE
+S22.9,"Fracture of bony thorax, part unspecified",45544426,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S42.2,Fracture of upper end of humerus,45544677,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S51.8,Open wound of other parts of forearm,45544814,s51,Open wound of forearm,0.5,FALSE
+S80.9,"Superficial injury of lower leg, unspecified",45545631,s80,Superficial injury of lower leg,2,FALSE
+T83.9,"Unspecified complication of genitourinary prosthetic device, implant and graft",45546724,t83,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4,FALSE
+U80.0,Penicillin resistant agent,45546769,u80,"Agent resistant to penicillin and related
+antibiotics",0.8,FALSE
+Y84.1,"Kidney dialysis as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",45547253,y84,Other medical procedures as the cause of abnormal reaction of the patient,0.7,FALSE
+Z50.5,Speech therapy,45547321,z50,"Care involving use of rehabilitation
+procedures",2.1,FALSE
+Z50.6,Orthoptic training,45547322,z50,"Care involving use of rehabilitation
+procedures",2.1,FALSE
+Z60,Problems related to social environment,45547330,z60,Problems related to social environment,1.8,TRUE
+Z74.3,Need for continuous supervision,45547341,z74,Problems related to care-provider dependency,1.1,TRUE
+Z75.5,Holiday relief care,45547342,z75,Problems related to medical facilities and other health care,2,FALSE
+Z87.2,Personal history of diseases of the skin and subcutaneous tissue,45547361,z87,Personal history of other diseases and conditions,1.5,TRUE
+Z99.3,Dependence on wheelchair,45547382,z99,Dependence on enabling machines and devices,0.8,TRUE
+B95.0,"Streptococcus, group A, as the cause of diseases classified to other chapters",45547476,b95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,1.7,FALSE
+B96.6,Bacillus fragilis [B. fragilis] as the cause of diseases classified to other chapters,45547477,b96,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9,FALSE
+D64.2,Secondary sideroblastic anaemia due to drugs and toxins,45547608,d64,Other anaemias,0.4,FALSE
+E87.4,Mixed disorder of acid-base balance,45547666,e87,"Other disorders of fluid, electrolyte and acid-base balance",2.3,FALSE
+F10.6,"Mental and behavioural disorders due to use of alcohol, Amnesic syndrome",45547673,f10,Mental and behavioural disorders due to use of alcohol,0.7,TRUE
+F10.7,"Mental and behavioural disorders due to use of alcohol, Residual and late-onset psychotic disorder",45547674,f10,Mental and behavioural disorders due to use of alcohol,0.7,TRUE
+H91.9,"Hearing loss, unspecified",45547996,h91,Other hearing loss,0.9,TRUE
+I63.6,"Cerebral infarction due to cerebral venous thrombosis, nonpyogenic",45548031,i63,Cerebral Infarction,0.8,FALSE
+J18,"Pneumonia, organism unspecified",45548107,j18,"Pneumonia, organism unspecified",1.1,FALSE
+J69.8,Pneumonitis due to other solids and liquids,45548120,j69,Pneumonitis due to solids and liquids,1,FALSE
+K26.1,"Duodenal ulcer, acute with perforation",45548151,k26,Duodenal ulcer,1.6,FALSE
+K52.8,Other specified noninfective gastroenteritis and colitis,45548162,k52,Other noninfective gastroenteritis and colitis,0.3,FALSE
+M15.3,Secondary multiple arthrosis,45548320,m15,Polyarthrosis,0.4,TRUE
+M19.8,Other specified arthrosis,45548327,m19,Other arthrosis,1.5,TRUE
+M25.3,Other instability of joint,45548391,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M41.0,Infantile idiopathic scoliosis,45548408,m41,Scoliosis,0.9,TRUE
+M41.4,Neuromuscular scoliosis,45548411,m41,Scoliosis,0.9,TRUE
+M79.2,"Neuralgia and neuritis, unspecified",45548502,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+N17.8,Other acute renal failure,45548652,n17,Acute renal failure,1.8,FALSE
+N39.0,"Urinary tract infection, site not specified",45548665,n39,Other disorders of urinary system (includes urinary tract infection and urinary incontinence),3.2,FALSE
+R45.0,Nervousness,45548969,r45,Symptoms and signs involving emotional state,1.2,FALSE
+R45.5,Hostility,45548970,r45,Symptoms and signs involving emotional state,1.2,FALSE
+R50.8,Other specified fever,45548973,r50,Fever of unknown origin,0.1,FALSE
+S00.0,Superficial injury of scalp,45548998,s00,Superficial injury of head,3.2,FALSE
+S00.4,Superficial injury of ear,45549004,s00,Superficial injury of head,3.2,FALSE
+S06.9,"Intracranial injury, unspecified",45549096,s06,Intracranial injury,2.4,FALSE
+S80.1,Contusion of other and unspecified parts of lower leg,45550389,s80,Superficial injury of lower leg,2,FALSE
+Z22.6,Carrier of human T-lymphotropic virus type- 1 [HTLV-1] infection,45552069,z22,Carrier of infectious disease,1.7,FALSE
+Z75.9,Unspecified problem related to medical facilities and other health care,45552106,z75,Problems related to medical facilities and other health care,2,FALSE
+Z87.4,Personal history of diseases of the genitourinary system,45552125,z87,Personal history of other diseases and conditions,1.5,TRUE
+Z93.6,Other artificial openings of urinary tract status,45552143,z93,Artificial opening status,1,FALSE
+Z99.1,Dependence on respirator,45552148,z99,Dependence on enabling machines and devices,0.8,TRUE
+A04.7,Enterocolitis due to Clostridium difficile,45552153,a04,Other bacterial intestinal infections,1.1,FALSE
+A41.4,Sepsis due to anaerobes,45552178,a41,Other septicaemia,1.6,FALSE
+E55.0,"Rickets, active",45552397,e55,Vitamin D deficiency,1,FALSE
+E83.1,Disorders of iron metabolism,45552418,e83,Disorders of mineral metabolism,0.4,FALSE
+F01.0,Vascular dementia of acute onset,45552425,f01,Vascular dementia,2,TRUE
+F32.1,Moderate depressive episode,45552478,f32,Depressive episode,0.5,FALSE
+G30.1,Alzheimer disease with late onset,45552521,g30,Alzheimer's disease,4,TRUE
+G40.1,Localization-related (focal)(partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures,45552523,g40,Epilepsy,1.5,TRUE
+H91.2,Sudden idiopathic hearing loss,45552760,h91,Other hearing loss,0.9,TRUE
+I67.2,Cerebral atherosclerosis,45552811,i67,Other cerebrovascular diseases,2.6,TRUE
+K26,Duodenal ulcer,45552919,k26,Duodenal ulcer,1.6,FALSE
+K26.5,"Duodenal ulcer, chronic or unspecified with perforation",45552920,k26,Duodenal ulcer,1.6,FALSE
+K26.7,"Duodenal ulcer, chronic without haemorrhage or perforation",45552921,k26,Duodenal ulcer,1.6,FALSE
+K59.3,"Megacolon, not elsewhere classified",45552942,k59,Other functional intestinal disorders,1.8,TRUE
+K59.9,"Functional intestinal disorder, unspecified",45552943,k59,Other functional intestinal disorders,1.8,TRUE
+M79.7,Fibromyalgia,45553272,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M80.9,Unspecified osteoporosis with pathological fracture,45553292,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M81.5,Idiopathic osteoporosis,45553293,m81,Osteoporosis without pathological fracture,1.4,TRUE
+N18.2,"Chronic kidney disease, stage 2",45553437,n18,Chronic renal failure,1.4,TRUE
+N18.9,"Chronic kidney disease, unspecified",45553438,n18,Chronic renal failure,1.4,TRUE
+R31,Unspecified haematuria,45553726,r31,Unspecified haematuria,3,FALSE
+R40.0,Somnolence,45553729,r40,"Somnolence, stupor and coma",2.5,FALSE
+R40.1,Stupor,45553730,r40,"Somnolence, stupor and coma",2.5,FALSE
+R41.2,Retrograde amnesia,45553735,r41,Other symptoms and signs involving cognitive functions and awareness,2.7,TRUE
+R63.2,Polyphagia,45553743,r63,Symptoms and signs concerning food and fluid intake,0.9,FALSE
+R79.8,Other specified abnormal findings of blood chemistry,45553747,r79,Other abnormal findings of blood chemistry,0.6,FALSE
+S00,Superficial injury of head,45553757,s00,Superficial injury of head,3.2,FALSE
+S00.1,Contusion of eyelid and periocular area,45553759,s00,Superficial injury of head,3.2,FALSE
+S01.2,Open wound of nose,45553788,s01,Open wound of head,1.1,FALSE
+S01.3,Open wound of ear,45553789,s01,Open wound of head,1.1,FALSE
+S01.4,Open wound of cheek and temporomandibular area,45553793,s01,Open wound of head,1.1,FALSE
+S22.1,Multiple fractures of thoracic spine,45553994,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.2,Fracture of sternum,45553995,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S72.7,Multiple fractures of femur,45555141,s72,Fracture of femur,1.4,FALSE
+T83.4,"Mechanical complication of other prosthetic devices, implants and grafts in genital tract",45556263,t83,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4,FALSE
+T83.5,"Infection and inflammatory reaction due to prosthetic device, implant and graft in urinary system",45556266,t83,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4,FALSE
+Z22.3,Carrier of other specified bacterial diseases,45556820,z22,Carrier of infectious disease,1.7,FALSE
+Z22.5,Carrier of viral hepatitis,45556821,z22,Carrier of infectious disease,1.7,FALSE
+Z50.8,Care involving use of other rehabilitation procedures,45556842,z50,"Care involving use of rehabilitation
+procedures",2.1,FALSE
+Z87.7,"Personal history of congenital malformations, deformations and chromosomal abnormalities",45556869,z87,Personal history of other diseases and conditions,1.5,TRUE
+A41.5,Sepsis due to other Gram-negative organisms,45556902,a41,Other septicaemia,1.6,FALSE
+B95.4,Other streptococcus as the cause of diseases classified to other chapters,45556956,b95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,1.7,FALSE
+B96.7,Clostridium perfringens [C. perfringens] as the cause of diseases classified to other chapters,45556957,b96,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9,FALSE
+E05.1,Thyrotoxicosis with toxic single thyroid nodule,45557104,e05,Thyrotoxicosis [hyperthyroidism],0.9,TRUE
+E83.0,Disorders of copper metabolism,45557141,e83,Disorders of mineral metabolism,0.4,FALSE
+F00.2,"Dementia in Alzheimer disease, atypical or mixed type",45557146,f00,Dementia in Alzheimer's disease,7.1,TRUE
+F01,Vascular dementia,45557147,f01,Vascular dementia,2,TRUE
+F05.1,Delirium superimposed on dementia,45557150,f05,"Delirium, not induced by alcohol and other psychoactive substances",3.2,FALSE
+F10.9,"Mental and behavioural disorders due to use of alcohol, Unspecified mental and behavioural disorder",45557158,f10,Mental and behavioural disorders due to use of alcohol,0.7,TRUE
+F32.2,Severe depressive episode without psychotic symptoms,45557202,f32,Depressive episode,0.5,FALSE
+G31.1,"Senile degeneration of brain, not elsewhere classified",45557226,g31,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2,TRUE
+G40.4,Other generalized epilepsy and epileptic syndromes,45557231,g40,Epilepsy,1.5,TRUE
+G45.2,Multiple and bilateral precerebral artery syndromes,45557239,g45,Transient cerebral ischaemic attacks and related syndromes,1.2,FALSE
+H54.3,"Mild or no visual impairment, binocular",45557476,h54,Blindness and low vision,1.9,TRUE
+I63.1,Cerebral infarction due to embolism of precerebral arteries,45557550,i63,Cerebral Infarction,0.8,FALSE
+J96.1,Chronic respiratory failure,45557632,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+K59.0,Constipation,45557663,k59,Other functional intestinal disorders,1.8,TRUE
+L03.0,Cellulitis of finger and toe,45557691,l03,Cellulitis,2,TRUE
+M48.0,Spinal stenosis,45557888,m48,Spinal stenosis (secondary code only),0.5,TRUE
+N17.0,Acute renal failure with tubular necrosis,45558139,n17,Acute renal failure,1.8,FALSE
+N17.1,Acute renal failure with acute cortical necrosis,45558140,n17,Acute renal failure,1.8,FALSE
+N20.9,"Urinary calculus, unspecified",45558141,n20,Calculus of kidney and ureter,0.7,TRUE
+N28.1,Cyst of kidney,45558144,n28,"Other disorders of kidney and ureter, not elsewhere classified",1.3,FALSE
+R00.2,Palpitations,45558446,r00,Abnormalities of heart beat,0.7,FALSE
+R40.2,"Coma, unspecified",45558463,r40,"Somnolence, stupor and coma",2.5,FALSE
+R41.0,"Disorientation, unspecified",45558469,r41,Other symptoms and signs involving cognitive functions and awareness,2.7,TRUE
+R47.1,Dysarthria and anarthria,45558471,r47,"Speech disturbances, not elsewhere classified",1,FALSE
+R69,Unknown and unspecified causes of morbidity,45558480,r69,Unknown and unspecified causes of morbidity,1.3,FALSE
+R79.0,Abnormal level of blood mineral,45558482,r79,Other abnormal findings of blood chemistry,0.6,FALSE
+S32.2,Fracture of coccyx,45558837,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S42.8,Fracture of other parts of shoulder and upper arm,45559050,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S72.9,"Fracture of femur, part unspecified",45559880,s72,Fracture of femur,1.4,FALSE
+Y84.7,"Blood-sampling as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",45561584,y84,Other medical procedures as the cause of abnormal reaction of the patient,0.7,FALSE
+Z60.3,Acculturation difficulty,45561641,z60,Problems related to social environment,1.8,TRUE
+Z75.3,Unavailability and inaccessibility of health-care facilities,45561651,z75,Problems related to medical facilities and other health care,2,FALSE
+A04.8,Other specified bacterial intestinal infections,45561679,a04,Other bacterial intestinal infections,1.1,FALSE
+A41.1,Sepsis due to other specified staphylococcus,45561702,a41,Other septicaemia,1.6,FALSE
+A41.3,Sepsis due to Haemophilus influenzae,45561703,a41,Other septicaemia,1.6,FALSE
+B95.2,Streptococcus group D and enterococcus as the cause of diseases classified to other chapters,45561774,b95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,1.7,FALSE
+B96.1,Klebsiella pneumoniae [K. pneumoniae] as the cause of diseases classified to other chapters,45561775,b96,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9,FALSE
+F00.9,"Dementia in Alzheimer disease, unspecified",45561994,f00,Dementia in Alzheimer's disease,7.1,TRUE
+F32.0,Mild depressive episode,45562041,f32,Depressive episode,0.5,FALSE
+G40.5,Special epileptic syndromes,45562082,g40,Epilepsy,1.5,TRUE
+G40.9,"Epilepsy, unspecified",45562083,g40,Epilepsy,1.5,TRUE
+G45,Transient cerebral ischaemic attacks and related syndromes,45562092,g45,Transient cerebral ischaemic attacks and related syndromes,1.2,FALSE
+G81.9,"Hemiplegia, unspecified",45562106,g81,Hemiplegia,4.4,TRUE
+H54.6,"Moderate visual impairment, monocular",45562285,h54,Blindness and low vision,1.9,TRUE
+I63.3,Cerebral infarction due to thrombosis of cerebral arteries,45562366,i63,Cerebral Infarction,0.8,FALSE
+I95.0,Idiopathic hypotension,45562424,i95,Hypotension,1.6,FALSE
+J18.1,"Lobar pneumonia, unspecified",45562442,j18,"Pneumonia, organism unspecified",1.1,FALSE
+J18.2,"Hypostatic pneumonia, unspecified",45562443,j18,"Pneumonia, organism unspecified",1.1,FALSE
+K52.1,Toxic gastroenteritis and colitis,45562495,k52,Other noninfective gastroenteritis and colitis,0.3,FALSE
+M15.8,Other polyarthrosis,45562646,m15,Polyarthrosis,0.4,TRUE
+M25.4,Effusion of joint,45562695,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M41,Scoliosis,45562714,m41,Scoliosis,0.9,TRUE
+M79,"Other soft tissue disorders, not elsewhere classified",45562836,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M80.5,Idiopathic osteoporosis with pathological fracture,45562850,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M81.4,Drug-induced osteoporosis,45562859,m81,Osteoporosis without pathological fracture,1.4,TRUE
+N39.8,Other specified disorders of urinary system,45563014,n39,Other disorders of urinary system (includes urinary tract infection and urinary incontinence),3.2,FALSE
+R26.1,Paralytic gait,45563296,r26,Abnormalities of gait and mobility,2.6,TRUE
+R29.0,Tetany,45563297,r29,"Other symptoms and signs involving the nervous and musculoskeletal systems
+Tendency to fall)",3.6,FALSE
+R44.3,"Hallucinations, unspecified",45563307,r44,Other symptoms and signs involving general sensations and perceptions,1.6,FALSE
+R63.1,Polydipsia,45563320,r63,Symptoms and signs concerning food and fluid intake,0.9,FALSE
+R63.3,Feeding difficulties and mismanagement,45563321,r63,Symptoms and signs concerning food and fluid intake,0.9,FALSE
+R94.6,Abnormal results of thyroid function studies,45563335,r94,Abnormal results of function studies,1.4,FALSE
+S00.7,Multiple superficial injuries of head,45563348,s00,Superficial injury of head,3.2,FALSE
+S00.8,Superficial injury of other parts of head,45563349,s00,Superficial injury of head,3.2,FALSE
+S06.4,Epidural haemorrhage,45563417,s06,Intracranial injury,2.4,FALSE
+S06.5,Traumatic subdural haemorrhage,45563422,s06,Intracranial injury,2.4,FALSE
+S80.8,Other superficial injuries of lower leg,45564799,s80,Superficial injury of lower leg,2,FALSE
+Z22.2,Carrier of diphtheria,45566408,z22,Carrier of infectious disease,1.7,FALSE
+Z91.6,Personal history of other physical trauma,45566475,z91,"Personal history of risk-factors, not elsewhere classified",0.5,TRUE
+Z99.9,Dependence on unspecified enabling machine and device,45566485,z99,Dependence on enabling machines and devices,0.8,TRUE
+B96.2,Escherichia coli [E. coli] as the cause of diseases classified to other chapters,45566566,b96,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9,FALSE
+E05.3,Thyrotoxicosis from ectopic thyroid tissue,45566719,e05,Thyrotoxicosis [hyperthyroidism],0.9,TRUE
+E05.5,Thyroid crisis or storm,45566720,e05,Thyrotoxicosis [hyperthyroidism],0.9,TRUE
+E53,Deficiency of other B group vitamins,45566745,e53,Deficiency of other B group vitamins,1.9,FALSE
+E83.5,Disorders of calcium metabolism,45566763,e83,Disorders of mineral metabolism,0.4,FALSE
+F03,Unspecified dementia,45566772,f03,Unspecified dementia,2.1,TRUE
+G30.0,Alzheimer disease with early onset,45566868,g30,Alzheimer's disease,4,TRUE
+G45.4,Transient global amnesia,45566883,g45,Transient cerebral ischaemic attacks and related syndromes,1.2,FALSE
+H54.2,"Moderate visual impairment, binocular",45567102,h54,Blindness and low vision,1.9,TRUE
+H91.0,Ototoxic hearing loss,45567152,h91,Other hearing loss,0.9,TRUE
+J69.1,Pneumonitis due to oils and essences,45567272,j69,Pneumonitis due to solids and liquids,1,FALSE
+K92,Other diseases of digestive system,45567332,k92,Other diseases of digestive system,0.8,FALSE
+L89.1,Stage II decubitus ulcer,45567371,l89,Decubitus ulcer,1.7,FALSE
+M25.2,Flail joint,45567527,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M79.0,"Rheumatism, unspecified",45567658,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M80.4,Drug-induced osteoporosis with pathological fracture,45567669,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M81.8,Other osteoporosis,45567679,m81,Osteoporosis without pathological fracture,1.4,TRUE
+N17.9,"Acute renal failure, unspecified",45567829,n17,Acute renal failure,1.8,FALSE
+N20.0,Calculus of kidney,45567830,n20,Calculus of kidney and ureter,0.7,TRUE
+N39,Other disorders of urinary system,45567841,n39,Other disorders of urinary system (includes urinary tract infection and urinary incontinence),3.2,FALSE
+R44.0,Auditory hallucinations,45568133,r44,Other symptoms and signs involving general sensations and perceptions,1.6,FALSE
+R45.8,Other symptoms and signs involving emotional state,45568134,r45,Symptoms and signs involving emotional state,1.2,FALSE
+R50,Fever of other and unknown origin,45568138,r50,Fever of unknown origin,0.1,FALSE
+R54,Senility,45568140,r54,Senility,2.2,TRUE
+R55,Syncope and collapse,45568141,r55,Syncope and collapse,1.8,FALSE
+R63.4,Abnormal weight loss,45568144,r63,Symptoms and signs concerning food and fluid intake,0.9,FALSE
+R94.4,Abnormal results of kidney function studies,45568158,r94,Abnormal results of function studies,1.4,FALSE
+R94.8,Abnormal results of function studies of other organs and systems,45568159,r94,Abnormal results of function studies,1.4,FALSE
+S06.1,Traumatic cerebral oedema,45568226,s06,Intracranial injury,2.4,FALSE
+S72,Fracture of femur,45569417,s72,Fracture of femur,1.4,FALSE
+S72.3,Fracture of shaft of femur,45569475,s72,Fracture of femur,1.4,FALSE
+S72.4,Fracture of lower end of femur,45569513,s72,Fracture of femur,1.4,FALSE
+S80.0,Contusion of knee,45569633,s80,Superficial injury of lower leg,2,FALSE
+T83.2,Mechanical complication of graft of urinary organ,45570728,t83,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4,FALSE
+T83.6,"Infection and inflammatory reaction due to prosthetic device, implant and graft in genital tract",45570733,t83,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4,FALSE
+Y84.2,"Radiological procedure and radiotherapy as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",45571285,y84,Other medical procedures as the cause of abnormal reaction of the patient,0.7,FALSE
+Z22.0,Carrier of typhoid,45571330,z22,Carrier of infectious disease,1.7,FALSE
+Z22.4,Carrier of infections with a predominantly sexual mode of transmission,45571331,z22,Carrier of infectious disease,1.7,FALSE
+Z60.0,Problems of adjustment to life-cycle transitions,45571372,z60,Problems related to social environment,1.8,TRUE
+Z75.2,Other waiting period for investigation and treatment,45571387,z75,Problems related to medical facilities and other health care,2,FALSE
+Z87.0,Personal history of diseases of the respiratory system,45571398,z87,Personal history of other diseases and conditions,1.5,TRUE
+E16,Other disorders of pancreatic internal secretion,45571665,e16,"Other disorders of pancreatic internal
+secretion",1.4,FALSE
+E16.0,Drug-induced hypoglycaemia without coma,45571666,e16,"Other disorders of pancreatic internal
+secretion",1.4,FALSE
+E87.0,Hyperosmolality and hypernatraemia,45571696,e87,"Other disorders of fluid, electrolyte and acid-base balance",2.3,FALSE
+E87.2,Acidosis,45571697,e87,"Other disorders of fluid, electrolyte and acid-base balance",2.3,FALSE
+F05.0,"Delirium not superimposed on dementia, so described",45571703,f05,"Delirium, not induced by alcohol and other psychoactive substances",3.2,FALSE
+F32.8,Other depressive episodes,45571759,f32,Depressive episode,0.5,FALSE
+F32.9,"Depressive episode, unspecified",45571760,f32,Depressive episode,0.5,FALSE
+G81,Hemiplegia,45571827,g81,Hemiplegia,4.4,TRUE
+I67.6,Nonpyogenic thrombosis of intracranial venous system,45572103,i67,Other cerebrovascular diseases,2.6,TRUE
+I95.9,"Hypotension, unspecified",45572153,i95,Hypotension,1.6,FALSE
+J18.0,"Bronchopneumonia, unspecified",45572164,j18,"Pneumonia, organism unspecified",1.1,FALSE
+K52.9,"Noninfective gastroenteritis and colitis, unspecified",45572215,k52,Other noninfective gastroenteritis and colitis,0.3,FALSE
+K92.8,Other specified diseases of digestive system,45572239,k92,Other diseases of digestive system,0.8,FALSE
+L08.0,Pyoderma,45572260,l08,Other local infections of skin and subcutaneous tissue,0.4,FALSE
+L89.3,Stage IV decubitus ulcer,45572288,l89,Decubitus ulcer,1.7,FALSE
+M80.0,Postmenopausal osteoporosis with pathological fracture,45572553,m80,Osteoporosis with pathological fracture,0.8,TRUE
+N39.2,"Orthostatic proteinuria, unspecified",45572709,n39,Other disorders of urinary system (includes urinary tract infection and urinary incontinence),3.2,FALSE
+R13,Dysphagia,45573013,r13,Dysphagia,0.8,FALSE
+R44.8,Other and unspecified symptoms and signs involving general sensations and perceptions,45573026,r44,Other symptoms and signs involving general sensations and perceptions,1.6,FALSE
+S22.3,Fracture of rib,45573285,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S32.8,Fracture of other and unspecified parts of lumbar spine and pelvis,45573423,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S42.1,Fracture of scapula,45573538,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S51.7,Multiple open wounds of forearm,45573714,s51,Open wound of forearm,0.5,FALSE
+S72.1,Pertrochanteric fracture,45574361,s72,Fracture of femur,1.4,FALSE
+S72.8,Fractures of other parts of femur,45574482,s72,Fracture of femur,1.4,FALSE
+T83.1,Mechanical complication of other urinary devices and implants,45575581,t83,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4,FALSE
+W06,Fall involving bed,45575895,w06,Fall involving bed,1.1,FALSE
+X59.0,Exposure to unspecified factor causing fracture,45575993,x59,Exposure to unspecified factor,1.5,FALSE
+Y84.5,"Insertion of gastric or duodenal sound as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",45576101,y84,Other medical procedures as the cause of abnormal reaction of the patient,0.7,FALSE
+Y84.8,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",45576102,y84,Other medical procedures as the cause of abnormal reaction of the patient,0.7,FALSE
+Z22.8,Carrier of other infectious diseases,45576142,z22,Carrier of infectious disease,1.7,FALSE
+Z60.2,Living alone,45576166,z60,Problems related to social environment,1.8,TRUE
+Z73.0,Burn-out,45576177,z73,"Problems related to life-management
+difficulty",0.6,FALSE
+Z73.6,Limitation of activities due to disability,45576178,z73,"Problems related to life-management
+difficulty",0.6,FALSE
+Z91.2,Personal history of poor personal hygiene,45576215,z91,"Personal history of risk-factors, not elsewhere classified",0.5,TRUE
+B96.4,Proteus (mirabilis)(morganii) as the cause of diseases classified to other chapters,45576291,b96,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9,FALSE
+D64.0,Hereditary sideroblastic anaemia,45576409,d64,Other anaemias,0.4,FALSE
+E05.4,Thyrotoxicosis factitia,45576429,e05,Thyrotoxicosis [hyperthyroidism],0.9,TRUE
+E53.9,"Vitamin B deficiency, unspecified",45576458,e53,Deficiency of other B group vitamins,1.9,FALSE
+F01.8,Other vascular dementia,45576485,f01,Vascular dementia,2,TRUE
+F10.2,"Mental and behavioural disorders due to use of alcohol, Dependence syndrome",45576496,f10,Mental and behavioural disorders due to use of alcohol,0.7,TRUE
+G45.1,Carotid artery syndrome (hemispheric),45576586,g45,Transient cerebral ischaemic attacks and related syndromes,1.2,FALSE
+G45.8,Other transient cerebral ischaemic attacks and related syndromes,45576587,g45,Transient cerebral ischaemic attacks and related syndromes,1.2,FALSE
+H91.3,"Deaf mutism, not elsewhere classified",45576852,h91,Other hearing loss,0.9,TRUE
+K26.9,"Duodenal ulcer, unspecified as acute or chronic, without haemorrhage or perforation",45576983,k26,Duodenal ulcer,1.6,FALSE
+L03.3,Cellulitis of trunk,45577023,l03,Cellulitis,2,TRUE
+L08.9,"Local infection of skin and subcutaneous tissue, unspecified",45577027,l08,Other local infections of skin and subcutaneous tissue,0.4,FALSE
+L89.9,"Decubitus ulcer and pressure area, unspecified",45577066,l89,Decubitus ulcer,1.7,FALSE
+M25.1,Fistula of joint,45577220,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M41.3,Thoracogenic scoliosis,45577253,m41,Scoliosis,0.9,TRUE
+M79.3,"Panniculitis, unspecified",45577357,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M80,Osteoporosis with pathological fracture,45577360,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M81.2,Osteoporosis of disuse,45577377,m81,Osteoporosis without pathological fracture,1.4,TRUE
+N39.4,Other specified urinary incontinence,45577525,n39,Other disorders of urinary system (includes urinary tract infection and urinary incontinence),3.2,FALSE
+N39.9,"Disorder of urinary system, unspecified",45577526,n39,Other disorders of urinary system (includes urinary tract infection and urinary incontinence),3.2,FALSE
+R00,Abnormalities of heart beat,45577775,r00,Abnormalities of heart beat,0.7,FALSE
+R45.6,Physical violence,45577795,r45,Symptoms and signs involving emotional state,1.2,FALSE
+R50.2,Drug-induced fever,45577798,r50,Fever of unknown origin,0.1,FALSE
+R63.6,Insufficient intake of food and water,45577802,r63,Symptoms and signs concerning food and fluid intake,0.9,FALSE
+R79.9,"Abnormal finding of blood chemistry, unspecified",45577814,r79,Other abnormal findings of blood chemistry,0.6,FALSE
+R94.5,Abnormal results of liver function studies,45577830,r94,Abnormal results of function studies,1.4,FALSE
+S00.3,Superficial injury of nose,45577835,s00,Superficial injury of head,3.2,FALSE
+S01.9,"Open wound of head, part unspecified",45577864,s01,Open wound of head,1.1,FALSE
+S06.7,Intracranial injury with prolonged coma,45577915,s06,Intracranial injury,2.4,FALSE
+S09.0,"Injury of blood vessels of head, not elsewhere classified",45577926,s09,Other and unspecified injuries of head,1.2,FALSE
+S09.8,Other specified injuries of head,45577931,s09,Other and unspecified injuries of head,1.2,FALSE
+S42.0,Fracture of clavicle,45578284,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S51.0,Open wound of elbow,45578449,s51,Open wound of forearm,0.5,FALSE
+Z22.9,"Carrier of infectious disease, unspecified",45581014,z22,Carrier of infectious disease,1.7,FALSE
+Z50.0,Cardiac rehabilitation,45581039,z50,"Care involving use of rehabilitation
+procedures",2.1,FALSE
+Z50.4,"Psychotherapy, not elsewhere classified",45581040,z50,"Care involving use of rehabilitation
+procedures",2.1,FALSE
+Z60.4,Social exclusion and rejection,45581051,z60,Problems related to social environment,1.8,TRUE
+Z73,Problems related to life-management difficulty,45581066,z73,"Problems related to life-management
+difficulty",0.6,FALSE
+Z73.1,Accentuation of personality traits,45581067,z73,"Problems related to life-management
+difficulty",0.6,FALSE
+Z73.4,"Inadequate social skills, not elsewhere classified",45581068,z73,"Problems related to life-management
+difficulty",0.6,FALSE
+Z74.1,Need for assistance with personal care,45581069,z74,Problems related to care-provider dependency,1.1,TRUE
+Z75.8,Other problems related to medical facilities and other health care,45581070,z75,Problems related to medical facilities and other health care,2,FALSE
+Z87.6,Personal history of certain conditions arising in the perinatal period,45581084,z87,Personal history of other diseases and conditions,1.5,TRUE
+Z93,Artificial opening status,45581091,z93,Artificial opening status,1,FALSE
+Z99.2,Dependence on renal dialysis,45581097,z99,Dependence on enabling machines and devices,0.8,TRUE
+B95.5,Unspecified streptococcus as the cause of diseases classified to other chapters,45581193,b95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,1.7,FALSE
+E86,Volume depletion,45581386,e86,Volume depletion,2.3,FALSE
+F01.2,Subcortical vascular dementia,45581393,f01,Vascular dementia,2,TRUE
+F05,"Delirium, not induced by alcohol and other psychoactive substances",45581397,f05,"Delirium, not induced by alcohol and other psychoactive substances",3.2,FALSE
+F10,Mental and behavioural disorders due to use of alcohol,45581401,f10,Mental and behavioural disorders due to use of alcohol,0.7,TRUE
+F10.8,"Mental and behavioural disorders due to use of alcohol, Other mental and behavioural disorders",45581407,f10,Mental and behavioural disorders due to use of alcohol,0.7,TRUE
+G40.7,"Petit mal, unspecified, without grand mal seizures",45581488,g40,Epilepsy,1.5,TRUE
+H91,Other hearing loss,45581753,h91,Other hearing loss,0.9,TRUE
+I67,Other cerebrovascular diseases,45581786,i67,Other cerebrovascular diseases,2.6,TRUE
+K59.4,Anal spasm,45581905,k59,Other functional intestinal disorders,1.8,TRUE
+L03.9,"Cellulitis, unspecified",45581931,l03,Cellulitis,2,TRUE
+M25.7,Osteophyte,45582119,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M79.9,"Soft tissue disorder, unspecified",45582252,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M80.3,Postsurgical malabsorption osteoporosis with pathological fracture,45582259,m80,Osteoporosis with pathological fracture,0.8,TRUE
+N18,Chronic kidney disease,45582391,n18,Chronic renal failure,1.4,TRUE
+N18.1,"Chronic kidney disease, stage 1",45582392,n18,Chronic renal failure,1.4,TRUE
+N18.4,"Chronic kidney disease, stage 4",45582393,n18,Chronic renal failure,1.4,TRUE
+N18.5,"Chronic kidney disease, stage 5",45582394,n18,Chronic renal failure,1.4,TRUE
+N20.1,Calculus of ureter,45582395,n20,Calculus of kidney and ureter,0.7,TRUE
+N28.0,Ischaemia and infarction of kidney,45582398,n28,"Other disorders of kidney and ureter, not elsewhere classified",1.3,FALSE
+R26.3,Immobility,45582698,r26,Abnormalities of gait and mobility,2.6,TRUE
+R29.3,Abnormal posture,45582699,r29,"Other symptoms and signs involving the nervous and musculoskeletal systems
+Tendency to fall)",3.6,FALSE
+R45.4,Irritability and anger,45582712,r45,Symptoms and signs involving emotional state,1.2,FALSE
+R50.0,Fever with chills,45582715,r50,Fever of unknown origin,0.1,FALSE
+R50.9,"Fever, unspecified",45582716,r50,Fever of unknown origin,0.1,FALSE
+R94.1,Abnormal results of function studies of peripheral nervous system and special senses,45582733,r94,Abnormal results of function studies,1.4,FALSE
+S00.5,Superficial injury of lip and oral cavity,45582750,s00,Superficial injury of head,3.2,FALSE
+S01,Open wound of head,45582756,s01,Open wound of head,1.1,FALSE
+S06.0,Concussion,45582805,s06,Intracranial injury,2.4,FALSE
+S06.8,Other intracranial injuries,45582835,s06,Intracranial injury,2.4,FALSE
+S22.4,Multiple fractures of ribs,45582958,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S32.0,Fracture of lumbar vertebra,45583057,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S42.7,"Multiple fractures of clavicle, scapula and humerus",45583278,s42,Fracture of shoulder and upper arm,2.3,FALSE
+T83.8,"Other complications of genitourinary prosthetic devices, implants and grafts",45585276,t83,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4,FALSE
+Y84.0,"Cardiac catheterization as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",45585762,y84,Other medical procedures as the cause of abnormal reaction of the patient,0.7,FALSE
+Z22.1,Carrier of other intestinal infectious diseases,45585810,z22,Carrier of infectious disease,1.7,FALSE
+Z50.2,Alcohol rehabilitation,45585836,z50,"Care involving use of rehabilitation
+procedures",2.1,FALSE
+Z60.9,"Problem related to social environment, unspecified",45585842,z60,Problems related to social environment,1.8,TRUE
+Z73.9,"Problem related to life-management difficulty, unspecified",45585852,z73,"Problems related to life-management
+difficulty",0.6,FALSE
+Z74,Problems related to care-provider dependency,45585853,z74,Problems related to care-provider dependency,1.1,TRUE
+Z74.9,"Problem related to care-provider dependency, unspecified",45585854,z74,Problems related to care-provider dependency,1.1,TRUE
+Z91.0,"Personal history of allergy, other than to drugs and biological substances",45585876,z91,"Personal history of risk-factors, not elsewhere classified",0.5,TRUE
+Z93.0,Tracheostomy status,45585883,z93,Artificial opening status,1,FALSE
+Z93.1,Gastrostomy status,45585884,z93,Artificial opening status,1,FALSE
+A04.1,Enterotoxigenic Escherichia coli infection,45585893,a04,Other bacterial intestinal infections,1.1,FALSE
+A04.3,Enterohaemorrhagic Escherichia coli infection,45585894,a04,Other bacterial intestinal infections,1.1,FALSE
+A41.9,"Sepsis, unspecified",45585911,a41,Other septicaemia,1.6,FALSE
+E05.9,"Thyrotoxicosis, unspecified",45586131,e05,Thyrotoxicosis [hyperthyroidism],0.9,TRUE
+E16.1,Other hypoglycaemia,45586147,e16,"Other disorders of pancreatic internal
+secretion",1.4,FALSE
+E16.3,Increased secretion of glucagon,45586148,e16,"Other disorders of pancreatic internal
+secretion",1.4,FALSE
+E16.9,"Disorder of pancreatic internal secretion, unspecified",45586149,e16,"Other disorders of pancreatic internal
+secretion",1.4,FALSE
+E55.9,"Vitamin D deficiency, unspecified",45586161,e55,Vitamin D deficiency,1,FALSE
+E83.8,Other disorders of mineral metabolism,45586175,e83,Disorders of mineral metabolism,0.4,FALSE
+E83.9,"Disorder of mineral metabolism, unspecified",45586176,e83,Disorders of mineral metabolism,0.4,FALSE
+F10.4,"Mental and behavioural disorders due to use of alcohol, Withdrawal state with delirium",45586191,f10,Mental and behavioural disorders due to use of alcohol,0.7,TRUE
+G40.6,"Grand mal seizures, unspecified (with or without petit mal)",45586284,g40,Epilepsy,1.5,TRUE
+G40.8,Other epilepsy,45586285,g40,Epilepsy,1.5,TRUE
+H54.7,Unspecified visual loss,45586517,h54,Blindness and low vision,1.9,TRUE
+I63.2,Cerebral infarction due to unspecified occlusion or stenosis of precerebral arteries,45586592,i63,Cerebral Infarction,0.8,FALSE
+I67.9,"Cerebrovascular disease, unspecified",45586600,i67,Other cerebrovascular diseases,2.6,TRUE
+I69.2,Sequelae of other nontraumatic intracranial haemorrhage,45586606,i69,Sequelae of cerebrovascular disease,3.7,TRUE
+I95,Hypotension,45586653,i95,Hypotension,1.6,FALSE
+J22,Unspecified acute lower respiratory infection,45586665,j22,Unspecified acute lower respiratory infection,0.7,FALSE
+J96,"Respiratory failure, not elsewhere classified",45586686,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+K52,Other noninfective gastroenteritis and colitis,45586724,k52,Other noninfective gastroenteritis and colitis,0.3,FALSE
+L03.1,Cellulitis of other parts of limb,45586760,l03,Cellulitis,2,TRUE
+L89.0,Stage I decubitus ulcer and pressure area,45586783,l89,Decubitus ulcer,1.7,FALSE
+M25.5,Pain in joint,45586941,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M41.5,Other secondary scoliosis,45586964,m41,Scoliosis,0.9,TRUE
+M41.8,Other forms of scoliosis,45586965,m41,Scoliosis,0.9,TRUE
+M79.1,Myalgia,45587062,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M79.6,Pain in limb,45587063,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M81,Osteoporosis without pathological fracture,45587093,m81,Osteoporosis without pathological fracture,1.4,TRUE
+N20,Calculus of kidney and ureter,45587237,n20,Calculus of kidney and ureter,0.7,TRUE
+N28,"Other disorders of kidney and ureter, not elsewhere classified",45587239,n28,"Other disorders of kidney and ureter, not elsewhere classified",1.3,FALSE
+N28.8,Other specified disorders of kidney and ureter,45587240,n28,"Other disorders of kidney and ureter, not elsewhere classified",1.3,FALSE
+R29.6,"Tendency to fall, not elsewhere classified",45587504,r29,"Other symptoms and signs involving the nervous and musculoskeletal systems
+Tendency to fall)",3.6,FALSE
+R29.8,Other and unspecified symptoms and signs involving the nervous and musculoskeletal systems,45587505,r29,"Other symptoms and signs involving the nervous and musculoskeletal systems
+Tendency to fall)",3.6,FALSE
+R33,Retention of urine,45587507,r33,Retention of urine,1.3,FALSE
+R79,Other abnormal findings of blood chemistry,45587527,r79,Other abnormal findings of blood chemistry,0.6,FALSE
+S00.9,"Superficial injury of head, part unspecified",45587557,s00,Superficial injury of head,3.2,FALSE
+S06.6,Traumatic subarachnoid haemorrhage,45587622,s06,Intracranial injury,2.4,FALSE
+S09.2,Traumatic rupture of ear drum,45587636,s09,Other and unspecified injuries of head,1.2,FALSE
+T83.0,Mechanical complication of urinary (indwelling) catheter,45590078,t83,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4,FALSE
+Y84.3,"Shock therapy as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",45590667,y84,Other medical procedures as the cause of abnormal reaction of the patient,0.7,FALSE
+Z50,Care involving use of rehabilitation procedures,45590736,z50,"Care involving use of rehabilitation
+procedures",2.1,FALSE
+Z73.2,Lack of relaxation and leisure,45590754,z73,"Problems related to life-management
+difficulty",0.6,FALSE
+Z91.3,Personal history of unhealthy sleep-wake schedule,45590770,z91,"Personal history of risk-factors, not elsewhere classified",0.5,TRUE
+Z91.4,"Personal history of psychological trauma, not elsewhere classified",45590771,z91,"Personal history of risk-factors, not elsewhere classified",0.5,TRUE
+Z93.3,Colostomy status,45590775,z93,Artificial opening status,1,FALSE
+Z93.5,Cystostomy status,45590776,z93,Artificial opening status,1,FALSE
+Z99.0,Dependence on aspirator,45590787,z99,Dependence on enabling machines and devices,0.8,TRUE
+A04.5,Campylobacter enteritis,45590792,a04,Other bacterial intestinal infections,1.1,FALSE
+B95.6,Staphylococcus aureus as the cause of diseases classified to other chapters,45590869,b95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,1.7,FALSE
+B96.3,Haemophilus influenzae [H. influenzae] as the cause of diseases classified to other chapters,45590870,b96,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9,FALSE
+B96.8,Other specified bacterial agents as the cause of diseases classified to other chapters,45590871,b96,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9,FALSE
+D64.4,Congenital dyserythropoietic anaemia,45591015,d64,Other anaemias,0.4,FALSE
+E16.2,"Hypoglycaemia, unspecified",45591038,e16,"Other disorders of pancreatic internal
+secretion",1.4,FALSE
+E53.0,Riboflavin deficiency,45591048,e53,Deficiency of other B group vitamins,1.9,FALSE
+E55,Vitamin D deficiency,45591049,e55,Vitamin D deficiency,1,FALSE
+F00.0,Dementia in Alzheimer disease with early onset,45591070,f00,Dementia in Alzheimer's disease,7.1,TRUE
+F05.9,"Delirium, unspecified",45591078,f05,"Delirium, not induced by alcohol and other psychoactive substances",3.2,FALSE
+G30.9,"Alzheimer disease, unspecified",45591165,g30,Alzheimer's disease,4,TRUE
+G31.0,Circumscribed brain atrophy,45591166,g31,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2,TRUE
+G31.2,Degeneration of nervous system due to alcohol,45591167,g31,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2,TRUE
+G40.0,Localization-related (focal)(partial) idiopathic epilepsy and epileptic syndromes with seizures of localized onset,45591170,g40,Epilepsy,1.5,TRUE
+G40.2,Localization-related (focal)(partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures,45591172,g40,Epilepsy,1.5,TRUE
+G81.0,Flaccid hemiplegia,45591195,g81,Hemiplegia,4.4,TRUE
+G81.1,Spastic hemiplegia,45591196,g81,Hemiplegia,4.4,TRUE
+H91.1,Presbycusis,45591444,h91,Other hearing loss,0.9,TRUE
+I63.4,Cerebral infarction due to embolism of cerebral arteries,45591475,i63,Cerebral Infarction,0.8,FALSE
+I67.4,Hypertensive encephalopathy,45591479,i67,Other cerebrovascular diseases,2.6,TRUE
+I67.5,Moyamoya disease,45591480,i67,Other cerebrovascular diseases,2.6,TRUE
+I67.7,"Cerebral arteritis, not elsewhere classified",45591481,i67,Other cerebrovascular diseases,2.6,TRUE
+I69.4,"Sequelae of stroke, not specified as haemorrhage or infarction",45591490,i69,Sequelae of cerebrovascular disease,3.7,TRUE
+J69.0,Pneumonitis due to food and vomit,45591562,j69,Pneumonitis due to solids and liquids,1,FALSE
+K52.2,Allergic and dietetic gastroenteritis and colitis,45591595,k52,Other noninfective gastroenteritis and colitis,0.3,FALSE
+K59.8,Other specified functional intestinal disorders,45591600,k59,Other functional intestinal disorders,1.8,TRUE
+L03,Cellulitis,45591621,l03,Cellulitis,2,TRUE
+L97,"Ulcer of lower limb, not elsewhere classified",45591659,l97,"Ulcer of lower limb, not elsewhere classified",1.6,TRUE
+M25.0,Haemarthrosis,45591798,m25,"Other joint disorders, not elsewhere classified",2.3,TRUE
+M41.9,"Scoliosis, unspecified",45591832,m41,Scoliosis,0.9,TRUE
+M79.8,Other specified soft tissue disorders,45591937,m79,"Other soft tissue disorders, not elsewhere
+classified",1.1,FALSE
+M80.2,Osteoporosis of disuse with pathological fracture,45591946,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M81.9,"Osteoporosis, unspecified",45591963,m81,Osteoporosis without pathological fracture,1.4,TRUE
+R47.0,Dysphasia and aphasia,45592421,r47,"Speech disturbances, not elsewhere classified",1,FALSE
+R47.8,Other and unspecified speech disturbances,45592422,r47,"Speech disturbances, not elsewhere classified",1,FALSE
+R50.1,Persistent fever,45592423,r50,Fever of unknown origin,0.1,FALSE
+R56,"Convulsions, not elsewhere classified",45592425,r56,"Convulsions, not elsewhere classified",2.6,FALSE
+R94.2,Abnormal results of pulmonary function studies,45592443,r94,Abnormal results of function studies,1.4,FALSE
+S01.0,Open wound of scalp,45592468,s01,Open wound of head,1.1,FALSE
+S01.7,Multiple open wounds of head,45592478,s01,Open wound of head,1.1,FALSE
+S06.2,Diffuse brain injury,45592516,s06,Intracranial injury,2.4,FALSE
+S09,Other and unspecified injuries of head,45592553,s09,Other and unspecified injuries of head,1.2,FALSE
+S22.0,Fracture of thoracic vertebra,45592654,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S32,Fracture of lumbar spine and pelvis,45592752,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.1,Fracture of sacrum,45592764,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.3,Fracture of ilium,45592772,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S42.4,Fracture of lower end of humerus,45592956,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S72.0,Fracture of neck of femur,45593656,s72,Fracture of femur,1.4,FALSE
+S80.7,Multiple superficial injuries of lower leg,45593874,s80,Superficial injury of lower leg,2,FALSE
+Y84.4,"Aspiration of fluid as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",45595448,y84,Other medical procedures as the cause of abnormal reaction of the patient,0.7,FALSE
+Y95,Nosocomial condition,45595474,y95,Nosocomial condition,1.2,FALSE
+Z22,Carrier of infectious disease,45595490,z22,Carrier of infectious disease,1.7,FALSE
+Z50.9,"Care involving use of rehabilitation procedure, unspecified",45595525,z50,"Care involving use of rehabilitation
+procedures",2.1,FALSE
+Z60.1,Atypical parenting situation,45595532,z60,Problems related to social environment,1.8,TRUE
+Z73.5,"Social role conflict, not elsewhere classified",45595541,z73,"Problems related to life-management
+difficulty",0.6,FALSE
+Z75.1,Person awaiting admission to adequate facility elsewhere,45595542,z75,Problems related to medical facilities and other health care,2,FALSE
+Z91.8,"Personal history of other specified risk-factors, not elsewhere classified",45595561,z91,"Personal history of risk-factors, not elsewhere classified",0.5,TRUE
+A41.8,Other specified sepsis,45595587,a41,Other septicaemia,1.6,FALSE
+B95.3,Streptococcus pneumoniae as the cause of diseases classified to other chapters,45595628,b95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,1.7,FALSE
+B95.7,Other staphylococcus as the cause of diseases classified to other chapters,45595629,b95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,1.7,FALSE
+D64.8,Other specified anaemias,45595771,d64,Other anaemias,0.4,FALSE
+E53.1,Pyridoxine deficiency,45595819,e53,Deficiency of other B group vitamins,1.9,FALSE
+E83.4,Disorders of magnesium metabolism,45595835,e83,Disorders of mineral metabolism,0.4,FALSE
+E87.7,Fluid overload,45595838,e87,"Other disorders of fluid, electrolyte and acid-base balance",2.3,FALSE
+F10.1,"Mental and behavioural disorders due to use of alcohol, Harmful use",45595844,f10,Mental and behavioural disorders due to use of alcohol,0.7,TRUE
+F32,Depressive episode,45595904,f32,Depressive episode,0.5,FALSE
+G40,Epilepsy,45595935,g40,Epilepsy,1.5,TRUE
+H54.5,"Severe visual impairment, monocular",45596138,h54,Blindness and low vision,1.9,TRUE
+I63.9,"Cerebral infarction, unspecified",45596216,i63,Cerebral Infarction,0.8,FALSE
+K26.2,"Duodenal ulcer, acute with both haemorrhage and perforation",45596310,k26,Duodenal ulcer,1.6,FALSE
+K59.2,"Neurogenic bowel, not elsewhere classified",45596337,k59,Other functional intestinal disorders,1.8,TRUE
+L08,Other local infections of skin and subcutaneous tissue,45596365,l08,Other local infections of skin and subcutaneous tissue,0.4,FALSE
+M15,Polyarthrosis,45596490,m15,Polyarthrosis,0.4,TRUE
+M15.4,Erosive (osteo)arthrosis,45596491,m15,Polyarthrosis,0.4,TRUE
+M19.1,Post-traumatic arthrosis of other joints,45596496,m19,Other arthrosis,1.5,TRUE
+M41.2,Other idiopathic scoliosis,45596571,m41,Scoliosis,0.9,TRUE
+R26.8,Other and unspecified abnormalities of gait and mobility,45597174,r26,Abnormalities of gait and mobility,2.6,TRUE
+R29.1,Meningismus,45597177,r29,"Other symptoms and signs involving the nervous and musculoskeletal systems
+Tendency to fall)",3.6,FALSE
+R45.1,Restlessness and agitation,45597185,r45,Symptoms and signs involving emotional state,1.2,FALSE
+S32.4,Fracture of acetabulum,45597558,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S42,Fracture of shoulder and upper arm,45597678,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.3,Fracture of shaft of humerus,45597729,s42,Fracture of shoulder and upper arm,2.3,FALSE
+T83.3,Mechanical complication of intrauterine contraceptive device,45599778,t83,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4,FALSE
+X59.9,Exposure to unspecified factor causing other and unspecified injury,45600198,x59,Exposure to unspecified factor,1.5,FALSE
+Y84.6,"Urinary catheterization as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",45600284,y84,Other medical procedures as the cause of abnormal reaction of the patient,0.7,FALSE
+Z50.1,Other physical therapy,45600331,z50,"Care involving use of rehabilitation
+procedures",2.1,FALSE
+Z73.8,Other problems related to life-management difficulty,45600353,z73,"Problems related to life-management
+difficulty",0.6,FALSE
+Z74.0,Need for assistance due to reduced mobility,45600355,z74,Problems related to care-provider dependency,1.1,TRUE
+Z87.3,Personal history of diseases of the musculoskeletal system and connective tissue,45600364,z87,Personal history of other diseases and conditions,1.5,TRUE
+Z87.5,"Personal history of complications of pregnancy, childbirth and the puerperium",45600366,z87,Personal history of other diseases and conditions,1.5,TRUE
+A04.6,Enteritis due to Yersinia enterocolitica,45600396,a04,Other bacterial intestinal infections,1.1,FALSE
+D64.1,Secondary sideroblastic anaemia due to disease,45600607,d64,Other anaemias,0.4,FALSE
+D64.3,Other sideroblastic anaemias,45600608,d64,Other anaemias,0.4,FALSE
+D64.9,"Anaemia, unspecified",45600610,d64,Other anaemias,0.4,FALSE
+E05.0,Thyrotoxicosis with diffuse goitre,45600628,e05,Thyrotoxicosis [hyperthyroidism],0.9,TRUE
+E05.2,Thyrotoxicosis with toxic multinodular goitre,45600629,e05,Thyrotoxicosis [hyperthyroidism],0.9,TRUE
+E16.4,Abnormal secretion of gastrin,45600648,e16,"Other disorders of pancreatic internal
+secretion",1.4,FALSE
+F32.3,Severe depressive episode with psychotic symptoms,45600739,f32,Depressive episode,0.5,FALSE
+G31.9,"Degenerative disease of nervous system, unspecified",45600776,g31,"Other degenerative diseases of nervous
+system, not elsewhere classified",1.2,TRUE
+G40.3,Generalized idiopathic epilepsy and epileptic syndromes,45600777,g40,Epilepsy,1.5,TRUE
+G45.3,Amaurosis fugax,45600791,g45,Transient cerebral ischaemic attacks and related syndromes,1.2,FALSE
+J18.9,"Pneumonia, unspecified",45601123,j18,"Pneumonia, organism unspecified",1.1,FALSE
+K26.0,"Duodenal ulcer, acute with haemorrhage",45601159,k26,Duodenal ulcer,1.6,FALSE
+K26.6,"Duodenal ulcer, chronic or unspecified with both haemorrhage and perforation",45601160,k26,Duodenal ulcer,1.6,FALSE
+K52.3,Indeterminate colitis,45601179,k52,Other noninfective gastroenteritis and colitis,0.3,FALSE
+L08.1,Erythrasma,45601210,l08,Other local infections of skin and subcutaneous tissue,0.4,FALSE
+L08.8,Other specified local infections of skin and subcutaneous tissue,45601211,l08,Other local infections of skin and subcutaneous tissue,0.4,FALSE
+L89,Decubitus ulcer and pressure area,45601235,l89,Decubitus ulcer,1.7,FALSE
+M15.2,Bouchard nodes (with arthropathy),45601348,m15,Polyarthrosis,0.4,TRUE
+M19,Other arthrosis,45601352,m19,Other arthrosis,1.5,TRUE
+M19.0,Primary arthrosis of other joints,45601353,m19,Other arthrosis,1.5,TRUE
+M19.2,Other secondary arthrosis,45601355,m19,Other arthrosis,1.5,TRUE
+M41.1,Juvenile idiopathic scoliosis,45601442,m41,Scoliosis,0.9,TRUE
+M80.1,Postoophorectomy osteoporosis with pathological fracture,45601560,m80,Osteoporosis with pathological fracture,0.8,TRUE
+M80.8,Other osteoporosis with pathological fracture,45601561,m80,Osteoporosis with pathological fracture,0.8,TRUE
+N18.0,End-stage renal disease,45601717,n18,Chronic renal failure,1.4,TRUE
+N19,Unspecified kidney failure,45601718,n19,Unspecified renal failure,1.6,FALSE
+N28.9,"Disorder of kidney and ureter, unspecified",45601723,n28,"Other disorders of kidney and ureter, not elsewhere classified",1.3,FALSE
+R26.2,"Difficulty in walking, not elsewhere classified",45602016,r26,Abnormalities of gait and mobility,2.6,TRUE
+R44.1,Visual hallucinations,45602029,r44,Other symptoms and signs involving general sensations and perceptions,1.6,FALSE
+R44.2,Other hallucinations,45602030,r44,Other symptoms and signs involving general sensations and perceptions,1.6,FALSE
+R56.8,Other and unspecified convulsions,45602033,r56,"Convulsions, not elsewhere classified",2.6,FALSE
+R63.0,Anorexia,45602036,r63,Symptoms and signs concerning food and fluid intake,0.9,FALSE
+S01.1,Open wound of eyelid and periocular area,45602056,s01,Open wound of head,1.1,FALSE
+S09.1,Injury of muscle and tendon of head,45602132,s09,Other and unspecified injuries of head,1.2,FALSE
+S09.7,Multiple injuries of head,45602139,s09,Other and unspecified injuries of head,1.2,FALSE
+S09.9,Unspecified injury of head,45602140,s09,Other and unspecified injuries of head,1.2,FALSE
+S22.5,Flail chest,45602268,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S32.7,Multiple fractures of lumbar spine and pelvis,45602408,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S42.9,"Fracture of shoulder girdle, part unspecified",45602569,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S80,Superficial injury of lower leg,45603531,s80,Superficial injury of lower leg,2,FALSE
+Y84,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",45605063,y84,Other medical procedures as the cause of abnormal reaction of the patient,0.7,FALSE
+Z75.4,Unavailability and inaccessibility of other helping agencies,45605146,z75,Problems related to medical facilities and other health care,2,FALSE
+Z87.8,Personal history of other specified conditions,45605166,z87,Personal history of other diseases and conditions,1.5,TRUE
+Z91.5,Personal history of self-harm,45605173,z91,"Personal history of risk-factors, not elsewhere classified",0.5,TRUE
+A04.9,"Bacterial intestinal infection, unspecified",45605186,a04,Other bacterial intestinal infections,1.1,FALSE
+A09,Other gastroenteritis and colitis of infectious and unspecified origin,45605189,a09,"Diarrhoea and gastroenteritis of presumed
+infectious origin",1.1,FALSE
+A41.2,Sepsis due to unspecified staphylococcus,45605202,a41,Other septicaemia,1.6,FALSE
+F01.1,Multi-infarct dementia,45605443,f01,Vascular dementia,2,TRUE
+F05.8,Other delirium,45605447,f05,"Delirium, not induced by alcohol and other psychoactive substances",3.2,FALSE
+G30.8,Other Alzheimer disease,45605532,g30,Alzheimer's disease,4,TRUE
+H54.4,"Blindness, monocular",45605715,h54,Blindness and low vision,1.9,TRUE
+I63.5,Cerebral infarction due to unspecified occlusion or stenosis of cerebral arteries,45605808,i63,Cerebral Infarction,0.8,FALSE
+I63.8,Other cerebral infarction,45605810,i63,Cerebral Infarction,0.8,FALSE
+I67.0,"Dissection of cerebral arteries, nonruptured",45605812,i67,Other cerebrovascular diseases,2.6,TRUE
+I95.1,Orthostatic hypotension,45605872,i95,Hypotension,1.6,FALSE
+J18.8,"Other pneumonia, organism unspecified",45605883,j18,"Pneumonia, organism unspecified",1.1,FALSE
+J96.0,Acute respiratory failure,45605905,j96,"Respiratory failure, not elsewhere classified",1.5,FALSE
+K26.3,"Duodenal ulcer, acute without haemorrhage or perforation",45605926,k26,Duodenal ulcer,1.6,FALSE
+K92.0,Haematemesis,45605964,k92,Other diseases of digestive system,0.8,FALSE
+K92.9,"Disease of digestive system, unspecified",45605965,k92,Other diseases of digestive system,0.8,FALSE
+N17,Acute renal failure,45606484,n17,Acute renal failure,1.8,FALSE
+N39.1,"Persistent proteinuria, unspecified",45606491,n39,Other disorders of urinary system (includes urinary tract infection and urinary incontinence),3.2,FALSE
+R00.0,"Tachycardia, unspecified",45606790,r00,Abnormalities of heart beat,0.7,FALSE
+R26,Abnormalities of gait and mobility,45606801,r26,Abnormalities of gait and mobility,2.6,TRUE
+R29.2,Abnormal reflex,45606802,r29,"Other symptoms and signs involving the nervous and musculoskeletal systems
+Tendency to fall)",3.6,FALSE
+R32,Unspecified urinary incontinence,45606803,r32,Unspecified urinary incontinence,1.2,TRUE
+R41.1,Anterograde amnesia,45606812,r41,Other symptoms and signs involving cognitive functions and awareness,2.7,TRUE
+R45.2,Unhappiness,45606813,r45,Symptoms and signs involving emotional state,1.2,FALSE
+R45.7,"State of emotional shock and stress, unspecified",45606814,r45,Symptoms and signs involving emotional state,1.2,FALSE
+R56.0,Febrile convulsions,45606819,r56,"Convulsions, not elsewhere classified",2.6,FALSE
+S01.8,Open wound of other parts of head,45606863,s01,Open wound of head,1.1,FALSE
+S06.3,Focal brain injury,45606905,s06,Intracranial injury,2.4,FALSE
+S22.8,Fracture of other parts of bony thorax,45607076,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S32.5,Fracture of pubis,45607211,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S51,Open wound of forearm,45607470,s51,Open wound of forearm,0.5,FALSE
+A09.0,Other and unspecified gastroenteritis and colitis of infectious origin,45755297,a09,"Diarrhoea and gastroenteritis of presumed
+infectious origin",1.1,FALSE
+A09.9,Gastroenteritis and colitis of unspecified origin,45755298,a09,"Diarrhoea and gastroenteritis of presumed
+infectious origin",1.1,FALSE
+B95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,45755311,b95,Streptococcus and staphylococcus as the cause of diseases classified to other chapters,1.7,FALSE
+B96,Other specified bacterial agents as the cause of diseases classified to other chapters,45755312,b96,"Other bacterial agents as the cause of diseases
+classified to other chapters (secondary code)",2.9,FALSE
+E87,"Other disorders of fluid, electrolyte and acid-base balance",45755369,e87,"Other disorders of fluid, electrolyte and acid-base balance",2.3,FALSE
+F00.1,Dementia in Alzheimer disease with late onset,45755371,f00,Dementia in Alzheimer's disease,7.1,TRUE
+F10.0,"Mental and behavioural disorders due to use of alcohol, Acute intoxication",45755372,f10,Mental and behavioural disorders due to use of alcohol,0.7,TRUE
+F10.5,"Mental and behavioural disorders due to use of alcohol, Psychotic disorder",45755373,f10,Mental and behavioural disorders due to use of alcohol,0.7,TRUE
+H54,Visual impairment including blindness (binocular or monocular),45755414,h54,Blindness and low vision,1.9,TRUE
+H54.9,Unspecified visual impairment (binocular),45755415,h54,Blindness and low vision,1.9,TRUE
+J69,Pneumonitis due to solids and liquids,45755429,j69,Pneumonitis due to solids and liquids,1,FALSE
+R63,Symptoms and signs concerning food and fluid intake,45755630,r63,Symptoms and signs concerning food and fluid intake,0.9,FALSE
+R29,Other symptoms and signs involving the nervous and musculoskeletal systems,45755636,r29,"Other symptoms and signs involving the nervous and musculoskeletal systems
+Tendency to fall)",3.6,FALSE
+R40,"Somnolence, stupor and coma",45755637,r40,"Somnolence, stupor and coma",2.5,FALSE
+R44,Other symptoms and signs involving general sensations and perceptions,45755638,r44,Other symptoms and signs involving general sensations and perceptions,1.6,FALSE
+R45,Symptoms and signs involving emotional state,45755639,r45,Symptoms and signs involving emotional state,1.2,FALSE
+R47,"Speech disturbances, not elsewhere classified",45755640,r47,"Speech disturbances, not elsewhere classified",1,FALSE
+S32.00,"Fracture of lumbar vertebra, closed",45755675,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.01,"Fracture of lumbar vertebra, open",45755676,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.10,"Fracture of sacrum, closed",45755677,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.11,"Fracture of sacrum, open",45755678,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.20,"Fracture of coccyx, closed",45755679,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.21,"Fracture of coccyx, open",45755680,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.30,"Fracture of ilium, closed",45755681,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.31,"Fracture of ilium, open",45755682,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.40,"Fracture of acetabulum, closed",45755683,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.41,"Fracture of acetabulum, open",45755684,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.50,"Fracture of pubis, closed",45755685,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.51,"Fracture of pubis, open",45755686,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.70,"Multiple fractures of lumbar spine and pelvis, closed",45755687,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.71,"Multiple fractures of lumbar spine and pelvis, open",45755688,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.80,"Fracture of other and unspecified parts of lumbar spine and pelvis, closed",45755689,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S32.81,"Fracture of other and unspecified parts of lumbar spine and pelvis, open",45755690,s32,Fracture of lumbar spine and pelvis,1.4,FALSE
+S42.10,"Fracture of scapula, closed",45755733,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.11,"Fracture of scapula, open",45755734,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.20,"Fracture of upper end of humerus, closed",45755735,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.21,"Fracture of upper end of humerus, open",45755736,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.30,"Fracture of shaft of humerus, closed",45755737,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.31,"Fracture of shaft of humerus, open",45755738,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.40,"Fracture of lower end of humerus, closed",45755739,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.41,"Fracture of lower end of humerus, open",45755740,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.70,"Multiple fractures of clavicle, scapula and humerus, closed",45755741,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.71,"Multiple fractures of clavicle, scapula and humerus, open",45755742,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.80,"Fracture of other parts of shoulder and upper arm, closed",45755743,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.81,"Fracture of other parts of shoulder and upper arm, open",45755744,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.90,"Fracture of shoulder girdle, part unspecified, closed",45755745,s42,Fracture of shoulder and upper arm,2.3,FALSE
+S42.91,"Fracture of shoulder girdle, part unspecified, open",45755746,s42,Fracture of shoulder and upper arm,2.3,FALSE
+R94,Abnormal results of function studies,45755749,r94,Abnormal results of function studies,1.4,FALSE
+S06.10,"Traumatic cerebral oedema, without open intracranial wound",45755773,s06,Intracranial injury,2.4,FALSE
+S06.11,"Traumatic cerebral oedema, with open intracranial wound",45755774,s06,Intracranial injury,2.4,FALSE
+S06.20,"Diffuse brain injury, without open intracranial wound",45755775,s06,Intracranial injury,2.4,FALSE
+S06.21,"Diffuse brain injury, with open intracranial wound",45755776,s06,Intracranial injury,2.4,FALSE
+S06.30,"Focal brain injury, without open intracranial wound",45755777,s06,Intracranial injury,2.4,FALSE
+S06.31,"Focal brain injury, with open intracranial wound",45755778,s06,Intracranial injury,2.4,FALSE
+S06.40,"Epidural haemorrhage, without open intracranial wound",45755779,s06,Intracranial injury,2.4,FALSE
+S06.41,"Epidural haemorrhage, with open intracranial wound",45755780,s06,Intracranial injury,2.4,FALSE
+S06.50,"Traumatic subdural haemorrhage, without open intracranial wound",45755781,s06,Intracranial injury,2.4,FALSE
+S06.51,"Traumatic subdural haemorrhage, with open intracranial wound",45755782,s06,Intracranial injury,2.4,FALSE
+S06.60,"Traumatic subarachnoid haemorrhage, without open intracranial wound",45755783,s06,Intracranial injury,2.4,FALSE
+S06.61,"Traumatic subarachnoid haemorrhage, with open intracranial wound",45755784,s06,Intracranial injury,2.4,FALSE
+S06.70,"Intracranial injury with prolonged coma, without open intracranial wound",45755785,s06,Intracranial injury,2.4,FALSE
+S06.71,"Intracranial injury with prolonged coma, with open intracranial wound",45755786,s06,Intracranial injury,2.4,FALSE
+S06.80,"Other intracranial injuries, without open intracranial wound",45755787,s06,Intracranial injury,2.4,FALSE
+S06.81,"Other intracranial injuries, with open intracranial wound",45755788,s06,Intracranial injury,2.4,FALSE
+S06.90,"Intracranial injury, unspecified, without open intracranial wound",45755789,s06,Intracranial injury,2.4,FALSE
+S06.91,"Intracranial injury, unspecified, with open intracranial wound",45755790,s06,Intracranial injury,2.4,FALSE
+S22,"Fracture of rib(s), sternum and thoracic spine",45755806,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.00,"Fracture of thoracic vertebra, closed",45755807,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.01,"Fracture of thoracic vertebra, open",45755808,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.10,"Multiple fractures of thoracic spine, closed",45755809,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.11,"Multiple fractures of thoracic spine, open",45755810,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.20,"Fracture of sternum, closed",45755811,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.21,"Fracture of sternum, open",45755812,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.30,"Fracture of rib, closed",45755813,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.31,"Fracture of rib, open",45755814,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.40,"Multiple fractures of ribs, closed",45755815,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.41,"Multiple fractures of ribs, open",45755816,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.50,"Flail chest, closed",45755817,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.51,"Flail chest, open",45755818,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.80,"Fracture of other parts of bony thorax, closed",45755819,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.81,"Fracture of other parts of bony thorax, open",45755820,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.90,"Fracture of bony thorax, part unspecified, closed",45755821,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S22.91,"Fracture of bony thorax, part unspecified, open",45755822,s22,"Fracture of rib(s), sternum and thoracic spine",1.8,FALSE
+S72.10,"Pertrochanteric fracture, closed",45755957,s72,Fracture of femur,1.4,FALSE
+S72.11,"Pertrochanteric fracture, open",45755958,s72,Fracture of femur,1.4,FALSE
+S72.20,"Subtrochanteric fracture, closed",45755959,s72,Fracture of femur,1.4,FALSE
+S72.21,"Subtrochanteric fracture, open",45755960,s72,Fracture of femur,1.4,FALSE
+S72.30,"Fracture of shaft of femur, closed",45755961,s72,Fracture of femur,1.4,FALSE
+S72.31,"Fracture of shaft of femur, open",45755962,s72,Fracture of femur,1.4,FALSE
+S72.40,"Fracture of lower end of femur, closed",45755963,s72,Fracture of femur,1.4,FALSE
+S72.41,"Fracture of lower end of femur, open",45755964,s72,Fracture of femur,1.4,FALSE
+S72.70,"Multiple fractures of femur, closed",45755965,s72,Fracture of femur,1.4,FALSE
+S72.71,"Multiple fractures of femur, open",45755966,s72,Fracture of femur,1.4,FALSE
+S72.80,"Fractures of other parts of femur, closed",45755967,s72,Fracture of femur,1.4,FALSE
+S72.81,"Fractures of other parts of femur, open",45755968,s72,Fracture of femur,1.4,FALSE
+S72.90,"Fracture of femur, part unspecified, closed",45755969,s72,Fracture of femur,1.4,FALSE
+S72.91,"Fracture of femur, part unspecified, open",45755970,s72,Fracture of femur,1.4,FALSE
+T83,"Complications of genitourinary prosthetic devices, implants and grafts",45756008,t83,"Complications of genitourinary prosthetic
+devices, implants and grafts",2.4,FALSE
+U80,Agent resistant to penicillin and related antibiotics,45756102,u80,"Agent resistant to penicillin and related
+antibiotics",0.8,FALSE
+U80.1,Methicillin resistant agent,45756103,u80,"Agent resistant to penicillin and related
+antibiotics",0.8,FALSE
+U80.8,Agent resistant to other penicillin-related antibiotic,45756104,u80,"Agent resistant to penicillin and related
+antibiotics",0.8,FALSE
+W01,"Fall on same level from slipping, tripping and stumbling",45756243,w01,"Fall on same level from slipping, tripping and
+stumbling",0.9,FALSE
+W10,Fall on and from stairs and steps,45756250,w10,Fall on and from stairs and steps,0.9,FALSE
+W18,Other fall on same level,45756256,w18,Other fall on same level,2.1,TRUE
+W19,Unspecified fall,45756257,w19,Unspecified fall,3.2,FALSE
+Z75,Problems related to medical facilities and other health care,45756340,z75,Problems related to medical facilities and other health care,2,FALSE
+X59,Exposure to unspecified factor,45756412,x59,Exposure to unspecified factor,1.5,FALSE
+Z87,Personal history of other diseases and conditions,45756483,z87,Personal history of other diseases and conditions,1.5,TRUE
+Z99,"Dependence on enabling machines and devices, not elsewhere classified",45756557,z99,Dependence on enabling machines and devices,0.8,TRUE
+Z99.4,Dependence on artificial heart,45756558,z99,Dependence on enabling machines and devices,0.8,TRUE
