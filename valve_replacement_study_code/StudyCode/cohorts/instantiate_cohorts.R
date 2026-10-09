@@ -143,7 +143,7 @@ cdm <- bind(cdm[["aortic_stenosis"]], cdm[["aortic_insufficiency"]], cdm[["aorti
 
 omopgenerics::logMessage(message = "Comorbidities")
 cdm[["comorbidities"]] <- conceptCohort(cdm,
-                                        conceptSet = importCodelist(here("cohorts", "study_codelists","comorbidity"), 
+                                        conceptSet = importCodelist(here("cohorts", "study_codelists","comorbidities"), 
                                                                     type = "csv"), 
                                         name = "comorbidities",
                                         exit = "event_start_date")

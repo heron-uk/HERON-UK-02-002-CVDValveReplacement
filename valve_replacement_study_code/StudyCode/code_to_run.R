@@ -8,7 +8,6 @@ library(CDMConnector)
 library(omopgenerics)
 library(OmopSketch)
 library(CodelistGenerator)
-library(PhenotypeR)
 library(CohortConstructor)
 library(PatientProfiles)
 library(CohortCharacteristics)
@@ -69,7 +68,7 @@ cdm <- cdmFromCon(
   writeSchema = writeSchema,
   writePrefix = writePrefix,
   cdmName = dbName,
-  achillesSchema = achillesSchema
+  achillesSchema = achillesSchema,
 )
 
 # Run the study

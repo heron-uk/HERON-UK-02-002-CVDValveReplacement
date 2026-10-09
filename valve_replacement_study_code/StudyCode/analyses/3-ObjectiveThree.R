@@ -12,7 +12,6 @@ cdm[["procedures_as"]] <- cdm[["procedures_as"]] |>
   addUpdatedCharlsonIndex(conceptSet = charlson_comorbidity_index_codelist,
                           ageAdjusted = FALSE,
                           nameStyle = "cci",
-                          window = c(-Inf, 0),
                           categories = list("low_risk" = c(1,2),
                                             "medium_risk" = c(3,4),
                                             "high_risk" = c(5, Inf)))
@@ -21,7 +20,6 @@ omopgenerics::logMessage(message = "Add EFI")
 cdm[["procedures_as"]] <- cdm[["procedures_as"]] |>
   addElectronicFrailtyIndex(conceptSet = electronic_frailty_index_codelist,
                             nameStyle = "efi",
-                            window = c(-Inf, 0),
                             categories = list(fit = c(0, 0.12), 
                                               mild = c(0.12, 0.24), 
                                               moderate = c(0.24, 0.36),
