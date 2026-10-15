@@ -20,6 +20,7 @@ library(rlang)
 library(stringr)
 library(purrr)
 library(OmopIndices) 
+library(PhenotypeR)
 
 # database metadata and connection details
 # The name/ acronym for the database
