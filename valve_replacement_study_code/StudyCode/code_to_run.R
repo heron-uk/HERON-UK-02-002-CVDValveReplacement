@@ -70,6 +70,12 @@ cdm <- cdmFromCon(
   writePrefix = writePrefix,
   cdmName = dbName,
   achillesSchema = achillesSchema,
+  cohortTables = c("charlson_comorbidity_index", 
+                   "electronic_frailty_index",
+                   "comorbidities",
+                   "aortic_valve_disease_phenotype",
+                   "cardiovascular_disease",
+                   "cardiovascular_risk_factors")
 )
 
 # Run the study
