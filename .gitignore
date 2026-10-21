@@ -30,3 +30,4 @@ valve_replacement_study_code/Diagnostics/shiny/.rscignore
 valve_replacement_study_code/Diagnostics/shiny/rawData/results.csv
 valve_replacement_study_code/Diagnostics/shiny/rawData/results_cci.csv
 valve_replacement_study_code/Diagnostics/shiny/rawData/results_efi.csv
+/valve_replacement_study_code/Results
