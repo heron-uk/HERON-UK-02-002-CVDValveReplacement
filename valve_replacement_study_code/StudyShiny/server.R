@@ -23,7 +23,14 @@ server <- function(input, output, session) {
     summarise_omop_snapshot = "initial",
     summarise_observation_period = "initial",
     orphan_code_use = "initial",
+    orphan_code_use_covariates = "initial",
+    orphan_code_use_cci = "initial",
+    orphan_code_use_efi = "initial",
     cohort_code_use = "initial",
+    cohort_code_use_cohorts = "initial",
+    cohort_code_use_covariates = "initial",
+    cohort_code_use_cci = "initial",
+    cohort_code_use_efi = "initial",
     summarise_cohort_overlap = "initial",
     summarise_cohort_attrition = "initial",
     summarise_characteristics = "initial",
@@ -173,149 +180,479 @@ server <- function(input, output, session) {
       )
     }
   )
-
-  # orphan_code_use -----
+  # Study cohorts -----
+  ## cohort_code_use_cohorts -----
   ## update message if filter is changed
   shiny::observe({
-    if (renderState$orphan_code_use == "rendered") {
-      renderState$orphan_code_use <- "stale"
+    if (renderState$cohort_code_use_cohorts == "rendered") {
+      renderState$cohort_code_use_cohorts <- "stale"
     }
   }) |>
     shiny::bindEvent(
-      input$orphan_code_use_cdm_name,
-      input$orphan_code_use_codelist_name,
+      input$cohort_code_use_cohorts_cdm_name,
+      input$cohort_code_use_cohorts_cohort_name,
+      input$cohort_code_use_cohorts_codelist_name,
       ignoreInit = TRUE
     )
-  output$update_message_orphan_code_use <- shiny::renderUI({
-    switch(renderState$orphan_code_use,
-      initial = updateInitialMessage,
-      stale = updateMessage,
-      rendered = NULL
+  
+  output$update_message_cohort_code_use_cohorts <- shiny::renderUI({
+    switch(renderState$cohort_code_use_cohorts,
+           initial = updateInitialMessage,
+           stale = updateMessage,
+           rendered = NULL
     )
   })
-  shiny::observeEvent(input$update_orphan_code_use,
+  shiny::observeEvent(
+    input$update_cohort_code_use_cohorts,
     {
-      renderState$orphan_code_use <- "rendered"
+      renderState$cohort_code_use_cohorts <- "rendered"
     },
-    ignoreInit = TRUE
-  )
-
-  ## get orphan_code_use data
-  getOrphanCodeUseData <- shiny::eventReactive(input$update_orphan_code_use,
-    {
-      data[["orphan_code_use"]] |>
-        dplyr::filter(.data$cdm_name %in% input$orphan_code_use_cdm_name) |>
-        omopgenerics::filterAdditional(.data$table_name %in% input$orphan_code_use_table_name) 
-    },
-    ignoreInit = TRUE
-  )
-  getOrphanCodeUseTableReact <- shiny::reactive({
-    getOrphanCodeUseData() |>
-      CodelistGenerator::tableOrphanCodes(
-        type = "reactable",
-        header = c("cdm_name", "estimate_name"),
-        groupColumn = c("codelist_name"),
-        hide = c("log_id","type_concept_id", "domain_id", "table")
-      )
-  })
-  output$orphan_code_use_table_react <- reactable::renderReactable({
-    getOrphanCodeUseTableReact()
-  })
-  getOrphanCodeUseTableGt <- shiny::reactive({
-    getOrphanCodeUseData() |>
-      CodelistGenerator::tableOrphanCodes(
-        header = c("cdm_name", "estimate_name"),
-        groupColumn = c("codelist_name"),
-        hide = c("log_id","type_concept_id", "domain_id", "table")
-      )
-  })
-  output$orphan_code_use_table_gt <- gt::render_gt({
-    getOrphanCodeUseTableGt()
-  })
-  output$orphan_code_use_table_gt_download <- shiny::downloadHandler(
-    filename = paste0("table_orphan_codes.", input$orphan_code_use_table_gt_format),
-    content = function(file) {
-      gt::gtsave(getOrphanCodeUseTableGt(), file)
-    }
-  )
-
-  # cohort_code_use -----
-  ## update message if filter is changed
-  shiny::observe({
-    if (renderState$cohort_code_use == "rendered") {
-      renderState$cohort_code_use <- "stale"
-    }
-  }) |>
-    shiny::bindEvent(
-      input$cohort_code_use_cdm_name,
-      input$cohort_code_use_cohort_name,
-      input$cohort_code_use_codelist_name,
-      input$cohort_code_use_domain,
-      input$cohort_code_use_log_id,
-      input$cohort_code_use_estimate_name,
-      ignoreInit = TRUE
-    )
-  output$update_message_cohort_code_use <- shiny::renderUI({
-    switch(renderState$cohort_code_use,
-      initial = updateInitialMessage,
-      stale = updateMessage,
-      rendered = NULL
-    )
-  })
-  shiny::observeEvent(input$update_cohort_code_use,
-    {
-      renderState$cohort_code_use <- "rendered"
-    },
-    ignoreInit = TRUE
-  )
-
+    ignoreInit = TRUE)
+  
   ## get cohort_code_use data
-  getCohortCodeUseData <- shiny::eventReactive(input$update_cohort_code_use,
+  getCohortCodeUseCohortsData <- shiny::eventReactive(
+    input$update_cohort_code_use_cohorts,
     {
       data[["cohort_code_use"]] |>
-        dplyr::filter(
-          .data$cdm_name %in% input$cohort_code_use_cdm_name,
-          .data$estimate_name %in% input$cohort_code_use_estimate_name
-        ) |>
-        omopgenerics::filterGroup(
-          .data$cohort_name %in% input$cohort_code_use_cohort_name,
-          .data$codelist_name %in% input$cohort_code_use_codelist_name
-        ) |>
-        omopgenerics::filterStrata(
-          .data$domain %in% input$cohort_code_use_domain,
-          .data$log_id %in% input$cohort_code_use_log_id
-        )
+        dplyr::filter(.data$cdm_name %in% input$cohort_code_use_cohorts_cdm_name)|>
+        omopgenerics::filterGroup(.data$cohort_name %in% input$cohort_code_use_cohorts_cohort_name,
+                                  .data$codelist_name %in% input$cohort_code_use_cohorts_codelist_name) 
     },
     ignoreInit = TRUE
   )
-  getCohortCodeUseTableReact <- shiny::reactive({
-    getCohortCodeUseData() |>
+  getCohortCodeUseCohortsTableReact <- shiny::reactive({
+    getCohortCodeUseCohortsData() |>
       CodelistGenerator::tableCohortCodeUse(
         type = "reactable",
-        header = "cdm_name"
+        header = c("cdm_name", "estimate_name"),
+        groupColumn = c("cohort_name", "codelist_name"),
+        hide = c("log_id","type_concept_id", "domain", "table", "domain_id", "vocabulary_id", "relationship", "diagnostic",
+                 "phenotyper_version", "timing")
       )
   })
-  output$cohort_code_use_table_react <- reactable::renderReactable({
-    getCohortCodeUseTableReact()
+  output$cohort_code_use_cohorts_table_react <- reactable::renderReactable({
+    getCohortCodeUseCohortsTableReact()
   })
-  getCohortCodeUseTableGt <- shiny::reactive({
-    getCohortCodeUseData() |>
-      CodelistGenerator::tableCohortCodeUse(
-        header = input$cohort_code_use_table_gt_header,
-        groupColumn = input$cohort_code_use_table_gt_group_column,
-        hide = input$cohort_code_use_table_gt_hide
-      )
+  
+  ## summarise_cohort_attrition -----
+  ## update message if filter is changed
+  shiny::observe({
+    if (renderState$summarise_cohort_attrition == "rendered") {
+      renderState$summarise_cohort_attrition <- "stale"
+    }
+  }) |>
+    shiny::bindEvent(
+      input$summarise_cohort_attrition_cohort_name,
+      ignoreInit = TRUE
+    )
+  output$update_message_summarise_cohort_attrition <- shiny::renderUI({
+    switch(renderState$summarise_cohort_attrition,
+           initial = updateInitialMessage,
+           stale = updateMessage,
+           rendered = NULL
+    )
   })
-  output$cohort_code_use_table_gt <- gt::render_gt({
-    getCohortCodeUseTableGt()
-  })
-  output$cohort_code_use_table_gt_download <- shiny::downloadHandler(
-    filename = paste0("table_cohort_code_use.", input$cohort_code_use_table_gt_format),
+  shiny::observeEvent(input$update_summarise_cohort_attrition,
+                      {
+                        renderState$summarise_cohort_attrition <- "rendered"
+                      },
+                      ignoreInit = TRUE
+  )
+  
+  ## get summarise_cohort_attrition data
+  # Convert uploaded PDF to PNG
+  getSummariseCohortAttritionDiagram <- shiny::eventReactive(
+    input$update_summarise_cohort_attrition,
+    {png_path <- tempfile(fileext = ".png")
+    pdftools::pdf_convert(
+      pdf = here::here("data", paste0("attrition_", input$summarise_cohort_attrition_cohort_name,".pdf")),
+      format = "png",
+      pages = 1,
+      dpi = 200,
+      filenames = png_path
+    )
+    png_path
+    })
+  
+  # Display diagram
+  output$summarise_cohort_attrition_diagram <- shiny::renderImage({
+    
+    list(
+      src = getSummariseCohortAttritionDiagram(),
+      contentType = "image/png",
+      width = "100%"
+    )
+    
+  }, deleteFile = FALSE)
+  
+  # Download diagram
+  output$summarise_cohort_attrition_diagram_download <- shiny::downloadHandler(
+    filename = "attrition_diagram.png",
     content = function(file) {
-      gt::gtsave(getCohortCodeUseTableGt(), file)
+      file.copy(
+        from = getSummariseCohortAttritionDiagram(),
+        to = file,
+        overwrite = TRUE
+      )
     }
   )
+  
+  
+  # Study covariates ----
+  ## cohort_code_use_covariates -----
+  ## update message if filter is changed
+  shiny::observe({
+    if (renderState$cohort_code_use_covariates == "rendered") {
+      renderState$cohort_code_use_covariates <- "stale"
+    }
+  }) |>
+    shiny::bindEvent(
+      input$cohort_code_use_covariates_cdm_name,
+      input$cohort_code_use_covariates_cohort_name,
+      input$cohort_code_use_covariates_codelist_name,
+      ignoreInit = TRUE
+    )
+  output$update_message_cohort_code_use_covariates <- shiny::renderUI({
+    switch(renderState$cohort_code_use_covariates,
+      initial = updateInitialMessage,
+      stale = updateMessage,
+      rendered = NULL
+    )
+  })
+  shiny::observeEvent(input$update_cohort_code_use_covariates,
+    {
+      renderState$cohort_code_use_covariates <- "rendered"
+    },
+    ignoreInit = TRUE
+  )
 
+  ## get cohort_code_use_covariates data
+  getCohortCodeUseCovariatesData <- shiny::eventReactive(input$update_cohort_code_use_covariates,
+    {
+      data[["cohort_code_use"]] |>
+        dplyr::filter(.data$cdm_name %in% input$cohort_code_use_covariates_cdm_name)|>
+        omopgenerics::filterGroup(.data$cohort_name %in% input$cohort_code_use_covariates_cohort_name,
+                                  .data$codelist_name %in% input$cohort_code_use_covariates_codelist_name)
+    },
+    ignoreInit = TRUE
+  )
+  getCohortCodeUseCovariatesTableReact <- shiny::reactive({
+    getCohortCodeUseCovariatesData() |>
+      CodelistGenerator::tableCohortCodeUse(
+        type = "reactable",
+        header = c("cdm_name", "estimate_name"),
+        groupColumn = c("cohort_name", "codelist_name"),
+        hide = c("log_id","type_concept_id", "domain", "table", "domain_id", "vocabulary_id", "relationship", "diagnostic",
+                 "phenotyper_version", "timing")
+      )
+  })
+  output$cohort_code_use_covariates_table_react <- reactable::renderReactable({
+    getCohortCodeUseCovariatesTableReact()
+  })
+  
+  ## orphan_code_use_covariates -----
+  ## update message if filter is changed
+  shiny::observe({
+    if (renderState$orphan_code_use_covariates == "rendered") {
+      renderState$orphan_code_use_covariates <- "stale"
+    }
+  }) |>
+    shiny::bindEvent(
+      input$orphan_code_use_covariates_cdm_name,
+      input$orphan_code_use_covariates_codelist_name,
+      ignoreInit = TRUE
+    )
+  output$update_message_orphan_code_use_covariates <- shiny::renderUI({
+    switch(renderState$orphan_code_use_covariates,
+           initial = updateInitialMessage,
+           stale = updateMessage,
+           rendered = NULL
+    )
+  })
+  shiny::observeEvent(input$update_orphan_code_use_covariates,
+                      {
+                        renderState$orphan_code_use_covariates <- "rendered"
+                      },
+                      ignoreInit = TRUE
+  )
+  
+  ## get orphan_code_use data
+  getOrphanCodeUseCovariatesData <- shiny::eventReactive(input$update_orphan_code_use_covariates,
+                                               {
+                                                 data[["orphan_code_use"]] |>
+                                                   dplyr::filter(.data$cdm_name %in% input$orphan_code_use_covariates_cdm_name) |>
+                                                   omopgenerics::filterGroup(.data$codelist_name %in% input$orphan_code_use_covariates_codelist_name) 
+                                               },
+                                               ignoreInit = TRUE
+  )
+  getOrphanCodeUseCovariatesTableReact <- shiny::reactive({
+    getOrphanCodeUseCovariatesData() |>
+      CodelistGenerator::tableOrphanCodes(
+        type = "reactable",
+        header = c("cdm_name", "estimate_name"),
+        groupColumn = c("codelist_name"),
+        hide = c("log_id","type_concept_id", "domain_id", "table")
+      )
+  })
+  output$orphan_code_use_covariates_table_react <- reactable::renderReactable({
+    getOrphanCodeUseCovariatesTableReact()
+  })
+  getOrphanCodeUseCovariatesTableGt <- shiny::reactive({
+    getOrphanCodeUseCovariatesData() |>
+      CodelistGenerator::tableOrphanCodes(
+        header = c("cdm_name", "estimate_name"),
+        groupColumn = c("codelist_name"),
+        hide = c("log_id","type_concept_id", "domain", "table")
+      )
+  })
+  output$orphan_code_use_covariates_table_gt <- gt::render_gt({
+    getOrphanCodeUseCovariatesTableGt()
+  })
+  output$orphan_code_use_covariates_table_gt_download <- shiny::downloadHandler(
+    filename = paste0("table_orphan_codes.", input$orphan_code_use_covariates_table_gt_format),
+    content = function(file) {
+      gt::gtsave(getOrphanCodeUseCovariatesTableGt(), file)
+    }
+  )
+  
+  
+  # cohort_code_use_cci -----
+  ## update message if filter is changed
+  shiny::observe({
+    if (renderState$cohort_code_use_cci == "rendered") {
+      renderState$cohort_code_use_cci <- "stale"
+    }
+  }) |>
+    shiny::bindEvent(
+      input$cohort_code_use_cci_cdm_name,
+      input$cohort_code_use_cci_cohort_name,
+      input$cohort_code_use_cci_codelist_name,
+      ignoreInit = TRUE
+    )
+  output$update_message_cohort_code_use_cci <- shiny::renderUI({
+    switch(renderState$cohort_code_use_cci,
+           initial = updateInitialMessage,
+           stale = updateMessage,
+           rendered = NULL
+    )
+  })
+  shiny::observeEvent(input$update_cohort_code_use_cci,
+                      {
+                        renderState$cohort_code_use_cci <- "rendered"
+                      },
+                      ignoreInit = TRUE
+  )
+  
+  ## get cohort_code_use_cci data
+  getCohortCodeUseCCIData <- shiny::eventReactive(input$update_cohort_code_use_cci,
+                                                         {
+                                                           data[["cohort_code_use"]] |>
+                                                             dplyr::filter(.data$cdm_name %in% input$cohort_code_use_cci_cdm_name)|>
+                                                             omopgenerics::filterGroup(.data$cohort_name %in% input$cohort_code_use_cci_cohort_name,
+                                                                                       .data$codelist_name %in% input$cohort_code_use_cci_codelist_name)
+                                                         },
+                                                         ignoreInit = TRUE
+  )
+  getCohortCodeUseCCITableReact <- shiny::reactive({
+    getCohortCodeUseCCIData() |>
+      CodelistGenerator::tableCohortCodeUse(
+        type = "reactable",
+        header = c("cdm_name", "estimate_name"),
+        groupColumn = c("cohort_name", "codelist_name"),
+        hide = c("log_id","type_concept_id", "domain", "table", "domain_id", "vocabulary_id", "relationship", "diagnostic",
+                 "phenotyper_version", "timing")
+      )
+  })
+  output$cohort_code_use_cci_table_react <- reactable::renderReactable({
+    getCohortCodeUseCCITableReact()
+  })
+  
+  # orphan_code_use_cci -----
+  ## update message if filter is changed
+  shiny::observe({
+    if (renderState$orphan_code_use_cci == "rendered") {
+      renderState$orphan_code_use_cci <- "stale"
+    }
+  }) |>
+    shiny::bindEvent(
+      input$orphan_code_use_cci_cdm_name,
+      input$orphan_code_use_cci_codelist_name,
+      ignoreInit = TRUE
+    )
+  output$update_message_orphan_code_use_cci <- shiny::renderUI({
+    switch(renderState$orphan_code_use_cci,
+           initial = updateInitialMessage,
+           stale = updateMessage,
+           rendered = NULL
+    )
+  })
+  shiny::observeEvent(input$update_orphan_code_use_cci,
+                      {
+                        renderState$orphan_code_use_cci <- "rendered"
+                      },
+                      ignoreInit = TRUE
+  )
+  
+  ## get orphan_code_use data
+  getOrphanCodeUseCCIData <- shiny::eventReactive(input$update_orphan_code_use_cci,
+                                                         {
+                                                           data[["orphan_code_use"]] |>
+                                                             dplyr::filter(.data$cdm_name %in% input$orphan_code_use_cci_cdm_name) |>
+                                                             omopgenerics::filterGroup(.data$codelist_name %in% input$orphan_code_use_cci_codelist_name) 
+                                                         },
+                                                         ignoreInit = TRUE
+  )
+  getOrphanCodeUseCCITableReact <- shiny::reactive({
+    getOrphanCodeUseCCIData() |>
+      CodelistGenerator::tableOrphanCodes(
+        type = "reactable",
+        header = c("cdm_name", "estimate_name"),
+        groupColumn = c("codelist_name"),
+        hide = c("log_id","type_concept_id", "domain_id", "table")
+      )
+  })
+  output$orphan_code_use_cci_table_react <- reactable::renderReactable({
+    getOrphanCodeUseCCITableReact()
+  })
+  getOrphanCodeUseCCITableGt <- shiny::reactive({
+    getOrphanCodeUseCCIData() |>
+      CodelistGenerator::tableOrphanCodes(
+        header = c("cdm_name", "estimate_name"),
+        groupColumn = c("codelist_name"),
+        hide = c("log_id","type_concept_id", "domain", "table")
+      )
+  })
+  output$orphan_code_use_cci_table_gt <- gt::render_gt({
+    getOrphanCodeUseCCITableGt()
+  })
+  output$orphan_code_use_cci_table_gt_download <- shiny::downloadHandler(
+    filename = paste0("table_orphan_codes.", input$orphan_code_use_cci_table_gt_format),
+    content = function(file) {
+      gt::gtsave(getOrphanCodeUseCCITableGt(), file)
+    }
+  )
+  
+  
+  
+  
+  # cohort_code_use_efi -----
+  ## update message if filter is changed
+  shiny::observe({
+    if (renderState$cohort_code_use_efi == "rendered") {
+      renderState$cohort_code_use_efi <- "stale"
+    }
+  }) |>
+    shiny::bindEvent(
+      input$cohort_code_use_efi_cdm_name,
+      input$cohort_code_use_efi_cohort_name,
+      input$cohort_code_use_efi_codelist_name,
+      ignoreInit = TRUE
+    )
+  output$update_message_cohort_code_use_efi <- shiny::renderUI({
+    switch(renderState$cohort_code_use_efi,
+           initial = updateInitialMessage,
+           stale = updateMessage,
+           rendered = NULL
+    )
+  })
+  shiny::observeEvent(input$update_cohort_code_use_efi,
+                      {
+                        renderState$cohort_code_use_efi <- "rendered"
+                      },
+                      ignoreInit = TRUE
+  )
+  
+  ## get cohort_code_use_efi data
+  getCohortCodeUseEFIData <- shiny::eventReactive(input$update_cohort_code_use_efi,
+                                                         {
+                                                           data[["cohort_code_use"]] |>
+                                                             dplyr::filter(.data$cdm_name %in% input$cohort_code_use_efi_cdm_name)|>
+                                                             omopgenerics::filterGroup(.data$cohort_name %in% input$cohort_code_use_efi_cohort_name,
+                                                                                       .data$codelist_name %in% input$cohort_code_use_efi_codelist_name)
+                                                         },
+                                                         ignoreInit = TRUE
+  )
+  getCohortCodeUseEFITableReact <- shiny::reactive({
+    getCohortCodeUseEFIData() |>
+      CodelistGenerator::tableCohortCodeUse(
+        type = "reactable",
+        header = c("cdm_name", "estimate_name"),
+        groupColumn = c("cohort_name", "codelist_name"),
+        hide = c("log_id","type_concept_id", "domain", "table", "domain_id", "vocabulary_id", "relationship", "diagnostic",
+                 "phenotyper_version", "timing")
+      )
+  })
+  output$cohort_code_use_efi_table_react <- reactable::renderReactable({
+    getCohortCodeUseEFITableReact()
+  })
+  
+  # orphan_code_use_efi -----
+  ## update message if filter is changed
+  shiny::observe({
+    if (renderState$orphan_code_use_efi == "rendered") {
+      renderState$orphan_code_use_efi <- "stale"
+    }
+  }) |>
+    shiny::bindEvent(
+      input$orphan_code_use_efi_cdm_name,
+      input$orphan_code_use_efi_codelist_name,
+      ignoreInit = TRUE
+    )
+  output$update_message_orphan_code_use_efi <- shiny::renderUI({
+    switch(renderState$orphan_code_use_efi,
+           initial = updateInitialMessage,
+           stale = updateMessage,
+           rendered = NULL
+    )
+  })
+  shiny::observeEvent(input$update_orphan_code_use_efi,
+                      {
+                        renderState$orphan_code_use_efi <- "rendered"
+                      },
+                      ignoreInit = TRUE
+  )
+  
+  ## get orphan_code_use data
+  getOrphanCodeUseEFIData <- shiny::eventReactive(input$update_orphan_code_use_efi,
+                                                         {
+                                                           data[["orphan_code_use"]] |>
+                                                             dplyr::filter(.data$cdm_name %in% input$orphan_code_use_efi_cdm_name) |>
+                                                             omopgenerics::filterGroup(.data$codelist_name %in% input$orphan_code_use_efi_codelist_name) 
+                                                         },
+                                                         ignoreInit = TRUE
+  )
+  getOrphanCodeUseEFITableReact <- shiny::reactive({
+    getOrphanCodeUseEFIData() |>
+      CodelistGenerator::tableOrphanCodes(
+        type = "reactable",
+        header = c("cdm_name", "estimate_name"),
+        groupColumn = c("codelist_name"),
+        hide = c("log_id","type_concept_id", "domain_id", "table")
+      )
+  })
+  output$orphan_code_use_efi_table_react <- reactable::renderReactable({
+    getOrphanCodeUseEFITableReact()
+  })
+  getOrphanCodeUseEFITableGt <- shiny::reactive({
+    getOrphanCodeUseEFIData() |>
+      CodelistGenerator::tableOrphanCodes(
+        header = c("cdm_name", "estimate_name"),
+        groupColumn = c("codelist_name"),
+        hide = c("log_id","type_concept_id", "domain", "table")
+      )
+  })
+  output$orphan_code_use_efi_table_gt <- gt::render_gt({
+    getOrphanCodeUseEFITableGt()
+  })
+  output$orphan_code_use_efi_table_gt_download <- shiny::downloadHandler(
+    filename = paste0("table_orphan_codes.", input$orphan_code_use_efi_table_gt_format),
+    content = function(file) {
+      gt::gtsave(getOrphanCodeUseEFITableGt(), file)
+    }
+  )
+  
+  
+  
   # summarise_cohort_overlap -----
   ## update message if filter is changed
   shiny::observe({
@@ -413,78 +750,7 @@ server <- function(input, output, session) {
     }
   )
 
-  # summarise_cohort_attrition -----
-  ## update message if filter is changed
-  shiny::observe({
-    if (renderState$summarise_cohort_attrition == "rendered") {
-      renderState$summarise_cohort_attrition <- "stale"
-    }
-  }) |>
-    shiny::bindEvent(
-      input$summarise_cohort_attrition_cdm_name,
-      input$summarise_cohort_attrition_cohort_name,
-      input$summarise_cohort_attrition_variable_name,
-      ignoreInit = TRUE
-    )
-  output$update_message_summarise_cohort_attrition <- shiny::renderUI({
-    switch(renderState$summarise_cohort_attrition,
-      initial = updateInitialMessage,
-      stale = updateMessage,
-      rendered = NULL
-    )
-  })
-  shiny::observeEvent(input$update_summarise_cohort_attrition,
-    {
-      renderState$summarise_cohort_attrition <- "rendered"
-    },
-    ignoreInit = TRUE
-  )
-
-  ## get summarise_cohort_attrition data
-  getSummariseCohortAttritionData <- shiny::eventReactive(input$update_summarise_cohort_attrition,
-    {
-      data[["summarise_cohort_attrition"]] |>
-        dplyr::filter(
-          .data$cdm_name %in% input$summarise_cohort_attrition_cdm_name,
-          .data$variable_name %in% input$summarise_cohort_attrition_variable_name
-        ) |>
-        omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_cohort_attrition_cohort_name)
-    },
-    ignoreInit = TRUE
-  )
-  getSummariseCohortAttritionTable <- shiny::reactive({
-    getSummariseCohortAttritionData() |>
-      CohortCharacteristics::tableCohortAttrition(
-        header = input$summarise_cohort_attrition_table_header,
-        groupColumn = input$summarise_cohort_attrition_table_group_column,
-        hide = input$summarise_cohort_attrition_table_hide
-      )
-  })
-  output$summarise_cohort_attrition_table <- gt::render_gt({
-    getSummariseCohortAttritionTable()
-  })
-  output$summarise_cohort_attrition_table_download <- shiny::downloadHandler(
-    filename = paste0("table_attrition.", input$summarise_cohort_attrition_table_format),
-    content = function(file) {
-      gt::gtsave(getSummariseCohortAttritionTable(), file)
-    }
-  )
-  getSummariseCohortAttritionDiagram <- shiny::reactive({
-    getSummariseCohortAttritionData() |>
-      CohortCharacteristics::plotCohortAttrition(
-        show = input$summarise_cohort_attrition_diagram_show
-      )
-  })
-  output$summarise_cohort_attrition_diagram <- DiagrammeR::renderGrViz({
-    getSummariseCohortAttritionDiagram()
-  })
-  output$summarise_cohort_attrition_diagram_download <- shiny::downloadHandler(
-    filename = "attrition_diagram.png",
-    content = function(file) {
-      svg <- DiagrammeRsvg::export_svg(getSummariseCohortAttritionDiagram())
-      rsvg::rsvg_png(charToRaw(svg), file, width = input$summarise_cohort_attrition_diagram_width)
-    }
-  )
+  
 
   # summarise_characteristics -----
   ## update message if filter is changed

@@ -19,24 +19,9 @@ ui <- bslib::page_navbar(
     icon = shiny::icon("book-atlas"),
     backgroundCard("background.md")
   ),
-  bslib::nav_panel(
-    title = "Summary",
-    icon = shiny::icon("file-alt"),
-    bslib::card(
-      bslib::card_header("Explore results"),
-      shiny::tags$div(
-        class = "mb-2",
-        shinyTree::shinyTree("summary_cdm_name", theme = "proton", themeIcons = FALSE),
-        shinyTree::shinyTree("summary_packages", theme = "proton", themeIcons = FALSE),
-        shinyTree::shinyTree("summary_min_cell_count", theme = "proton", themeIcons = FALSE),
-        shinyTree::shinyTree("summary_panels", theme = "proton", themeIcons = FALSE)
-      ),
-      full_screen = TRUE
-    )
-  ),
   # Data sources -----
   bslib::nav_menu(
-    title = "Data sources",
+    title = "Study Data Sources",
     icon = shiny::icon("list"),
     ## Snapshot ----
     bslib::nav_panel(
@@ -261,60 +246,12 @@ ui <- bslib::page_navbar(
       )
     )
   ),
+  # Codelist 
   bslib::nav_menu(
-    title = "CodelistGenerator",
+    title = "Study cohorts",
     icon = shiny::icon("list"),
     bslib::nav_panel(
-      title = "Orphan codes",
-      icon = shiny::icon("magnifying-glass-arrow-right"),
-      bslib::layout_sidebar(
-        sidebar = bslib::sidebar(
-          bslib::card(
-            class = "sticky-top-btn update-card",
-            bslib::card_body(
-              class = "p-3",
-              shiny::actionButton(
-                inputId = "update_orphan_code_use",
-                label = "Update content",
-                icon = shiny::icon("rotate"),
-                width = "100%",
-                class = "btn-primary"
-              ),
-              uiOutput(outputId = "update_message_orphan_code_use")
-            )
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "orphan_code_use_cdm_name",
-            label = "CDM name",
-            choices = choices$orphan_code_use_cdm_name,
-            selected = selected$orphan_code_use_cdm_name,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "orphan_code_use_table_name",
-            label = "Table name",
-            choices = choices$orphan_code_use_table_name,
-            selected = selected$orphan_code_use_table_name,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          position = "left"
-        ),
-        bslib::navset_card_tab(
-          bslib::nav_panel(
-            title = "Table Orphan codes (reactable)",
-            bslib::card(
-              full_screen = TRUE,
-              reactable::reactableOutput("orphan_code_use_table_react") |>
-                shinycssloaders::withSpinner()
-            )
-          )
-        )
-      )
-    ),
-    bslib::nav_panel(
-      title = "Cohort code use",
+      title = "Code lists",
       icon = shiny::icon("chart-column"),
       bslib::layout_sidebar(
         sidebar = bslib::sidebar(
@@ -323,60 +260,36 @@ ui <- bslib::page_navbar(
             bslib::card_body(
               class = "p-3",
               shiny::actionButton(
-                inputId = "update_cohort_code_use",
+                inputId = "update_cohort_code_use_cohorts",
                 label = "Update content",
                 icon = shiny::icon("rotate"),
                 width = "100%",
                 class = "btn-primary"
               ),
-              uiOutput(outputId = "update_message_cohort_code_use")
+              uiOutput(outputId = "update_message_cohort_code_use_cohorts")
             )
           ),
           shinyWidgets::pickerInput(
-            inputId = "cohort_code_use_cdm_name",
+            inputId = "cohort_code_use_cohorts_cdm_name",
             label = "CDM name",
-            choices = choices$cohort_code_use_cdm_name,
-            selected = selected$cohort_code_use_cdm_name,
+            choices = choices$cohort_code_use_cohorts_cdm_name,
+            selected = selected$cohort_code_use_cohorts_cdm_name,
             multiple = TRUE,
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
           ),
           shinyWidgets::pickerInput(
-            inputId = "cohort_code_use_cohort_name",
+            inputId = "cohort_code_use_cohorts_cohort_name",
             label = "Cohort name",
-            choices = choices$cohort_code_use_cohort_name,
-            selected = selected$cohort_code_use_cohort_name,
+            choices = choices$cohort_code_use_cohorts_cohort_name,
+            selected = selected$cohort_code_use_cohorts_cohort_name,
             multiple = TRUE,
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
           ),
           shinyWidgets::pickerInput(
-            inputId = "cohort_code_use_codelist_name",
+            inputId = "cohort_code_use_cohorts_codelist_name",
             label = "Codelist name",
-            choices = choices$cohort_code_use_codelist_name,
-            selected = selected$cohort_code_use_codelist_name,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "cohort_code_use_domain",
-            label = "Domain",
-            choices = choices$cohort_code_use_domain,
-            selected = selected$cohort_code_use_domain,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "cohort_code_use_log_id",
-            label = "Log id",
-            choices = choices$cohort_code_use_log_id,
-            selected = selected$cohort_code_use_log_id,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "cohort_code_use_estimate_name",
-            label = "Estimate name",
-            choices = choices$cohort_code_use_estimate_name,
-            selected = selected$cohort_code_use_estimate_name,
+            choices = choices$cohort_code_use_cohorts_codelist_name,
+            selected = selected$cohort_code_use_cohorts_codelist_name,
             multiple = TRUE,
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
           ),
@@ -387,68 +300,401 @@ ui <- bslib::page_navbar(
             title = "Table Cohort code use (reactable)",
             bslib::card(
               full_screen = TRUE,
-              reactable::reactableOutput("cohort_code_use_table_react") |>
+              reactable::reactableOutput("cohort_code_use_cohorts_table_react") |>
                 shinycssloaders::withSpinner()
             )
+          )
+        )
+      )
+    ),
+    ## Cohort attrition
+    bslib::nav_panel(
+      title = "Attrition",
+      icon = shiny::icon("layer-group"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_summarise_cohort_attrition",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_summarise_cohort_attrition")
+            )
           ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_cohort_attrition_cohort_name",
+            label = "Cohort name",
+            choices = choices$summarise_cohort_attrition_cohort_name,
+            selected = selected$summarise_cohort_attrition_cohort_name,
+            multiple = FALSE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
           bslib::nav_panel(
-            title = "Table Cohort code use (gt)",
+            title = "Diagram",
             bslib::card(
               full_screen = TRUE,
               bslib::card_header(
-                bslib::popover(
-                  shiny::icon("download"),
-                  shinyWidgets::pickerInput(
-                    inputId = "cohort_code_use_table_gt_format",
-                    label = "Format",
-                    choices = c("docx", "png", "pdf", "html"),
-                    selected = "docx",
-                    multiple = FALSE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shiny::downloadButton(outputId = "cohort_code_use_table_gt_download", label = "Download table")
+                shiny::downloadButton(
+                  outputId = "summarise_cohort_attrition_diagram_download",
+                  label = "Download"
                 ),
                 class = "text-end"
               ),
-              bslib::layout_sidebar(
-                sidebar = bslib::sidebar(
-                  sortable::bucket_list(
-                    header = NULL,
-                    sortable::add_rank_list(
-                      text = "None",
-                      labels = c("cohort_name", "codelist_name", "domain", "log_id", "source_concept_name", "source_concept_id", "source_concept_value", "type_concept_id", "type_concept_name", "domain_id", "table", "vocabulary_id", "relationship", "table_name", "variable_name", "variable_level"),
-                      input_id = "cohort_code_use_table_gt_none"
-                    ),
-                    sortable::add_rank_list(
-                      text = "Header",
-                      labels = c("cdm_name", "estimate_name"),
-                      input_id = "cohort_code_use_table_gt_header"
-                    ),
-                    sortable::add_rank_list(
-                      text = "Group columns",
-                      labels = character(),
-                      input_id = "cohort_code_use_table_gt_group_column"
-                    ),
-                    sortable::add_rank_list(
-                      text = "Hide",
-                      labels = "timing",
-                      input_id = "cohort_code_use_table_gt_hide"
-                    )
-                  ),
-                  position = "right"
-                ),
-                gt::gt_output("cohort_code_use_table_gt") |>
-                  shinycssloaders::withSpinner()
-              )
+              shiny::imageOutput(
+                outputId = "summarise_cohort_attrition_diagram",
+                width = "100%"
+              ) |>
+                shinycssloaders::withSpinner()
             )
           )
         )
       )
     )
   ),
+  # Study covariates ----
+  bslib::nav_menu(
+    title = "Study covariates",
+    icon = shiny::icon("list"),
+    ## covariates code list ----
+    bslib::nav_panel(
+      title = "Covariates code lists",
+      icon = shiny::icon("chart-column"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_cohort_code_use_covariates",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_cohort_code_use_covariates")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_covariates_cdm_name",
+            label = "CDM name",
+            choices = choices$cohort_code_use_covariates_cdm_name,
+            selected = selected$cohort_code_use_covariates_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_covariates_cohort_name",
+            label = "Cohort name",
+            choices = choices$cohort_code_use_covariates_cohort_name,
+            selected = selected$cohort_code_use_covariates_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_covariates_codelist_name",
+            label = "Codelist name",
+            choices = choices$cohort_code_use_covariates_codelist_name,
+            selected = selected$cohort_code_use_covariates_codelist_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Cohort code use (reactable)",
+            bslib::card(
+              full_screen = TRUE,
+              reactable::reactableOutput("cohort_code_use_covariates_table_react") |>
+                shinycssloaders::withSpinner()
+            )
+          )
+        )
+      )
+    ),
+    ## covariates orphan codes
+    bslib::nav_panel(
+      title = "Covariates orphan codes",
+      icon = shiny::icon("magnifying-glass-arrow-right"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_orphan_code_use_covariates",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_orphan_code_use_covariates")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_covariates_cdm_name",
+            label = "CDM name",
+            choices = choices$orphan_code_use_covariates_cdm_name,
+            selected = selected$orphan_code_use_covariates_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_covariates_table_name",
+            label = "Codelist name",
+            choices = choices$orphan_code_use_covariates_codelist_name,
+            selected = selected$orphan_code_use_covariates_codelist_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Orphan codes (reactable)",
+            bslib::card(
+              full_screen = TRUE,
+              reactable::reactableOutput("orphan_code_use_covariates_table_react") |>
+                shinycssloaders::withSpinner()
+            )
+          )
+        )
+      )
+    ),
+    ## CCI code list ----
+    bslib::nav_panel(
+      title = "CCI code lists",
+      icon = shiny::icon("chart-column"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_cohort_code_use_cci",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_cohort_code_use_cci")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_cci_cdm_name",
+            label = "CDM name",
+            choices = choices$cohort_code_use_cci_cdm_name,
+            selected = selected$cohort_code_use_cci_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_cci_cohort_name",
+            label = "Cohort name",
+            choices = choices$cohort_code_use_cci_cohort_name,
+            selected = selected$cohort_code_use_cci_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_cci_codelist_name",
+            label = "Codelist name",
+            choices = choices$cohort_code_use_cci_codelist_name,
+            selected = selected$cohort_code_use_cci_codelist_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Cohort code use (reactable)",
+            bslib::card(
+              full_screen = TRUE,
+              reactable::reactableOutput("cohort_code_use_cci_table_react") |>
+                shinycssloaders::withSpinner()
+            )
+          )
+        )
+      )
+    ),
+    
+    ## CCI orphan codes ----
+    bslib::nav_panel(
+      title = "CCI orphan codes",
+      icon = shiny::icon("magnifying-glass-arrow-right"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_orphan_code_use_cci",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_orphan_code_use_cci")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_cci_cdm_name",
+            label = "CDM name",
+            choices = choices$orphan_code_use_cci_cdm_name,
+            selected = selected$orphan_code_use_cci_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_cci_codelist_name",
+            label = "Codelist name",
+            choices = choices$orphan_code_use_cci_codelist_name,
+            selected = selected$orphan_code_use_cci_codelist_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Orphan codes (reactable)",
+            bslib::card(
+              full_screen = TRUE,
+              reactable::reactableOutput("orphan_code_use_cci_table_react") |>
+                shinycssloaders::withSpinner()
+            )
+          )
+        )
+      )
+    ),
+    ## EFI code list ----
+    bslib::nav_panel(
+      title = "EFI code lists",
+      icon = shiny::icon("chart-column"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_cohort_code_use_efi",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_cohort_code_use_efi")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_efi_cdm_name",
+            label = "CDM name",
+            choices = choices$cohort_code_use_efi_cdm_name,
+            selected = selected$cohort_code_use_efi_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_efi_cohort_name",
+            label = "Cohort name",
+            choices = choices$cohort_code_use_efi_cohort_name,
+            selected = selected$cohort_code_use_efi_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "cohort_code_use_efi_codelist_name",
+            label = "Codelist name",
+            choices = choices$cohort_code_use_efi_codelist_name,
+            selected = selected$cohort_code_use_efi_codelist_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Cohort code use (reactable)",
+            bslib::card(
+              full_screen = TRUE,
+              reactable::reactableOutput("cohort_code_use_efi_table_react") |>
+                shinycssloaders::withSpinner()
+            )
+          )
+        )
+      )
+    ),
+    ## EFI orphan codes ----
+    bslib::nav_panel(
+      title = "EFI orphan codes",
+      icon = shiny::icon("magnifying-glass-arrow-right"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_orphan_code_use_efi",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_orphan_code_use_efi")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_efi_cdm_name",
+            label = "CDM name",
+            choices = choices$orphan_code_use_efi_cdm_name,
+            selected = selected$orphan_code_use_efi_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "orphan_code_use_efi_codelist_name",
+            label = "Codelist name",
+            choices = choices$orphan_code_use_efi_codelist_name,
+            selected = selected$orphan_code_use_efi_codelist_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Orphan codes (reactable)",
+            bslib::card(
+              full_screen = TRUE,
+              reactable::reactableOutput("orphan_code_use_efi_table_react") |>
+                shinycssloaders::withSpinner()
+            )
+          )
+        )
+      )
+    )
+  ),
+  # Characteristics ----
   bslib::nav_menu(
     title = "CohortCharacteristics",
     icon = shiny::icon("list"),
+    ## Cohort overlap ----
     bslib::nav_panel(
       title = "Cohort Overlap",
       icon = shiny::icon("circle-half-stroke"),
@@ -627,139 +873,6 @@ ui <- bslib::page_navbar(
                   position = "right"
                 ),
                 shiny::uiOutput("summarise_cohort_overlap_plot") |>
-                  shinycssloaders::withSpinner()
-              )
-            )
-          )
-        )
-      )
-    ),
-    bslib::nav_panel(
-      title = "Cohort Attrition",
-      icon = shiny::icon("layer-group"),
-      bslib::layout_sidebar(
-        sidebar = bslib::sidebar(
-          bslib::card(
-            class = "sticky-top-btn update-card",
-            bslib::card_body(
-              class = "p-3",
-              shiny::actionButton(
-                inputId = "update_summarise_cohort_attrition",
-                label = "Update content",
-                icon = shiny::icon("rotate"),
-                width = "100%",
-                class = "btn-primary"
-              ),
-              uiOutput(outputId = "update_message_summarise_cohort_attrition")
-            )
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "summarise_cohort_attrition_cdm_name",
-            label = "CDM name",
-            choices = choices$summarise_cohort_attrition_cdm_name,
-            selected = selected$summarise_cohort_attrition_cdm_name,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "summarise_cohort_attrition_cohort_name",
-            label = "Cohort name",
-            choices = choices$summarise_cohort_attrition_cohort_name,
-            selected = selected$summarise_cohort_attrition_cohort_name,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "summarise_cohort_attrition_variable_name",
-            label = "Variable name",
-            choices = choices$summarise_cohort_attrition_variable_name,
-            selected = selected$summarise_cohort_attrition_variable_name,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          position = "left"
-        ),
-        bslib::navset_card_tab(
-          bslib::nav_panel(
-            title = "Table Attrition",
-            bslib::card(
-              full_screen = TRUE,
-              bslib::card_header(
-                bslib::popover(
-                  shiny::icon("download"),
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_cohort_attrition_table_format",
-                    label = "Format",
-                    choices = c("docx", "png", "pdf", "html"),
-                    selected = "docx",
-                    multiple = FALSE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shiny::downloadButton(outputId = "summarise_cohort_attrition_table_download", label = "Download table")
-                ),
-                class = "text-end"
-              ),
-              bslib::layout_sidebar(
-                sidebar = bslib::sidebar(
-                  sortable::bucket_list(
-                    header = NULL,
-                    sortable::add_rank_list(
-                      text = "None",
-                      labels = "reason",
-                      input_id = "summarise_cohort_attrition_table_none"
-                    ),
-                    sortable::add_rank_list(
-                      text = "Header",
-                      labels = "variable_name",
-                      input_id = "summarise_cohort_attrition_table_header"
-                    ),
-                    sortable::add_rank_list(
-                      text = "Group columns",
-                      labels = c("cdm_name", "cohort_name"),
-                      input_id = "summarise_cohort_attrition_table_group_column"
-                    ),
-                    sortable::add_rank_list(
-                      text = "Hide",
-                      labels = c("variable_level", "reason_id", "estimate_name", "cdm_version", "cohort_definition_id", "gap", "min_prior_observation", "table_name", "vocabulary_version"),
-                      input_id = "summarise_cohort_attrition_table_hide"
-                    )
-                  ),
-                  position = "right"
-                ),
-                gt::gt_output("summarise_cohort_attrition_table") |>
-                  shinycssloaders::withSpinner()
-              )
-            )
-          ),
-          bslib::nav_panel(
-            title = "Diagram",
-            bslib::card(
-              full_screen = TRUE,
-              bslib::card_header(
-                bslib::popover(
-                  shiny::icon("download"),
-                  shiny::numericInput(
-                    inputId = "summarise_cohort_attrition_diagram_width",
-                    label = "Width (px)",
-                    value = 2000
-                  ),
-                  shiny::downloadButton(outputId = "summarise_cohort_attrition_diagram_download", label = "Download Diagram")
-                ),
-                class = "text-end"
-              ),
-              bslib::layout_sidebar(
-                sidebar = bslib::sidebar(
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_cohort_attrition_diagram_show",
-                    label = "Show",
-                    choices = c("subjects", "records"),
-                    selected = c("subjects", "records"),
-                    multiple = TRUE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  position = "right"
-                ),
-                DiagrammeR::grVizOutput("summarise_cohort_attrition_diagram") |>
                   shinycssloaders::withSpinner()
               )
             )

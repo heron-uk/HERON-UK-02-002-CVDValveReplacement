@@ -4,7 +4,7 @@ cdm_name <- "HERON_CDM_202509_2026_10_21"
 db_diagnostics <- omopgenerics::bind(
   omopgenerics::importSummarisedResult(path = here::here("Results", paste0("results_snapshot_", cdm_name,".csv"))),
   omopgenerics::importSummarisedResult(path = here::here("Results", paste0("results_obs_period_", cdm_name,".csv")))
-)
+) 
 
 # Codelist Diagnostics
 x1 <- omopgenerics::importSummarisedResult(path = here::here("Results", paste0("results_code_use_efi_", cdm_name,".csv"))) 
@@ -14,6 +14,7 @@ x1 <- x1 |>
   omopgenerics::uniteAdditional(c(omopgenerics::additionalColumns(x1), "table_name")) |>
   omopgenerics::splitStrata() |>
   dplyr::rename("domain" = "domain_id") |>
+  dplyr::filter(.data$log_id == "overall") |>
   dplyr::select(-"log_id") |>
   omopgenerics::uniteStrata(c("domain"))
 
@@ -24,23 +25,27 @@ x2 <- x2 |>
   omopgenerics::uniteAdditional(c(omopgenerics::additionalColumns(x2), "table_name")) |>
   omopgenerics::splitStrata() |>
   dplyr::rename("domain" = "domain_id") |>
+  dplyr::filter(.data$log_id == "overall") |>
   dplyr::select(-"log_id") |>
   omopgenerics::uniteStrata(c("domain"))
 
 x3 <- omopgenerics::importSummarisedResult(path = here::here("Results", paste0("results_code_use_", cdm_name,".csv"))) 
 x3 <- x3 |>
   omopgenerics::splitAdditional() |>
+  omopgenerics::splitGroup() |>
   dplyr::mutate("table_name" = dplyr::case_when(
-    group_level %in% c("tavi", "tavi_additional", "aortic_valve_replacement", "aortic_valve_replacement_potential_tavi") ~ "Aortic valve replacement",
-    group_level %in% c("aortic_endocarditis_avr", "aortic_insufficiency_avr", "aortic_stenosis_avr") ~ "Indications",
+    cohort_name %in% c("tavi", "tavi_additional", "aortic_valve_replacement", "aortic_valve_replacement_potential_tavi") ~ "Aortic valve replacement",
+    cohort_name %in% c("aortic_endocarditis_avr", "aortic_insufficiency_avr", "aortic_stenosis_avr") ~ "Indications",
     .default = "Charlson comorbidity index")) |>
   omopgenerics::uniteAdditional(c(omopgenerics::additionalColumns(x3), "table_name")) |>
+  omopgenerics::uniteGroup(omopgenerics::groupColumns(x3)) |>
   omopgenerics::splitStrata() |>
   dplyr::rename("domain" = "domain_id") |>
+  dplyr::filter(.data$log_id == "overall") |>
   dplyr::select(-"log_id") |>
   omopgenerics::uniteStrata(c("domain"))
 
-codelist_diagnostics <- omopgenerics::bind(x1, x2, x3)
+codelist_diagnostics <- omopgenerics::bind(x1, x2, x3) 
 
 # Attrition
 attritions <- omopgenerics::bind(
@@ -79,5 +84,6 @@ omopgenerics::bind(db_diagnostics,
                    incidence,
                    table_one,
                    scores) |>
+  omopgenerics::filterSettings(result_type != "summarise_log_file") |>
   omopgenerics::exportSummarisedResult(path = here::here("Results"), 
                                        fileName = paste0("results_", cdm_name, ".csv"))
