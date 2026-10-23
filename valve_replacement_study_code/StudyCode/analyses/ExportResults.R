@@ -3,7 +3,6 @@ exportSummarisedResult(results[["snapshot"]],
                        fileName = "results_snapshot_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
-
 exportSummarisedResult(results[["obs_period"]],
                        minCellCount = min_cell_count,
                        fileName = "results_obs_period_{cdm_name}_{date}.csv",
