@@ -193,5 +193,6 @@ results[["objective_one_attrition_procedures"]]  <- summariseCohortAttrition(cdm
 
 omopgenerics::logMessage(message = "Create indication aortic stenosis or aortic stenosis+insuficiency cohort")
 cdm <- bind(cdm[["aortic_stenosis"]], cdm[["aortic_stenosis_insufficiency"]], name = "aortic_stenosis_indication")
-  
+cdm[["aortic_stenosis_indication"]] <- cdm[["aortic_stenosis_indication"]] |>
+  unionCohorts()
 omopgenerics::logMessage(message = "FINISH OBJECTIVE ONE")
