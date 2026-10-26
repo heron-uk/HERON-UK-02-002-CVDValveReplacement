@@ -179,13 +179,13 @@ cdm[["procedures"]] <- cdm[["procedures"]] |>
 
 omopgenerics::logMessage(message = "Summarise characteristics - on procedures")
 results[["objective_one"]] <- summariseCharacteristics(cdm[["procedures"]], 
-                                                       demographics = TRUE, ageGroup = age_groups,
+                                                       demographics = TRUE, 
+                                                       ageGroup = age_groups,
                                                        strata = list("calendar_year", "age_group", "sex", c("calendar_year", "age_group"), c("calendar_year", "sex")),
                                                        cohortIntersectFlag = list(
                                                          "Indications" = list("targetCohortTable" = "indications",
                                                                               "window" = c(-365, 0),
-                                                                              "nameStyle" = "{cohort_name}")
-                                                       ))
+                                                                              "nameStyle" = "{cohort_name}")))
 
 omopgenerics::logMessage(message = "Summarising cohort attrition")
 results[["objective_one_attrition_indications"]] <- summariseCohortAttrition(cdm[["indications"]])

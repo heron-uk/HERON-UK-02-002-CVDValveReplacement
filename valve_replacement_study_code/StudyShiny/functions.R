@@ -456,3 +456,22 @@ updateMessage <- shiny::div(
   shiny::icon("triangle-exclamation"),
   "Filters changed. Update to refresh results."
 )
+getStackedPlot <- function(result, title) {
+  result |>
+    visOmopResults::barPlot(x = "calendar_year", 
+                            y = "percentage", 
+                            position = "stack", 
+                            facet = c("cdm_name", "cohort_name", "age_group", "sex"),
+                            colour = "variable_level") +
+    geom_hline(yintercept = 100, 
+               linetype = "dashed") +
+    labs(fill = "", colour = "") +
+    theme(panel.grid.major = element_line(linewidth = 0.5, colour = "#c1c1c1"),
+          panel.spacing = unit(0.75, "cm"),
+          panel.border = element_rect(color = "black", fill = NA, linewidth = 1),
+          legend.position = "bottom") +
+    scale_color_manual(values = c(
+      "#B01513",  "#FFAD0AFF", "#EA6312", "#2A9D8F", "#264653",  "grey")) +
+    scale_fill_manual(values = c(
+      "#B01513",  "#FFAD0AFF", "#EA6312", "#2A9D8F", "#264653", "grey")) 
+}

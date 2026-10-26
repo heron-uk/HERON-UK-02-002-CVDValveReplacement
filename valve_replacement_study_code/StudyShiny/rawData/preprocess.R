@@ -15,9 +15,41 @@ source(file.path(getwd(), "functions.R"))
 
 result <- omopgenerics::importSummarisedResult(here::here("..", "StudyCode", "Results", "results_HERON_CDM_202509_2026_10_21.csv"))
 result <- result |>
-  dplyr::mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD Aurum", cdm_name)) 
+  dplyr::mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD Aurum", cdm_name)) |>
+  dplyr::mutate("group_level" = gsub("aortic_valve_replacement", "AVR", group_level),
+                "group_level" = gsub("savr", "SAVR", group_level),
+                "group_level" = gsub("tavi", "TAVI", group_level))
 
+# Read data ----
 data <- prepareResult(result, resultList)
+
+data[["summarise_characteristics"]] <- bind(
+  data[["summarise_characteristics"]], 
+  
+  data[["summarise_characteristics"]] |>
+    dplyr::filter(variable_name == "Indications",
+                  variable_level %in% c("Aortic stenosis avr",
+                                        "Aortic insufficiency avr",
+                                        "Aortic stenosis insufficiency",
+                                        "Aortic endocarditis",
+                                        "No indication identified")) |>
+    omopgenerics::tidy() |>
+    dplyr::summarise("count" = sum(count, na.rm = TRUE), 
+                     "percentage" = sum(percentage, na.rm = TRUE),
+                     .by = c(cdm_name, cohort_name, calendar_year, age_group, sex, variable_name)) |>
+    dplyr::mutate("mixed_group_count" = c(100-percentage) * count/percentage) |>
+    dplyr::mutate("mixed_group_percentage" = 100-percentage) |>
+    dplyr::select(-c("count", "percentage")) |>
+    dplyr::rename("count" = "mixed_group_count",
+                  "percentage" = "mixed_group_percentage") |>
+    dplyr::mutate('variable_level' = "Other identified indications") |>
+    omopgenerics::transformToSummarisedResult(
+      group = "cohort_name",
+      strata = c("calendar_year", "age_group", "sex"),
+      estimates = c("count", "percentage")
+    )) 
+
+# Modify values ----
 values <- getValues(result, resultList)
 
 for (nm in names(values)[grepl("cohort_code_use_", names(values))]) {
@@ -115,6 +147,11 @@ values$orphan_code_use_efi_codelist_name <- data[["orphan_code_use"]] |>
   splitGroup() |>
   distinct(codelist_name) |>
   pull(codelist_name)
+
+for (nm in names(values)[grepl("summarise_characteristics_", names(values))]) {
+  new_nm <- sub("summarise_characteristics_", "summarise_characteristics_indications_", nm)
+  values[[new_nm]] <- values[[nm]]
+}
 
 values$summarise_cohort_attrition_cohort_name <- c("aortic_valve_replacement", "aortic_stenosis_avr", "aortic_insufficiency_avr", "aortic_endocarditis_avr")
 

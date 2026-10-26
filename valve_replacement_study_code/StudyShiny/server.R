@@ -34,6 +34,7 @@ server <- function(input, output, session) {
     summarise_cohort_overlap = "initial",
     summarise_cohort_attrition = "initial",
     summarise_characteristics = "initial",
+    summarise_characteristics_indications = "initial",
     incidence = "initial",
     incidence_attrition = "initial",
     summarise_log_file = "initial"
@@ -651,7 +652,101 @@ server <- function(input, output, session) {
     }
   )
   
-  
+  # Indications characterisation ----
+  ## update message if filter is changed
+  shiny::observe({
+    if (renderState$summarise_characteristics_indications == "rendered") {
+      renderState$summarise_characteristics_indications <- "stale"
+    }
+  }) |>
+    shiny::bindEvent(
+      input$summarise_characteristics_indications_cdm_name,
+      input$summarise_characteristics_indications_cohort_name,
+      input$summarise_characteristics_indications_age_group,
+      input$summarise_characteristics_indications_sex,
+      ignoreInit = TRUE
+    )
+  output$update_message_summarise_characteristics_indications <- shiny::renderUI({
+    switch(renderState$summarise_characteristics_indications,
+           initial = updateInitialMessage,
+           stale = updateMessage,
+           rendered = NULL
+    )
+  })
+  shiny::observeEvent(input$update_summarise_characteristics_indications,
+                      {
+                        renderState$summarise_characteristics_indications <- "rendered"
+                      },
+                      ignoreInit = TRUE
+  )
+  getSummariseCharacteristicsIndicationsData <- shiny::eventReactive(
+    input$update_summarise_characteristics_indications,
+    {
+      data[["summarise_characteristics"]] |>
+        dplyr::filter(variable_name == "Indications") |>
+        dplyr::filter(.data$cdm_name %in% input$summarise_characteristics_indications_cdm_name) |>
+        omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_indications_cohort_name) |>
+        omopgenerics::filterStrata(
+          .data$age_group %in% input$summarise_characteristics_indications_age_group,
+          .data$sex %in% input$summarise_characteristics_indications_sex
+        ) |>
+        dplyr::mutate("variable_level" = gsub(" avr", "", .data$variable_level),
+                      "variable_level" = gsub("Aortic stenosis insufficiency", 
+                                              "Aortic stenosis and insufficiency", 
+                                              .data$variable_level)) |>
+        dplyr::mutate("variable_level" = factor(.data$variable_level, 
+                                                       levels = c("Aortic stenosis", 
+                                                                  "Aortic insufficiency", 
+                                                                  "Aortic endocarditis",
+                                                                  "Aortic stenosis and insufficiency",
+                                                                  "Other identified indications",
+                                                                  "No indication identified"))) |>
+        filter(!is.na(variable_level)) |>
+        arrange(cdm_name, group_level, strata_level, variable_level)
+    },
+    ignoreInit = TRUE
+  )
+  getSummariseCharacteristicsIndicationsTable <- shiny::reactive({
+    getSummariseCharacteristicsIndicationsData() |>
+      filterStrata(calendar_year == "overall") |>
+      visOmopResults::visOmopTable(
+        header = c("cdm_name", "cohort_name"),
+        groupColumn = c("age_group", "sex"),
+        estimateName = c("N (%)" = "<count> (<percentage>)"),
+        hide = "variable_name"
+      )
+  })
+  output$summarise_characteristics_indications_table <- gt::render_gt({
+    getSummariseCharacteristicsIndicationsTable()
+  })
+  output$summarise_characteristics_indications_table_download <- shiny::downloadHandler(
+    filename = paste0("table_characteristics.", input$summarise_characteristics_indications_table_format),
+    content = function(file) {
+      gt::gtsave(getSummariseCharacteristicsIndicationsTable(), file)
+    }
+  )
+  getSummariseCharacteristicsIndicationsPlot <- shiny::reactive({
+    getSummariseCharacteristicsIndicationsData()  |>
+      filterStrata(calendar_year != "overall") |>
+      getStackedPlot()
+  })
+  output$summarise_characteristics_indications_plot <- shiny::renderUI({
+    x <- getSummariseCharacteristicsIndicationsPlot()
+    renderInteractivePlot(x, FALSE)
+  })
+  output$summarise_characteristics_indications_plot_download <- shiny::downloadHandler(
+    filename = "plot_characteristics.png",
+    content = function(file) {
+      ggplot2::ggsave(
+        filename = file,
+        plot = getSummariseCharacteristicsInicationsPlot(),
+        width = as.numeric(input$summarise_characteristics_indications_plot_width),
+        height = as.numeric(input$summarise_characteristics_indications_plot_height),
+        units = input$summarise_characteristics_indications_plot_units,
+        dpi = as.numeric(input$summarise_characteristics_indications_plot_dpi)
+      )
+    }
+  )
   
   # summarise_cohort_overlap -----
   ## update message if filter is changed
@@ -749,9 +844,7 @@ server <- function(input, output, session) {
       )
     }
   )
-
   
-
   # summarise_characteristics -----
   ## update message if filter is changed
   shiny::observe({
@@ -864,22 +957,8 @@ server <- function(input, output, session) {
       input$incidence_outcome_cohort_name,
       input$incidence_cci_categories,
       input$incidence_efi_categories,
-      input$incidence_incidence_start_date,
-      input$incidence_analysis_interval,
-      input$incidence_analysis_censor_cohort_name,
-      input$incidence_analysis_complete_database_intervals,
-      input$incidence_analysis_outcome_washout,
-      input$incidence_analysis_repeated_events,
       input$incidence_denominator_age_group,
-      input$incidence_denominator_days_prior_observation,
-      input$incidence_denominator_end_date,
-      input$incidence_denominator_requirements_at_entry,
       input$incidence_denominator_sex,
-      input$incidence_denominator_start_date,
-      input$incidence_denominator_target_cohort_name,
-      input$incidence_denominator_time_at_risk,
-      input$incidence_variable_name,
-      input$incidence_estimate_name,
       ignoreInit = TRUE
     )
   output$update_message_incidence <- shiny::renderUI({
@@ -900,33 +979,16 @@ server <- function(input, output, session) {
   getIncidenceData <- shiny::eventReactive(input$update_incidence,
     {
       data[["incidence"]] |>
-        dplyr::filter(
-          .data$cdm_name %in% input$incidence_cdm_name,
-          .data$variable_name %in% input$incidence_variable_name,
-          .data$estimate_name %in% input$incidence_estimate_name
-        ) |>
+        dplyr::filter(.data$cdm_name %in% input$incidence_cdm_name) |>
         omopgenerics::filterGroup(.data$outcome_cohort_name %in% input$incidence_outcome_cohort_name) |>
         omopgenerics::filterStrata(
           .data$cci_categories %in% input$incidence_cci_categories,
           .data$efi_categories %in% input$incidence_efi_categories
         ) |>
-        omopgenerics::filterAdditional(
-          .data$incidence_start_date %in% input$incidence_incidence_start_date,
-          .data$analysis_interval %in% input$incidence_analysis_interval
-        ) |>
+        omopgenerics::filterAdditional(analysis_interval != "overall") |>
         omopgenerics::filterSettings(
-          .data$analysis_censor_cohort_name %in% input$incidence_analysis_censor_cohort_name,
-          .data$analysis_complete_database_intervals %in% input$incidence_analysis_complete_database_intervals,
-          .data$analysis_outcome_washout %in% input$incidence_analysis_outcome_washout,
-          .data$analysis_repeated_events %in% input$incidence_analysis_repeated_events,
           .data$denominator_age_group %in% input$incidence_denominator_age_group,
-          .data$denominator_days_prior_observation %in% input$incidence_denominator_days_prior_observation,
-          .data$denominator_end_date %in% input$incidence_denominator_end_date,
-          .data$denominator_requirements_at_entry %in% input$incidence_denominator_requirements_at_entry,
-          .data$denominator_sex %in% input$incidence_denominator_sex,
-          .data$denominator_start_date %in% input$incidence_denominator_start_date,
-          .data$denominator_target_cohort_name %in% input$incidence_denominator_target_cohort_name,
-          .data$denominator_time_at_risk %in% input$incidence_denominator_time_at_risk
+          .data$denominator_sex %in% input$incidence_denominator_sex
         )
     },
     ignoreInit = TRUE
