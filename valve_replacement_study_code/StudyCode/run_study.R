@@ -36,7 +36,12 @@ logMessage(message = "Study cohorts instantiated")
 # Run analyses ----
 logMessage(message = "Run study analyses")
 source(here("analyses", "0-SummariseCodeUse.R"))
+window <- "inf"
 source(here("analyses", "1-ObjectiveOne.R"))
+window <- "365"
+source(here("analyses", "1-ObjectiveOne_SensitivityAnalysis.R"))
+source(here("analyses", "1-ObjectiveOne.R"))
+
 source(here("analyses", "2-ObjectiveTwo.R"))
 source(here("analyses", "3-ObjectiveThree.R"))
 source(here("analyses", "4-RiskScores.R"))

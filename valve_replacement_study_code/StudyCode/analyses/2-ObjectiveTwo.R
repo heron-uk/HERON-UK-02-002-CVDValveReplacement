@@ -8,14 +8,24 @@ cdm[["procedures_nr"]] <- cdm[["procedures_nr"]] |>
                          name = "procedures_nr")
 
 logMessage(message = "Get denominator cohort")
-cdm <- generateDenominatorCohortSet(
-  cdm = cdm, 
-  name = "denominator",
-  cohortDateRange = study_period,
-  daysPriorObservation = 365,
-  ageGroup = c(list(c(0, 150)), age_groups_extended),
-  requirementInteractions = TRUE,
-  sex = c("Both", "Male", "Female")) 
+cdm[["aortic_stenosis_denominator"]] <- cdm[["aortic_stenosis_denominator"]] |>
+  requireCohortIntersect(targetCohortTable = "aortic_endocarditis_isolated", 
+                         window = c(-Inf, Inf), 
+                         intersections = 0) |>
+  requireCohortIntersect(targetCohortTable = "avd_with_endocarditis_isolated", 
+                         window = c(-Inf, Inf), 
+                         intersections = 0) 
+
+logMessage(message = "Get denominator cohort")
+cdm <- generateTargetDenominatorCohortSet(cdm = cdm, 
+                                   name = "denominator", 
+                                   targetCohortTable = "aortic_stenosis_denominator",
+                                   cohortDateRange = study_period,
+                                   daysPriorObservation = 365,
+                                   ageGroup = c(list(c(0, 150)), age_groups_extended),
+                                   requirementInteractions = TRUE,
+                                   requirementsAtEntry = TRUE,
+                                   sex = c("Both", "Male", "Female"))
 
 logMessage(message = "Estimate incidence")
 results[["incidence"]] <- estimateIncidence(
@@ -26,7 +36,22 @@ results[["incidence"]] <- estimateIncidence(
   repeatedEvents = FALSE,
   completeDatabaseIntervals = TRUE)
 
-logMessage(message = "Estimate incidence - stratified by risk scores")
+logMessage(message = "Get denominator cohort")
+cdm <- generateTargetDenominatorCohortSet(cdm = cdm, 
+                                          name = "denominator", 
+                                          targetCohortTable = "aortic_stenosis_denominator",
+                                          cohortDateRange = study_period,
+                                          daysPriorObservation = 365,
+                                          ageGroup = c(list(c(0, 150))),
+                                          requirementInteractions = TRUE,
+                                          requirementsAtEntry = TRUE,
+                                          sex = c("Both", "Male", "Female"))
+
+logMessage(message = "Stratify by risk scores")
+logMessage(message = "> Stratify by year")
+cdm[["denominator"]] <- cdm[["denominator"]] |>
+  yearCohorts(years = 2012:2025) 
+
 logMessage(message = "> Add charlson")
 cdm[["denominator"]] <- cdm[["denominator"]] |>
  addUpdatedCharlsonIndex(conceptSet = charlson_comorbidity_index_codelist,

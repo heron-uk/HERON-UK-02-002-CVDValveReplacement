@@ -33,19 +33,29 @@ exportSummarisedResult(results[["code_use_orphan"]],
                        fileName = "results_code_use_orphan_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
-exportSummarisedResult(results[["objective_one"]],
+exportSummarisedResult(results[["objective_one_inf"]],
                        minCellCount = min_cell_count,
-                       fileName = "results_objective_one_{cdm_name}_{date}.csv",
+                       fileName = "results_objective_one_inf_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
-exportSummarisedResult(results[["objective_one_attrition_indications"]],
+exportSummarisedResult(results[["objective_one_attrition_indications_inf"]],
                        minCellCount = min_cell_count,
-                       fileName = "results_objective_one_attrition_indications_{cdm_name}_{date}.csv",
+                       fileName = "results_objective_one_attrition_indications_inf_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
 exportSummarisedResult(results[["objective_one_attrition_procedures"]],
                        minCellCount = min_cell_count,
                        fileName = "results_objective_one_attrition_procedures_{cdm_name}_{date}.csv",
+                       path = here("Results"))
+
+exportSummarisedResult(results[["objective_one_365"]],
+                       minCellCount = min_cell_count,
+                       fileName = "results_objective_one_365_{cdm_name}_{date}.csv",
+                       path = here("Results"))
+
+exportSummarisedResult(results[["objective_one_attrition_indications_365"]],
+                       minCellCount = min_cell_count,
+                       fileName = "results_objective_one_attrition_indications_365_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
 exportSummarisedResult(results[["incidence"]],
