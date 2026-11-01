@@ -1,12 +1,39 @@
 omopgenerics::logMessage(message = "STARTING OBJECTIVE ONE")
 
+omopgenerics::logMessage(message = "Require intersection with AVR - aortic stenosis")
+cdm[["aortic_stenosis"]] <- cdm[["aortic_stenosis"]] |>
+  requireCohortIntersect(targetCohortTable = "aortic_valve_replacement", 
+                         window = c(0, window_value), 
+                         intersections = c(1,Inf))
+
+omopgenerics::logMessage(message = "Require intersection with AVR - aortic insufficiency")
+cdm[["aortic_insufficiency"]] <- cdm[["aortic_insufficiency"]] |>
+  requireCohortIntersect(targetCohortTable = "aortic_valve_replacement", 
+                         window = c(0, window_value), 
+                         intersections = c(1,Inf))
+  
+omopgenerics::logMessage(message = "Require intersection with AVR - aortic stenosis and insufficiency")
+cdm[["aortic_stenosis_insufficiency_codes"]] <- cdm[["aortic_stenosis_insufficiency_codes"]] |>
+  requireCohortIntersect(targetCohortTable = "aortic_valve_replacement", 
+                         window = c(0, window_value), 
+                         intersections = c(1,Inf))
+
+results[[paste0("objective_one_aortic_stenosis_insufficiency_codes_", window)]] <- summariseCohortAttrition(cdm[["aortic_stenosis_insufficiency_codes"]])
+
+omopgenerics::logMessage(message = "Require intersection with AVR - aortic endocarditis")
+cdm[["aortic_endocarditis"]] <- cdm[["aortic_endocarditis"]] |>
+  requireCohortIntersect(targetCohortTable = "aortic_valve_replacement", 
+                         window = c(0, window_value), 
+                         intersections = c(1,Inf))
+
 # Combination cohorts ----
 omopgenerics::logMessage(message = "Aortic stenosis + insufficiency")
 cdm[["aortic_stenosis_insufficiency"]] <- cdm[["aortic_stenosis"]] |>
   requireCohortIntersect(targetCohortTable = "aortic_insufficiency", 
                          window = c(-Inf,Inf),
                          intersections = c(1, Inf),
-                         name = "aortic_stenosis_insufficiency") 
+                         name = "aortic_stenosis_insufficiency")
+results[[paste0("objective_one_aortic_stenosis_insufficiency_", window)]] <- summariseCohortAttrition(cdm[["aortic_stenosis_insufficiency"]]) 
 
 cdm <- bind(cdm[["aortic_stenosis_insufficiency_codes"]], cdm[["aortic_stenosis_insufficiency"]], 
             name = "aortic_stenosis_insufficiency")
@@ -15,7 +42,6 @@ cdm[["aortic_stenosis_insufficiency"]] <- cdm[["aortic_stenosis_insufficiency"]]
 
 omopgenerics::logMessage(message = "Aortic Stenosis isolated")
 cdm[["aortic_stenosis_isolated"]] <- cdm[["aortic_stenosis"]] |>
-  requireCohortIntersect(cdm[])
   copyCohorts(name = "aortic_stenosis_isolated")
 
 cdm[["aortic_stenosis_isolated"]] <- cdm[["aortic_stenosis_isolated"]] |>
@@ -75,7 +101,8 @@ cdm[["avd_with_endocarditis_isolated"]] <- cdm[["aortic_endocarditis"]] |>
 cdm[["avd_with_endocarditis_isolated"]] <- cdm[["avd_with_endocarditis_isolated"]] |>
   requireCohortIntersect(targetCohortTable = "aortic_endocarditis_isolated",
                          window = c(-Inf, Inf),
-                         intersections = 0) 
+                         intersections = 0)  |>
+  renameCohort(newCohortName = "avd_with_endocarditis")
 
 # Create no indication identified cohort ----
 omopgenerics::logMessage(message = "Creating no indication identified cohort")
@@ -86,19 +113,19 @@ cdm[["no_indication_identified"]] <- copyCohorts(cdm[["aortic_valve_replacement"
 cdm[["no_indication_identified"]] <- cdm[["no_indication_identified"]] |>
   renameCohort(newCohortName = "no_indication_identified") |>
   requireCohortIntersect(targetCohortTable = "aortic_stenosis_isolated",
-                         window = c(-Inf, 0), 
+                         window = c(-window_value, 0), 
                          intersections = c(0)) |>
   requireCohortIntersect(targetCohortTable = "aortic_insufficiency_isolated",
-                         window = c(-Inf, 0), 
+                         window = c(-window_value, 0), 
                          intersections = c(0)) |>
   requireCohortIntersect(targetCohortTable = "aortic_endocarditis_isolated",
-                         window = c(-Inf, 0), 
+                         window = c(-window_value, 0), 
                          intersections = c(0)) |>
   requireCohortIntersect(targetCohortTable = "aortic_stenosis_insufficiency_isolated",
-                         window = c(-Inf, 0), 
+                         window = c(-window_value, 0), 
                          intersections = c(0)) |>
   requireCohortIntersect(targetCohortTable = "avd_with_endocarditis_isolated",
-                         window = c(-Inf, 0), 
+                         window = c(-window_value, 0), 
                          intersections = c(0))
 
 cdm <- bind(cdm[["aortic_stenosis_isolated"]], cdm[["aortic_insufficiency_isolated"]], cdm[["aortic_endocarditis_isolated"]],
@@ -116,14 +143,10 @@ results[[paste0("objective_one_",window)]] <- summariseCharacteristics(cdm[["pro
                                                                      c("calendar_year", "sex")),
                                                        cohortIntersectFlag = list(
                                                          "Indications" = list("targetCohortTable" = "indications",
-                                                                              "window" = c(-Inf, 0),
+                                                                              "window" = c(-window_value, 0),
                                                                               "nameStyle" = "{cohort_name}")))
 
 omopgenerics::logMessage(message = "Summarising cohort attrition")
-results[[paste0("objective_one_attrition_indications_", window)]] <- summariseCohortAttrition(cdm[["indications"]])
+results[[paste0("objective_one_attrition_indications_", window)]] <- summariseCohortAttrition(cdm[["indications"]]) 
 
-omopgenerics::logMessage(message = "Create indication aortic stenosis or aortic stenosis+insuficiency cohort")
-cdm <- bind(cdm[["aortic_stenosis_isolated"]], cdm[["aortic_stenosis_insufficiency_isolated"]], name = "aortic_stenosis_indication")
-cdm[["aortic_stenosis_indication"]] <- cdm[["aortic_stenosis_indication"]] |>
-  unionCohorts()
 omopgenerics::logMessage(message = "FINISH OBJECTIVE ONE")

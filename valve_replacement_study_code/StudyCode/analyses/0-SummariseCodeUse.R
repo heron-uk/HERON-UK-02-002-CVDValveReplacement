@@ -1,5 +1,5 @@
 logMessage(message = "Running cohort code use")
-cdm <- bind(cdm[["indications"]], cdm[["procedures"]], cdm[["charlson_comorbidity_index"]], name = "code_use")
+cdm <- bind(cdm[["indications"]], cdm[["aortic_stenosis_sa"]], cdm[["procedures"]], cdm[["charlson_comorbidity_index"]], name = "code_use")
 
 results[["code_use"]] <- codelistDiagnostics(cohort = cdm[["code_use"]], 
                                              achillesCodeUse = FALSE, 
