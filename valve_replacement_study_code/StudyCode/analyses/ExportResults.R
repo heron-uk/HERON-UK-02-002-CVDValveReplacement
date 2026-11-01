@@ -8,6 +8,11 @@ exportSummarisedResult(results[["obs_period"]],
                        fileName = "results_obs_period_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
+exportSummarisedResult(results[["objective_one_attrition_procedures"]],
+                       minCellCount = min_cell_count,
+                       fileName = "objective_one_attrition_procedures_{cdm_name}_{date}.csv",
+                       path = here("Results"))
+
 exportSummarisedResult(results[["attrition_tavi_additional"]],
                        minCellCount = min_cell_count,
                        fileName = "results_attrition_tavi_additional_{cdm_name}_{date}.csv",
@@ -21,6 +26,11 @@ exportSummarisedResult(results[["attrition_tavi_direct"]],
 exportSummarisedResult(results[["code_use"]],
                        minCellCount = min_cell_count,
                        fileName = "results_code_use_{cdm_name}_{date}.csv",
+                       path = here("Results"))
+
+exportSummarisedResult(results[["aortic_stenosis_code_use"]],
+                       minCellCount = min_cell_count,
+                       fileName = "aortic_stenosis_code_use_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
 exportSummarisedResult(results[["code_use_efi"]],
@@ -38,19 +48,34 @@ exportSummarisedResult(results[["objective_one_inf"]],
                        fileName = "results_objective_one_inf_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
+exportSummarisedResult(results[["objective_one_365"]],
+                       minCellCount = min_cell_count,
+                       fileName = "results_objective_one_inf_{cdm_name}_{date}.csv",
+                       path = here("Results"))
+
+exportSummarisedResult(results[["objective_one_aortic_stenosis_insufficiency_codes_inf"]],
+                       minCellCount = min_cell_count,
+                       fileName = "objective_one_aortic_stenosis_insufficiency_codes_inf_{cdm_name}_{date}.csv",
+                       path = here("Results"))
+
+exportSummarisedResult(results[["objective_one_aortic_stenosis_insufficiency_codes_365"]],
+                       minCellCount = min_cell_count,
+                       fileName = "objective_one_aortic_stenosis_insufficiency_codes_365_{cdm_name}_{date}.csv",
+                       path = here("Results"))
+
+exportSummarisedResult(results[["objective_one_aortic_stenosis_insufficiency_inf"]],
+                       minCellCount = min_cell_count,
+                       fileName = "objective_one_aortic_stenosis_insufficiency_inf_{cdm_name}_{date}.csv",
+                       path = here("Results"))
+
+exportSummarisedResult(results[["objective_one_aortic_stenosis_insufficiency_365"]],
+                       minCellCount = min_cell_count,
+                       fileName = "objective_one_aortic_stenosis_insufficiency_365_{cdm_name}_{date}.csv",
+                       path = here("Results"))
+
 exportSummarisedResult(results[["objective_one_attrition_indications_inf"]],
                        minCellCount = min_cell_count,
                        fileName = "results_objective_one_attrition_indications_inf_{cdm_name}_{date}.csv",
-                       path = here("Results"))
-
-exportSummarisedResult(results[["objective_one_attrition_procedures"]],
-                       minCellCount = min_cell_count,
-                       fileName = "results_objective_one_attrition_procedures_{cdm_name}_{date}.csv",
-                       path = here("Results"))
-
-exportSummarisedResult(results[["objective_one_365"]],
-                       minCellCount = min_cell_count,
-                       fileName = "results_objective_one_365_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
 exportSummarisedResult(results[["objective_one_attrition_indications_365"]],
@@ -66,6 +91,11 @@ exportSummarisedResult(results[["incidence"]],
 exportSummarisedResult(results[["incidence_per_groups"]],
                        minCellCount = min_cell_count,
                        fileName = "results_incidence_per_groups_{cdm_name}_{date}.csv",
+                       path = here("Results"))
+
+exportSummarisedResult(results[["incidence_general_pop"]],
+                       minCellCount = min_cell_count,
+                       fileName = "incidence_general_pop_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
 exportSummarisedResult(results[["table_one"]],

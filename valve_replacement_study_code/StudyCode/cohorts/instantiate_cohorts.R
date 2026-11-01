@@ -57,7 +57,7 @@ cdm[["savr"]] <- cdm[["aortic_valve_replacement"]] |>
 
 omopgenerics::logMessage(message = "Create procedures cohort")
 cdm <- bind(cdm[["aortic_valve_replacement"]], cdm[["tavi"]], cdm[["savr"]], name = "procedures")
-results[[paste0("objective_one_attrition_procedures")]]  <- summariseCohortAttrition(cdm[["procedures"]])
+results[["objective_one_attrition_procedures"]]  <- summariseCohortAttrition(cdm[["procedures"]])
 
 omopgenerics::logMessage(message = "Add calendar year")
 cdm[["procedures"]] <- cdm[["procedures"]] |>
