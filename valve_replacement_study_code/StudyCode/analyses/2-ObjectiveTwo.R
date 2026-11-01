@@ -1,5 +1,10 @@
 logMessage(message = "STARTING OBJECTIVE 2")
 
+omopgenerics::logMessage(message = "Create indication aortic stenosis or aortic stenosis+insuficiency cohort")
+cdm <- bind(cdm[["aortic_stenosis_isolated"]], cdm[["aortic_stenosis_insufficiency_isolated"]], name = "aortic_stenosis_indication")
+cdm[["aortic_stenosis_indication"]] <- cdm[["aortic_stenosis_indication"]] |>
+  unionCohorts()
+
 logMessage(message = "Anchor to AS diagnosis during the previous year")
 cdm[["procedures_nr"]] <- cdm[["procedures_nr"]] |>
   requireCohortIntersect(targetCohortTable = "aortic_stenosis_indication",
@@ -15,6 +20,10 @@ cdm[["aortic_stenosis_denominator"]] <- cdm[["aortic_stenosis_denominator"]] |>
   requireCohortIntersect(targetCohortTable = "avd_with_endocarditis_isolated", 
                          window = c(-Inf, Inf), 
                          intersections = 0) 
+
+logMessage(message = "Denominator cohort: exit at end of observation")
+cdm[["aortic_stenosis_denominator"]] <- cdm[["aortic_stenosis_denominator"]] |>
+  exitAtObservationEnd()
 
 logMessage(message = "Get denominator cohort")
 cdm <- generateTargetDenominatorCohortSet(cdm = cdm, 
@@ -42,16 +51,18 @@ cdm <- generateTargetDenominatorCohortSet(cdm = cdm,
                                           targetCohortTable = "aortic_stenosis_denominator",
                                           cohortDateRange = study_period,
                                           daysPriorObservation = 365,
-                                          ageGroup = c(list(c(0, 150))),
-                                          requirementInteractions = TRUE,
                                           requirementsAtEntry = TRUE,
                                           sex = c("Both", "Male", "Female"))
 
 logMessage(message = "Stratify by risk scores")
+attr(cdm[["denominator"]], "cohort_set") <- cdm[["denominator"]] |>
+  settings() |>
+  select(-c("target_cohort_definition_id"))
+
 logMessage(message = "> Stratify by year")
 cdm[["denominator"]] <- cdm[["denominator"]] |>
-  yearCohorts(years = 2012:2025) 
-
+  yearCohorts(years = 2012:2025)
+  
 logMessage(message = "> Add charlson")
 cdm[["denominator"]] <- cdm[["denominator"]] |>
  addUpdatedCharlsonIndex(conceptSet = charlson_comorbidity_index_codelist,

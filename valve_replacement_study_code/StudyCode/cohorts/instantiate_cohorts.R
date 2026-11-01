@@ -74,7 +74,7 @@ results[["attrition_tavi_additional"]] <- summariseCohortAttrition(cdm[["tavi_ad
 results[["attrition_tavi_direct"]] <- summariseCohortAttrition(cdm[["tavi_direct"]])
 
 # Create no restrictions code lists (Objective 2)----
-# Procedures with restrictions ----
+# Procedures with no restrictions ----
 omopgenerics::logMessage(message = "Instantiate aortic valve replacement - add inclusion criteria")
 # Create tavi additional ----
 omopgenerics::logMessage(message = "Instantiating TAVI (additional) cohort")
@@ -120,8 +120,15 @@ cdm[["aortic_stenosis"]] <- conceptCohort(cdm = cdm,
                                           name = "aortic_stenosis", 
                                           exit = "event_start_date") 
 
-cdm[["aortic_stenosis_denominator"]] <- cdm[["aortic_stenosis"]] |> 
-  copyCohorts(name = "aortic_stenosis_denominator")
+cdm[["aortic_stenosis_denominator"]] <- copyCohorts(cdm[["aortic_stenosis"]], name = "aortic_stenosis_denominator")
+
+omopgenerics::logMessage(message = "Instantiating aortic stenosis - sensitivity analysis denominator")
+cdm[["aortic_stenosis_sa"]] <- conceptCohort(cdm = cdm, 
+                                          conceptSet = addConcepts(codelist["aortic_stenosis_avr"], cdm = cdm, concepts = 3654574L), 
+                                          name = "aortic_stenosis_sa", 
+                                          exit = "event_start_date") 
+
+cdm[["aortic_stenosis_sa_denominator"]] <- copyCohorts(cdm[["aortic_stenosis_sa"]], name = "aortic_stenosis_sa_denominator")
 
 omopgenerics::logMessage(message = "Instantiating aortic insufficiency") 
 cdm[["aortic_insufficiency"]] <- conceptCohort(cdm = cdm, 
@@ -135,15 +142,18 @@ cdm[["aortic_stenosis_insufficiency_codes"]] <- conceptCohort(cdm = cdm,
                                                name = "aortic_stenosis_insufficiency_codes", 
                                                exit = "event_start_date") 
 
-
 omopgenerics::logMessage(message = "Instantiating aortic endocarditis")
 cdm[["aortic_endocarditis"]] <- conceptCohort(cdm = cdm, 
                                               conceptSet = c(codelist["aortic_endocarditis_avr"]), 
                                               name = "aortic_endocarditis", 
                                               exit = "event_start_date") 
 
-cdm <- bind(cdm[["aortic_stenosis"]], cdm[["aortic_insufficiency"]], codelist["aortic_stenosis_and_insufficiency"], cdm[["aortic_endocarditis"]],
+cdm <- bind(cdm[["aortic_stenosis"]], cdm[["aortic_insufficiency"]], cdm[["aortic_stenosis_insufficiency_codes"]] , cdm[["aortic_endocarditis"]],
             name = "indications")
+
+
+cdm <- bind(cdm[["aortic_stenosis_sa"]], cdm[["aortic_insufficiency"]], cdm[["aortic_stenosis_insufficiency_codes"]] , cdm[["aortic_endocarditis"]],
+            name = "indications_sa")
 
 omopgenerics::logMessage(message = "Comorbidities")
 cdm[["comorbidities"]] <- conceptCohort(cdm,
