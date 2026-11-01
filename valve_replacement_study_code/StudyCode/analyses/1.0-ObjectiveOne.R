@@ -21,7 +21,7 @@ results[[paste0("objective_one_aortic_stenosis_insufficiency_codes_", window)]] 
 omopgenerics::logMessage(message = "Require intersection with AVR - aortic endocarditis")
 cdm[["aortic_endocarditis"]] <- cdm[["aortic_endocarditis"]] |>
   requireCohortIntersect(targetCohortTable = "aortic_valve_replacement", 
-                         window = c(0, window_value), 
+                         window = c(0, 365), 
                          intersections = c(1,Inf))
 
 # Combination cohorts ----

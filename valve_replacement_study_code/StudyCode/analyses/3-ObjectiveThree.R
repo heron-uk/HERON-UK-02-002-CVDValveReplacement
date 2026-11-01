@@ -27,8 +27,7 @@ cdm[["procedures_as"]] <- cdm[["procedures_as"]] |>
 
 omopgenerics::logMessage(message = "Add age group extended")
 cdm[["procedures_as"]] <- cdm[["procedures_as"]] |>
-  addAge(ageGroup = age_groups_extended) |>
-  addSex()
+  addAge(ageGroup = age_groups_extended) 
 
 omopgenerics::logMessage(message = "Population characteristics")
 results[["table_one"]] <- summariseCharacteristics(cdm[["procedures_as"]], 
