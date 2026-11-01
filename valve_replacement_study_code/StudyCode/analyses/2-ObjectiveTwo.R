@@ -1,10 +1,5 @@
 logMessage(message = "STARTING OBJECTIVE 2")
 
-omopgenerics::logMessage(message = "Create indication aortic stenosis or aortic stenosis+insuficiency cohort")
-cdm <- bind(cdm[["aortic_stenosis_isolated"]], cdm[["aortic_stenosis_insufficiency_isolated"]], name = "aortic_stenosis_indication")
-cdm[["aortic_stenosis_indication"]] <- cdm[["aortic_stenosis_indication"]] |>
-  unionCohorts()
-
 logMessage(message = "Anchor to AS diagnosis during the previous year")
 cdm[["procedures_nr"]] <- cdm[["procedures_nr"]] |>
   requireCohortIntersect(targetCohortTable = "aortic_stenosis_indication",
