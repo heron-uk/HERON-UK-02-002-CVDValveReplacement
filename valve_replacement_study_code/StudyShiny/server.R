@@ -378,13 +378,14 @@ server <- function(input, output, session) {
   )
   
   ## get orphan_code_use data
-  getOrphanCodeUseCovariatesData <- shiny::eventReactive(input$update_orphan_code_use_covariates,
-                                               {
-                                                 data[["orphan_code_use"]] |>
-                                                   dplyr::filter(.data$cdm_name %in% input$orphan_code_use_covariates_cdm_name) |>
-                                                   omopgenerics::filterGroup(.data$codelist_name %in% input$orphan_code_use_covariates_codelist_name) 
-                                               },
-                                               ignoreInit = TRUE
+  getOrphanCodeUseCovariatesData <- shiny::eventReactive(
+    input$update_orphan_code_use_covariates,
+    {
+      data[["orphan_code_use"]] |>
+        dplyr::filter(.data$cdm_name %in% input$orphan_code_use_covariates_cdm_name) |>
+        omopgenerics::filterGroup(.data$codelist_name %in% input$orphan_code_use_covariates_codelist_name) 
+    },
+    ignoreInit = TRUE
   )
   getOrphanCodeUseCovariatesTableReact <- shiny::reactive({
     getOrphanCodeUseCovariatesData() |>

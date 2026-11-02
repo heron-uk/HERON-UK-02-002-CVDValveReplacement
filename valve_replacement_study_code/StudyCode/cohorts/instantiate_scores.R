@@ -102,7 +102,8 @@ omopgenerics::logMessage(message = " > Instantiate cohort")
 cdm[["charlson_comorbidity_index"]] <- conceptCohort(cdm,
                                                      conceptSet = charlson_comorbidity_index_codelist,
                                                      name = "charlson_comorbidity_index",
-                                                     exit = "event_start_date")
+                                                     exit = "event_start_date") |>
+  exitAtObservationEnd()
 
 
 # Instantiate electronic frailty index
@@ -125,7 +126,7 @@ omopgenerics::logMessage(message = "> Diabetes")
 electronic_frailty_index_codelist <- electronic_frailty_index_codelist |>
   mergeCodelists(newCodelistName = "diabetes",
                  keepOriginal = TRUE,
-                 codelistsToJoin = c("t1dm", "t2dm"))
+                 codelistsToJoin = c("t1dm", "t2dm", "dm"))
 
 omopgenerics::logMessage(message = "> Fragility fracture")
 electronic_frailty_index_codelist <- electronic_frailty_index_codelist |>
@@ -205,16 +206,11 @@ electronic_frailty_index_codelist <- electronic_frailty_index_codelist |>
                  keepOriginal = TRUE,
                  codelistsToJoin = c("weight_loss_and_anorexia"))
 
-omopgenerics::logMessage(message = "> Atrial fibrillation")
-electronic_frailty_index_codelist <- electronic_frailty_index_codelist |>
-  mergeCodelists(newCodelistName = "atrial_fibrillation",
-                 keepOriginal = TRUE,
-                 codelistsToJoin = c("atrial_fibrilation")) 
-
 omopgenerics::logMessage(message = "> Instantiate cohort")
 cdm[["electronic_frailty_index"]] <- conceptCohort(cdm,
                                                    conceptSet = electronic_frailty_index_codelist,
                                                    name = "electronic_frailty_index",
-                                                   exit = "event_start_date")
+                                                   exit = "event_start_date") |>
+  exitAtObservationEnd()
 
 
