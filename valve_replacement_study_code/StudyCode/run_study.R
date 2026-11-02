@@ -38,8 +38,8 @@ logMessage(message = "Run study analyses")
 source(here("analyses", "0-SummariseCodeUse.R"))
 
 # Run objective 1 
-source(here("analyses", "1.1-ObjectiveOne_Sensitivity"))
-source(here("analyses", "1.1-ObjectiveOne_Main"))
+source(here("analyses", "1.1-ObjectiveOne_Sensitivity.R"))
+source(here("analyses", "1.1-ObjectiveOne_Main.R"))
 
 source(here("analyses", "2-ObjectiveTwo.R"))
 source(here("analyses", "3-ObjectiveThree.R"))

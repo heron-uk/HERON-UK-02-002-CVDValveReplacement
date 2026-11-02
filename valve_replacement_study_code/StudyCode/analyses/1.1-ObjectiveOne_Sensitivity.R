@@ -3,7 +3,7 @@ omopgenerics::logMessage(message = "STARTING OBJECTIVE ONE")
 omopgenerics::logMessage(message = "Starting sensitivity analysis")
 window <- "inf"; window_value <- Inf
 cdm[["aortic_stenosis_obj_one"]] <- copyCohorts(cdm[["aortic_stenosis_sa"]], 
-                                                name = "aortic_stenosis_indication")
+                                                name = "aortic_stenosis_obj_one")
 
 source(here("analyses", "1.0-ObjectiveOne.R"))
 
