@@ -67,7 +67,8 @@ cdm[["procedures"]] <- cdm[["procedures"]] |>
 omopgenerics::logMessage(message = "Add age and sex")
 cdm[["procedures"]] <- cdm[["procedures"]] |>
   addAge(ageGroup = age_groups) |>
-  addSex()
+  addSex()  |>
+  compute(temporary = FALSE, name = "procedures")
 
 omopgenerics::logMessage(message = "Get cohort attritions")
 results[["attrition_tavi_additional"]] <- summariseCohortAttrition(cdm[["tavi_additional"]])

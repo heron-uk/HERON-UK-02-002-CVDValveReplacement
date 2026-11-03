@@ -88,9 +88,14 @@ exportSummarisedResult(results[["incidence"]],
                        fileName = "results_incidence_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
-exportSummarisedResult(results[["incidence_per_groups"]],
+exportSummarisedResult(results[["incidence_cci"]],
                        minCellCount = min_cell_count,
-                       fileName = "results_incidence_per_groups_{cdm_name}_{date}.csv",
+                       fileName = "incidence_cci_{cdm_name}_{date}.csv",
+                       path = here("Results"))
+
+exportSummarisedResult(results[["incidence_efi"]],
+                       minCellCount = min_cell_count,
+                       fileName = "incidence_efi_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
 exportSummarisedResult(results[["incidence_general_pop"]],

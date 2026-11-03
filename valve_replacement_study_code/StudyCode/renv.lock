@@ -513,10 +513,59 @@
       "Maintainer": "Nuria Mercade-Besora <nuria.mercadebesora@ndorms.ox.ac.uk>",
       "Repository": "CRAN"
     },
+    "OmopConstructor": {
+      "Package": "OmopConstructor",
+      "Version": "0.3.0",
+      "Source": "Repository",
+      "Title": "Build Tables in the OMOP Common Data Model",
+      "Authors@R": "c( person( \"Martí\", \"Català\", email = \"marti.catalasabate@ndorms.ox.ac.uk\",  role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0003-3308-9905\") ), person( \"Elin\", \"Rowlands\", email = \"elin.rowlands@ndorms.ox.ac.uk\",  role = c(\"ctb\"), comment = c(ORCID = \"0009-0005-5166-0417\") ), person( \"Cecilia\", \"Campanile\", email = \"cecilia.campanile@ndorms.ox.ac.uk\",  role = c(\"ctb\"), comment = c(ORCID = \"0009-0007-6629-4661\") ))",
+      "Description": "Provides functionality to construct standardised tables from health care data formatted according to the Observational Medical Outcomes  Partnership (OMOP) Common Data Model. The package includes tools to build  key tables such as observation period and drug era, among others.",
+      "License": "Apache License (>= 2)",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.3",
+      "Imports": [
+        "cli",
+        "clock",
+        "dplyr",
+        "glue",
+        "omopgenerics",
+        "PatientProfiles",
+        "purrr",
+        "rlang"
+      ],
+      "Depends": [
+        "R (>= 4.1)"
+      ],
+      "Suggests": [
+        "bookdown",
+        "CDMConnector",
+        "duckdb",
+        "ggplot2",
+        "gt",
+        "knitr",
+        "odbc",
+        "omock",
+        "OmopSketch",
+        "rmarkdown",
+        "RPostgres",
+        "stringr",
+        "testthat (>= 3.0.0)",
+        "tidyr",
+        "visOmopResults"
+      ],
+      "Config/testthat/edition": "3",
+      "URL": "https://ohdsi.github.io/OmopConstructor/",
+      "BugReports": "https://github.com/ohdsi/OmopConstructor/issues",
+      "VignetteBuilder": "knitr",
+      "NeedsCompilation": "no",
+      "Author": "Martí Català [aut, cre] (ORCID: <https://orcid.org/0000-0003-3308-9905>), Elin Rowlands [ctb] (ORCID: <https://orcid.org/0009-0005-5166-0417>), Cecilia Campanile [ctb] (ORCID: <https://orcid.org/0009-0007-6629-4661>)",
+      "Maintainer": "Martí Català <marti.catalasabate@ndorms.ox.ac.uk>",
+      "Repository": "CRAN"
+    },
     "OmopIndices": {
       "Package": "OmopIndices",
-      "Version": "0.1.0",
-      "Source": "Repository",
+      "Version": "0.2.0",
+      "Source": "GitHub",
       "Type": "Package",
       "Title": "Patient-Level Indices from the OMOP Common Data Model",
       "Authors@R": "c( person(\"Martí\", \"Català\", , \"marti.catalasabate@ndorms.ox.ac.uk\",  role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0003-3308-9905\")), person(\"Marta\", \"Alcalde-Herraiz\", , \"marta.alcaldeherraiz@ndorms.ox.ac.uk\",  role = c(\"aut\"), comment = c(ORCID = \"0009-0002-4405-1814\")), person(\"Maria T\", \"Sanchez-Santos\", , \"maria.sanchez@ndorms.ox.ac.uk\", role = c(\"aut\"), comment = c(ORCID = \"0000-0003-1908-8623\")) )",
@@ -524,6 +573,7 @@
       "Description": "Provides tools to derive standardised, reproducible patient-level indices and covariates from Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) databases. Functions calculate comorbidity and frailty scores, including the Charlson Comorbidity Index, Electronic Frailty Index, and Hospital Frailty Risk Score, as well as body mass index, polypharmacy, ethnicity, location, and socioeconomic status measures.",
       "License": "Apache License (>= 2)",
       "Encoding": "UTF-8",
+      "Roxygen": "list(markdown = TRUE)",
       "Suggests": [
         "CDMConnector",
         "CodelistGenerator",
@@ -548,6 +598,8 @@
         "cli",
         "clock",
         "dplyr",
+        "lifecycle",
+        "OmopConstructor",
         "omopgenerics (>= 1.4.0)",
         "PatientProfiles",
         "purrr",
@@ -556,11 +608,16 @@
       "Depends": [
         "R (>= 4.1.0)"
       ],
-      "Config/roxygen2/version": "8.0.0",
+      "Config/roxygen2/version": "8.1.0",
       "Config/Needs/website": "rmarkdown",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "OmopIndices",
+      "RemoteUsername": "OHDSI",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "cfc44bc7810d679e7c36f9b19c07f93932d84908",
       "NeedsCompilation": "no",
-      "Author": "Martí Català [aut, cre] (ORCID: <https://orcid.org/0000-0003-3308-9905>), Marta Alcalde-Herraiz [aut] (ORCID: <https://orcid.org/0009-0002-4405-1814>), Maria T Sanchez-Santos [aut] (ORCID: <https://orcid.org/0000-0003-1908-8623>)",
-      "Repository": "CRAN"
+      "Author": "Martí Català [aut, cre] (<https://orcid.org/0000-0003-3308-9905>), Marta Alcalde-Herraiz [aut] (<https://orcid.org/0009-0002-4405-1814>), Maria T Sanchez-Santos [aut] (<https://orcid.org/0000-0003-1908-8623>)"
     },
     "OmopSketch": {
       "Package": "OmopSketch",
