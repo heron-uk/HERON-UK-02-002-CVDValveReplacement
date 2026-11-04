@@ -49,10 +49,10 @@ logMessage("Analyses finished")
 source(here("analyses", "ExportResults.R"))
 
 # Finish ----
-# result <- bind(results)
-# exportSummarisedResult(result,
-#                        minCellCount = min_cell_count,
-#                        fileName = "results_{cdm_name}_{date}.csv",
-#                        path = here("Results"))
+result <- bind(results)
+exportSummarisedResult(result,
+                       minCellCount = min_cell_count,
+                       fileName = "results_{cdm_name}_{date}.csv",
+                       path = here("Results"))
 
 logMessage(message = "Study finished")
