@@ -13,7 +13,9 @@ resultList <- list(
 
 source(file.path(getwd(), "functions.R"))
 
-result <- omopgenerics::importSummarisedResult(here::here("..", "StudyCode", "Results", "results_HERON_CDM_202509_2026_10_21.csv"))
+result <- bind(
+  omopgenerics::importSummarisedResult(here::here("..", "StudyCode", "Results", "results_HERON_CDM_202509_2026_10_21.csv")),
+  omopgenerics::importSummarisedResult(here::here("..", "StudyCode", "Results", "results_CPRD GOLD_2026_11_02.csv")))
 result <- result |>
   dplyr::mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD Aurum", cdm_name)) |>
   dplyr::mutate("group_level" = gsub("aortic_valve_replacement", "AVR", group_level),
@@ -47,10 +49,54 @@ data[["summarise_characteristics"]] <- bind(
       group = "cohort_name",
       strata = c("calendar_year", "age_group", "sex"),
       estimates = c("count", "percentage")
-    )) 
+    ))
+
+new_set <- data[["incidence"]] |>
+  omopgenerics::splitGroup() |>
+  omopgenerics::splitStrata() |>
+  addSettings(settingsColumn = colnames(omopgenerics::settings(data[["incidence"]]))) |>
+  dplyr::select(
+    result_id,
+    denominator_cohort_name,
+    sex,
+    dplyr::any_of(colnames(omopgenerics::settings(data[["incidence"]])))
+  ) |>
+  dplyr::distinct() |>
+  dplyr::mutate("sex" = dplyr::if_else(sex == "overall", "Both", sex)) |> 
+  dplyr::mutate("denominator_efi" = dplyr::if_else(denominator_cohort_name %in% c("fit", "mild", "moderate", "severe"), denominator_cohort_name, "overall")) |>
+  dplyr::mutate("denominator_cci" = dplyr::if_else(denominator_cohort_name %in% c("low_risk", "medium_risk", "high_risk"), denominator_cohort_name, "overall")) |>
+  dplyr::mutate("denominator_sex" = dplyr::if_else(denominator_sex == "-NA-", sex, denominator_sex)) |>
+  dplyr::mutate("denominator_age_group" = dplyr::if_else(denominator_age_group == "-NA-", "0 to 150", denominator_age_group)) |>
+  dplyr::mutate("new_result_id" = dplyr::row_number()) |> dplyr::mutate("new_result_id" = dplyr::row_number())  |>
+  dplyr::mutate("denominator_target_cohort_name" = if_else(denominator_target_cohort_name == "-NA-", "aortic_stenosis_avr", denominator_target_cohort_name))
+
+data[["incidence"]] <- data[["incidence"]] |>
+  omopgenerics::splitGroup() |>
+  omopgenerics::splitStrata() |>
+  dplyr::mutate("sex" = dplyr::if_else(sex == "overall", "Both", sex)) |>
+  dplyr::left_join(
+    new_set |>
+      dplyr::select("result_id", "denominator_cohort_name", "sex", "new_result_id"),
+    by = c("result_id", "denominator_cohort_name", "sex")
+  ) |>
+  dplyr::select(-"result_id") |>
+  dplyr::rename("result_id" = "new_result_id") |>
+  omopgenerics::uniteGroup(cols = omopgenerics::groupColumns(data[["incidence"]])) |>
+  dplyr::mutate("strata_name" = "overall",
+                "strata_level" = "overall") |>
+  dplyr::select(-"sex") |>
+  newSummarisedResult(settings = new_set |>
+                        dplyr::select(-"result_id") |>
+                        dplyr::rename("result_id" = "new_result_id") |>
+                        dplyr::select(-c("denominator_cohort_name", "sex")))
 
 # Modify values ----
 values <- getValues(result, resultList)
+
+for (nm in names(values)[grepl("incidence_", names(values))]) {
+  new_nm <- sub("incidence_", "incidence_general_", nm)
+  values[[new_nm]] <- values[[nm]]
+}
 
 for (nm in names(values)[grepl("cohort_code_use_", names(values))]) {
   new_nm <- sub("cohort_code_use_", "cohort_code_use_cohorts_", nm)
@@ -153,7 +199,51 @@ for (nm in names(values)[grepl("summarise_characteristics_", names(values))]) {
   values[[new_nm]] <- values[[nm]]
 }
 
+for (nm in names(values)[grepl("summarise_characteristics_", names(values))]) {
+  new_nm <- sub("summarise_characteristics_", "summarise_characteristics_age_group_", nm)
+  values[[new_nm]] <- values[[nm]]
+}
+
+for (nm in names(values)[grepl("summarise_characteristics_", names(values))]) {
+  new_nm <- sub("summarise_characteristics_", "summarise_characteristics_cci_", nm)
+  values[[new_nm]] <- values[[nm]]
+}
+
+for (nm in names(values)[grepl("summarise_characteristics_", names(values))]) {
+  new_nm <- sub("summarise_characteristics_", "summarise_characteristics_efi_", nm)
+  values[[new_nm]] <- values[[nm]]
+}
+
+for (nm in names(values)[grepl("summarise_characteristics_", names(values))]) {
+  new_nm <- sub("summarise_characteristics_", "summarise_characteristics_sex_", nm)
+  values[[new_nm]] <- values[[nm]]
+}
+
+for (nm in names(values)[grepl("summarise_characteristics_", names(values))]) {
+  new_nm <- sub("summarise_characteristics_", "summarise_characteristics_overall_", nm)
+  values[[new_nm]] <- values[[nm]]
+}
+
+values$summarise_characteristics_age_group_age_group <- c("0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150")
+values$summarise_characteristics_cci_cci_categories <- values$summarise_characteristics_cci_cci_categories[values$summarise_characteristics_cci_cci_categories != "overall"]
+values$summarise_characteristics_efi_efi_categories <- values$summarise_characteristics_efi_efi_categories[values$summarise_characteristics_efi_efi_categories != "overall"]
+values$summarise_characteristics_sex <- values$summarise_characteristics_sex[values$summarise_characteristics_sex != "overall"]
+
+values$summarise_characteristics_indications_age_group <- c("overall", "0 to 64", "65 to 150")
+values$summarise_characteristics_age_group_calendar_year <- values$summarise_characteristics_age_group_calendar_year[values$summarise_characteristics_age_group_calendar_year != "overall"]
+values$summarise_characteristics_cci_calendar_year <- values$summarise_characteristics_age_group_calendar_year
+values$summarise_characteristics_efi_calendar_year <- values$summarise_characteristics_age_group_calendar_year
+values$summarise_characteristics_sex_calendar_year <- values$summarise_characteristics_age_group_calendar_year
+
 values$summarise_cohort_attrition_cohort_name <- c("aortic_valve_replacement", "aortic_stenosis_avr", "aortic_insufficiency_avr", "aortic_endocarditis_avr")
+
+values$incidence_cci_categories <- c("overall", "low_risk", "medium_risk", "high_risk")
+values$incidence_efi_categories <- c("overall", "fit", "mild", "moderate", "severe")
+
+values$incidence_denominator_age_group <- values$incidence_denominator_age_group[values$incidence_denominator_age_group != "-NA-"]
+values$incidence_denominator_sex <- values$incidence_denominator_sex[values$incidence_denominator_sex != "-NA-"]
+values$incidence_general_denominator_age_group <- values$incidence_denominator_age_group[values$incidence_denominator_age_group != "-NA-"]
+values$incidence_general_denominator_sex <- values$incidence_denominator_sex[values$incidence_denominator_sex != "-NA-"]
 
 # edit choices and values of interest
 choices <- values
@@ -167,7 +257,9 @@ selected$cohort_code_use_cci_cohort_name <- "aortic_calcification"
 selected$orphan_code_use_cci_codelist_name <- "aortic_calcification"
 selected$cohort_code_use_efi_cohort_name <- "aortic_calcification"
 selected$orphan_code_use_efi_codelist_name <- "aortic_calcification"
+selected$summarise_characteristis_indications_indications_window <- "365 days"
 
-save(data, choices, selected, values, file = file.path(getwd(), "data", "studyData.RData"))
+save(data, incidence_denominator_names, choices, selected, values, file = file.path(getwd(), "data", "studyData.RData"))
 
-rm(result, values, choices, selected, resultList, data)
+# rm(result, values, choices, selected, resultList, data)
+

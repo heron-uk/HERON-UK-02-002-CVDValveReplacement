@@ -1,12 +1,12 @@
 backgroundCard <- function(fileName) {
   # read file
   content <- readLines(fileName)
-
+  
   # extract yaml metadata
   # Find the positions of the YAML delimiters (----- or ---)
   yamlStart <- grep("^---|^-----", content)[1]
   yamlEnd <- grep("^---|^-----", content)[2]
-
+  
   if (any(is.na(c(yamlStart, yamlEnd)))) {
     metadata <- NULL
   } else {
@@ -17,10 +17,10 @@ backgroundCard <- function(fileName) {
     # eliminate yaml part from content
     content <- content[-(yamlStart:yamlEnd)]
   }
-
+  
   tmpFile <- tempfile(fileext = ".md")
   writeLines(text = content, con = tmpFile)
-
+  
   # metadata referring to keys
   backgroundKeywords <- list(
     header = "bslib::card_header",
@@ -38,7 +38,7 @@ backgroundCard <- function(fileName) {
       }
     }) |>
     purrr::compact()
-
+  
   arguments <- c(
     # metadata referring to arguments of card
     metadata[names(metadata) %in% names(formals(bslib::card))],
@@ -52,9 +52,9 @@ backgroundCard <- function(fileName) {
     ) |>
       purrr::compact()
   )
-
+  
   unlink(tmpFile)
-
+  
   do.call(bslib::card, arguments)
 }
 summaryCdmName <- function(data) {
@@ -224,16 +224,16 @@ simpleTable <- function(result,
   if (length(header) == 0) header <- character()
   if (length(group) == 0) group <- NULL
   if (length(hide) == 0) hide <- character()
-
+  
   if (nrow(result) == 0) {
     return(gt::gt(dplyr::tibble()))
   }
-
+  
   result <- result |>
     omopgenerics::addSettings() |>
     omopgenerics::splitAll() |>
     dplyr::select(-"result_id")
-
+  
   # format estimate column
   formatEstimates <- c(
     "N (%)" = "<count> (<percentage>%)",
@@ -269,16 +269,16 @@ tidyDT <- function(x,
   strataColumns <- omopgenerics::strataColumns(x)
   additionalColumns <- omopgenerics::additionalColumns(x)
   settingsColumns <- omopgenerics::settingsColumns(x)
-
+  
   # split and add settings
   x <- x |>
     omopgenerics::splitAll() |>
     omopgenerics::addSettings()
-
+  
   # remove density
   x <- x |>
     dplyr::filter(!.data$estimate_name %in% c("density_x", "density_y"))
-
+  
   # estimate columns
   if (pivotEstimates) {
     estCols <- unique(x$estimate_name)
@@ -287,7 +287,7 @@ tidyDT <- function(x,
   } else {
     estCols <- c("estimate_name", "estimate_type", "estimate_value")
   }
-
+  
   # order columns
   cols <- list(
     "CDM name" = "cdm_name", "Group" = groupColumns, "Strata" = strataColumns,
@@ -299,7 +299,7 @@ tidyDT <- function(x,
   cols[["Estimates"]] <- estCols
   x <- x |>
     dplyr::select(dplyr::all_of(unname(unlist(cols))))
-
+  
   # prepare the header
   container <- shiny::tags$table(
     class = "display",
@@ -309,7 +309,7 @@ tidyDT <- function(x,
       shiny::tags$tr(purrr::map(unlist(cols), shiny::tags$th))
     )
   )
-
+  
   # create DT table
   DT::datatable(
     data = x,
@@ -323,20 +323,20 @@ prepareResult <- function(result, resultList) {
   purrr::map(resultList, \(x) filterResult(result, x))
 }
 filterResult <- function(result, filt) {
-
+  
   q <- function(nm) {
     paste0(".data$", nm, " %in% filt[[\"", nm, "\"]]") |>
       rlang::parse_exprs() |>
       rlang::eval_tidy()
   }
-
+  
   # filter columns
   cols <- c("cdm_name", "variable_name", "variable_level", "estimate_name")
   cols <- cols[cols %in% names(filt)]
   for (nm in cols) {
     result <- dplyr::filter(result, !!!q(nm))
   }
-
+  
   # filter settings
   cols <- c(
     "result_id", "result_type", "package_name", "package_version",
@@ -346,28 +346,28 @@ filterResult <- function(result, filt) {
   for (nm in cols) {
     result <- omopgenerics::filterSettings(result, !!!q(nm))
   }
-
+  
   # filter group
   cols <- omopgenerics::groupColumns(result = result)
   cols <- cols[cols %in% names(filt)]
   for (nm in cols) {
     result <- omopgenerics::filterGroup(result, !!!q(nm))
   }
-
+  
   # filter strata
   cols <- omopgenerics::strataColumns(result = result)
   cols <- cols[cols %in% names(filt)]
   for (nm in cols) {
     result <- omopgenerics::filterStrata(result, !!!q(nm))
   }
-
+  
   # filter additional
   cols <- omopgenerics::additionalColumns(result = result)
   cols <- cols[cols %in% names(filt)]
   for (nm in cols) {
     result <- omopgenerics::filterAdditional(result, !!!q(nm))
   }
-
+  
   # correct settings
   set <- omopgenerics::settings(result)
   # remove columns that all are NA
@@ -381,7 +381,7 @@ filterResult <- function(result, filt) {
       .cols = dplyr::where(is.character),
       .fns = \(x) dplyr::coalesce(x, "-NA-")
     ))
-
+  
   # final result
   omopgenerics::newSummarisedResult(x = result, settings = set)
 }
@@ -416,7 +416,7 @@ getSelected <- function(choices) {
       if ("Both" %in% vals) return("Both")
       return(vals[[1]])
     }
-
+    
     if (grepl("_denominator_age_group$", nm)) {
       bounds <- regmatches(vals, regexec("^(\\d+) to (\\d+)$", vals))
       valid <- vapply(bounds, length, integer(1)) == 3
@@ -427,15 +427,15 @@ getSelected <- function(choices) {
         return(vals[[1]])
       }
     }
-
+    
     if (grepl("_outcome_cohort_name$", nm)) {
       return(vals[[1]])
     }
-
+    
     if ("overall" %in% vals) {
       return("overall")
     }
-
+    
     vals
   })
 }
@@ -474,4 +474,20 @@ getStackedPlot <- function(result, title) {
       "#B01513",  "#FFAD0AFF", "#EA6312", "#2A9D8F", "#264653",  "grey")) +
     scale_fill_manual(values = c(
       "#B01513",  "#FFAD0AFF", "#EA6312", "#2A9D8F", "#264653", "grey")) 
+}
+
+factorColumns <- function(x) {
+  x |>
+    dplyr::mutate("variable_level" = gsub("Ckd", "CKD", variable_level),
+                  "variable_level" = gsub("Copd", "COPD", variable_level),
+                  "variable_level" = gsub("Acei arbs", "ACE inhibitors and ARBs", variable_level),
+                  "variable_level" = gsub("Isglt2", "ISGLT2", variable_level)) |>
+    dplyr::mutate("calendar_year" = factor(calendar_year, levels = as.character(seq(2012, 2025))),
+                  "age_group" = factor(age_group, levels = c("0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150")),
+                  "sex" = factor(sex, levels = c("overall", "Female", "Male")),
+                  "efi_categories" = factor(efi_categories, levels = c("overall", "fit", "mild", "moderate", "severe")),
+                  "cci_categories" = factor(cci_categories, levels = c("overall", "low_risk", "medium_risk", "high_risk")),
+                  "variable_name" = factor(variable_name, levels = c("Number subjects", "Sex", "Efi categories", "Cci categories",
+                                                                      "Aortic valve disease phenotype", "Cardiovascular disease",
+                                                                      "Cardiovascular risk factors", "Comorbidities", "Previous medications"))) 
 }

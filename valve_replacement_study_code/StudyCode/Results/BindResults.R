@@ -87,3 +87,32 @@ omopgenerics::bind(db_diagnostics,
   omopgenerics::filterSettings(result_type != "summarise_log_file") |>
   omopgenerics::exportSummarisedResult(path = here::here("Results"), 
                                        fileName = paste0("results_", cdm_name, ".csv"))
+
+cdm_name <- "CPRD GOLD_2026_11_02"
+incidence <- omopgenerics::bind(
+  omopgenerics::importSummarisedResult(path = here::here("Results", paste0("results_incidence_", cdm_name, ".csv")))  |>
+    omopgenerics::filterSettings(result_type != "summarise_log_file"),
+  omopgenerics::importSummarisedResult(path = here::here("Results", paste0("incidence_efi_", cdm_name, ".csv"))) |>
+    omopgenerics::filterSettings(result_type != "summarise_log_file"),
+  omopgenerics::importSummarisedResult(path = here::here("Results", paste0("incidence_cci_", cdm_name, ".csv"))) |>
+    omopgenerics::filterSettings(result_type != "summarise_log_file"),
+  omopgenerics::importSummarisedResult(path = here::here("Results", paste0("incidence_general_pop_", cdm_name, ".csv"))) |>
+    omopgenerics::filterSettings(result_type != "summarise_log_file"),
+  omopgenerics::importSummarisedResult(path = here::here("Results", paste0("results_table_one_", cdm_name, ".csv"))) |>
+    omopgenerics::filterSettings(result_type != "summarise_log_file"),
+  omopgenerics::importSummarisedResult(path = here::here("Results", paste0("results_objective_one_365_", cdm_name, ".csv"))) |>
+    omopgenerics::filterSettings(result_type != "summarise_log_file") |>
+    omopgenerics::splitAdditional() |>
+    dplyr::mutate("indications_window" = "365 days") |>
+    omopgenerics::uniteAdditional(cols = "indications_window"),
+  omopgenerics::importSummarisedResult(path = here::here("Results", paste0("results_objective_one_inf_", cdm_name, ".csv"))) |>
+    omopgenerics::filterSettings(result_type != "summarise_log_file") |>
+    omopgenerics::splitAdditional() |>
+    dplyr::mutate("indications_window" = "inf") |>
+    omopgenerics::uniteAdditional(cols = "indications_window")
+)
+
+omopgenerics::bind(incidence) |>
+  omopgenerics::filterSettings(result_type != "summarise_log_file") |>
+  omopgenerics::exportSummarisedResult(path = here::here("Results"), 
+                                       fileName = paste0("results_", cdm_name, ".csv"))

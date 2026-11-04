@@ -754,6 +754,14 @@ ui <- bslib::page_navbar(
             multiple = TRUE,
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
           ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_indications_indications_window",
+            label = "Indications window",
+            choices = choices$summarise_characteristics_indications_indications_window,
+            selected = selected$summarise_characteristics_indications_indications_window,
+            multiple = FALSE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
           position = "left"
         ),
         bslib::navset_card_tab(
@@ -1008,12 +1016,12 @@ ui <- bslib::page_navbar(
       )
     )
   ),
-  # Incidence prevalence -----
+  # Incidence  -----
   bslib::nav_menu(
     title = "Incidence",
     icon = shiny::icon("list"),
     bslib::nav_panel(
-      title = "Incidence",
+      title = "Incidence (risk population)",
       icon = shiny::icon("chart-line"),
       bslib::layout_sidebar(
         sidebar = bslib::sidebar(
@@ -1175,14 +1183,6 @@ ui <- bslib::page_navbar(
                     value = TRUE
                   ),
                   shinyWidgets::pickerInput(
-                    inputId = "incidence_plot_x",
-                    label = "x axis",
-                    choices = c("cdm_name", "denominator_cohort_name", "outcome_cohort_name", "cci_categories", "efi_categories", "incidence_start_date", "incidence_end_date", "analysis_interval", "analysis_censor_cohort_name", "analysis_complete_database_intervals", "analysis_outcome_washout", "analysis_repeated_events", "denominator_age_group", "denominator_days_prior_observation", "denominator_end_date", "denominator_requirements_at_entry", "denominator_sex", "denominator_start_date", "denominator_target_cohort_name", "denominator_time_at_risk"),
-                    selected = "incidence_start_date",
-                    multiple = FALSE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shinyWidgets::pickerInput(
                     inputId = "incidence_plot_facet",
                     label = "Facet",
                     choices = c("cdm_name", "denominator_cohort_name", "outcome_cohort_name", "cci_categories", "efi_categories", "incidence_start_date", "incidence_end_date", "analysis_interval", "analysis_censor_cohort_name", "analysis_complete_database_intervals", "analysis_outcome_washout", "analysis_repeated_events", "denominator_age_group", "denominator_days_prior_observation", "denominator_end_date", "denominator_requirements_at_entry", "denominator_sex", "denominator_start_date", "denominator_target_cohort_name", "denominator_time_at_risk"),
@@ -1253,7 +1253,7 @@ ui <- bslib::page_navbar(
       )
     ),
     bslib::nav_panel(
-      title = "Incidence Attrition",
+      title = "Incidence Attrition (risk population)",
       icon = shiny::icon("layer-group"),
       bslib::layout_sidebar(
         sidebar = bslib::sidebar(
@@ -1441,6 +1441,1180 @@ ui <- bslib::page_navbar(
                   position = "right"
                 ),
                 gt::gt_output("incidence_attrition_table") |>
+                  shinycssloaders::withSpinner()
+              )
+            )
+          )
+        )
+      )
+    ),
+    bslib::nav_panel(
+      title = "Incidence (general population)",
+      icon = shiny::icon("chart-line"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_incidence_general",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_incidence_general")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_cdm_name",
+            label = "CDM name",
+            choices = choices$incidence_general_cdm_name,
+            selected = selected$incidence_general_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_outcome_cohort_name",
+            label = "Cohort name",
+            choices = choices$incidence_general_outcome_cohort_name,
+            selected = selected$incidence_general_outcome_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_denominator_sex",
+            label = "Denominator sex",
+            choices = choices$incidence_general_denominator_sex,
+            selected = selected$incidence_general_denominator_sex,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_denominator_age_group",
+            label = "Denominator age group",
+            choices = choices$incidence_general_denominator_age_group,
+            selected = selected$incidence_general_denominator_age_group,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shinyWidgets::pickerInput(
+                    inputId = "incidence_general_table_format",
+                    label = "Format",
+                    choices = c("docx", "png", "pdf", "html"),
+                    selected = "docx",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::downloadButton(outputId = "incidence_general_table_download", label = "Download table")
+                ),
+                class = "text-end"
+              ),
+              bslib::layout_sidebar(
+                sidebar = bslib::sidebar(
+                  sortable::bucket_list(
+                    header = NULL,
+                    sortable::add_rank_list(
+                      text = "None",
+                      labels = c( "incidence_start_date", "incidence_end_date", "denominator_age_group", "denominator_sex"),
+                      input_id = "incidence_general_table_none"
+                    ),
+                    sortable::add_rank_list(
+                      text = "Header",
+                      labels = "estimate_name",
+                      input_id = "incidence_general_table_header"
+                    ),
+                    sortable::add_rank_list(
+                      text = "Group columns",
+                      labels = c("cdm_name", "outcome_cohort_name"),
+                      input_id = "incidence_general_table_group_column"
+                    ),
+                    sortable::add_rank_list(
+                      text = "Hide",
+                      labels = c("cci_categories", "efi_categories", "denominator_cci", "denominator_efi", "denominator_cohort_name", "analysis_interval", "analysis_censor_cohort_name", "analysis_complete_database_intervals", "analysis_outcome_washout", "analysis_repeated_events", "denominator_days_prior_observation", "denominator_end_date", "denominator_requirements_at_entry", "denominator_start_date", "denominator_target_cohort_name", "denominator_time_at_risk"),
+                      input_id = "incidence_general_table_hide"
+                    )
+                  ),
+                  position = "right"
+                ),
+                gt::gt_output("incidence_general_table") |>
+                  shinycssloaders::withSpinner()
+              )
+            )
+          ),
+          bslib::nav_panel(
+            title = "Plot",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shiny::numericInput(
+                    inputId = "incidence_general_plot_width",
+                    label = "Width",
+                    value = 15
+                  ),
+                  shiny::numericInput(
+                    inputId = "incidence_general_plot_height",
+                    label = "Height",
+                    value = 15
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "incidence_general_plot_units",
+                    label = "Units",
+                    choices = c("px", "cm", "inch"),
+                    selected = "cm",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::numericInput(
+                    inputId = "incidence_general_plot_dpi",
+                    label = "DPI",
+                    value = 300
+                  ),
+                  shiny::downloadButton(outputId = "incidence_general_plot_download", label = "Download plot")
+                ),
+                class = "text-end"
+              ),
+              bslib::layout_sidebar(
+                sidebar = bslib::sidebar(
+                  shinyWidgets::materialSwitch(
+                    inputId = "incidence_general_plot_interactive",
+                    label = "Interactive",
+                    value = TRUE
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "incidence_general_plot_facet",
+                    label = "Facet",
+                    choices = c("cdm_name", "denominator_cohort_name", "outcome_cohort_name", "cci_categories", "efi_categories", "incidence_start_date", "incidence_end_date", "analysis_interval", "analysis_censor_cohort_name", "analysis_complete_database_intervals", "analysis_outcome_washout", "analysis_repeated_events", "denominator_age_group", "denominator_days_prior_observation", "denominator_end_date", "denominator_requirements_at_entry", "denominator_sex", "denominator_start_date", "denominator_target_cohort_name", "denominator_time_at_risk"),
+                    selected = "cdm_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "incidence_general_plot_colour",
+                    label = "Colour",
+                    choices = c("cdm_name", "denominator_cohort_name", "outcome_cohort_name", "cci_categories", "efi_categories", "incidence_start_date", "incidence_end_date", "analysis_interval", "analysis_censor_cohort_name", "analysis_complete_database_intervals", "analysis_outcome_washout", "analysis_repeated_events", "denominator_age_group", "denominator_days_prior_observation", "denominator_end_date", "denominator_requirements_at_entry", "denominator_sex", "denominator_start_date", "denominator_target_cohort_name", "denominator_time_at_risk"),
+                    selected = "outcome_cohort_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::materialSwitch(
+                    inputId = "incidence_general_plot_ribbon",
+                    label = "Ribbon",
+                    value = TRUE
+                  ),
+                  shinyWidgets::materialSwitch(
+                    inputId = "incidence_general_plot_line",
+                    label = "Line",
+                    value = TRUE
+                  ),
+                  position = "right"
+                ),
+                shiny::uiOutput("incidence_general_plot") |>
+                  shinycssloaders::withSpinner()
+              )
+            )
+          ),
+          bslib::nav_panel(
+            title = "Plot population",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::layout_sidebar(
+                sidebar = bslib::sidebar(
+                  shinyWidgets::materialSwitch(
+                    inputId = "incidence_general_plot_population_interactive",
+                    label = "Interactive",
+                    value = TRUE
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "incidence_general_plot_population_facet",
+                    label = "Facet",
+                    choices = c("cdm_name", "denominator_cohort_name", "outcome_cohort_name", "cci_categories", "efi_categories", "incidence_start_date", "incidence_end_date", "analysis_interval", "analysis_censor_cohort_name", "analysis_complete_database_intervals", "analysis_outcome_washout", "analysis_repeated_events", "denominator_age_group", "denominator_days_prior_observation", "denominator_end_date", "denominator_requirements_at_entry", "denominator_sex", "denominator_start_date", "denominator_target_cohort_name", "denominator_time_at_risk"),
+                    selected = "cdm_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "incidence_general_plot_population_colour",
+                    label = "Colour",
+                    choices = c("cdm_name", "denominator_cohort_name", "outcome_cohort_name", "cci_categories", "efi_categories", "incidence_start_date", "incidence_end_date", "analysis_interval", "analysis_censor_cohort_name", "analysis_complete_database_intervals", "analysis_outcome_washout", "analysis_repeated_events", "denominator_age_group", "denominator_days_prior_observation", "denominator_end_date", "denominator_requirements_at_entry", "denominator_sex", "denominator_start_date", "denominator_target_cohort_name", "denominator_time_at_risk"),
+                    selected = "outcome_cohort_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  position = "right"
+                ),
+                shiny::uiOutput("incidence_general_plot_population") |>
+                  shinycssloaders::withSpinner()
+              )
+            )
+          )
+        )
+      )
+    ),
+    bslib::nav_panel(
+      title = "Incidence Attrition (general population)",
+      icon = shiny::icon("layer-group"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_incidence_general_attrition",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_incidence_general_attrition")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_cdm_name",
+            label = "CDM name",
+            choices = choices$incidence_general_attrition_cdm_name,
+            selected = selected$incidence_general_attrition_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_outcome_cohort_name",
+            label = "Outcome cohort name",
+            choices = choices$incidence_general_attrition_outcome_cohort_name,
+            selected = selected$incidence_general_attrition_outcome_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_analysis_censor_cohort_name",
+            label = "Analysis censor cohort name",
+            choices = choices$incidence_general_attrition_analysis_censor_cohort_name,
+            selected = selected$incidence_general_attrition_analysis_censor_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_analysis_complete_database_intervals",
+            label = "Analysis complete database intervals",
+            choices = choices$incidence_general_attrition_analysis_complete_database_intervals,
+            selected = selected$incidence_general_attrition_analysis_complete_database_intervals,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_analysis_outcome_washout",
+            label = "Analysis outcome washout",
+            choices = choices$incidence_general_attrition_analysis_outcome_washout,
+            selected = selected$incidence_general_attrition_analysis_outcome_washout,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_analysis_repeated_events",
+            label = "Analysis repeated events",
+            choices = choices$incidence_general_attrition_analysis_repeated_events,
+            selected = selected$incidence_general_attrition_analysis_repeated_events,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_denominator_age_group",
+            label = "Denominator age group",
+            choices = choices$incidence_general_attrition_denominator_age_group,
+            selected = selected$incidence_general_attrition_denominator_age_group,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_denominator_days_prior_observation",
+            label = "Denominator days prior observation",
+            choices = choices$incidence_general_attrition_denominator_days_prior_observation,
+            selected = selected$incidence_general_attrition_denominator_days_prior_observation,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_denominator_end_date",
+            label = "Denominator end date",
+            choices = choices$incidence_general_attrition_denominator_end_date,
+            selected = selected$incidence_general_attrition_denominator_end_date,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_denominator_requirements_at_entry",
+            label = "Denominator requirements at entry",
+            choices = choices$incidence_general_attrition_denominator_requirements_at_entry,
+            selected = selected$incidence_general_attrition_denominator_requirements_at_entry,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_denominator_sex",
+            label = "Denominator sex",
+            choices = choices$incidence_general_attrition_denominator_sex,
+            selected = selected$incidence_general_attrition_denominator_sex,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_denominator_start_date",
+            label = "Denominator start date",
+            choices = choices$incidence_general_attrition_denominator_start_date,
+            selected = selected$incidence_general_attrition_denominator_start_date,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_denominator_target_cohort_name",
+            label = "Denominator target cohort name",
+            choices = choices$incidence_general_attrition_denominator_target_cohort_name,
+            selected = selected$incidence_general_attrition_denominator_target_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_denominator_time_at_risk",
+            label = "Denominator time at risk",
+            choices = choices$incidence_general_attrition_denominator_time_at_risk,
+            selected = selected$incidence_general_attrition_denominator_time_at_risk,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "incidence_general_attrition_variable_name",
+            label = "Variable name",
+            choices = choices$incidence_general_attrition_variable_name,
+            selected = selected$incidence_general_attrition_variable_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Incidence Attrition",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shinyWidgets::pickerInput(
+                    inputId = "incidence_general__attrition_table_format",
+                    label = "Format",
+                    choices = c("docx", "png", "pdf", "html"),
+                    selected = "docx",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::downloadButton(outputId = "incidence_general__attrition_table_download", label = "Download table")
+                ),
+                class = "text-end"
+              ),
+              bslib::layout_sidebar(
+                sidebar = bslib::sidebar(
+                  sortable::bucket_list(
+                    header = NULL,
+                    sortable::add_rank_list(
+                      text = "None",
+                      labels = "reason",
+                      input_id = "incidence_general__attrition_table_none"
+                    ),
+                    sortable::add_rank_list(
+                      text = "Header",
+                      labels = "variable_name",
+                      input_id = "incidence_general__attrition_table_header"
+                    ),
+                    sortable::add_rank_list(
+                      text = "Group columns",
+                      labels = c("cdm_name", "outcome_cohort_name"),
+                      input_id = "incidence_general__attrition_table_group_column"
+                    ),
+                    sortable::add_rank_list(
+                      text = "Hide",
+                      labels = c("denominator_cohort_name", "estimate_name", "reason_id", "variable_level", "analysis_censor_cohort_name", "analysis_complete_database_intervals", "analysis_outcome_washout", "analysis_repeated_events", "denominator_age_group", "denominator_sex", "denominator_days_prior_observation", "denominator_end_date", "denominator_requirements_at_entry", "denominator_start_date", "denominator_target_cohort_name", "denominator_time_at_risk"),
+                      input_id = "incidence_general__attrition_table_hide"
+                    )
+                  ),
+                  position = "right"
+                ),
+                gt::gt_output("incidence_general__attrition_table") |>
+                  shinycssloaders::withSpinner()
+              )
+            )
+          )
+        )
+      )
+    )
+  ),
+  # Characteristics -----
+  bslib::nav_menu(
+    title = "Characterisation",
+    icon = shiny::icon("list"),
+    ## overall ----
+    bslib::nav_panel(
+      title = "Overall",
+      icon = shiny::icon("users-gear"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_summarise_characteristics_overall",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_summarise_characteristics_overall")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_overall_cdm_name",
+            label = "CDM name",
+            choices = choices$summarise_characteristics_overall_cdm_name,
+            selected = selected$summarise_characteristics_overall_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_overall_cohort_name",
+            label = "Cohort name",
+            choices = choices$summarise_characteristics_overall_cohort_name,
+            selected = selected$summarise_characteristics_overall_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_overall_calendar_year",
+            label = "Calendar year",
+            choices = choices$summarise_characteristics_overall_calendar_year,
+            selected = selected$summarise_characteristics_overall_calendar_year,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Characteristics",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_overall_table_format",
+                    label = "Format",
+                    choices = c("docx", "png", "pdf", "html"),
+                    selected = "docx",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::downloadButton(outputId = "summarise_characteristics_overall_table_download", label = "Download table")
+                ),
+                class = "text-end"
+              ),
+              gt::gt_output("summarise_characteristics_overall_table") |>
+                shinycssloaders::withSpinner()
+            )
+          ),
+          bslib::nav_panel(
+            title = "Plot Characteristics",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_overall_plot_width",
+                    label = "Width",
+                    value = 15
+                  ),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_overall_plot_height",
+                    label = "Height",
+                    value = 15
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_overall_plot_units",
+                    label = "Units",
+                    choices = c("px", "cm", "inch"),
+                    selected = "cm",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_overall_plot_dpi",
+                    label = "DPI",
+                    value = 300
+                  ),
+                  shiny::downloadButton(outputId = "summarise_characteristics_overall_plot_download", label = "Download plot")
+                ),
+                class = "text-end"
+              ),
+              bslib::layout_sidebar(
+                sidebar = bslib::sidebar(
+                  shinyWidgets::materialSwitch(
+                    inputId = "summarise_characteristics_overall_plot_interactive",
+                    label = "Interactive",
+                    value = TRUE
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_overall_plot_plot_type",
+                    label = "Plot type",
+                    choices = c("boxplot", "barplot", "scatterplot"),
+                    selected = "boxplot",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_overall_plot_facet",
+                    label = "Facet",
+                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
+                    selected = "cdm_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_overall_plot_colour",
+                    label = "Colour",
+                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
+                    selected = "cohort_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  position = "right"
+                ),
+                shiny::uiOutput("summarise_characteristics_overall_plot") |>
+                  shinycssloaders::withSpinner()
+              )
+            )
+          )
+        )
+      )
+    ),
+    ## by sex ----
+    bslib::nav_panel(
+      title = "By sex",
+      icon = shiny::icon("users-gear"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_summarise_characteristics_sex",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_summarise_characteristics_sex")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_sex_cdm_name",
+            label = "CDM name",
+            choices = choices$summarise_characteristics_sex_cdm_name,
+            selected = selected$summarise_characteristics_sex_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_sex_cohort_name",
+            label = "Cohort name",
+            choices = choices$summarise_characteristics_sex_cohort_name,
+            selected = selected$summarise_characteristics_sex_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_sex_calendar_year",
+            label = "Calendar year",
+            choices = choices$summarise_characteristics_sex_calendar_year,
+            selected = selected$summarise_characteristics_sex_calendar_year,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_sex_sex",
+            label = "Sex",
+            choices = choices$summarise_characteristics_sex_sex,
+            selected = selected$summarise_characteristics_sex_sex,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Characteristics",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_sex_table_format",
+                    label = "Format",
+                    choices = c("docx", "png", "pdf", "html"),
+                    selected = "docx",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::downloadButton(outputId = "summarise_characteristics_sex_table_download", label = "Download table")
+                ),
+                class = "text-end"
+              ),
+              gt::gt_output("summarise_characteristics_sex_table") |>
+                shinycssloaders::withSpinner()
+            )
+          ),
+          bslib::nav_panel(
+            title = "Plot Characteristics",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_sex_plot_width",
+                    label = "Width",
+                    value = 15
+                  ),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_sex_plot_height",
+                    label = "Height",
+                    value = 15
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_sex_plot_units",
+                    label = "Units",
+                    choices = c("px", "cm", "inch"),
+                    selected = "cm",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_sex_plot_dpi",
+                    label = "DPI",
+                    value = 300
+                  ),
+                  shiny::downloadButton(outputId = "summarise_characteristics_sex_plot_download", label = "Download plot")
+                ),
+                class = "text-end"
+              ),
+              bslib::layout_sidebar(
+                sidebar = bslib::sidebar(
+                  shinyWidgets::materialSwitch(
+                    inputId = "summarise_characteristics_sex_plot_interactive",
+                    label = "Interactive",
+                    value = TRUE
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_sex_plot_plot_type",
+                    label = "Plot type",
+                    choices = c("boxplot", "barplot", "scatterplot"),
+                    selected = "boxplot",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_sex_plot_facet",
+                    label = "Facet",
+                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
+                    selected = "cdm_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_sex_plot_colour",
+                    label = "Colour",
+                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
+                    selected = "cohort_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  position = "right"
+                ),
+                shiny::uiOutput("summarise_characteristics_sex_plot") |>
+                  shinycssloaders::withSpinner()
+              )
+            )
+          )
+        )
+      )
+    ),
+    ## by age groups ----
+    bslib::nav_panel(
+      title = "By age groups",
+      icon = shiny::icon("users-gear"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_summarise_characteristics_age_group",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_summarise_characteristics_age_group")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_age_group_cdm_name",
+            label = "CDM name",
+            choices = choices$summarise_characteristics_age_group_cdm_name,
+            selected = selected$summarise_characteristics_age_group_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_age_group_cohort_name",
+            label = "Cohort name",
+            choices = choices$summarise_characteristics_age_group_cohort_name,
+            selected = selected$summarise_characteristics_age_group_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_age_group_calendar_year",
+            label = "Calendar year",
+            choices = choices$summarise_characteristics_age_group_calendar_year,
+            selected = selected$summarise_characteristics_age_group_calendar_year,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_age_group_age_group",
+            label = "Age group",
+            choices = choices$summarise_characteristics_age_group_age_group,
+            selected = selected$summarise_characteristics_age_group_age_group,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Characteristics",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_age_group_table_format",
+                    label = "Format",
+                    choices = c("docx", "png", "pdf", "html"),
+                    selected = "docx",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::downloadButton(outputId = "summarise_characteristics_age_group_table_download", label = "Download table")
+                ),
+                class = "text-end"
+              ),
+              gt::gt_output("summarise_characteristics_age_group_table") |>
+                shinycssloaders::withSpinner()
+            )
+          ),
+          bslib::nav_panel(
+            title = "Plot Characteristics",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_age_group_plot_width",
+                    label = "Width",
+                    value = 15
+                  ),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_age_group_plot_height",
+                    label = "Height",
+                    value = 15
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_age_group_plot_units",
+                    label = "Units",
+                    choices = c("px", "cm", "inch"),
+                    selected = "cm",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_age_group_plot_dpi",
+                    label = "DPI",
+                    value = 300
+                  ),
+                  shiny::downloadButton(outputId = "summarise_characteristics_age_group_plot_download", label = "Download plot")
+                ),
+                class = "text-end"
+              ),
+              bslib::layout_sidebar(
+                sidebar = bslib::sidebar(
+                  shinyWidgets::materialSwitch(
+                    inputId = "summarise_characteristics_age_group_plot_interactive",
+                    label = "Interactive",
+                    value = TRUE
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_age_group_plot_plot_type",
+                    label = "Plot type",
+                    choices = c("boxplot", "barplot", "scatterplot"),
+                    selected = "boxplot",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_age_group_plot_facet",
+                    label = "Facet",
+                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
+                    selected = "cdm_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_age_group_plot_colour",
+                    label = "Colour",
+                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
+                    selected = "cohort_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  position = "right"
+                ),
+                shiny::uiOutput("summarise_characteristics_age_group_plot") |>
+                  shinycssloaders::withSpinner()
+              )
+            )
+          )
+        )
+      )
+    ),
+    ## by cci categories ----
+    bslib::nav_panel(
+      title = "By CCI",
+      icon = shiny::icon("users-gear"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_summarise_characteristics_cci",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_summarise_characteristics_cci")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_cci_cdm_name",
+            label = "CDM name",
+            choices = choices$summarise_characteristics_cci_cdm_name,
+            selected = selected$summarise_characteristics_cci_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_cci_cohort_name",
+            label = "Cohort name",
+            choices = choices$summarise_characteristics_cci_cohort_name,
+            selected = selected$summarise_characteristics_cci_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_cci_calendar_year",
+            label = "Calendar year",
+            choices = choices$summarise_characteristics_cci_calendar_year,
+            selected = selected$summarise_characteristics_cci_calendar_year,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_cci_cci_categories",
+            label = "CCI Category",
+            choices = choices$summarise_characteristics_cci_categories,
+            selected = selected$summarise_characteristics_cci_categories,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Characteristics",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_cci_table_format",
+                    label = "Format",
+                    choices = c("docx", "png", "pdf", "html"),
+                    selected = "docx",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::downloadButton(outputId = "summarise_characteristics_cci_table_download", label = "Download table")
+                ),
+                class = "text-end"
+              ),
+              gt::gt_output("summarise_characteristics_cci_table") |>
+                shinycssloaders::withSpinner()
+            )
+          ),
+          bslib::nav_panel(
+            title = "Plot Characteristics",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_cci_plot_width",
+                    label = "Width",
+                    value = 15
+                  ),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_cci_plot_height",
+                    label = "Height",
+                    value = 15
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_cci_plot_units",
+                    label = "Units",
+                    choices = c("px", "cm", "inch"),
+                    selected = "cm",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_cci_plot_dpi",
+                    label = "DPI",
+                    value = 300
+                  ),
+                  shiny::downloadButton(outputId = "summarise_characteristics_cci_plot_download", label = "Download plot")
+                ),
+                class = "text-end"
+              ),
+              bslib::layout_sidebar(
+                sidebar = bslib::sidebar(
+                  shinyWidgets::materialSwitch(
+                    inputId = "summarise_characteristics_cci_plot_interactive",
+                    label = "Interactive",
+                    value = TRUE
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_cci_plot_plot_type",
+                    label = "Plot type",
+                    choices = c("boxplot", "barplot", "scatterplot"),
+                    selected = "boxplot",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_cci_plot_facet",
+                    label = "Facet",
+                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
+                    selected = "cdm_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_cci_plot_colour",
+                    label = "Colour",
+                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
+                    selected = "cohort_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  position = "right"
+                ),
+                shiny::uiOutput("summarise_characteristics_cci_plot") |>
+                  shinycssloaders::withSpinner()
+              )
+            )
+          )
+        )
+      )
+    ),
+    ## by efi categories ----
+    bslib::nav_panel(
+      title = "By EFI",
+      icon = shiny::icon("users-gear"),
+      bslib::layout_sidebar(
+        sidebar = bslib::sidebar(
+          bslib::card(
+            class = "sticky-top-btn update-card",
+            bslib::card_body(
+              class = "p-3",
+              shiny::actionButton(
+                inputId = "update_summarise_characteristics_efi",
+                label = "Update content",
+                icon = shiny::icon("rotate"),
+                width = "100%",
+                class = "btn-primary"
+              ),
+              uiOutput(outputId = "update_message_summarise_characteristics_efi")
+            )
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_efi_cdm_name",
+            label = "CDM name",
+            choices = choices$summarise_characteristics_efi_cdm_name,
+            selected = selected$summarise_characteristics_efi_cdm_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_efi_cohort_name",
+            label = "Cohort name",
+            choices = choices$summarise_characteristics_efi_cohort_name,
+            selected = selected$summarise_characteristics_efi_cohort_name,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_efi_calendar_year",
+            label = "Calendar year",
+            choices = choices$summarise_characteristics_efi_calendar_year,
+            selected = selected$summarise_characteristics_efi_calendar_year,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          shinyWidgets::pickerInput(
+            inputId = "summarise_characteristics_efi_efi_categories",
+            label = "EFI Category",
+            choices = choices$summarise_characteristics_efi_efi_categories,
+            selected = selected$summarise_characteristics_efi_efi_categories,
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+          ),
+          position = "left"
+        ),
+        bslib::navset_card_tab(
+          bslib::nav_panel(
+            title = "Table Characteristics",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_efi_table_format",
+                    label = "Format",
+                    choices = c("docx", "png", "pdf", "html"),
+                    selected = "docx",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::downloadButton(outputId = "summarise_characteristics_efi_table_download", label = "Download table")
+                ),
+                class = "text-end"
+              ),
+              gt::gt_output("summarise_characteristics_efi_table") |>
+                shinycssloaders::withSpinner()
+            )
+          ),
+          bslib::nav_panel(
+            title = "Plot Characteristics",
+            bslib::card(
+              full_screen = TRUE,
+              bslib::card_header(
+                bslib::popover(
+                  shiny::icon("download"),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_efi_plot_width",
+                    label = "Width",
+                    value = 15
+                  ),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_efi_plot_height",
+                    label = "Height",
+                    value = 15
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_efi_plot_units",
+                    label = "Units",
+                    choices = c("px", "cm", "inch"),
+                    selected = "cm",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shiny::numericInput(
+                    inputId = "summarise_characteristics_efi_plot_dpi",
+                    label = "DPI",
+                    value = 300
+                  ),
+                  shiny::downloadButton(outputId = "summarise_characteristics_efi_plot_download", label = "Download plot")
+                ),
+                class = "text-end"
+              ),
+              bslib::layout_sidebar(
+                sidebar = bslib::sidebar(
+                  shinyWidgets::materialSwitch(
+                    inputId = "summarise_characteristics_efi_plot_interactive",
+                    label = "Interactive",
+                    value = TRUE
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_efi_plot_plot_type",
+                    label = "Plot type",
+                    choices = c("boxplot", "barplot", "scatterplot"),
+                    selected = "boxplot",
+                    multiple = FALSE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_efi_plot_facet",
+                    label = "Facet",
+                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
+                    selected = "cdm_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  shinyWidgets::pickerInput(
+                    inputId = "summarise_characteristics_efi_plot_colour",
+                    label = "Colour",
+                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
+                    selected = "cohort_name",
+                    multiple = TRUE,
+                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
+                  ),
+                  position = "right"
+                ),
+                shiny::uiOutput("summarise_characteristics_efi_plot") |>
                   shinycssloaders::withSpinner()
               )
             )
