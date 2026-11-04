@@ -451,7 +451,7 @@ ui <- bslib::page_navbar(
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
           ),
           shinyWidgets::pickerInput(
-            inputId = "orphan_code_use_covariates_table_name",
+            inputId = "orphan_code_use_covariates_codelist_name",
             label = "Codelist name",
             choices = choices$orphan_code_use_covariates_codelist_name,
             selected = selected$orphan_code_use_covariates_codelist_name,

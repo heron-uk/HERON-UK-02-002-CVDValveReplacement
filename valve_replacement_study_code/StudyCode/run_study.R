@@ -36,11 +36,10 @@ logMessage(message = "Study cohorts instantiated")
 # Run analyses ----
 logMessage(message = "Run study analyses")
 source(here("analyses", "0-SummariseCodeUse.R"))
-window <- "inf"
-source(here("analyses", "1-ObjectiveOne.R"))
-window <- "365"
-source(here("analyses", "1-ObjectiveOne_SensitivityAnalysis.R"))
-source(here("analyses", "1-ObjectiveOne.R"))
+
+# Run objective 1 
+source(here("analyses", "1.1-ObjectiveOne_Sensitivity.R"))
+source(here("analyses", "1.2-ObjectiveOne_Main.R"))
 
 source(here("analyses", "2-ObjectiveTwo.R"))
 source(here("analyses", "3-ObjectiveThree.R"))
@@ -56,4 +55,4 @@ source(here("analyses", "ExportResults.R"))
 #                        fileName = "results_{cdm_name}_{date}.csv",
 #                        path = here("Results"))
 
-cli_alert_success("Study finished")
+logMessage(message = "Study finished")
