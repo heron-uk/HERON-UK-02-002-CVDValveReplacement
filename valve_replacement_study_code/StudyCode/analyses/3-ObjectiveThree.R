@@ -1,10 +1,16 @@
+logMessage(message = "STARTING OBJECTIVE 3")
+
 # Require an indication of aortic stenosis / aortic stenosis + regurgitation
 # at least one year before the diagnostic
+logMessage(message = "> Require AS diagnosis")
 cdm[["procedures_as"]] <- cdm[["procedures"]] |>
   requireCohortIntersect(targetCohortTable = "aortic_stenosis_indication", 
                          window = c(-365,0), 
                          intersections = c(1,Inf), 
                          name = "procedures_as")
+
+logMessage(message = "> Summarise attrition")
+results[["objective_three_attrition_procedures"]] <- summariseCohortAttrition(cdm[["procedures_as"]])
 
 # Add scores ---
 omopgenerics::logMessage(message = "Add CCI")

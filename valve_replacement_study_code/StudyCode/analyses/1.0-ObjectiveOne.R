@@ -17,6 +17,10 @@ cdm[["aortic_stenosis_insufficiency_codes"]] <- cdm[["aortic_stenosis_insufficie
                          intersections = c(1,Inf))
 
 results[[paste0("objective_one_aortic_stenosis_insufficiency_codes_", window)]] <- summariseCohortAttrition(cdm[["aortic_stenosis_insufficiency_codes"]])
+results[[paste0("objective_one_aortic_stenosis_insufficiency_codes_", window)]] <- results[[paste0("objective_one_aortic_stenosis_insufficiency_codes_", window)]]  |>
+  splitAdditional() |>
+  mutate("indications_window" = window) |>
+  uniteAdditional(cols = c("indications_window", additionalColumns(results[[paste0("objective_one_aortic_stenosis_insufficiency_codes_", window)]])))
 
 omopgenerics::logMessage(message = "Require intersection with AVR - aortic endocarditis")
 cdm[["aortic_endocarditis"]] <- cdm[["aortic_endocarditis"]] |>
@@ -32,6 +36,11 @@ cdm[["aortic_stenosis_insufficiency"]] <- cdm[["aortic_stenosis_obj_one"]] |>
                          intersections = c(1, Inf),
                          name = "aortic_stenosis_insufficiency")
 results[[paste0("objective_one_aortic_stenosis_insufficiency_", window)]] <- summariseCohortAttrition(cdm[["aortic_stenosis_insufficiency"]]) 
+results[[paste0("objective_one_aortic_stenosis_insufficiency_", window)]] <- results[[paste0("objective_one_aortic_stenosis_insufficiency_", window)]] |>
+  splitAdditional() |>
+  mutate("indications_window" = window) |>
+  uniteAdditional(cols = c("indications_window", additionalColumns(results[[paste0("objective_one_aortic_stenosis_insufficiency_", window)]])))
+
 
 cdm <- bind(cdm[["aortic_stenosis_insufficiency_codes"]], cdm[["aortic_stenosis_insufficiency"]], 
             name = "aortic_stenosis_insufficiency")
@@ -144,10 +153,17 @@ results[[paste0("objective_one_",window)]] <- summariseCharacteristics(cdm[["pro
                                                                                               "window" = c(-window_value, 0),
                                                                                               "nameStyle" = "{cohort_name}")))
 
-results[[paste0("objective_one_",window)]]  <- results[[paste0("objective_one_",window)]] |>
+results[[paste0("objective_one_",window)]]  <- results[[paste0("objective_one_",window)]] 
+results[[paste0("objective_one_",window)]]  <- results[[paste0("objective_one_",window)]]  |>
   splitAdditional() |>
   mutate("indications_window" = window) |>
-  uniteAdditional(cols = "indications_window")
+  uniteAdditional(cols = c("indications_window", additionalColumns(results[[paste0("objective_one_",window)]])))
 
 omopgenerics::logMessage(message = "Summarising cohort attrition")
 results[[paste0("objective_one_attrition_indications_", window)]] <- summariseCohortAttrition(cdm[["indications"]]) 
+results[[paste0("objective_one_attrition_indications_", window)]] <- results[[paste0("objective_one_attrition_indications_", window)]] |>
+  splitAdditional() |>
+  mutate("indications_window" = window) |>
+  uniteAdditional(cols = c("indications_window", additionalColumns(results[[paste0("objective_one_attrition_indications_", window)]])))
+
+                  

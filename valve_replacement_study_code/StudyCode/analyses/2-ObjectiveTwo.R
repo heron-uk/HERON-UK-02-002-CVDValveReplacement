@@ -136,7 +136,6 @@ cdm[["procedures_nr"]] <- cdm[["procedures_nr"]] |>
                          intersections = c(1,Inf),
                          name = "procedures_nr")
 
-
 logMessage(message = "Get denominator cohort")
 cdm <- generateDenominatorCohortSet(cdm = cdm,
                                     name = "denominator",
