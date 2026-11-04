@@ -55,4 +55,4 @@ source(here("analyses", "ExportResults.R"))
 #                        fileName = "results_{cdm_name}_{date}.csv",
 #                        path = here("Results"))
 
-cli_alert_success("Study finished")
+logMessage(message = "Study finished")

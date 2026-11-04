@@ -50,7 +50,7 @@ exportSummarisedResult(results[["objective_one_inf"]],
 
 exportSummarisedResult(results[["objective_one_365"]],
                        minCellCount = min_cell_count,
-                       fileName = "results_objective_one_inf_{cdm_name}_{date}.csv",
+                       fileName = "results_objective_one_365_{cdm_name}_{date}.csv",
                        path = here("Results"))
 
 exportSummarisedResult(results[["objective_one_aortic_stenosis_insufficiency_codes_inf"]],
