@@ -144,5 +144,10 @@ results[[paste0("objective_one_",window)]] <- summariseCharacteristics(cdm[["pro
                                                                                               "window" = c(-window_value, 0),
                                                                                               "nameStyle" = "{cohort_name}")))
 
+results[[paste0("objective_one_",window)]]  <- results[[paste0("objective_one_",window)]] |>
+  splitAdditional() |>
+  mutate("indications_window" = window) |>
+  uniteAdditional(cols = "indications_window")
+
 omopgenerics::logMessage(message = "Summarising cohort attrition")
 results[[paste0("objective_one_attrition_indications_", window)]] <- summariseCohortAttrition(cdm[["indications"]]) 
