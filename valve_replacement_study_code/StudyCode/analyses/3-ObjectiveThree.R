@@ -18,7 +18,7 @@ cdm[["procedures_as"]] <- cdm[["procedures_as"]] |>
   addUpdatedCharlsonIndex(conceptSet = charlson_comorbidity_index_codelist,
                           ageAdjusted = FALSE,
                           nameStyle = "cci",
-                          categories = list("low_risk" = c(1,2),
+                          categories = list("low_risk" = c(0,2),
                                             "medium_risk" = c(3,4),
                                             "high_risk" = c(5, Inf)))
 
