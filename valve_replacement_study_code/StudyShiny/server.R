@@ -29,7 +29,7 @@ server <- function(input, output, session) {
     summarise_cohort_overlap = "initial",
     summarise_cohort_attrition = "initial",
     summarise_characteristics_overall = "initial",
-    summarise_characteristics_age_groups = "initial",
+    summarise_characteristics_age_group = "initial",
     summarise_characteristics_cci = "initial",
     summarise_characteristics_efi = "initial",
     summarise_characteristics_sex = "initial",
@@ -379,14 +379,13 @@ server <- function(input, output, session) {
   )
   
   ## get orphan_code_use data
-  getOrphanCodeUseCovariatesData <- shiny::eventReactive(
-    input$update_orphan_code_use_covariates,
-    {
-      data[["orphan_code_use"]] |>
-        dplyr::filter(.data$cdm_name %in% input$orphan_code_use_covariates_cdm_name) |>
-        omopgenerics::filterGroup(.data$codelist_name %in% input$orphan_code_use_covariates_codelist_name) 
-    },
-    ignoreInit = TRUE
+  getOrphanCodeUseCovariatesData <- shiny::eventReactive(input$update_orphan_code_use_covariates,
+                                                         {
+                                                           data[["orphan_code_use"]] |>
+                                                             dplyr::filter(.data$cdm_name %in% input$orphan_code_use_covariates_cdm_name) |>
+                                                             omopgenerics::filterGroup(.data$codelist_name %in% input$orphan_code_use_covariates_codelist_name) 
+                                                         },
+                                                         ignoreInit = TRUE
   )
   getOrphanCodeUseCovariatesTableReact <- shiny::reactive({
     getOrphanCodeUseCovariatesData() |>
@@ -685,6 +684,7 @@ server <- function(input, output, session) {
   getSummariseCharacteristicsIndicationsData <- shiny::eventReactive(
     input$update_summarise_characteristics_indications,
     {
+      
       data[["summarise_characteristics"]] |>
         dplyr::filter(variable_name == "Indications") |>
         dplyr::filter(.data$cdm_name %in% input$summarise_characteristics_indications_cdm_name) |>
@@ -719,7 +719,7 @@ server <- function(input, output, session) {
         header = c("cdm_name", "cohort_name"),
         groupColumn = c("age_group", "sex"),
         estimateName = c("N (%)" = "<count> (<percentage>)"),
-        hide = "variable_name"
+        hide = c("efi_categories", "cci_categories", "variable_name")
       )
   })
   output$summarise_characteristics_indications_table <- gt::render_gt({
@@ -885,21 +885,21 @@ server <- function(input, output, session) {
   ## get summarise_characteristics data
   getSummariseCharacteristicsData <- shiny::eventReactive(
     input$update_summarise_characteristics,
-                                                          {
-                                                            data[["summarise_characteristics"]] |>
-                                                              dplyr::filter(
-                                                                .data$cdm_name %in% input$summarise_characteristics_cdm_name,
-                                                                .data$variable_name %in% input$summarise_characteristics_variable_name,
-                                                                .data$estimate_name %in% input$summarise_characteristics_estimate_name
-                                                              ) |>
-                                                              omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_cohort_name) |>
-                                                              omopgenerics::filterStrata(
-                                                                .data$calendar_year %in% input$summarise_characteristics_calendar_year,
-                                                                .data$age_group %in% input$summarise_characteristics_cci,
-                                                                .data$sex %in% input$summarise_characteristics_sex
-                                                              )
-                                                          },
-                                                          ignoreInit = TRUE
+    {
+      data[["summarise_characteristics"]] |>
+        dplyr::filter(
+          .data$cdm_name %in% input$summarise_characteristics_cdm_name,
+          .data$variable_name %in% input$summarise_characteristics_variable_name,
+          .data$estimate_name %in% input$summarise_characteristics_estimate_name
+        ) |>
+        omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_cohort_name) |>
+        omopgenerics::filterStrata(
+          .data$calendar_year %in% input$summarise_characteristics_calendar_year,
+          .data$age_group %in% input$summarise_characteristics_cci,
+          .data$sex %in% input$summarise_characteristics_sex
+        )
+    },
+    ignoreInit = TRUE
   )
   getSummariseCharacteristicsTable <- shiny::reactive({
     getSummariseCharacteristicsData() |>
@@ -1329,29 +1329,29 @@ server <- function(input, output, session) {
   
   ## get incidence_attrition data
   getIncidenceGeneralAttritionData <- shiny::eventReactive(input$update_incidence_general_attrition,
-                                                    {
-                                                      data[["incidence_attrition"]] |>
-                                                        dplyr::filter(
-                                                          .data$cdm_name %in% input$incidence_general_general_attrition_cdm_name,
-                                                          .data$variable_name %in% input$incidence_general_attrition_variable_name
-                                                        ) |>
-                                                        omopgenerics::filterGroup(.data$outcome_cohort_name %in% input$incidence_general_attrition_outcome_cohort_name) |>
-                                                        omopgenerics::filterSettings(
-                                                          .data$analysis_censor_cohort_name %in% input$incidence_general_attrition_analysis_censor_cohort_name,
-                                                          .data$analysis_complete_database_intervals %in% input$incidence_general_attrition_analysis_complete_database_intervals,
-                                                          .data$analysis_outcome_washout %in% input$incidence_general_attrition_analysis_outcome_washout,
-                                                          .data$analysis_repeated_events %in% input$incidence_general_attrition_analysis_repeated_events,
-                                                          .data$denominator_age_group %in% input$incidence_general_attrition_denominator_age_group,
-                                                          .data$denominator_days_prior_observation %in% input$incidence_general_attrition_denominator_days_prior_observation,
-                                                          .data$denominator_end_date %in% input$incidence_general_attrition_denominator_end_date,
-                                                          .data$denominator_requirements_at_entry %in% input$incidence_general_attrition_denominator_requirements_at_entry,
-                                                          .data$denominator_sex %in% input$incidence_general_attrition_denominator_sex,
-                                                          .data$denominator_start_date %in% input$incidence_general_attrition_denominator_start_date,
-                                                          .data$denominator_target_cohort_name %in% input$incidence_general_attrition_denominator_target_cohort_name,
-                                                          .data$denominator_time_at_risk %in% input$incidence_general_attrition_denominator_time_at_risk
-                                                        )
-                                                    },
-                                                    ignoreInit = TRUE
+                                                           {
+                                                             data[["incidence_attrition"]] |>
+                                                               dplyr::filter(
+                                                                 .data$cdm_name %in% input$incidence_general_general_attrition_cdm_name,
+                                                                 .data$variable_name %in% input$incidence_general_attrition_variable_name
+                                                               ) |>
+                                                               omopgenerics::filterGroup(.data$outcome_cohort_name %in% input$incidence_general_attrition_outcome_cohort_name) |>
+                                                               omopgenerics::filterSettings(
+                                                                 .data$analysis_censor_cohort_name %in% input$incidence_general_attrition_analysis_censor_cohort_name,
+                                                                 .data$analysis_complete_database_intervals %in% input$incidence_general_attrition_analysis_complete_database_intervals,
+                                                                 .data$analysis_outcome_washout %in% input$incidence_general_attrition_analysis_outcome_washout,
+                                                                 .data$analysis_repeated_events %in% input$incidence_general_attrition_analysis_repeated_events,
+                                                                 .data$denominator_age_group %in% input$incidence_general_attrition_denominator_age_group,
+                                                                 .data$denominator_days_prior_observation %in% input$incidence_general_attrition_denominator_days_prior_observation,
+                                                                 .data$denominator_end_date %in% input$incidence_general_attrition_denominator_end_date,
+                                                                 .data$denominator_requirements_at_entry %in% input$incidence_general_attrition_denominator_requirements_at_entry,
+                                                                 .data$denominator_sex %in% input$incidence_general_attrition_denominator_sex,
+                                                                 .data$denominator_start_date %in% input$incidence_general_attrition_denominator_start_date,
+                                                                 .data$denominator_target_cohort_name %in% input$incidence_general_attrition_denominator_target_cohort_name,
+                                                                 .data$denominator_time_at_risk %in% input$incidence_general_attrition_denominator_time_at_risk
+                                                               )
+                                                           },
+                                                           ignoreInit = TRUE
   )
   getIncidenceGeneralAttritionTable <- shiny::reactive({
     res <- getIncidenceGeneralAttritionData()
@@ -1390,6 +1390,7 @@ server <- function(input, output, session) {
       input$summarise_characteristics_overall_cci_categories,
       input$summarise_characteristics_overall_variable_name,
       input$summarise_characteristics_overall_estimate_name,
+      input$summarise_characteristics_overall_variables,
       ignoreInit = TRUE
     )
   output$update_message_summarise_characteristics_overall <- shiny::renderUI({
@@ -1411,18 +1412,11 @@ server <- function(input, output, session) {
     input$update_summarise_characteristics_overall,
     {
       data[["summarise_characteristics"]] |>
-        dplyr::filter(
-          .data$cdm_name %in% input$summarise_characteristics_overall_cdm_name,
-          .data$variable_name %in% c("Number subjects",  "Sex",
-                                     "Efi categories", "Cci categories",
-                                     "Comorbidities", "Aortic valve disease phenotype",
-                                     "Cardiovascular disease", "Cardiovascular risk factors",
-                                     "Previous medications")
-        ) |>
+        omopgenerics::filterAdditional(.data$indications_window == "overall") |>
+        omopgenerics::filterSettings(.data$strata == "calendar_year &&& sex &&& age_group &&& efi_categories &&& cci_categories") |>
         omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_overall_cohort_name) |>
         omopgenerics::filterStrata(
-          .data$calendar_year %in% input$summarise_characteristics_overall_calendar_year,
-          .data$sex %in% input$summarise_characteristics_overall_sex,
+          .data$sex %in% "overall",
           .data$age_group %in% "overall",
           .data$efi_categories %in% "overall",
           .data$cci_categories %in% "overall"
@@ -1431,8 +1425,17 @@ server <- function(input, output, session) {
     ignoreInit = TRUE
   )
   getSummariseCharacteristicsOverallTable <- shiny::reactive({
-    getSummariseCharacteristicsOverallData()  |>
-      splitAll() |>
+    x <- getSummariseCharacteristicsOverallData()
+    x  |>
+      omopgenerics::splitAll() |>
+      dplyr::filter(
+        .data$variable_name %in% c("Number subjects",  "Sex",
+                                   "Efi categories", "Cci categories",
+                                   "Comorbidities", "Aortic valve disease phenotype",
+                                   "Cardiovascular disease", "Cardiovascular risk factors",
+                                   "Previous medications")
+      ) |>
+      omopgenerics::filter(.data$calendar_year %in% "overall") |>
       factorColumns() |>
       arrange(across(everything())) |>
       visOmopResults::visTable(
@@ -1452,18 +1455,13 @@ server <- function(input, output, session) {
     }
   )
   getSummariseCharacteristicsOverallPlot <- shiny::reactive({
-    getSummariseCharacteristicsOverallData() |>
-      CohortCharacteristics::plotCharacteristics(
-        plotType = input$summarise_characteristics_overall_plot_plot_type,
-        facet = input$summarise_characteristics_overall_plot_facet,
-        colour = input$summarise_characteristics_overall_plot_colour
-      )
+    plotVariable(getSummariseCharacteristicsOverallData(), input$summarise_characteristics_overall_variables)
   })
   output$summarise_characteristics_overall_plot <- shiny::renderUI({
     tryCatch(
       {
         x <- getSummariseCharacteristicsOverallPlot()
-        renderInteractivePlot(x, input$summarise_characteristics_overall_plot_interactive)
+        renderInteractivePlot(x, FALSE)
       },
       error = function(e) {
         if (inherits(e, "shiny.silent.error")) stop(e)
@@ -1524,6 +1522,8 @@ server <- function(input, output, session) {
     input$update_summarise_characteristics_sex,
     {
       data[["summarise_characteristics"]] |>
+        omopgenerics::filterAdditional(.data$indications_window == "overall") |>
+        omopgenerics::filterSettings(.data$strata == "calendar_year &&& sex &&& age_group &&& efi_categories &&& cci_categories") |>
         dplyr::filter(
           .data$cdm_name %in% input$summarise_characteristics_sex_cdm_name,
           .data$variable_name %in% c("Number subjects",  "Sex",
@@ -1534,7 +1534,6 @@ server <- function(input, output, session) {
         ) |>
         omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_sex_cohort_name) |>
         omopgenerics::filterStrata(
-          .data$calendar_year %in% input$summarise_characteristics_sex_calendar_year,
           .data$sex %in% input$summarise_characteristics_sex_sex,
           .data$age_group %in% "overall",
           .data$efi_categories %in% "overall",
@@ -1544,16 +1543,24 @@ server <- function(input, output, session) {
     ignoreInit = TRUE
   )
   getSummariseCharacteristicsSexTable <- shiny::reactive({
-    getSummariseCharacteristicsSexData()  |>
-      splitAll() |>
+    x <- getSummariseCharacteristicsSexData()
+    x  |>
+      omopgenerics::splitAll() |>
+      dplyr::filter(
+        .data$variable_name %in% c("Number subjects",  "Sex",
+                                   "Efi categories", "Cci categories",
+                                   "Comorbidities", "Aortic valve disease phenotype",
+                                   "Cardiovascular disease", "Cardiovascular risk factors",
+                                   "Previous medications")
+      ) |>
       factorColumns() |>
       arrange(across(everything())) |>
       visOmopResults::visTable(
-        groupColumn = c("sex"),
-        header = c("cdm_name", "cohort_name"),
+        groupColumn = c(),
+        header = c("cdm_name", "cohort_name", "sex"),
         estimateName = c("N (%)" = "<count> (<percentage>)",
                          "N" = "<count>"),
-        hide = c("efi_categories", "age_group", "cci_categories", "estimate_type", "result_id"))
+        hide = c("efi_categories", "cci_categories", "age_group", "estimate_type", "result_id"))
   })
   output$summarise_characteristics_sex_table <- gt::render_gt({
     getSummariseCharacteristicsSexTable()
@@ -1561,22 +1568,17 @@ server <- function(input, output, session) {
   output$summarise_characteristics_sex_table_download <- shiny::downloadHandler(
     filename = paste0("table_characteristics.", input$summarise_characteristics_sex_table_format),
     content = function(file) {
-      gt::gtsave(getSummariseCharacteristicsAgeGrouTable(), file)
+      gt::gtsave(getSummariseCharacteristicsSexTable(), file)
     }
   )
   getSummariseCharacteristicsSexPlot <- shiny::reactive({
-    getSummariseCharacteristicsSexData() |>
-      CohortCharacteristics::plotCharacteristics(
-        plotType = input$summarise_characteristics_sex_plot_plot_type,
-        facet = input$summarise_characteristics_sex_plot_facet,
-        colour = input$summarise_characteristics_sex_plot_colour
-      )
+    plotVariable(getSummariseCharacteristicsSexData(), input$summarise_characteristics_sex_variables, strata = "sex")
   })
   output$summarise_characteristics_sex_plot <- shiny::renderUI({
     tryCatch(
       {
         x <- getSummariseCharacteristicsSexPlot()
-        renderInteractivePlot(x, input$summarise_characteristics_sex_plot_interactive)
+        renderInteractivePlot(x, FALSE)
       },
       error = function(e) {
         if (inherits(e, "shiny.silent.error")) stop(e)
@@ -1598,7 +1600,7 @@ server <- function(input, output, session) {
     }
   )
   # -----
-  
+
   # summarise_characteristics_age_group -----
   ## update message if filter is changed
   shiny::observe({
@@ -1637,6 +1639,8 @@ server <- function(input, output, session) {
     input$update_summarise_characteristics_age_group,
     {
       data[["summarise_characteristics"]] |>
+        omopgenerics::filterAdditional(.data$indications_window == "overall") |>
+        omopgenerics::filterSettings(.data$strata == "calendar_year &&& sex &&& age_group &&& efi_categories &&& cci_categories") |>
         dplyr::filter(
           .data$cdm_name %in% input$summarise_characteristics_age_group_cdm_name,
           .data$variable_name %in% c("Number subjects",  "Sex",
@@ -1647,7 +1651,6 @@ server <- function(input, output, session) {
         ) |>
         omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_age_group_cohort_name) |>
         omopgenerics::filterStrata(
-          .data$calendar_year %in% input$summarise_characteristics_age_group_calendar_year,
           .data$sex %in% "overall",
           .data$age_group %in% input$summarise_characteristics_age_group_age_group,
           .data$efi_categories %in% "overall",
@@ -1657,16 +1660,24 @@ server <- function(input, output, session) {
     ignoreInit = TRUE
   )
   getSummariseCharacteristicsAgeGroupTable <- shiny::reactive({
-    getSummariseCharacteristicsAgeGroupData()  |>
-      splitAll() |>
+    x <- getSummariseCharacteristicsAgeGroupData()
+    x  |>
+      omopgenerics::splitAll() |>
+      dplyr::filter(
+        .data$variable_name %in% c("Number subjects",  "Sex",
+                                   "Efi categories", "Cci categories",
+                                   "Comorbidities", "Aortic valve disease phenotype",
+                                   "Cardiovascular disease", "Cardiovascular risk factors",
+                                   "Previous medications")
+      ) |>
       factorColumns() |>
       arrange(across(everything())) |>
       visOmopResults::visTable(
-        groupColumn = c("sex"),
-        header = c("cdm_name", "cohort_name"),
+        groupColumn = c(),
+        header = c("cdm_name", "cohort_name", "age_group"),
         estimateName = c("N (%)" = "<count> (<percentage>)",
                          "N" = "<count>"),
-        hide = c("efi_categories", "age_group", "cci_categories", "estimate_type", "result_id"))
+        hide = c("efi_categories", "sex", "cci_categories", "estimate_type", "result_id"))
   })
   output$summarise_characteristics_age_group_table <- gt::render_gt({
     getSummariseCharacteristicsAgeGroupTable()
@@ -1674,22 +1685,17 @@ server <- function(input, output, session) {
   output$summarise_characteristics_age_group_table_download <- shiny::downloadHandler(
     filename = paste0("table_characteristics.", input$summarise_characteristics_age_group_table_format),
     content = function(file) {
-      gt::gtsave(getSummariseCharacteristicsAgeGrouTable(), file)
+      gt::gtsave(getSummariseCharacteristicsAgeGroupTable(), file)
     }
   )
   getSummariseCharacteristicsAgeGroupPlot <- shiny::reactive({
-    getSummariseCharacteristicsAgeGroupData() |>
-      CohortCharacteristics::plotCharacteristics(
-        plotType = input$summarise_characteristics_age_group_plot_plot_type,
-        facet = input$summarise_characteristics_age_group_plot_facet,
-        colour = input$summarise_characteristics_age_group_plot_colour
-      )
+    plotVariable(getSummariseCharacteristicsAgeGroupData(), input$summarise_characteristics_age_group_variables, strata = "age_group")
   })
   output$summarise_characteristics_age_group_plot <- shiny::renderUI({
     tryCatch(
       {
         x <- getSummariseCharacteristicsAgeGroupPlot()
-        renderInteractivePlot(x, input$summarise_characteristics_age_group_plot_interactive)
+        renderInteractivePlot(x, FALSE)
       },
       error = function(e) {
         if (inherits(e, "shiny.silent.error")) stop(e)
@@ -1711,7 +1717,7 @@ server <- function(input, output, session) {
     }
   )
   # -----
-
+  
   # summarise_characteristics_cci -----
   ## update message if filter is changed
   shiny::observe({
@@ -1750,6 +1756,8 @@ server <- function(input, output, session) {
     input$update_summarise_characteristics_cci,
     {
       data[["summarise_characteristics"]] |>
+        omopgenerics::filterAdditional(.data$indications_window == "overall") |>
+        omopgenerics::filterSettings(.data$strata == "calendar_year &&& sex &&& age_group &&& efi_categories &&& cci_categories") |>
         dplyr::filter(
           .data$cdm_name %in% input$summarise_characteristics_cci_cdm_name,
           .data$variable_name %in% c("Number subjects",  "Sex",
@@ -1760,7 +1768,6 @@ server <- function(input, output, session) {
         ) |>
         omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_cci_cohort_name) |>
         omopgenerics::filterStrata(
-          .data$calendar_year %in% input$summarise_characteristics_cci_calendar_year,
           .data$sex %in% "overall",
           .data$age_group %in% "overall",
           .data$efi_categories %in% "overall",
@@ -1770,16 +1777,24 @@ server <- function(input, output, session) {
     ignoreInit = TRUE
   )
   getSummariseCharacteristicsCCITable <- shiny::reactive({
-    getSummariseCharacteristicsCCIData()  |>
-      splitAll() |>
+    x <- getSummariseCharacteristicsCCIData()
+    x  |>
+      omopgenerics::splitAll() |>
+      dplyr::filter(
+        .data$variable_name %in% c("Number subjects",  "Sex",
+                                   "Efi categories", "Cci categories",
+                                   "Comorbidities", "Aortic valve disease phenotype",
+                                   "Cardiovascular disease", "Cardiovascular risk factors",
+                                   "Previous medications")
+      ) |>
       factorColumns() |>
       arrange(across(everything())) |>
       visOmopResults::visTable(
-        groupColumn = c("cci_categories"),
+        groupColumn = c(),
         header = c("cdm_name", "cohort_name"),
         estimateName = c("N (%)" = "<count> (<percentage>)",
                          "N" = "<count>"),
-        hide = c("efi_categories", "age_group", "sex", "estimate_type", "result_id"))
+        hide = c("efi_categories", "cci_categories", "age_group", "sex", "estimate_type", "result_id"))
   })
   output$summarise_characteristics_cci_table <- gt::render_gt({
     getSummariseCharacteristicsCCITable()
@@ -1791,18 +1806,13 @@ server <- function(input, output, session) {
     }
   )
   getSummariseCharacteristicsCCIPlot <- shiny::reactive({
-    getSummariseCharacteristicsCCIData() |>
-      CohortCharacteristics::plotCharacteristics(
-        plotType = input$summarise_characteristics_cci_plot_plot_type,
-        facet = input$summarise_characteristics_cci_plot_facet,
-        colour = input$summarise_characteristics_cci_plot_colour
-      )
+    plotVariable(getSummariseCharacteristicsCCIData(), input$summarise_characteristics_cci_variables, strata = "cci_categories")
   })
   output$summarise_characteristics_cci_plot <- shiny::renderUI({
     tryCatch(
       {
         x <- getSummariseCharacteristicsCCIPlot()
-        renderInteractivePlot(x, input$summarise_characteristics_cci_plot_interactive)
+        renderInteractivePlot(x, FALSE)
       },
       error = function(e) {
         if (inherits(e, "shiny.silent.error")) stop(e)
@@ -1863,6 +1873,8 @@ server <- function(input, output, session) {
     input$update_summarise_characteristics_efi,
     {
       data[["summarise_characteristics"]] |>
+        omopgenerics::filterAdditional(.data$indications_window == "overall") |>
+        omopgenerics::filterSettings(.data$strata == "calendar_year &&& sex &&& age_group &&& efi_categories &&& cci_categories") |>
         dplyr::filter(
           .data$cdm_name %in% input$summarise_characteristics_efi_cdm_name,
           .data$variable_name %in% c("Number subjects",  "Sex",
@@ -1873,7 +1885,6 @@ server <- function(input, output, session) {
         ) |>
         omopgenerics::filterGroup(.data$cohort_name %in% input$summarise_characteristics_efi_cohort_name) |>
         omopgenerics::filterStrata(
-          .data$calendar_year %in% input$summarise_characteristics_efi_calendar_year,
           .data$sex %in% "overall",
           .data$age_group %in% "overall",
           .data$efi_categories %in% input$summarise_characteristics_efi_efi_categories,
@@ -1883,16 +1894,24 @@ server <- function(input, output, session) {
     ignoreInit = TRUE
   )
   getSummariseCharacteristicsEFITable <- shiny::reactive({
-    getSummariseCharacteristicsEFIData()  |>
-      splitAll() |>
+    x <- getSummariseCharacteristicsEFIData()
+    x  |>
+      omopgenerics::splitAll() |>
+      dplyr::filter(
+        .data$variable_name %in% c("Number subjects",  "Sex",
+                                   "Efi categories", "Cci categories",
+                                   "Comorbidities", "Aortic valve disease phenotype",
+                                   "Cardiovascular disease", "Cardiovascular risk factors",
+                                   "Previous medications")
+      ) |>
       factorColumns() |>
       arrange(across(everything())) |>
       visOmopResults::visTable(
-        groupColumn = c("efi_categories"),
-        header = c("cdm_name", "cohort_name"),
+        groupColumn = c(),
+        header = c("cdm_name", "cohort_name", "cci_categories"),
         estimateName = c("N (%)" = "<count> (<percentage>)",
                          "N" = "<count>"),
-        hide = c("cci_categories", "age_group", "sex", "estimate_type", "result_id"))
+        hide = c("efi_categories",  "age_group", "sex", "estimate_type", "result_id"))
   })
   output$summarise_characteristics_efi_table <- gt::render_gt({
     getSummariseCharacteristicsEFITable()
@@ -1904,18 +1923,13 @@ server <- function(input, output, session) {
     }
   )
   getSummariseCharacteristicsEFIPlot <- shiny::reactive({
-    getSummariseCharacteristicsEFIData() |>
-      CohortCharacteristics::plotCharacteristics(
-        plotType = input$summarise_characteristics_efi_plot_plot_type,
-        facet = input$summarise_characteristics_efi_plot_facet,
-        colour = input$summarise_characteristics_efi_plot_colour
-      )
+    plotVariable(getSummariseCharacteristicsEFIData(), input$summarise_characteristics_efi_variables, strata = "efi_categories")
   })
   output$summarise_characteristics_efi_plot <- shiny::renderUI({
     tryCatch(
       {
         x <- getSummariseCharacteristicsEFIPlot()
-        renderInteractivePlot(x, input$summarise_characteristics_efi_plot_interactive)
+        renderInteractivePlot(x, FALSE)
       },
       error = function(e) {
         if (inherits(e, "shiny.silent.error")) stop(e)

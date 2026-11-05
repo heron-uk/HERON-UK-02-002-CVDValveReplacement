@@ -25,6 +25,9 @@ result <- result |>
 # Read data ----
 data <- prepareResult(result, resultList)
 
+data[["incidence"]] <- data[["incidence"]] |> 
+  omopgenerics::filterAdditional(as.Date(incidence_start_date) >= as.Date("2012-01-01"))
+
 data[["summarise_characteristics"]] <- bind(
   data[["summarise_characteristics"]], 
   
@@ -227,7 +230,8 @@ for (nm in names(values)[grepl("summarise_characteristics_", names(values))]) {
 values$summarise_characteristics_age_group_age_group <- c("0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150")
 values$summarise_characteristics_cci_cci_categories <- values$summarise_characteristics_cci_cci_categories[values$summarise_characteristics_cci_cci_categories != "overall"]
 values$summarise_characteristics_efi_efi_categories <- values$summarise_characteristics_efi_efi_categories[values$summarise_characteristics_efi_efi_categories != "overall"]
-values$summarise_characteristics_sex <- values$summarise_characteristics_sex[values$summarise_characteristics_sex != "overall"]
+values$summarise_characteristics_sex_sex <- values$summarise_characteristics_sex[values$summarise_characteristics_sex_sex != "overall"]
+values$summarise_characteristics_indications_indications_window <- values$summarise_characteristics_indications_indications_window[values$summarise_characteristics_indications_indications_window != "overall"]
 
 values$summarise_characteristics_indications_age_group <- c("overall", "0 to 64", "65 to 150")
 values$summarise_characteristics_age_group_calendar_year <- values$summarise_characteristics_age_group_calendar_year[values$summarise_characteristics_age_group_calendar_year != "overall"]
@@ -245,6 +249,25 @@ values$incidence_denominator_sex <- values$incidence_denominator_sex[values$inci
 values$incidence_general_denominator_age_group <- values$incidence_denominator_age_group[values$incidence_denominator_age_group != "-NA-"]
 values$incidence_general_denominator_sex <- values$incidence_denominator_sex[values$incidence_denominator_sex != "-NA-"]
 
+values$summarise_characteristics_overall_variables <- c("Number subjects", "Sex", "Age",  "Cci categories", "Efi categories", "Cci", "Efi",
+                                                        "Aortic valve disease phenotype", "Cardiovascular disease", 
+                                                        "Cardiovascular risk factors", "Comorbidities", "Previous medications")
+
+values$summarise_characteristics_sex_variables <- c("Number subjects", "Cci categories", "Efi categories",
+                                                    "Aortic valve disease phenotype", "Cardiovascular disease", 
+                                                    "Cardiovascular risk factors", "Comorbidities", "Previous medications")
+
+values$summarise_characteristics_age_group_variables <- c("Number subjects", "Sex", "Cci categories", "Efi categories",
+                                                          "Aortic valve disease phenotype", "Cardiovascular disease", 
+                                                          "Cardiovascular risk factors", "Comorbidities", "Previous medications")
+
+values$summarise_characteristics_cci_variables <- c("Number subjects",  "Sex", "Efi categories", 
+                                                    "Aortic valve disease phenotype", "Cardiovascular disease", 
+                                                    "Cardiovascular risk factors", "Comorbidities", "Previous medications")
+
+values$summarise_characteristics_efi_variables <- c("Number subjects","Sex", "Cci categories",
+                                                    "Aortic valve disease phenotype", "Cardiovascular disease", 
+                                                    "Cardiovascular risk factors", "Comorbidities", "Previous medications")
 # edit choices and values of interest
 choices <- values
 selected <- getSelected(values)
@@ -258,6 +281,7 @@ selected$orphan_code_use_cci_codelist_name <- "aortic_calcification"
 selected$cohort_code_use_efi_cohort_name <- "aortic_calcification"
 selected$orphan_code_use_efi_codelist_name <- "aortic_calcification"
 selected$summarise_characteristis_indications_indications_window <- "365 days"
+selected$summarise_characteristics_overall_variables <- c("Number subjects")
 
 save(data, incidence_denominator_names, choices, selected, values, file = file.path(getwd(), "data", "studyData.RData"))
 

@@ -1901,14 +1901,6 @@ ui <- bslib::page_navbar(
             multiple = TRUE,
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
           ),
-          shinyWidgets::pickerInput(
-            inputId = "summarise_characteristics_overall_calendar_year",
-            label = "Calendar year",
-            choices = choices$summarise_characteristics_overall_calendar_year,
-            selected = selected$summarise_characteristics_overall_calendar_year,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
           position = "left"
         ),
         bslib::navset_card_tab(
@@ -1971,33 +1963,12 @@ ui <- bslib::page_navbar(
               ),
               bslib::layout_sidebar(
                 sidebar = bslib::sidebar(
-                  shinyWidgets::materialSwitch(
-                    inputId = "summarise_characteristics_overall_plot_interactive",
-                    label = "Interactive",
-                    value = TRUE
-                  ),
                   shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_overall_plot_plot_type",
-                    label = "Plot type",
-                    choices = c("boxplot", "barplot", "scatterplot"),
-                    selected = "boxplot",
+                    inputId = "summarise_characteristics_overall_variables",
+                    label = "Variable",
+                    choices = choices$summarise_characteristics_overall_variables,
+                    selected = selected$summarise_characteristics_overall_variables,
                     multiple = FALSE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_overall_plot_facet",
-                    label = "Facet",
-                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
-                    selected = "cdm_name",
-                    multiple = TRUE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_overall_plot_colour",
-                    label = "Colour",
-                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
-                    selected = "cohort_name",
-                    multiple = TRUE,
                     options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
                   ),
                   position = "right"
@@ -2043,14 +2014,6 @@ ui <- bslib::page_navbar(
             label = "Cohort name",
             choices = choices$summarise_characteristics_sex_cohort_name,
             selected = selected$summarise_characteristics_sex_cohort_name,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "summarise_characteristics_sex_calendar_year",
-            label = "Calendar year",
-            choices = choices$summarise_characteristics_sex_calendar_year,
-            selected = selected$summarise_characteristics_sex_calendar_year,
             multiple = TRUE,
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
           ),
@@ -2124,33 +2087,12 @@ ui <- bslib::page_navbar(
               ),
               bslib::layout_sidebar(
                 sidebar = bslib::sidebar(
-                  shinyWidgets::materialSwitch(
-                    inputId = "summarise_characteristics_sex_plot_interactive",
-                    label = "Interactive",
-                    value = TRUE
-                  ),
                   shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_sex_plot_plot_type",
-                    label = "Plot type",
-                    choices = c("boxplot", "barplot", "scatterplot"),
-                    selected = "boxplot",
+                    inputId = "summarise_characteristics_sex_variables",
+                    label = "Variable",
+                    choices = choices$summarise_characteristics_sex_variables,
+                    selected = selected$summarise_characteristics_sex_variables,
                     multiple = FALSE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_sex_plot_facet",
-                    label = "Facet",
-                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
-                    selected = "cdm_name",
-                    multiple = TRUE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_sex_plot_colour",
-                    label = "Colour",
-                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
-                    selected = "cohort_name",
-                    multiple = TRUE,
                     options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
                   ),
                   position = "right"
@@ -2196,14 +2138,6 @@ ui <- bslib::page_navbar(
             label = "Cohort name",
             choices = choices$summarise_characteristics_age_group_cohort_name,
             selected = selected$summarise_characteristics_age_group_cohort_name,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "summarise_characteristics_age_group_calendar_year",
-            label = "Calendar year",
-            choices = choices$summarise_characteristics_age_group_calendar_year,
-            selected = selected$summarise_characteristics_age_group_calendar_year,
             multiple = TRUE,
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
           ),
@@ -2277,33 +2211,12 @@ ui <- bslib::page_navbar(
               ),
               bslib::layout_sidebar(
                 sidebar = bslib::sidebar(
-                  shinyWidgets::materialSwitch(
-                    inputId = "summarise_characteristics_age_group_plot_interactive",
-                    label = "Interactive",
-                    value = TRUE
-                  ),
                   shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_age_group_plot_plot_type",
-                    label = "Plot type",
-                    choices = c("boxplot", "barplot", "scatterplot"),
-                    selected = "boxplot",
+                    inputId = "summarise_characteristics_age_group_variables",
+                    label = "Variable",
+                    choices = choices$summarise_characteristics_age_group_variables,
+                    selected = selected$summarise_characteristics_age_group_variables,
                     multiple = FALSE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_age_group_plot_facet",
-                    label = "Facet",
-                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
-                    selected = "cdm_name",
-                    multiple = TRUE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_age_group_plot_colour",
-                    label = "Colour",
-                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
-                    selected = "cohort_name",
-                    multiple = TRUE,
                     options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
                   ),
                   position = "right"
@@ -2353,18 +2266,10 @@ ui <- bslib::page_navbar(
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
           ),
           shinyWidgets::pickerInput(
-            inputId = "summarise_characteristics_cci_calendar_year",
-            label = "Calendar year",
-            choices = choices$summarise_characteristics_cci_calendar_year,
-            selected = selected$summarise_characteristics_cci_calendar_year,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          shinyWidgets::pickerInput(
             inputId = "summarise_characteristics_cci_cci_categories",
             label = "CCI Category",
-            choices = choices$summarise_characteristics_cci_categories,
-            selected = selected$summarise_characteristics_cci_categories,
+            choices = choices$summarise_characteristics_cci_cci_categories,
+            selected = selected$summarise_characteristics_cci_cci_categories,
             multiple = TRUE,
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
           ),
@@ -2430,33 +2335,12 @@ ui <- bslib::page_navbar(
               ),
               bslib::layout_sidebar(
                 sidebar = bslib::sidebar(
-                  shinyWidgets::materialSwitch(
-                    inputId = "summarise_characteristics_cci_plot_interactive",
-                    label = "Interactive",
-                    value = TRUE
-                  ),
                   shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_cci_plot_plot_type",
-                    label = "Plot type",
-                    choices = c("boxplot", "barplot", "scatterplot"),
-                    selected = "boxplot",
+                    inputId = "summarise_characteristics_cci_variables",
+                    label = "Variable",
+                    choices = choices$summarise_characteristics_cci_variables,
+                    selected = selected$summarise_characteristics_cci_variables,
                     multiple = FALSE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_cci_plot_facet",
-                    label = "Facet",
-                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
-                    selected = "cdm_name",
-                    multiple = TRUE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_cci_plot_colour",
-                    label = "Colour",
-                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
-                    selected = "cohort_name",
-                    multiple = TRUE,
                     options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
                   ),
                   position = "right"
@@ -2502,14 +2386,6 @@ ui <- bslib::page_navbar(
             label = "Cohort name",
             choices = choices$summarise_characteristics_efi_cohort_name,
             selected = selected$summarise_characteristics_efi_cohort_name,
-            multiple = TRUE,
-            options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-          ),
-          shinyWidgets::pickerInput(
-            inputId = "summarise_characteristics_efi_calendar_year",
-            label = "Calendar year",
-            choices = choices$summarise_characteristics_efi_calendar_year,
-            selected = selected$summarise_characteristics_efi_calendar_year,
             multiple = TRUE,
             options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
           ),
@@ -2583,33 +2459,12 @@ ui <- bslib::page_navbar(
               ),
               bslib::layout_sidebar(
                 sidebar = bslib::sidebar(
-                  shinyWidgets::materialSwitch(
-                    inputId = "summarise_characteristics_efi_plot_interactive",
-                    label = "Interactive",
-                    value = TRUE
-                  ),
                   shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_efi_plot_plot_type",
-                    label = "Plot type",
-                    choices = c("boxplot", "barplot", "scatterplot"),
-                    selected = "boxplot",
+                    inputId = "summarise_characteristics_efi_variables",
+                    label = "Variable",
+                    choices = choices$summarise_characteristics_efi_variables,
+                    selected = selected$summarise_characteristics_efi_variables,
                     multiple = FALSE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_efi_plot_facet",
-                    label = "Facet",
-                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
-                    selected = "cdm_name",
-                    multiple = TRUE,
-                    options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
-                  ),
-                  shinyWidgets::pickerInput(
-                    inputId = "summarise_characteristics_efi_plot_colour",
-                    label = "Colour",
-                    choices = c("cdm_name", "cohort_name", "calendar_year", "sex", "age_group", "efi_categories", "cci_categories"),
-                    selected = "cohort_name",
-                    multiple = TRUE,
                     options = list(`actions-box` = TRUE, size = 10, `selected-text-format` = "count > 3", `live-search` = TRUE)
                   ),
                   position = "right"

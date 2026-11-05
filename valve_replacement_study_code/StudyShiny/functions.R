@@ -482,12 +482,98 @@ factorColumns <- function(x) {
                   "variable_level" = gsub("Copd", "COPD", variable_level),
                   "variable_level" = gsub("Acei arbs", "ACE inhibitors and ARBs", variable_level),
                   "variable_level" = gsub("Isglt2", "ISGLT2", variable_level)) |>
-    dplyr::mutate("calendar_year" = factor(calendar_year, levels = as.character(seq(2012, 2025))),
-                  "age_group" = factor(age_group, levels = c("0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150")),
+    dplyr::mutate("calendar_year" = factor(calendar_year, levels = c("overall", as.character(seq(2012, 2025)))),
+                  "age_group" = factor(age_group, levels = c("overall", "0 to 39", "40 to 64", "65 to 69", "70 to 74", "75 to 79", "80 to 84", "85 to 150")),
                   "sex" = factor(sex, levels = c("overall", "Female", "Male")),
                   "efi_categories" = factor(efi_categories, levels = c("overall", "fit", "mild", "moderate", "severe")),
                   "cci_categories" = factor(cci_categories, levels = c("overall", "low_risk", "medium_risk", "high_risk")),
                   "variable_name" = factor(variable_name, levels = c("Number subjects", "Sex", "Efi categories", "Cci categories",
                                                                       "Aortic valve disease phenotype", "Cardiovascular disease",
                                                                       "Cardiovascular risk factors", "Comorbidities", "Previous medications"))) 
+}
+
+plotVariable <- function(data, variable, strata = NULL) {
+
+  if(variable == "Number subjects") {
+    x <- data |>
+      filter(variable_name == "Number subjects") |>
+      filterStrata(calendar_year != "overall")
+    
+    facet <- c("cdm_name", strata)
+
+    avr <- x |>
+      filterGroup(cohort_name == "AVR")
+    x <- x |>
+      filterGroup(cohort_name != "AVR") |>
+      left_join(
+        avr |>
+          select(-"group_level", -"result_id") |>
+          rename("denominator" = "estimate_value"),
+        by = c("cdm_name", "group_name", "strata_name", "strata_level", "variable_name", "variable_level", "estimate_name", "estimate_type",
+               "additional_name", "additional_level")
+      ) |>
+      tidy() |>
+      mutate("percentage" = count/as.numeric(denominator)*100) |>
+      visOmopResults::barPlot(x = "calendar_year",
+                              y = "percentage", 
+                              facet =  facet,
+                              colour = "cohort_name",
+                              position = "stack") +
+      labs(y = "Number subjects (%)") 
+  }
+  
+  if(variable %in% c("Sex", "Age group", "Cci categories", "Efi categories")){
+    x <- data |>
+      filter(variable_name %in% !!variable) |>
+      filterStrata(calendar_year != "overall") 
+    
+    facet <- c("cdm_name", "cohort_name", strata)
+    
+    x <- x |>
+      tidy() |>
+      visOmopResults::barPlot(x = "calendar_year",
+                              y = "percentage", 
+                              facet = facet, 
+                              colour = "variable_level",
+                              position = "stack") +
+      labs(y = "Number subjects (%)", fill = variable, colour = variable) 
+  } 
+  
+  if(variable %in% c("Cci", "Efi", "Age")){
+    facet <- c("cdm_name", strata)
+    
+    x <- data |>
+      filter(variable_name %in% !!variable) |>
+      filter(!grepl("Density", variable_level)) |>
+      filterStrata(calendar_year != "overall") 
+    
+    x <- x |>
+      visOmopResults::boxPlot(x = "calendar_year",
+                              facet = facet,
+                              colour = "cohort_name")
+  } 
+ 
+ if(variable %in% c("Aortic valve disease phenotype", "Cardiovascular disease", "Cardiovascular risk factors", 
+                    "Comorbidities", "Previous medications")){
+   x <- data |>
+     filter(variable_name %in% !!variable) |>
+     filterStrata(calendar_year != "overall") 
+   
+   facet <- c("cdm_name", "variable_level", strata)
+   
+   x <- x |>
+     visOmopResults::scatterPlot(x = "calendar_year",
+                                 y = "percentage", 
+                                 line = TRUE, 
+                                 point = TRUE, 
+                                 ribbon = FALSE,
+                                 group = "variable_level",
+                                 colour = "cohort_name")  +
+     facet_wrap(
+       facet,
+       scales = "free_y"
+     )
+ } 
+  
+  return(x)
 }
