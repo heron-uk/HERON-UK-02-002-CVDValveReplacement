@@ -36,8 +36,13 @@ cdm[["procedures_as"]] <- cdm[["procedures_as"]] |>
   addAge(ageGroup = age_groups_extended) 
 
 omopgenerics::logMessage(message = "Population characteristics")
-results[["table_one"]] <- summariseCharacteristics(cdm[["procedures_as"]], 
-                                                   strata = list("calendar_year", 
+results[["table_one"]] <- summariseCharacteristics(cdm[["procedures_as"]],
+                                                   ageGroup = age_groups_extended,
+                                                   strata = list("sex",
+                                                                 "age_group",
+                                                                 "efi_categories",
+                                                                 "cci_categories",
+                                                                 "calendar_year", 
                                                                  c("calendar_year", "sex"),
                                                                  c("calendar_year", "age_group"),
                                                                  c("calendar_year", "efi_categories"),
