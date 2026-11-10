@@ -191,6 +191,7 @@ cdm[["cardiovascular_disease"]] <- conceptCohort(cdm,
 omopgenerics::logMessage(message = "- Define cardiovascular disease chronic")
 cdm[["cardiovascular_disease"]] <- cdm[["cardiovascular_disease"]] |>
   exitAtObservationEnd(cohortId = c("left_bundle_branch_block", "right_bundle_branch_block",
+                                    "bundle_branch_block", "myocardial_infarction", "stroke_broad",
                                     "atrial_fibrillation",  "coronary_artery_disease",
                                     "pre_existing_pacemaker_or_defibrillator",
                                     "peripheral_arterial_disease", "heart_failure",
