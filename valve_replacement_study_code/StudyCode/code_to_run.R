@@ -69,7 +69,19 @@ cdm <- cdmFromCon(
   writeSchema = writeSchema,
   writePrefix = writePrefix,
   cdmName = dbName,
-  achillesSchema = achillesSchema
+  achillesSchema = achillesSchema, 
+  cohortTables = c("aortic_stenosis_denominator", 
+                   "aortic_endocarditis",
+                   "procedures_nr", 
+                   "denominator_as_cci",
+                   "aortic_stenosis_indication",
+                   "procedures",
+                   "comorbidities",
+                   "aortic_valve_disease_phenotype",
+                   "cardiovascular_risk_factors",
+                   "electronic_frailty_index",
+                   "charlson_comorbidity_index"
+                   )
 )
 
 # Run the study

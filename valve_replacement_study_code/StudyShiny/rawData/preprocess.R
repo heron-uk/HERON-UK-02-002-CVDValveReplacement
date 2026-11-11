@@ -3,7 +3,7 @@ resultList <- list(
   summarise_omop_snapshot = list(result_type = "summarise_omop_snapshot"),
   summarise_observation_period = list(result_type = "summarise_observation_period"),
   orphan_code_use = list(result_type = "orphan_code_use"),
-  cohort_code_use = list(result_type = "cohort_code_use"),
+  achilles_code_use = list(result_type = "achilles_code_use"),
   summarise_cohort_overlap = list(result_type = "summarise_cohort_overlap"),
   summarise_cohort_attrition = list(result_type = "summarise_cohort_attrition"),
   summarise_characteristics = list(result_type = "summarise_characteristics"),
@@ -14,8 +14,8 @@ resultList <- list(
 source(file.path(getwd(), "functions.R"))
 
 result <- bind(
-  omopgenerics::importSummarisedResult(here::here("..", "StudyCode", "Results", "results_HERON_CDM_202509_2026_10_21.csv")),
-  omopgenerics::importSummarisedResult(here::here("..", "StudyCode", "Results", "results_CPRD GOLD_2026_11_02.csv")))
+  # omopgenerics::importSummarisedResult(here::here("..", "StudyCode", "Results", "results_HERON_CDM_202509_2026_10_21.csv")),
+  omopgenerics::importSummarisedResult(here::here("..", "StudyCode", "Results", "results_CPRD GOLD_2026_11_11.csv")))
 result <- result |>
   dplyr::mutate("cdm_name" = gsub("HERON_CDM_202509", "CPRD Aurum", cdm_name)) |>
   dplyr::mutate("group_level" = gsub("aortic_valve_replacement", "AVR", group_level),
@@ -28,31 +28,31 @@ data <- prepareResult(result, resultList)
 data[["incidence"]] <- data[["incidence"]] |> 
   omopgenerics::filterAdditional(as.Date(incidence_start_date) >= as.Date("2012-01-01"))
 
-data[["summarise_characteristics"]] <- bind(
-  data[["summarise_characteristics"]], 
-  
-  data[["summarise_characteristics"]] |>
-    dplyr::filter(variable_name == "Indications",
-                  variable_level %in% c("Aortic stenosis avr",
-                                        "Aortic insufficiency avr",
-                                        "Aortic stenosis insufficiency",
-                                        "Aortic endocarditis",
-                                        "No indication identified")) |>
-    omopgenerics::tidy() |>
-    dplyr::summarise("count" = sum(count, na.rm = TRUE), 
-                     "percentage" = sum(percentage, na.rm = TRUE),
-                     .by = c(cdm_name, cohort_name, calendar_year, age_group, sex, variable_name)) |>
-    dplyr::mutate("mixed_group_count" = c(100-percentage) * count/percentage) |>
-    dplyr::mutate("mixed_group_percentage" = 100-percentage) |>
-    dplyr::select(-c("count", "percentage")) |>
-    dplyr::rename("count" = "mixed_group_count",
-                  "percentage" = "mixed_group_percentage") |>
-    dplyr::mutate('variable_level' = "Other identified indications") |>
-    omopgenerics::transformToSummarisedResult(
-      group = "cohort_name",
-      strata = c("calendar_year", "age_group", "sex"),
-      estimates = c("count", "percentage")
-    ))
+# data[["summarise_characteristics"]] <- bind(
+#   data[["summarise_characteristics"]], 
+#   
+#   data[["summarise_characteristics"]] |>
+#     dplyr::filter(variable_name == "Indications",
+#                   variable_level %in% c("Aortic stenosis avr",
+#                                         "Aortic insufficiency avr",
+#                                         "Aortic stenosis insufficiency",
+#                                         "Aortic endocarditis",
+#                                         "No indication identified")) |>
+#     omopgenerics::tidy() |>
+#     dplyr::summarise("count" = sum(count, na.rm = TRUE), 
+#                      "percentage" = sum(percentage, na.rm = TRUE),
+#                      .by = c(cdm_name, cohort_name, calendar_year, age_group, sex, variable_name)) |>
+#     dplyr::mutate("mixed_group_count" = c(100-percentage) * count/percentage) |>
+#     dplyr::mutate("mixed_group_percentage" = 100-percentage) |>
+#     dplyr::select(-c("count", "percentage")) |>
+#     dplyr::rename("count" = "mixed_group_count",
+#                   "percentage" = "mixed_group_percentage") |>
+#     dplyr::mutate('variable_level' = "Other identified indications") |>
+#     omopgenerics::transformToSummarisedResult(
+#       group = "cohort_name",
+#       strata = c("calendar_year", "age_group", "sex"),
+#       estimates = c("count", "percentage")
+#     ))
 
 new_set <- data[["incidence"]] |>
   omopgenerics::splitGroup() |>
@@ -93,6 +93,7 @@ data[["incidence"]] <- data[["incidence"]] |>
                         dplyr::rename("result_id" = "new_result_id") |>
                         dplyr::select(-c("denominator_cohort_name", "sex")))
 
+
 # Modify values ----
 values <- getValues(result, resultList)
 
@@ -100,39 +101,6 @@ for (nm in names(values)[grepl("incidence_", names(values))]) {
   new_nm <- sub("incidence_", "incidence_general_", nm)
   values[[new_nm]] <- values[[nm]]
 }
-
-for (nm in names(values)[grepl("cohort_code_use_", names(values))]) {
-  new_nm <- sub("cohort_code_use_", "cohort_code_use_cohorts_", nm)
-  values[[new_nm]] <- values[[nm]]
-}
-
-values$cohort_code_use_cohorts_cohort_name <- data[["cohort_code_use"]] |>
-  filterAdditional(table_name %in% c("Aortic valve replacement", "Indications")) |>
-  splitGroup() |>
-  distinct(cohort_name) |>
-  pull(cohort_name)
-
-values$cohort_code_use_cohorts_codelist_name <- data[["cohort_code_use"]] |>
-  filterAdditional(table_name %in% c("Aortic valve replacement", "Indications")) |>
-  splitGroup() |>
-  distinct(codelist_name) |>
-  pull(codelist_name)
-
-for (nm in names(values)[grepl("cohort_code_use_", names(values))]) {
-  new_nm <- sub("cohort_code_use_", "cohort_code_use_covariates_", nm)
-  values[[new_nm]] <- values[[nm]]
-}
-values$cohort_code_use_covariates_cohort_name <- data[["cohort_code_use"]] |>
-  filterAdditional(table_name %in% c("Covariates")) |>
-  splitGroup() |>
-  distinct(cohort_name) |>
-  pull(cohort_name)
-
-values$cohort_code_use_covariates_codelist_name <- data[["cohort_code_use"]] |>
-  filterAdditional(table_name %in% c("Covariates")) |>
-  splitGroup() |>
-  distinct(codelist_name) |>
-  pull(codelist_name)
 
 for (nm in names(values)[grepl("orphan_code_use_", names(values))]) {
   new_nm <- sub("orphan_code_use_", "orphan_code_use_covariates_", nm)
@@ -145,44 +113,12 @@ values$orphan_code_use_covariates_codelist_name <- data[["orphan_code_use"]] |>
   distinct(codelist_name) |>
   pull(codelist_name)
 
-for (nm in names(values)[grepl("cohort_code_use_", names(values))]) {
-  new_nm <- sub("cohort_code_use_", "cohort_code_use_cci_", nm)
-  values[[new_nm]] <- values[[nm]]
-}
-values$cohort_code_use_cci_cohort_name <- data[["cohort_code_use"]] |>
-  filterAdditional(table_name %in% c("Charlson comorbidity index")) |>
-  splitGroup() |>
-  distinct(cohort_name) |>
-  pull(cohort_name)
-
-values$cohort_code_use_cci_codelist_name <- data[["cohort_code_use"]] |>
-  filterAdditional(table_name %in% c("Charlson comorbidity index")) |>
-  splitGroup() |>
-  distinct(codelist_name) |>
-  pull(codelist_name)
-
 for (nm in names(values)[grepl("orphan_code_use_", names(values))]) {
   new_nm <- sub("orphan_code_use_", "orphan_code_use_cci_", nm)
   values[[new_nm]] <- values[[nm]]
 }
 values$orphan_code_use_cci_codelist_name <- data[["orphan_code_use"]] |>
   filterAdditional(table_name %in% c("Charlson comorbidity index")) |>
-  splitGroup() |>
-  distinct(codelist_name) |>
-  pull(codelist_name)
-
-for (nm in names(values)[grepl("cohort_code_use_", names(values))]) {
-  new_nm <- sub("cohort_code_use_", "cohort_code_use_efi_", nm)
-  values[[new_nm]] <- values[[nm]]
-}
-values$cohort_code_use_efi_cohort_name <- data[["cohort_code_use"]] |>
-  filterAdditional(table_name %in% c("Electronic frailty index")) |>
-  splitGroup() |>
-  distinct(cohort_name) |>
-  pull(cohort_name)
-
-values$cohort_code_use_efi_codelist_name <- data[["cohort_code_use"]] |>
-  filterAdditional(table_name %in% c("Electronic frailty index")) |>
   splitGroup() |>
   distinct(codelist_name) |>
   pull(codelist_name)
@@ -273,17 +209,13 @@ choices <- values
 selected <- getSelected(values)
 
 selected$summarise_cohort_attrition_cohort_name <- "aortic_valve_replacement"
-selected$cohort_code_use_cohorts_cohort_name    <- "aortic_valve_replacement"
-selected$cohort_code_use_covariates_cohort_name <- "aortic_calcification"
 selected$orphan_code_use_covariates_codelist_name <- "aortic_calcification"
-selected$cohort_code_use_cci_cohort_name <- "aortic_calcification"
 selected$orphan_code_use_cci_codelist_name <- "aortic_calcification"
-selected$cohort_code_use_efi_cohort_name <- "aortic_calcification"
 selected$orphan_code_use_efi_codelist_name <- "aortic_calcification"
 selected$summarise_characteristis_indications_indications_window <- "365 days"
 selected$summarise_characteristics_overall_variables <- c("Number subjects")
 
-save(data, incidence_denominator_names, choices, selected, values, file = file.path(getwd(), "data", "studyData.RData"))
+save(data, choices, selected, values, file = file.path(getwd(), "data", "studyData.RData"))
 
 # rm(result, values, choices, selected, resultList, data)
 

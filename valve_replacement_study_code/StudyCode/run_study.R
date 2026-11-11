@@ -24,8 +24,8 @@ source(here("analyses", "functions.R"))
 results <- list()
 
 # CDM summary -----
-results[["snapshot"]] <- summariseOmopSnapshot(cdm)
-results[["obs_period"]] <- summariseObservationPeriod(cdm)
+# results[["snapshot"]] <- summariseOmopSnapshot(cdm)
+# results[["obs_period"]] <- summariseObservationPeriod(cdm)
 
 # Instantiate study cohorts ----
 logMessage(message = "Instantiating study cohorts")
@@ -34,12 +34,12 @@ source(here("cohorts", "instantiate_scores.R"))
 logMessage(message = "Study cohorts instantiated")
 
 # Run analyses ----
-logMessage(message = "Run study analyses")
-source(here("analyses", "0-SummariseCodeUse.R"))
-
-# Run objective 1 
-source(here("analyses", "1.1-ObjectiveOne_Sensitivity.R"))
-source(here("analyses", "1.2-ObjectiveOne_Main.R"))
+# logMessage(message = "Run study analyses")
+# source(here("analyses", "0-SummariseCodeUse.R"))
+# 
+# # Run objective 1 
+# source(here("analyses", "1.1-ObjectiveOne_Sensitivity.R"))
+# source(here("analyses", "1.2-ObjectiveOne_Main.R"))
 
 source(here("analyses", "2-ObjectiveTwo.R"))
 source(here("analyses", "3-ObjectiveThree.R"))
