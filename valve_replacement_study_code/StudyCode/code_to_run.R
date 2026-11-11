@@ -73,7 +73,6 @@ cdm <- cdmFromCon(
   cohortTables = c("aortic_stenosis_denominator", 
                    "aortic_endocarditis",
                    "procedures_nr", 
-                   "denominator_as_cci",
                    "aortic_stenosis_indication",
                    "procedures",
                    "comorbidities",
