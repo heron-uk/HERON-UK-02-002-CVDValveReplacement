@@ -99,11 +99,11 @@ charlson_comorbidity_index_codelist <- charlson_comorbidity_index_codelist |>
                  codelistsToJoin = c("hiv")) 
   
 # omopgenerics::logMessage(message = " > Instantiate cohort")
-# cdm[["charlson_comorbidity_index"]] <- conceptCohort(cdm,
-#                                                      conceptSet = charlson_comorbidity_index_codelist,
-#                                                      name = "charlson_comorbidity_index",
-#                                                      exit = "event_start_date") |>
-#   exitAtObservationEnd()
+cdm[["charlson_comorbidity_index"]] <- conceptCohort(cdm,
+                                                     conceptSet = charlson_comorbidity_index_codelist,
+                                                     name = "charlson_comorbidity_index",
+                                                     exit = "event_start_date") |>
+  exitAtObservationEnd()
 
 
 # Instantiate electronic frailty index
@@ -206,11 +206,11 @@ electronic_frailty_index_codelist <- electronic_frailty_index_codelist |>
                  keepOriginal = TRUE,
                  codelistsToJoin = c("weight_loss_and_anorexia"))
 
-# omopgenerics::logMessage(message = "> Instantiate cohort")
-# cdm[["electronic_frailty_index"]] <- conceptCohort(cdm,
-#                                                    conceptSet = electronic_frailty_index_codelist,
-#                                                    name = "electronic_frailty_index",
-#                                                    exit = "event_start_date") |>
-#   exitAtObservationEnd()
+omopgenerics::logMessage(message = "> Instantiate cohort")
+cdm[["electronic_frailty_index"]] <- conceptCohort(cdm,
+                                                   conceptSet = electronic_frailty_index_codelist,
+                                                   name = "electronic_frailty_index",
+                                                   exit = "event_start_date") |>
+  exitAtObservationEnd()
 
 

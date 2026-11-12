@@ -193,14 +193,44 @@ plotVariable <- function(data, variable, strata = NULL) {
     
     facet <- c("cdm_name", "cohort_name", strata)
     
+    colours <- unlist(case_when(
+      variable == "Cci categories" ~ list(c("low" = "#f6aa1c", "medium" = "#bc3908", "high" = "#941b0c")),
+      variable == "Efi categories" ~ list(c("fit" = "#f6aa1c", "mild" = "#bc3908", "moderate" = "#941b0c", "severe" = "#621708")),
+      variable == "Age group" ~ list(c(
+        "40 to 64" = "#e42538",
+        "65 to 69" = "#fd6735", 
+        "70 to 74" = "#f8bd4f",
+        "75 to 79" = "#90be6d", 
+        "80 to 84" = "#4c918f", 
+        "85 to 150" = "#325771"
+      )),
+      variable == "Sex" ~ list(c("Female" = "#f18f01", "Male" = "#006e90"))
+    ))
+    
+    levels <- unlist(case_when(
+      variable == "Cci categories" ~ list(c("Low", "Medium", "High")),
+      variable == "Efi categories" ~ list(c("Fit", "Mild", "Moderate", "Severe")),
+      variable == "Age group" ~ list(c(
+        "0 to 39", "40 to 64", "65 to 69", "70 to 74",
+        "75 to 79", "80 to 84", "85 to 150"
+      )),
+      variable == "Sex" ~ list(c("Female", "Male"))
+    )) 
+
     x <- x |>
       tidy() |>
+      mutate("variable_level" = gsub(" risk", "", variable_level),
+             "variable_level" = factor(variable_level, levels = levels)) |>
       visOmopResults::barPlot(x = "calendar_year",
                               y = "percentage", 
                               facet = facet, 
                               colour = "variable_level",
                               position = "stack") +
-      labs(y = "Number subjects (%)", fill = variable, colour = variable) 
+      labs(y = "Number subjects (%)", fill = variable, colour = variable)  +
+      theme(
+        legend.position = "top"
+      ) +
+      labs(colour = "", fill = "")
   } 
   
   if(variable %in% c("Cci", "Efi", "Age")){
@@ -214,7 +244,9 @@ plotVariable <- function(data, variable, strata = NULL) {
     x <- x |>
       visOmopResults::boxPlot(x = "calendar_year",
                               facet = facet,
-                              colour = "cohort_name")
+                              colour = "cohort_name") +
+      scale_colour_manual(values = c("#264653",  "#FFAD0AFF", "#EA6312")) +
+      scale_fill_manual(values = c("#264653",  "#FFAD0AFF", "#EA6312")) 
   } 
   
   if(variable %in% c("Aortic valve disease phenotype", "Cardiovascular disease", "Cardiovascular risk factors", 
@@ -236,7 +268,9 @@ plotVariable <- function(data, variable, strata = NULL) {
       facet_wrap(
         facet,
         scales = "free_y"
-      )
+      ) +
+      scale_colour_manual(values = c("#264653",  "#FFAD0AFF", "#EA6312")) +
+      scale_fill_manual(values = c("#264653",  "#FFAD0AFF", "#EA6312")) 
   } 
   
   return(x)

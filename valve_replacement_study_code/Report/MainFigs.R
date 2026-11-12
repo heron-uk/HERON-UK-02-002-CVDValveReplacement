@@ -128,19 +128,15 @@ data[["summarise_characteristics"]] |>
     .data$sex %in% "overall",
     .data$age_group %in% "overall",
     .data$efi_categories %in% "overall",
-    .data$cci_categories %in% "overall") |>
-  
-  
-  
-# Table 1 ----
-data[["summarise_characteristics"]] |>
-  omopgenerics::filterAdditional(.data$indications_window == "overall") |>
-  omopgenerics::filterSettings(.data$strata == "sex &&& age_group &&& efi_categories &&& cci_categories &&& calendar_year") |>
-  filterStrata(calendar_year == "overall",
-               age_group == "overall",
-               sex == "overall") |>
-  plotVariable(variable = "Efi categories", 
-               strata = NULL)
+    .data$cci_categories %in% "overall",
+    .data$calendar_year != "overall")  |>
+  plotVariable(variable = "Cci categories") 
+
+
+
+
+# 
+
   visOmopResults::visTable(
     groupColumn = c(),
     header = c("cdm_name", "cohort_name"),
